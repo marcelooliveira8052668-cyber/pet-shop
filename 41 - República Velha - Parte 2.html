@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1.41 — República Velha — Parte 2 | Professor Marcelo Oliveira</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { font-family: Arial, Helvetica, sans-serif; background: #f4f7fb; color: #263238; line-height: 1.7; }
+        .container { width: 92%; max-width: 1200px; margin: auto; }
+        header { background: linear-gradient(135deg, #172554, #2563eb); color: white; padding: 50px 20px; text-align: center; box-shadow: 0 5px 20px rgba(0, 0, 0, 0.18); }
+        .eyebrow { font-size: 0.95rem; letter-spacing: 2px; text-transform: uppercase; opacity: 0.9; margin-bottom: 12px; }
+        header h1 { font-size: clamp(2rem, 5vw, 3.5rem); margin-bottom: 15px; }
+        header p { max-width: 850px; margin: auto; font-size: 1.1rem; }
+        .navegacao { display: flex; justify-content: space-between; gap: 15px; margin: 25px auto; flex-wrap: wrap; }
+        .btn { display: inline-block; padding: 13px 20px; border-radius: 10px; text-decoration: none; font-weight: bold; transition: 0.3s; }
+        .btn-voltar { background: #475569; color: white; }
+        .btn-proximo { background: #2563eb; color: white; }
+        .btn:hover { transform: translateY(-2px); opacity: 0.9; }
+        .apresentacao { background: white; margin: 30px auto; padding: 30px; border-radius: 18px; border-left: 7px solid #2563eb; box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08); }
+        .secao { margin: 35px auto; padding: 30px; border-radius: 18px; background: white; box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07); }
+        .comeco { border-top: 8px solid #2563eb; }
+        .desenvolvimento { border-top: 8px solid #16a34a; }
+        .legado { border-top: 8px solid #7c3aed; }
+        .consequencias { border-top: 8px solid #eab308; }
+        .enem { border-top: 8px solid #0891b2; }
+        .lousa { border-top: 8px solid #111827; }
+        .secao h2 { margin-bottom: 20px; color: #172554; font-size: 1.8rem; }
+        .secao h3 { margin-top: 25px; margin-bottom: 10px; color: #334155; }
+        strong { color: #172554; }
+        ul, ol { margin: 15px 0 15px 25px; }
+        li { margin-bottom: 8px; }
+        .timeline { border-left: 4px solid #2563eb; padding-left: 25px; margin-top: 25px; }
+        .evento { margin-bottom: 25px; position: relative; }
+        .evento::before { content: ""; position: absolute; left: -36px; top: 7px; width: 14px; height: 14px; background: #2563eb; border-radius: 50%; }
+        .ano { font-weight: bold; color: #2563eb; }
+        .tabela-container { overflow-x: auto; margin-top: 20px; }
+        table { width: 100%; border-collapse: collapse; min-width: 650px; }
+        th, td { padding: 14px; border: 1px solid #cbd5e1; text-align: left; }
+        th { background: #172554; color: white; }
+        tr:nth-child(even) { background: #f8fafc; }
+        .conceitos { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 15px; margin-top: 20px; }
+        .conceito { background: #eff6ff; border: 1px solid #bfdbfe; padding: 18px; border-radius: 12px; }
+        .questao { background: #f8fafc; padding: 25px; border-radius: 14px; margin-top: 20px; border-left: 5px solid #0891b2; }
+        .btn-gabarito { margin-top: 15px; background: #0891b2; color: white; border: none; padding: 12px 18px; border-radius: 8px; cursor: pointer; font-weight: bold; }
+        .gabarito { display: none; margin-top: 15px; padding: 15px; background: #ecfeff; border-radius: 10px; border: 1px solid #67e8f9; }
+        .resumo { background: #172554; color: white; padding: 30px; border-radius: 18px; margin: 35px auto; }
+        .resumo strong { color: white; }
+        footer { background: #0f172a; color: white; text-align: center; padding: 35px 20px; margin-top: 50px; }
+        .assinatura { font-size: 1.2rem; font-weight: bold; margin-top: 10px; }
+        #topo { position: fixed; bottom: 20px; right: 20px; width: 48px; height: 48px; border: none; border-radius: 50%; background: #2563eb; color: white; cursor: pointer; font-size: 20px; display: none; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25); }
+        @media (max-width: 700px) { .secao, .apresentacao { padding: 20px; } .navegacao { flex-direction: column; } .btn { text-align: center; } }
+    </style>
+</head>
+
+<body id="inicio">
+
+    <header>
+        <div class="eyebrow">Curso de História Geral</div>
+        <h1>1.41 — República Velha — Parte 2</h1>
+        <p>Política, Economia e Conflitos na República Velha (1902–1930): coronéis, café com leite e as crises do período.</p>
+    </header>
+
+    <main class="container">
+
+        <nav class="navegacao">
+            <a class="btn btn-voltar" href="40 - República Velha - Parte 1.html">← República Velha — Parte 1</a>
+            <a class="btn btn-proximo" href="42 - Era Vargas.html">Era Vargas →</a>
+        </nav>
+
+        <section class="apresentacao">
+            <p>Por que estudar a República Velha — Parte 2? Porque é nesse período que se consolidam o domínio das oligarquias, a economia do café, os conflitos sociais e as crises que levarão ao fim do regime.</p>
+        </section>
+
+        <section class="secao comeco">
+            <h2>🔵 I — O COMEÇO: A POLÍTICA DO CAFÉ COM LEITE</h2>
+
+            <h3>1. O revezamento político</h3>
+            <p>Entre 1902 e 1922, o poder ficou nas mãos das oligarquias de <strong>São Paulo</strong> (café) e <strong>Minas Gerais</strong> (leite), que alternavam a presidência da República. Esse acordo informal ficou conhecido como <strong>Política do Café com Leite</strong>.</p>
+
+            <h3>2. O coronelismo</h3>
+            <p>Nas regiões interioranas, os grandes proprietários de terras — chamados "coronéis" — controlavam os eleitores por troca de favores e intimidação. Esse sistema ficou conhecido como <strong>coronelismo</strong> e era essencial para manter a máquina política das oligarquias.</p>
+        </section>
+
+        <section class="secao desenvolvimento">
+            <h2>🟢 II — O DESENVOLVIMENTO: ECONOMIA E CONFLITOS</h2>
+
+            <h3>3. A economia do café</h3>
+            <p>O Brasil tinha grande parte de sua economia baseada na exportação de <strong>café</strong>, cultivado principalmente no Sudeste. Isso gerava riqueza, mas também tornavam o país dependente das variações do mercado internacional.</p>
+
+            <h3>4. A Revolta da Vacina (1904)</h3>
+            <p>A reforma urbana no Rio de Janeiro gerou destruição de cortiços e morro abaixo, e a obrigatoriedade da vacina contra a varíola provocou a <strong>Revolta da Vacina</strong>. O movimento mostrou o descontentamento popular com a forma autoritária da reforma.</p>
+
+            <h3>5. O Tenentismo</h3>
+            <p>Jovens oficiais do Exército, conhecidos como <strong>tenentes</strong>, organizaram levantes contra o regime oligárquico, criticando a corrupção e exigindo voto secreto e mais justiça social.</p>
+
+            <h3>6. A Coluna Prestes (1925–1927)</h3>
+            <p>A Coluna Prestes percorreu o Brasil interior contestando a República Velha e defendendo reformas políticas e sociais. Embora não tenha derrubado o regime, ganhou grande repercussão.</p>
+        </section>
+
+        <section class="secao comeco">
+            <h2>📅 LINHA DO TEMPO</h2>
+            <div class="timeline">
+                <div class="evento"><span class="ano">1902</span> — Início do período de domínio das oligarquias do café com leite.</div>
+                <div class="evento"><span class="ano">1904</span> — Revolta da Vacina no Rio de Janeiro.</div>
+                <div class="evento"><span class="ano">1917</span> — Greve geral de trabalhadores em São Paulo.</div>
+                <div class="evento"><span class="ano">1922</span> — Centenário da Independência e levantes tenentistas.</div>
+                <div class="evento"><span class="ano">1924</span> — Revolta do Forte de Copacabana.</div>
+                <div class="evento"><span class="ano">1925–1927</span> — Coluna Prestes percorre o Brasil.</div>
+                <div class="evento"><span class="ano">1929</span> — Crack da Bolsa de Nova York afeta a economia cafeeira.</div>
+                <div class="evento"><span class="ano">1930</span> — Revolução de 1930 encerra a República Velha.</div>
+            </div>
+        </section>
+
+        <section class="secao consequencias">
+            <h2>🟡 Consequências</h2>
+            <ul>
+                <li>Consolidação do poder das oligarquias de São Paulo e Minas.</li>
+                <li>Controle político via coronelismo e fraudes eleitorais.</li>
+                <li>Conflitos sociais como a Revolta da Vacina e as greves operárias.</li>
+                <li>Crescimento da contestação militar: tenentismo e Coluna Prestes.</li>
+                <li>Crise do café e da economia levam ao fim da República Velha em 1930.</li>
+            </ul>
+        </section>
+
+        <section class="secao legado">
+            <h2>🟣 III — O LEGADO E O MUNDO ATUAL</h2>
+            <p>A República Velha deixou um modelo político dominado por elites rurais e um eleitorado controlado. Os movimentos de contestação desse período prepararam o terreno para a Revolução de 1930 e para a era Vargas.</p>
+        </section>
+
+        <section class="secao">
+            <h2>📊 RESUMO: REPÚBLICA VELHA — PARTE 2</h2>
+            <div class="tabela-container">
+                <table>
+                    <thead>
+                        <tr><th>Aspecto</th><th>Característica</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Política</td><td>Café com leite e coronelismo</td></tr>
+                        <tr><td>Economia</td><td>Exportação de café</td></tr>
+                        <tr><td>Conflitos urbanos</td><td>Revolta da Vacina (1904) e greves</td></tr>
+                        <tr><td>Contestações militares</td><td>Tenentismo e Coluna Prestes</td></tr>
+                        <tr><td>Crise</td><td>1929 — queda do café</td></tr>
+                        <tr><td>Fim</td><td>Revolução de 1930</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="secao lousa">
+            <h2>📋 BNCC — COMO TRABALHAR ESTE TEMA</h2>
+            <p>A BNCC sugere analisar a República Velha a partir das relações entre economia, política e conflitos sociais.</p>
+            <ul>
+                <li><strong>Habilidade (EF08HI11):</strong> Identificar a chamada "Política do Café com Leite" e o coronelismo.</li>
+                <li><strong>Habilidade (EF08HI12):</strong> Compreender os movimentos de contestação do período (tenentismo, Coluna Prestes, Revolta da Vacina).</li>
+                <li><strong>Objetivo:</strong> Relacionar a dependência do café com a crise de 1930 e o fim da República Velha.</li>
+            </ul>
+            <h3>💡 Sugestão de aula</h3>
+            <ul>
+                <li>Debate: "As reformas do Rio de Janeiro foram para beneficiar quem?"</li>
+                <li>Análise de charge da época sobre café com leite.</li>
+                <li>Mapa dos principais levantes tenentistas.</li>
+            </ul>
+        </section>
+
+        <section class="secao">
+            <h2>📚 CONCEITOS FUNDAMENTAIS</h2>
+            <div class="conceitos">
+                <div class="conceito"><strong>Política do Café com Leite</strong><br>Alternância de presidentes entre SP e MG.</div>
+                <div class="conceito"><strong>Coronelismo</strong><br>Controle político dos coronéis sobre os eleitores.</div>
+                <div class="conceito"><strong>Café</strong><br>Principal produto de exportação do período.</div>
+                <div class="conceito"><strong>Revolta da Vacina</strong><br>Protesto contra a vacinação obrigatória no Rio (1904).</div>
+                <div class="conceito"><strong>Tenentismo</strong><br>Movimentos de jovens oficiais contra as oligarquias.</div>
+                <div class="conceito"><strong>Coluna Prestes</strong><br>Marcha de 1925–1927 contra a República Velha.</div>
+            </div>
+        </section>
+
+        <section class="secao enem">
+            <h2>🎯 ENEM, Vestibular e Concurso</h2>
+            <p>Teste seus conhecimentos:</p>
+
+            <div class="questao">
+                <h3>Questão 1</h3>
+                <p>A "Política do Café com Leite" refere-se à alternância de poder entre as oligarquias de:</p>
+                <ol type="A">
+                    <li>Rio de Janeiro e Bahia.</li>
+                    <li>São Paulo e Minas Gerais.</li>
+                    <li>Paraná e Rio Grande do Sul.</li>
+                    <li>Pernambuco e Ceará.</li>
+                    <li>Maranhão e Piauí.</li>
+                </ol>
+                <button class="btn-gabarito" onclick="mostrarGabarito('g1')">Mostrar gabarito</button>
+                <div class="gabarito" id="g1">
+                    <strong>Resposta: B.</strong> O acordo alternava presidentes entre as oligarquias paulista (café) e mineira (leite).
+                </div>
+            </div>
+
+            <div class="questao">
+                <h3>Questão 2</h3>
+                <p>A Revolta da Vacina, em 1904, foi motivada principalmente por:</p>
+                <ol type="A">
+                    <li>Aumento de impostos sobre o café.</li>
+                    <li>Obrigatoriedade da vacina e reformas urbanas autoritárias.</li>
+                    <li>Proibição do voto feminino.</li>
+                    <li>Crise da Bolsa de 1929.</li>
+                    <li>Política de café com leite.</li>
+                </ol>
+                <button class="btn-gabarito" onclick="mostrarGabarito('g2')">Mostrar gabarito</button>
+                <div class="gabarito" id="g2">
+                    <strong>Resposta: B.</strong> A reação popular se deu contra a vacinação compulsória e o autoritarismo das reformas urbanas.
+                </div>
+            </div>
+        </section>
+
+        <section class="resumo">
+            <h2>🧠 RESUMO PARA O PROFESSOR</h2>
+            <p>
+                <strong>Tema:</strong> República Velha — Parte 2 (1902–1930).<br>
+                <strong>Política:</strong> Café com leite e coronelismo.<br>
+                <strong>Economia:</strong> Exportação de café e crise de 1929.<br>
+                <strong>Conflitos:</strong> Revolta da Vacina, greves, tenentismo, Coluna Prestes.<br>
+                <strong>Fim:</strong> Revolução de 1930.<br>
+                <strong>Habilidade BNCC:</strong> EF08HI11 e EF08HI12 — Política do café com leite e movimentos de contestação.
+            </p>
+        </section>
+
+        <nav class="navegacao">
+            <a class="btn btn-voltar" href="40 - República Velha - Parte 1.html">← República Velha — Parte 1</a>
+            <a class="btn btn-proximo" href="42 - Era Vargas.html">Era Vargas →</a>
+        </nav>
+
+    </main>
+
+    <footer>
+        <p>Curso de História Geral — Fund II • Ensino Médio • ENEM • Vestibular • Concurso</p>
+        <p class="assinatura">Professor Marcelo Oliveira</p>
+    </footer>
+
+    <button id="topo" onclick="voltarAoTopo()">↑</button>
+
+    <script>
+        function mostrarGabarito(id) {
+            const resposta = document.getElementById(id);
+            resposta.style.display = (resposta.style.display === "block") ? "none" : "block";
+        }
+        const botaoTopo = document.getElementById("topo");
+        window.addEventListener("scroll", function () { botaoTopo.style.display = window.scrollY > 400 ? "block" : "none"; });
+        function voltarAoTopo() { window.scrollTo({ top: 0, behavior: "smooth" }); }
+    </script>
+    <script>
+  const paginaAnterior = "40 - República Velha - Parte 1.html";
+  const paginaProxima = "42 - Era Vargas.html";
+</script>
+<script src="navegacao.js"></script>
+
+</body>
+
+</html>

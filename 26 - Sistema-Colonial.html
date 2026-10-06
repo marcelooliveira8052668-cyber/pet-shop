@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>1.26 — O Sistema Colonial | Curso de História Geral</title>
+<style>
+/* Define as cores principais desta aula. */
+:root{--ink:#17202a;--muted:#59636e;--paper:#fffaf1;--card:#ffffff;--accent:#8b3a2f;--gold:#c79a3b;--dark:#2b1d19;--line:#eadcc7;}
+/* Remove diferenças de cálculo entre os elementos. */
+*{box-sizing:border-box;margin:0;padding:0;}
+/* Define a aparência geral da página. */
+body{font-family:Georgia,'Times New Roman',serif;background:linear-gradient(135deg,#f7efe2,#fffdf8);color:var(--ink);line-height:1.75;}
+/* Mantém a largura confortável para leitura. */
+.container{width:min(1120px,92%);margin:auto;}
+/* Cria o cabeçalho visual da aula. */
+.hero{background:linear-gradient(135deg,var(--dark),#63352b 60%,#9a6540);color:white;padding:64px 0 48px;border-bottom:6px solid var(--gold);}
+/* Estiliza a pequena identificação do curso. */
+.eyebrow{font-family:Arial,sans-serif;text-transform:uppercase;letter-spacing:2px;font-size:.8rem;color:#f4dca5;font-weight:700;}
+/* Destaca o título principal. */
+h1{font-size:clamp(2.2rem,6vw,4.5rem);line-height:1.05;margin:14px 0;}
+/* Formata o subtítulo. */
+.hero p{max-width:850px;font-size:1.1rem;color:#f8eee5;}
+/* Cria uma faixa de navegação. */
+nav{background:#fff;position:sticky;top:0;z-index:20;border-bottom:1px solid var(--line);box-shadow:0 3px 18px #0000000d;}
+/* Organiza os links de navegação. */
+.nav-inner{display:flex;gap:10px;flex-wrap:wrap;padding:12px 0;}
+/* Estiliza cada botão de navegação. */
+nav a{font-family:Arial,sans-serif;text-decoration:none;color:var(--dark);padding:8px 12px;border-radius:999px;font-size:.88rem;font-weight:700;}
+/* Cria destaque ao passar o mouse. */
+nav a:hover{background:#f1e3cd;color:var(--accent);}
+/* Define o espaçamento das seções. */
+section{padding:54px 0;}
+/* Define os títulos das seções. */
+h2{font-size:clamp(1.7rem,4vw,2.7rem);color:var(--dark);margin-bottom:18px;}
+/* Define títulos menores. */
+h3{color:var(--accent);margin-bottom:10px;}
+/* Cria o texto de apoio. */
+.lead{font-size:1.08rem;color:var(--muted);max-width:900px;}
+/* Organiza cartões em colunas responsivas. */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px;margin-top:24px;}
+/* Define o visual dos cartões. */
+.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:24px;box-shadow:0 12px 35px #4b2a180d;}
+/* Destaca cartões de atenção. */
+.callout{background:#fff3d8;border-left:6px solid var(--gold);border-radius:14px;padding:22px;margin:22px 0;}
+/* Destaca uma ideia histórica importante. */
+.warning{background:#f9e9e5;border-left:6px solid var(--accent);border-radius:14px;padding:22px;margin:22px 0;}
+/* Organiza uma linha do tempo. */
+.timeline{border-left:4px solid var(--gold);margin:28px 0;padding-left:22px;}
+/* Define cada acontecimento da linha do tempo. */
+.event{margin-bottom:24px;position:relative;}
+/* Cria o marcador da linha do tempo. */
+.event::before{content:"";position:absolute;left:-34px;top:8px;width:14px;height:14px;background:var(--accent);border:3px solid #fff;border-radius:50%;box-shadow:0 0 0 2px var(--gold);}
+/* Estiliza tabelas. */
+table{width:100%;border-collapse:collapse;margin:24px 0;background:white;}
+/* Define células da tabela. */
+th,td{padding:14px;border:1px solid var(--line);text-align:left;vertical-align:top;}
+/* Destaca o cabeçalho da tabela. */
+th{background:var(--dark);color:white;}
+/* Permite rolagem horizontal em tabelas pequenas. */
+.table-wrap{overflow-x:auto;}
+/* Cria o esquema central. */
+.flow{display:flex;align-items:center;justify-content:center;gap:10px;flex-wrap:wrap;margin:28px 0;}
+/* Estiliza cada etapa do esquema. */
+.flow span{background:var(--dark);color:white;padding:12px 16px;border-radius:12px;font-family:Arial,sans-serif;font-weight:700;}
+/* Define a aparência das setas. */
+.arrow{color:var(--gold);font-size:1.5rem;font-weight:900;}
+/* Estiliza listas didáticas. */
+ul,ol{padding-left:24px;}
+/* Separa itens de listas longas. */
+li{margin:7px 0;}
+/* Cria caixas de perguntas. */
+.question{background:white;border:1px solid var(--line);border-radius:18px;padding:24px;margin:20px 0;}
+/* Estiliza botões interativos. */
+button{border:0;border-radius:12px;padding:12px 18px;background:var(--accent);color:white;font-weight:700;cursor:pointer;}
+/* Altera o botão ao passar o mouse. */
+button:hover{filter:brightness(1.08);}
+/* Mantém o gabarito escondido inicialmente. */
+.answer{display:none;margin-top:15px;padding:16px;background:#edf6ed;border-radius:12px;border-left:5px solid #4d7a4d;}
+/* Mostra o gabarito quando recebe esta classe. */
+.answer.show{display:block;}
+/* Cria uma caixa para o quadro. */
+.board{background:#18251d;color:#f3f4df;border-radius:18px;padding:26px;font-family:Arial,sans-serif;}
+/* Estiliza o rodapé. */
+footer{background:var(--dark);color:#eadfd4;padding:34px 0;margin-top:30px;}
+/* Organiza os botões finais. */
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px;}
+/* Estiliza os links de ação. */
+.actions a{display:inline-block;background:var(--gold);color:#241b13;text-decoration:none;padding:12px 18px;border-radius:12px;font-family:Arial,sans-serif;font-weight:800;}
+/* Cria o botão flutuante de topo. */
+#topo{position:fixed;right:20px;bottom:20px;width:48px;height:48px;border-radius:50%;padding:0;background:var(--dark);box-shadow:0 8px 20px #0003;}
+/* Ajusta a página para telas pequenas. */
+@media(max-width:650px){.hero{padding:46px 0 36px;}section{padding:40px 0;}table{font-size:.9rem;}nav a{font-size:.78rem;padding:7px 9px;}}
+</style>
+</head>
+<body id="topo-pagina">
+<header class="hero">
+<div class="container">
+<div class="eyebrow">Curso de História Geral • Professor Marcelo Oliveira</div>
+<h1>1.26 — O Sistema Colonial</h1>
+<p>Da expansão marítima ao funcionamento das sociedades coloniais: comércio, poder, exploração, trabalho, resistência e formação de estruturas que deixaram marcas profundas no mundo moderno.</p>
+</div>
+</header>
+<nav>
+<div class="container nav-inner">
+<a href="#comeco">I — O começo</a>
+<a href="#desenvolvimento">II — Desenvolvimento</a>
+<a href="#guerras">Conflitos</a>
+<a href="#brasil">Brasil</a>
+<a href="#legado">III — Legado</a>
+<a href="#professor">Professor</a>
+<a href="#questoes">Questões</a>
+</div>
+</nav>
+<main>
+<section id="comeco">
+<div class="container">
+<h2>I — O COMEÇO: COMO SURGIU O SISTEMA COLONIAL?</h2>
+<p class="lead">O Sistema Colonial foi formado dentro da expansão marítima europeia, da construção dos Estados modernos e das práticas mercantilistas. Não foi uma fórmula idêntica em todos os impérios: cada potência organizou seus territórios de acordo com interesses, recursos, disputas e condições locais.</p>
+<div class="callout"><strong>Ideia-chave:</strong> a colonização não deve ser entendida apenas como “ocupação de terras”. Ela envolveu relações de poder, exploração econômica, circulação de pessoas, conflitos, instituições, escravização, resistência e transformações culturais.</div>
+<div class="grid">
+<article class="card"><h3>🌍 Expansão</h3><p>As navegações ampliaram as conexões entre Europa, África, Ásia e Américas.</p></article>
+<article class="card"><h3>💰 Economia</h3><p>Estados e grupos mercantis buscavam metais, produtos tropicais, mercados e receitas.</p></article>
+<article class="card"><h3>👑 Poder</h3><p>As monarquias utilizaram instituições, leis, impostos e forças militares para disputar territórios e rotas.</p></article>
+<article class="card"><h3>⛵ Comércio</h3><p>Rotas oceânicas e portos passaram a integrar circuitos comerciais de grande escala.</p></article>
+</div>
+<h3 style="margin-top:32px;">Metrópole e colônia</h3>
+<p>Em muitos sistemas coloniais, a metrópole procurava orientar o comércio colonial em seu benefício. Isso podia incluir monopólios, restrições comerciais, impostos e regras sobre produção e circulação. Entretanto, a realidade foi mais complexa do que uma simples relação de “ordem e obediência”: comerciantes, autoridades locais, colonos, povos indígenas e africanos escravizados também atuavam e disputavam espaços.</p>
+<div class="flow">
+<span>Estado europeu</span><b class="arrow">→</b><span>Expansão marítima</span><b class="arrow">→</b><span>Colônias</span><b class="arrow">→</b><span>Produção e comércio</span><b class="arrow">→</b><span>Receitas e poder</span>
+</div>
+</div>
+</section>
+<section id="desenvolvimento">
+<div class="container">
+<h2>II — O DESENVOLVIMENTO: COMO O SISTEMA FUNCIONAVA?</h2>
+<p class="lead">A colonização combinou exploração econômica, administração territorial e diferentes formas de trabalho. O modelo variava conforme a região, o período e a potência colonizadora.</p>
+<div class="grid">
+<article class="card"><h3>📦 Monopólio</h3><p>Em determinadas áreas e períodos, a metrópole buscou controlar o comércio colonial e limitar relações diretas da colônia com outros mercados.</p></article>
+<article class="card"><h3>🌱 Produção</h3><p>A agricultura comercial e a extração mineral foram importantes em diferentes colônias, ao lado de atividades destinadas ao consumo interno.</p></article>
+<article class="card"><h3>⛓️ Trabalho</h3><p>O trabalho colonial assumiu formas variadas, incluindo escravização de africanos, exploração de indígenas, trabalho compulsório e trabalho livre.</p></article>
+<article class="card"><h3>🏛️ Administração</h3><p>Capitanias, governadores, vice-reinos, câmaras, companhias comerciais e outras instituições foram utilizadas em diferentes impérios.</p></article>
+</div>
+<div class="warning"><strong>Cuidado com uma simplificação:</strong> “Pacto Colonial” é útil para explicar tendências de controle comercial, mas não significa que todas as colônias funcionassem de maneira idêntica nem que o comércio ilegal e as negociações locais inexistissem.</div>
+<h3>Modelos coloniais em comparação</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Potência</th><th>Exemplos</th><th>Características históricas</th></tr></thead>
+<tbody>
+<tr><td>Portugal</td><td>Brasil, partes da África e Ásia</td><td>Redes marítimas, comércio, agricultura de exportação no Brasil, mineração posterior e diferentes formas de administração.</td></tr>
+<tr><td>Espanha</td><td>América espanhola</td><td>Vice-reinos, mineração de prata, agricultura, cidades coloniais e exploração de trabalho indígena e africano.</td></tr>
+<tr><td>Inglaterra</td><td>Treze Colônias e Caribe</td><td>Modelos variados: colônias de povoamento, plantation, comércio atlântico e companhias privilegiadas.</td></tr>
+<tr><td>França</td><td>Caribe, Canadá e outros territórios</td><td>Comércio de peles, plantation em áreas caribenhas e competição imperial.</td></tr>
+<tr><td>Países Baixos</td><td>Áreas do Caribe, América, África e Ásia</td><td>Companhias comerciais, redes marítimas, comércio e disputa por posições estratégicas.</td></tr>
+</tbody>
+</table>
+</div>
+<h3>🌍 A dimensão atlântica</h3>
+<p>A expansão colonial conectou diferentes continentes em circuitos de circulação de mercadorias, pessoas e capitais. O Atlântico tornou-se um espaço fundamental para o comércio moderno. Ao mesmo tempo, essa integração foi marcada por violência, conquista territorial e escravização em larga escala.</p>
+</div>
+</section>
+<section id="guerras">
+<div class="container">
+<h2>⚔️ GUERRAS, DISPUTAS E RESISTÊNCIAS</h2>
+<p class="lead">As colônias eram importantes para as disputas entre potências europeias. Portos, ilhas, rotas, mercados e produtos estratégicos podiam se transformar em objetivos militares.</p>
+<div class="timeline">
+<div class="event"><h3>1588 — Armada Espanhola</h3><p>A tentativa espanhola de atacar a Inglaterra ocorreu em um contexto de rivalidade política, religiosa e marítima. A derrota da armada não significou o fim imediato do poder espanhol.</p></div>
+<div class="event"><h3>1652–1674 — Guerras Anglo-Holandesas</h3><p>Conflitos entre Inglaterra e República Holandesa envolveram comércio marítimo, navegação, companhias mercantis e competição naval.</p></div>
+<div class="event"><h3>1665–1667 — Segunda Guerra Anglo-Holandesa</h3><p>Mostra como o controle das rotas e da navegação estava ligado ao poder econômico e militar.</p></div>
+<div class="event"><h3>1667–1668 — Guerra de Devolução</h3><p>A França de Luís XIV expandiu sua atuação militar europeia em um cenário de disputa territorial e equilíbrio entre potências.</p></div>
+<div class="event"><h3>1701–1714 — Guerra de Sucessão Espanhola</h3><p>A sucessão ao trono espanhol provocou uma guerra internacional que envolveu interesses dinásticos, territoriais e equilíbrio de poder.</p></div>
+</div>
+<div class="callout"><strong>Para o aluno entender:</strong> comércio, colonização e guerra não eram fenômenos isolados. O controle de portos e rotas podia gerar riqueza; a riqueza podia financiar forças militares; e a força militar podia ser usada para disputar territórios e mercados.</div>
+</div>
+</section>
+<section id="brasil">
+<div class="container">
+<h2>🇧🇷 O SISTEMA COLONIAL E A AMÉRICA PORTUGUESA</h2>
+<p class="lead">O Brasil foi integrado ao império português dentro de relações coloniais que mudaram ao longo dos séculos XVI, XVII e XVIII.</p>
+<div class="grid">
+<article class="card"><h3>🌱 Açúcar</h3><p>A produção açucareira ganhou grande importância, especialmente no Nordeste, utilizando trabalho escravizado em larga escala.</p></article>
+<article class="card"><h3>⛏️ Mineração</h3><p>No século XVIII, a mineração de ouro e diamantes modificou a dinâmica econômica e demográfica da América portuguesa.</p></article>
+<article class="card"><h3>🌳 Outros produtos</h3><p>Pau-brasil, tabaco, algodão, pecuária e outras atividades participaram de diferentes circuitos econômicos.</p></article>
+<article class="card"><h3>✊ Resistência</h3><p>Indígenas e africanos escravizados resistiram de múltiplas formas, incluindo fugas, revoltas, preservação cultural e formação de comunidades.</p></article>
+</div>
+<div class="warning"><strong>Escravização:</strong> a economia colonial brasileira dependeu profundamente da escravização de africanos e seus descendentes, além de diferentes formas de exploração indígena. Essa dimensão é indispensável para compreender a formação social, econômica e cultural do Brasil.</div>
+<h3>Uma conexão importante</h3>
+<div class="flow"><span>Mercantilismo</span><b class="arrow">→</b><span>Colonização</span><b class="arrow">→</b><span>Produção colonial</span><b class="arrow">→</b><span>Trabalho e exploração</span><b class="arrow">→</b><span>Comércio atlântico</span></div>
+
+<h3 style="margin-top:32px;">Gregório de Matos e a cultura colonial</h3>
+<div class="grid">
+    <article class="card"><h3>🎭 Poesia Barroca</h3><p>Gregório de Matos Guerra (1636–1696) foi um dos maiores poetas do Barroco no Brasil colonial, escrevendo em Salvador (Bahia).</p></article>
+    <article class="card"><h3>⚖️ Crítica Social</h3><p>Conhecido como "Boca do Inferno", denunciava em seus versos a corrupção, a hipocrisia e os vícios da sociedade colonial baiana.</p></article>
+    <article class="card"><h3>✝️ Religiosidade Barroca</h3><p>Também produziu poemas religiosos marcados pelo arrependimento e pela reflexão sobre a fé, típicos do estilo barroco.</p></article>
+    <article class="card"><h3>📢 Importância</h3><p>Sua obra é um testemunho fundamental da sociedade colonial do século XVII e da cultura barroca brasileira.</p></article>
+</div>
+</div>
+</section>
+<section id="legado">
+<div class="container">
+<h2>III — O LEGADO E O MUNDO ATUAL</h2>
+<p class="lead">O fim dos sistemas coloniais não apagou automaticamente suas consequências. Desigualdades econômicas, estruturas sociais, fronteiras, culturas e relações internacionais foram influenciadas por séculos de dominação colonial.</p>
+<div class="grid">
+<article class="card"><h3>🏛️ Instituições</h3><p>Modelos administrativos e jurídicos coloniais deixaram marcas nas sociedades pós-coloniais.</p></article>
+<article class="card"><h3>🧭 Fronteiras</h3><p>Processos coloniais contribuíram para a formação e transformação de territórios e fronteiras em diferentes regiões.</p></article>
+<article class="card"><h3>🌎 Cultura</h3><p>Línguas, religiões, alimentos, costumes e formas de organização social resultaram de encontros, conflitos e misturas.</p></article>
+<article class="card"><h3>📊 Desigualdades</h3><p>Pesquisas históricas relacionam estruturas coloniais a desigualdades que continuaram sendo disputadas depois da independência.</p></article>
+</div>
+<div class="callout"><strong>Conexão com o presente:</strong> estudar o colonialismo não significa transportar automaticamente categorias atuais para o passado. Significa compreender processos históricos e investigar como suas consequências foram transformadas, contestadas ou mantidas ao longo do tempo.</div>
+<h3>📅 Linha do tempo essencial</h3>
+<div class="timeline">
+<div class="event"><h3>1492</h3><p>Viagem de Colombo ao Caribe e início de uma nova etapa da expansão europeia nas Américas.</p></div>
+<div class="event"><h3>1494</h3><p>Tratado de Tordesilhas entre Portugal e Espanha.</p></div>
+<div class="event"><h3>1500</h3><p>Chegada da frota de Pedro Álvares Cabral à costa da América portuguesa.</p></div>
+<div class="event"><h3>Séculos XVI–XVII</h3><p>Consolidação de diferentes sistemas coloniais e expansão do comércio atlântico.</p></div>
+<div class="event"><h3>Século XVIII</h3><p>Expansão de novos centros de poder comercial e intensificação de conflitos coloniais.</p></div>
+</div>
+</div>
+</section>
+<section id="conceitos">
+<div class="container">
+<h2>🧠 CONCEITOS QUE O ALUNO PRECISA DOMINAR</h2>
+<div class="grid">
+<article class="card"><h3>Colonização</h3><p>Processo de conquista, ocupação e organização de territórios sob domínio de uma potência externa.</p></article>
+<article class="card"><h3>Metrópole</h3><p>Potência que exercia domínio sobre territórios coloniais.</p></article>
+<article class="card"><h3>Colônia</h3><p>Território submetido a relações de domínio político, econômico ou administrativo por uma potência externa.</p></article>
+<article class="card"><h3>Plantation</h3><p>Modelo associado a grandes propriedades, monocultura ou produção concentrada, exportação e trabalho compulsório em vários contextos coloniais.</p></article>
+<article class="card"><h3>Escravização</h3><p>Processo pelo qual pessoas são submetidas coercitivamente à condição de propriedade ou exploração escravista.</p></article>
+<article class="card"><h3>Colonialismo</h3><p>Sistema de dominação territorial e política associado à expansão imperial de potências sobre outros povos e territórios.</p></article>
+</div>
+</div>
+</section>
+<section id="professor">
+<div class="container">
+<h2>👨‍🏫 O QUE O PROFESSOR PRECISA DOMINAR</h2>
+<ul>
+<li>Diferenciar <strong>colonialismo</strong>, <strong>colonização</strong> e <strong>imperialismo</strong>.</li>
+<li>Explicar que não existiu um único modelo colonial.</li>
+<li>Relacionar Mercantilismo, expansão marítima, Estado moderno e colonização sem transformar essa relação em uma fórmula automática.</li>
+<li>Explicar o papel do trabalho escravizado na economia atlântica e suas consequências sociais.</li>
+<li>Mostrar a participação e a agência histórica de povos indígenas, africanos e populações coloniais.</li>
+<li>Evitar apresentar a colonização como processo exclusivamente europeu: houve resistência, negociação, adaptação e conflitos em diferentes sociedades.</li>
+</ul>
+<h3 style="margin-top:30px;">🧑‍🏫 O QUE COLOCAR NA LOUSA</h3>
+<div class="board">
+<p><strong>SISTEMA COLONIAL</strong></p>
+<p>Expansão marítima → conquista/domínio → administração → exploração → trabalho → comércio → conflitos → resistência → transformações</p>
+<p style="margin-top:12px;">METRÓPOLE ↔ COLÔNIA</p>
+<p>Controle político + interesses econômicos + circulação de pessoas e mercadorias + conflitos e negociações</p>
+</div>
+<h3 style="margin-top:30px;">🎯 Foco ENEM / Vestibular / Concurso</h3>
+<p>Priorize relações de causa e consequência, leitura de fontes, diferenças entre modelos coloniais, escravização, economia atlântica, resistência e permanências históricas. Em provas, desconfie de alternativas absolutas como “todas as colônias”, “sempre”, “nunca” e “um único modelo”.</p>
+</div>
+</section>
+<section id="bncc">
+<div class="container">
+<h2>📚 BNCC — CONEXÕES CURRICULARES</h2>
+<p>Este tema pode ser trabalhado em articulação com habilidades da área de Ciências Humanas que abordam expansão marítima, formação do mundo moderno, colonização, relações de poder, circulação de pessoas e mercadorias e processos históricos de longa duração. A habilidade específica deve ser selecionada conforme a etapa de ensino e o planejamento curricular da turma.</p>
+</div>
+</section>
+<section id="questoes">
+<div class="container">
+<h2>📝 QUESTÕES AUTORAIS — ESTILO ENEM</h2>
+<div class="question">
+<h3>Questão 1</h3>
+<p>Durante a expansão marítima europeia, diferentes monarquias organizaram relações econômicas com territórios ultramarinos. Essas relações envolveram produção, circulação de mercadorias, tributação e controle de rotas. Considerando essa dinâmica, uma característica importante dos sistemas coloniais foi:</p>
+<ol type="A"><li>a independência econômica das colônias em relação às metrópoles.</li><li>a inexistência de conflitos entre as potências europeias.</li><li>a articulação entre domínio político, interesses econômicos e exploração territorial.</li><li>a eliminação das atividades comerciais ilegais.</li><li>a formação de um único modelo colonial mundial.</li></ol>
+<button onclick="toggleAnswer('a1')">Mostrar gabarito</button>
+<div id="a1" class="answer"><strong>Gabarito: C.</strong> Os sistemas coloniais articulavam relações de poder, interesses econômicos e domínio territorial, embora apresentassem diferenças importantes entre regiões e períodos.</div>
+</div>
+<div class="question">
+<h3>Questão 2</h3>
+<p>Na América portuguesa, a produção colonial esteve relacionada à utilização de diferentes formas de trabalho, com forte presença da escravização de africanos. Ao analisar esse processo historicamente, é correto afirmar que:</p>
+<ol type="A"><li>a escravização foi irrelevante para a formação econômica colonial.</li><li>as populações escravizadas não desenvolveram formas de resistência.</li><li>a sociedade colonial foi formada exclusivamente pela população europeia.</li><li>a escravização participou da formação econômica e social e também gerou múltiplas formas de resistência.</li><li>a mineração eliminou imediatamente a agricultura de exportação.</li></ol>
+<button onclick="toggleAnswer('a2')">Mostrar gabarito</button>
+<div id="a2" class="answer"><strong>Gabarito: D.</strong> A escravização foi fundamental para diversos setores da economia colonial e esteve acompanhada de variadas formas de resistência e construção social e cultural.</div>
+</div>
+</div>
+</section>
+<section>
+<div class="container actions">
+<a href="../22-Mercantilismo/index.html">← Voltar ao 1.26 — Mercantilismo</a>
+<a href="../24-Revolucoes-Inglesas-Seculo-XVII/index.html">Ir para o 1.26 — Revoluções Inglesas →</a>
+</div>
+</section>
+</main>
+<footer>
+<div class="container">
+<p><strong>Curso de História Geral — Professor Marcelo Oliveira</strong></p>
+<p>Material digital didático • Fund II • Ensino Médio • ENEM • Vestibular • Concursos</p>
+</div>
+</footer>
+<button id="topo" onclick="voltarAoTopo()" aria-label="Voltar ao topo">↑</button>
+<script>
+// Cria uma função responsável por mostrar ou esconder cada gabarito.
+function toggleAnswer(id){
+// Localiza no HTML o elemento que possui o identificador recebido.
+const answer=document.getElementById(id);
+// Alterna a classe que controla a visibilidade do gabarito.
+answer.classList.toggle('show');
+}
+// Cria uma função para levar o leitor de volta ao início da página.
+function voltarAoTopo(){
+// Faz a rolagem suave até o topo do documento.
+window.scrollTo({top:0,behavior:'smooth'});
+}
+</script>
+
+<script>
+  const paginaAnterior = "25 - Montagem-da-Administracao-Colonial.html";
+  const paginaProxima = "26B - Gregório de Mattos.html";
+</script>
+<script src="navegacao.js"></script>
+</body>
+</html>

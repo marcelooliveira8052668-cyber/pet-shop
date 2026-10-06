@@ -1,0 +1,1487 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+    <!-- Define a codificação dos caracteres para aceitar acentos e caracteres especiais. -->
+    <meta charset="UTF-8">
+
+
+<!-- Faz o site se adaptar corretamente a celulares, tablets e computadores. -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Título que aparece na aba do navegador. -->
+<title>1.25 — Montagem da Administração Colonial | História Geral</title>
+
+<style>
+    /* ============================================================
+       CONFIGURAÇÕES GERAIS
+       ============================================================ */
+
+    /* Remove margens e espaçamentos padrão do navegador. */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* Define o comportamento de rolagem suave. */
+    html {
+        scroll-behavior: smooth;
+    }
+
+    /* Define a aparência geral da página. */
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: #f4f7fb;
+        color: #1d2939;
+        line-height: 1.7;
+    }
+
+    /* ============================================================
+       CABEÇALHO
+       ============================================================ */
+
+    /* Cabeçalho principal da página. */
+    header {
+        background: linear-gradient(135deg, #071a35, #123b6d);
+        color: white;
+        padding: 45px 20px;
+        text-align: center;
+        border-bottom: 6px solid #f59e0b;
+    }
+
+    /* Pequeno identificador do curso. */
+    .curso {
+        font-size: 0.95rem;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #93c5fd;
+        margin-bottom: 12px;
+        font-weight: bold;
+    }
+
+    /* Título principal. */
+    header h1 {
+        font-size: clamp(2rem, 5vw, 3.5rem);
+        margin-bottom: 15px;
+    }
+
+    /* Subtítulo do capítulo. */
+    header p {
+        max-width: 900px;
+        margin: auto;
+        font-size: 1.1rem;
+        color: #e5e7eb;
+    }
+
+    /* ============================================================
+       CONTAINER PRINCIPAL
+       ============================================================ */
+
+    /* Limita a largura do conteúdo para melhorar a leitura. */
+    main {
+        max-width: 1150px;
+        margin: auto;
+        padding: 30px 18px 80px;
+    }
+
+    /* ============================================================
+       CARDS
+       ============================================================ */
+
+    /* Card padrão utilizado nas seções. */
+    .card {
+        background: white;
+        margin: 25px 0;
+        padding: 30px;
+        border-radius: 18px;
+        box-shadow: 0 8px 25px rgba(15, 23, 42, 0.08);
+        border-left: 6px solid #2563eb;
+    }
+
+    /* Títulos das seções. */
+    .card h2 {
+        color: #123b6d;
+        margin-bottom: 18px;
+        font-size: clamp(1.5rem, 3vw, 2.1rem);
+    }
+
+    /* Títulos menores. */
+    .card h3 {
+        color: #1e40af;
+        margin: 22px 0 10px;
+    }
+
+    /* Parágrafos. */
+    .card p {
+        margin-bottom: 15px;
+    }
+
+    /* Listas. */
+    .card ul,
+    .card ol {
+        margin: 15px 0 15px 25px;
+    }
+
+    /* Itens das listas. */
+    .card li {
+        margin-bottom: 8px;
+    }
+
+    /* ============================================================
+       DESTAQUES
+       ============================================================ */
+
+    /* Caixa usada para conceitos importantes. */
+    .conceito {
+        background: #eff6ff;
+        border-left: 6px solid #2563eb;
+        padding: 20px;
+        border-radius: 12px;
+        margin: 20px 0;
+    }
+
+    /* Caixa utilizada para causas. */
+    .causas {
+        background: #fff7ed;
+        border-left: 6px solid #f97316;
+        padding: 20px;
+        border-radius: 12px;
+        margin: 20px 0;
+    }
+
+    /* Caixa utilizada para consequências. */
+    .consequencias {
+        background: #fefce8;
+        border-left: 6px solid #eab308;
+        padding: 20px;
+        border-radius: 12px;
+        margin: 20px 0;
+    }
+
+    /* Caixa de atenção. */
+    .atencao {
+        background: #fef2f2;
+        border-left: 6px solid #dc2626;
+        padding: 20px;
+        border-radius: 12px;
+        margin: 20px 0;
+    }
+
+    /* Caixa relacionada ao ENEM. */
+    .enem {
+        background: #ecfeff;
+        border-left: 6px solid #0891b2;
+        padding: 20px;
+        border-radius: 12px;
+        margin: 20px 0;
+    }
+
+    /* Caixa destinada ao professor. */
+    .professor {
+        background: #f5f3ff;
+        border-left: 6px solid #7c3aed;
+        padding: 20px;
+        border-radius: 12px;
+        margin: 20px 0;
+    }
+
+    /* Caixa utilizada para a lousa. */
+    .lousa {
+        background: #172554;
+        color: white;
+        border-radius: 14px;
+        padding: 25px;
+        margin: 20px 0;
+    }
+
+    /* ============================================================
+       TABELAS
+       ============================================================ */
+
+    /* Permite rolagem horizontal em telas pequenas. */
+    .tabela-container {
+        overflow-x: auto;
+        margin: 20px 0;
+    }
+
+    /* Tabela principal. */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        min-width: 650px;
+    }
+
+    /* Células da tabela. */
+    th,
+    td {
+        border: 1px solid #dbe3ef;
+        padding: 13px;
+        text-align: left;
+    }
+
+    /* Cabeçalho da tabela. */
+    th {
+        background: #123b6d;
+        color: white;
+    }
+
+    /* Linhas alternadas. */
+    tr:nth-child(even) {
+        background: #f8fafc;
+    }
+
+    /* ============================================================
+       LINHA DO TEMPO
+       ============================================================ */
+
+    /* Container da linha do tempo. */
+    .timeline {
+        border-left: 4px solid #2563eb;
+        margin: 25px 0;
+        padding-left: 25px;
+    }
+
+    /* Cada acontecimento da linha do tempo. */
+    .evento {
+        margin-bottom: 25px;
+        position: relative;
+    }
+
+    /* Pequeno marcador da linha do tempo. */
+    .evento::before {
+        content: "";
+        position: absolute;
+        left: -36px;
+        top: 7px;
+        width: 14px;
+        height: 14px;
+        background: #2563eb;
+        border-radius: 50%;
+        border: 3px solid white;
+        box-shadow: 0 0 0 2px #2563eb;
+    }
+
+    /* Ano do acontecimento. */
+    .ano {
+        font-weight: bold;
+        color: #1d4ed8;
+    }
+
+    /* ============================================================
+       QUESTÕES
+       ============================================================ */
+
+    /* Caixa de cada questão. */
+    .questao {
+        background: #f8fafc;
+        border: 1px solid #dbe3ef;
+        border-radius: 14px;
+        padding: 25px;
+        margin: 25px 0;
+    }
+
+    /* Botão do gabarito. */
+    button {
+        border: none;
+        border-radius: 10px;
+        padding: 12px 18px;
+        background: #123b6d;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    /* Efeito do botão ao passar o mouse. */
+    button:hover {
+        transform: translateY(-2px);
+        background: #1d4ed8;
+    }
+
+    /* Alternativas. */
+    .alternativas {
+        margin: 15px 0;
+    }
+
+    /* Cada alternativa. */
+    .alternativas p {
+        margin: 8px 0;
+    }
+
+    /* Área inicialmente escondida do gabarito. */
+    .resposta {
+        display: none;
+        margin-top: 15px;
+        padding: 15px;
+        background: #dcfce7;
+        border-left: 5px solid #16a34a;
+        border-radius: 10px;
+    }
+
+    /* ============================================================
+       NAVEGAÇÃO
+       ============================================================ */
+
+    /* Área dos botões de navegação. */
+    .navegacao {
+        display: flex;
+        justify-content: space-between;
+        gap: 15px;
+        flex-wrap: wrap;
+        margin-top: 40px;
+    }
+
+    /* Links de navegação. */
+    .navegacao a {
+        text-decoration: none;
+        color: white;
+        background: #123b6d;
+        padding: 13px 20px;
+        border-radius: 10px;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+    /* Efeito dos links. */
+    .navegacao a:hover {
+        background: #1d4ed8;
+        transform: translateY(-2px);
+    }
+
+    /* Botão voltar ao topo. */
+    .topo {
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+        background: #f59e0b;
+        color: #111827;
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        font-weight: bold;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    /* ============================================================
+       RODAPÉ
+       ============================================================ */
+
+    /* Rodapé da página. */
+    footer {
+        background: #071a35;
+        color: white;
+        text-align: center;
+        padding: 35px 20px;
+    }
+
+    /* Assinatura. */
+    footer strong {
+        color: #93c5fd;
+    }
+
+    /* ============================================================
+       RESPONSIVIDADE
+       ============================================================ */
+
+    /* Ajustes para telas pequenas. */
+    @media (max-width: 700px) {
+
+        /* Reduz o espaço dos cards. */
+        .card {
+            padding: 20px;
+        }
+
+        /* Reduz o tamanho do cabeçalho. */
+        header {
+            padding: 35px 15px;
+        }
+
+        /* Organiza os links de navegação em coluna. */
+        .navegacao {
+            flex-direction: column;
+        }
+
+        /* Faz cada link ocupar toda a largura. */
+        .navegacao a {
+            text-align: center;
+            width: 100%;
+        }
+    }
+</style>
+
+</head>
+
+<body id="topo">
+
+<!-- ============================================================
+     CABEÇALHO DO CAPÍTULO
+     ============================================================ -->
+
+<header>
+
+    <!-- Identificação do curso. -->
+    <div class="curso">
+        Curso de História Geral
+    </div>
+
+    <!-- Título principal. -->
+    <h1>1.25 — Montagem da Administração Colonial</h1>
+
+    <!-- Apresentação do conteúdo. -->
+    <p>
+        Fundamentos, estruturas, instituições e relações de poder
+        na organização administrativa da América Portuguesa.
+    </p>
+
+</header>
+
+<!-- ============================================================
+     CONTEÚDO PRINCIPAL
+     ============================================================ -->
+
+<main>
+
+    <!-- ========================================================
+         INTRODUÇÃO
+         ======================================================== -->
+
+    <section class="card">
+
+        <h2>Introdução — Como Portugal administrou sua colônia?</h2>
+
+        <p>
+            A montagem da administração colonial portuguesa na América
+            foi um processo gradual. Portugal precisava transformar um
+            território muito extenso, distante da metrópole e habitado
+            por numerosos povos indígenas em uma área efetivamente
+            ocupada, explorada economicamente e submetida à autoridade
+            da Coroa.
+        </p>
+
+        <p>
+            A administração não surgiu pronta. Ela foi sendo construída
+            por meio de diferentes instituições, autoridades e práticas:
+            capitanias hereditárias, Governo-Geral, câmaras municipais,
+            sesmarias, autoridades judiciais, fiscais e militares,
+            além da atuação da Igreja.
+        </p>
+
+        <p>
+            Por isso, estudar a administração colonial significa
+            compreender uma questão fundamental: <strong>como o poder
+            português se organizou para controlar, explorar e defender
+            a América Portuguesa?</strong>
+        </p>
+
+    </section>
+
+    <!-- ========================================================
+         PARTE I
+         ======================================================== -->
+
+    <section class="card">
+
+        <h2>PARTE I — O COMEÇO</h2>
+
+        <h3>1. A necessidade de organizar a colonização</h3>
+
+        <p>
+            Durante as primeiras décadas após a chegada portuguesa,
+            a presença europeia na América foi relativamente limitada.
+            A exploração do pau-brasil não exigia inicialmente uma
+            estrutura administrativa tão complexa quanto aquela que
+            seria criada posteriormente.
+        </p>
+
+        <p>
+            A situação mudou quando Portugal percebeu que precisava
+            ocupar o território de maneira mais permanente e enfrentar
+            concorrentes europeus interessados nas riquezas americanas.
+        </p>
+
+        <div class="causas">
+
+            <h3>Principais fatores que estimularam a organização administrativa</h3>
+
+            <ul>
+                <li>Necessidade de ocupar efetivamente o território.</li>
+                <li>Defesa contra outros grupos europeus.</li>
+                <li>Organização da produção colonial.</li>
+                <li>Arrecadação de impostos e tributos.</li>
+                <li>Fortalecimento da autoridade da Coroa.</li>
+                <li>Evangelização dos povos indígenas.</li>
+                <li>Controle das atividades econômicas.</li>
+                <li>Manutenção da ordem colonial.</li>
+            </ul>
+
+        </div>
+
+        <h3>2. As Capitanias Hereditárias</h3>
+
+        <p>
+            Em 1534, a Coroa portuguesa implantou o sistema de
+            <strong>Capitanias Hereditárias</strong>.
+        </p>
+
+        <p>
+            O território foi dividido em grandes faixas de terra
+            entregues a particulares, os donatários, que recebiam
+            determinados direitos e obrigações.
+        </p>
+
+        <p>
+            O sistema buscava reduzir os custos da colonização para a
+            Coroa e estimular particulares a investir na ocupação e
+            exploração da América.
+        </p>
+
+        <div class="conceito">
+
+            <strong>Importante:</strong>
+
+            <p>
+                As capitanias não significavam independência dos
+                donatários. Eles possuíam poderes concedidos pela
+                Coroa e continuavam submetidos à autoridade portuguesa.
+            </p>
+
+        </div>
+
+        <h3>3. As sesmarias</h3>
+
+        <p>
+            Um dos instrumentos fundamentais da colonização foi a
+            distribuição de <strong>sesmarias</strong>.
+        </p>
+
+        <p>
+            As sesmarias eram concessões de terras destinadas à ocupação
+            e ao aproveitamento econômico. Na prática, contribuíram para
+            a formação de grandes propriedades rurais e para a
+            concentração fundiária.
+        </p>
+
+        <div class="atencao">
+
+            <strong>Não confunda:</strong>
+
+            <p>
+                Capitania era uma estrutura territorial e administrativa
+                concedida pela Coroa. Sesmaria era uma concessão de terra
+                dentro do processo de ocupação e exploração colonial.
+            </p>
+
+        </div>
+
+        <h3>4. O Governo-Geral</h3>
+
+        <p>
+            A experiência das capitanias mostrou limites. Muitas
+            capitanias enfrentaram dificuldades econômicas, conflitos
+            com povos indígenas, falta de recursos e problemas de
+            comunicação.
+        </p>
+
+        <p>
+            Em 1548, a Coroa decidiu criar o Governo-Geral. Em 1549,
+            <strong>Tomé de Sousa</strong> chegou à América para assumir
+            o cargo de primeiro governador-geral.
+        </p>
+
+        <p>
+            Salvador foi fundada e estabelecida como sede do Governo-Geral,
+            tornando-se um importante centro político e administrativo
+            da América Portuguesa.
+        </p>
+
+        <h3>5. Os principais cargos do Governo-Geral</h3>
+
+        <div class="tabela-container">
+
+            <table>
+
+                <tr>
+                    <th>Autoridade</th>
+                    <th>Função geral</th>
+                </tr>
+
+                <tr>
+                    <td>Governador-Geral</td>
+                    <td>Coordenação política, militar e administrativa da colônia.</td>
+                </tr>
+
+                <tr>
+                    <td>Ouvidor-mor</td>
+                    <td>Atuação relacionada à justiça e à administração judicial.</td>
+                </tr>
+
+                <tr>
+                    <td>Provedor-mor</td>
+                    <td>Atuação ligada às finanças, arrecadação e controle econômico.</td>
+                </tr>
+
+                <tr>
+                    <td>Capitão-mor</td>
+                    <td>Responsabilidades relacionadas à defesa militar.</td>
+                </tr>
+
+            </table>
+
+        </div>
+
+        <p>
+            Essa estrutura demonstra que a Coroa buscava organizar
+            diferentes dimensões do poder colonial: política, justiça,
+            finanças e defesa.
+        </p>
+
+    </section>
+
+    <!-- ========================================================
+         PARTE II
+         ======================================================== -->
+
+    <section class="card">
+
+        <h2>PARTE II — O DESENVOLVIMENTO</h2>
+
+        <h3>1. Uma administração com diferentes níveis de poder</h3>
+
+        <p>
+            A administração colonial portuguesa não funcionava como
+            uma estrutura simples em que todas as decisões eram tomadas
+            diretamente em Lisboa.
+        </p>
+
+        <p>
+            Existiam diferentes níveis de autoridade, e muitas decisões
+            eram tomadas localmente por grupos que possuíam poder
+            econômico e social.
+        </p>
+
+        <div class="tabela-container">
+
+            <table>
+
+                <tr>
+                    <th>Nível</th>
+                    <th>Exemplos</th>
+                    <th>Função</th>
+                </tr>
+
+                <tr>
+                    <td>Coroa portuguesa</td>
+                    <td>Rei e órgãos metropolitanos</td>
+                    <td>Definição das grandes diretrizes coloniais.</td>
+                </tr>
+
+                <tr>
+                    <td>Administração colonial</td>
+                    <td>Governador-Geral e autoridades</td>
+                    <td>Aplicação e coordenação das políticas.</td>
+                </tr>
+
+                <tr>
+                    <td>Capitanias</td>
+                    <td>Donatários e autoridades locais</td>
+                    <td>Ocupação, produção e administração territorial.</td>
+                </tr>
+
+                <tr>
+                    <td>Municípios</td>
+                    <td>Câmaras municipais</td>
+                    <td>Administração local e interesses das elites.</td>
+                </tr>
+
+            </table>
+
+        </div>
+
+        <h3>2. As câmaras municipais</h3>
+
+        <p>
+            As <strong>câmaras municipais</strong> eram instituições
+            fundamentais para a administração local.
+        </p>
+
+        <p>
+            Elas participavam da organização das vilas e cidades,
+            tratando de questões como abastecimento, obras, normas
+            locais, fiscalização e outros assuntos administrativos.
+        </p>
+
+        <p>
+            Entretanto, a participação política não era aberta a toda a
+            população. Os grupos socialmente privilegiados, muitas vezes
+            identificados como <strong>“homens bons”</strong>, exerciam
+            grande influência sobre as decisões locais.
+        </p>
+
+        <div class="atencao">
+
+            <strong>Atenção histórica:</strong>
+
+            <p>
+                A existência de câmaras municipais não significa que a
+                sociedade colonial fosse democrática no sentido atual.
+                A participação política era restrita e profundamente
+                marcada pela desigualdade social.
+            </p>
+
+        </div>
+
+        <h3>3. Administração e economia açucareira</h3>
+
+        <p>
+            A expansão da produção açucareira aumentou a necessidade de
+            organização administrativa.
+        </p>
+
+        <p>
+            Era necessário controlar terras, trabalhadores, circulação
+            de mercadorias, arrecadação, defesa dos engenhos e relações
+            comerciais com a metrópole.
+        </p>
+
+        <p>
+            A administração colonial, portanto, estava profundamente
+            relacionada aos interesses econômicos do sistema colonial.
+        </p>
+
+        <h3>4. Igreja e administração colonial</h3>
+
+        <p>
+            A Igreja Católica desempenhou papel importante na sociedade
+            colonial.
+        </p>
+
+        <p>
+            A Coroa portuguesa possuía uma relação institucional
+            específica com a Igreja, conhecida como
+            <strong>Padroado Régio</strong>, que dava ao monarca
+            importantes atribuições na organização religiosa dos
+            territórios portugueses.
+        </p>
+
+        <p>
+            Ordens religiosas, especialmente os jesuítas, participaram
+            da evangelização, educação e organização de aldeamentos,
+            embora também existissem conflitos sobre a exploração da
+            mão de obra indígena.
+        </p>
+
+        <h3>5. Defesa do território</h3>
+
+        <p>
+            A administração também tinha uma dimensão militar.
+        </p>
+
+        <p>
+            A América Portuguesa era extensa, possuía áreas pouco
+            controladas pela Coroa e estava sujeita a incursões e
+            disputas com outras potências europeias.
+        </p>
+
+        <p>
+            Franceses e, posteriormente, neerlandeses estiveram
+            envolvidos em disputas pelo controle de áreas e atividades
+            econômicas no território colonial.
+        </p>
+
+        <h3>6. O Conselho Ultramarino</h3>
+
+        <p>
+            Em 1642, Portugal criou o <strong>Conselho Ultramarino</strong>,
+            importante órgão ligado à administração dos territórios
+            ultramarinos.
+        </p>
+
+        <p>
+            Sua criação demonstra que a administração colonial foi
+            ficando mais complexa à medida que os territórios
+            portugueses no ultramar aumentavam em importância.
+        </p>
+
+        <h3>7. A transferência da capital para o Rio de Janeiro</h3>
+
+        <p>
+            Em <strong>1763</strong>, a capital da América Portuguesa
+            foi transferida de Salvador para o <strong>Rio de Janeiro</strong>.
+        </p>
+
+        <p>
+            A mudança esteve relacionada à crescente importância
+            econômica e estratégica da região Centro-Sul, especialmente
+            devido à mineração e às disputas territoriais na região
+            platina.
+        </p>
+
+        <h3>8. Reformas pombalinas</h3>
+
+        <p>
+            Durante o século XVIII, o governo português promoveu
+            mudanças administrativas associadas ao projeto reformista
+            do ministro <strong>Sebastião José de Carvalho e Melo,
+            o Marquês de Pombal</strong>.
+        </p>
+
+        <p>
+            Entre as medidas esteve a expulsão dos jesuítas dos
+            territórios portugueses em 1759, acompanhada de mudanças
+            na administração colonial e na política educacional.
+        </p>
+
+        <p>
+            Essas reformas buscavam aumentar o controle do Estado
+            português e fortalecer a autoridade da Coroa.
+        </p>
+
+    </section>
+
+    <!-- ========================================================
+         ESTRUTURA ADMINISTRATIVA
+         ======================================================== -->
+
+    <section class="card">
+
+        <h2>Estrutura da Administração Colonial</h2>
+
+        <div class="tabela-container">
+
+            <table>
+
+                <tr>
+                    <th>Instituição / conceito</th>
+                    <th>O que representa</th>
+                </tr>
+
+                <tr>
+                    <td>Capitanias Hereditárias</td>
+                    <td>Divisão territorial e sistema inicial de colonização.</td>
+                </tr>
+
+                <tr>
+                    <td>Governo-Geral</td>
+                    <td>Instrumento de maior coordenação política e administrativa.</td>
+                </tr>
+
+                <tr>
+                    <td>Câmaras Municipais</td>
+                    <td>Administração local e participação das elites coloniais.</td>
+                </tr>
+
+                <tr>
+                    <td>Sesmarias</td>
+                    <td>Concessões de terras destinadas à ocupação e produção.</td>
+                </tr>
+
+                <tr>
+                    <td>Padroado Régio</td>
+                    <td>Relação institucional entre a Coroa portuguesa e a Igreja.</td>
+                </tr>
+
+                <tr>
+                    <td>Conselho Ultramarino</td>
+                    <td>Órgão metropolitano ligado à administração ultramarina.</td>
+                </tr>
+
+            </table>
+
+        </div>
+
+    </section>
+
+    <!-- ========================================================
+         PARTE III
+         ======================================================== -->
+
+    <section class="card">
+
+        <h2>PARTE III — O LEGADO E O MUNDO ATUAL</h2>
+
+        <h3>1. Formação histórica do poder local</h3>
+
+        <p>
+            A administração colonial contribuiu para a formação de
+            estruturas políticas e sociais que marcaram profundamente
+            a história brasileira.
+        </p>
+
+        <p>
+            As câmaras municipais, por exemplo, demonstram a existência
+            histórica de instituições de administração local. Porém,
+            não devem ser confundidas com as atuais instituições
+            democráticas municipais.
+        </p>
+
+        <h3>2. Concentração de terra e poder</h3>
+
+        <p>
+            A distribuição desigual das terras contribuiu para a
+            formação de uma sociedade marcada pela concentração
+            fundiária.
+        </p>
+
+        <p>
+            Essa característica atravessou diferentes períodos da
+            história brasileira e aparece em debates posteriores sobre
+            propriedade rural, desigualdade e estrutura agrária.
+        </p>
+
+        <h3>3. Centralização e poderes locais</h3>
+
+        <p>
+            Um dos grandes temas da história política brasileira é a
+            relação entre o poder central e os poderes locais.
+        </p>
+
+        <p>
+            A experiência colonial ajuda a compreender como grupos
+            econômicos locais conseguiram exercer influência política
+            enquanto a Coroa buscava manter sua autoridade.
+        </p>
+
+        <h3>4. Administração colonial e Brasil contemporâneo</h3>
+
+        <p>
+            Não devemos afirmar que o Brasil atual simplesmente
+            “herdou” as instituições coloniais sem transformações.
+            O Estado brasileiro passou por profundas mudanças,
+            especialmente após a Independência, a República e a
+            democratização.
+        </p>
+
+        <p>
+            Entretanto, estudar a administração colonial permite
+            compreender algumas raízes históricas de temas como:
+        </p>
+
+        <ul>
+            <li>relações entre poder central e poderes locais;</li>
+            <li>concentração fundiária;</li>
+            <li>desigualdade social;</li>
+            <li>formação das elites políticas;</li>
+            <li>organização territorial;</li>
+            <li>relações entre Estado e religião.</li>
+        </ul>
+
+    </section>
+
+    <!-- ========================================================
+         CAUSAS E CONSEQUÊNCIAS
+         ======================================================== -->
+
+    <section class="card">
+
+        <h2>Causas e Consequências</h2>
+
+        <div class="causas">
+
+            <h3>Causas</h3>
+
+            <ul>
+                <li>Necessidade de ocupação territorial.</li>
+                <li>Defesa contra concorrentes europeus.</li>
+                <li>Interesses econômicos da Coroa.</li>
+                <li>Expansão da produção colonial.</li>
+                <li>Necessidade de arrecadação.</li>
+                <li>Controle político e administrativo.</li>
+                <li>Evangelização e organização religiosa.</li>
+            </ul>
+
+        </div>
+
+        <div class="consequencias">
+
+            <h3>Consequências</h3>
+
+            <ul>
+                <li>Maior presença da Coroa no território.</li>
+                <li>Formação de estruturas administrativas coloniais.</li>
+                <li>Fortalecimento das elites locais.</li>
+                <li>Concentração de terras.</li>
+                <li>Ampliação da exploração econômica.</li>
+                <li>Maior controle fiscal e militar.</li>
+                <li>Formação de instituições municipais coloniais.</li>
+            </ul>
+
+        </div>
+
+    </section>
+
+    <!-- ========================================================
+         CONCEITOS
+         ======================================================== -->
+
+    <section class="card">
+
+        <h2>Conceitos que o aluno precisa dominar</h2>
+
+        <div class="conceito">
+
+            <p><strong>Capitania:</strong> divisão territorial utilizada pela Coroa na colonização.</p>
+
+            <p><strong>Donatário:</strong> indivíduo que recebia direitos e obrigações relacionados à administração de uma capitania.</p>
+
+            <p><strong>Governo-Geral:</strong> estrutura criada para ampliar a coordenação da administração colonial.</p>
+
+            <p><strong>Sesmaria:</strong> concessão de terra para ocupação e aproveitamento econômico.</p>
+
+            <p><strong>Câmara Municipal:</strong> instituição de administração local.</p>
+
+            <p><strong>Homens bons:</strong> expressão utilizada para designar grupos considerados socialmente aptos a participar do governo local colonial.</p>
+
+            <p><strong>Ouvidor-mor:</strong> autoridade ligada à justiça.</p>
+
+            <p><strong>Provedor-mor:</strong> autoridade ligada às finanças e à administração econômica.</p>
+
+            <p><strong>Capitão-mor:</strong> autoridade relacionada à defesa militar.</p>
+
+            <p><strong>Padroado Régio:</strong> conjunto de relações e prerrogativas entre a Coroa portuguesa e a organização da Igreja nos domínios portugueses.</p>
+
+            <p><strong>Conselho Ultramarino:</strong> órgão português relacionado à administração dos territórios ultramarinos.</p>
+
+        </div>
+
+    </section>
+
+    <!-- ========================================================
+         LINHA DO TEMPO
+         ======================================================== -->
+
+    <section class="card">
+
+        <h2>Linha do Tempo</h2>
+
+        <div class="timeline">
+
+            <div class="evento">
+                <div class="ano">1534</div>
+                <p>Implantação das Capitanias Hereditárias.</p>
+            </div>
+
+            <div class="evento">
+                <div class="ano">1548</div>
+                <p>Criação do Governo-Geral.</p>
+            </div>
+
+            <div class="evento">
+                <div class="ano">1549</div>
+                <p>Tomé de Sousa chega à América e Salvador torna-se sede do Governo-Geral.</p>
+            </div>
+
+            <div class="evento">
+                <div class="ano">Século XVII</div>
+                <p>Ampliação e complexificação das estruturas administrativas coloniais.</p>
+            </div>
+
+            <div class="evento">
+                <div class="ano">1621</div>
+                <p>Criação do Estado do Maranhão, reorganizando a administração de parte do território colonial.</p>
+            </div>
+
+            <div class="evento">
+                <div class="ano">1642</div>
+                <p>Criação do Conselho Ultramarino.</p>
+            </div>
+
+            <div class="evento">
+                <div class="ano">1759</div>
+                <p>Expulsão dos jesuítas dos territórios portugueses durante as reformas pombalinas.</p>
+            </div>
+
+            <div class="evento">
+                <div class="ano">1763</div>
+                <p>Transferência da capital de Salvador para o Rio de Janeiro.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================================================
+         O QUE O PROFESSOR PRECISA DOMINAR
+         ======================================================== -->
+
+    <section class="card">
+
+        <h2>O que o professor precisa dominar</h2>
+
+        <div class="professor">
+
+            <ul>
+                <li>Explicar por que Portugal precisou organizar a administração colonial.</li>
+
+                <li>Diferenciar Capitanias Hereditárias de Governo-Geral.</li>
+
+                <li>Explicar o funcionamento das sesmarias.</li>
+
+                <li>Mostrar a importância das câmaras municipais.</li>
+
+                <li>Explicar a participação das elites locais.</li>
+
+                <li>Relacionar administração, economia e escravidão.</li>
+
+                <li>Compreender a participação da Igreja na sociedade colonial.</li>
+
+                <li>Explicar a relação entre centralização da Coroa e poderes locais.</li>
+
+                <li>Relacionar as reformas pombalinas ao fortalecimento do poder régio.</li>
+
+                <li>Explicar por que a capital foi transferida para o Rio de Janeiro.</li>
+            </ul>
+
+        </div>
+
+    </section>
+
+    <!-- ========================================================
+         O QUE COLOCAR NA LOUSA
+         ======================================================== -->
+
+    <section class="card">
+
+        <h2>O que colocar na lousa</h2>
+
+        <div class="lousa">
+
+            <h3>ADMINISTRAÇÃO COLONIAL</h3>
+
+            <p>1534 → Capitanias Hereditárias</p>
+
+            <p>1549 → Governo-Geral</p>
+
+            <p>Salvador → sede inicial</p>
+
+            <p>Tomé de Sousa → 1º governador-geral</p>
+
+            <p>Ouvidor-mor → Justiça</p>
+
+            <p>Provedor-mor → Finanças</p>
+
+            <p>Capitão-mor → Defesa</p>
+
+            <p>Sesmarias → concessão de terras</p>
+
+            <p>Câmaras → poder local</p>
+
+            <p>“Homens bons” → elites locais</p>
+
+            <p>1759 → expulsão dos jesuítas</p>
+
+            <p>1763 → capital → Rio de Janeiro</p>
+
+        </div>
+
+    </section>
+
+    <!-- ========================================================
+         ENEM
+         ======================================================== -->
+
+    <section class="card">
+
+        <h2>Foco ENEM, Vestibulares e Concursos</h2>
+
+        <div class="enem">
+
+            <p>
+                Questões sobre administração colonial frequentemente
+                aparecem relacionadas a temas maiores, como
+                <strong>colonização, poder, economia, concentração
+                fundiária, escravidão, formação territorial e relações
+                entre Estado e sociedade.</strong>
+            </p>
+
+            <p>
+                O aluno deve evitar decorar apenas nomes e datas.
+                É fundamental compreender a lógica do sistema:
+            </p>
+
+            <p>
+                <strong>ocupação → administração → produção →
+                arrecadação → defesa → controle político.</strong>
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- ========================================================
+         QUESTÃO 1
+         ======================================================== -->
+
+    <section class="card">
+
+        <h2>Questões de revisão — estilo ENEM</h2>
+
+        <div class="questao">
+
+            <h3>Questão 1</h3>
+
+            <p>
+                A criação do Governo-Geral, em 1548, e sua implantação
+                a partir de 1549 podem ser compreendidas como parte de
+                uma estratégia da Coroa portuguesa destinada a:
+            </p>
+
+            <div class="alternativas">
+
+                <p><strong>A)</strong> abandonar as atividades econômicas desenvolvidas na América.</p>
+
+                <p><strong>B)</strong> ampliar a coordenação administrativa e fortalecer a presença da Coroa.</p>
+
+                <p><strong>C)</strong> transformar as capitanias em países independentes.</p>
+
+                <p><strong>D)</strong> eliminar completamente o poder dos proprietários locais.</p>
+
+                <p><strong>E)</strong> estabelecer uma administração democrática baseada no voto universal.</p>
+
+            </div>
+
+            <button onclick="mostrarResposta('resposta1')">
+                Mostrar gabarito
+            </button>
+
+            <div class="resposta" id="resposta1">
+
+                <strong>Gabarito: B.</strong>
+
+                <p>
+                    O Governo-Geral buscou ampliar a coordenação política,
+                    administrativa, militar e econômica da colonização,
+                    fortalecendo a autoridade da Coroa sem eliminar
+                    completamente as estruturas locais.
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- ====================================================
+             QUESTÃO 2
+             ==================================================== -->
+
+        <div class="questao">
+
+            <h3>Questão 2</h3>
+
+            <p>
+                As câmaras municipais exerceram papel importante na
+                administração da América Portuguesa. Entretanto,
+                sua existência não significava participação política
+                ampla da população porque:
+            </p>
+
+            <div class="alternativas">
+
+                <p><strong>A)</strong> todos os moradores eram proibidos de participar da vida local.</p>
+
+                <p><strong>B)</strong> as câmaras eram órgãos exclusivamente religiosos.</p>
+
+                <p><strong>C)</strong> a participação política estava concentrada em determinados grupos socialmente privilegiados.</p>
+
+                <p><strong>D)</strong> as câmaras eram controladas diretamente pelos povos indígenas.</p>
+
+                <p><strong>E)</strong> os municípios coloniais não possuíam nenhuma função administrativa.</p>
+
+            </div>
+
+            <button onclick="mostrarResposta('resposta2')">
+                Mostrar gabarito
+            </button>
+
+            <div class="resposta" id="resposta2">
+
+                <strong>Gabarito: C.</strong>
+
+                <p>
+                    O poder municipal colonial era fortemente influenciado
+                    pelas elites locais, conhecidas em determinados
+                    contextos como “homens bons”. Isso demonstra o caráter
+                    hierárquico e desigual da sociedade colonial.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================================================
+         BNCC
+         ======================================================== -->
+
+    <section class="card">
+
+        <h2>BNCC — Como trabalhar o tema</h2>
+
+        <p>
+            Este capítulo pode ser articulado às habilidades da BNCC
+            relacionadas à compreensão das formas de organização
+            política, econômica e social das sociedades históricas,
+            às relações de poder, à colonização da América e à formação
+            histórica do Brasil.
+        </p>
+
+        <p>
+            Para planejamento escolar, recomenda-se relacionar este
+            conteúdo aos objetos de conhecimento referentes à colonização
+            portuguesa, à formação territorial, às relações de trabalho,
+            às estruturas de poder e à formação da sociedade colonial.
+        </p>
+
+    </section>
+
+    <!-- ========================================================
+         RESUMO
+         ======================================================== -->
+
+    <section class="card">
+
+        <h2>Resumo para revisão rápida</h2>
+
+        <ul>
+
+            <li>
+                Portugal inicialmente utilizou as Capitanias Hereditárias
+                para estimular a ocupação.
+            </li>
+
+            <li>
+                O Governo-Geral foi criado para ampliar a coordenação
+                administrativa.
+            </li>
+
+            <li>
+                Tomé de Sousa foi o primeiro governador-geral.
+            </li>
+
+            <li>
+                Salvador tornou-se a sede inicial do Governo-Geral.
+            </li>
+
+            <li>
+                Sesmarias contribuíram para a ocupação e concentração
+                de terras.
+            </li>
+
+            <li>
+                Câmaras municipais representavam importante espaço de
+                poder local.
+            </li>
+
+            <li>
+                As elites locais exerceram forte influência política.
+            </li>
+
+            <li>
+                Igreja e Estado estavam profundamente relacionados.
+            </li>
+
+            <li>
+                O Conselho Ultramarino ampliou os instrumentos
+                administrativos metropolitanos.
+            </li>
+
+            <li>
+                As reformas pombalinas buscaram fortalecer o controle
+                da Coroa.
+            </li>
+
+            <li>
+                Em 1763, a capital foi transferida de Salvador para
+                o Rio de Janeiro.
+            </li>
+
+        </ul>
+
+    </section>
+
+    <!-- ========================================================
+         NAVEGAÇÃO ENTRE OS CAPÍTULOS
+         ======================================================== -->
+
+    <div class="navegacao">
+
+        <a href="../44-Montagem-do-Sistema-Colonial/index.html">
+            ← Voltar: 1.44
+        </a>
+
+        <a href="../46-Ocupacao-e-Expansao-Territoriais/index.html">
+            Próximo: 26 — Sistema Colonial →
+        </a>
+
+    </div>
+
+</main>
+
+<!-- ============================================================
+     RODAPÉ
+     ============================================================ -->
+
+<footer>
+
+    <p>
+        <strong>Curso de História Geral</strong>
+    </p>
+
+    <p>
+        Fund II • Ensino Médio • ENEM • Vestibular • Concurso
+    </p>
+
+    <p>
+        Professor Marcelo Oliveira
+    </p>
+
+</footer>
+
+<!-- ============================================================
+     BOTÃO VOLTAR AO TOPO
+     ============================================================ -->
+
+<a href="#topo" class="topo" aria-label="Voltar ao topo">
+    ↑
+</a>
+
+<!-- ============================================================
+     JAVASCRIPT
+     ============================================================ -->
+
+<script>
+
+    /* Função responsável por mostrar ou esconder o gabarito. */
+    function mostrarResposta(id) {
+
+        /* Localiza o elemento pelo seu ID. */
+        const resposta = document.getElementById(id);
+
+        /* Verifica se a resposta está escondida. */
+        if (resposta.style.display === "block") {
+
+            /* Esconde novamente a resposta. */
+            resposta.style.display = "none";
+
+        } else {
+
+            /* Mostra a resposta. */
+            resposta.style.display = "block";
+        }
+    }
+
+</script>
+
+<script>
+  const paginaAnterior = "24 - MONTAGEM DO SISTEMA COLONIAL.html";
+  const paginaProxima = "26 - Sistema-Colonial.html";
+</script>
+<script src="navegacao.js"></script>
+</body>
+
+</html>

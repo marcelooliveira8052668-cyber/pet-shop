@@ -1,0 +1,1661 @@
+<!DOCTYPE html>
+<!-- Define que este documento utiliza HTML5. -->
+<html lang="pt-BR">
+<!-- Define o idioma principal da página como português do Brasil. -->
+
+<head>
+    <!-- Inicia a área de configurações da página. -->
+
+    <meta charset="UTF-8">
+    <!-- Permite utilizar corretamente acentos e caracteres especiais. -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Faz a página se adaptar a celulares, tablets e computadores. -->
+
+    <title>1.3 — Mesopotâmia | Curso de História Geral</title>
+    <!-- Define o título que aparecerá na aba do navegador. -->
+
+    <style>
+        /* ============================= */
+        /* CONFIGURAÇÕES GERAIS           */
+        /* ============================= */
+
+        * {
+            /* Seleciona todos os elementos da página. */
+            box-sizing: border-box;
+            /* Faz padding e bordas serem considerados dentro do tamanho do elemento. */
+            margin: 0;
+            /* Remove margens padrão do navegador. */
+            padding: 0;
+            /* Remove espaçamentos internos padrão. */
+        }
+
+        html {
+            /* Configura o elemento principal do documento. */
+            scroll-behavior: smooth;
+            /* Faz a navegação entre seções acontecer suavemente. */
+        }
+
+        body {
+            /* Configura o corpo da página. */
+            font-family: Arial, Helvetica, sans-serif;
+            /* Define uma fonte simples, profissional e muito compatível. */
+            background: #f3f6fa;
+            /* Define a cor de fundo geral. */
+            color: #1f2937;
+            /* Define a cor principal dos textos. */
+            line-height: 1.7;
+            /* Melhora a leitura dos parágrafos. */
+        }
+
+        a {
+            /* Configura todos os links. */
+            text-decoration: none;
+            /* Remove o sublinhado padrão. */
+        }
+
+        button {
+            /* Configura todos os botões. */
+            font-family: inherit;
+            /* Faz o botão utilizar a mesma fonte da página. */
+            cursor: pointer;
+            /* Mostra o cursor de clique sobre o botão. */
+        }
+
+        /* ============================= */
+        /* CABEÇALHO                      */
+        /* ============================= */
+
+        header {
+            /* Configura o cabeçalho principal. */
+            background: linear-gradient(135deg, #111827, #243447);
+            /* Cria um fundo escuro com degradê profissional. */
+            color: white;
+            /* Define os textos do cabeçalho como brancos. */
+            padding: 55px 20px;
+            /* Cria espaço interno vertical e horizontal. */
+            text-align: center;
+            /* Centraliza os textos. */
+            border-bottom: 5px solid #c89b3c;
+            /* Cria uma linha dourada na parte inferior. */
+        }
+
+        header .numero {
+            /* Configura o pequeno identificador da aula. */
+            font-size: 1rem;
+            /* Define o tamanho do texto. */
+            color: #e5c76b;
+            /* Define uma cor dourada. */
+            font-weight: bold;
+            /* Deixa o texto em negrito. */
+            letter-spacing: 2px;
+            /* Aumenta o espaçamento entre as letras. */
+            margin-bottom: 12px;
+            /* Cria espaço abaixo do identificador. */
+        }
+
+        header h1 {
+            /* Configura o título principal. */
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            /* Faz o tamanho se adaptar ao tamanho da tela. */
+            margin-bottom: 15px;
+            /* Cria espaço abaixo do título. */
+        }
+
+        header p {
+            /* Configura o subtítulo do cabeçalho. */
+            max-width: 850px;
+            /* Limita a largura do texto. */
+            margin: auto;
+            /* Centraliza o bloco. */
+            color: #dbe4ee;
+            /* Define uma cor mais suave. */
+            font-size: 1.08rem;
+            /* Define um tamanho confortável para leitura. */
+        }
+
+        /* ============================= */
+        /* MENU DE NAVEGAÇÃO              */
+        /* ============================= */
+
+        nav {
+            /* Configura a barra de navegação. */
+            position: sticky;
+            /* Mantém a barra visível durante a rolagem. */
+            top: 0;
+            /* Faz a barra ficar grudada no topo. */
+            z-index: 1000;
+            /* Mantém a barra acima dos demais elementos. */
+            background: #ffffff;
+            /* Define fundo branco. */
+            border-bottom: 1px solid #dbe2ea;
+            /* Adiciona uma linha de separação. */
+            padding: 12px;
+            /* Cria espaço interno. */
+            display: flex;
+            /* Coloca os botões lado a lado. */
+            justify-content: center;
+            /* Centraliza os botões. */
+            gap: 10px;
+            /* Cria espaço entre os botões. */
+            flex-wrap: wrap;
+            /* Permite quebrar os botões em várias linhas no celular. */
+        }
+
+        nav button {
+            /* Configura os botões do menu. */
+            background: #eef2f7;
+            /* Define o fundo dos botões. */
+            color: #243447;
+            /* Define a cor do texto. */
+            border: 1px solid #d5dde7;
+            /* Adiciona uma borda discreta. */
+            border-radius: 8px;
+            /* Arredonda os cantos. */
+            padding: 10px 16px;
+            /* Define o tamanho interno. */
+            font-weight: bold;
+            /* Deixa os textos mais destacados. */
+            transition: 0.2s;
+            /* Cria uma transição suave. */
+        }
+
+        nav button:hover {
+            /* Define o comportamento ao passar o mouse. */
+            background: #243447;
+            /* Escurece o botão. */
+            color: white;
+            /* Deixa o texto branco. */
+            transform: translateY(-2px);
+            /* Move levemente o botão para cima. */
+        }
+
+        /* ============================= */
+        /* CONTAINER PRINCIPAL             */
+        /* ============================= */
+
+        main {
+            /* Configura o conteúdo principal. */
+            max-width: 1150px;
+            /* Limita a largura máxima. */
+            margin: auto;
+            /* Centraliza o conteúdo. */
+            padding: 35px 20px 80px;
+            /* Cria espaçamento ao redor do conteúdo. */
+        }
+
+        section {
+            /* Configura cada seção principal. */
+            background: white;
+            /* Define fundo branco. */
+            border-radius: 16px;
+            /* Arredonda os cantos. */
+            padding: 35px;
+            /* Cria espaço interno. */
+            margin-bottom: 30px;
+            /* Cria distância entre as seções. */
+            box-shadow: 0 8px 25px rgba(15, 23, 42, 0.07);
+            /* Cria uma sombra discreta. */
+            scroll-margin-top: 90px;
+            /* Evita que a barra fixa esconda o título ao navegar. */
+        }
+
+        section h2 {
+            /* Configura os títulos principais das seções. */
+            color: #243447;
+            /* Define a cor do título. */
+            font-size: 1.9rem;
+            /* Define o tamanho do título. */
+            margin-bottom: 20px;
+            /* Cria espaço abaixo. */
+            border-left: 5px solid #c89b3c;
+            /* Adiciona uma marca dourada lateral. */
+            padding-left: 14px;
+            /* Cria espaço entre a borda e o texto. */
+        }
+
+        section h3 {
+            /* Configura subtítulos. */
+            color: #334e68;
+            /* Define uma cor azul-acinzentada. */
+            margin-top: 25px;
+            /* Cria espaço acima. */
+            margin-bottom: 10px;
+            /* Cria espaço abaixo. */
+        }
+
+        p {
+            /* Configura os parágrafos. */
+            margin-bottom: 15px;
+            /* Cria espaço entre os parágrafos. */
+        }
+
+        strong {
+            /* Configura textos destacados. */
+            color: #172033;
+            /* Define uma cor mais forte. */
+        }
+
+        /* ============================= */
+        /* CAIXAS DE DESTAQUE              */
+        /* ============================= */
+
+        .destaque {
+            /* Cria uma caixa de destaque. */
+            background: #f7f1df;
+            /* Define fundo bege/dourado claro. */
+            border-left: 5px solid #c89b3c;
+            /* Adiciona uma borda dourada. */
+            padding: 20px;
+            /* Cria espaço interno. */
+            border-radius: 10px;
+            /* Arredonda os cantos. */
+            margin: 20px 0;
+            /* Cria espaço acima e abaixo. */
+        }
+
+        .alerta {
+            /* Cria uma caixa para uma observação histórica importante. */
+            background: #eef5fb;
+            /* Define fundo azul muito claro. */
+            border-left: 5px solid #4b7399;
+            /* Adiciona uma borda azul. */
+            padding: 20px;
+            /* Cria espaço interno. */
+            border-radius: 10px;
+            /* Arredonda os cantos. */
+            margin: 20px 0;
+            /* Cria espaçamento externo. */
+        }
+
+        /* ============================= */
+        /* TRILOGIA                       */
+        /* ============================= */
+
+        .trilogia {
+            /* Cria o conjunto de cartões da trilogia. */
+            display: grid;
+            /* Ativa o sistema de grade. */
+            grid-template-columns: repeat(3, 1fr);
+            /* Cria três colunas. */
+            gap: 20px;
+            /* Cria espaço entre os cartões. */
+            margin-top: 25px;
+            /* Cria espaço acima. */
+        }
+
+        .card {
+            /* Configura cada cartão. */
+            background: #f8fafc;
+            /* Define fundo claro. */
+            border: 1px solid #e1e7ef;
+            /* Define uma borda discreta. */
+            border-radius: 12px;
+            /* Arredonda os cantos. */
+            padding: 22px;
+            /* Cria espaço interno. */
+        }
+
+        .card h3 {
+            /* Configura o título de cada cartão. */
+            margin-top: 0;
+            /* Remove margem superior. */
+            color: #243447;
+            /* Define a cor. */
+        }
+
+        /* ============================= */
+        /* LINHA DO TEMPO                  */
+        /* ============================= */
+
+        .timeline {
+            /* Configura a linha do tempo. */
+            border-left: 4px solid #c89b3c;
+            /* Cria a linha vertical. */
+            padding-left: 25px;
+            /* Cria espaço entre a linha e o conteúdo. */
+        }
+
+        .timeline-item {
+            /* Configura cada acontecimento. */
+            position: relative;
+            /* Permite posicionar o marcador. */
+            margin-bottom: 25px;
+            /* Cria espaço entre os acontecimentos. */
+        }
+
+        .timeline-item::before {
+            /* Cria o marcador da linha do tempo. */
+            content: "";
+            /* Cria um elemento vazio. */
+            position: absolute;
+            /* Permite posicionamento livre. */
+            left: -37px;
+            /* Posiciona o marcador sobre a linha. */
+            top: 7px;
+            /* Define a posição vertical. */
+            width: 14px;
+            /* Define a largura. */
+            height: 14px;
+            /* Define a altura. */
+            background: #c89b3c;
+            /* Define a cor dourada. */
+            border-radius: 50%;
+            /* Transforma o marcador em círculo. */
+            border: 3px solid white;
+            /* Cria uma borda branca. */
+        }
+
+        .timeline-item strong {
+            /* Destaca as datas da linha do tempo. */
+            display: block;
+            /* Coloca a data em uma linha própria. */
+            color: #9a721f;
+            /* Define a cor dourada escura. */
+            margin-bottom: 4px;
+            /* Cria pequeno espaço. */
+        }
+
+        /* ============================= */
+        /* LISTAS                         */
+        /* ============================= */
+
+        ul,
+        ol {
+            /* Configura listas ordenadas e não ordenadas. */
+            padding-left: 25px;
+            /* Cria espaço para os marcadores. */
+            margin-bottom: 18px;
+            /* Cria espaço abaixo. */
+        }
+
+        li {
+            /* Configura cada item da lista. */
+            margin-bottom: 8px;
+            /* Cria espaço entre itens. */
+        }
+
+        /* ============================= */
+        /* GRID DE CONCEITOS               */
+        /* ============================= */
+
+        .grid {
+            /* Configura uma grade de cartões. */
+            display: grid;
+            /* Ativa o sistema de grade. */
+            grid-template-columns: repeat(2, 1fr);
+            /* Cria duas colunas. */
+            gap: 18px;
+            /* Cria espaço entre os cartões. */
+        }
+
+        /* ============================= */
+        /* QUESTÕES                        */
+        /* ============================= */
+
+        .questao {
+            /* Configura cada questão. */
+            background: #f8fafc;
+            /* Define fundo claro. */
+            border: 1px solid #dce4ed;
+            /* Define borda. */
+            border-radius: 12px;
+            /* Arredonda os cantos. */
+            padding: 25px;
+            /* Cria espaço interno. */
+            margin-bottom: 20px;
+            /* Cria espaço entre questões. */
+        }
+
+        .alternativas {
+            /* Configura as alternativas. */
+            margin-top: 15px;
+            /* Cria espaço acima. */
+        }
+
+        .gabarito {
+            /* Configura a caixa do gabarito. */
+            display: none;
+            /* Esconde o gabarito inicialmente. */
+            margin-top: 15px;
+            /* Cria espaço acima. */
+            background: #eaf7ef;
+            /* Define fundo verde claro. */
+            border-left: 5px solid #2e7d4f;
+            /* Define uma borda verde. */
+            padding: 18px;
+            /* Cria espaço interno. */
+            border-radius: 8px;
+            /* Arredonda os cantos. */
+        }
+
+        .btn-gabarito {
+            /* Configura o botão do gabarito. */
+            background: #243447;
+            /* Define fundo escuro. */
+            color: white;
+            /* Define texto branco. */
+            border: none;
+            /* Remove borda padrão. */
+            border-radius: 8px;
+            /* Arredonda os cantos. */
+            padding: 10px 16px;
+            /* Define tamanho interno. */
+            margin-top: 15px;
+            /* Cria espaço acima. */
+        }
+
+        .btn-gabarito:hover {
+            /* Configura o efeito do botão. */
+            background: #c89b3c;
+            /* Muda para dourado. */
+            color: #172033;
+            /* Muda a cor do texto. */
+        }
+
+        /* ============================= */
+        /* RODAPÉ                         */
+        /* ============================= */
+
+        footer {
+            /* Configura o rodapé. */
+            background: #111827;
+            /* Define fundo escuro. */
+            color: #dbe4ee;
+            /* Define cor clara para os textos. */
+            text-align: center;
+            /* Centraliza os textos. */
+            padding: 35px 20px;
+            /* Cria espaço interno. */
+        }
+
+        footer strong {
+            /* Configura o nome do professor no rodapé. */
+            color: #e5c76b;
+            /* Define a cor dourada. */
+        }
+
+        /* ============================= */
+        /* RESPONSIVIDADE                  */
+        /* ============================= */
+
+        @media (max-width: 850px) {
+            /* Aplica estas regras em telas menores. */
+
+            .trilogia {
+                /* Ajusta a trilogia. */
+                grid-template-columns: 1fr;
+                /* Coloca os cartões em uma única coluna. */
+            }
+
+            .grid {
+                /* Ajusta a grade. */
+                grid-template-columns: 1fr;
+                /* Coloca os cartões em uma única coluna. */
+            }
+
+            section {
+                /* Ajusta as seções. */
+                padding: 25px;
+                /* Diminui o espaço interno. */
+            }
+        }
+
+        @media (max-width: 600px) {
+            /* Aplica regras específicas para celulares. */
+
+            header {
+                /* Ajusta o cabeçalho. */
+                padding: 40px 15px;
+                /* Diminui o espaçamento. */
+            }
+
+            header h1 {
+                /* Ajusta o título. */
+                font-size: 2rem;
+                /* Reduz o tamanho. */
+            }
+
+            nav {
+                /* Ajusta o menu. */
+                justify-content: flex-start;
+                /* Alinha os botões à esquerda. */
+                overflow-x: auto;
+                /* Permite rolagem horizontal se necessário. */
+                flex-wrap: nowrap;
+                /* Mantém os botões na mesma linha. */
+            }
+
+            nav button {
+                /* Ajusta os botões. */
+                white-space: nowrap;
+                /* Evita quebra do texto do botão. */
+            }
+
+            main {
+                /* Ajusta o conteúdo principal. */
+                padding: 20px 12px 50px;
+                /* Diminui o espaçamento. */
+            }
+
+            section {
+                /* Ajusta as seções no celular. */
+                padding: 20px;
+                /* Diminui o espaço interno. */
+                border-radius: 12px;
+                /* Reduz o arredondamento. */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Inicia o conteúdo visível da página. -->
+
+    <header>
+        <!-- Inicia o cabeçalho. -->
+
+        <div class="numero">CURSO DE HISTÓRIA GERAL</div>
+        <!-- Identifica o curso. -->
+
+        <h1>1.3 — Mesopotâmia</h1>
+        <!-- Apresenta o título da aula. -->
+
+        <p>
+            Fund II • Ensino Médio • ENEM • Vestibular • Concursos
+        </p>
+        <!-- Apresenta o público-alvo do material. -->
+
+        <p>
+            Das primeiras cidades e da escrita cuneiforme à formação dos grandes Estados e impérios do Oriente Próximo.
+        </p>
+        <!-- Apresenta uma síntese do tema. -->
+    </header>
+
+    <nav>
+        <!-- Inicia o menu de navegação. -->
+
+        <button onclick="irPara('começo')">I — O Começo</button>
+        <!-- Leva o usuário para a primeira parte da trilogia. -->
+
+        <button onclick="irPara('desenvolvimento')">II — O Desenvolvimento</button>
+        <!-- Leva o usuário para a segunda parte. -->
+
+        <button onclick="irPara('legado')">III — O Legado</button>
+        <!-- Leva o usuário para a terceira parte. -->
+
+        <button onclick="irPara('questoes')">Questões</button>
+        <!-- Leva o usuário para as questões. -->
+
+        <button onclick="voltarPagina()">← Voltar</button>
+        <!-- Volta para a página anterior do navegador. -->
+    </nav>
+
+    <main>
+        <!-- Inicia o conteúdo principal. -->
+
+        <section id="começo">
+            <!-- Inicia a primeira parte da trilogia. -->
+<img src="https://tse4.mm.bing.net/th/id/OIP.8G8r8FFUE8W0UlXjcNT6vwHaD_?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" width="600" alt="">
+<img src="https://i.pinimg.com/originals/10/c4/04/10c404fbd5cd343a94fc8055a68e5fe1.jpg" width="600" alt="">
+            <h2>I — O COMEÇO</h2>
+            <!-- Título da primeira parte. -->
+
+            <p>
+                A Mesopotâmia corresponde, em sentido histórico e geográfico, à região situada entre os rios
+                <strong>Tigre e Eufrates</strong>, principalmente no espaço que atualmente compreende o Iraque
+                e áreas vizinhas do Oriente Próximo.
+            </p>
+            <!-- Apresenta a localização da Mesopotâmia. -->
+
+            <p>
+                O nome Mesopotâmia vem do grego e significa aproximadamente
+                <strong>“terra entre rios”</strong>. A disponibilidade de água e a fertilidade de determinadas
+                áreas das planícies aluviais favoreceram o desenvolvimento da agricultura, mas também exigiram
+                formas de organização coletiva para lidar com irrigação, cheias e distribuição da produção.
+            </p>
+            <!-- Explica a relação entre ambiente e organização social. -->
+
+            <div class="destaque">
+                <!-- Cria uma caixa de destaque. -->
+
+                <strong>Ideia central:</strong>
+                <!-- Destaca a ideia principal. -->
+
+                a Mesopotâmia não foi uma única civilização ou um único Estado durante toda a Antiguidade.
+                Ela foi uma região onde diferentes povos, cidades e impérios surgiram, disputaram poder,
+                incorporaram culturas anteriores e deixaram registros escritos.
+                <!-- Explica uma das principais ideias conceituais da aula. -->
+            </div>
+
+            <h3>1. O espaço geográfico</h3>
+            <!-- Cria um subtítulo. -->
+
+            <p>
+                Os rios Tigre e Eufrates atravessam uma região que favoreceu a agricultura, especialmente
+                quando comunidades desenvolveram técnicas de controle e aproveitamento da água.
+                A agricultura irrigada permitiu aumentar a produção e sustentar populações maiores.
+            </p>
+            <!-- Explica a importância dos rios. -->
+
+            <p>
+                Entretanto, o ambiente mesopotâmico também apresentava desafios. As cheias dos rios podiam ser
+                irregulares e destrutivas, enquanto a ausência de grandes barreiras naturais em algumas áreas
+                facilitava deslocamentos e invasões.
+            </p>
+            <!-- Explica os desafios ambientais e geográficos. -->
+
+            <h3>2. Da aldeia à cidade</h3>
+            <!-- Cria um subtítulo. -->
+
+            <p>
+                O crescimento da agricultura e do armazenamento de excedentes contribuiu para processos de
+                especialização do trabalho, aumento populacional e formação de centros urbanos.
+                Entre os primeiros grandes centros urbanos destaca-se <strong>Uruk</strong>, no sul da Mesopotâmia.
+            </p>
+            <!-- Explica o processo de urbanização. -->
+
+            <p>
+                O desenvolvimento urbano não significou apenas aumento populacional. As cidades passaram a
+                concentrar templos, atividades administrativas, artesãos, comerciantes, trabalhadores agrícolas
+                e estruturas de poder.
+            </p>
+            <!-- Explica a complexificação da sociedade urbana. -->
+
+            <h3>3. Os sumérios e as cidades-Estado</h3>
+            <!-- Cria um subtítulo. -->
+
+            <p>
+                Na região conhecida como Suméria desenvolveram-se diversas cidades-Estado, entre elas
+                <strong>Ur, Uruk, Lagash e Eridu</strong>. Cada cidade possuía instituições políticas e religiosas
+                próprias, embora compartilhassem elementos culturais e linguísticos.
+            </p>
+            <!-- Apresenta as cidades-Estado sumérias. -->
+
+            <p>
+                Os templos ocupavam posição importante na vida econômica e religiosa. A administração dos
+                recursos exigia registros, e esse processo contribuiu para o desenvolvimento da
+                <strong>escrita cuneiforme</strong>.
+            </p>
+            <!-- Explica uma relação entre administração e escrita. -->
+
+            <h3>4. O nascimento da escrita cuneiforme</h3>
+            <!-- Cria um subtítulo. -->
+
+            <p>
+                A escrita cuneiforme foi registrada principalmente em tabletes de argila. Seus primeiros usos
+                conhecidos estavam ligados a necessidades administrativas, como controle de produtos,
+                trabalhadores, tributos e transações.
+            </p>
+            <!-- Explica os primeiros usos da escrita. -->
+
+            <div class="alerta">
+                <!-- Cria uma observação histórica. -->
+
+                <strong>Cuidado com uma simplificação:</strong>
+                <!-- Destaca o alerta. -->
+
+                não devemos imaginar que a escrita surgiu inicialmente apenas para contar histórias.
+                Registros econômicos e administrativos tiveram papel importante no desenvolvimento das
+                primeiras tradições escritas da Mesopotâmia.
+                <!-- Corrige uma visão simplificada sobre a origem da escrita. -->
+            </div>
+
+            <h3>5. Religião e poder</h3>
+            <!-- Cria um subtítulo. -->
+
+            <p>
+                As sociedades mesopotâmicas eram predominantemente <strong>politeístas</strong>.
+                Diferentes cidades cultuavam divindades específicas, associadas a forças da natureza,
+                à fertilidade, à guerra, à justiça e a outros aspectos da vida social.
+            </p>
+            <!-- Explica a religiosidade mesopotâmica. -->
+
+            <p>
+                A religião estava profundamente ligada ao poder político e à organização da sociedade.
+                Os templos funcionavam também como importantes centros econômicos e administrativos.
+            </p>
+            <!-- Explica a relação entre religião e poder. -->
+
+            <div class="trilogia">
+                <!-- Inicia os três cartões da trilogia. -->
+
+                <div class="card">
+                    <!-- Primeiro cartão. -->
+
+                    <h3>Ambiente</h3>
+                    <!-- Título do cartão. -->
+
+                    <p>
+                        Tigre + Eufrates + agricultura + irrigação + fertilidade das planícies.
+                    </p>
+                    <!-- Conteúdo do cartão. -->
+                </div>
+
+                <div class="card">
+                    <!-- Segundo cartão. -->
+
+                    <h3>Sociedade</h3>
+                    <!-- Título do cartão. -->
+
+                    <p>
+                        Crescimento populacional + especialização do trabalho + hierarquias + cidades.
+                    </p>
+                    <!-- Conteúdo do cartão. -->
+                </div>
+
+                <div class="card">
+                    <!-- Terceiro cartão. -->
+
+                    <h3>Poder</h3>
+                    <!-- Título do cartão. -->
+
+                    <p>
+                        Templos + autoridades políticas + administração + guerra + controle de recursos.
+                    </p>
+                    <!-- Conteúdo do cartão. -->
+                </div>
+            </div>
+        </section>
+
+        <section id="desenvolvimento">
+            <!-- Inicia a segunda parte da trilogia. -->
+
+            <h2>II — O DESENVOLVIMENTO</h2>
+            <!-- Título da segunda parte. -->
+
+            <p>
+                Ao longo da Antiguidade, a Mesopotâmia foi marcada pela sucessão de diferentes povos,
+                cidades e Estados. Não houve uma evolução linear de uma única civilização.
+                Houve disputas, conquistas, incorporações culturais e transformações políticas.
+            </p>
+            <!-- Introduz a diversidade política da Mesopotâmia. -->
+
+            <h3>1. Império Acádio</h3>
+            <!-- Cria um subtítulo. -->
+
+            <p>
+                No século XXIV a.C., aproximadamente, <strong>Sargão de Acádia</strong> construiu um Estado
+                expansionista que reuniu sob seu domínio diversas cidades mesopotâmicas.
+                O chamado Império Acádio é frequentemente estudado como um dos primeiros exemplos conhecidos
+                de formação imperial na região.
+            </p>
+            <!-- Explica o Império Acádio. -->
+
+            <h3>2. Babilônia e Hamurábi</h3>
+            <!-- Cria um subtítulo. -->
+
+            <p>
+                Séculos depois, a cidade da <strong>Babilônia</strong> tornou-se centro de um importante Estado.
+                Durante o reinado de <strong>Hamurábi</strong>, no século XVIII a.C., esse Estado ampliou seu
+                domínio sobre diferentes territórios da Mesopotâmia.
+            </p>
+            <!-- Apresenta Hamurábi e Babilônia. -->
+
+            <p>
+                Hamurábi ficou especialmente conhecido por uma coleção de decisões e normas jurídicas gravadas
+                em pedra, tradicionalmente chamada de <strong>Código de Hamurábi</strong>.
+                O documento é uma importante fonte para estudar relações sociais, propriedade, trabalho,
+                família e punições na sociedade babilônica.
+            </p>
+            <!-- Explica o Código de Hamurábi sem afirmar que foi o primeiro código jurídico da história. -->
+
+            <div class="alerta">
+                <!-- Cria uma caixa de atenção. -->
+
+                <strong>Para prova:</strong>
+                <!-- Destaca a orientação. -->
+
+                não diga simplesmente que “o Código de Hamurábi criou as primeiras leis”.
+                Já existiam outras tradições jurídicas escritas na Mesopotâmia.
+                O documento de Hamurábi é importante porque preserva uma ampla coleção de normas e
+                decisões associadas ao poder babilônico.
+                <!-- Corrige uma simplificação muito comum em provas. -->
+            </div>
+
+            <h3>3. Assírios</h3>
+            <!-- Cria um subtítulo. -->
+
+            <p>
+                Os <strong>assírios</strong> desenvolveram um Estado militarizado no norte da Mesopotâmia.
+                Entre os séculos IX e VII a.C., aproximadamente, construíram um poderoso império que alcançou
+                extensas áreas do Oriente Próximo.
+            </p>
+            <!-- Explica a expansão assíria. -->
+
+            <p>
+                O exército teve papel central na expansão territorial, enquanto deportações, tributos e
+                administração provincial ajudavam a controlar territórios conquistados.
+            </p>
+            <!-- Explica mecanismos de controle imperial. -->
+
+            <h3>4. O Império Neobabilônico</h3>
+            <!-- Cria um subtítulo. -->
+
+            <p>
+                Após o enfraquecimento do poder assírio, a Babilônia voltou a exercer grande influência.
+                O chamado <strong>Império Neobabilônico</strong>, especialmente durante o reinado de
+                <strong>Nabucodonosor II</strong>, tornou-se uma das principais potências do Oriente Próximo
+                no século VI a.C.
+            </p>
+            <!-- Explica o período neobabilônico. -->
+
+            <h3>5. Sociedade e economia</h3>
+            <!-- Cria um subtítulo. -->
+
+            <p>
+                A sociedade mesopotâmica apresentava forte diferenciação social.
+                Havia autoridades políticas e religiosas, escribas, comerciantes, artesãos, agricultores,
+                trabalhadores dependentes e pessoas submetidas a diferentes formas de escravidão.
+            </p>
+            <!-- Explica a estrutura social. -->
+
+            <p>
+                A economia estava relacionada à agricultura irrigada, criação de animais, artesanato,
+                comércio e cobrança de tributos. O controle dos recursos e sua distribuição exigiam
+                estruturas administrativas complexas.
+            </p>
+            <!-- Explica a economia. -->
+
+            <h3>6. Os zigurates</h3>
+            <!-- Cria um subtítulo. -->
+
+            <p>
+                Os <strong>zigurates</strong> eram grandes construções religiosas em forma de plataformas
+                escalonadas. Eles estavam associados aos complexos templários e demonstram a importância
+                da religião e da monumentalidade na organização das cidades mesopotâmicas.
+            </p>
+            <!-- Explica os zigurates. -->
+
+            <h3>7. Conhecimentos científicos e culturais</h3>
+            <!-- Cria um subtítulo. -->
+
+            <p>
+                As sociedades mesopotâmicas desenvolveram conhecimentos matemáticos, astronômicos e
+                calendáricos relacionados às necessidades práticas e religiosas.
+                A observação dos astros, a contagem do tempo e os cálculos ligados à administração
+                e à construção fazem parte desse legado.
+            </p>
+            <!-- Explica os conhecimentos científicos. -->
+
+            <div class="timeline">
+                <!-- Inicia a linha do tempo. -->
+
+                <div class="timeline-item">
+                    <!-- Primeiro item. -->
+
+                    <strong>c. 4000–3000 a.C.</strong>
+                    <!-- Indica período aproximado. -->
+
+                    <p>
+                        Crescimento de comunidades urbanas e desenvolvimento de centros como Uruk.
+                    </p>
+                    <!-- Explica o acontecimento. -->
+                </div>
+
+                <div class="timeline-item">
+                    <!-- Segundo item. -->
+
+                    <strong>Final do IV milênio a.C.</strong>
+                    <!-- Indica período aproximado. -->
+
+                    <p>
+                        Consolidação de formas iniciais de escrita cuneiforme associadas à administração.
+                    </p>
+                    <!-- Explica o acontecimento. -->
+                </div>
+
+                <div class="timeline-item">
+                    <!-- Terceiro item. -->
+
+                    <strong>c. 2334–2154 a.C.</strong>
+                    <!-- Indica o período aproximado do Império Acádio. -->
+
+                    <p>
+                        Formação e expansão do Império Acádio associado a Sargão.
+                    </p>
+                    <!-- Explica o acontecimento. -->
+                </div>
+
+                <div class="timeline-item">
+                    <!-- Quarto item. -->
+
+                    <strong>c. 1792–1750 a.C.</strong>
+                    <!-- Indica o período tradicionalmente associado ao reinado de Hamurábi. -->
+
+                    <p>
+                        Reinado de Hamurábi e expansão do poder babilônico.
+                    </p>
+                    <!-- Explica o acontecimento. -->
+                </div>
+
+                <div class="timeline-item">
+                    <!-- Quinto item. -->
+
+                    <strong>c. 911–609 a.C.</strong>
+                    <!-- Indica o período aproximado do Império Neoassírio. -->
+
+                    <p>
+                        Grande expansão territorial assíria pelo Oriente Próximo.
+                    </p>
+                    <!-- Explica o acontecimento. -->
+                </div>
+
+                <div class="timeline-item">
+                    <!-- Sexto item. -->
+
+                    <strong>626–539 a.C.</strong>
+                    <!-- Indica o período aproximado do Império Neobabilônico. -->
+
+                    <p>
+                        Novo período de predominância babilônica na região.
+                    </p>
+                    <!-- Explica o acontecimento. -->
+                </div>
+
+                <div class="timeline-item">
+                    <!-- Sétimo item. -->
+
+                    <strong>539 a.C.</strong>
+                    <!-- Indica um marco político importante. -->
+
+                    <p>
+                        A Babilônia é conquistada pelo Império Persa sob Ciro II.
+                    </p>
+                    <!-- Explica a transição política. -->
+                </div>
+            </div>
+        </section>
+
+        <section id="legado">
+            <!-- Inicia a terceira parte da trilogia. -->
+
+            <h2>III — O LEGADO E O MUNDO ATUAL</h2>
+            <!-- Título da terceira parte. -->
+
+            <p>
+                O legado da Mesopotâmia não deve ser entendido como uma lista de “invenções isoladas”.
+                É mais importante perceber como essas sociedades participaram de processos fundamentais
+                para a história humana: urbanização, administração, escrita, formação de Estados,
+                construção de sistemas jurídicos e desenvolvimento de conhecimentos.
+            </p>
+            <!-- Apresenta uma interpretação histórica mais ampla. -->
+
+            <h3>1. A escrita e a administração</h3>
+            <!-- Cria um subtítulo. -->
+
+            <p>
+                A escrita cuneiforme permitiu registrar informações econômicas, administrativas,
+                jurídicas, religiosas e literárias. Tabletes de argila são hoje fontes fundamentais
+                para pesquisadores reconstruírem aspectos da vida dessas sociedades.
+            </p>
+            <!-- Explica a importância da escrita como legado e fonte histórica. -->
+
+            <h3>2. Direito e organização social</h3>
+            <!-- Cria um subtítulo. -->
+
+            <p>
+                As coleções jurídicas mesopotâmicas mostram que conflitos envolvendo propriedade,
+                trabalho, família, comércio e outras relações sociais eram objeto de normas e decisões.
+                Elas também revelam desigualdades sociais existentes naquele contexto histórico.
+            </p>
+            <!-- Explica o legado jurídico e seus limites. -->
+
+            <h3>3. Urbanização e Estado</h3>
+            <!-- Cria um subtítulo. -->
+
+            <p>
+                O estudo das cidades mesopotâmicas ajuda a compreender um processo fundamental da história:
+                a concentração populacional, econômica, religiosa e política em centros urbanos.
+            </p>
+            <!-- Explica a importância histórica da urbanização. -->
+
+            <h3>4. A Mesopotâmia no mundo contemporâneo</h3>
+            <!-- Cria um subtítulo. -->
+
+            <p>
+                Grande parte dos territórios historicamente associados à Mesopotâmia encontra-se atualmente
+                no <strong>Iraque</strong>, com áreas relacionadas ao espaço histórico também alcançando
+                regiões de países vizinhos.
+            </p>
+            <!-- Faz a conexão entre a região histórica e o mapa atual. -->
+
+            <p>
+                A região possui enorme importância arqueológica. Escavações, museus, tabletes, inscrições,
+                ruínas e monumentos permitem aos historiadores e arqueólogos estudar sociedades que viveram
+                há milhares de anos.
+            </p>
+            <!-- Explica a importância arqueológica atual. -->
+
+            <div class="destaque">
+                <!-- Cria uma caixa de síntese. -->
+
+                <strong>História e presente:</strong>
+                <!-- Destaca o conceito. -->
+
+                estudar a Mesopotâmia não significa dizer que as sociedades atuais do Iraque sejam
+                “iguais” às sociedades antigas. O objetivo é compreender processos históricos,
+                transformações e permanências sem apagar as diferenças entre passado e presente.
+                <!-- Evita uma comparação anacrônica. -->
+            </div>
+
+            <h3>5. Relação com a História do Brasil</h3>
+            <!-- Cria um subtítulo. -->
+
+            <p>
+                A Mesopotâmia não possui uma relação histórica direta de formação com o Brasil.
+                Entretanto, seu estudo permite trabalhar conceitos importantes para compreender outras
+                sociedades antigas e posteriores, como Estado, cidade, escrita, poder, religião,
+                trabalho, tributação e organização social.
+            </p>
+            <!-- Estabelece uma conexão didática com o Brasil. -->
+
+            <h3>6. O que o professor precisa dominar</h3>
+            <!-- Cria um subtítulo. -->
+
+            <ul>
+                <!-- Inicia a lista de pontos fundamentais. -->
+
+                <li>
+                    A Mesopotâmia é uma região histórica, não uma única civilização.
+                </li>
+                <!-- Primeiro ponto. -->
+
+                <li>
+                    Tigre e Eufrates tiveram importância para agricultura, circulação e organização das sociedades.
+                </li>
+                <!-- Segundo ponto. -->
+
+                <li>
+                    Sumérios estiveram ligados ao desenvolvimento de importantes cidades-Estado no sul da região.
+                </li>
+                <!-- Terceiro ponto. -->
+
+                <li>
+                    A escrita cuneiforme possui forte relação com necessidades administrativas.
+                </li>
+                <!-- Quarto ponto. -->
+
+                <li>
+                    Acádios, babilônios, assírios e neobabilônios formaram diferentes estruturas políticas.
+                </li>
+                <!-- Quinto ponto. -->
+
+                <li>
+                    O Código de Hamurábi é uma importante fonte jurídica, mas não deve ser apresentado como a primeira lei da humanidade.
+                </li>
+                <!-- Sexto ponto. -->
+
+                <li>
+                    Religião, poder político e economia estavam profundamente relacionados.
+                </li>
+                <!-- Sétimo ponto. -->
+
+                <li>
+                    A sociedade era hierarquizada e apresentava diferentes formas de trabalho dependente e escravidão.
+                </li>
+                <!-- Oitavo ponto. -->
+            </ul>
+
+            <h3>7. O que colocar na lousa</h3>
+            <!-- Cria um subtítulo. -->
+
+            <div class="destaque">
+                <!-- Cria a caixa para o resumo da lousa. -->
+
+                <p>
+                    <strong>MESOPOTÂMIA</strong>
+                </p>
+                <!-- Título do resumo. -->
+
+                <p>
+                    Tigre + Eufrates → agricultura → excedente → cidades → divisão do trabalho → Estado
+                </p>
+                <!-- Primeira sequência lógica. -->
+
+                <p>
+                    Suméria → cidades-Estado → escrita cuneiforme → templos → zigurates
+                </p>
+                <!-- Segunda sequência. -->
+
+                <p>
+                    Acádios → Babilônia/Hamurábi → Assírios → Neobabilônicos → Persas
+                </p>
+                <!-- Terceira sequência. -->
+
+                <p>
+                    Legados → escrita + urbanização + administração + conhecimentos + tradições jurídicas
+                </p>
+                <!-- Quarta sequência. -->
+            </div>
+
+            <h3>8. Conceitos essenciais</h3>
+            <!-- Cria um subtítulo. -->
+
+            <div class="grid">
+                <!-- Inicia a grade de conceitos. -->
+
+                <div class="card">
+                    <!-- Primeiro conceito. -->
+
+                    <h3>Mesopotâmia</h3>
+                    <!-- Nome do conceito. -->
+
+                    <p>
+                        Região histórica localizada entre os rios Tigre e Eufrates.
+                    </p>
+                    <!-- Explicação. -->
+                </div>
+
+                <div class="card">
+                    <!-- Segundo conceito. -->
+
+                    <h3>Cidade-Estado</h3>
+                    <!-- Nome do conceito. -->
+
+                    <p>
+                        Cidade politicamente organizada com instituições próprias e território sob sua influência.
+                    </p>
+                    <!-- Explicação. -->
+                </div>
+
+                <div class="card">
+                    <!-- Terceiro conceito. -->
+
+                    <h3>Cuneiforme</h3>
+                    <!-- Nome do conceito. -->
+
+                    <p>
+                        Sistema de escrita registrado principalmente em tabletes de argila por meio de sinais.
+                    </p>
+                    <!-- Explicação. -->
+                </div>
+
+                <div class="card">
+                    <!-- Quarto conceito. -->
+
+                    <h3>Zigurate</h3>
+                    <!-- Nome do conceito. -->
+
+                    <p>
+                        Construção religiosa monumental associada aos complexos templários mesopotâmicos.
+                    </p>
+                    <!-- Explicação. -->
+                </div>
+
+                <div class="card">
+                    <!-- Quinto conceito. -->
+
+                    <h3>Império</h3>
+                    <!-- Nome do conceito. -->
+
+                    <p>
+                        Estrutura política que exerce domínio sobre diferentes povos e territórios.
+                    </p>
+                    <!-- Explicação. -->
+                </div>
+
+                <div class="card">
+                    <!-- Sexto conceito. -->
+
+                    <h3>Tributo</h3>
+                    <!-- Nome do conceito. -->
+
+                    <p>
+                        Pagamento ou entrega de recursos exigidos por uma autoridade ou poder dominante.
+                    </p>
+                    <!-- Explicação. -->
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <!-- Inicia a seção de causas e consequências. -->
+
+            <h2>Relações de Causa e Consequência</h2>
+            <!-- Título da seção. -->
+
+            <div class="grid">
+                <!-- Inicia a grade. -->
+
+                <div class="card">
+                    <!-- Primeiro cartão. -->
+
+                    <h3>Controle da água</h3>
+                    <!-- Título. -->
+
+                    <p>
+                        Necessidade de administrar a água → obras e organização coletiva → aumento da produção agrícola.
+                    </p>
+                    <!-- Relação causal. -->
+                </div>
+
+                <div class="card">
+                    <!-- Segundo cartão. -->
+
+                    <h3>Excedente agrícola</h3>
+                    <!-- Título. -->
+
+                    <p>
+                        Produção excedente → armazenamento e distribuição → especialização do trabalho e crescimento urbano.
+                    </p>
+                    <!-- Relação causal. -->
+                </div>
+
+                <div class="card">
+                    <!-- Terceiro cartão. -->
+
+                    <h3>Crescimento das cidades</h3>
+                    <!-- Título. -->
+
+                    <p>
+                        Maior complexidade social → necessidade de registros → desenvolvimento e ampliação da escrita.
+                    </p>
+                    <!-- Relação causal. -->
+                </div>
+
+                <div class="card">
+                    <!-- Quarto cartão. -->
+
+                    <h3>Disputas territoriais</h3>
+                    <!-- Título. -->
+
+                    <p>
+                        Competição por recursos e territórios → guerras → expansão de Estados e formação de impérios.
+                    </p>
+                    <!-- Relação causal. -->
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <!-- Inicia a seção de BNCC. -->
+
+            <h2>BNCC — Orientação Curricular</h2>
+            <!-- Título da seção. -->
+
+            <div class="destaque">
+                <!-- Cria uma caixa de destaque. -->
+
+                <p>
+                    <strong>EF06HI07</strong>
+                </p>
+                <!-- Apresenta o código da habilidade. -->
+
+                <p>
+                    Identificar aspectos e formas de registro das sociedades antigas na África,
+                    no Oriente Médio e nas Américas, distinguindo alguns significados presentes
+                    na cultura material e na tradição oral dessas sociedades.
+                </p>
+                <!-- Apresenta a habilidade relacionada ao estudo das sociedades antigas. -->
+
+                <p>
+                    Para Mesopotâmia, essa habilidade pode ser trabalhada especialmente por meio da
+                    escrita cuneiforme, dos tabletes de argila, dos monumentos, dos objetos arqueológicos
+                    e de outras formas de registro e cultura material.
+                </p>
+                <!-- Explica como aplicar a habilidade ao tema. -->
+            </div>
+        </section>
+
+        <section>
+            <!-- Inicia a seção de foco em provas. -->
+
+            <h2>ENEM • Vestibular • Concurso</h2>
+            <!-- Título da seção. -->
+
+            <h3>O que mais merece atenção?</h3>
+            <!-- Subtítulo. -->
+
+            <ul>
+                <!-- Inicia a lista. -->
+
+                <li>
+                    Relação entre rios, agricultura e organização social.
+                </li>
+                <!-- Primeiro ponto. -->
+
+                <li>
+                    Processo de urbanização e formação das cidades-Estado.
+                </li>
+                <!-- Segundo ponto. -->
+
+                <li>
+                    Escrita cuneiforme e administração.
+                </li>
+                <!-- Terceiro ponto. -->
+
+                <li>
+                    Religião e poder político.
+                </li>
+                <!-- Quarto ponto. -->
+
+                <li>
+                    Diferenças entre Sumérios, Acádios, Babilônios e Assírios.
+                </li>
+                <!-- Quinto ponto. -->
+
+                <li>
+                    Código de Hamurábi como fonte histórica.
+                </li>
+                <!-- Sexto ponto. -->
+
+                <li>
+                    Formação e funcionamento dos impérios.
+                </li>
+                <!-- Sétimo ponto. -->
+            </ul>
+        </section>
+
+        <section id="questoes">
+            <!-- Inicia a seção de questões. -->
+
+            <h2>Questões — Modelo ENEM</h2>
+            <!-- Título da seção. -->
+
+            <div class="questao">
+                <!-- Inicia a primeira questão. -->
+
+                <h3>Questão 1</h3>
+                <!-- Número da questão. -->
+
+                <p>
+                    O desenvolvimento das primeiras cidades mesopotâmicas esteve relacionado a transformações
+                    econômicas, sociais e políticas ocorridas ao longo de milhares de anos.
+                </p>
+                <!-- Contextualização da questão. -->
+
+                <p>
+                    Considerando esse processo histórico, assinale a alternativa que apresenta uma relação adequada.
+                </p>
+                <!-- Comando da questão. -->
+
+                <div class="alternativas">
+                    <!-- Inicia as alternativas. -->
+
+                    <p>
+                        <strong>A)</strong> A urbanização ocorreu exclusivamente porque a região possuía abundantes florestas.
+                    </p>
+                    <!-- Alternativa A. -->
+
+                    <p>
+                        <strong>B)</strong> A agricultura, o controle da água, o armazenamento de excedentes e a organização do trabalho contribuíram para a formação de sociedades urbanas complexas.
+                    </p>
+                    <!-- Alternativa B. -->
+
+                    <p>
+                        <strong>C)</strong> As cidades mesopotâmicas surgiram somente após a conquista persa.
+                    </p>
+                    <!-- Alternativa C. -->
+
+                    <p>
+                        <strong>D)</strong> A escrita foi criada inicialmente para substituir completamente a agricultura.
+                    </p>
+                    <!-- Alternativa D. -->
+
+                    <p>
+                        <strong>E)</strong> As cidades-Estado não possuíam relações com instituições religiosas.
+                    </p>
+                    <!-- Alternativa E. -->
+                </div>
+
+                <button class="btn-gabarito" onclick="mostrarGabarito('gabarito1')">
+                    Mostrar gabarito
+                </button>
+                <!-- Botão que revela a resposta. -->
+
+                <div class="gabarito" id="gabarito1">
+                    <!-- Caixa escondida do gabarito. -->
+
+                    <strong>Gabarito: B.</strong>
+                    <!-- Apresenta a resposta correta. -->
+
+                    <p>
+                        O crescimento urbano esteve relacionado à agricultura, aos excedentes,
+                        à especialização do trabalho, à administração dos recursos e à organização política.
+                    </p>
+                    <!-- Explica a resposta. -->
+                </div>
+            </div>
+
+            <div class="questao">
+                <!-- Inicia a segunda questão. -->
+
+                <h3>Questão 2</h3>
+                <!-- Número da questão. -->
+
+                <p>
+                    Tabletes de argila, inscrições e monumentos são utilizados pelos historiadores para
+                    investigar diferentes aspectos das sociedades mesopotâmicas.
+                </p>
+                <!-- Contextualização. -->
+
+                <p>
+                    Nesse sentido, esses materiais devem ser compreendidos como:
+                </p>
+                <!-- Comando. -->
+
+                <div class="alternativas">
+                    <!-- Inicia as alternativas. -->
+
+                    <p>
+                        <strong>A)</strong> documentos completamente neutros, que apresentam todos os acontecimentos do passado.
+                    </p>
+                    <!-- Alternativa A. -->
+
+                    <p>
+                        <strong>B)</strong> fontes históricas que precisam ser analisadas considerando contexto, finalidade, autoria e limites.
+                    </p>
+                    <!-- Alternativa B. -->
+
+                    <p>
+                        <strong>C)</strong> registros sem qualquer utilidade para a pesquisa histórica.
+                    </p>
+                    <!-- Alternativa C. -->
+
+                    <p>
+                        <strong>D)</strong> provas de que todas as sociedades mesopotâmicas possuíam exatamente a mesma organização.
+                    </p>
+                    <!-- Alternativa D. -->
+
+                    <p>
+                        <strong>E)</strong> textos produzidos exclusivamente por agricultores sem participação de administradores ou escribas.
+                    </p>
+                    <!-- Alternativa E. -->
+                </div>
+
+                <button class="btn-gabarito" onclick="mostrarGabarito('gabarito2')">
+                    Mostrar gabarito
+                </button>
+                <!-- Botão que revela a resposta. -->
+
+                <div class="gabarito" id="gabarito2">
+                    <!-- Caixa escondida do segundo gabarito. -->
+
+                    <strong>Gabarito: B.</strong>
+                    <!-- Apresenta a resposta correta. -->
+
+                    <p>
+                        Uma fonte histórica não “fala sozinha”. O pesquisador precisa analisar quem a produziu,
+                        em qual contexto, com qual finalidade e quais informações ela permite ou não compreender.
+                    </p>
+                    <!-- Explica a resposta. -->
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <!-- Inicia a seção de revisão rápida. -->
+
+            <h2>Revisão em 60 segundos</h2>
+            <!-- Título da revisão. -->
+
+            <div class="destaque">
+                <!-- Cria a caixa de revisão. -->
+
+                <p>
+                    <strong>Mesopotâmia</strong> = região entre Tigre e Eufrates.
+                </p>
+                <!-- Primeiro ponto. -->
+
+                <p>
+                    <strong>Base econômica</strong> = agricultura + irrigação + criação + comércio.
+                </p>
+                <!-- Segundo ponto. -->
+
+                <p>
+                    <strong>Urbanização</strong> = crescimento das cidades e especialização do trabalho.
+                </p>
+                <!-- Terceiro ponto. -->
+
+                <p>
+                    <strong>Sumérios</strong> = cidades-Estado + escrita cuneiforme + templos.
+                </p>
+                <!-- Quarto ponto. -->
+
+                <p>
+                    <strong>Acádios</strong> = formação de um grande Estado territorial.
+                </p>
+                <!-- Quinto ponto. -->
+
+                <p>
+                    <strong>Babilônia</strong> = Hamurábi + importante tradição jurídica.
+                </p>
+                <!-- Sexto ponto. -->
+
+                <p>
+                    <strong>Assírios</strong> = grande expansão militar e imperial.
+                </p>
+                <!-- Sétimo ponto. -->
+
+                <p>
+                    <strong>Legado</strong> = escrita + administração + urbanização + conhecimentos + cultura material.
+                </p>
+                <!-- Oitavo ponto. -->
+            </div>
+        </section>
+
+        <section>
+            <!-- Inicia a seção de retorno ao topo. -->
+
+            <h2>Encerramento da Aula</h2>
+            <!-- Título da seção. -->
+
+            <p>
+                Compreender a Mesopotâmia é compreender um dos grandes processos de transformação da história:
+                a passagem de comunidades agrícolas para sociedades urbanas complexas, com instituições,
+                hierarquias, sistemas administrativos, registros escritos e diferentes formas de poder.
+            </p>
+            <!-- Conclusão da aula. -->
+
+            <p>
+                O estudo também mostra que a História não é uma sequência simples de “povos que substituem povos”.
+                Diferentes sociedades mesopotâmicas herdaram conhecimentos, transformaram instituições,
+                conquistaram territórios e produziram novas experiências políticas e culturais.
+            </p>
+            <!-- Conclusão historiográfica. -->
+
+            <div class="destaque">
+                <!-- Cria o fechamento da aula. -->
+
+                <strong>Professor:</strong> Professor Marcelo Oliveira
+                <!-- Assinatura do professor. -->
+
+                <br>
+                <!-- Quebra de linha. -->
+
+                <strong>Curso:</strong> História Geral — Fund II • Ensino Médio • ENEM • Vestibular • Concursos
+                <!-- Identificação do curso. -->
+            </div>
+
+            <button class="btn-gabarito" onclick="irPara('começo')">
+                ↑ Voltar ao topo da aula
+            </button>
+            <!-- Botão que leva o usuário novamente para o início da primeira parte. -->
+        </section>
+    </main>
+
+    <footer>
+        <!-- Inicia o rodapé. -->
+
+        <p>
+            Curso de História Geral — <strong>Professor Marcelo Oliveira</strong>
+        </p>
+        <!-- Apresenta a assinatura do curso. -->
+
+        <p>
+            Material didático para estudo, revisão e preparação para provas.
+        </p>
+        <!-- Apresenta a finalidade do material. -->
+    </footer>
+
+    <script>
+        // ==========================================
+        // NAVEGAÇÃO ENTRE AS SEÇÕES
+        // ==========================================
+
+        function irPara(id) {
+            // Cria uma função para levar o usuário até uma seção específica.
+
+            const elemento = document.getElementById(id);
+            // Procura na página o elemento que possui o ID informado.
+
+            if (elemento) {
+                // Verifica se o elemento realmente existe.
+
+                elemento.scrollIntoView({
+                    // Faz a página rolar até o elemento.
+
+                    behavior: "smooth",
+                    // Faz a rolagem acontecer suavemente.
+
+                    block: "start"
+                    // Posiciona o início da seção no topo da área visível.
+                });
+            }
+        }
+
+        // ==========================================
+        // MOSTRAR E ESCONDER GABARITO
+        // ==========================================
+
+        function mostrarGabarito(id) {
+            // Cria uma função para mostrar ou esconder um gabarito.
+
+            const gabarito = document.getElementById(id);
+            // Localiza o gabarito pelo ID.
+
+            if (gabarito.style.display === "block") {
+                // Verifica se o gabarito já está aparecendo.
+
+                gabarito.style.display = "none";
+                // Esconde o gabarito.
+            } else {
+                // Executa caso o gabarito esteja escondido.
+
+                gabarito.style.display = "block";
+                // Mostra o gabarito.
+            }
+        }
+
+        // ==========================================
+        // BOTÃO VOLTAR
+        // ==========================================
+
+        function voltarPagina() {
+            // Cria uma função para voltar à página anterior.
+
+            window.history.back();
+            // Utiliza o histórico do navegador para retornar à página anterior.
+        }
+    </script>
+    <script>
+  const paginaAnterior = "02 - Egito.html";
+  const paginaProxima = "04 - fenicia.html";
+</script>
+<script src="navegacao.js"></script>
+</body>
+<!-- Finaliza o conteúdo visível da página. -->
+
+</html>
+<!-- Finaliza o documento HTML. -->

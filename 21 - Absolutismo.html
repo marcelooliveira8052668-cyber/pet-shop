@@ -1,0 +1,1162 @@
+<!DOCTYPE html> <!-- Define o documento como HTML5. -->
+<html lang="pt-BR"> <!-- Informa que o conteúdo está em português do Brasil. -->
+
+<head> <!-- Inicia as configurações da página. -->
+    <meta charset="UTF-8"> <!-- Permite acentos e caracteres especiais. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Torna o layout responsivo. -->
+    <title>1.21 — Absolutismo | Curso de História Geral</title> <!-- Define o título da aba do navegador. -->
+    <style>
+        /* Inicia o CSS interno deste capítulo. */
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Faz largura e altura incluírem padding e bordas. */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Faz a rolagem para âncoras ser suave. */
+        :root {
+            --vinho: #641f2d;
+            --escuro: #321018;
+            --ouro: #c59b4a;
+            --creme: #f6efe3;
+            --papel: #fffdf8;
+            --texto: #292323;
+            --muted: #716764;
+            --linha: #e3d5bd;
+            --verde: #376b5b;
+            --vermelho: #a64045;
+            --sombra: 0 14px 35px rgba(50, 16, 24, .12);
+        }
+
+        /* Cria as cores principais do tema. */
+        body {
+            margin: 0;
+            background: var(--creme);
+            color: var(--texto);
+            font-family: Georgia, "Times New Roman", serif;
+            line-height: 1.75;
+        }
+
+        /* Define a aparência geral e confortável para leitura histórica. */
+        a {
+            color: inherit;
+        }
+
+        /* Faz links herdarem a cor quando nenhuma for definida. */
+        .container {
+            width: min(1120px, 92%);
+            margin: auto;
+        }
+
+        /* Limita a largura e centraliza o conteúdo. */
+        .hero {
+            background: linear-gradient(135deg, var(--escuro), var(--vinho));
+            color: white;
+            padding: 68px 0 58px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Cria o cabeçalho com identidade visual de documento histórico. */
+        .hero:after {
+            content: "";
+            position: absolute;
+            left: -5%;
+            right: -5%;
+            bottom: -85px;
+            height: 170px;
+            background: rgba(197, 155, 74, .12);
+            transform: rotate(-3deg);
+        }
+
+        /* Adiciona uma faixa decorativa discreta. */
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.5fr .7fr;
+            gap: 30px;
+            align-items: end;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Organiza título e painel simbólico. */
+        .selo {
+            display: inline-block;
+            border: 1px solid rgba(255, 255, 255, .35);
+            border-radius: 999px;
+            padding: 7px 14px;
+            color: #f5dca5;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-size: .78rem;
+        }
+
+        /* Cria o selo do capítulo. */
+        h1 {
+            font-size: clamp(2.4rem, 6vw, 4.8rem);
+            line-height: 1;
+            margin: 18px 0;
+        }
+
+        /* Cria um título grande e responsivo. */
+        .subtitulo {
+            max-width: 820px;
+            color: #f7ead8;
+            font-size: 1.15rem;
+            margin: 0;
+        }
+
+        /* Estiliza o subtítulo introdutório. */
+        brasao {
+            display: block;
+        }
+
+        /* Mantém o elemento personalizado como bloco caso seja usado. */
+        .simbolo {
+            min-height: 190px;
+            border: 1px solid rgba(255, 255, 255, .25);
+            border-radius: 28px;
+            padding: 28px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: rgba(255, 255, 255, .06);
+            backdrop-filter: blur(4px);
+        }
+
+        /* Cria o painel simbólico do poder monárquico. */
+        .simbolo strong {
+            font-size: 3.5rem;
+            line-height: 1;
+            color: #e3bd6d;
+        }
+
+        /* Destaca o símbolo da monarquia. */
+        .simbolo span {
+            margin-top: 12px;
+            color: #f5e6c7;
+        }
+
+        /* Explica o significado do símbolo. */
+        .nav {
+            position: sticky;
+            top: 0;
+            z-index: 20;
+            background: #281017;
+            border-top: 1px solid rgba(255, 255, 255, .08);
+        }
+
+        /* Mantém a navegação disponível durante a leitura. */
+        .nav-inner {
+            display: flex;
+            gap: 8px;
+            overflow: auto;
+            padding: 10px 0;
+            scrollbar-width: thin;
+        }
+
+        /* Permite navegação horizontal também em celulares. */
+        .nav a {
+            text-decoration: none;
+            color: #f7ead2;
+            padding: 8px 12px;
+            border-radius: 10px;
+            white-space: nowrap;
+            font-size: .9rem;
+        }
+
+        /* Formata os links do menu. */
+        .nav a:hover {
+            background: rgba(197, 155, 74, .16);
+            color: white;
+        }
+
+        /* Destaca o link ao passar o mouse. */
+        main {
+            padding: 46px 0 80px;
+        }
+
+        /* Cria espaço para o conteúdo principal. */
+        .eyebrow {
+            color: var(--vinho);
+            font-size: .78rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        /* Cria pequenos marcadores de seção. */
+        h2 {
+            color: var(--escuro);
+            font-size: clamp(1.8rem, 4vw, 2.7rem);
+            line-height: 1.15;
+            margin: 8px 0 18px;
+        }
+
+        /* Formata os títulos principais das seções. */
+        h3 {
+            color: var(--vinho);
+            margin-top: 0;
+        }
+
+        /* Formata subtítulos. */
+        .intro {
+            background: var(--papel);
+            border-left: 6px solid var(--ouro);
+            padding: 25px 28px;
+            border-radius: 0 18px 18px 0;
+            box-shadow: var(--sombra);
+            margin-bottom: 34px;
+        }
+
+        /* Cria o bloco introdutório de cada grande ideia. */
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        /* Cria duas colunas para conteúdos maiores. */
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+        }
+
+        /* Cria três colunas para conceitos curtos. */
+        .card {
+            background: var(--papel);
+            border: 1px solid var(--linha);
+            border-radius: 20px;
+            padding: 24px;
+            box-shadow: 0 8px 22px rgba(53, 16, 25, .07);
+        }
+
+        /* Define o cartão padrão. */
+        .card p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Evita espaço excessivo no final dos cartões. */
+        .card strong {
+            color: var(--vinho);
+        }
+
+        /* Destaca palavras importantes. */
+        .periodo {
+            margin: 54px 0;
+        }
+
+        /* Separa visualmente as grandes partes do capítulo. */
+        .periodo-head {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        /* Alinha o número e o título da seção. */
+        .numero {
+            min-width: 52px;
+            height: 52px;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            background: var(--vinho);
+            color: white;
+            font-weight: bold;
+        }
+
+        /* Cria o marcador circular de cada parte. */
+        .linha {
+            border-left: 3px solid #d8bd84;
+            padding-left: 25px;
+        }
+
+        /* Representa visualmente a continuidade histórica. */
+        .destaque {
+            background: linear-gradient(135deg, #fff8e9, #f3e5c9);
+            border: 1px solid #ddc58f;
+            border-radius: 20px;
+            padding: 24px;
+            margin: 22px 0;
+        }
+
+        /* Cria blocos de aprofundamento. */
+        .alerta {
+            background: #f8e8e7;
+            border-left: 5px solid var(--vermelho);
+            padding: 20px 22px;
+            border-radius: 12px;
+            margin: 20px 0;
+        }
+
+        /* Cria alertas contra interpretações simplificadas. */
+        .verde {
+            background: #edf5f1;
+            border-left: 5px solid var(--verde);
+            padding: 20px 22px;
+            border-radius: 12px;
+            margin: 22px 0;
+        }
+
+        /* Cria blocos de conexão e síntese. */
+        .mapa-poder {
+            display: grid;
+            gap: 12px;
+            margin-top: 20px;
+        }
+
+        /* Organiza o esquema da estrutura do poder. */
+        .nivel {
+            display: grid;
+            grid-template-columns: 180px 1fr;
+            gap: 15px;
+        }
+
+        /* Divide cada nível em nome e explicação. */
+        .rotulo {
+            background: var(--escuro);
+            color: white;
+            border-radius: 12px;
+            padding: 16px;
+            font-weight: bold;
+        }
+
+        /* Estiliza os nomes dos instrumentos do Estado. */
+        .conteudo {
+            background: white;
+            border: 1px solid var(--linha);
+            border-radius: 12px;
+            padding: 16px;
+        }
+
+        /* Estiliza a explicação de cada instrumento. */
+        .timeline {
+            position: relative;
+            margin-top: 22px;
+        }
+
+        /* Cria o contêiner da linha do tempo. */
+        .timeline:before {
+            content: "";
+            position: absolute;
+            left: 13px;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: #d7bd86;
+        }
+
+        /* Desenha a linha vertical da cronologia. */
+        .evento {
+            position: relative;
+            padding: 0 0 25px 45px;
+        }
+
+        /* Reserva espaço para cada evento. */
+        .evento:before {
+            content: "";
+            position: absolute;
+            left: 5px;
+            top: 7px;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background: var(--vinho);
+            border: 4px solid var(--creme);
+            box-shadow: 0 0 0 2px #d7bd86;
+        }
+
+        /* Cria o marcador de cada acontecimento. */
+        .ano {
+            font-weight: bold;
+            color: var(--vinho);
+        }
+
+        /* Destaca os anos. */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 14px;
+            overflow: hidden;
+        }
+
+        /* Organiza tabelas sem espaços entre células. */
+        th,
+        td {
+            padding: 14px;
+            border-bottom: 1px solid var(--linha);
+            text-align: left;
+            vertical-align: top;
+        }
+
+        /* Formata as células da tabela. */
+        th {
+            background: var(--escuro);
+            color: white;
+        }
+
+        /* Destaca os cabeçalhos da tabela. */
+        tr:last-child td {
+            border-bottom: 0;
+        }
+
+        /* Remove a linha final desnecessária. */
+        .lousa {
+            background: #20352f;
+            color: #f5f1df;
+            border-radius: 22px;
+            padding: 28px;
+            box-shadow: var(--sombra);
+            margin-top: 22px;
+        }
+
+        /* Simula uma lousa para uso do professor. */
+        .lousa h3 {
+            color: #e6c574;
+        }
+
+        /* Destaca o título da lousa. */
+        .question {
+            background: white;
+            border: 1px solid var(--linha);
+            border-radius: 18px;
+            padding: 24px;
+            margin: 18px 0;
+        }
+
+        /* Cria cartões para exercícios. */
+        .alternativas {
+            padding-left: 22px;
+        }
+
+        /* Recuo das alternativas. */
+        button {
+            font-family: inherit;
+            cursor: pointer;
+        }
+
+        /* Faz os botões usarem a tipografia do projeto e serem clicáveis. */
+        .gabarito-btn {
+            border: 0;
+            background: var(--vinho);
+            color: white;
+            padding: 11px 17px;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+
+        /* Cria o botão de revelar resposta. */
+        .gabarito {
+            display: none;
+            margin-top: 15px;
+            background: #edf5f1;
+            border-left: 5px solid var(--verde);
+            padding: 16px;
+            border-radius: 10px;
+        }
+
+        /* Mantém o gabarito oculto inicialmente. */
+        .gabarito.mostrar {
+            display: block;
+        }
+
+        /* Exibe o gabarito quando recebe a classe mostrar. */
+        .checklist {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        /* Remove os marcadores padrão da lista. */
+        .checklist li {
+            position: relative;
+            padding: 11px 0 11px 31px;
+            border-bottom: 1px dashed var(--linha);
+        }
+
+        /* Formata cada item da lista pedagógica. */
+        .checklist li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--verde);
+            font-weight: bold;
+        }
+
+        /* Coloca um símbolo de conclusão em cada item. */
+        .quote {
+            font-size: 1.18rem;
+            font-style: italic;
+            color: var(--escuro);
+            padding: 20px 25px;
+            border-top: 1px solid var(--linha);
+            border-bottom: 1px solid var(--linha);
+            margin: 22px 0;
+        }
+
+        /* Destaca uma síntese autoral. */
+        footer {
+            background: var(--escuro);
+            color: #eadfcf;
+            padding: 34px 0;
+        }
+
+        /* Cria o rodapé do capítulo. */
+        .footer-grid {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+
+        /* Organiza as informações finais. */
+        .voltar {
+            display: inline-block;
+            text-decoration: none;
+            background: var(--ouro);
+            color: #281017;
+            padding: 12px 18px;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+
+        /* Cria o botão de retorno ao capítulo anterior. */
+        .topo-btn {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            width: 46px;
+            height: 46px;
+            border: 0;
+            border-radius: 50%;
+            background: var(--vinho);
+            color: white;
+            box-shadow: var(--sombra);
+            opacity: 0;
+            pointer-events: none;
+            transition: .25s;
+        }
+
+        /* Cria o botão flutuante de retorno ao topo. */
+        .topo-btn.visivel {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        /* Torna o botão de topo ativo depois de certa rolagem. */
+        @media(max-width:850px) {
+
+            .hero-grid,
+            .grid-2,
+            .grid-3 {
+                grid-template-columns: 1fr;
+            }
+
+            .nivel {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-grid {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+
+        /* Transforma as grades em uma coluna em telas menores. */
+        @media(max-width:560px) {
+            .hero {
+                padding: 50px 0 42px;
+            }
+
+            .card {
+                padding: 19px;
+            }
+
+            th,
+            td {
+                padding: 10px;
+                font-size: .92rem;
+            }
+
+            .linha {
+                padding-left: 17px;
+            }
+        }
+
+        /* Ajusta espaçamentos para celulares pequenos. */
+    </style> <!-- Encerra o CSS do capítulo. -->
+</head> <!-- Encerra a área de configurações. -->
+
+<body> <!-- Inicia o conteúdo visível. -->
+    <header class="hero" id="inicio"> <!-- Cria o cabeçalho principal. -->
+        <div class="container"> <!-- Centraliza o conteúdo do cabeçalho. -->
+            <div class="hero-grid"> <!-- Divide o cabeçalho em duas áreas. -->
+                <div> <!-- Inicia a área textual. -->
+                    <span class="selo">Tema 1.21-Curso de História Geral </span>
+                    <!-- Identifica o capítulo dentro do curso. -->
+                    <h1>ABSOLUTISMO</h1> <!-- Exibe o título do capítulo. -->
+                    <p class="subtitulo">Formação do Estado moderno, centralização política, soberania e poder
+                        monárquico na Europa da Idade Moderna.</p> <!-- Apresenta o foco histórico do capítulo. -->
+                </div> <!-- Encerra a área textual. -->
+                <div class="simbolo"> <!-- Inicia o painel visual simbólico. -->
+                    <strong>♛</strong> <!-- Representa visualmente a monarquia. -->
+                    <span>Do poder fragmentado à construção de novas formas de autoridade política.</span>
+                    <!-- Explica a mensagem do símbolo. -->
+                </div> <!-- Encerra o painel simbólico. -->
+            </div> <!-- Encerra a grade do cabeçalho. -->
+        </div> <!-- Encerra o contêiner. -->
+    </header> <!-- Encerra o cabeçalho. -->
+    <nav class="nav"> <!-- Inicia o menu de navegação. -->
+        <div class="container nav-inner"> <!-- Centraliza os links do menu. -->
+            <a href="#comeco">I — O começo</a> <!-- Leva à primeira etapa. -->
+            <a href="#desenvolvimento">II — Desenvolvimento</a> <!-- Leva à segunda etapa. -->
+            <a href="#legado">III — Legado</a> <!-- Leva à terceira etapa. -->
+            <a href="#professor">Professor</a> <!-- Leva à preparação docente. -->
+            <a href="#questoes">Questões</a> <!-- Leva aos exercícios. -->
+        </div> <!-- Encerra o contêiner do menu. -->
+    </nav> <!-- Encerra a navegação. -->
+    <main> <!-- Inicia o conteúdo principal. -->
+        <div class="container"> <!-- Centraliza o conteúdo do capítulo. -->
+            <section class="intro"> <!-- Cria a introdução conceitual. -->
+                <span class="eyebrow">Ideia central</span> <!-- Identifica a seção. -->
+                <h2>O que significa falar em absolutismo?</h2> <!-- Apresenta a pergunta principal. -->
+                <p><strong>Absolutismo</strong> é o nome usado pela historiografia para caracterizar formas de
+                    organização política da Europa moderna nas quais os monarcas ampliaram e concentraram competências
+                    de governo, como administração, justiça, tributação, diplomacia e guerra.</p>
+                <!-- Explica o conceito central de maneira técnica e didática. -->
+                <p>É importante evitar a ideia de que o rei possuía um poder literalmente ilimitado. Mesmo em monarquias
+                    absolutistas existiam leis, tradições, privilégios, instituições e relações de poder que impunham
+                    limites e exigiam negociações. O absolutismo foi, portanto, um processo de <strong>centralização e
+                        fortalecimento da autoridade monárquica</strong>.</p>
+                <!-- Corrige a interpretação simplificada mais comum. -->
+                <div class="alerta"><strong>Alerta:</strong> não transforme o absolutismo francês em modelo universal.
+                    França, Inglaterra, Espanha e Portugal tiveram trajetórias políticas diferentes.</div>
+                <!-- Reforça a necessidade de comparação histórica. -->
+            </section> <!-- Encerra a introdução. -->
+            <section id="comeco" class="periodo"> <!-- Inicia a primeira parte da periodização. -->
+                <div class="periodo-head">
+                    <div class="numero">I</div>
+                    <div><span class="eyebrow">O começo</span>
+                        <h2>Crise do mundo feudal e centralização do poder</h2>
+                    </div>
+                </div> <!-- Apresenta a primeira etapa. -->
+                <div class="linha"> <!-- Inicia a estrutura vertical da etapa. -->
+                    <div class="grid-2"> <!-- Divide os fatores iniciais em duas colunas. -->
+                        <article class="card"> <!-- Cria o cartão sobre a crise feudal. -->
+                            <h3>1. Transformações do mundo feudal</h3> <!-- Nomeia o primeiro fator. -->
+                            <p>Entre os séculos XIV e XV, guerras, epidemias, crises agrícolas, fome e tensões sociais
+                                transformaram profundamente a Europa ocidental. O feudalismo não desapareceu de uma vez,
+                                mas suas relações econômicas, sociais e políticas passaram por mudanças importantes.</p>
+                            <!-- Explica continuidade e transformação sem criar uma ruptura artificial. -->
+                            <p>O crescimento das cidades, do comércio e das atividades financeiras também aumentou a
+                                importância de grupos urbanos e de novas redes econômicas.</p>
+                            <!-- Relaciona economia e transformação política. -->
+                        </article> <!-- Encerra o cartão. -->
+                        <article class="card"> <!-- Cria o cartão sobre recursos do Estado. -->
+                            <h3>2. O rei precisava de recursos</h3>
+                            <!-- Apresenta o problema central da administração. -->
+                            <p>Governar territórios maiores exigia recursos para funcionários, justiça, diplomacia,
+                                guerra e arrecadação. Por isso, o fortalecimento da monarquia dependia de estruturas
+                                administrativas e financeiras.</p>
+                            <!-- Mostra que poder político depende de recursos concretos. -->
+                            <p>Reis negociaram, enfrentaram ou incorporaram diferentes poderes: nobres, grupos urbanos,
+                                instituições religiosas, tribunais e autoridades locais.</p>
+                            <!-- Mostra que centralização envolvia relações e conflitos. -->
+                        </article> <!-- Encerra o cartão. -->
+                    </div> <!-- Encerra a grade. -->
+                    <div class="destaque"> <!-- Cria um bloco conceitual. -->
+                        <h3>Estado moderno não é sinônimo de Estado-nação atual</h3>
+                        <!-- Apresenta uma distinção contra o anacronismo. -->
+                        <p>A expressão <strong>Estado moderno</strong> é usada para descrever a formação de estruturas
+                            políticas mais centralizadas na Europa entre o final da Idade Média e a Idade Moderna. Isso
+                            não significa que já existisse o nacionalismo contemporâneo ou que as fronteiras fossem
+                            iguais às atuais.</p> <!-- Explica o conceito com cuidado histórico. -->
+                    </div> <!-- Encerra o destaque. -->
+                    <h3>Os instrumentos da centralização</h3> <!-- Introduz o mapa do poder. -->
+                    <div class="mapa-poder"> <!-- Inicia o mapa de poder. -->
+                        <div class="nivel">
+                            <div class="rotulo">Monarquia</div>
+                            <div class="conteudo"><strong>Centro político:</strong> coordena decisões e amplia sua
+                                capacidade de governo sobre o território.</div>
+                        </div> <!-- Explica a função da monarquia. -->
+                        <div class="nivel">
+                            <div class="rotulo">Burocracia</div>
+                            <div class="conteudo"><strong>Administração:</strong> funcionários e órgãos registram,
+                                arrecadam e executam decisões.</div>
+                        </div> <!-- Explica a função administrativa. -->
+                        <div class="nivel">
+                            <div class="rotulo">Tributação</div>
+                            <div class="conteudo"><strong>Recursos:</strong> impostos sustentam funções do governo,
+                                embora sua cobrança provocasse conflitos.</div>
+                        </div> <!-- Explica a base financeira do poder. -->
+                        <div class="nivel">
+                            <div class="rotulo">Justiça</div>
+                            <div class="conteudo"><strong>Autoridade:</strong> a monarquia amplia sua participação na
+                                organização judicial.</div>
+                        </div> <!-- Explica a centralização judicial. -->
+                        <div class="nivel">
+                            <div class="rotulo">Força militar</div>
+                            <div class="conteudo"><strong>Guerra e defesa:</strong> forças mais permanentes aumentam a
+                                capacidade militar da Coroa.</div>
+                        </div> <!-- Explica a relação entre Estado e força. -->
+                        <div class="nivel">
+                            <div class="rotulo">Diplomacia</div>
+                            <div class="conteudo"><strong>Relações externas:</strong> representantes e acordos organizam
+                                alianças e conflitos.</div>
+                        </div> <!-- Explica a diplomacia. -->
+                    </div> <!-- Encerra o mapa de poder. -->
+                    <div class="quote">Centralizar o poder não significava apenas “mandar mais”; significava criar
+                        mecanismos capazes de fazer decisões políticas alcançarem o território.</div>
+                    <!-- Apresenta uma síntese autoral para memorização. -->
+                </div> <!-- Encerra a linha da primeira etapa. -->
+            </section> <!-- Encerra a primeira etapa. -->
+            <section id="desenvolvimento" class="periodo"> <!-- Inicia a segunda parte. -->
+                <div class="periodo-head">
+                    <div class="numero">II</div>
+                    <div><span class="eyebrow">O desenvolvimento</span>
+                        <h2>O absolutismo e a construção da autoridade monárquica</h2>
+                    </div>
+                </div> <!-- Apresenta a segunda etapa. -->
+                <div class="linha"> <!-- Inicia a estrutura da segunda etapa. -->
+                    <div class="grid-3"> <!-- Cria três cartões sobre pensamento político. -->
+                        <article class="card">
+                            <h3>Soberania</h3>
+                            <p>A soberania envolve a ideia de uma autoridade superior sobre determinado território. Jean
+                                Bodin foi importante para a formulação moderna desse conceito.</p>
+                        </article> <!-- Explica soberania e apresenta Bodin. -->
+                        <article class="card">
+                            <h3>Direito divino</h3>
+                            <p>Jacques-Bénigne Bossuet defendeu a origem divina da autoridade monárquica. Essa ideia
+                                ajudava a legitimar o rei.</p>
+                        </article> <!-- Explica uma das formas de legitimação do poder. -->
+                        <article class="card">
+                            <h3>Estado e ordem</h3>
+                            <p>Thomas Hobbes analisou a necessidade de uma autoridade política capaz de conter conflitos
+                                e garantir segurança. Sua obra deve ser estudada em seu contexto intelectual.</p>
+                        </article> <!-- Apresenta Hobbes sem reduzi-lo a uma caricatura. -->
+                    </div> <!-- Encerra a grade. -->
+                    <div class="destaque"> <!-- Cria o aprofundamento sobre os pensadores. -->
+                        <h3>Três pensadores que o professor deve diferenciar</h3>
+                        <!-- Apresenta o quadro comparativo. -->
+                        <table> <!-- Inicia a tabela. -->
+                            <thead>
+                                <tr>
+                                    <th>Pensador</th>
+                                    <th>Ideia central para a aula</th>
+                                    <th>Cuidado didático</th>
+                                </tr>
+                            </thead> <!-- Define os cabeçalhos. -->
+                            <tbody> <!-- Inicia as linhas. -->
+                                <tr>
+                                    <td><strong>Jean Bodin</strong></td>
+                                    <td>Soberania como autoridade suprema.</td>
+                                    <td>Não tratar sua teoria como descrição mecânica de todas as monarquias.</td>
+                                </tr> <!-- Resume Bodin. -->
+                                <tr>
+                                    <td><strong>Thomas Hobbes</strong></td>
+                                    <td>Estado forte relacionado à segurança e à ordem política.</td>
+                                    <td>Não reduzir sua teoria a uma simples defesa pessoal do rei.</td>
+                                </tr> <!-- Resume Hobbes. -->
+                                <tr>
+                                    <td><strong>Bossuet</strong></td>
+                                    <td>Direito divino e legitimação religiosa da autoridade.</td>
+                                    <td>Mostrar que religião era uma dimensão da legitimação, não a única causa.</td>
+                                </tr> <!-- Resume Bossuet. -->
+                            </tbody> <!-- Encerra as linhas. -->
+                        </table> <!-- Encerra a tabela. -->
+                    </div> <!-- Encerra o destaque. -->
+                    <h3>Absolutismo em diferentes monarquias</h3> <!-- Introduz a comparação entre países. -->
+                    <table> <!-- Inicia a tabela comparativa. -->
+                        <thead>
+                            <tr>
+                                <th>Monarquia</th>
+                                <th>Processo</th>
+                                <th>O que observar</th>
+                            </tr>
+                        </thead> <!-- Define as colunas. -->
+                        <tbody> <!-- Inicia o corpo da tabela. -->
+                            <tr>
+                                <td><strong>França</strong></td>
+                                <td>Fortalecimento progressivo da autoridade real e da administração monárquica.</td>
+                                <td>Luís XIV tornou-se símbolo do absolutismo, mas seu poder dependia de instituições,
+                                    recursos e relações sociais.</td>
+                            </tr> <!-- Apresenta o caso francês. -->
+                            <tr>
+                                <td><strong>Espanha</strong></td>
+                                <td>Isabel de Castela e Fernando de Aragão fortaleceram mecanismos de governo; depois,
+                                    os Habsburgos governaram vastos domínios.</td>
+                                <td>A união dinástica não significou fusão imediata de todas as instituições.</td>
+                            </tr> <!-- Apresenta o caso espanhol. -->
+                            <tr>
+                                <td><strong>Portugal</strong></td>
+                                <td>A Coroa ampliou mecanismos administrativos e fiscais e articulou a expansão marítima
+                                    aos interesses monárquicos.</td>
+                                <td>Relacionar centralização portuguesa ao Império Ultramarino.</td>
+                            </tr> <!-- Apresenta o caso português. -->
+                            <tr>
+                                <td><strong>Inglaterra</strong></td>
+                                <td>Tudores e Stuarts buscaram fortalecer a Coroa, mas enfrentaram instituições e
+                                    conflitos que contribuíram para as Revoluções Inglesas.</td>
+                                <td>A trajetória inglesa mostra que as monarquias não seguiram um único caminho.</td>
+                            </tr> <!-- Apresenta o contraste inglês. -->
+                        </tbody> <!-- Encerra o corpo da tabela. -->
+                    </table> <!-- Encerra a tabela. -->
+                    <div class="grid-2"> <!-- Cria duas colunas para características e limites. -->
+                        <article class="card"> <!-- Cria o cartão das características. -->
+                            <h3>Características recorrentes</h3> <!-- Apresenta o título da lista. -->
+                            <ul class="checklist"> <!-- Inicia a lista. -->
+                                <li>Centralização crescente da autoridade monárquica.</li>
+                                <!-- Característica política. -->
+                                <li>Ampliação das estruturas administrativas.</li> <!-- Característica burocrática. -->
+                                <li>Maior capacidade de arrecadação.</li> <!-- Característica fiscal. -->
+                                <li>Fortalecimento das forças militares.</li> <!-- Característica militar. -->
+                                <li>Diplomacia permanente.</li> <!-- Característica internacional. -->
+                                <li>Uso de argumentos políticos e religiosos para legitimar o poder.</li>
+                                <!-- Característica ideológica. -->
+                            </ul> <!-- Encerra a lista. -->
+                        </article> <!-- Encerra o cartão. -->
+                        <article class="card"> <!-- Cria o cartão dos limites. -->
+                            <h3>Mas o rei não governava sozinho</h3> <!-- Corrige a simplificação. -->
+                            <p>A autoridade monárquica precisava lidar com nobres, clero, grupos urbanos, corporações,
+                                parlamentos, assembleias, tribunais, costumes locais e interesses regionais.</p>
+                            <!-- Explica os limites e negociações. -->
+                            <p><strong>Conclusão:</strong> absolutismo é uma configuração histórica de poder, não uma
+                                licença para o rei fazer qualquer coisa sem limites.</p> <!-- Resume a ideia. -->
+                        </article> <!-- Encerra o cartão. -->
+                    </div> <!-- Encerra a grade. -->
+                    <div class="verde"> <!-- Cria a ponte com o tema econômico. -->
+                        <h3>Absolutismo e Mercantilismo</h3> <!-- Apresenta a conexão com o próximo conteúdo. -->
+                        <p>As monarquias buscavam recursos e ampliavam sua atuação econômica. Práticas mercantilistas
+                            envolveram intervenção estatal, comércio, proteção de interesses, exploração colonial e
+                            busca de riqueza. <strong>Absolutismo e mercantilismo não são sinônimos</strong>: um trata
+                            principalmente da organização do poder político; o outro, das práticas e ideias econômicas
+                            do período.</p> <!-- Diferencia os conceitos. -->
+                    </div> <!-- Encerra a conexão. -->
+                    <h3>🗓 Linha do tempo</h3> <!-- Introduz a cronologia. -->
+                    <div class="timeline"> <!-- Inicia a linha do tempo. -->
+                        <div class="evento">
+                            <div class="ano">1469</div>
+                            <p>Casamento de Isabel de Castela e Fernando de Aragão, marco da união dinástica espanhola.
+                            </p>
+                        </div> <!-- Registra um marco espanhol. -->
+                        <div class="evento">
+                            <div class="ano">1494</div>
+                            <p>Tratado de Tordesilhas, exemplo da diplomacia das monarquias ibéricas durante a expansão
+                                ultramarina.</p>
+                        </div> <!-- Conecta diplomacia e expansão. -->
+                        <div class="evento">
+                            <div class="ano">1589</div>
+                            <p>Henrique IV inicia a dinastia Bourbon na França em um contexto de conflitos religiosos.
+                            </p>
+                        </div> <!-- Registra um marco francês. -->
+                        <div class="evento">
+                            <div class="ano">1648</div>
+                            <p>Tratados associados à Paz de Vestfália encerram a Guerra dos Trinta Anos e participam de
+                                transformações importantes da diplomacia europeia.</p>
+                        </div> <!-- Apresenta Vestfália com cautela histórica. -->
+                        <div class="evento">
+                            <div class="ano">1661</div>
+                            <p>Luís XIV inicia seu governo pessoal após a morte de Mazarino e torna-se grande símbolo do
+                                absolutismo francês.</p>
+                        </div> <!-- Registra o governo pessoal de Luís XIV. -->
+                        <div class="evento">
+                            <div class="ano">1689</div>
+                            <p>Bill of Rights inglês consolida limites importantes ao poder monárquico.</p>
+                        </div> <!-- Mostra a trajetória inglesa de limitação da Coroa. -->
+                        <div class="evento">
+                            <div class="ano">1789</div>
+                            <p>A Revolução Francesa inicia uma ruptura decisiva com estruturas do Antigo Regime.</p>
+                        </div> <!-- Fecha a cronologia. -->
+                    </div> <!-- Encerra a linha do tempo. -->
+                </div> <!-- Encerra a linha da segunda etapa. -->
+            </section> <!-- Encerra a segunda etapa. -->
+            <section id="legado" class="periodo"> <!-- Inicia a terceira etapa. -->
+                <div class="periodo-head">
+                    <div class="numero">III</div>
+                    <div><span class="eyebrow">O legado e o mundo atual</span>
+                        <h2>O que permaneceu depois do absolutismo?</h2>
+                    </div>
+                </div> <!-- Apresenta a terceira etapa. -->
+                <div class="linha"> <!-- Inicia a estrutura da terceira etapa. -->
+                    <div class="grid-3"> <!-- Cria três cartões sobre os legados. -->
+                        <article class="card">
+                            <h3>Estado administrativo</h3>
+                            <p>Estruturas de arrecadação, documentação, administração e governo territorial continuaram
+                                a se transformar nos séculos seguintes.</p>
+                        </article> <!-- Apresenta a permanência administrativa. -->
+                        <article class="card">
+                            <h3>Soberania</h3>
+                            <p>Os debates modernos sobre soberania contribuíram para conceitos importantes da política
+                                internacional, embora a soberania contemporânea tenha sido transformada por
+                                constituições e direitos.</p>
+                        </article> <!-- Relaciona soberania histórica e contemporânea sem igualar os períodos. -->
+                        <article class="card">
+                            <h3>Constitucionalismo</h3>
+                            <p>Conflitos entre reis, parlamentos e outros grupos contribuíram para debates posteriores
+                                sobre limites do poder, representação e direitos.</p>
+                        </article> <!-- Apresenta a relação com o constitucionalismo. -->
+                    </div> <!-- Encerra a grade de legados. -->
+                    <div class="destaque"> <!-- Cria a conexão com o Brasil. -->
+                        <h3>História Geral ↔ História do Brasil</h3> <!-- Identifica a conexão curricular. -->
+                        <p>O Brasil colonial fazia parte do <strong>Império Português</strong> e estava inserido nas
+                            estruturas políticas, jurídicas e econômicas da monarquia portuguesa. O estudo do
+                            absolutismo ajuda a compreender o contexto de autoridade da Coroa e a administração
+                            colonial.</p> <!-- Relaciona o tema ao Brasil colonial. -->
+                        <p>Mas a sociedade colonial não era uma simples cópia da Europa. Povos indígenas, africanos
+                            escravizados, colonos, autoridades locais, ordens religiosas e diferentes grupos econômicos
+                            produziam relações específicas de negociação, conflito e resistência.</p>
+                        <!-- Evita uma transferência mecânica do modelo europeu para o Brasil. -->
+                    </div> <!-- Encerra a conexão brasileira. -->
+                    <div class="alerta"><strong>Para provas:</strong> procure palavras como centralização, soberania,
+                        burocracia, tributação, exército, diplomacia e legitimação política. Elas ajudam a identificar a
+                        lógica histórica do absolutismo.</div> <!-- Oferece uma estratégia de leitura de questões. -->
+                    <h3>Conceitos essenciais</h3> <!-- Introduz o glossário. -->
+                    <div class="grid-3"> <!-- Organiza os conceitos. -->
+                        <article class="card">
+                            <h3>Estado moderno</h3>
+                            <p>Organização política marcada pelo fortalecimento de instituições de governo territorial e
+                                pela maior centralização da autoridade.</p>
+                        </article> <!-- Define Estado moderno. -->
+                        <article class="card">
+                            <h3>Soberania</h3>
+                            <p>Ideia de autoridade política superior sobre determinado território e população.</p>
+                        </article> <!-- Define soberania. -->
+                        <article class="card">
+                            <h3>Antigo Regime</h3>
+                            <p>Expressão usada para caracterizar estruturas políticas e sociais europeias anteriores às
+                                grandes rupturas revolucionárias do final do século XVIII.</p>
+                        </article> <!-- Define Antigo Regime. -->
+                        <article class="card">
+                            <h3>Direito divino</h3>
+                            <p>Doutrina que fundamentava a autoridade do monarca em uma origem ou legitimação divina.
+                            </p>
+                        </article> <!-- Define direito divino. -->
+                        <article class="card">
+                            <h3>Burocracia</h3>
+                            <p>Conjunto de agentes e procedimentos administrativos usados para organizar funções de
+                                governo.</p>
+                        </article> <!-- Define burocracia. -->
+                        <article class="card">
+                            <h3>Mercantilismo</h3>
+                            <p>Conjunto de práticas e ideias econômicas associadas às monarquias modernas e à expansão
+                                comercial e colonial.</p>
+                        </article> <!-- Define mercantilismo. -->
+                    </div> <!-- Encerra o glossário. -->
+                </div> <!-- Encerra a linha da terceira etapa. -->
+            </section> <!-- Encerra a terceira etapa. -->
+            <section id="professor" class="periodo"> <!-- Inicia a preparação docente. -->
+                <div class="periodo-head">
+                    <div class="numero">★</div>
+                    <div><span class="eyebrow">Preparação docente</span>
+                        <h2>O que o professor precisa dominar</h2>
+                    </div>
+                </div> <!-- Apresenta a seção para o professor. -->
+                <div class="grid-2"> <!-- Divide a preparação em duas colunas. -->
+                    <article class="card"> <!-- Cria o cartão de domínio histórico. -->
+                        <h3>Domínio histórico</h3> <!-- Nomeia o bloco. -->
+                        <ul class="checklist"> <!-- Inicia a lista. -->
+                            <li>Explicar a transformação das estruturas políticas medievais sem defender uma ruptura
+                                instantânea.</li> <!-- Orienta a abordagem de continuidade e mudança. -->
+                            <li>Diferenciar Estado moderno, absolutismo, Antigo Regime e Estado-nação contemporâneo.
+                            </li> <!-- Evita anacronismos conceituais. -->
+                            <li>Relacionar centralização, tributação, burocracia, guerra e diplomacia.</li>
+                            <!-- Integra as dimensões do Estado. -->
+                            <li>Comparar França, Espanha, Portugal e Inglaterra.</li> <!-- Evita generalizações. -->
+                            <li>Conhecer as contribuições de Bodin, Hobbes e Bossuet.</li>
+                            <!-- Inclui pensamento político. -->
+                            <li>Conectar absolutismo, mercantilismo, expansão marítima e colonização.</li>
+                            <!-- Integra o tema à sequência do curso. -->
+                        </ul> <!-- Encerra a lista. -->
+                    </article> <!-- Encerra o cartão. -->
+                    <article class="card"> <!-- Cria o cartão de metodologia. -->
+                        <h3>Como ensinar</h3> <!-- Apresenta a orientação didática. -->
+                        <p>Comece com a pergunta: <strong>“Como um rei consegue fazer uma decisão valer em um território
+                                grande?”</strong> A resposta leva naturalmente aos impostos, funcionários, justiça,
+                            diplomacia e forças militares.</p> <!-- Propõe uma situação-problema. -->
+                        <p>Depois compare França e Inglaterra. O objetivo é perceber que a centralização encontrou
+                            instituições e resistências diferentes.</p> <!-- Sugere comparação como método. -->
+                        <p>Finalize conectando o tema ao Brasil colonial e ao próximo conteúdo, Mercantilismo.</p>
+                        <!-- Fecha a sequência didática. -->
+                    </article> <!-- Encerra o cartão. -->
+                </div> <!-- Encerra a grade docente. -->
+                <div class="lousa"> <!-- Cria o quadro para a lousa. -->
+                    <h3>🧑‍🏫 O que colocar na lousa</h3> <!-- Apresenta o título do quadro. -->
+                    <ul> <!-- Inicia a lista da lousa. -->
+                        <li><strong>Crise do feudalismo → centralização monárquica</strong></li>
+                        <!-- Registra a transformação principal. -->
+                        <li><strong>Estado moderno = administração + impostos + justiça + diplomacia + força
+                                militar</strong></li> <!-- Resume os instrumentos estatais. -->
+                        <li><strong>Absolutismo ≠ poder literalmente ilimitado</strong></li>
+                        <!-- Corrige a simplificação. -->
+                        <li><strong>Legitimação = direito divino + teorias políticas</strong></li>
+                        <!-- Resume as formas de legitimação. -->
+                        <li><strong>França ≠ Inglaterra ≠ Espanha ≠ Portugal</strong></li>
+                        <!-- Reforça a comparação histórica. -->
+                        <li><strong>Absolutismo → Mercantilismo → expansão colonial</strong></li>
+                        <!-- Conecta a sequência do curso. -->
+                    </ul> <!-- Encerra a lista da lousa. -->
+                </div> <!-- Encerra a lousa. -->
+            </section> <!-- Encerra a preparação docente. -->
+            <section class="periodo"> <!-- Inicia a síntese de causas, características e consequências. -->
+                <div class="periodo-head">
+                    <div class="numero">↔</div>
+                    <div><span class="eyebrow">Síntese</span>
+                        <h2>Causas, características e consequências</h2>
+                    </div>
+                </div> <!-- Apresenta o resumo estruturado. -->
+                <div class="grid-3"> <!-- Divide a síntese em três partes. -->
+                    <article class="card">
+                        <h3>Causas e condições</h3>
+                        <p>Transformações do feudalismo; crescimento urbano e comercial; guerras; necessidade de
+                            recursos; disputas entre poderes; fortalecimento das monarquias.</p>
+                    </article> <!-- Resume as condições históricas. -->
+                    <article class="card">
+                        <h3>Características</h3>
+                        <p>Centralização; soberania; burocracia; tributação; diplomacia; forças militares; legitimação
+                            política e religiosa.</p>
+                    </article> <!-- Resume as características. -->
+                    <article class="card">
+                        <h3>Consequências</h3>
+                        <p>Fortalecimento de estruturas estatais; novas formas administrativas; conflitos sobre limites
+                            do poder; desenvolvimento de debates que contribuíram para o constitucionalismo.</p>
+                    </article> <!-- Resume os efeitos de longo prazo. -->
+                </div> <!-- Encerra a síntese. -->
+            </section> <!-- Encerra a síntese. -->
+            <section class="periodo"> <!-- Inicia a seção curricular. -->
+                <div class="periodo-head">
+                    <div class="numero">BN</div>
+                    <div><span class="eyebrow">Currículo</span>
+                        <h2>BNCC e objetivos de aprendizagem</h2>
+                    </div>
+                </div> <!-- Apresenta a seção BNCC. -->
+                <div class="card"> <!-- Cria o cartão curricular. -->
+                    <h3>EF07HI07</h3> <!-- Apresenta a habilidade principal relacionada ao tema. -->
+                    <p><strong>Objetivo:</strong> compreender os processos de formação e consolidação das monarquias e
+                        suas principais características, relacionando-os às razões da centralização política.</p>
+                    <!-- Traduz a habilidade em objetivo didático. -->
+                    <p><strong>Neste capítulo:</strong> o aluno identifica fatores de centralização, compara monarquias
+                        e compreende que os processos foram diferentes em cada sociedade.</p>
+                    <!-- Explica como a habilidade é trabalhada. -->
+                    <h3>Conexões com a sequência</h3> <!-- Introduz conexões curriculares. -->
+                    <p>O tema dialoga com as habilidades do 7º ano relacionadas às navegações, às transformações do
+                        mundo atlântico e às práticas mercantis que serão estudadas nos capítulos seguintes.</p>
+                    <!-- Faz a conexão sem sobrecarregar a página com códigos curriculares não centrais. -->
+                </div> <!-- Encerra o cartão curricular. -->
+            </section> <!-- Encerra a seção BNCC. -->
+            <section id="questoes" class="periodo"> <!-- Inicia a avaliação. -->
+                <div class="periodo-head">
+                    <div class="numero">?</div>
+                    <div><span class="eyebrow">ENEM • Vestibular • Concurso</span>
+                        <h2>Questões para verificar a aprendizagem</h2>
+                    </div>
+                </div> <!-- Apresenta a seção de exercícios. -->
+                <div class="question"> <!-- Cria a primeira questão. -->
+                    <h3>Questão 01 — Centralização política</h3> <!-- Define o título da questão. -->
+                    <p>Durante a formação das monarquias europeias modernas, diferentes reis buscaram ampliar sua
+                        capacidade de governo. Para isso, fortaleceram mecanismos de arrecadação, administração,
+                        justiça, diplomacia e organização militar.</p> <!-- Apresenta o contexto da questão. -->
+                    <p>Com base nesse processo, é correto afirmar que a centralização política:</p>
+                    <!-- Apresenta o comando. -->
+                    <ol class="alternativas" type="A"> <!-- Inicia as alternativas. -->
+                        <li>eliminou imediatamente todos os poderes locais e privilégios sociais.</li>
+                        <!-- Alternativa incorreta. -->
+                        <li>resultou exclusivamente da vontade pessoal dos monarcas.</li>
+                        <!-- Alternativa incorreta. -->
+                        <li>envolveu a construção gradual de instrumentos administrativos e fiscais capazes de ampliar a
+                            autoridade da monarquia.</li> <!-- Alternativa correta. -->
+                        <li>produziu imediatamente Estados nacionais democráticos semelhantes aos atuais.</li>
+                        <!-- Alternativa anacrônica. -->
+                        <li>ocorreu de maneira idêntica em todas as monarquias europeias.</li>
+                        <!-- Alternativa generalizante. -->
+                    </ol> <!-- Encerra as alternativas. -->
+                    <button class="gabarito-btn" data-target="g1">Mostrar gabarito</button>
+                    <!-- Cria o botão de resposta. -->
+                    <div class="gabarito" id="g1"><strong>Gabarito: C.</strong> A centralização foi gradual e envolveu
+                        administração, tributação, justiça, diplomacia e força militar, em meio a negociações e
+                        conflitos.</div> <!-- Apresenta a resposta escondida. -->
+                </div> <!-- Encerra a questão. -->
+                <div class="question"> <!-- Cria a segunda questão. -->
+                    <h3>Questão 02 — Comparação histórica</h3> <!-- Define o título. -->
+                    <p>Na França, Luís XIV tornou-se símbolo da concentração da autoridade real. Na Inglaterra,
+                        conflitos entre Coroa e Parlamento contribuíram para transformações que limitaram o poder
+                        monárquico.</p> <!-- Apresenta a comparação. -->
+                    <p>A comparação permite concluir que:</p> <!-- Apresenta o comando. -->
+                    <ol class="alternativas" type="A"> <!-- Inicia as alternativas. -->
+                        <li>todas as monarquias europeias seguiram exatamente o modelo francês.</li>
+                        <!-- Alternativa incorreta. -->
+                        <li>o absolutismo deve ser compreendido considerando as trajetórias políticas específicas de
+                            cada sociedade.</li> <!-- Alternativa correta. -->
+                        <li>a Inglaterra não possuía instituições políticas antes do século XVIII.</li>
+                        <!-- Alternativa incorreta. -->
+                        <li>a França não possuía conflitos entre grupos sociais e políticos.</li>
+                        <!-- Alternativa incorreta. -->
+                        <li>o poder dos reis europeus foi sempre ilimitado.</li> <!-- Alternativa incorreta. -->
+                    </ol> <!-- Encerra as alternativas. -->
+                    <button class="gabarito-btn" data-target="g2">Mostrar gabarito</button>
+                    <!-- Cria o botão da resposta. -->
+                    <div class="gabarito" id="g2"><strong>Gabarito: B.</strong> As monarquias apresentaram trajetórias
+                        diferentes porque instituições, conflitos, tradições e relações sociais variavam entre os
+                        reinos.</div> <!-- Apresenta a explicação escondida. -->
+                </div> <!-- Encerra a questão. -->
+            </section> <!-- Encerra a avaliação. -->
+            <section class="intro"> <!-- Cria a conclusão do capítulo. -->
+                <span class="eyebrow">Fechamento</span> <!-- Identifica a síntese final. -->
+                <h2>Se o aluno lembrar de apenas uma ideia...</h2> <!-- Apresenta a frase de memorização. -->
+                <p><strong>O absolutismo foi um processo histórico de fortalecimento e centralização da autoridade
+                        monárquica dentro da formação dos Estados modernos, mas essa centralização foi diferente em cada
+                        sociedade e envolveu disputas, negociações e limites.</strong></p>
+                <!-- Resume o conteúdo central. -->
+                <p><strong>Próximo conteúdo:</strong> 1.21 — Reformas.</p>
+                <!-- Aponta o próximo tema correto da lista original do usuário. -->
+            </section> <!-- Encerra a conclusão. -->
+        </div> <!-- Encerra o contêiner principal. -->
+    </main> <!-- Encerra o conteúdo principal. -->
+    <footer> <!-- Inicia o rodapé. -->
+        <div class="container footer-grid"> <!-- Organiza o rodapé. -->
+            <div><strong>Curso de História Geral — Professor Marcelo Oliveira</strong>
+                <p>Fundamental II • Ensino Médio • ENEM • Vestibular • Concurso</p>
+            </div> <!-- Apresenta a identificação do curso. -->
+            <a class="voltar" href="../19-Expansao-Maritimo-Comercial/index.html">← Voltar ao tema anterior</a>
+            <!-- Retorna ao capítulo 1.19. -->
+        </div> <!-- Encerra a organização do rodapé. -->
+    </footer> <!-- Encerra o rodapé. -->
+    <button class="topo-btn" id="topoBtn" aria-label="Voltar ao topo">↑</button>
+    <!-- Cria o botão flutuante de topo. -->
+    <script> // Inicia o JavaScript de interação da página.
+        const botoesGabarito = document.querySelectorAll('.gabarito-btn'); // Seleciona todos os botões dos gabaritos.
+        botoesGabarito.forEach(function (botao) { // Percorre todos os botões encontrados.
+            botao.addEventListener('click', function () { // Cria uma ação quando o usuário clicar no botão.
+                const idAlvo = botao.getAttribute('data-target'); // Descobre qual gabarito pertence ao botão.
+                const gabarito = document.getElementById(idAlvo); // Localiza o gabarito correspondente pelo ID.
+                gabarito.classList.toggle('mostrar'); // Alterna entre mostrar e esconder a resposta.
+                botao.textContent = gabarito.classList.contains('mostrar') ? 'Ocultar gabarito' : 'Mostrar gabarito'; // Atualiza o texto do botão conforme o estado.
+            }); // Encerra o evento de clique.
+        }); // Encerra o percurso pelos botões.
+        const topoBtn = document.getElementById('topoBtn'); // Localiza o botão flutuante de retorno ao topo.
+        window.addEventListener('scroll', function () { // Observa a posição de rolagem da página.
+            if (window.scrollY > 450) { // Verifica se o usuário já desceu mais de 450 pixels.
+                topoBtn.classList.add('visivel'); // Mostra o botão quando necessário.
+            } else { // Define o comportamento quando o usuário está perto do topo.
+                topoBtn.classList.remove('visivel'); // Esconde o botão quando não é necessário.
+            } // Encerra a condição de rolagem.
+        }); // Encerra o evento de rolagem.
+        topoBtn.addEventListener('click', function () { // Cria a ação do botão de topo.
+            window.scrollTo({ top: 0, behavior: 'smooth' }); // Retorna suavemente ao início da página.
+        }); // Encerra o evento do botão de topo.
+    </script> <!-- Encerra o JavaScript. -->
+    <script>
+  const paginaAnterior = "20 - Mercantilismo.html";
+  const paginaProxima = "21B - Os Teóricos do Absolutismo.html";
+</script>
+<script src="navegacao.js"></script>
+</body> <!-- Encerra o conteúdo visível. -->
+
+</html> <!-- Encerra o documento HTML. -->

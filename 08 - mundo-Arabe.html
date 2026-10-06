@@ -1,0 +1,1975 @@
+<!DOCTYPE html>
+<!-- Define que o documento utiliza HTML5. -->
+
+<html lang="pt-BR">
+<!-- Define o idioma da página como português do Brasil. -->
+
+<head>
+<!-- Inicia as configurações da página. -->
+
+<meta charset="UTF-8">
+<!-- Permite o uso correto de acentos e caracteres especiais. -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Faz a página se adaptar a celulares, tablets e computadores. -->
+
+<title>1.8 — Mundo Árabe | História Geral</title>
+<!-- Define o título da aba do navegador. -->
+
+<style>
+/* ============================== */
+/* CONFIGURAÇÕES GERAIS           */
+/* ============================== */
+
+* {
+    /* Faz o padding e as bordas entrarem no cálculo do tamanho dos elementos. */
+    box-sizing: border-box;
+}
+
+html {
+    /* Ativa a rolagem suave. */
+    scroll-behavior: smooth;
+}
+
+body {
+    /* Define a fonte principal da página. */
+    font-family: Arial, Helvetica, sans-serif;
+
+    /* Remove a margem padrão. */
+    margin: 0;
+
+    /* Define o fundo da página. */
+    background: #f4f6f8;
+
+    /* Define a cor principal dos textos. */
+    color: #1f2937;
+
+    /* Melhora o espaçamento entre as linhas. */
+    line-height: 1.7;
+}
+
+/* ============================== */
+/* CABEÇALHO                      */
+/* ============================== */
+
+header {
+    /* Cria um fundo profissional em degradê. */
+    background: linear-gradient(135deg, #172554, #1e3a8a);
+
+    /* Define a cor dos textos. */
+    color: white;
+
+    /* Cria espaço interno. */
+    padding: 60px 20px;
+
+    /* Centraliza o conteúdo. */
+    text-align: center;
+}
+
+header .marca {
+    /* Define o tamanho da marca. */
+    font-size: 15px;
+
+    /* Coloca a marca em letras maiúsculas. */
+    text-transform: uppercase;
+
+    /* Aumenta o espaçamento entre letras. */
+    letter-spacing: 2px;
+
+    /* Diminui um pouco a intensidade da marca. */
+    opacity: 0.85;
+
+    /* Cria espaço abaixo. */
+    margin-bottom: 12px;
+}
+
+header h1 {
+    /* Define tamanho responsivo para o título. */
+    font-size: clamp(30px, 5vw, 52px);
+
+    /* Remove margem superior. */
+    margin: 0;
+
+    /* Cria espaço inferior. */
+    margin-bottom: 15px;
+}
+
+header p {
+    /* Limita a largura do subtítulo. */
+    max-width: 850px;
+
+    /* Centraliza o texto. */
+    margin: auto;
+
+    /* Define tamanho da fonte. */
+    font-size: 18px;
+}
+
+/* ============================== */
+/* MENU                           */
+/* ============================== */
+
+nav {
+    /* Mantém o menu visível durante a rolagem. */
+    position: sticky;
+
+    /* Fixa o menu no topo. */
+    top: 0;
+
+    /* Coloca o menu acima dos outros elementos. */
+    z-index: 1000;
+
+    /* Define fundo branco. */
+    background: white;
+
+    /* Cria uma sombra discreta. */
+    box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+}
+
+nav .menu {
+    /* Define largura máxima. */
+    max-width: 1200px;
+
+    /* Centraliza o menu. */
+    margin: auto;
+
+    /* Ativa Flexbox. */
+    display: flex;
+
+    /* Permite quebra de linha. */
+    flex-wrap: wrap;
+
+    /* Centraliza os links. */
+    justify-content: center;
+
+    /* Define espaço entre os links. */
+    gap: 8px;
+
+    /* Define espaço interno. */
+    padding: 10px;
+}
+
+nav a {
+    /* Remove o sublinhado. */
+    text-decoration: none;
+
+    /* Define a cor. */
+    color: #1e3a8a;
+
+    /* Coloca o texto em negrito. */
+    font-weight: bold;
+
+    /* Define espaço interno. */
+    padding: 8px 14px;
+
+    /* Arredonda os cantos. */
+    border-radius: 8px;
+
+    /* Suaviza as mudanças. */
+    transition: 0.3s;
+}
+
+nav a:hover {
+    /* Muda o fundo ao passar o mouse. */
+    background: #dbeafe;
+}
+
+/* ============================== */
+/* CONTEÚDO PRINCIPAL             */
+/* ============================== */
+
+main {
+    /* Define largura máxima. */
+    max-width: 1200px;
+
+    /* Centraliza o conteúdo. */
+    margin: 40px auto;
+
+    /* Define espaço lateral. */
+    padding: 0 20px;
+}
+
+section {
+    /* Define fundo branco. */
+    background: white;
+
+    /* Arredonda os cantos. */
+    border-radius: 18px;
+
+    /* Define espaço interno. */
+    padding: 35px;
+
+    /* Cria espaço entre as seções. */
+    margin-bottom: 30px;
+
+    /* Adiciona sombra. */
+    box-shadow: 0 8px 30px rgba(15,23,42,0.06);
+}
+
+section h2 {
+    /* Define cor dos títulos. */
+    color: #1e3a8a;
+
+    /* Define tamanho. */
+    font-size: 30px;
+
+    /* Remove margem superior. */
+    margin-top: 0;
+}
+
+section h3 {
+    /* Define cor dos subtítulos. */
+    color: #334155;
+
+    /* Define tamanho. */
+    font-size: 22px;
+}
+
+/* ============================== */
+/* DESTAQUES                      */
+/* ============================== */
+
+.destaque {
+    /* Define fundo azul claro. */
+    background: #eff6ff;
+
+    /* Cria uma barra lateral. */
+    border-left: 6px solid #2563eb;
+
+    /* Define espaço interno. */
+    padding: 20px;
+
+    /* Arredonda os cantos. */
+    border-radius: 10px;
+
+    /* Cria espaço vertical. */
+    margin: 20px 0;
+}
+
+.alerta {
+    /* Define fundo alaranjado claro. */
+    background: #fff7ed;
+
+    /* Cria barra lateral. */
+    border-left: 6px solid #ea580c;
+
+    /* Define espaço interno. */
+    padding: 20px;
+
+    /* Arredonda os cantos. */
+    border-radius: 10px;
+
+    /* Cria espaço vertical. */
+    margin: 20px 0;
+}
+
+.conceito {
+    /* Define fundo claro. */
+    background: #f8fafc;
+
+    /* Cria borda. */
+    border: 1px solid #e2e8f0;
+
+    /* Define espaço interno. */
+    padding: 18px;
+
+    /* Arredonda os cantos. */
+    border-radius: 10px;
+
+    /* Cria espaço vertical. */
+    margin: 15px 0;
+}
+
+.conceito strong {
+    /* Destaca o conceito. */
+    color: #1e3a8a;
+}
+
+/* ============================== */
+/* GRID                           */
+/* ============================== */
+
+.grid {
+    /* Ativa CSS Grid. */
+    display: grid;
+
+    /* Cria colunas responsivas. */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+    /* Define espaço entre os cards. */
+    gap: 20px;
+}
+
+.card {
+    /* Define fundo. */
+    background: #f8fafc;
+
+    /* Define borda. */
+    border: 1px solid #e2e8f0;
+
+    /* Define espaço interno. */
+    padding: 22px;
+
+    /* Arredonda os cantos. */
+    border-radius: 14px;
+}
+
+.card h3 {
+    /* Remove margem superior. */
+    margin-top: 0;
+
+    /* Define cor. */
+    color: #1e3a8a;
+}
+
+/* ============================== */
+/* LINHA DO TEMPO                 */
+/* ============================== */
+
+.timeline {
+    /* Cria linha vertical. */
+    border-left: 4px solid #2563eb;
+
+    /* Cria espaço à esquerda. */
+    padding-left: 25px;
+}
+
+.timeline-item {
+    /* Cria espaço entre os acontecimentos. */
+    margin-bottom: 25px;
+
+    /* Permite posicionar o marcador. */
+    position: relative;
+}
+
+.timeline-item::before {
+    /* Cria o marcador da linha do tempo. */
+    content: "";
+
+    /* Define largura. */
+    width: 14px;
+
+    /* Define altura. */
+    height: 14px;
+
+    /* Transforma em círculo. */
+    border-radius: 50%;
+
+    /* Define a cor. */
+    background: #2563eb;
+
+    /* Posiciona o marcador. */
+    position: absolute;
+
+    /* Coloca sobre a linha. */
+    left: -34px;
+
+    /* Ajusta verticalmente. */
+    top: 8px;
+}
+
+/* ============================== */
+/* TABELAS                        */
+/* ============================== */
+
+.tabela {
+    /* Permite rolagem horizontal em telas pequenas. */
+    overflow-x: auto;
+}
+
+table {
+    /* Ocupa toda a largura disponível. */
+    width: 100%;
+
+    /* Junta as bordas. */
+    border-collapse: collapse;
+
+    /* Cria espaço superior. */
+    margin-top: 20px;
+}
+
+th,
+td {
+    /* Define borda. */
+    border: 1px solid #dbe3ec;
+
+    /* Define espaço interno. */
+    padding: 14px;
+
+    /* Alinha o texto à esquerda. */
+    text-align: left;
+}
+
+th {
+    /* Define fundo do cabeçalho. */
+    background: #eff6ff;
+
+    /* Define cor do texto. */
+    color: #1e3a8a;
+}
+
+/* ============================== */
+/* BOTÕES                         */
+/* ============================== */
+
+.btn {
+    /* Permite usar o elemento como botão ou link. */
+    display: inline-block;
+
+    /* Remove sublinhado. */
+    text-decoration: none;
+
+    /* Define fundo. */
+    background: #1e3a8a;
+
+    /* Define texto branco. */
+    color: white;
+
+    /* Define espaço interno. */
+    padding: 12px 20px;
+
+    /* Arredonda os cantos. */
+    border-radius: 8px;
+
+    /* Coloca o texto em negrito. */
+    font-weight: bold;
+
+    /* Remove borda. */
+    border: none;
+
+    /* Mostra cursor de botão. */
+    cursor: pointer;
+
+    /* Define transição. */
+    transition: 0.3s;
+
+    /* Define tamanho da fonte. */
+    font-size: 15px;
+}
+
+.btn:hover {
+    /* Escurece o botão. */
+    background: #172554;
+
+    /* Levanta levemente o botão. */
+    transform: translateY(-2px);
+}
+
+/* ============================== */
+/* GABARITO                       */
+/* ============================== */
+
+.gabarito {
+    /* Esconde o gabarito inicialmente. */
+    display: none;
+
+    /* Define fundo verde claro. */
+    background: #ecfdf5;
+
+    /* Cria barra lateral. */
+    border-left: 6px solid #059669;
+
+    /* Define espaço interno. */
+    padding: 20px;
+
+    /* Cria espaço superior. */
+    margin-top: 20px;
+
+    /* Arredonda os cantos. */
+    border-radius: 10px;
+}
+
+/* ============================== */
+/* RODAPÉ                         */
+/* ============================== */
+
+footer {
+    /* Define fundo escuro. */
+    background: #0f172a;
+
+    /* Define texto branco. */
+    color: white;
+
+    /* Centraliza o conteúdo. */
+    text-align: center;
+
+    /* Define espaço interno. */
+    padding: 40px 20px;
+
+    /* Cria espaço superior. */
+    margin-top: 50px;
+}
+
+footer p {
+    /* Define margem pequena. */
+    margin: 5px 0;
+}
+
+/* ============================== */
+/* RESPONSIVIDADE                 */
+/* ============================== */
+
+@media (max-width: 700px) {
+
+    /* Reduz o espaço das seções em celulares. */
+
+    section {
+        /* Define espaço interno menor. */
+        padding: 22px;
+    }
+
+    header {
+        /* Reduz o tamanho do cabeçalho. */
+        padding: 40px 18px;
+    }
+
+    nav a {
+        /* Reduz o tamanho dos links. */
+        font-size: 13px;
+
+        /* Reduz o espaço interno. */
+        padding: 7px 9px;
+    }
+}
+</style>
+<!-- Finaliza o CSS. -->
+
+</head>
+<!-- Finaliza as configurações. -->
+
+<body id="topo">
+<!-- Inicia o corpo da página. -->
+
+<header>
+<!-- Inicia o cabeçalho. -->
+
+<div class="marca">
+<!-- Exibe a identificação do curso. -->
+CURSO DE HISTÓRIA GERAL
+<!-- Nome do curso. -->
+</div>
+
+<h1>1.8 — Mundo Árabe</h1>
+<!-- Título principal. -->
+
+<p>
+<!-- Subtítulo. -->
+Professor Marcelo Oliveira • Fund II • Ensino Médio • ENEM • Vestibular • Concursos
+<!-- Identificação do curso. -->
+</p>
+
+</header>
+<!-- Finaliza cabeçalho. -->
+
+<nav>
+<!-- Inicia menu. -->
+
+<div class="menu">
+<!-- Agrupa os links. -->
+
+<a href="#comeco">O Começo</a>
+<!-- Link para o começo. -->
+
+<a href="#desenvolvimento">Desenvolvimento</a>
+<!-- Link para o desenvolvimento. -->
+
+<a href="#legado">Legado</a>
+<!-- Link para o legado. -->
+
+<a href="#cronologia">Cronologia</a>
+<!-- Link para cronologia. -->
+
+<a href="#conceitos">Conceitos</a>
+<!-- Link para conceitos. -->
+
+<a href="#professor">Professor</a>
+<!-- Link para seção do professor. -->
+
+<a href="#questoes">Questões</a>
+<!-- Link para questões. -->
+
+</div>
+<!-- Finaliza menu. -->
+
+</nav>
+<!-- Finaliza navegação. -->
+
+<main>
+<!-- Inicia conteúdo principal. -->
+
+<section id="comeco">
+<!-- Inicia a primeira parte. -->
+
+<h2>I — O COMEÇO</h2>
+<!-- Título da primeira parte. -->
+
+<h3>A Península Arábica antes do Islã</h3>
+<!-- Subtítulo. -->
+
+<p>
+A Península Arábica está localizada entre a África e a Ásia, em uma posição
+estratégica para as rotas comerciais que conectavam diferentes regiões do mundo.
+Antes do surgimento do islamismo, a região apresentava grande diversidade
+política, econômica, cultural e religiosa.
+<!-- Contextualização geográfica e histórica. -->
+</p>
+
+<p>
+A população da península não formava uma unidade política única.
+Existiam diferentes grupos tribais, comunidades urbanas e populações ligadas
+à atividade comercial, à criação de animais e à agricultura em áreas apropriadas.
+<!-- Explicação da diversidade. -->
+</p>
+
+<div class="destaque">
+<!-- Caixa de destaque. -->
+
+<strong>Atenção:</strong>
+<!-- Palavra de destaque. -->
+
+"árabe" não significa simplesmente "muçulmano".
+Árabes e islamismo são conceitos diferentes. Existem árabes muçulmanos,
+mas também existem árabes pertencentes a outras tradições religiosas,
+assim como a maioria dos muçulmanos do mundo não é árabe.
+<!-- Distinção conceitual. -->
+
+</div>
+<!-- Finaliza destaque. -->
+
+<h3>Meca</h3>
+<!-- Subtítulo. -->
+
+<p>
+Meca possuía importância religiosa e comercial antes do surgimento do Islã.
+A Caaba era um importante centro religioso, associado a diferentes práticas
+de culto existentes na região.
+<!-- Contextualização. -->
+</p>
+
+<h3>Medina</h3>
+<!-- Subtítulo. -->
+
+<p>
+Yathrib, posteriormente conhecida como Medina, também desempenharia papel
+fundamental na formação da primeira comunidade política e religiosa ligada
+a Maomé.
+<!-- Explicação. -->
+</p>
+
+<h3>Maomé e o início do Islã</h3>
+<!-- Subtítulo. -->
+
+<p>
+Maomé, conhecido em árabe como Muhammad, nasceu em Meca no século VI.
+Segundo a tradição islâmica, por volta de 610 iniciou as revelações que
+formariam a base da mensagem corânica.
+<!-- Explicação histórica. -->
+</p>
+
+<p>
+Sua pregação defendia a existência de um único Deus, chamado Alá,
+e criticava práticas religiosas e sociais que considerava incompatíveis
+com a nova mensagem.
+<!-- Explicação. -->
+</p>
+
+<h3>A Hégira</h3>
+<!-- Subtítulo. -->
+
+<p>
+Em 622, Maomé e seus seguidores deixaram Meca e foram para Yathrib,
+em um acontecimento conhecido como <strong>Hégira</strong>.
+Esse episódio marca o início do calendário islâmico.
+<!-- Explicação. -->
+</p>
+
+<div class="conceito">
+<!-- Caixa de conceito. -->
+
+<strong>Hégira:</strong>
+<!-- Nome do conceito. -->
+
+migração de Maomé e seus seguidores de Meca para Yathrib,
+ocorrida em 622.
+<!-- Definição. -->
+
+</div>
+<!-- Finaliza conceito. -->
+
+</section>
+<!-- Finaliza primeira parte. -->
+
+<section id="desenvolvimento">
+<!-- Inicia segunda parte. -->
+
+<h2>II — O DESENVOLVIMENTO</h2>
+<!-- Título. -->
+
+<h3>A formação da comunidade islâmica</h3>
+<!-- Subtítulo. -->
+
+<p>
+Em Medina, Maomé estabeleceu uma comunidade que reunia dimensões religiosas,
+sociais e políticas. A nova comunidade passou a desempenhar papel central
+na expansão do Islã.
+<!-- Explicação. -->
+</p>
+
+<h3>O retorno a Meca</h3>
+<!-- Subtítulo. -->
+
+<p>
+Após conflitos e negociações, os seguidores de Maomé conquistaram
+progressivamente maior influência. Em 630, Meca foi incorporada à comunidade
+islâmica, e a Caaba passou a ocupar posição central no culto islâmico.
+<!-- Explicação. -->
+</p>
+
+<h3>A morte de Maomé</h3>
+<!-- Subtítulo. -->
+
+<p>
+Maomé morreu em 632. Sua morte provocou uma questão fundamental:
+quem deveria liderar a comunidade islâmica?
+<!-- Explicação. -->
+</p>
+
+<h3>O problema da sucessão</h3>
+<!-- Subtítulo. -->
+
+<p>
+A sucessão de Maomé esteve na origem de importantes disputas políticas
+e religiosas. Ao longo do tempo, consolidaram-se diferentes tradições,
+das quais as principais são o <strong>sunitismo</strong> e o
+<strong>xiismo</strong>.
+<!-- Explicação. -->
+</p>
+
+<div class="alerta">
+<!-- Caixa de alerta. -->
+
+<strong>Importante:</strong>
+<!-- Destaque. -->
+
+a divisão entre sunitas e xiitas possui raízes históricas relacionadas
+à liderança da comunidade após a morte de Maomé, mas suas diferenças
+posteriores também envolveram interpretações religiosas, instituições,
+práticas e experiências históricas distintas.
+<!-- Explicação mais precisa. -->
+
+</div>
+<!-- Finaliza alerta. -->
+
+<h3>Os primeiros califados</h3>
+<!-- Subtítulo. -->
+
+<p>
+Após a morte de Maomé, líderes conhecidos como califas passaram a dirigir
+a comunidade. O período dos primeiros califas foi seguido por grandes
+transformações políticas e territoriais.
+<!-- Explicação. -->
+</p>
+
+<h3>Califado Omíada</h3>
+<!-- Subtítulo. -->
+
+<p>
+A dinastia Omíada estabeleceu seu centro político em Damasco e governou
+um vasto território. Durante esse período, o domínio islâmico expandiu-se
+por regiões do Oriente Médio, Norte da África e Península Ibérica.
+<!-- Explicação. -->
+</p>
+
+<h3>Califado Abássida</h3>
+<!-- Subtítulo. -->
+
+<p>
+Em 750, os Abássidas assumiram o poder. Bagdá tornou-se um importante
+centro político, econômico e cultural.
+<!-- Explicação. -->
+</p>
+
+<h3>Bagdá e a produção do conhecimento</h3>
+<!-- Subtítulo. -->
+
+<p>
+O mundo islâmico medieval foi formado por sociedades diversas,
+com centros urbanos de grande importância. Em diferentes períodos,
+estudiosos trabalharam em áreas como matemática, medicina, astronomia,
+filosofia, geografia e literatura.
+<!-- Explicação. -->
+</p>
+
+<div class="destaque">
+<!-- Caixa de destaque. -->
+
+<strong>Conhecimento histórico:</strong>
+<!-- Destaque. -->
+
+a circulação de textos e conhecimentos entre diferentes regiões
+do Mediterrâneo, do Oriente Médio, da Ásia e da Europa fez parte
+de processos complexos de tradução, adaptação e produção intelectual.
+<!-- Explicação. -->
+
+</div>
+<!-- Finaliza destaque. -->
+
+<h3>Al-Andalus</h3>
+<!-- Subtítulo. -->
+
+<p>
+A conquista muçulmana de grande parte da Península Ibérica começou em 711.
+As regiões sob domínio islâmico passaram a ser conhecidas em conjunto
+como Al-Andalus, embora sua organização política tenha mudado diversas
+vezes ao longo dos séculos.
+<!-- Explicação. -->
+</p>
+
+<h3>Comércio e circulação</h3>
+<!-- Subtítulo. -->
+
+<p>
+As sociedades islâmicas participaram de amplas redes comerciais que
+conectavam o Mediterrâneo, o Norte da África, o Oriente Médio,
+a Ásia Central, o Oceano Índico e outras regiões.
+<!-- Explicação. -->
+</p>
+
+<h3>O Islã e a diversidade</h3>
+<!-- Subtítulo. -->
+
+<p>
+A expansão política do Islã não produziu uma sociedade culturalmente
+homogênea. Diferentes povos, línguas, tradições e comunidades religiosas
+passaram a viver em territórios governados por autoridades muçulmanas,
+em diferentes condições históricas.
+<!-- Explicação. -->
+</p>
+
+</section>
+<!-- Finaliza segunda parte. -->
+
+<section>
+<!-- Inicia seção de religião. -->
+
+<h2>OS CINCO PILARES DO ISLÃ</h2>
+<!-- Título. -->
+
+<p>
+A tradição islâmica é frequentemente apresentada por meio dos chamados
+Cinco Pilares, práticas fundamentais da vida religiosa.
+<!-- Introdução. -->
+
+</p>
+
+<div class="grid">
+<!-- Inicia grade. -->
+
+<div class="card">
+<!-- Card. -->
+
+<h3>Shahada</h3>
+<!-- Nome. -->
+
+<p>
+Profissão de fé.
+</p>
+<!-- Explicação. -->
+
+</div>
+<!-- Finaliza card. -->
+
+<div class="card">
+<!-- Card. -->
+
+<h3>Salat</h3>
+<!-- Nome. -->
+
+<p>
+Oração ritual realizada em momentos determinados do dia.
+</p>
+<!-- Explicação. -->
+
+</div>
+<!-- Finaliza card. -->
+
+<div class="card">
+<!-- Card. -->
+
+<h3>Zakat</h3>
+<!-- Nome. -->
+
+<p>
+Prática de contribuição destinada à assistência e à solidariedade.
+</p>
+<!-- Explicação. -->
+
+</div>
+<!-- Finaliza card. -->
+
+<div class="card">
+<!-- Card. -->
+
+<h3>Sawm</h3>
+<!-- Nome. -->
+
+<p>
+Jejum realizado durante o mês do Ramadã.
+</p>
+<!-- Explicação. -->
+
+</div>
+<!-- Finaliza card. -->
+
+<div class="card">
+<!-- Card. -->
+
+<h3>Hajj</h3>
+<!-- Nome. -->
+
+<p>
+Peregrinação a Meca, realizada por quem possui condições para fazê-la.
+</p>
+<!-- Explicação. -->
+
+</div>
+<!-- Finaliza card. -->
+
+</div>
+<!-- Finaliza grade. -->
+
+</section>
+<!-- Finaliza seção dos pilares. -->
+
+<section>
+<!-- Inicia seção de comparação. -->
+
+<h2>ÁRABE, ISLÂMICO E MUÇULMANO</h2>
+<!-- Título. -->
+
+<div class="tabela">
+<!-- Cria área de tabela. -->
+
+<table>
+<!-- Inicia tabela. -->
+
+<tr>
+<!-- Inicia cabeçalho. -->
+
+<th>Termo</th>
+<!-- Cabeçalho. -->
+
+<th>Significado</th>
+<!-- Cabeçalho. -->
+
+</tr>
+<!-- Finaliza cabeçalho. -->
+
+<tr>
+<!-- Primeira linha. -->
+
+<td>Árabe</td>
+<!-- Termo. -->
+
+<td>Categoria relacionada principalmente a língua, cultura e identidades árabes.</td>
+<!-- Explicação. -->
+
+</tr>
+<!-- Finaliza linha. -->
+
+<tr>
+<!-- Segunda linha. -->
+
+<td>Islâmico</td>
+<!-- Termo. -->
+
+<td>Relacionado ao Islã, sua religião, instituições, tradições ou sociedades históricas.</td>
+<!-- Explicação. -->
+
+</tr>
+<!-- Finaliza linha. -->
+
+<tr>
+<!-- Terceira linha. -->
+
+<td>Muçulmano</td>
+<!-- Termo. -->
+
+<td>Pessoa que segue o Islã.</td>
+<!-- Explicação. -->
+
+</tr>
+<!-- Finaliza linha. -->
+
+</table>
+<!-- Finaliza tabela. -->
+
+</div>
+<!-- Finaliza área da tabela. -->
+
+<div class="alerta">
+<!-- Caixa de atenção. -->
+
+<strong>Regra importante para o aluno:</strong>
+<!-- Destaque. -->
+
+nem todo árabe é muçulmano e nem todo muçulmano é árabe.
+<!-- Síntese. -->
+
+</div>
+<!-- Finaliza alerta. -->
+
+</section>
+<!-- Finaliza comparação. -->
+
+<section id="legado">
+<!-- Inicia terceira parte. -->
+
+<h2>III — O LEGADO E O MUNDO ATUAL</h2>
+<!-- Título. -->
+
+<h3>Um espaço de circulação cultural</h3>
+<!-- Subtítulo. -->
+
+<p>
+O mundo islâmico medieval participou de intensas redes de circulação
+de pessoas, mercadorias, ideias e conhecimentos. Essas redes conectaram
+regiões que atualmente pertencem a diferentes países.
+<!-- Explicação. -->
+</p>
+
+<h3>Matemática e ciência</h3>
+<!-- Subtítulo. -->
+
+<p>
+Estudiosos de sociedades islâmicas participaram do desenvolvimento
+e da transmissão de conhecimentos matemáticos, astronômicos, médicos,
+geográficos e filosóficos.
+<!-- Explicação. -->
+</p>
+
+<p>
+A história da ciência não deve ser contada como uma simples sequência
+em que uma civilização "entrega" conhecimento para outra. Houve traduções,
+debates, adaptações, críticas e novas produções realizadas em diferentes
+lugares e períodos.
+<!-- Observação metodológica. -->
+</p>
+
+<h3>Al-Andalus e o Mediterrâneo</h3>
+<!-- Subtítulo. -->
+
+<p>
+A presença islâmica na Península Ibérica criou importantes espaços
+de contato e conflito entre diferentes comunidades. A história de Al-Andalus
+envolveu períodos de convivência, cooperação, desigualdade, disputas
+políticas e guerras.
+<!-- Explicação equilibrada. -->
+</p>
+
+<h3>Conexões com a Europa medieval</h3>
+<!-- Subtítulo. -->
+
+<p>
+As relações entre sociedades cristãs, judaicas e muçulmanas envolveram
+comércio, diplomacia, guerras, intercâmbio cultural e circulação de conhecimentos.
+<!-- Explicação. -->
+</p>
+
+<h3>Conexão com a História do Brasil</h3>
+<!-- Subtítulo. -->
+
+<p>
+A história do mundo árabe e do Islã também ajuda a compreender aspectos
+da formação histórica do Brasil. Durante o período colonial e imperial,
+africanos muçulmanos foram trazidos para o Brasil pela escravidão atlântica.
+<!-- Conexão. -->
+</p>
+
+<p>
+Um exemplo importante ocorreu na Bahia, onde africanos islamizados
+participaram de movimentos de resistência, incluindo a Revolta dos Malês,
+em 1835.
+<!-- Explicação histórica. -->
+</p>
+
+<div class="destaque">
+<!-- Caixa de destaque. -->
+
+<strong>Ponto fundamental:</strong>
+<!-- Destaque. -->
+
+a presença do Islã no Brasil não é um fenômeno exclusivamente contemporâneo.
+Ela também faz parte da história da diáspora africana e das experiências
+das populações africanas escravizadas.
+<!-- Síntese. -->
+
+</div>
+<!-- Finaliza destaque. -->
+
+<h3>O mundo atual</h3>
+<!-- Subtítulo. -->
+
+<p>
+Atualmente, populações árabes vivem em diferentes países e possuem
+diversas identidades religiosas e culturais. O mundo árabe contemporâneo
+é diverso e não pode ser reduzido a uma única experiência política,
+religiosa ou cultural.
+<!-- Explicação contemporânea. -->
+</p>
+
+</section>
+<!-- Finaliza terceira parte. -->
+
+<section id="cronologia">
+<!-- Inicia cronologia. -->
+
+<h2>LINHA DO TEMPO</h2>
+<!-- Título. -->
+
+<div class="timeline">
+<!-- Inicia linha do tempo. -->
+
+<div class="timeline-item">
+<!-- Primeiro item. -->
+
+<strong>Século VI</strong>
+<!-- Data. -->
+
+<p>
+Nascimento de Maomé em Meca.
+</p>
+<!-- Descrição. -->
+
+</div>
+<!-- Finaliza item. -->
+
+<div class="timeline-item">
+<!-- Segundo item. -->
+
+<strong>c. 610</strong>
+<!-- Data. -->
+
+<p>
+Início, segundo a tradição islâmica, das revelações recebidas por Maomé.
+</p>
+<!-- Descrição. -->
+
+</div>
+<!-- Finaliza item. -->
+
+<div class="timeline-item">
+<!-- Terceiro item. -->
+
+<strong>622</strong>
+<!-- Data. -->
+
+<p>
+Hégira: migração de Meca para Yathrib, posteriormente Medina.
+</p>
+<!-- Descrição. -->
+
+</div>
+<!-- Finaliza item. -->
+
+<div class="timeline-item">
+<!-- Quarto item. -->
+
+<strong>630</strong>
+<!-- Data. -->
+
+<p>
+Meca é incorporada à comunidade islâmica.
+</p>
+<!-- Descrição. -->
+
+</div>
+<!-- Finaliza item. -->
+
+<div class="timeline-item">
+<!-- Quinto item. -->
+
+<strong>632</strong>
+<!-- Data. -->
+
+<p>
+Morte de Maomé e início das disputas relacionadas à sucessão.
+</p>
+<!-- Descrição. -->
+
+</div>
+<!-- Finaliza item. -->
+
+<div class="timeline-item">
+<!-- Sexto item. -->
+
+<strong>661</strong>
+<!-- Data. -->
+
+<p>
+Início do Califado Omíada.
+</p>
+<!-- Descrição. -->
+
+</div>
+<!-- Finaliza item. -->
+
+<div class="timeline-item">
+<!-- Sétimo item. -->
+
+<strong>711</strong>
+<!-- Data. -->
+
+<p>
+Início da conquista muçulmana de grande parte da Península Ibérica.
+</p>
+<!-- Descrição. -->
+
+</div>
+<!-- Finaliza item. -->
+
+<div class="timeline-item">
+<!-- Oitavo item. -->
+
+<strong>750</strong>
+<!-- Data. -->
+
+<p>
+Ascensão dos Abássidas e transferência do centro político para Bagdá.
+</p>
+<!-- Descrição. -->
+
+</div>
+<!-- Finaliza item. -->
+
+<div class="timeline-item">
+<!-- Nono item. -->
+
+<strong>1835</strong>
+<!-- Data. -->
+
+<p>
+Revolta dos Malês na Bahia, importante episódio da história do Islã no Brasil.
+</p>
+<!-- Descrição. -->
+
+</div>
+<!-- Finaliza item. -->
+
+</div>
+<!-- Finaliza linha do tempo. -->
+
+</section>
+<!-- Finaliza cronologia. -->
+
+<section id="conceitos">
+<!-- Inicia seção de conceitos. -->
+
+<h2>CONCEITOS QUE O ALUNO PRECISA DOMINAR</h2>
+<!-- Título. -->
+
+<div class="grid">
+<!-- Inicia grade. -->
+
+<div class="card">
+<!-- Card. -->
+
+<h3>Islã</h3>
+<!-- Conceito. -->
+
+<p>
+Religião monoteísta surgida na Península Arábica no século VII.
+</p>
+<!-- Definição. -->
+
+</div>
+<!-- Finaliza card. -->
+
+<div class="card">
+<!-- Card. -->
+
+<h3>Muçulmano</h3>
+<!-- Conceito. -->
+
+<p>
+Pessoa que segue o Islã.
+</p>
+<!-- Definição. -->
+
+</div>
+<!-- Finaliza card. -->
+
+<div class="card">
+<!-- Card. -->
+
+<h3>Califa</h3>
+<!-- Conceito. -->
+
+<p>
+Título atribuído a líderes da comunidade islâmica em diferentes períodos.
+</p>
+<!-- Definição. -->
+
+</div>
+<!-- Finaliza card. -->
+
+<div class="card">
+<!-- Card. -->
+
+<h3>Hégira</h3>
+<!-- Conceito. -->
+
+<p>
+Migração de Maomé e seus seguidores de Meca para Medina em 622.
+</p>
+<!-- Definição. -->
+
+</div>
+<!-- Finaliza card. -->
+
+<div class="card">
+<!-- Card. -->
+
+<h3>Sunismo</h3>
+<!-- Conceito. -->
+
+<p>
+Uma das principais tradições do Islã, desenvolvida historicamente
+em torno de determinadas concepções de liderança e tradição.
+</p>
+<!-- Definição. -->
+
+</div>
+<!-- Finaliza card. -->
+
+<div class="card">
+<!-- Card. -->
+
+<h3>Xiismo</h3>
+<!-- Conceito. -->
+
+<p>
+Uma das principais tradições do Islã, com raízes históricas nas disputas
+sobre a liderança da comunidade após a morte de Maomé.
+</p>
+<!-- Definição. -->
+
+</div>
+<!-- Finaliza card. -->
+
+<div class="card">
+<!-- Card. -->
+
+<h3>Al-Andalus</h3>
+<!-- Conceito. -->
+
+<p>
+Nome utilizado para os territórios da Península Ibérica sob domínio islâmico
+em diferentes períodos.
+</p>
+<!-- Definição. -->
+
+</div>
+<!-- Finaliza card. -->
+
+<div class="card">
+<!-- Card. -->
+
+<h3>Califado</h3>
+<!-- Conceito. -->
+
+<p>
+Forma histórica de organização política da comunidade islâmica sob liderança
+de um califa.
+</p>
+<!-- Definição. -->
+
+</div>
+<!-- Finaliza card. -->
+
+</div>
+<!-- Finaliza grade. -->
+
+</section>
+<!-- Finaliza conceitos. -->
+
+<section>
+<!-- Inicia seção de causas e consequências. -->
+
+<h2>CAUSAS E CONSEQUÊNCIAS</h2>
+<!-- Título. -->
+
+<div class="grid">
+<!-- Inicia grade. -->
+
+<div class="card">
+<!-- Card. -->
+
+<h3>Contexto</h3>
+<!-- Título. -->
+
+<ul>
+<!-- Lista. -->
+
+<li>Localização estratégica da Península Arábica.</li>
+<!-- Item. -->
+
+<li>Existência de redes comerciais.</li>
+<!-- Item. -->
+
+<li>Diversidade religiosa e tribal.</li>
+<!-- Item. -->
+
+<li>Importância de cidades como Meca e Medina.</li>
+<!-- Item. -->
+
+</ul>
+<!-- Finaliza lista. -->
+
+</div>
+<!-- Finaliza card. -->
+
+<div class="card">
+<!-- Card. -->
+
+<h3>Transformações</h3>
+<!-- Título. -->
+
+<ul>
+<!-- Lista. -->
+
+<li>Formação da comunidade islâmica.</li>
+<!-- Item. -->
+
+<li>Expansão territorial.</li>
+<!-- Item. -->
+
+<li>Criação de diferentes califados.</li>
+<!-- Item. -->
+
+<li>Ampliação das redes comerciais.</li>
+<!-- Item. -->
+
+<li>Circulação de conhecimentos.</li>
+<!-- Item. -->
+
+</ul>
+<!-- Finaliza lista. -->
+
+</div>
+<!-- Finaliza card. -->
+
+</div>
+<!-- Finaliza grade. -->
+
+</section>
+<!-- Finaliza causas e consequências. -->
+
+<section id="professor">
+<!-- Inicia seção destinada ao professor. -->
+
+<h2>O QUE O PROFESSOR PRECISA DOMINAR</h2>
+<!-- Título. -->
+
+<ul>
+<!-- Inicia lista. -->
+
+<li>Localizar geograficamente a Península Arábica.</li>
+<!-- Item. -->
+
+<li>Explicar a diversidade da Arábia antes do Islã.</li>
+<!-- Item. -->
+
+<li>Explicar o surgimento do islamismo.</li>
+<!-- Item. -->
+
+<li>Conhecer a importância histórica de Meca e Medina.</li>
+<!-- Item. -->
+
+<li>Explicar a Hégira de 622.</li>
+<!-- Item. -->
+
+<li>Compreender o problema da sucessão de Maomé.</li>
+<!-- Item. -->
+
+<li>Diferenciar sunitas e xiitas sem reduzir a diferença apenas a uma disputa política inicial.</li>
+<!-- Item. -->
+
+<li>Compreender os califados Omíada e Abássida.</li>
+<!-- Item. -->
+
+<li>Explicar a importância de Bagdá.</li>
+<!-- Item. -->
+
+<li>Conhecer a importância histórica de Al-Andalus.</li>
+<!-- Item. -->
+
+<li>Relacionar o mundo islâmico às redes comerciais e culturais afro-euro-asiáticas.</li>
+<!-- Item. -->
+
+<li>Relacionar a presença do Islã à história dos africanos escravizados no Brasil.</li>
+<!-- Item. -->
+
+</ul>
+<!-- Finaliza lista. -->
+
+<h3>O QUE COLOCAR NA LOUSA</h3>
+<!-- Subtítulo. -->
+
+<div class="destaque">
+<!-- Quadro da lousa. -->
+
+<p>
+<strong>MUNDO ÁRABE E ISLÃ</strong>
+</p>
+<!-- Título. -->
+
+<p>
+Península Arábica → Meca + Medina
+</p>
+<!-- Primeira linha. -->
+
+<p>
+Maomé → Islã
+</p>
+<!-- Segunda linha. -->
+
+<p>
+622 → Hégira
+</p>
+<!-- Terceira linha. -->
+
+<p>
+632 → morte de Maomé → questão da sucessão
+</p>
+<!-- Quarta linha. -->
+
+<p>
+Omíadas → Damasco
+</p>
+<!-- Quinta linha. -->
+
+<p>
+Abássidas → Bagdá
+</p>
+<!-- Sexta linha. -->
+
+<p>
+711 → Al-Andalus
+</p>
+<!-- Sétima linha. -->
+
+<p>
+Comércio + ciência + cultura + circulação
+</p>
+<!-- Oitava linha. -->
+
+<p>
+Brasil → Revolta dos Malês → 1835
+</p>
+<!-- Nona linha. -->
+
+</div>
+<!-- Finaliza quadro. -->
+
+</section>
+<!-- Finaliza professor. -->
+
+<section>
+<!-- Inicia seção BNCC. -->
+
+<h2>BNCC</h2>
+<!-- Título. -->
+
+<div class="destaque">
+<!-- Destaque curricular. -->
+
+<p>
+<strong>EF06HI14</strong> — Identificar e analisar diferentes formas de contato,
+adaptação ou exclusão entre populações em diferentes tempos e espaços.
+</p>
+<!-- Habilidade relacionada ao contato entre sociedades. -->
+
+<p>
+<strong>EF06HI15</strong> — Descrever as dinâmicas de circulação de pessoas,
+produtos e culturas no Mediterrâneo e seu significado.
+</p>
+<!-- Habilidade relacionada à circulação. -->
+
+</div>
+<!-- Finaliza destaque. -->
+
+<p>
+O tema permite trabalhar especialmente circulação de pessoas,
+produtos, culturas e conhecimentos entre África, Ásia e Europa,
+além das relações entre diferentes sociedades medievais.
+</p>
+<!-- Justificativa pedagógica. -->
+
+</section>
+<!-- Finaliza BNCC. -->
+
+<section>
+<!-- Inicia preparação para provas. -->
+
+<h2>ENEM • VESTIBULAR • CONCURSOS</h2>
+<!-- Título. -->
+
+<div class="grid">
+<!-- Inicia grade. -->
+
+<div class="card">
+<!-- Card. -->
+
+<h3>ENEM</h3>
+<!-- Título. -->
+
+<p>
+Atenção às relações entre religião, cultura, comércio, circulação
+e formação de sociedades.
+</p>
+<!-- Orientação. -->
+
+</div>
+<!-- Finaliza card. -->
+
+<div class="card">
+<!-- Card. -->
+
+<h3>Vestibulares</h3>
+<!-- Título. -->
+
+<p>
+Domine Hégira, Maomé, califados, Al-Andalus e a divisão entre sunitas e xiitas.
+</p>
+<!-- Orientação. -->
+
+</div>
+<!-- Finaliza card. -->
+
+<div class="card">
+<!-- Card. -->
+
+<h3>Concursos</h3>
+<!-- Título. -->
+
+<p>
+Memorize datas, conceitos e diferenças entre árabe, islâmico e muçulmano.
+</p>
+<!-- Orientação. -->
+
+</div>
+<!-- Finaliza card. -->
+
+</div>
+<!-- Finaliza grade. -->
+
+</section>
+<!-- Finaliza preparação. -->
+
+<section id="questoes">
+<!-- Inicia seção de questões. -->
+
+<h2>QUESTÕES — MODELO ENEM</h2>
+<!-- Título. -->
+
+<h3>Questão 1</h3>
+<!-- Identificação. -->
+
+<p>
+A expansão do Islã a partir do século VII ocorreu em um espaço marcado
+por diferentes povos, culturas e rotas de circulação. A formação de
+grandes territórios sob governos muçulmanos favoreceu, em diferentes períodos,
+a circulação de mercadorias, pessoas e conhecimentos.
+</p>
+<!-- Enunciado. -->
+
+<p>
+<strong>A)</strong> eliminou completamente as diferenças culturais entre os povos conquistados.
+</p>
+<!-- Alternativa A. -->
+
+<p>
+<strong>B)</strong> contribuiu para a formação de amplas redes de circulação
+entre diferentes regiões da África, Ásia e Europa.
+</p>
+<!-- Alternativa B. -->
+
+<p>
+<strong>C)</strong> isolou economicamente o mundo islâmico do Mediterrâneo.
+</p>
+<!-- Alternativa C. -->
+
+<p>
+<strong>D)</strong> impediu o desenvolvimento de centros urbanos.
+</p>
+<!-- Alternativa D. -->
+
+<p>
+<strong>E)</strong> provocou o desaparecimento das atividades comerciais.
+</p>
+<!-- Alternativa E. -->
+
+<button class="btn" onclick="mostrarGabarito('gabarito1')">
+<!-- Botão do gabarito. -->
+
+Mostrar gabarito da questão 1
+<!-- Texto. -->
+
+</button>
+<!-- Finaliza botão. -->
+
+<div id="gabarito1" class="gabarito">
+<!-- Área escondida. -->
+
+<strong>Resposta: B.</strong>
+<!-- Resposta. -->
+
+<p>
+A expansão e a consolidação de diferentes sociedades islâmicas
+contribuíram para redes de circulação que conectaram regiões
+da África, Ásia e Europa.
+</p>
+<!-- Explicação. -->
+
+</div>
+<!-- Finaliza gabarito. -->
+
+<h3>Questão 2</h3>
+<!-- Identificação. -->
+
+<p>
+Um estudante afirmou: "Todo árabe é muçulmano e todo muçulmano é árabe".
+Do ponto de vista histórico e cultural, essa afirmação está incorreta porque:
+</p>
+<!-- Enunciado. -->
+
+<p>
+<strong>A)</strong> o Islã surgiu na Europa medieval.
+</p>
+<!-- Alternativa A. -->
+
+<p>
+<strong>B)</strong> não existem povos árabes atualmente.
+</p>
+<!-- Alternativa B. -->
+
+<p>
+<strong>C)</strong> árabe e muçulmano são conceitos diferentes, relacionados respectivamente
+a identidades culturais e linguísticas e à adesão a uma religião.
+</p>
+<!-- Alternativa C. -->
+
+<p>
+<strong>D)</strong> o Islã não possui relação com a Península Arábica.
+</p>
+<!-- Alternativa D. -->
+
+<p>
+<strong>E)</strong> todos os habitantes da Península Arábica pertenciam à mesma religião antes do Islã.
+</p>
+<!-- Alternativa E. -->
+
+<button class="btn" onclick="mostrarGabarito('gabarito2')">
+<!-- Botão. -->
+
+Mostrar gabarito da questão 2
+<!-- Texto. -->
+
+</button>
+<!-- Finaliza botão. -->
+
+<div id="gabarito2" class="gabarito">
+<!-- Área escondida. -->
+
+<strong>Resposta: C.</strong>
+<!-- Resposta. -->
+
+<p>
+"Árabe" e "muçulmano" não são sinônimos. Árabe relaciona-se principalmente
+a língua, cultura e identidades históricas, enquanto muçulmano designa
+quem segue o Islã.
+</p>
+<!-- Explicação. -->
+
+</div>
+<!-- Finaliza gabarito. -->
+
+</section>
+<!-- Finaliza questões. -->
+
+<section>
+<!-- Inicia revisão. -->
+
+<h2>REVISÃO EM 60 SEGUNDOS</h2>
+<!-- Título. -->
+
+<div class="destaque">
+<!-- Caixa de revisão. -->
+
+<p>
+<strong>1.</strong> O Islã surgiu na Península Arábica no século VII.
+</p>
+<!-- Revisão. -->
+
+<p>
+<strong>2.</strong> Meca e Medina foram fundamentais para a história inicial do Islã.
+</p>
+<!-- Revisão. -->
+
+<p>
+<strong>3.</strong> 622 → Hégira.
+</p>
+<!-- Revisão. -->
+
+<p>
+<strong>4.</strong> 632 → morte de Maomé.
+</p>
+<!-- Revisão. -->
+
+<p>
+<strong>5.</strong> A sucessão de Maomé gerou importantes disputas históricas.
+</p>
+<!-- Revisão. -->
+
+<p>
+<strong>6.</strong> Omíadas → Damasco.
+</p>
+<!-- Revisão. -->
+
+<p>
+<strong>7.</strong> Abássidas → Bagdá.
+</p>
+<!-- Revisão. -->
+
+<p>
+<strong>8.</strong> 711 → início da conquista islâmica da Península Ibérica.
+</p>
+<!-- Revisão. -->
+
+<p>
+<strong>9.</strong> O mundo islâmico participou de grandes redes comerciais e culturais.
+</p>
+<!-- Revisão. -->
+
+<p>
+<strong>10.</strong> Árabe ≠ muçulmano.
+</p>
+<!-- Revisão. -->
+
+<p>
+<strong>11.</strong> No Brasil, a história do Islã também está relacionada
+à presença de africanos muçulmanos escravizados.
+</p>
+<!-- Revisão. -->
+
+</div>
+<!-- Finaliza revisão. -->
+
+</section>
+<!-- Finaliza revisão. -->
+
+<div style="text-align:center; margin:40px 0;">
+<!-- Cria área dos botões. -->
+
+<button class="btn" onclick="voltarPagina()">
+<!-- Cria botão voltar. -->
+
+← Voltar
+<!-- Texto do botão. -->
+
+</button>
+<!-- Finaliza botão. -->
+
+<a href="#topo" class="btn">
+<!-- Cria botão voltar ao topo. -->
+
+↑ Voltar ao topo
+<!-- Texto do botão. -->
+
+</a>
+<!-- Finaliza link. -->
+
+</div>
+<!-- Finaliza área dos botões. -->
+
+</main>
+<!-- Finaliza conteúdo principal. -->
+
+<footer>
+<!-- Inicia rodapé. -->
+
+<p>
+<strong>Curso de História Geral</strong>
+</p>
+<!-- Nome do curso. -->
+
+<p>
+Professor Marcelo Oliveira
+</p>
+<!-- Nome do professor. -->
+
+<p>
+Fund II • Ensino Médio • ENEM • Vestibular • Concursos
+</p>
+<!-- Público. -->
+
+<p>
+© 2026 — Material didático autoral
+</p>
+<!-- Copyright. -->
+
+</footer>
+<!-- Finaliza rodapé. -->
+
+<script>
+/* ============================== */
+/* FUNÇÃO DO GABARITO             */
+/* ============================== */
+
+function mostrarGabarito(id) {
+    /* Localiza o elemento pelo ID informado. */
+    const elemento = document.getElementById(id);
+
+    /* Verifica se o elemento está visível. */
+    if (elemento.style.display === "block") {
+
+        /* Esconde o gabarito. */
+        elemento.style.display = "none";
+
+    } else {
+
+        /* Mostra o gabarito. */
+        elemento.style.display = "block";
+    }
+}
+
+/* ============================== */
+/* FUNÇÃO VOLTAR                  */
+/* ============================== */
+
+function voltarPagina() {
+    /* Verifica se existe uma página anterior no histórico. */
+    if (document.referrer !== "") {
+
+        /* Retorna à página anterior. */
+        history.back();
+
+    } else {
+
+        /* Mostra aviso caso não exista página anterior. */
+        alert("Você está na primeira página deste caminho.");
+    }
+}
+</script>
+<!-- Finaliza o JavaScript. -->
+<script>
+  const paginaAnterior = "07 - imperio-bizantino.html";
+  const paginaProxima = "09 - Imperio-Carolingio.html";
+</script>
+<script src="navegacao.js"></script>
+</body>
+<!-- Finaliza o corpo da página. -->
+
+</html>
+<!-- Finaliza o documento. -->

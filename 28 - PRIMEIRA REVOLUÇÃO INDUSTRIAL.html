@@ -1,0 +1,1922 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <!-- Define a codificação dos caracteres da página. -->
+    <meta charset="UTF-8">
+
+    <!-- Faz a página funcionar corretamente em celulares, tablets e computadores. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Define o título que aparecerá na aba do navegador. -->
+    <title>1.28 — Primeira Revolução Industrial | Curso de História Geral</title>
+
+    <!-- ========================================================= -->
+    <!-- CSS DO CAPÍTULO                                           -->
+    <!-- IDENTIDADE VISUAL: GRAFITE                               -->
+    <!-- ========================================================= -->
+
+    <style>
+
+        /* ======================================================= */
+        /* CONFIGURAÇÕES GERAIS                                   */
+        /* ======================================================= */
+
+        /* Remove margens e espaçamentos padrão do navegador. */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Permite rolagem suave pela página. */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Define a aparência geral do documento. */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #e8e8e8;
+            color: #252525;
+            line-height: 1.7;
+        }
+
+        /* Remove a decoração padrão dos links. */
+        a {
+            text-decoration: none;
+        }
+
+        /* ======================================================= */
+        /* CABEÇALHO                                               */
+        /* ======================================================= */
+
+        /* Cria o cabeçalho grafite. */
+        header {
+            background: #292929;
+            color: white;
+            padding: 30px 7%;
+            border-bottom: 5px solid #555555;
+        }
+
+        /* Pequena identificação do curso. */
+        .identificacao {
+            color: #cfcfcf;
+            font-size: 14px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        /* Título principal do capítulo. */
+        header h1 {
+            font-size: clamp(32px, 5vw, 58px);
+            line-height: 1.1;
+            margin-bottom: 15px;
+        }
+
+        /* Subtítulo do capítulo. */
+        header p {
+            max-width: 900px;
+            color: #d6d6d6;
+            font-size: 18px;
+        }
+
+        /* ======================================================= */
+        /* NAVEGAÇÃO                                               */
+        /* ======================================================= */
+
+        /* Cria a área de navegação. */
+        .navegacao {
+            background: #3a3a3a;
+            padding: 14px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        /* Estiliza os links de navegação. */
+        .navegacao a {
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        /* Cria o efeito dos links. */
+        .navegacao a:hover {
+            color: #bdbdbd;
+        }
+
+        /* ======================================================= */
+        /* CONTAINER PRINCIPAL                                     */
+        /* ======================================================= */
+
+        /* Limita a largura do conteúdo. */
+        .container {
+            width: min(1200px, 90%);
+            margin: 40px auto;
+        }
+
+        /* ======================================================= */
+        /* CARTÕES                                                  */
+        /* ======================================================= */
+
+        /* Cria o padrão visual dos cartões. */
+        .card {
+            background: #ffffff;
+            border: 1px solid #cccccc;
+            border-left: 6px solid #444444;
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+        }
+
+        /* Títulos internos. */
+        .card h2 {
+            color: #292929;
+            font-size: 30px;
+            margin-bottom: 18px;
+        }
+
+        /* Subtítulos. */
+        .card h3 {
+            color: #3d3d3d;
+            margin-top: 25px;
+            margin-bottom: 10px;
+            font-size: 21px;
+        }
+
+        /* Parágrafos. */
+        .card p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        /* Listas. */
+        .card ul,
+        .card ol {
+            margin: 15px 0 20px 25px;
+        }
+
+        /* Espaçamento entre itens. */
+        .card li {
+            margin-bottom: 8px;
+        }
+
+        /* ======================================================= */
+        /* DESTAQUES                                                */
+        /* ======================================================= */
+
+        /* Caixa de conceito. */
+        .conceito {
+            background: #eeeeee;
+            border-left: 5px solid #555555;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 6px;
+        }
+
+        /* Caixa para atenção do professor. */
+        .professor {
+            background: #333333;
+            color: #ffffff;
+            padding: 25px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        /* Título dentro da caixa do professor. */
+        .professor h3 {
+            color: #ffffff;
+            margin-top: 0;
+        }
+
+        /* Caixa de lousa. */
+        .lousa {
+            background: #202020;
+            color: #eeeeee;
+            padding: 25px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        /* Título da lousa. */
+        .lousa h3 {
+            color: #ffffff;
+            margin-top: 0;
+        }
+
+        /* ======================================================= */
+        /* LINHA DO TEMPO                                           */
+        /* ======================================================= */
+
+        /* Cria a linha do tempo. */
+        .timeline {
+            border-left: 4px solid #555555;
+            padding-left: 25px;
+            margin: 25px 0;
+        }
+
+        /* Cada acontecimento da linha do tempo. */
+        .evento {
+            margin-bottom: 25px;
+            position: relative;
+        }
+
+        /* Marca visual do acontecimento. */
+        .evento::before {
+            content: "";
+            width: 13px;
+            height: 13px;
+            background: #444444;
+            border-radius: 50%;
+            position: absolute;
+            left: -34px;
+            top: 8px;
+        }
+
+        /* Ano da linha do tempo. */
+        .ano {
+            font-weight: bold;
+            color: #333333;
+            font-size: 18px;
+        }
+
+        /* ======================================================= */
+        /* TABELAS                                                 */
+        /* ======================================================= */
+
+        /* Permite rolagem horizontal em telas pequenas. */
+        .tabela-container {
+            overflow-x: auto;
+            margin: 20px 0;
+        }
+
+        /* Estrutura da tabela. */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 650px;
+        }
+
+        /* Células. */
+        th,
+        td {
+            border: 1px solid #cccccc;
+            padding: 14px;
+            text-align: left;
+        }
+
+        /* Cabeçalho da tabela. */
+        th {
+            background: #333333;
+            color: #ffffff;
+        }
+
+        /* Linhas alternadas. */
+        tr:nth-child(even) {
+            background: #f2f2f2;
+        }
+
+        /* ======================================================= */
+        /* QUESTÕES                                                */
+        /* ======================================================= */
+
+        /* Caixa da questão. */
+        .questao {
+            background: #f5f5f5;
+            border: 1px solid #cccccc;
+            padding: 25px;
+            border-radius: 8px;
+            margin: 25px 0;
+        }
+
+        /* Alternativas. */
+        .alternativas {
+            margin-top: 15px;
+        }
+
+        /* Cada alternativa. */
+        .alternativas p {
+            margin-bottom: 8px;
+            text-align: left;
+        }
+
+        /* Botão do gabarito. */
+        button {
+            background: #333333;
+            color: #ffffff;
+            border: none;
+            padding: 12px 18px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        /* Efeito do botão. */
+        button:hover {
+            background: #555555;
+        }
+
+        /* Gabarito escondido inicialmente. */
+        .gabarito {
+            display: none;
+            background: #dddddd;
+            border-left: 5px solid #333333;
+            padding: 18px;
+            margin-top: 15px;
+        }
+
+        /* ======================================================= */
+        /* NAVEGAÇÃO ENTRE CAPÍTULOS                               */
+        /* ======================================================= */
+
+        /* Área dos botões finais. */
+        .final-navegacao {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+
+        /* Botões finais. */
+        .botao {
+            background: #292929;
+            color: #ffffff;
+            padding: 14px 22px;
+            border-radius: 7px;
+            font-weight: bold;
+        }
+
+        /* Efeito dos botões. */
+        .botao:hover {
+            background: #505050;
+        }
+
+        /* ======================================================= */
+        /* RODAPÉ                                                  */
+        /* ======================================================= */
+
+        /* Rodapé da página. */
+        footer {
+            background: #292929;
+            color: #ffffff;
+            text-align: center;
+            padding: 35px 20px;
+            margin-top: 60px;
+        }
+
+        /* Texto do rodapé. */
+        footer p {
+            margin-bottom: 5px;
+        }
+
+        /* Assinatura. */
+        .assinatura {
+            color: #bdbdbd;
+            font-size: 14px;
+        }
+
+        /* ======================================================= */
+        /* BOTÃO VOLTAR AO TOPO                                     */
+        /* ======================================================= */
+
+        /* Botão fixo. */
+        #topo {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            display: none;
+            z-index: 1000;
+        }
+
+        /* ======================================================= */
+        /* RESPONSIVIDADE                                           */
+        /* ======================================================= */
+
+        /* Ajustes para tablets e celulares. */
+        @media (max-width: 700px) {
+
+            /* Reduz o espaçamento do cabeçalho. */
+            header {
+                padding: 25px 5%;
+            }
+
+            /* Reduz o tamanho dos textos. */
+            header p {
+                font-size: 16px;
+            }
+
+            /* Reduz a largura do conteúdo. */
+            .container {
+                width: 94%;
+            }
+
+            /* Reduz o espaçamento dos cartões. */
+            .card {
+                padding: 22px;
+            }
+
+            /* Reduz títulos. */
+            .card h2 {
+                font-size: 25px;
+            }
+
+            /* Justifica o texto. */
+            .card p {
+                text-align: left;
+            }
+
+            /* Organiza a navegação final. */
+            .final-navegacao {
+                flex-direction: column;
+            }
+
+            /* Faz os botões ocuparem a largura. */
+            .botao {
+                text-align: center;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body id="inicio">
+
+
+    <!-- ========================================================= -->
+    <!-- CABEÇALHO DO CAPÍTULO                                    -->
+    <!-- ========================================================= -->
+
+    <header>
+
+        <!-- Identificação do curso. -->
+        <div class="identificacao">
+            Curso de História Geral
+        </div>
+
+        <!-- Título principal. -->
+        <h1>
+            1.28 — Primeira Revolução Industrial
+        </h1>
+
+        <!-- Apresentação do capítulo. -->
+        <p>
+            A transformação da produção, do trabalho, da economia e da
+            sociedade que ajudou a construir o mundo industrial moderno.
+        </p>
+
+    </header>
+
+
+    <!-- ========================================================= -->
+    <!-- NAVEGAÇÃO                                                 -->
+    <!-- ========================================================= -->
+
+    <nav class="navegacao">
+
+        <!-- Volta ao tema anterior. -->
+        <a href="../24-Revolucoes-Inglesas/index.html">
+            ← Tema anterior
+        </a>
+
+        <!-- Volta ao início do curso. -->
+        <a href="../index.html">
+            Curso de História Geral
+        </a>
+
+        <!-- Avança para o próximo tema. -->
+        <a href="../26-Iluminismo-e-Despotismo-Esclarecido/index.html">
+            Próximo tema →
+        </a>
+
+    </nav>
+
+
+    <!-- ========================================================= -->
+    <!-- CONTEÚDO PRINCIPAL                                       -->
+    <!-- ========================================================= -->
+
+    <main class="container">
+
+
+        <!-- ===================================================== -->
+        <!-- APRESENTAÇÃO                                          -->
+        <!-- ===================================================== -->
+
+        <section class="card">
+
+            <h2>
+                Apresentação
+            </h2>
+
+            <p>
+                A Primeira Revolução Industrial foi um processo de profundas
+                transformações econômicas, tecnológicas, sociais e ambientais
+                que começou na Inglaterra durante a segunda metade do século XVIII
+                e se expandiu posteriormente para outras regiões da Europa e do mundo.
+            </p>
+
+            <p>
+                Mais do que simplesmente a invenção de máquinas, a Revolução
+                Industrial representou uma mudança na maneira como os seres humanos
+                produziam mercadorias, organizavam o trabalho, utilizavam energia,
+                transportavam produtos e estruturavam as relações sociais.
+            </p>
+
+            <div class="conceito">
+
+                <strong>Ideia central:</strong>
+
+                A Revolução Industrial marcou a passagem de uma economia
+                predominantemente agrária e artesanal para uma economia cada vez
+                mais baseada na produção mecanizada, no trabalho fabril,
+                na utilização de combustíveis fósseis e na expansão do capitalismo industrial.
+
+            </div>
+
+        </section>
+
+
+        <!-- ===================================================== -->
+        <!-- O COMEÇO                                             -->
+        <!-- ===================================================== -->
+
+        <section class="card">
+
+            <h2>
+                I — O COMEÇO
+            </h2>
+
+            <h3>
+                1. O mundo antes da industrialização
+            </h3>
+
+            <p>
+                Antes da industrialização, grande parte da população europeia
+                vivia no campo e dependia direta ou indiretamente da agricultura.
+                A produção artesanal era importante e muitos produtos eram fabricados
+                manualmente por artesãos organizados em oficinas ou corporações de ofício.
+            </p>
+
+            <p>
+                Existiam formas de produção que já ultrapassavam o modelo artesanal
+                tradicional. O sistema doméstico de produção, por exemplo, permitia
+                que comerciantes fornecessem matérias-primas para trabalhadores
+                que produziam mercadorias em suas próprias casas.
+            </p>
+
+            <p>
+                A industrialização, portanto, não surgiu de um único acontecimento.
+                Ela foi resultado da combinação de mudanças econômicas, agrícolas,
+                demográficas, tecnológicas e sociais.
+            </p>
+
+
+            <h3>
+                2. Por que a Inglaterra?
+            </h3>
+
+            <p>
+                A Inglaterra reuniu condições particularmente favoráveis para o
+                desenvolvimento inicial da industrialização.
+            </p>
+
+            <ul>
+
+                <li>
+                    disponibilidade de carvão mineral;
+                </li>
+
+                <li>
+                    reservas de minério de ferro;
+                </li>
+
+                <li>
+                    crescimento do comércio;
+                </li>
+
+                <li>
+                    expansão dos mercados consumidores;
+                </li>
+
+                <li>
+                    desenvolvimento financeiro;
+                </li>
+
+                <li>
+                    expansão marítima e comercial;
+                </li>
+
+                <li>
+                    acumulação de capitais;
+                </li>
+
+                <li>
+                    mudanças agrícolas;
+                </li>
+
+                <li>
+                    crescimento populacional;
+                </li>
+
+                <li>
+                    ambiente político relativamente favorável aos negócios.
+                </li>
+
+            </ul>
+
+
+            <h3>
+                3. A Revolução Agrícola
+            </h3>
+
+            <p>
+                A transformação da agricultura inglesa foi uma das condições
+                importantes para a industrialização.
+            </p>
+
+            <p>
+                Mudanças nas técnicas agrícolas, novas formas de organização
+                da propriedade e aumento da produtividade contribuíram para
+                ampliar a produção de alimentos.
+            </p>
+
+            <p>
+                Ao mesmo tempo, as transformações no campo contribuíram para
+                deslocar parte da população rural. Os chamados cercamentos,
+                conhecidos como <strong>enclosures</strong>, reorganizaram terras
+                anteriormente utilizadas de forma comunitária.
+            </p>
+
+            <p>
+                Esse processo teve efeitos diferentes sobre os grupos sociais.
+                Alguns proprietários ampliaram suas propriedades e passaram
+                a utilizar técnicas voltadas para uma agricultura mais comercial,
+                enquanto muitos trabalhadores rurais perderam formas tradicionais
+                de acesso à terra e buscaram novas formas de sobrevivência.
+            </p>
+
+
+            <h3>
+                4. A máquina a vapor
+            </h3>
+
+            <p>
+                O desenvolvimento e aperfeiçoamento da máquina a vapor foi
+                fundamental para a industrialização.
+            </p>
+
+            <p>
+                Thomas Newcomen havia desenvolvido uma máquina a vapor no início
+                do século XVIII. Posteriormente, James Watt aperfeiçoou máquinas
+                a vapor durante a segunda metade do século XVIII, aumentando
+                sua eficiência e ampliando suas possibilidades de utilização.
+            </p>
+
+            <p>
+                A utilização da energia do vapor permitiu reduzir a dependência
+                direta da força humana, animal, hidráulica e eólica em diversas
+                atividades produtivas.
+            </p>
+
+        </section>
+
+
+        <!-- ===================================================== -->
+        <!-- O DESENVOLVIMENTO                                     -->
+        <!-- ===================================================== -->
+
+        <section class="card">
+
+            <h2>
+                II — O DESENVOLVIMENTO
+            </h2>
+
+            <h3>
+                1. A indústria têxtil
+            </h3>
+
+            <p>
+                O setor têxtil esteve entre os principais protagonistas da
+                primeira fase da industrialização inglesa.
+            </p>
+
+            <p>
+                Inovações técnicas aumentaram a velocidade da fiação e da
+                tecelagem. A produção de tecidos passou a ser realizada em
+                escala crescente, com máquinas concentradas em estabelecimentos
+                produtivos cada vez maiores.
+            </p>
+
+            <p>
+                O algodão tornou-se uma matéria-prima fundamental para a
+                indústria inglesa. A expansão da indústria algodoeira também
+                esteve relacionada ao comércio internacional e ao sistema colonial.
+            </p>
+
+
+            <h3>
+                2. A fábrica
+            </h3>
+
+            <p>
+                Uma das grandes transformações provocadas pela industrialização
+                foi a concentração dos trabalhadores em fábricas.
+            </p>
+
+            <p>
+                O trabalhador passou a se submeter cada vez mais ao ritmo
+                determinado pelas máquinas, pelo relógio e pela disciplina
+                empresarial.
+            </p>
+
+            <div class="conceito">
+
+                <strong>Conceito fundamental — sistema fabril:</strong>
+
+                Forma de organização da produção caracterizada pela concentração
+                de trabalhadores, máquinas, matérias-primas e processos produtivos
+                em um estabelecimento controlado pelo proprietário ou pela empresa.
+
+            </div>
+
+
+            <h3>
+                3. A nova classe trabalhadora
+            </h3>
+
+            <p>
+                A industrialização contribuiu para o crescimento de uma classe
+                de trabalhadores assalariados urbanos que posteriormente seria
+                conhecida como <strong>proletariado</strong>.
+            </p>
+
+            <p>
+                Muitos trabalhadores enfrentavam jornadas extensas, baixos salários,
+                ambientes perigosos e ausência de mecanismos modernos de proteção
+                trabalhista.
+            </p>
+
+            <p>
+                Mulheres e crianças também participaram intensamente do trabalho
+                industrial em diferentes setores.
+            </p>
+
+
+            <h3>
+                4. Burguesia industrial
+            </h3>
+
+            <p>
+                Paralelamente ao crescimento do proletariado, fortaleceu-se a
+                burguesia industrial, formada por proprietários de fábricas,
+                empresários e investidores ligados à produção e ao comércio.
+            </p>
+
+            <p>
+                A sociedade industrial passou a apresentar novas relações de
+                classe, especialmente entre aqueles que controlavam os meios
+                de produção e aqueles que vendiam sua força de trabalho.
+            </p>
+
+
+            <h3>
+                5. Urbanização
+            </h3>
+
+            <p>
+                A concentração das fábricas nas cidades estimulou o crescimento
+                urbano.
+            </p>
+
+            <p>
+                Milhares de pessoas migraram de áreas rurais para regiões urbanas
+                em busca de trabalho.
+            </p>
+
+            <p>
+                O crescimento rápido das cidades trouxe problemas relacionados
+                à habitação, saneamento, poluição, transporte e saúde pública.
+            </p>
+
+
+            <h3>
+                6. Transportes
+            </h3>
+
+            <p>
+                A industrialização também transformou os transportes.
+                A utilização da máquina a vapor contribuiu para o desenvolvimento
+                das locomotivas e dos navios a vapor.
+            </p>
+
+            <p>
+                Ferrovias e navegação a vapor reduziram o tempo de deslocamento
+                de pessoas e mercadorias e contribuíram para ampliar os mercados.
+            </p>
+
+
+            <h3>
+                7. Capitalismo industrial
+            </h3>
+
+            <p>
+                A industrialização fortaleceu o capitalismo, sistema econômico
+                baseado na propriedade privada dos meios de produção,
+                investimento de capital, produção para o mercado e trabalho
+                assalariado.
+            </p>
+
+            <p>
+                O crescimento industrial também aumentou a importância da busca
+                por matérias-primas, mercados consumidores e áreas de investimento.
+            </p>
+
+        </section>
+
+
+        <!-- ===================================================== -->
+        <!-- LINHA DO TEMPO                                         -->
+        <!-- ===================================================== -->
+
+        <section class="card">
+
+            <h2>
+                Linha do tempo essencial
+            </h2>
+
+            <div class="timeline">
+
+                <div class="evento">
+
+                    <div class="ano">
+                        Século XVIII
+                    </div>
+
+                    <p>
+                        A Inglaterra reúne condições favoráveis para o avanço
+                        da industrialização.
+                    </p>
+
+                </div>
+
+
+                <div class="evento">
+
+                    <div class="ano">
+                        1733
+                    </div>
+
+                    <p>
+                        John Kay desenvolve a lançadeira volante,
+                        associada ao aumento da produtividade na tecelagem.
+                    </p>
+
+                </div>
+
+
+                <div class="evento">
+
+                    <div class="ano">
+                        Década de 1760
+                    </div>
+
+                    <p>
+                        James Watt trabalha no aperfeiçoamento da máquina a vapor.
+                    </p>
+
+                </div>
+
+
+                <div class="evento">
+
+                    <div class="ano">
+                        Final do século XVIII
+                    </div>
+
+                    <p>
+                        A mecanização da indústria têxtil avança e as fábricas
+                        ganham importância.
+                    </p>
+
+                </div>
+
+
+                <div class="evento">
+
+                    <div class="ano">
+                        Século XIX
+                    </div>
+
+                    <p>
+                        A industrialização se expande para outras regiões
+                        da Europa e posteriormente para outras partes do mundo.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ===================================================== -->
+        <!-- TECNOLOGIAS                                            -->
+        <!-- ===================================================== -->
+
+        <section class="card">
+
+            <h2>
+                Principais inovações
+            </h2>
+
+            <div class="tabela-container">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>
+                                Inovação
+                            </th>
+
+                            <th>
+                                Área
+                            </th>
+
+                            <th>
+                                Importância
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+
+                            <td>
+                                Lançadeira volante
+                            </td>
+
+                            <td>
+                                Tecelagem
+                            </td>
+
+                            <td>
+                                Aumentou a produtividade da produção de tecidos.
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>
+                                Spinning Jenny
+                            </td>
+
+                            <td>
+                                Fiação
+                            </td>
+
+                            <td>
+                                Permitiu fiar vários fios simultaneamente.
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>
+                                Water Frame
+                            </td>
+
+                            <td>
+                                Fiação
+                            </td>
+
+                            <td>
+                                Utilizou energia hidráulica para ampliar a produção.
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>
+                                Máquina a vapor
+                            </td>
+
+                            <td>
+                                Energia
+                            </td>
+
+                            <td>
+                                Tornou possível utilizar energia mecânica
+                                em diferentes atividades industriais e transportes.
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>
+                                Locomotiva a vapor
+                            </td>
+
+                            <td>
+                                Transporte
+                            </td>
+
+                            <td>
+                                Acelerou a circulação de pessoas e mercadorias.
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+        <!-- ===================================================== -->
+        <!-- CAUSAS E CONSEQUÊNCIAS                                 -->
+        <!-- ===================================================== -->
+
+        <section class="card">
+
+            <h2>
+                Causas e consequências
+            </h2>
+
+            <div class="tabela-container">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>
+                                Causas / condições
+                            </th>
+
+                            <th>
+                                Consequências
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+
+                            <td>
+                                Acumulação de capitais
+                            </td>
+
+                            <td>
+                                Aumento dos investimentos produtivos.
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>
+                                Revolução Agrícola
+                            </td>
+
+                            <td>
+                                Aumento da produtividade e transformação das relações no campo.
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>
+                                Disponibilidade de carvão
+                            </td>
+
+                            <td>
+                                Ampliação do uso da máquina a vapor.
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>
+                                Crescimento dos mercados
+                            </td>
+
+                            <td>
+                                Expansão da produção industrial.
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>
+                                Mecanização
+                            </td>
+
+                            <td>
+                                Aumento da produtividade e transformação do trabalho.
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>
+                                Sistema fabril
+                            </td>
+
+                            <td>
+                                Crescimento do proletariado urbano.
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+        <!-- ===================================================== -->
+        <!-- O LEGADO                                               -->
+        <!-- ===================================================== -->
+
+        <section class="card">
+
+            <h2>
+                III — O LEGADO E O MUNDO ATUAL
+            </h2>
+
+            <h3>
+                1. O nascimento do mundo industrial
+            </h3>
+
+            <p>
+                A Primeira Revolução Industrial estabeleceu estruturas que
+                continuaram a influenciar o desenvolvimento econômico dos
+                séculos seguintes.
+            </p>
+
+            <p>
+                A fábrica, o trabalho assalariado, a produção em larga escala,
+                a mecanização, a expansão dos mercados e a utilização intensiva
+                de energia tornaram-se elementos centrais da economia moderna.
+            </p>
+
+
+            <h3>
+                2. Movimento operário
+            </h3>
+
+            <p>
+                As condições de trabalho contribuíram para o surgimento de
+                formas de organização e resistência dos trabalhadores.
+            </p>
+
+            <p>
+                Entre essas experiências estiveram movimentos contra máquinas,
+                associações de trabalhadores, sindicatos e posteriormente
+                diferentes correntes políticas e sociais.
+            </p>
+
+            <p>
+                Ao longo dos séculos XIX e XX, essas mobilizações contribuíram
+                para debates sobre jornada de trabalho, salários, direitos sociais
+                e proteção trabalhista.
+            </p>
+
+
+            <h3>
+                3. Transformação ambiental
+            </h3>
+
+            <p>
+                A utilização intensiva do carvão mineral inaugurou uma relação
+                de enorme escala entre desenvolvimento industrial e consumo
+                de combustíveis fósseis.
+            </p>
+
+            <p>
+                Esse processo está historicamente relacionado ao crescimento
+                das emissões de gases de efeito estufa e ajuda a compreender
+                debates ambientais contemporâneos.
+            </p>
+
+
+            <h3>
+                4. A Revolução Industrial e o mundo atual
+            </h3>
+
+            <p>
+                Atualmente vivemos uma sociedade muito diferente daquela do
+                século XVIII, mas diversas estruturas criadas ou aceleradas
+                pela industrialização continuam presentes.
+            </p>
+
+            <ul>
+
+                <li>
+                    produção em larga escala;
+                </li>
+
+                <li>
+                    trabalho assalariado;
+                </li>
+
+                <li>
+                    grandes empresas;
+                </li>
+
+                <li>
+                    mercados internacionais;
+                </li>
+
+                <li>
+                    urbanização;
+                </li>
+
+                <li>
+                    máquinas e automação;
+                </li>
+
+                <li>
+                    utilização de fontes de energia;
+                </li>
+
+                <li>
+                    circulação global de mercadorias.
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- ===================================================== -->
+        <!-- CONEXÃO COM O BRASIL                                   -->
+        <!-- ===================================================== -->
+
+        <section class="card">
+
+            <h2>
+                História Geral ↔ Brasil
+            </h2>
+
+            <p>
+                A industrialização brasileira ocorreu posteriormente ao início
+                da Revolução Industrial inglesa e apresentou características
+                próprias.
+            </p>
+
+            <p>
+                Durante grande parte do século XIX, a economia brasileira esteve
+                fortemente ligada à agroexportação, especialmente ao café.
+                A industrialização ganhou maior impulso posteriormente,
+                sobretudo entre o final do século XIX e o século XX.
+            </p>
+
+            <p>
+                A comparação entre Inglaterra e Brasil permite compreender
+                que a industrialização não ocorreu simultaneamente nem de
+                maneira idêntica em todos os países.
+            </p>
+
+            <div class="conceito">
+
+                <strong>Ponto importante para o aluno:</strong>
+
+                Não devemos afirmar simplesmente que "a Revolução Industrial
+                aconteceu no mundo inteiro ao mesmo tempo". O processo começou
+                na Inglaterra e posteriormente se difundiu, assumindo ritmos
+                e características diferentes em outras sociedades.
+
+            </div>
+
+        </section>
+
+
+        <!-- ===================================================== -->
+        <!-- O QUE O PROFESSOR PRECISA DOMINAR                      -->
+        <!-- ===================================================== -->
+
+        <section class="card">
+
+            <h2>
+                O que o professor precisa dominar
+            </h2>
+
+            <div class="professor">
+
+                <h3>
+                    Pontos fundamentais para a aula
+                </h3>
+
+                <ul>
+
+                    <li>
+                        A Revolução Industrial foi um processo, não um único acontecimento.
+                    </li>
+
+                    <li>
+                        Seu início ocorreu na Inglaterra no século XVIII.
+                    </li>
+
+                    <li>
+                        A industrialização esteve relacionada a mudanças agrícolas,
+                        econômicas, tecnológicas e demográficas.
+                    </li>
+
+                    <li>
+                        A indústria têxtil teve papel central na primeira fase.
+                    </li>
+
+                    <li>
+                        O carvão mineral foi uma importante fonte energética.
+                    </li>
+
+                    <li>
+                        A máquina a vapor foi fundamental para ampliar a mecanização.
+                    </li>
+
+                    <li>
+                        A fábrica modificou a organização do trabalho.
+                    </li>
+
+                    <li>
+                        A industrialização contribuiu para a formação e expansão
+                        do proletariado urbano.
+                    </li>
+
+                    <li>
+                        O processo fortaleceu o capitalismo industrial.
+                    </li>
+
+                    <li>
+                        A industrialização provocou profundas transformações urbanas,
+                        sociais e ambientais.
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </section>
+
+
+        <!-- ===================================================== -->
+        <!-- O QUE COLOCAR NA LOUSA                                 -->
+        <!-- ===================================================== -->
+
+        <section class="card">
+
+            <h2>
+                O que colocar na lousa
+            </h2>
+
+            <div class="lousa">
+
+                <h3>
+                    PRIMEIRA REVOLUÇÃO INDUSTRIAL
+                </h3>
+
+                <p>
+                    <strong>Local:</strong> Inglaterra
+                </p>
+
+                <p>
+                    <strong>Período:</strong> século XVIII
+                </p>
+
+                <p>
+                    <strong>Base:</strong> capitalismo + máquinas + fábrica
+                </p>
+
+                <p>
+                    <strong>Energia:</strong> carvão mineral + vapor
+                </p>
+
+                <p>
+                    <strong>Setor:</strong> indústria têxtil
+                </p>
+
+                <p>
+                    <strong>Classes:</strong> burguesia industrial × proletariado
+                </p>
+
+                <p>
+                    <strong>Consequências:</strong>
+                    industrialização + urbanização + capitalismo industrial
+                    + movimento operário + impactos ambientais
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ===================================================== -->
+        <!-- CONCEITOS                                              -->
+        <!-- ===================================================== -->
+
+        <section class="card">
+
+            <h2>
+                Conceitos fundamentais
+            </h2>
+
+            <ul>
+
+                <li>
+                    <strong>Industrialização:</strong>
+                    processo de desenvolvimento e expansão da produção industrial.
+                </li>
+
+                <li>
+                    <strong>Capitalismo:</strong>
+                    sistema econômico baseado na propriedade privada dos meios
+                    de produção e na produção voltada ao mercado.
+                </li>
+
+                <li>
+                    <strong>Proletariado:</strong>
+                    trabalhadores que dependem da venda de sua força de trabalho
+                    para obter renda.
+                </li>
+
+                <li>
+                    <strong>Burguesia industrial:</strong>
+                    grupo de proprietários e empresários ligados à indústria.
+                </li>
+
+                <li>
+                    <strong>Fábrica:</strong>
+                    espaço de produção mecanizada e organizada sob controle empresarial.
+                </li>
+
+                <li>
+                    <strong>Mecanização:</strong>
+                    utilização de máquinas para realizar ou ampliar atividades produtivas.
+                </li>
+
+                <li>
+                    <strong>Urbanização:</strong>
+                    crescimento e transformação das cidades e da população urbana.
+                </li>
+
+                <li>
+                    <strong>Enclosures:</strong>
+                    processo de cercamento e reorganização de terras na Inglaterra.
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- ===================================================== -->
+        <!-- BNCC                                                    -->
+        <!-- ===================================================== -->
+
+        <section class="card">
+
+            <h2>
+                BNCC — possibilidades de trabalho pedagógico
+            </h2>
+
+            <p>
+                Este tema pode ser articulado às competências e habilidades da
+                BNCC relacionadas às transformações econômicas, sociais,
+                políticas, culturais e ambientais provocadas pela modernidade,
+                pela industrialização e pela expansão do capitalismo.
+            </p>
+
+            <p>
+                Para o planejamento formal da escola, o professor deve selecionar
+                as habilidades específicas correspondentes à etapa de ensino
+                e ao currículo adotado pela instituição.
+            </p>
+
+            <div class="conceito">
+
+                <strong>Professor:</strong>
+
+                A habilidade da BNCC deve ser escolhida de acordo com a série
+                e o currículo efetivamente trabalhados. O mesmo conteúdo pode
+                ser abordado com diferentes níveis de profundidade no Ensino
+                Fundamental, Ensino Médio, ENEM ou cursos preparatórios.
+
+            </div>
+
+        </section>
+
+
+        <!-- ===================================================== -->
+        <!-- ENEM / VESTIBULAR / CONCURSO                            -->
+        <!-- ===================================================== -->
+
+        <section class="card">
+
+            <h2>
+                ENEM, Vestibular e Concurso
+            </h2>
+
+            <h3>
+                O que costuma ser cobrado?
+            </h3>
+
+            <ul>
+
+                <li>
+                    condições que favoreceram a industrialização inglesa;
+                </li>
+
+                <li>
+                    Revolução Agrícola;
+                </li>
+
+                <li>
+                    mecanização;
+                </li>
+
+                <li>
+                    máquina a vapor;
+                </li>
+
+                <li>
+                    sistema fabril;
+                </li>
+
+                <li>
+                    proletariado;
+                </li>
+
+                <li>
+                    urbanização;
+                </li>
+
+                <li>
+                    capitalismo industrial;
+                </li>
+
+                <li>
+                    condições de trabalho;
+                </li>
+
+                <li>
+                    consequências ambientais e sociais.
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- ===================================================== -->
+        <!-- QUESTÃO 1                                              -->
+        <!-- ===================================================== -->
+
+        <section class="card">
+
+            <h2>
+                Questões de revisão
+            </h2>
+
+            <div class="questao">
+
+                <h3>
+                    Questão 1 — Estilo ENEM
+                </h3>
+
+                <p>
+                    Durante o século XVIII, a Inglaterra passou por transformações
+                    econômicas, agrícolas e tecnológicas que favoreceram a expansão
+                    da produção mecanizada. A concentração de trabalhadores e máquinas
+                    em fábricas alterou profundamente as relações de trabalho.
+                </p>
+
+                <p>
+                    Uma consequência social diretamente relacionada a esse processo foi:
+                </p>
+
+                <div class="alternativas">
+
+                    <p>
+                        <strong>A)</strong> o desaparecimento imediato do trabalho assalariado.
+                    </p>
+
+                    <p>
+                        <strong>B)</strong> a formação de uma crescente classe de trabalhadores urbanos.
+                    </p>
+
+                    <p>
+                        <strong>C)</strong> o fim da burguesia comercial europeia.
+                    </p>
+
+                    <p>
+                        <strong>D)</strong> a redução da urbanização inglesa.
+                    </p>
+
+                    <p>
+                        <strong>E)</strong> o retorno predominante à produção artesanal doméstica.
+                    </p>
+
+                </div>
+
+                <button onclick="mostrarGabarito('gabarito1')">
+                    Mostrar gabarito
+                </button>
+
+                <div id="gabarito1" class="gabarito">
+
+                    <strong>Resposta: B.</strong>
+
+                    A industrialização favoreceu o crescimento das cidades
+                    e de uma classe de trabalhadores assalariados vinculados
+                    às atividades industriais.
+
+                </div>
+
+            </div>
+
+
+            <!-- ================================================= -->
+            <!-- QUESTÃO 2                                           -->
+            <!-- ================================================= -->
+
+            <div class="questao">
+
+                <h3>
+                    Questão 2 — Estilo ENEM
+                </h3>
+
+                <p>
+                    A industrialização inglesa não pode ser explicada apenas
+                    pela invenção de máquinas. Ela esteve associada a mudanças
+                    na agricultura, expansão comercial, disponibilidade de
+                    recursos naturais, acumulação de capitais e transformação
+                    dos mercados.
+                </p>
+
+                <p>
+                    Essa interpretação permite compreender a Revolução Industrial
+                    como:
+                </p>
+
+                <div class="alternativas">
+
+                    <p>
+                        <strong>A)</strong> um acontecimento exclusivamente tecnológico.
+                    </p>
+
+                    <p>
+                        <strong>B)</strong> um processo de transformação econômica,
+                        social e tecnológica.
+                    </p>
+
+                    <p>
+                        <strong>C)</strong> uma revolução restrita ao setor militar.
+                    </p>
+
+                    <p>
+                        <strong>D)</strong> uma transformação exclusivamente agrícola.
+                    </p>
+
+                    <p>
+                        <strong>E)</strong> um fenômeno sem relação com o capitalismo.
+                    </p>
+
+                </div>
+
+                <button onclick="mostrarGabarito('gabarito2')">
+                    Mostrar gabarito
+                </button>
+
+                <div id="gabarito2" class="gabarito">
+
+                    <strong>Resposta: B.</strong>
+
+                    A Revolução Industrial foi um processo amplo que transformou
+                    a economia, a tecnologia, as relações sociais, o trabalho,
+                    as cidades e o meio ambiente.
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ===================================================== -->
+        <!-- RESUMO FINAL                                           -->
+        <!-- ===================================================== -->
+
+        <section class="card">
+
+            <h2>
+                Resumo para memorizar
+            </h2>
+
+            <div class="conceito">
+
+                <p>
+                    <strong>Inglaterra</strong>
+                    →
+                    <strong>Revolução Agrícola</strong>
+                    →
+                    <strong>capital</strong>
+                    →
+                    <strong>máquinas</strong>
+                    →
+                    <strong>carvão</strong>
+                    →
+                    <strong>fábricas</strong>
+                    →
+                    <strong>proletariado</strong>
+                    →
+                    <strong>urbanização</strong>
+                    →
+                    <strong>capitalismo industrial</strong>.
+                </p>
+
+            </div>
+
+            <p>
+                A Primeira Revolução Industrial transformou profundamente
+                a maneira como as sociedades produziam, trabalhavam,
+                viviam nas cidades e se relacionavam economicamente.
+            </p>
+
+        </section>
+
+
+        <!-- ===================================================== -->
+        <!-- NAVEGAÇÃO FINAL                                        -->
+        <!-- ===================================================== -->
+
+        <div class="final-navegacao">
+
+            <!-- Botão para o capítulo anterior. -->
+            <a
+                class="botao"
+                href="../24-Revolucoes-Inglesas/index.html"
+            >
+                ← A Crise do Sistema Colonial
+            </a>
+
+            <!-- Botão para o próximo capítulo. -->
+            <a
+                class="botao"
+                href="../26-Iluminismo-e-Despotismo-Esclarecido/index.html"
+            >
+                1.28 — Iluminismo →
+            </a>
+
+        </div>
+
+    </main>
+
+
+    <!-- ========================================================= -->
+    <!-- BOTÃO VOLTAR AO TOPO                                      -->
+    <!-- ========================================================= -->
+
+    <button
+        id="topo"
+        onclick="voltarAoTopo()"
+    >
+        ↑ Topo
+    </button>
+
+
+    <!-- ========================================================= -->
+    <!-- RODAPÉ                                                    -->
+    <!-- ========================================================= -->
+
+    <footer>
+
+        <p>
+            Curso de História Geral
+        </p>
+
+        <div class="assinatura">
+            Professor Marcelo Oliveira • História Geral • Educação
+        </div>
+
+    </footer>
+
+
+    <!-- ========================================================= -->
+    <!-- JAVASCRIPT                                                 -->
+    <!-- ========================================================= -->
+
+    <script>
+
+        // ========================================================
+        // MOSTRA OU ESCONDE O GABARITO
+        // ========================================================
+
+        // Cria a função responsável pelo botão de gabarito.
+        function mostrarGabarito(id) {
+
+            // Localiza o elemento pelo seu ID.
+            const elemento = document.getElementById(id);
+
+            // Verifica se o elemento está escondido.
+            if (elemento.style.display === "block") {
+
+                // Esconde novamente o gabarito.
+                elemento.style.display = "none";
+
+            } else {
+
+                // Mostra o gabarito.
+                elemento.style.display = "block";
+
+            }
+
+        }
+
+
+        // ========================================================
+        // BOTÃO VOLTAR AO TOPO
+        // ========================================================
+
+        // Localiza o botão de voltar ao topo.
+        const botaoTopo = document.getElementById("topo");
+
+
+        // Monitora a rolagem da página.
+        window.addEventListener("scroll", function () {
+
+            // Verifica se o usuário desceu mais de 400 pixels.
+            if (window.scrollY > 400) {
+
+                // Mostra o botão.
+                botaoTopo.style.display = "block";
+
+            } else {
+
+                // Esconde o botão.
+                botaoTopo.style.display = "none";
+
+            }
+
+        });
+
+
+        // Cria a função que retorna ao início da página.
+        function voltarAoTopo() {
+
+            // Faz a página subir suavemente.
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+
+        }
+
+    </script>
+    
+<script>
+  const paginaAnterior = "27 - A-Crise-do-Sistema-Colonial.html";
+  const paginaProxima = "29 - Independencia-dos-Estados-Unidos.html";
+</script>
+<script src="navegacao.js"></script>
+</body>
+
+</html>
+

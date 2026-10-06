@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1.38 — Segundo Reinado | Professor Marcelo Oliveira</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { font-family: Arial, Helvetica, sans-serif; background: #f4f7fb; color: #263238; line-height: 1.7; }
+        .container { width: 92%; max-width: 1200px; margin: auto; }
+        header { background: linear-gradient(135deg, #172554, #2563eb); color: white; padding: 50px 20px; text-align: center; box-shadow: 0 5px 20px rgba(0, 0, 0, 0.18); }
+        .eyebrow { font-size: 0.95rem; letter-spacing: 2px; text-transform: uppercase; opacity: 0.9; margin-bottom: 12px; }
+        header h1 { font-size: clamp(2rem, 5vw, 3.5rem); margin-bottom: 15px; }
+        header p { max-width: 850px; margin: auto; font-size: 1.1rem; }
+        .navegacao { display: flex; justify-content: space-between; gap: 15px; margin: 25px auto; flex-wrap: wrap; }
+        .btn { display: inline-block; padding: 13px 20px; border-radius: 10px; text-decoration: none; font-weight: bold; transition: 0.3s; }
+        .btn-voltar { background: #475569; color: white; }
+        .btn-proximo { background: #2563eb; color: white; }
+        .btn:hover { transform: translateY(-2px); opacity: 0.9; }
+        .apresentacao { background: white; margin: 30px auto; padding: 30px; border-radius: 18px; border-left: 7px solid #2563eb; box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08); }
+        .secao { margin: 35px auto; padding: 30px; border-radius: 18px; background: white; box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07); }
+        .comeco { border-top: 8px solid #2563eb; }
+        .desenvolvimento { border-top: 8px solid #16a34a; }
+        .legado { border-top: 8px solid #7c3aed; }
+        .consequencias { border-top: 8px solid #eab308; }
+        .enem { border-top: 8px solid #0891b2; }
+        .lousa { border-top: 8px solid #111827; }
+        .secao h2 { margin-bottom: 20px; color: #172554; font-size: 1.8rem; }
+        .secao h3 { margin-top: 25px; margin-bottom: 10px; color: #334155; }
+        strong { color: #172554; }
+        ul, ol { margin: 15px 0 15px 25px; }
+        li { margin-bottom: 8px; }
+        .timeline { border-left: 4px solid #2563eb; padding-left: 25px; margin-top: 25px; }
+        .evento { margin-bottom: 25px; position: relative; }
+        .evento::before { content: ""; position: absolute; left: -36px; top: 7px; width: 14px; height: 14px; background: #2563eb; border-radius: 50%; }
+        .ano { font-weight: bold; color: #2563eb; }
+        .tabela-container { overflow-x: auto; margin-top: 20px; }
+        table { width: 100%; border-collapse: collapse; min-width: 650px; }
+        th, td { padding: 14px; border: 1px solid #cbd5e1; text-align: left; }
+        th { background: #172554; color: white; }
+        tr:nth-child(even) { background: #f8fafc; }
+        .conceitos { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 15px; margin-top: 20px; }
+        .conceito { background: #eff6ff; border: 1px solid #bfdbfe; padding: 18px; border-radius: 12px; }
+        .questao { background: #f8fafc; padding: 25px; border-radius: 14px; margin-top: 20px; border-left: 5px solid #0891b2; }
+        .btn-gabarito { margin-top: 15px; background: #0891b2; color: white; border: none; padding: 12px 18px; border-radius: 8px; cursor: pointer; font-weight: bold; }
+        .gabarito { display: none; margin-top: 15px; padding: 15px; background: #ecfeff; border-radius: 10px; border: 1px solid #67e8f9; }
+        .resumo { background: #172554; color: white; padding: 30px; border-radius: 18px; margin: 35px auto; }
+        .resumo strong { color: white; }
+        footer { background: #0f172a; color: white; text-align: center; padding: 35px 20px; margin-top: 50px; }
+        .assinatura { font-size: 1.2rem; font-weight: bold; margin-top: 10px; }
+        #topo { position: fixed; bottom: 20px; right: 20px; width: 48px; height: 48px; border: none; border-radius: 50%; background: #2563eb; color: white; cursor: pointer; font-size: 20px; display: none; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25); }
+        @media (max-width: 700px) { .secao, .apresentacao { padding: 20px; } .navegacao { flex-direction: column; } .btn { text-align: center; } }
+    </style>
+</head>
+
+<body id="inicio">
+
+    <header>
+        <div class="eyebrow">Curso de História Geral</div>
+        <h1>1.38 — Segundo Reinado</h1>
+        <p>O longo governo de Dom Pedro II, período de estabilidade relativa, café, Guerra do Paraguai e abolição da escravidão.</p>
+    </header>
+
+    <main class="container">
+
+        <nav class="navegacao">
+            <a class="btn btn-voltar" href="37 - Período Regencial.html">← Período Regencial</a>
+            <a class="btn btn-proximo" href="39 - O Advento da República.html">O Advento da República →</a>
+        </nav>
+
+        <section class="apresentacao">
+            <p>Por que estudar o Segundo Reinado? Porque foi o período mais longo e estável do Império brasileiro, marcado pelo café, pela Guerra do Paraguai e pelo fim da escravidão.</p>
+        </section>
+
+        <section class="secao comeco">
+            <h2>🔵 I — O COMEÇO: A ESTABILIDADE DO GOLPE DA MAIORIDADE</h2>
+
+            <h3>1. O Golpe da Maioridade (1840)</h3>
+            <p>Em 1840, Dom Pedro II foi declarado maior de idade com apenas 14 anos, antecipando o fim do Período Regencial. Esse arranjo deu maior estabilidade política ao Império.</p>
+
+            <h3>2. A economia do café</h3>
+            <p>A economia brasileira passou a depender cada vez mais da exportação de <strong>café</strong>, produzido principalmente no Sudeste (São Paulo, Rio de Janeiro e Minas Gerais). O ciclo do café financiou grande parte da modernização do país.</p>
+        </section>
+
+        <section class="secao desenvolvimento">
+            <h2>🟢 II — O DESENVOLVIMENTO: GUERRAS E TRANSFORMAÇÕES</h2>
+
+            <h3>3. A Guerra do Paraguai (1864–1870)</h3>
+            <p>Foi o maior conflito da América do Sul. O Brasil, aliado à Argentina e ao Uruguai, enfrentou o Paraguai. A guerra fortaleceu o Exército brasileiro e agravou a crise do fim do Império.</p>
+
+            <h3>4. A abolição da escravidão</h3>
+            <p>O Brasil foi o último país das Américas a abolir a escravidão. A pressão interna e externa levou à Lei Áurea, assinada pela Princesa Isabel em 1888, extinguindo oficialmente a escravidão.</p>
+
+            <h3>5. A crise final do Império</h3>
+            <p>O fim da escravidão retirou o apoio dos cafeicultores, a Igreja e os militares passaram a contestar o imperador, e o movimento republicano ganhou força. Em 1889, um golpe militar derrubou a monarquia.</p>
+
+            <h3>6. O gado muar e sua importância no Brasil Império</h3>
+            <p>No Segundo Reinado, o crescimento da economia cafeeira e a expansão para o interior aumentaram a necessidade de transporte de cargas e pessoas. Nesse contexto, o <strong>gado muar</strong> — formado principalmente por mulas e éguas — ganhou grande importância.</p>
+            <p>As mulas eram resistentes, aguentavam longas viagens em terrenos difíceis e eram muito utilizadas nas trocas comerciais entre o litoral e o interior do Brasil, especialmente nas rotas que ligavam as fazendas de café aos portos. O transporte de mulas era um dos motores da economia interna do Império, movimentando mercadorias, tropas e correspondências.</p>
+            <p>Além da locomoção, as mulas eram usadas na agricultura e no transporte militar, sendo essenciais durante conflitos como a Guerra do Paraguai. A indústria muareira, desenvolvida principalmente nas regiões Sul e Sudeste, deixou legado na cultura local, nas tradições pastoris e até na culinária (como a feijoada, associada à alimentação dos tropeiros).</p>
+        </section>
+
+        <section class="secao comeco">
+            <h2>📅 LINHA DO TEMPO</h2>
+            <div class="timeline">
+                <div class="evento"><span class="ano">1840</span> — Golpe da Maioridade: D. Pedro II assume com 14 anos.</div>
+                <div class="evento"><span class="ano">1850</span> — Lei Eusébio de Queirós: fim do tráfico de escravos.</div>
+                <div class="evento"><span class="ano">1864–1870</span> — Guerra do Paraguai.</div>
+                <div class="evento"><span class="ano">1888</span> — Lei Áurea: abolição da escravidão.</div>
+                <div class="evento"><span class="ano">1889</span> — Proclamação da República.</div>
+            </div>
+        </section>
+
+        <section class="secao consequencias">
+            <h2>🟡 Consequências</h2>
+            <ul>
+                <li>Crescimento econômico impulsionado pelo café.</li>
+                <li>Fortalecimento do Exército após a Guerra do Paraguai.</li>
+                <li>Abolição da escravidão (Lei Áurea, 1888).</li>
+                <li>Desenvolvimento da criação de gado muar, fundamental para o transporte de cargas e pessoas no interior do Brasil.</li>
+                <li>Crise política e perda de apoio entre as elites.</li>
+                <li>Queda do Império e início da República (1889).</li>
+            </ul>
+        </section>
+
+        <section class="secao legado">
+            <h2>🟣 III — O LEGADO E O MUNDO ATUAL</h2>
+            <p>O Segundo Reinado deixou marcas profundas na sociedade brasileira: a estrutura econômica baseada no café, o fim tardio da escravidão e a transição para a República moldaram o país que conhecemos hoje.</p>
+        </section>
+
+        <section class="secao">
+            <h2>📊 RESUMO: O SEGUNDO REINADO</h2>
+            <div class="tabela-container">
+                <table>
+                    <thead>
+                        <tr><th>Aspecto</th><th>Característica</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Período</td><td>1840–1889</td></tr>
+                        <tr><td>Imperador</td><td>Dom Pedro II</td></tr>
+                        <tr><td>Economia</td><td>Exportação de café</td></tr>
+                        <tr><td>Guerra</td><td>Guerra do Paraguai (1864–1870)</td></tr>
+                        <tr><td>Escravidão</td><td>Lei Áurea (1888)</td></tr>
+                        <tr><td>Fim</td><td>Proclamação da República (1889)</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="secao lousa">
+            <h2>📋 BNCC — COMO TRABALHAR ESTE TEMA</h2>
+            <p>A BNCC sugere abordar o Segundo Reinado a partir das transformações econômicas, sociais e políticas do Brasil imperial.</p>
+            <ul>
+                <li><strong>Habilidade (EF08HI08):</strong> Compreender o papel do café na economia do Segundo Reinado e os impactos da abolição.</li>
+                <li><strong>Habilidade (EF08HI09):</strong> Analisar as causas da crise final do Império e da proclamação da República.</li>
+                <li><strong>Objetivo:</strong> Identificar os diferentes grupos sociais e seus interesses no período.</li>
+            </ul>
+            <h3>💡 Sugestão de aula</h3>
+            <ul>
+                <li>Análise de imagens da Guerra do Paraguai.</li>
+                <li>Debate: "A abolição foi realmente um processo de libertação?"</li>
+                <li>Mapa do ciclo do café na década de 1880.</li>
+            </ul>
+        </section>
+
+        <section class="secao">
+            <h2>📚 CONCEITOS FUNDAMENTAIS</h2>
+            <div class="conceitos">
+                <div class="conceito"><strong>Golpe da Maioridade</strong><br>Elevação antecipada de D. Pedro II ao trono em 1840.</div>
+                <div class="conceito"><strong>Café</strong><br>Principal produto de exportação do Brasil no período.</div>
+                <div class="conceito"><strong>Guerra do Paraguai</strong><br>Conflito de 1864–1870 que envolveu Brasil, Argentina e Uruguai contra o Paraguai.</div>
+                <div class="conceito"><strong>Lei Sexagenários</strong><br>Concedeu liberdade aos escravos com mais de 60 anos (1885).</div>
+                <div class="conceito"><strong>Lei Áurea</strong><br>Aboliu a escravidão em 13 de maio de 1888.</div>
+                <div class="conceito"><strong>Império</strong><br>Sistema político monárquico vigente até 1889.</div>
+            </div>
+        </section>
+
+        <section class="secao enem">
+            <h2>🎯 ENEM, Vestibular e Concurso</h2>
+            <p>Teste seus conhecimentos:</p>
+
+            <div class="questao">
+                <h3>Questão 1</h3>
+                <p>A Guerra do Paraguai (1864–1870) teve como principal consequência para o Brasil:</p>
+                <ol type="A">
+                    <li>Guerras internas que levaram ao golpe de 1889.</li>
+                    <li>Fortalecimento do Exército e abalo da economia imperial.</li>
+                    <li>Unificação com o Paraguai e expansão territorial.</li>
+                    <li>Abolição imediata da escravidão em todo o país.</li>
+                    <li>Colonização do Uruguai pelo império brasileiro.</li>
+                </ol>
+                <button class="btn-gabarito" onclick="mostrarGabarito('g1')">Mostrar gabarito</button>
+                <div class="gabarito" id="g1">
+                    <strong>Resposta: B.</strong> A guerra deu prestígio e autonomia ao Exército, ao mesmo tempo em que deixou o Império endividado.
+                </div>
+            </div>
+
+            <div class="questao">
+                <h3>Questão 2</h3>
+                <p>A Lei Áurea, de 1888, significou:</p>
+                <ol type="A">
+                    <li>O fim do tráfico negreiro no Brasil.</li>
+                    <li>A abolição total da escravidão no Brasil, sem indenização.</li>
+                    <li>A libertação de todos os indígenas.</li>
+                    <li>A proclamação da República.</li>
+                    <li>A criação da Lei de Terras.</li>
+                </ol>
+                <button class="btn-gabarito" onclick="mostrarGabarito('g2')">Mostrar gabarito</button>
+                <div class="gabarito" id="g2">
+                    <strong>Resposta: B.</strong> A Lei Áurea extinguiu definitivamente a escravidão no Brasil em 1888.
+                </div>
+            </div>
+        </section>
+
+        <section class="resumo">
+            <h2>🧠 RESUMO PARA O PROFESSOR</h2>
+            <p>
+                <strong>Tema:</strong> Segundo Reinado (1840–1889).<br>
+                <strong>Imperador:</strong> Dom Pedro II.<br>
+                <strong>Economia:</strong> Café.<br>
+                <strong>Guerra:</strong> Paraguai (1864–1870).<br>
+                <strong>Marco:</strong> Lei Áurea (1888).<br>
+                <strong>Fim:</strong> Proclamação da República (1889).<br>
+                <strong>Habilidade BNCC:</strong> EF08HI08 e EF08HI09 — economia cafeeira, Guerra do Paraguai e crise do Império.
+            </p>
+        </section>
+
+        <nav class="navegacao">
+            <a class="btn btn-voltar" href="37 - Período Regencial.html">← Período Regencial</a>
+            <a class="btn btn-proximo" href="39 - O Advento da República.html">O Advento da República →</a>
+        </nav>
+
+    </main>
+
+    <footer>
+        <p>Curso de História Geral — Fund II • Ensino Médio • ENEM • Vestibular • Concurso</p>
+        <p class="assinatura">Professor Marcelo Oliveira</p>
+    </footer>
+
+    <button id="topo" onclick="voltarAoTopo()">↑</button>
+
+    <script>
+        function mostrarGabarito(id) {
+            const resposta = document.getElementById(id);
+            resposta.style.display = (resposta.style.display === "block") ? "none" : "block";
+        }
+        const botaoTopo = document.getElementById("topo");
+        window.addEventListener("scroll", function () { botaoTopo.style.display = window.scrollY > 400 ? "block" : "none"; });
+        function voltarAoTopo() { window.scrollTo({ top: 0, behavior: "smooth" }); }
+    </script>
+    <script>
+  const paginaAnterior = "37 - Período Regencial.html";
+  const paginaProxima = "39 - O Advento da República.html";
+</script>
+<script src="navegacao.js"></script>
+
+</body>
+
+</html>

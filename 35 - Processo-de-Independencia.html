@@ -1,0 +1,1131 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>1.35 — Processo de Independência | Professor Marcelo Oliveira</title>
+
+<style>
+    /* Configuração geral */
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: #f4f7fb;
+        color: #172033;
+        line-height: 1.7;
+    }
+
+    /* Cabeçalho */
+    header {
+        background: linear-gradient(135deg, #071b3a, #123f73);
+        color: white;
+        padding: 50px 20px;
+        text-align: center;
+    }
+
+    header .tag {
+        display: inline-block;
+        background: #f59e0b;
+        color: #172033;
+        padding: 7px 15px;
+        border-radius: 30px;
+        font-size: 0.85rem;
+        font-weight: bold;
+        margin-bottom: 18px;
+    }
+
+    header h1 {
+        font-size: clamp(2rem, 5vw, 3.4rem);
+        margin-bottom: 12px;
+    }
+
+    header p {
+        max-width: 850px;
+        margin: 8px auto;
+        color: #dcecff;
+        font-size: 1.05rem;
+    }
+
+    /* Conteúdo */
+    main {
+        width: min(1150px, 92%);
+        margin: 35px auto;
+    }
+
+    /* Cartões */
+    .card {
+        background: white;
+        border-radius: 18px;
+        padding: 30px;
+        margin-bottom: 25px;
+        box-shadow: 0 8px 25px rgba(7, 27, 58, 0.08);
+        border: 1px solid #e3eaf3;
+    }
+
+    .card h2 {
+        color: #123f73;
+        margin-bottom: 18px;
+        font-size: 1.65rem;
+    }
+
+    .card h3 {
+        color: #1d4f8c;
+        margin: 24px 0 10px;
+    }
+
+    .card p {
+        margin-bottom: 14px;
+    }
+
+    .card ul,
+    .card ol {
+        margin: 10px 0 15px 25px;
+    }
+
+    .card li {
+        margin-bottom: 8px;
+    }
+
+    /* Cores da trilogia */
+    .inicio {
+        border-top: 6px solid #2563eb;
+    }
+
+    .desenvolvimento {
+        border-top: 6px solid #16a34a;
+    }
+
+    .legado {
+        border-top: 6px solid #7c3aed;
+    }
+
+    .causas {
+        border-top: 6px solid #f59e0b;
+    }
+
+    .conceitos {
+        border-top: 6px solid #eab308;
+    }
+
+    .atencao {
+        border-top: 6px solid #dc2626;
+    }
+
+    .enem {
+        border-top: 6px solid #06b6d4;
+    }
+
+    /* Destaques */
+    .destaque {
+        background: #eef6ff;
+        border-left: 5px solid #2563eb;
+        padding: 18px;
+        border-radius: 10px;
+        margin: 20px 0;
+    }
+
+    .alerta {
+        background: #fff7ed;
+        border-left: 5px solid #f59e0b;
+        padding: 18px;
+        border-radius: 10px;
+        margin: 20px 0;
+    }
+
+    .importante {
+        background: #fef2f2;
+        border-left: 5px solid #dc2626;
+        padding: 18px;
+        border-radius: 10px;
+        margin: 20px 0;
+    }
+
+    /* Tabelas */
+    .tabela-container {
+        overflow-x: auto;
+        margin: 20px 0;
+    }
+
+    table {
+        width: 100%;
+        min-width: 650px;
+        border-collapse: collapse;
+    }
+
+    th,
+    td {
+        border: 1px solid #dbe3ed;
+        padding: 13px;
+        text-align: left;
+        vertical-align: top;
+    }
+
+    th {
+        background: #123f73;
+        color: white;
+    }
+
+    tr:nth-child(even) {
+        background: #f8fafc;
+    }
+
+    /* Linha do tempo */
+    .timeline {
+        border-left: 4px solid #2563eb;
+        margin: 25px 0;
+        padding-left: 25px;
+    }
+
+    .evento {
+        position: relative;
+        margin-bottom: 25px;
+    }
+
+    .evento::before {
+        content: "";
+        position: absolute;
+        width: 13px;
+        height: 13px;
+        border-radius: 50%;
+        background: #2563eb;
+        left: -33px;
+        top: 8px;
+    }
+
+    .evento strong {
+        color: #123f73;
+    }
+
+    /* Conceitos */
+    .conceito {
+        background: #fffdf0;
+        border: 1px solid #f1df91;
+        border-radius: 12px;
+        padding: 17px;
+        margin-bottom: 12px;
+    }
+
+    .conceito strong {
+        color: #8a6500;
+    }
+
+    /* Quadro da lousa */
+    .lousa {
+        background: #101827;
+        color: white;
+        border-radius: 15px;
+        padding: 25px;
+    }
+
+    .lousa h3 {
+        color: #7dd3fc;
+        margin-top: 0;
+    }
+
+    .lousa ul {
+        margin-left: 22px;
+    }
+
+    /* Questões */
+    .questao {
+        background: #f8fafc;
+        border: 1px solid #dbe3ed;
+        border-radius: 14px;
+        padding: 22px;
+        margin-bottom: 20px;
+    }
+
+    .questao h3 {
+        margin-top: 0;
+        color: #123f73;
+    }
+
+    .alternativas {
+        list-style: none;
+        margin: 15px 0 0 !important;
+        padding: 0;
+    }
+
+    .alternativas li {
+        padding: 10px 13px;
+        border-bottom: 1px solid #e5e7eb;
+    }
+
+    /* Botões */
+    .botao {
+        border: none;
+        background: #123f73;
+        color: white;
+        padding: 11px 18px;
+        border-radius: 8px;
+        cursor: pointer;
+        font-weight: bold;
+        margin-top: 10px;
+        transition: 0.2s;
+    }
+
+    .botao:hover {
+        background: #2563eb;
+    }
+
+    .gabarito {
+        display: none;
+        background: #ecfdf5;
+        border-left: 5px solid #16a34a;
+        padding: 15px;
+        margin-top: 15px;
+        border-radius: 8px;
+    }
+
+    /* Navegação */
+    .navegacao {
+        display: flex;
+        justify-content: space-between;
+        gap: 15px;
+        flex-wrap: wrap;
+        margin: 35px 0;
+    }
+
+    .navegacao a {
+        text-decoration: none;
+        background: #123f73;
+        color: white;
+        padding: 13px 20px;
+        border-radius: 10px;
+        font-weight: bold;
+        transition: 0.2s;
+    }
+
+    .navegacao a:hover {
+        background: #2563eb;
+    }
+
+    .topo {
+        text-align: center;
+        margin: 25px 0;
+    }
+
+    .topo a {
+        color: #123f73;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    /* Rodapé */
+    footer {
+        background: #071b3a;
+        color: #dcecff;
+        text-align: center;
+        padding: 35px 20px;
+        margin-top: 40px;
+    }
+
+    footer strong {
+        color: white;
+    }
+
+    /* Responsividade */
+    @media (max-width: 700px) {
+        header {
+            padding: 38px 16px;
+        }
+
+        main {
+            width: 94%;
+        }
+
+        .card {
+            padding: 21px;
+            border-radius: 14px;
+        }
+
+        .card h2 {
+            font-size: 1.4rem;
+        }
+
+        .navegacao {
+            flex-direction: column;
+        }
+
+        .navegacao a {
+            text-align: center;
+        }
+    }
+</style>
+
+
+</head>
+
+<body id="topo">
+
+
+<!-- Cabeçalho -->
+<header>
+    <span class="tag">HISTÓRIA GERAL • CURSO 60 HORAS</span>
+
+    <h1>1.35 — Processo de Independência</h1>
+
+    <p>
+        Da crise política entre Brasil e Portugal à ruptura de 1822.
+    </p>
+
+    <p>
+        Professor Marcelo Oliveira • Fund II • Ensino Médio • ENEM • Vestibular • Concurso
+    </p>
+</header>
+
+<main>
+
+    <!-- Introdução -->
+    <section class="card">
+        <h2>Introdução</h2>
+
+        <p>
+            A Independência do Brasil não aconteceu de maneira repentina.
+            Ela foi resultado de um processo político, econômico e social
+            desenvolvido ao longo de vários anos.
+        </p>
+
+        <p>
+            A transferência da Corte portuguesa para o Brasil em 1808,
+            a abertura dos portos, a criação do Reino Unido e a Revolução
+            Liberal do Porto modificaram profundamente as relações entre
+            Brasil e Portugal.
+        </p>
+
+        <div class="destaque">
+            <strong>Ideia central:</strong>
+            1822 representa o momento decisivo de uma crise que vinha
+            sendo construída desde as transformações provocadas pela
+            presença da Corte portuguesa no Brasil.
+        </div>
+
+        <p>
+            Também é importante compreender que a Independência política
+            não significou uma transformação imediata de toda a sociedade.
+            A escravidão permaneceu, as desigualdades sociais continuaram
+            e grande parte das estruturas econômicas foi preservada.
+        </p>
+    </section>
+
+    <!-- Parte I -->
+    <section class="card inicio">
+        <h2>I — O COMEÇO: A crise entre Brasil e Portugal</h2>
+
+        <h3>1. O Brasil depois de 1808</h3>
+
+        <p>
+            A chegada da Corte portuguesa provocou uma mudança na posição
+            política do Brasil dentro do Império português.
+        </p>
+
+        <p>
+            O Rio de Janeiro tornou-se sede do governo monárquico e o
+            território brasileiro passou a concentrar instituições que
+            anteriormente funcionavam em Portugal.
+        </p>
+
+        <h3>2. A abertura dos portos</h3>
+
+        <p>
+            Em 1808, D. João determinou a abertura dos portos brasileiros
+            às nações amigas.
+        </p>
+
+        <p>
+            A medida reduziu o controle exclusivo da metrópole sobre
+            o comércio externo e ampliou a participação do Brasil nas
+            relações econômicas internacionais.
+        </p>
+
+        <h3>3. O Reino Unido</h3>
+
+        <p>
+            Em 1815, o Brasil foi elevado à condição de reino e passou
+            a integrar o <strong>Reino Unido de Portugal, Brasil e Algarves</strong>.
+        </p>
+
+        <p>
+            Essa mudança representava uma nova situação política:
+            o Brasil não era mais formalmente apresentado apenas como
+            uma colônia dentro da monarquia portuguesa.
+        </p>
+
+        <h3>4. A Revolução Liberal do Porto</h3>
+
+        <p>
+            Em 1820, uma revolução liberal teve início na cidade do Porto.
+            Os revolucionários defendiam mudanças políticas e a criação
+            de uma monarquia constitucional.
+        </p>
+
+        <p>
+            Também exigiam o retorno do rei e da Corte para Portugal.
+        </p>
+
+        <div class="alerta">
+            <strong>Contradição fundamental:</strong>
+            enquanto setores portugueses buscavam recuperar a centralidade
+            de Portugal, grupos estabelecidos no Brasil estavam interessados
+            em preservar as transformações conquistadas desde 1808.
+        </div>
+    </section>
+
+    <!-- Parte II -->
+    <section class="card desenvolvimento">
+        <h2>II — O DESENVOLVIMENTO: O caminho para 1822</h2>
+
+        <h3>1. O retorno de D. João VI</h3>
+
+        <p>
+            Pressionado pelas Cortes portuguesas, D. João VI retornou
+            a Portugal em 1821.
+        </p>
+
+        <p>
+            Antes de partir, deixou seu filho, D. Pedro, como príncipe
+            regente do Brasil.
+        </p>
+
+        <p>
+            A permanência de D. Pedro no Brasil seria fundamental para
+            os acontecimentos de 1822.
+        </p>
+
+        <h3>2. As Cortes portuguesas</h3>
+
+        <p>
+            As Cortes passaram a exigir medidas que poderiam reduzir
+            a autonomia administrativa conquistada pelo Brasil durante
+            o Período Joanino.
+        </p>
+
+        <p>
+            Parte das elites brasileiras interpretou essas medidas como
+            uma tentativa de recolocar o Brasil em uma posição de maior
+            dependência em relação a Portugal.
+        </p>
+
+        <h3>3. O Dia do Fico</h3>
+
+        <p>
+            Em 9 de janeiro de 1822, D. Pedro anunciou que permaneceria
+            no Brasil.
+        </p>
+
+        <div class="destaque">
+            <strong>9 de janeiro de 1822 — Dia do Fico:</strong>
+            o episódio demonstrou o aprofundamento da ruptura política
+            entre as autoridades estabelecidas no Brasil e as Cortes
+            portuguesas.
+        </div>
+
+        <h3>4. José Bonifácio</h3>
+
+        <p>
+            José Bonifácio de Andrada e Silva tornou-se uma figura
+            importante na organização política do movimento que conduziu
+            à Independência.
+        </p>
+
+        <p>
+            Ele defendia a manutenção da unidade territorial e a
+            construção de um Estado brasileiro independente.
+        </p>
+
+        <h3>5. As medidas de 1822</h3>
+
+        <p>
+            Durante 1822, o governo de D. Pedro adotou medidas que
+            aprofundaram a separação política em relação às Cortes.
+        </p>
+
+        <ul>
+            <li>convocação de representantes das províncias;</li>
+            <li>resistência às determinações das Cortes;</li>
+            <li>fortalecimento do governo sediado no Rio de Janeiro;</li>
+            <li>organização política para sustentar a ruptura.</li>
+        </ul>
+
+        <h3>6. O 7 de Setembro</h3>
+
+        <p>
+            Em 7 de setembro de 1822, D. Pedro declarou a separação
+            política do Brasil em relação a Portugal.
+        </p>
+
+        <p>
+            O episódio ficou conhecido como
+            <strong>Independência do Brasil</strong>.
+        </p>
+
+        <div class="importante">
+            <strong>Importante:</strong>
+            a Independência não foi apenas um acontecimento isolado
+            às margens do Ipiranga. Houve conflitos, negociações e
+            confrontos em diferentes regiões do território brasileiro.
+        </div>
+
+        <h3>7. As guerras de Independência</h3>
+
+        <p>
+            A ruptura não foi aceita imediatamente em todas as partes
+            do território.
+        </p>
+
+        <p>
+            Houve conflitos em regiões como Bahia, Maranhão, Piauí,
+            Pará e Cisplatina, entre outras áreas.
+        </p>
+
+        <p>
+            A consolidação da Independência ocorreu gradualmente e
+            envolveu forças militares, grupos políticos e interesses
+            econômicos diversos.
+        </p>
+    </section>
+
+    <!-- Comparação -->
+    <section class="card">
+        <h2>O processo em perspectiva</h2>
+
+        <div class="tabela-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Transformação</th>
+                        <th>Importância</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>1808 — chegada da Corte</td>
+                        <td>Brasil torna-se centro político da monarquia portuguesa.</td>
+                    </tr>
+
+                    <tr>
+                        <td>1808 — abertura dos portos</td>
+                        <td>Redução das antigas restrições comerciais coloniais.</td>
+                    </tr>
+
+                    <tr>
+                        <td>1815 — Reino Unido</td>
+                        <td>Elevação política do Brasil dentro da monarquia.</td>
+                    </tr>
+
+                    <tr>
+                        <td>1820 — Revolução do Porto</td>
+                        <td>Pressão pelo retorno do rei e reorganização do Império.</td>
+                    </tr>
+
+                    <tr>
+                        <td>1821 — retorno de D. João VI</td>
+                        <td>D. Pedro permanece no Brasil.</td>
+                    </tr>
+
+                    <tr>
+                        <td>1822 — Independência</td>
+                        <td>Ruptura política formal com Portugal.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Parte III -->
+    <section class="card legado">
+        <h2>III — O LEGADO E O MUNDO ATUAL</h2>
+
+        <h3>1. A Independência e a formação do Estado brasileiro</h3>
+
+        <p>
+            A Independência criou um novo Estado politicamente separado
+            de Portugal.
+        </p>
+
+        <p>
+            Entretanto, a construção do Estado brasileiro continuaria
+            nos anos seguintes, envolvendo disputas entre grupos políticos,
+            organização institucional e conflitos regionais.
+        </p>
+
+        <h3>2. A manutenção da escravidão</h3>
+
+        <p>
+            Uma das principais continuidades foi a manutenção da
+            escravidão.
+        </p>
+
+        <p>
+            A Independência não produziu a abolição e preservou uma
+            estrutura social profundamente desigual.
+        </p>
+
+        <div class="alerta">
+            <strong>Questão histórica importante:</strong>
+            independência política não significa necessariamente
+            transformação social completa.
+        </div>
+
+        <h3>3. A unidade territorial</h3>
+
+        <p>
+            A manutenção da unidade territorial foi uma característica
+            importante do processo de formação do Brasil independente.
+        </p>
+
+        <p>
+            Essa unidade, porém, não foi automática. Diferentes
+            províncias possuíam interesses próprios e algumas resistiram
+            ao novo governo central.
+        </p>
+
+        <h3>4. A construção da memória da Independência</h3>
+
+        <p>
+            Ao longo do tempo, o 7 de Setembro foi transformado em
+            símbolo nacional.
+        </p>
+
+        <p>
+            A imagem tradicional de D. Pedro proclamando a Independência
+            às margens do Ipiranga tornou-se uma das representações
+            mais conhecidas da história brasileira.
+        </p>
+
+        <p>
+            O trabalho do historiador consiste também em analisar
+            como essas imagens foram construídas e quais acontecimentos
+            ficaram menos visíveis nas narrativas tradicionais.
+        </p>
+    </section>
+
+    <!-- Causas e consequências -->
+    <section class="card causas">
+        <h2>Causas e consequências</h2>
+
+        <div class="tabela-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Fatores do processo</th>
+                        <th>Consequências</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Transferência da Corte para o Brasil.</td>
+                        <td>Fortalecimento político do Rio de Janeiro.</td>
+                    </tr>
+
+                    <tr>
+                        <td>Abertura dos portos.</td>
+                        <td>Ampliação das relações comerciais internacionais.</td>
+                    </tr>
+
+                    <tr>
+                        <td>Criação do Reino Unido.</td>
+                        <td>Nova posição política do Brasil.</td>
+                    </tr>
+
+                    <tr>
+                        <td>Revolução Liberal do Porto.</td>
+                        <td>Aumento das tensões entre Brasil e Portugal.</td>
+                    </tr>
+
+                    <tr>
+                        <td>Retorno de D. João VI.</td>
+                        <td>D. Pedro permanece no Brasil.</td>
+                    </tr>
+
+                    <tr>
+                        <td>Conflito com as Cortes portuguesas.</td>
+                        <td>Ruptura política em 1822.</td>
+                    </tr>
+
+                    <tr>
+                        <td>Guerras de Independência.</td>
+                        <td>Consolidação gradual do novo Estado brasileiro.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Conceitos -->
+    <section class="card conceitos">
+        <h2>Conceitos fundamentais</h2>
+
+        <div class="conceito">
+            <strong>Independência política:</strong>
+            separação formal de um território em relação ao poder
+            político de outro Estado.
+        </div>
+
+        <div class="conceito">
+            <strong>Cortes portuguesas:</strong>
+            assembleia política que ganhou força após a Revolução
+            Liberal do Porto.
+        </div>
+
+        <div class="conceito">
+            <strong>Dia do Fico:</strong>
+            episódio de 9 de janeiro de 1822, quando D. Pedro decidiu
+            permanecer no Brasil.
+        </div>
+
+        <div class="conceito">
+            <strong>José Bonifácio:</strong>
+            importante articulador político do processo de Independência.
+        </div>
+
+        <div class="conceito">
+            <strong>Independência:</strong>
+            processo de ruptura política entre o Brasil e Portugal,
+            iniciado antes de 7 de setembro e consolidado posteriormente.
+        </div>
+    </section>
+
+    <!-- Linha do tempo -->
+    <section class="card">
+        <h2>Linha do tempo — Processo de Independência</h2>
+
+        <div class="timeline">
+
+            <div class="evento">
+                <strong>1808</strong>
+                <p>Chegada da Corte portuguesa ao Brasil.</p>
+            </div>
+
+            <div class="evento">
+                <strong>1815</strong>
+                <p>Criação do Reino Unido de Portugal, Brasil e Algarves.</p>
+            </div>
+
+            <div class="evento">
+                <strong>1817</strong>
+                <p>Revolução Pernambucana.</p>
+            </div>
+
+            <div class="evento">
+                <strong>1820</strong>
+                <p>Revolução Liberal do Porto.</p>
+            </div>
+
+            <div class="evento">
+                <strong>1821</strong>
+                <p>D. João VI retorna a Portugal e D. Pedro permanece no Brasil.</p>
+            </div>
+
+            <div class="evento">
+                <strong>9 de janeiro de 1822</strong>
+                <p>Dia do Fico.</p>
+            </div>
+
+            <div class="evento">
+                <strong>7 de setembro de 1822</strong>
+                <p>Declaração da Independência.</p>
+            </div>
+
+            <div class="evento">
+                <strong>1823</strong>
+                <p>Consolidação militar da Independência em diferentes regiões.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Professor -->
+    <section class="card">
+        <h2>O que o professor precisa dominar</h2>
+
+        <ul>
+            <li>Explicar por que a Independência foi um processo.</li>
+            <li>Relacionar o Brasil Joanino à Independência.</li>
+            <li>Explicar a Revolução Liberal do Porto.</li>
+            <li>Compreender a importância do Dia do Fico.</li>
+            <li>Explicar a atuação de José Bonifácio.</li>
+            <li>Contextualizar o 7 de Setembro.</li>
+            <li>Explicar as guerras de Independência.</li>
+            <li>Identificar continuidades após 1822.</li>
+            <li>Relacionar Independência política e manutenção da escravidão.</li>
+            <li>Problematizar a construção da memória nacional.</li>
+        </ul>
+    </section>
+
+    <!-- Lousa -->
+    <section class="card">
+        <h2>O que colocar na lousa</h2>
+
+        <div class="lousa">
+
+            <h3>PROCESSO DE INDEPENDÊNCIA</h3>
+
+            <ul>
+                <li>1808 — Corte portuguesa no Brasil</li>
+                <li>1808 — Abertura dos Portos</li>
+                <li>1815 — Reino Unido</li>
+                <li>1820 — Revolução Liberal do Porto</li>
+                <li>1821 — Retorno de D. João VI</li>
+                <li>1822 — Dia do Fico</li>
+                <li>1822 — Independência</li>
+                <li>1823 — Consolidação militar</li>
+            </ul>
+
+            <h3>CONTINUIDADES</h3>
+
+            <ul>
+                <li>Escravidão</li>
+                <li>Desigualdade social</li>
+                <li>Poder das elites</li>
+                <li>Economia agroexportadora</li>
+            </ul>
+
+            <h3>IDEIA-CHAVE</h3>
+
+            <p>
+                A Independência rompeu politicamente com Portugal,
+                mas não transformou imediatamente a estrutura social
+                brasileira.
+            </p>
+
+        </div>
+    </section>
+
+    <!-- ENEM -->
+    <section class="card enem">
+        <h2>Foco ENEM, Vestibular e Concurso</h2>
+
+        <p>
+            O processo de Independência pode aparecer em questões
+            envolvendo:
+        </p>
+
+        <ul>
+            <li>crise do sistema colonial;</li>
+            <li>Período Joanino;</li>
+            <li>Revolução Liberal do Porto;</li>
+            <li>Dia do Fico;</li>
+            <li>José Bonifácio;</li>
+            <li>7 de Setembro;</li>
+            <li>guerras de Independência;</li>
+            <li>continuidade da escravidão;</li>
+            <li>formação do Estado brasileiro.</li>
+        </ul>
+
+        <div class="destaque">
+            <strong>Dica de prova:</strong>
+            não confunda o acontecimento simbólico de 7 de setembro
+            com todo o processo de Independência. A ruptura envolveu
+            acontecimentos anteriores e conflitos posteriores.
+        </div>
+    </section>
+
+    <!-- Questões -->
+    <section class="card">
+        <h2>Questões de revisão — estilo ENEM</h2>
+
+        <div class="questao">
+
+            <h3>Questão 1</h3>
+
+            <p>
+                A Revolução Liberal do Porto, em 1820, modificou as
+                relações políticas entre Portugal e Brasil ao exigir
+                o retorno da Corte e promover a reorganização política
+                da monarquia.
+            </p>
+
+            <p>
+                Uma consequência desse processo foi:
+            </p>
+
+            <ul class="alternativas">
+                <li><strong>A)</strong> a permanência definitiva de D. João VI no Brasil.</li>
+                <li><strong>B)</strong> o retorno de D. João VI a Portugal.</li>
+                <li><strong>C)</strong> a proclamação da República brasileira.</li>
+                <li><strong>D)</strong> o fim imediato da escravidão.</li>
+                <li><strong>E)</strong> a transferência da Corte para a Inglaterra.</li>
+            </ul>
+
+            <button class="botao" onclick="mostrarGabarito('gabarito1')">
+                Mostrar gabarito
+            </button>
+
+            <div class="gabarito" id="gabarito1">
+                <strong>Resposta: B.</strong>
+                D. João VI retornou a Portugal em 1821, deixando
+                D. Pedro no Brasil.
+            </div>
+
+        </div>
+
+        <div class="questao">
+
+            <h3>Questão 2</h3>
+
+            <p>
+                A Independência do Brasil alterou a relação política
+                com Portugal, mas algumas estruturas sociais permaneceram.
+            </p>
+
+            <p>
+                Um exemplo dessa continuidade foi:
+            </p>
+
+            <ul class="alternativas">
+                <li><strong>A)</strong> a manutenção da escravidão.</li>
+                <li><strong>B)</strong> a implantação do sufrágio universal.</li>
+                <li><strong>C)</strong> o fim do poder das elites.</li>
+                <li><strong>D)</strong> a igualdade social entre livres e escravizados.</li>
+                <li><strong>E)</strong> o abandono da economia agroexportadora.</li>
+            </ul>
+
+            <button class="botao" onclick="mostrarGabarito('gabarito2')">
+                Mostrar gabarito
+            </button>
+
+            <div class="gabarito" id="gabarito2">
+                <strong>Resposta: A.</strong>
+                A escravidão permaneceu como uma das principais
+                estruturas sociais e econômicas do Brasil independente.
+            </div>
+
+        </div>
+    </section>
+
+    <!-- BNCC -->
+    <section class="card">
+        <h2>BNCC — relação com o estudo histórico</h2>
+
+        <p>
+            Este capítulo pode ser articulado ao estudo das relações
+            de poder, da formação dos Estados nacionais, das revoluções
+            políticas e dos processos de independência nas Américas.
+        </p>
+
+        <p>
+            Para o planejamento escolar, o professor deve selecionar
+            as habilidades específicas da BNCC correspondentes à etapa
+            de ensino e ao currículo adotado pela rede.
+        </p>
+    </section>
+
+    <!-- Resumo -->
+    <section class="card">
+        <h2>Resumo para o aluno</h2>
+
+        <p>
+            A Independência do Brasil foi um processo iniciado antes
+            de 1822. A transferência da Corte, a abertura dos portos
+            e a criação do Reino Unido alteraram a posição do Brasil
+            dentro do Império português.
+        </p>
+
+        <p>
+            A Revolução Liberal do Porto, em 1820, aumentou as tensões.
+            D. João VI retornou a Portugal em 1821, deixando D. Pedro
+            no Brasil.
+        </p>
+
+        <p>
+            O Dia do Fico, em janeiro de 1822, marcou uma etapa decisiva.
+            Em 7 de setembro, D. Pedro declarou a separação política
+            em relação a Portugal.
+        </p>
+
+        <p>
+            A Independência, porém, não eliminou imediatamente as
+            desigualdades sociais nem a escravidão. A construção do
+            Estado brasileiro continuaria durante o Primeiro Reinado
+            e os períodos seguintes.
+        </p>
+
+        <div class="destaque">
+            <strong>Para memorizar:</strong>
+            1820 → Revolução Liberal do Porto<br>
+            1821 → retorno de D. João VI<br>
+            09/01/1822 → Dia do Fico<br>
+            07/09/1822 → Independência<br>
+            1823 → consolidação militar em diferentes regiões
+        </div>
+    </section>
+
+    <!-- Navegação -->
+    <div class="navegacao">
+
+        <a href="../48-Brasil-Joanino/index.html">
+            ← Congresso de Viena
+        </a>
+
+        <a href="../50-Primeiro-Reinado/index.html">
+            1.35 — Primeiro Reinado →
+        </a>
+
+    </div>
+
+    <div class="topo">
+        <a href="#topo">↑ Voltar ao topo</a>
+    </div>
+
+</main>
+
+<!-- Rodapé -->
+<footer>
+
+    <p>
+        <strong>Professor Marcelo Oliveira</strong>
+    </p>
+
+    <p>
+        História Geral • Fund II • Ensino Médio • ENEM • Vestibular • Concurso
+    </p>
+
+    <p>
+        Material didático autoral para estudo e ensino de História.
+    </p>
+
+</footer>
+
+<script>
+    // Controla a exibição do gabarito.
+    function mostrarGabarito(id) {
+
+        // Localiza o gabarito pelo seu ID.
+        const elemento = document.getElementById(id);
+
+        // Verifica se o gabarito está visível.
+        if (elemento.style.display === "block") {
+
+            // Esconde o gabarito.
+            elemento.style.display = "none";
+
+        } else {
+
+            // Mostra o gabarito.
+            elemento.style.display = "block";
+        }
+    }
+</script>
+<script>
+  const paginaAnterior = "34 - Congresso-de-Viena.html";
+  const paginaProxima = "36 - Primeiro Reinado.html";
+</script>
+<script src="navegacao.js"></script>
+
+</body>
+</html>

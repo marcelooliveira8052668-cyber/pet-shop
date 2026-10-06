@@ -1,0 +1,1587 @@
+<!DOCTYPE html>
+<!-- Define que o documento utiliza HTML5. -->
+
+<html lang="pt-BR">
+<!-- Define o português do Brasil como idioma principal. -->
+
+<head>
+    <!-- Início das configurações da página. -->
+
+    <meta charset="UTF-8">
+    <!-- Permite acentos e caracteres especiais. -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Faz a página funcionar corretamente em celulares, tablets e computadores. -->
+
+    <title>1.11 — A Igreja na Idade Média | História Geral — Prof. Marcelo Oliveira</title>
+    <!-- Define o título da página na aba do navegador. -->
+
+    <style>
+        /* ==========================================================
+           CONFIGURAÇÕES GERAIS
+           ========================================================== */
+
+        * {
+            /* Seleciona todos os elementos da página. */
+            box-sizing: border-box;
+            /* Faz padding e bordas serem considerados no tamanho dos elementos. */
+            margin: 0;
+            /* Remove margens padrão. */
+            padding: 0;
+            /* Remove espaçamentos padrão. */
+        }
+
+        html {
+            /* Configura o documento HTML. */
+            scroll-behavior: smooth;
+            /* Faz a rolagem entre seções ficar suave. */
+        }
+
+        body {
+            /* Configura o corpo da página. */
+            font-family: Arial, Helvetica, sans-serif;
+            /* Define a família de fontes. */
+            background: #f4f6f8;
+            /* Define a cor de fundo. */
+            color: #222;
+            /* Define a cor principal dos textos. */
+            line-height: 1.7;
+            /* Melhora o espaçamento vertical entre as linhas. */
+        }
+
+        /* ==========================================================
+           CABEÇALHO
+           ========================================================== */
+
+        header {
+            /* Configura o cabeçalho principal. */
+            background: linear-gradient(135deg, #20242b, #4b5563);
+            /* Cria um degradê profissional. */
+            color: white;
+            /* Define textos brancos. */
+            padding: 55px 20px;
+            /* Cria espaço interno. */
+            text-align: center;
+            /* Centraliza o conteúdo. */
+        }
+
+        header .numero {
+            /* Configura a identificação da aula. */
+            font-size: 18px;
+            /* Define o tamanho do texto. */
+            font-weight: bold;
+            /* Coloca o texto em negrito. */
+            letter-spacing: 2px;
+            /* Aumenta o espaçamento entre letras. */
+            color: #d6b36a;
+            /* Define uma cor dourada. */
+            margin-bottom: 12px;
+            /* Cria espaço abaixo. */
+        }
+
+        header h1 {
+            /* Configura o título principal. */
+            font-size: 42px;
+            /* Define o tamanho do título. */
+            margin-bottom: 15px;
+            /* Cria espaço abaixo do título. */
+        }
+
+        header p {
+            /* Configura o subtítulo. */
+            max-width: 900px;
+            /* Limita a largura do texto. */
+            margin: auto;
+            /* Centraliza o conteúdo. */
+            font-size: 18px;
+            /* Define o tamanho do texto. */
+            opacity: 0.92;
+            /* Deixa o texto levemente transparente. */
+        }
+
+        /* ==========================================================
+           MENU
+           ========================================================== */
+
+        nav {
+            /* Configura o menu de navegação. */
+            background: white;
+            /* Define fundo branco. */
+            padding: 15px;
+            /* Cria espaço interno. */
+            display: flex;
+            /* Organiza os botões em linha. */
+            justify-content: center;
+            /* Centraliza os botões. */
+            gap: 10px;
+            /* Cria espaço entre os botões. */
+            flex-wrap: wrap;
+            /* Permite que os botões quebrem linha em telas menores. */
+            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+            /* Adiciona sombra. */
+            position: sticky;
+            /* Mantém o menu visível durante a rolagem. */
+            top: 0;
+            /* Fixa o menu no topo. */
+            z-index: 1000;
+            /* Mantém o menu acima dos demais elementos. */
+        }
+
+        nav button {
+            /* Configura os botões do menu. */
+            border: none;
+            /* Remove a borda. */
+            background: #20242b;
+            /* Define fundo escuro. */
+            color: white;
+            /* Define texto branco. */
+            padding: 12px 17px;
+            /* Cria espaço interno. */
+            border-radius: 8px;
+            /* Arredonda os cantos. */
+            cursor: pointer;
+            /* Mostra o cursor de clique. */
+            font-weight: bold;
+            /* Destaca os textos. */
+            transition: 0.3s;
+            /* Cria uma transição suave. */
+        }
+
+        nav button:hover {
+            /* Configura o efeito do mouse. */
+            background: #8b6b32;
+            /* Muda a cor do botão. */
+            transform: translateY(-2px);
+            /* Levanta levemente o botão. */
+        }
+
+        /* ==========================================================
+           CONTEÚDO
+           ========================================================== */
+
+        main {
+            /* Configura o conteúdo principal. */
+            max-width: 1150px;
+            /* Define largura máxima. */
+            margin: 40px auto;
+            /* Centraliza o conteúdo. */
+            padding: 0 20px;
+            /* Cria espaço lateral. */
+        }
+
+        section {
+            /* Configura cada seção. */
+            background: white;
+            /* Define fundo branco. */
+            margin-bottom: 30px;
+            /* Cria espaço entre as seções. */
+            padding: 35px;
+            /* Cria espaço interno. */
+            border-radius: 15px;
+            /* Arredonda os cantos. */
+            box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+            /* Adiciona sombra discreta. */
+        }
+
+        section h2 {
+            /* Configura títulos das seções. */
+            color: #20242b;
+            /* Define cor escura. */
+            margin-bottom: 20px;
+            /* Cria espaço abaixo. */
+            border-left: 6px solid #b08a3e;
+            /* Cria uma faixa dourada lateral. */
+            padding-left: 15px;
+            /* Afasta o título da faixa. */
+        }
+
+        section h3 {
+            /* Configura subtítulos. */
+            color: #4b5563;
+            /* Define cor intermediária. */
+            margin-top: 25px;
+            /* Cria espaço acima. */
+            margin-bottom: 10px;
+            /* Cria espaço abaixo. */
+        }
+
+        p {
+            /* Configura os parágrafos. */
+            margin-bottom: 15px;
+            /* Cria espaço entre os parágrafos. */
+            text-align: justify;
+            /* Justifica os textos. */
+        }
+
+        ul {
+            /* Configura listas. */
+            margin: 15px 0 20px 25px;
+            /* Cria espaçamento da lista. */
+        }
+
+        li {
+            /* Configura itens das listas. */
+            margin-bottom: 8px;
+            /* Cria espaço entre os itens. */
+        }
+
+        /* ==========================================================
+           CARDS
+           ========================================================== */
+
+        .grid {
+            /* Cria uma grade responsiva. */
+            display: grid;
+            /* Ativa CSS Grid. */
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            /* Cria colunas que se adaptam à tela. */
+            gap: 18px;
+            /* Define espaço entre os cards. */
+        }
+
+        .card {
+            /* Configura cada card. */
+            background: #f5f6f8;
+            /* Define fundo claro. */
+            padding: 22px;
+            /* Cria espaço interno. */
+            border-radius: 12px;
+            /* Arredonda os cantos. */
+            border-top: 4px solid #b08a3e;
+            /* Cria destaque dourado no topo. */
+        }
+
+        .card h3 {
+            /* Configura título dos cards. */
+            margin-top: 0;
+            /* Remove margem superior. */
+            color: #20242b;
+            /* Define cor escura. */
+        }
+
+        /* ==========================================================
+           LINHA DO TEMPO
+           ========================================================== */
+
+        .timeline {
+            /* Configura a linha do tempo. */
+            border-left: 4px solid #b08a3e;
+            /* Cria linha vertical. */
+            padding-left: 25px;
+            /* Afasta o conteúdo da linha. */
+        }
+
+        .timeline-item {
+            /* Configura cada acontecimento. */
+            margin-bottom: 22px;
+            /* Cria espaço entre os acontecimentos. */
+            position: relative;
+            /* Permite posicionar o marcador. */
+        }
+
+        .timeline-item::before {
+            /* Cria o círculo da linha do tempo. */
+            content: "";
+            /* Cria um elemento vazio. */
+            position: absolute;
+            /* Permite posicionar o elemento. */
+            left: -36px;
+            /* Coloca o círculo sobre a linha. */
+            top: 7px;
+            /* Define a posição vertical. */
+            width: 14px;
+            /* Define a largura. */
+            height: 14px;
+            /* Define a altura. */
+            background: #b08a3e;
+            /* Define a cor. */
+            border-radius: 50%;
+            /* Transforma o marcador em círculo. */
+        }
+
+        .ano {
+            /* Configura os anos. */
+            font-weight: bold;
+            /* Destaca os anos. */
+            color: #8b6b32;
+            /* Define cor dourada escura. */
+        }
+
+        /* ==========================================================
+           QUADRO
+           ========================================================== */
+
+        .lousa {
+            /* Configura o quadro da aula. */
+            background: #1f2933;
+            /* Define fundo escuro. */
+            color: white;
+            /* Define texto branco. */
+            padding: 30px;
+            /* Cria espaço interno. */
+            border-radius: 12px;
+            /* Arredonda os cantos. */
+        }
+
+        .lousa h3 {
+            /* Configura o título do quadro. */
+            color: #e0bd70;
+            /* Define cor dourada. */
+        }
+
+        .lousa p {
+            /* Configura os textos do quadro. */
+            color: #f2f2f2;
+            /* Define cor clara. */
+        }
+
+        /* ==========================================================
+           QUESTÕES
+           ========================================================== */
+
+        .questao {
+            /* Configura cada questão. */
+            background: #f8f9fa;
+            /* Define fundo claro. */
+            border-left: 5px solid #20242b;
+            /* Cria destaque lateral. */
+            padding: 25px;
+            /* Cria espaço interno. */
+            margin-bottom: 25px;
+            /* Cria espaço entre questões. */
+            border-radius: 8px;
+            /* Arredonda os cantos. */
+        }
+
+        .alternativas {
+            /* Configura as alternativas. */
+            margin-top: 15px;
+            /* Cria espaço acima. */
+        }
+
+        .gabarito {
+            /* Configura a área do gabarito. */
+            display: none;
+            /* Esconde o gabarito inicialmente. */
+            background: #e9f7ef;
+            /* Define fundo verde claro. */
+            border-left: 5px solid #287a4b;
+            /* Cria destaque verde. */
+            padding: 15px;
+            /* Cria espaço interno. */
+            margin-top: 15px;
+            /* Cria espaço acima. */
+            border-radius: 8px;
+            /* Arredonda os cantos. */
+        }
+
+        .btn-gabarito {
+            /* Configura o botão do gabarito. */
+            background: #287a4b;
+            /* Define fundo verde. */
+            color: white;
+            /* Define texto branco. */
+            border: none;
+            /* Remove borda. */
+            padding: 11px 16px;
+            /* Cria espaço interno. */
+            border-radius: 7px;
+            /* Arredonda os cantos. */
+            cursor: pointer;
+            /* Mostra cursor de clique. */
+            font-weight: bold;
+            /* Destaca o texto. */
+            margin-top: 15px;
+            /* Cria espaço acima. */
+        }
+
+        /* ==========================================================
+           BOTÕES FINAIS
+           ========================================================== */
+
+        .acoes {
+            /* Configura a área dos botões finais. */
+            display: flex;
+            /* Organiza os botões em linha. */
+            justify-content: center;
+            /* Centraliza os botões. */
+            gap: 15px;
+            /* Cria espaço entre eles. */
+            flex-wrap: wrap;
+            /* Permite quebra de linha. */
+        }
+
+        .acoes button {
+            /* Configura os botões. */
+            background: #20242b;
+            /* Define fundo escuro. */
+            color: white;
+            /* Define texto branco. */
+            border: none;
+            /* Remove borda. */
+            padding: 13px 22px;
+            /* Cria espaço interno. */
+            border-radius: 8px;
+            /* Arredonda os cantos. */
+            cursor: pointer;
+            /* Mostra cursor de clique. */
+            font-weight: bold;
+            /* Destaca o texto. */
+        }
+
+        .acoes button:hover {
+            /* Configura efeito do mouse. */
+            background: #8b6b32;
+            /* Muda a cor. */
+        }
+
+        /* ==========================================================
+           RODAPÉ
+           ========================================================== */
+
+        footer {
+            /* Configura o rodapé. */
+            background: #20242b;
+            /* Define fundo escuro. */
+            color: white;
+            /* Define texto branco. */
+            text-align: center;
+            /* Centraliza o conteúdo. */
+            padding: 35px 20px;
+            /* Cria espaço interno. */
+            margin-top: 40px;
+            /* Cria espaço superior. */
+        }
+
+        footer p {
+            /* Configura textos do rodapé. */
+            text-align: center;
+            /* Centraliza os textos. */
+            margin-bottom: 8px;
+            /* Cria espaço pequeno. */
+        }
+
+        /* ==========================================================
+           RESPONSIVIDADE
+           ========================================================== */
+
+        @media (max-width: 700px) {
+            /* Aplica as regras abaixo em telas pequenas. */
+
+            header h1 {
+                /* Ajusta o título. */
+                font-size: 30px;
+                /* Reduz o tamanho. */
+            }
+
+            header p {
+                /* Ajusta o subtítulo. */
+                font-size: 16px;
+                /* Reduz o tamanho. */
+            }
+
+            section {
+                /* Ajusta as seções. */
+                padding: 22px;
+                /* Reduz o espaçamento interno. */
+            }
+
+            section h2 {
+                /* Ajusta títulos. */
+                font-size: 22px;
+                /* Reduz o tamanho. */
+            }
+
+            nav button {
+                /* Ajusta os botões do menu. */
+                width: 100%;
+                /* Faz cada botão ocupar toda a largura. */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Início do conteúdo visível. -->
+
+    <header id="topo">
+        <!-- Cabeçalho principal. -->
+
+        <div class="numero">
+            1.11 — A IGREJA NA IDADE MÉDIA
+        </div>
+        <!-- Identificação do tema. -->
+
+        <h1>A Igreja na Idade Média</h1>
+        <!-- Título principal. -->
+
+        <p>
+            Cristianismo, organização da Igreja, poder religioso,
+            cultura, sociedade medieval, papado, monasticismo e conflitos.
+        </p>
+        <!-- Subtítulo. -->
+    </header>
+
+    <nav>
+        <!-- Menu de navegação. -->
+
+        <button onclick="irPara('comeco')">
+            I — O Começo
+        </button>
+        <!-- Botão para a primeira parte. -->
+
+        <button onclick="irPara('desenvolvimento')">
+            II — O Desenvolvimento
+        </button>
+        <!-- Botão para a segunda parte. -->
+
+        <button onclick="irPara('legado')">
+            III — O Legado
+        </button>
+        <!-- Botão para a terceira parte. -->
+
+        <button onclick="irPara('cronologia')">
+            Cronologia
+        </button>
+        <!-- Botão para a cronologia. -->
+
+        <button onclick="irPara('questoes')">
+            Questões
+        </button>
+        <!-- Botão para as questões. -->
+
+        <button onclick="voltarPagina()">
+            ← Voltar
+        </button>
+        <!-- Botão para retornar à página anterior. -->
+    </nav>
+
+    <main>
+        <!-- Conteúdo principal. -->
+
+        <section id="comeco">
+            <!-- Primeira parte da trilogia. -->
+
+            <h2>I — O COMEÇO: CRISTIANISMO E FORMAÇÃO DA IGREJA MEDIEVAL</h2>
+            <!-- Título da primeira parte. -->
+
+            <h3>1. O cristianismo no mundo romano</h3>
+            <!-- Subtítulo. -->
+
+            <p>
+                O cristianismo surgiu no século I, na região da Palestina,
+                dentro do contexto do Império Romano. A nova religião nasceu
+                em uma sociedade marcada por diferentes tradições religiosas
+                e por intensas relações políticas e culturais.
+            </p>
+
+            <p>
+                A mensagem cristã espalhou-se progressivamente por diferentes
+                regiões do Mediterrâneo. Comunidades cristãs foram organizadas
+                em cidades e passaram a desenvolver estruturas de liderança
+                religiosa.
+            </p>
+
+            <h3>2. Perseguições e expansão</h3>
+            <!-- Subtítulo. -->
+
+            <p>
+                Durante os primeiros séculos, os cristãos enfrentaram períodos
+                de perseguição em algumas regiões e governos do Império Romano.
+                Essas perseguições, porém, não foram permanentes nem ocorreram
+                da mesma maneira em todos os lugares.
+            </p>
+
+            <p>
+                Apesar das dificuldades, o cristianismo continuou se expandindo.
+                A organização das comunidades, a circulação pelo Mediterrâneo
+                e a atuação de líderes religiosos contribuíram para sua difusão.
+            </p>
+
+            <h3>3. Constantino e a mudança de posição do Estado romano</h3>
+            <!-- Subtítulo. -->
+
+            <p>
+                No início do século IV, o imperador <strong>Constantino</strong>
+                promoveu mudanças decisivas na relação entre o governo romano
+                e o cristianismo.
+            </p>
+
+            <p>
+                O <strong>Édito de Milão, de 313</strong>, é tradicionalmente
+                associado à garantia de liberdade de culto no Império.
+            </p>
+
+            <p>
+                A mudança não significou que o cristianismo tenha se tornado
+                imediatamente a única religião do Império. O processo foi gradual
+                e envolveu diferentes políticas imperiais.
+            </p>
+
+            <h3>4. Cristianismo como religião favorecida</h3>
+            <!-- Subtítulo. -->
+
+            <p>
+                Ao longo do século IV, o cristianismo ganhou crescente apoio
+                imperial. No final do século IV, o governo de Teodósio I esteve
+                associado à transformação do cristianismo niceno em religião
+                favorecida pelo Estado imperial.
+            </p>
+
+            <h3>5. A organização da Igreja</h3>
+            <!-- Subtítulo. -->
+
+            <p>
+                A expansão do cristianismo exigiu estruturas organizacionais.
+                Bispos, padres, diáconos e outras autoridades religiosas
+                desempenharam diferentes funções.
+            </p>
+
+            <div class="grid">
+                <!-- Início dos cards. -->
+
+                <div class="card">
+                    <h3>Bispo</h3>
+                    <p>
+                        Autoridade religiosa responsável por uma comunidade
+                        cristã territorialmente organizada.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Clero</h3>
+                    <p>
+                        Conjunto das pessoas que exercem funções religiosas
+                        dentro da estrutura da Igreja.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Diocese</h3>
+                    <p>
+                        Área territorial sob a autoridade de um bispo.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Papa</h3>
+                    <p>
+                        Bispo de Roma, cuja autoridade ganhou crescente
+                        importância no cristianismo ocidental.
+                    </p>
+                </div>
+            </div>
+
+            <h3>6. A Igreja no Ocidente após Roma</h3>
+            <!-- Subtítulo. -->
+
+            <p>
+                Com a transformação das estruturas políticas do Império Romano
+                do Ocidente, a Igreja permaneceu como uma das instituições
+                organizadas de maior continuidade na Europa Ocidental.
+            </p>
+
+            <p>
+                Bispos e comunidades religiosas participaram de atividades
+                religiosas, educacionais, assistenciais e culturais.
+            </p>
+
+            <h3>7. O monasticismo</h3>
+            <!-- Subtítulo. -->
+
+            <p>
+                O <strong>monasticismo</strong> desenvolveu-se a partir de
+                experiências de pessoas que buscavam uma vida dedicada à oração,
+                disciplina religiosa e afastamento das atividades mundanas.
+            </p>
+
+            <p>
+                Com o passar do tempo, os mosteiros tornaram-se importantes
+                centros religiosos, econômicos, culturais e educacionais.
+            </p>
+
+            <h3>8. Regra de São Bento</h3>
+            <!-- Subtítulo. -->
+
+            <p>
+                A <strong>Regra de São Bento</strong>, elaborada no século VI,
+                tornou-se uma referência fundamental para o monasticismo
+                ocidental.
+            </p>
+
+            <p>
+                O princípio tradicionalmente associado à vida beneditina,
+                <strong>“ora et labora”</strong>, sintetiza a valorização da
+                oração e do trabalho na vida monástica.
+            </p>
+        </section>
+
+        <section id="desenvolvimento">
+            <!-- Segunda parte da trilogia. -->
+
+            <h2>II — O DESENVOLVIMENTO: PODER, CULTURA E SOCIEDADE</h2>
+            <!-- Título. -->
+
+            <h3>1. A Igreja como instituição medieval</h3>
+            <!-- Subtítulo. -->
+
+            <p>
+                Durante a Idade Média, a Igreja tornou-se uma instituição
+                fundamental na organização social e cultural de grande parte
+                da Europa Ocidental.
+            </p>
+
+            <p>
+                Sua influência não se limitava às práticas religiosas. A Igreja
+                participou da educação, assistência aos pobres, produção escrita,
+                organização do calendário e legitimação de autoridades políticas.
+            </p>
+
+            <h3>2. Igreja e poder político</h3>
+            <!-- Subtítulo. -->
+
+            <p>
+                Reis, nobres, bispos e papas estabeleceram relações variadas
+                ao longo da Idade Média. Em alguns momentos existiram alianças;
+                em outros, conflitos sobre autoridade e jurisdição.
+            </p>
+
+            <p>
+                Portanto, não é adequado imaginar a Igreja medieval como uma
+                instituição completamente separada da política. Religião e poder
+                estavam profundamente relacionados, embora existissem disputas
+                entre diferentes autoridades.
+            </p>
+
+            <h3>3. O papado</h3>
+            <!-- Subtítulo. -->
+
+            <p>
+                O bispo de Roma, o papa, ampliou gradualmente sua autoridade
+                dentro do cristianismo ocidental.
+            </p>
+
+            <p>
+                A construção da autoridade papal foi um processo histórico
+                longo, marcado por alianças, conflitos, disputas doutrinárias
+                e relações com reis e imperadores.
+            </p>
+
+            <h3>4. A cristandade medieval</h3>
+            <!-- Subtítulo. -->
+
+            <p>
+                O conceito de <strong>cristandade</strong> pode ser utilizado
+                para compreender a ideia de uma sociedade europeia ocidental
+                organizada em torno de referências cristãs compartilhadas.
+            </p>
+
+            <p>
+                Entretanto, a Europa medieval nunca foi culturalmente homogênea.
+                Existiam diferentes povos, línguas, tradições, religiões,
+                comunidades judaicas e contatos com sociedades muçulmanas e
+                bizantinas.
+            </p>
+
+            <h3>5. Mosteiros e preservação do conhecimento</h3>
+            <!-- Subtítulo. -->
+
+            <p>
+                Os mosteiros tiveram papel importante na produção e preservação
+                de manuscritos. Monges copistas reproduziram textos religiosos
+                e também obras de autores antigos.
+            </p>
+
+            <p>
+                Esse trabalho não significa que a Igreja tenha sido a única
+                responsável pela preservação do conhecimento. O mundo medieval
+                possuía diferentes centros de produção intelectual, incluindo
+                ambientes islâmicos, judaicos e bizantinos.
+            </p>
+
+            <h3>6. Educação medieval</h3>
+            <!-- Subtítulo. -->
+
+            <p>
+                A educação formal estava frequentemente ligada a instituições
+                religiosas. Escolas monásticas e catedrais desempenharam
+                importante papel na formação de membros do clero e de setores
+                das elites.
+            </p>
+
+            <p>
+                Posteriormente, especialmente a partir do século XII, surgiram
+                universidades em diferentes cidades europeias.
+            </p>
+
+            <h3>7. Igreja e cotidiano</h3>
+            <!-- Subtítulo. -->
+
+            <p>
+                A religião estava presente em diferentes dimensões da vida
+                medieval: nascimento, casamento, morte, festas, calendário,
+                alimentação, trabalho e práticas comunitárias.
+            </p>
+
+            <p>
+                A Igreja também estabelecia normas morais e religiosas que
+                influenciavam comportamentos e relações sociais.
+            </p>
+
+            <h3>8. Festas e calendário</h3>
+            <!-- Subtítulo. -->
+
+            <p>
+                O calendário cristão organizava parte importante do tempo social.
+                Festas religiosas, como Natal e Páscoa, ocupavam espaço importante
+                na vida das comunidades cristãs.
+            </p>
+
+            <h3>9. Igreja e assistência social</h3>
+            <!-- Subtítulo. -->
+
+            <p>
+                Instituições religiosas mantinham práticas de assistência,
+                incluindo acolhimento de pobres, doentes, viajantes e pessoas
+                em situação de vulnerabilidade.
+            </p>
+
+            <h3>10. A Igreja e as terras</h3>
+            <!-- Subtítulo. -->
+
+            <p>
+                A Igreja possuía propriedades rurais e recursos econômicos em
+                diferentes regiões. Mosteiros e bispados administravam terras
+                e trabalhadores.
+            </p>
+
+            <p>
+                Essa dimensão econômica ajudou a tornar a Igreja uma das
+                instituições mais poderosas da sociedade medieval.
+            </p>
+
+            <h3>11. Heresias e dissidências</h3>
+            <!-- Subtítulo. -->
+
+            <p>
+                A unidade religiosa nunca foi absoluta. Diferentes grupos
+                apresentaram interpretações distintas do cristianismo.
+            </p>
+
+            <p>
+                Autoridades religiosas desenvolveram mecanismos para definir
+                doutrinas consideradas legítimas e combater aquelas classificadas
+                como heréticas.
+            </p>
+
+            <h3>12. Igreja e sociedade</h3>
+            <!-- Subtítulo. -->
+
+            <div class="grid">
+                <!-- Cards sobre funções sociais. -->
+
+                <div class="card">
+                    <h3>Religião</h3>
+                    <p>
+                        Organizava práticas, crenças, rituais e parte do
+                        calendário social.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Educação</h3>
+                    <p>
+                        Mosteiros e escolas religiosas contribuíram para a
+                        formação intelectual de grupos específicos.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Assistência</h3>
+                    <p>
+                        Instituições religiosas desenvolveram práticas de
+                        auxílio e acolhimento.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Política</h3>
+                    <p>
+                        A Igreja estabeleceu alianças e disputas com reis,
+                        nobres e imperadores.
+                    </p>
+                </div>
+            </div>
+
+            <h3>13. A Questão das Investiduras</h3>
+            <!-- Subtítulo. -->
+
+            <p>
+                A partir do século XI, uma das principais disputas entre papado
+                e autoridades políticas envolveu a nomeação de bispos.
+            </p>
+
+            <p>
+                O conflito ficou conhecido como <strong>Questão das
+                Investiduras</strong> e será estudado em profundidade no
+                próximo capítulo deste curso.
+            </p>
+        </section>
+
+        <section id="legado">
+            <!-- Terceira parte da trilogia. -->
+
+            <h2>III — O LEGADO E O MUNDO ATUAL</h2>
+            <!-- Título. -->
+
+            <h3>1. Cristianismo e cultura ocidental</h3>
+            <!-- Subtítulo. -->
+
+            <p>
+                A tradição cristã medieval deixou marcas profundas na cultura
+                europeia. Essas influências podem ser observadas na arte,
+                arquitetura, literatura, educação, calendário e instituições.
+            </p>
+
+            <h3>2. Arquitetura</h3>
+            <!-- Subtítulo. -->
+
+            <p>
+                Igrejas e mosteiros produziram importantes manifestações
+                arquitetônicas. Entre os estilos que serão estudados ao longo
+                do período medieval destacam-se o românico e o gótico.
+            </p>
+
+            <h3>3. Educação e universidades</h3>
+            <!-- Subtítulo. -->
+
+            <p>
+                Instituições religiosas contribuíram para a manutenção e
+                transmissão da cultura escrita. Posteriormente, universidades
+                medievais tornaram-se importantes centros de estudo de teologia,
+                direito, medicina e filosofia.
+            </p>
+
+            <h3>4. A influência no Brasil</h3>
+            <!-- Subtítulo. -->
+
+            <p>
+                A presença histórica do cristianismo no Brasil foi construída
+                posteriormente, principalmente a partir da expansão marítima
+                europeia e da colonização portuguesa.
+            </p>
+
+            <p>
+                Por isso, ao relacionar Igreja medieval e Brasil, é importante
+                explicar que não existe uma continuidade direta entre a Igreja
+                medieval europeia e as instituições brasileiras. Existem,
+                entretanto, processos históricos de longa duração que conectam
+                tradições religiosas europeias à formação colonial portuguesa.
+            </p>
+
+            <h3>5. Conceitos fundamentais</h3>
+            <!-- Subtítulo. -->
+
+            <div class="grid">
+                <!-- Grade de conceitos. -->
+
+                <div class="card">
+                    <h3>Clero</h3>
+                    <p>
+                        Grupo de pessoas que exercem funções religiosas
+                        institucionalizadas.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Papado</h3>
+                    <p>
+                        Instituição associada à autoridade do bispo de Roma
+                        no cristianismo ocidental.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Monasticismo</h3>
+                    <p>
+                        Forma de vida religiosa baseada em comunidades ou
+                        experiências dedicadas à oração e disciplina espiritual.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Mosteiro</h3>
+                    <p>
+                        Comunidade religiosa onde monges ou monjas viviam
+                        segundo determinadas regras.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Cristandade</h3>
+                    <p>
+                        Conceito utilizado para representar a sociedade
+                        medieval ocidental organizada em torno de referências
+                        cristãs.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Heresia</h3>
+                    <p>
+                        Termo utilizado por autoridades religiosas para
+                        classificar determinadas doutrinas consideradas
+                        incompatíveis com a ortodoxia.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="cronologia">
+            <!-- Seção da linha do tempo. -->
+
+            <h2>CRONOLOGIA ESSENCIAL</h2>
+            <!-- Título. -->
+
+            <div class="timeline">
+                <!-- Início da cronologia. -->
+
+                <div class="timeline-item">
+                    <div class="ano">Século I</div>
+                    <p>
+                        Surgimento e expansão inicial do cristianismo no contexto
+                        do Império Romano.
+                    </p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="ano">313</div>
+                    <p>
+                        Édito de Milão e mudança importante na relação entre
+                        cristianismo e Estado romano.
+                    </p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="ano">325</div>
+                    <p>
+                        Concílio de Niceia, importante para a definição de
+                        questões doutrinárias cristãs.
+                    </p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="ano">380</div>
+                    <p>
+                        Édito de Tessalônica, associado à adoção do cristianismo
+                        niceno como religião oficial do Império Romano.
+                    </p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="ano">Séculos V–VI</div>
+                    <p>
+                        Fortalecimento da Igreja no Ocidente após a transformação
+                        das estruturas políticas romanas.
+                    </p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="ano">529</div>
+                    <p>
+                        Fundação tradicional do mosteiro de Monte Cassino por
+                        Bento de Núrsia.
+                    </p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="ano">Séculos XI–XII</div>
+                    <p>
+                        Expansão da influência papal, reformas religiosas e
+                        crescimento das escolas e universidades.
+                    </p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="ano">Século XI</div>
+                    <p>
+                        Intensificação das disputas entre papado e poderes
+                        políticos sobre a nomeação de autoridades religiosas.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <!-- Seção de causas e consequências. -->
+
+            <h2>CAUSAS E CONSEQUÊNCIAS</h2>
+            <!-- Título. -->
+
+            <div class="grid">
+                <!-- Grade de cards. -->
+
+                <div class="card">
+                    <h3>Expansão do cristianismo</h3>
+                    <p>
+                        <strong>Causas:</strong> atuação de comunidades,
+                        circulação pelo Mediterrâneo e organização religiosa.
+                    </p>
+
+                    <p>
+                        <strong>Consequências:</strong> crescimento das
+                        comunidades cristãs e formação de estruturas institucionais.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Apoio imperial</h3>
+                    <p>
+                        <strong>Causa:</strong> mudanças políticas promovidas
+                        pelos imperadores romanos.
+                    </p>
+
+                    <p>
+                        <strong>Consequência:</strong> crescimento da influência
+                        institucional do cristianismo.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Monasticismo</h3>
+                    <p>
+                        <strong>Causa:</strong> busca por formas de vida
+                        religiosa disciplinada.
+                    </p>
+
+                    <p>
+                        <strong>Consequência:</strong> criação de comunidades
+                        religiosas com funções culturais e econômicas.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Poder da Igreja</h3>
+                    <p>
+                        <strong>Causas:</strong> organização institucional,
+                        propriedades, influência cultural e religiosa.
+                    </p>
+
+                    <p>
+                        <strong>Consequência:</strong> participação importante
+                        na política e na sociedade medieval.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <!-- Seção destinada ao professor. -->
+
+            <h2>O QUE O PROFESSOR PRECISA DOMINAR</h2>
+            <!-- Título. -->
+
+            <ul>
+                <li>O surgimento do cristianismo no contexto do Império Romano.</li>
+                <li>As diferentes fases da relação entre cristianismo e Estado romano.</li>
+                <li>Constantino e o Édito de Milão.</li>
+                <li>O processo de institucionalização da Igreja.</li>
+                <li>A formação e fortalecimento do papado.</li>
+                <li>O monasticismo e a importância dos mosteiros.</li>
+                <li>A Regra de São Bento.</li>
+                <li>A influência da Igreja na educação e na cultura escrita.</li>
+                <li>As relações entre Igreja, reis e nobres.</li>
+                <li>A diversidade religiosa e cultural da Europa medieval.</li>
+                <li>A importância econômica das propriedades da Igreja.</li>
+                <li>O conceito de cristandade.</li>
+                <li>As disputas entre autoridades religiosas e políticas.</li>
+                <li>A Questão das Investiduras como continuidade do tema.</li>
+            </ul>
+        </section>
+
+        <section>
+            <!-- Seção destinada à lousa. -->
+
+            <h2>O QUE COLOCAR NA LOUSA</h2>
+            <!-- Título. -->
+
+            <div class="lousa">
+                <!-- Quadro escuro. -->
+
+                <h3>IGREJA NA IDADE MÉDIA — ESQUEMA CENTRAL</h3>
+                <!-- Título do quadro. -->
+
+                <p>
+                    CRISTIANISMO → IMPÉRIO ROMANO → EXPANSÃO
+                </p>
+
+                <p>
+                    313 → LIBERDADE DE CULTO
+                </p>
+
+                <p>
+                    SÉCULO IV → CRISTIANISMO GANHA APOIO IMPERIAL
+                </p>
+
+                <p>
+                    IGREJA → CLERO + BISPOS + PAPADO
+                </p>
+
+                <p>
+                    MONASTICISMO → MOSTEIROS → ORAÇÃO + TRABALHO + ESCRITA
+                </p>
+
+                <p>
+                    IGREJA → RELIGIÃO + EDUCAÇÃO + ASSISTÊNCIA + POLÍTICA
+                </p>
+
+                <p>
+                    PODER RELIGIOSO × PODER POLÍTICO
+                </p>
+
+                <p>
+                    SÉCULO XI → QUESTÃO DAS INVESTIDURAS
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <!-- Seção BNCC. -->
+
+            <h2>BNCC — HABILIDADES RELACIONADAS</h2>
+            <!-- Título. -->
+
+            <p>
+                A BNCC relaciona diretamente o estudo da Igreja medieval ao
+                papel da religião cristã na cultura e nos modos de organização
+                social durante o período medieval.
+            </p>
+
+            <div class="grid">
+                <!-- Grade de habilidades. -->
+
+                <div class="card">
+                    <h3>EF06HI18</h3>
+                    <p>
+                        Analisar o papel da religião cristã na cultura e nos
+                        modos de organização social no período medieval.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>EF06HI14</h3>
+                    <p>
+                        Identificar e analisar diferentes formas de contato,
+                        adaptação ou exclusão entre populações em diferentes
+                        tempos e espaços.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>EF06HI19</h3>
+                    <p>
+                        Descrever e analisar diferentes papéis sociais das
+                        mulheres no mundo antigo e nas sociedades medievais.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>EF06HI16</h3>
+                    <p>
+                        Comparar formas de organização do trabalho e da vida
+                        social em diferentes sociedades e períodos.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <!-- Seção de preparação para provas. -->
+
+            <h2>ENEM, VESTIBULAR E CONCURSOS</h2>
+            <!-- Título. -->
+
+            <p>
+                Em avaliações, a Igreja medieval pode aparecer relacionada a
+                <strong>poder, cultura, educação, cristianização, organização
+                social, monasticismo, relações entre Igreja e Estado,
+                conflitos religiosos e produção cultural</strong>.
+            </p>
+
+            <div class="grid">
+                <!-- Cards de preparação. -->
+
+                <div class="card">
+                    <h3>ENEM</h3>
+                    <p>
+                        Priorize interpretação de fontes, relações de poder,
+                        religião, cultura e sociedade.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Vestibulares</h3>
+                    <p>
+                        Domine cristianização, papado, monasticismo, cultura
+                        escrita e conflitos entre Igreja e poder político.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Concursos</h3>
+                    <p>
+                        Atenção aos conceitos, cronologia, instituições,
+                        acontecimentos e características da Igreja medieval.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="questoes">
+            <!-- Seção das questões. -->
+
+            <h2>QUESTÕES — MODELO ENEM</h2>
+            <!-- Título. -->
+
+            <div class="questao">
+                <!-- Primeira questão. -->
+
+                <h3>Questão 1</h3>
+                <!-- Número. -->
+
+                <p>
+                    Durante a Idade Média, a Igreja cristã participou de diversas
+                    dimensões da sociedade europeia. Além das atividades
+                    religiosas, instituições ligadas à Igreja atuaram na educação,
+                    assistência e preservação da cultura escrita.
+                </p>
+
+                <p>
+                    Essa atuação demonstra que a Igreja medieval:
+                </p>
+
+                <div class="alternativas">
+                    <p><strong>A)</strong> estava restrita exclusivamente às cerimônias religiosas.</p>
+                    <p><strong>B)</strong> possuía influência em diferentes dimensões da vida social.</p>
+                    <p><strong>C)</strong> não possuía propriedades ou recursos econômicos.</p>
+                    <p><strong>D)</strong> não estabelecia relações com autoridades políticas.</p>
+                    <p><strong>E)</strong> controlava de maneira absoluta todas as sociedades europeias.</p>
+                </div>
+
+                <button class="btn-gabarito" onclick="mostrarGabarito('gabarito1')">
+                    Mostrar gabarito
+                </button>
+
+                <div class="gabarito" id="gabarito1">
+                    <strong>Resposta: B.</strong>
+                    A Igreja possuía atuação religiosa, cultural, educacional,
+                    econômica, assistencial e política em diferentes sociedades
+                    medievais.
+                </div>
+            </div>
+
+            <div class="questao">
+                <!-- Segunda questão. -->
+
+                <h3>Questão 2</h3>
+                <!-- Número. -->
+
+                <p>
+                    Os mosteiros medievais desempenharam funções que ultrapassavam
+                    a dimensão estritamente religiosa. Monges participaram da
+                    cópia e preservação de manuscritos e da organização de
+                    atividades educacionais.
+                </p>
+
+                <p>
+                    Uma consequência histórica dessas atividades foi:
+                </p>
+
+                <div class="alternativas">
+                    <p><strong>A)</strong> o desaparecimento completo das culturas antigas.</p>
+                    <p><strong>B)</strong> a preservação de parte importante da cultura escrita.</p>
+                    <p><strong>C)</strong> o fim da utilização do latim.</p>
+                    <p><strong>D)</strong> a extinção das escolas medievais.</p>
+                    <p><strong>E)</strong> o abandono da produção de manuscritos.</p>
+                </div>
+
+                <button class="btn-gabarito" onclick="mostrarGabarito('gabarito2')">
+                    Mostrar gabarito
+                </button>
+
+                <div class="gabarito" id="gabarito2">
+                    <strong>Resposta: B.</strong>
+                    Mosteiros foram importantes centros de produção e preservação
+                    de manuscritos, contribuindo para a continuidade da cultura escrita.
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <!-- Seção de revisão rápida. -->
+
+            <h2>REVISÃO EM 60 SEGUNDOS</h2>
+            <!-- Título. -->
+
+            <div class="card">
+                <!-- Card da revisão. -->
+
+                <p>
+                    <strong>Século I:</strong> surgimento e expansão do cristianismo.
+                </p>
+
+                <p>
+                    <strong>313:</strong> Édito de Milão e mudança na relação
+                    entre Estado romano e cristianismo.
+                </p>
+
+                <p>
+                    <strong>Séculos IV–V:</strong> institucionalização e
+                    fortalecimento do cristianismo.
+                </p>
+
+                <p>
+                    <strong>Idade Média:</strong> Igreja torna-se instituição
+                    central em diversas regiões da Europa Ocidental.
+                </p>
+
+                <p>
+                    <strong>Monasticismo:</strong> oração, disciplina, trabalho
+                    e preservação cultural.
+                </p>
+
+                <p>
+                    <strong>Papado:</strong> crescimento da autoridade do bispo
+                    de Roma no Ocidente.
+                </p>
+
+                <p>
+                    <strong>Século XI:</strong> intensificação das disputas
+                    entre Igreja e poderes políticos.
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <!-- Encerramento da aula. -->
+
+            <h2>FECHAMENTO DA AULA</h2>
+            <!-- Título. -->
+
+            <p>
+                A Igreja foi uma das instituições fundamentais para compreender
+                a sociedade medieval, mas não deve ser apresentada como uma
+                instituição isolada ou como uma força que controlava de maneira
+                absoluta todos os aspectos da vida europeia.
+            </p>
+
+            <p>
+                Seu poder foi construído historicamente por meio de organização
+                institucional, propriedades, produção cultural, relações políticas,
+                práticas religiosas e vínculos com diferentes grupos sociais.
+            </p>
+
+            <p>
+                Ao estudar a Igreja medieval, o aluno deve compreender principalmente
+                a relação entre <strong>religião, cultura, sociedade e poder</strong>.
+            </p>
+        </section>
+
+        <div class="acoes">
+            <!-- Área dos botões finais. -->
+
+            <button onclick="voltarPagina()">
+                ← Voltar
+            </button>
+            <!-- Retorna para a página anterior. -->
+
+            <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+                ↑ Voltar ao topo
+            </button>
+            <!-- Volta suavemente ao topo da página. -->
+        </div>
+    </main>
+
+    <footer>
+        <!-- Rodapé da página. -->
+
+        <p>
+            <strong>Professor Marcelo Oliveira</strong>
+        </p>
+        <!-- Nome do professor. -->
+
+        <p>
+            História Geral — Fund II • Ensino Médio • ENEM • Vestibular • Concurso
+        </p>
+        <!-- Identificação do curso. -->
+
+        <p>
+            © Curso de História Geral — Material didático
+        </p>
+        <!-- Informação final. -->
+    </footer>
+
+    <script>
+        // ==========================================================
+        // NAVEGAÇÃO ENTRE SEÇÕES
+        // ==========================================================
+
+        function irPara(id) {
+            // Cria uma função para navegar até uma seção.
+
+            const elemento = document.getElementById(id);
+            // Procura o elemento pelo ID informado.
+
+            if (elemento) {
+                // Verifica se o elemento foi encontrado.
+
+                elemento.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start"
+                });
+                // Faz a rolagem até a seção de forma suave.
+            }
+        }
+
+        // ==========================================================
+        // MOSTRAR OU ESCONDER GABARITO
+        // ==========================================================
+
+        function mostrarGabarito(id) {
+            // Cria uma função para controlar o gabarito.
+
+            const elemento = document.getElementById(id);
+            // Localiza o gabarito pelo ID.
+
+            if (elemento.style.display === "block") {
+                // Verifica se o gabarito está aberto.
+
+                elemento.style.display = "none";
+                // Esconde o gabarito.
+            } else {
+                // Executa quando o gabarito está escondido.
+
+                elemento.style.display = "block";
+                // Mostra o gabarito.
+            }
+        }
+
+        // ==========================================================
+        // VOLTAR PARA A PÁGINA ANTERIOR
+        // ==========================================================
+
+        function voltarPagina() {
+            // Cria a função responsável pelo botão voltar.
+
+            window.history.back();
+            // Retorna para a página anterior do navegador.
+        }
+    </script>
+    <script>
+  const paginaAnterior = "10 - feudalismo.html";
+  const paginaProxima = "12 - Questao-das-Investiduras.html";
+</script>
+<script src="navegacao.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<!-- Define a codificação para aceitar corretamente acentos e caracteres do português. -->
+<meta charset="UTF-8">
+<!-- Faz a página se adaptar a celulares, tablets e computadores. -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Define o título que aparecerá na aba do navegador. -->
+<title>1.22 — Revoluções Inglesas do Século XVII | Curso de História Geral</title>
+<!-- Inicia o bloco de estilos desta página. -->
+<style>
+/* Define variáveis de cores para facilitar futuras alterações no visual. */
+:root{--navy:#101a2b;--blue:#1d4e89;--gold:#d6a84f;--cream:#f7f3e8;--paper:#fffdf8;--ink:#202733;--muted:#667085;--red:#9b3d3d;--green:#28665a;--shadow:0 12px 35px rgba(16,26,43,.12);--radius:18px;}
+/* Remove margens padrão e melhora o cálculo de tamanhos dos elementos. */
+*{box-sizing:border-box;margin:0;padding:0;}
+/* Define o comportamento de rolagem suave ao clicar nos links internos. */
+html{scroll-behavior:smooth;}
+/* Define fonte, cor de texto, fundo e espaçamento geral do documento. */
+body{font-family:Arial,Helvetica,sans-serif;background:linear-gradient(180deg,#eef2f7 0%,var(--cream) 48%,#eef2f7 100%);color:var(--ink);line-height:1.7;}
+/* Cria o cabeçalho principal com aparência institucional. */
+header{background:linear-gradient(135deg,var(--navy),#1c3558 70%,var(--blue));color:white;padding:70px 20px 55px;border-bottom:5px solid var(--gold);}
+/* Limita a largura do conteúdo e centraliza o cabeçalho. */
+.hero{max-width:1180px;margin:auto;}
+/* Estiliza a pequena identificação do curso. */
+.eyebrow{display:inline-block;border:1px solid rgba(255,255,255,.35);padding:7px 13px;border-radius:999px;letter-spacing:1px;font-size:.82rem;text-transform:uppercase;margin-bottom:18px;}
+/* Estiliza o título principal. */
+h1{font-size:clamp(2rem,5vw,4rem);line-height:1.08;margin-bottom:18px;}
+/* Estiliza o subtítulo introdutório. */
+.hero p{max-width:850px;color:#e9eef7;font-size:1.08rem;}
+/* Organiza os cartões de navegação do capítulo. */
+.navgrid{max-width:1180px;margin:-28px auto 35px;padding:0 20px;display:grid;grid-template-columns:repeat(4,1fr);gap:14px;position:relative;}
+/* Define a aparência dos links rápidos. */
+.navcard{background:var(--paper);padding:18px;border-radius:16px;box-shadow:var(--shadow);text-decoration:none;color:var(--navy);font-weight:bold;border-top:4px solid var(--gold);transition:.2s;}
+/* Cria pequeno efeito visual ao passar o mouse. */
+.navcard:hover{transform:translateY(-3px);}
+/* Limita a largura da área principal. */
+main{max-width:1180px;margin:auto;padding:0 20px 70px;}
+/* Define o visual padrão das seções. */
+section{background:rgba(255,253,248,.94);border-radius:var(--radius);box-shadow:var(--shadow);padding:32px;margin-bottom:28px;}
+/* Estiliza títulos de segundo nível. */
+h2{font-size:clamp(1.5rem,3vw,2.3rem);color:var(--navy);margin-bottom:16px;border-left:6px solid var(--gold);padding-left:14px;}
+/* Estiliza títulos menores. */
+h3{color:var(--blue);margin:20px 0 9px;}
+/* Cria destaque para conceitos importantes. */
+.lead{font-size:1.1rem;color:#3b4657;}
+/* Cria uma caixa de atenção histórica. */
+.note{background:#eef4fb;border-left:5px solid var(--blue);padding:18px;border-radius:12px;margin:20px 0;}
+/* Cria uma caixa para alertas contra simplificações. */
+.alert{background:#fff4df;border-left:5px solid var(--gold);padding:18px;border-radius:12px;margin:20px 0;}
+/* Organiza cartões em colunas responsivas. */
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:20px;}
+/* Estiliza cada cartão de conteúdo. */
+.card{background:white;border:1px solid #e4e8ee;border-radius:16px;padding:22px;box-shadow:0 5px 16px rgba(16,26,43,.06);}
+/* Destaca a etiqueta de cada cartão. */
+.tag{display:inline-block;background:var(--navy);color:white;border-radius:999px;padding:4px 10px;font-size:.75rem;margin-bottom:10px;}
+/* Organiza a linha do tempo. */
+.timeline{border-left:4px solid var(--gold);padding-left:25px;margin:24px 0;}
+/* Cria cada acontecimento da linha do tempo. */
+.event{position:relative;margin-bottom:24px;background:white;border-radius:14px;padding:18px;border:1px solid #e6e8ed;}
+/* Cria o marcador circular da linha do tempo. */
+.event::before{content:"";position:absolute;left:-36px;top:21px;width:16px;height:16px;background:var(--blue);border:4px solid var(--cream);border-radius:50%;}
+/* Destaca as datas. */
+.year{font-weight:bold;color:var(--red);font-size:1.05rem;}
+/* Estiliza listas para melhorar a leitura. */
+ul,ol{padding-left:24px;margin:12px 0;}
+/* Cria um quadro especial para a lousa. */
+.board{background:#17212f;color:white;border-radius:16px;padding:26px;margin-top:18px;font-family:Georgia,serif;}
+/* Estiliza a fórmula histórica dentro do quadro. */
+.formula{font-size:1.25rem;text-align:center;color:#f5d37b;font-weight:bold;margin:16px 0;}
+/* Estiliza a tabela comparativa. */
+table{width:100%;border-collapse:collapse;margin-top:18px;background:white;}
+/* Estiliza células da tabela. */
+th,td{padding:13px;border:1px solid #dfe4ea;text-align:left;vertical-align:top;}
+/* Estiliza o cabeçalho da tabela. */
+th{background:var(--navy);color:white;}
+/* Cria área para questões. */
+.question{background:#f8fafc;border:1px solid #dfe5ed;padding:22px;border-radius:15px;margin:18px 0;}
+/* Estiliza os botões. */
+button,.btn{border:0;background:var(--blue);color:white;padding:12px 17px;border-radius:10px;font-weight:bold;cursor:pointer;text-decoration:none;display:inline-block;margin-top:10px;}
+/* Define o efeito dos botões. */
+button:hover,.btn:hover{filter:brightness(1.1);}
+/* Esconde o gabarito até o aluno clicar. */
+.answer{display:none;background:#eaf5ef;border-left:5px solid var(--green);padding:15px;margin-top:12px;border-radius:10px;}
+/* Organiza os botões finais. */
+.footer-nav{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-top:30px;}
+/* Cria o botão flutuante para retornar ao topo. */
+.top{position:fixed;right:20px;bottom:20px;background:var(--navy);color:white;width:46px;height:46px;border-radius:50%;display:flex;align-items:center;justify-content:center;text-decoration:none;box-shadow:var(--shadow);}
+/* Ajusta o layout para telas médias. */
+@media(max-width:850px){.navgrid{grid-template-columns:repeat(2,1fr);}.cards{grid-template-columns:1fr 1fr;}}
+/* Ajusta o layout para celulares. */
+@media(max-width:600px){header{padding:48px 18px 42px;}section{padding:22px 18px;}.navgrid{grid-template-columns:1fr;padding:0 14px;}.cards{grid-template-columns:1fr;}table{font-size:.88rem;display:block;overflow-x:auto;white-space:normal;}h1{font-size:2.15rem;}}
+</style>
+</head>
+<body id="topo">
+<!-- Inicia o cabeçalho do capítulo. -->
+<header>
+<!-- Agrupa o conteúdo do cabeçalho em uma largura confortável. -->
+<div class="hero">
+<!-- Identifica o projeto educacional. -->
+<span class="eyebrow">Curso de História Geral • Fund II • Ensino Médio • ENEM • Vestibular • Concurso</span>
+<!-- Apresenta o título do capítulo. -->
+<h1>1.22 — Revoluções Inglesas do Século XVII</h1>
+<!-- Apresenta a pergunta central do capítulo. -->
+<p>Como as disputas entre monarquia, Parlamento, grupos religiosos e interesses econômicos transformaram o poder político inglês e contribuíram para a formação do constitucionalismo moderno?</p>
+</div>
+</header>
+<!-- Cria os atalhos para as principais partes do capítulo. -->
+<nav class="navgrid">
+<a class="navcard" href="#comeco">I — O Começo</a>
+<a class="navcard" href="#desenvolvimento">II — Desenvolvimento</a>
+<a class="navcard" href="#guerras">Guerras e conflitos</a>
+<a class="navcard" href="#legado">III — Legado</a>
+</nav>
+<!-- Inicia o conteúdo principal. -->
+<main>
+<!-- Apresenta a ideia central do tema. -->
+<section>
+<h2>🎯 Ideia central</h2>
+<p class="lead">As chamadas Revoluções Inglesas do século XVII não correspondem a um único acontecimento. Elas formam um processo de conflitos políticos, religiosos e sociais que envolveu a monarquia dos Stuart, o Parlamento, diferentes grupos protestantes, setores proprietários e outros participantes da sociedade inglesa.</p>
+<div class="alert"><strong>⚠️ Cuidado com a simplificação:</strong> não devemos explicar o processo apenas como “o povo contra o rei”. Havia interesses diferentes entre grupos sociais, disputas religiosas e mudanças na relação entre representação política, propriedade, tributação e autoridade monárquica.</div>
+</section>
+<!-- Inicia a primeira parte da periodização. -->
+<section id="comeco">
+<h2>I — O COMEÇO: uma monarquia em transformação</h2>
+<p>A Inglaterra do século XVII possuía uma tradição parlamentar que coexistia com uma monarquia forte. A dinastia Stuart enfrentou dificuldades para financiar o Estado e administrar conflitos religiosos e políticos.</p>
+<div class="cards">
+<div class="card"><span class="tag">MONARQUIA</span><h3>Os Stuart</h3><p>Jaime I e Carlos I defenderam concepções de autoridade monárquica que entraram em choque com setores do Parlamento e com grupos religiosos.</p></div>
+<div class="card"><span class="tag">PARLAMENTO</span><h3>Tributação e representação</h3><p>Conflitos sobre impostos, prerrogativas e limites da autoridade do rei contribuíram para o agravamento das tensões.</p></div>
+<div class="card"><span class="tag">RELIGIÃO</span><h3>Puritanos e anglicanos</h3><p>As diferenças religiosas estavam ligadas a disputas políticas e sociais mais amplas, especialmente sobre a organização da Igreja e do poder.</p></div>
+</div>
+<h3>O contexto econômico e social</h3>
+<p>O crescimento comercial, a expansão de atividades manufatureiras, a importância da propriedade rural e o fortalecimento de grupos proprietários alteravam a sociedade inglesa. Essas transformações não produziram automaticamente a revolução, mas ajudam a compreender o ambiente no qual os conflitos políticos ocorreram.</p>
+</section>
+<!-- Apresenta a segunda parte da periodização. -->
+<section id="desenvolvimento">
+<h2>II — O DESENVOLVIMENTO: de Carlos I à Revolução Gloriosa</h2>
+<p>O processo revolucionário passou por diferentes fases. A Guerra Civil, a execução de Carlos I, a República sob Oliver Cromwell, a Restauração da monarquia e a Revolução Gloriosa fazem parte de uma sequência de rupturas e reorganizações do poder.</p>
+<div class="timeline">
+<div class="event"><div class="year">1603</div><p><strong>Início da dinastia Stuart na Inglaterra.</strong> Jaime VI da Escócia torna-se Jaime I da Inglaterra após a morte de Elizabeth I.</p></div>
+<div class="event"><div class="year">1625</div><p><strong>Carlos I assume o trono.</strong> As tensões com o Parlamento aumentam, especialmente em torno de impostos, religião e prerrogativas reais.</p></div>
+<div class="event"><div class="year">1628</div><p><strong>Petition of Right.</strong> O Parlamento apresenta limites à tributação e a determinadas práticas de autoridade real.</p></div>
+<div class="event"><div class="year">1629–1640</div><p><strong>Período do Governo Pessoal.</strong> Carlos I governa sem convocar o Parlamento por longo período, aumentando as tensões políticas.</p></div>
+<div class="event"><div class="year">1642–1649</div><p><strong>Guerra Civil Inglesa.</strong> Forças ligadas ao rei e forças parlamentares entram em conflito. O Parlamento vence.</p></div>
+<div class="event"><div class="year">1649</div><p><strong>Execução de Carlos I.</strong> A monarquia é abolida e a Inglaterra passa a ser uma república, conhecida como Commonwealth.</p></div>
+<div class="event"><div class="year">1653–1658</div><p><strong>Protetorado de Oliver Cromwell.</strong> Cromwell exerce forte autoridade política como Lord Protector.</p></div>
+<div class="event"><div class="year">1660</div><p><strong>Restauração.</strong> Carlos II retorna ao trono e a monarquia é restaurada.</p></div>
+<div class="event"><div class="year">1688–1689</div><p><strong>Revolução Gloriosa.</strong> Jaime II é afastado e Guilherme III e Maria II assumem, em um processo associado ao fortalecimento das limitações constitucionais da monarquia.</p></div>
+<div class="event"><div class="year">1689</div><p><strong>Bill of Rights.</strong> O documento estabelece importantes limites ao poder real e reforça prerrogativas parlamentares.</p></div>
+</div>
+</section>
+<!-- Apresenta os principais conflitos armados. -->
+<section id="guerras">
+<h2>⚔️ As guerras e os conflitos pelo poder</h2>
+<p>As guerras inglesas do século XVII mostram que a disputa política não ocorreu apenas em discursos parlamentares. Em determinados momentos, ela se transformou em conflito armado.</p>
+<div class="cards">
+<div class="card"><span class="tag">1642–1649</span><h3>Guerra Civil Inglesa</h3><p>Confrontou forças realistas, ligadas a Carlos I, e forças parlamentares. O conflito terminou com a derrota do rei e sua execução.</p></div>
+<div class="card"><span class="tag">1650–1652</span><h3>Conquista da Escócia e Irlanda</h3><p>O regime de Cromwell enfrentou resistências e consolidou militarmente o poder da Commonwealth em territórios britânicos.</p></div>
+<div class="card"><span class="tag">1652–1654</span><h3>Primeira Guerra Anglo-Holandesa</h3><p>Foi uma guerra principalmente marítima e comercial entre Inglaterra e República Holandesa. Ela ajuda a conectar política, comércio, navegação e poder naval.</p></div>
+<div class="card"><span class="tag">1688</span><h3>Revolução Gloriosa</h3><p>O afastamento de Jaime II ocorreu em contexto de disputas políticas e religiosas. A mudança de monarca foi acompanhada de acordos e mudanças constitucionais.</p></div>
+</div>
+<div class="note"><strong>🔎 Para o aluno:</strong> as Revoluções Inglesas não foram apenas uma luta religiosa. Também envolveram tributação, representação, autoridade política, propriedade, comércio, religião e limites do poder monárquico.</div>
+</section>
+<!-- Explica a relação entre política e economia. -->
+<section>
+<h2>💰 Comércio, navegação e poder do Estado</h2>
+<p>A Inglaterra do século XVII também participava de uma intensa disputa comercial e marítima. O fortalecimento naval e a expansão comercial estavam relacionados à capacidade do Estado de arrecadar recursos e competir com outras potências.</p>
+<div class="board">
+<p><strong>Esquema para a lousa:</strong></p>
+<p class="formula">Comércio → receitas → Estado → marinha → competição internacional</p>
+<p>Ao mesmo tempo, as disputas políticas internas questionavam quem deveria controlar impostos, leis e decisões fundamentais do Estado.</p>
+</div>
+</section>
+<!-- Compara as principais instituições e ideias. -->
+<section>
+<h2>🏛️ Rei, Parlamento e limites do poder</h2>
+<table>
+<tr><th>Elemento</th><th>Função no processo</th><th>Questão histórica</th></tr>
+<tr><td>Monarquia</td><td>Exercia o poder executivo e possuía importantes prerrogativas.</td><td>Até onde poderia ir a autoridade do rei?</td></tr>
+<tr><td>Parlamento</td><td>Representava interesses de grupos políticos e possuía papel importante na aprovação de impostos e leis.</td><td>Quais limites deveriam existir para o poder real?</td></tr>
+<tr><td>Religião</td><td>Anglicanismo, puritanismo e catolicismo participaram das disputas do período.</td><td>Qual deveria ser a relação entre religião e Estado?</td></tr>
+<tr><td>Propriedade</td><td>Grupos proprietários ganharam importância política e econômica.</td><td>Como propriedade e representação política se relacionavam?</td></tr>
+</table>
+</section>
+<!-- Apresenta a terceira parte da periodização. -->
+<section id="legado">
+<h2>III — O LEGADO E O MUNDO ATUAL</h2>
+<p>Depois de décadas de conflitos, a monarquia inglesa não desapareceu definitivamente. O resultado foi uma reorganização das relações entre Coroa e Parlamento. A Revolução Gloriosa e o Bill of Rights de 1689 são frequentemente associados ao fortalecimento de princípios constitucionais e parlamentares.</p>
+<div class="cards">
+<div class="card"><span class="tag">POLÍTICA</span><h3>Limitação do poder</h3><p>A autoridade do monarca passou a estar mais claramente condicionada por leis e instituições políticas.</p></div>
+<div class="card"><span class="tag">CONSTITUCIONALISMO</span><h3>Parlamento</h3><p>O Parlamento ganhou importância na estrutura do governo inglês, embora a participação política ainda fosse limitada e desigual.</p></div>
+<div class="card"><span class="tag">LONGA DURAÇÃO</span><h3>Influências posteriores</h3><p>O processo inglês tornou-se uma referência histórica para debates posteriores sobre governo, direitos e limites institucionais.</p></div>
+</div>
+<div class="alert"><strong>Importante:</strong> não devemos transformar 1689 em uma “criação instantânea da democracia moderna”. A participação política continuava restrita e desigual. O processo constitucional inglês se desenvolveu ao longo de um período muito maior.</div>
+</section>
+<!-- Apresenta os conceitos fundamentais. -->
+<section>
+<h2>🧠 Conceitos que o aluno precisa dominar</h2>
+<div class="cards">
+<div class="card"><h3>Absolutismo</h3><p>Modelo de organização política associado à concentração de importantes prerrogativas na monarquia.</p></div>
+<div class="card"><h3>Parlamento</h3><p>Instituição política inglesa que ganhou papel decisivo nas disputas sobre tributação, leis e governo.</p></div>
+<div class="card"><h3>Constitucionalismo</h3><p>Ideia de que o exercício do poder político deve estar submetido a normas e instituições.</p></div>
+<div class="card"><h3>Puritanismo</h3><p>Corrente protestante inglesa ligada à tradição calvinista e a críticas à organização da Igreja Anglicana.</p></div>
+<div class="card"><h3>Restauração</h3><p>Retorno da monarquia inglesa em 1660, com Carlos II.</p></div>
+<div class="card"><h3>Bill of Rights</h3><p>Documento de 1689 que estabeleceu importantes limites ao poder real e reforçou prerrogativas parlamentares.</p></div>
+</div>
+</section>
+<!-- Mostra o que o professor precisa dominar. -->
+<section>
+<h2>👨‍🏫 O que o professor precisa dominar</h2>
+<ol>
+<li>Diferenciar as várias etapas do processo em vez de tratá-las como uma única revolução.</li>
+<li>Relacionar conflitos políticos e religiosos sem reduzir um ao outro.</li>
+<li>Explicar por que tributação e controle do orçamento eram questões de poder.</li>
+<li>Compreender a Guerra Civil e o papel de Oliver Cromwell.</li>
+<li>Explicar a Restauração de 1660.</li>
+<li>Compreender o contexto da Revolução Gloriosa de 1688–1689.</li>
+<li>Explicar o significado histórico do Bill of Rights sem projetar sobre 1689 a democracia contemporânea.</li>
+<li>Relacionar a história inglesa ao desenvolvimento posterior do constitucionalismo, do liberalismo político e do mundo atlântico.</li>
+</ol>
+</section>
+<!-- Mostra um modelo de lousa. -->
+<section>
+<h2>🧑‍🏫 O que colocar na lousa</h2>
+<div class="board">
+<p><strong>REVOLUÇÕES INGLESAS — SÉCULO XVII</strong></p>
+<p class="formula">Rei × Parlamento</p>
+<p>Religião + impostos + representação + propriedade + comércio</p>
+<p class="formula">Guerra Civil → República → Restauração → Revolução Gloriosa</p>
+<p class="formula">1689 → Bill of Rights → limites ao poder real</p>
+</div>
+</section>
+<!-- Relaciona o conteúdo com a história do Brasil e do mundo atlântico. -->
+<section>
+<h2>🇧🇷 Conexões com o Brasil</h2>
+<p>As transformações inglesas ocorreram dentro do mesmo mundo atlântico que envolvia comércio, colonização, navegação e circulação de ideias. A expansão inglesa na América do Norte e a participação inglesa no comércio atlântico fazem parte desse contexto.</p>
+<p>Para o estudo do Brasil, a conexão é especialmente útil quando analisamos o sistema colonial, as relações comerciais com Portugal e, mais tarde, a circulação de ideias políticas que influenciaram o mundo atlântico.</p>
+</section>
+<!-- Apresenta a conexão com ENEM e vestibulares. -->
+<section>
+<h2>🎯 ENEM, vestibular e concurso</h2>
+<p>Em questões de prova, procure relações entre:</p>
+<ul>
+<li>limitação do poder monárquico;</li>
+<li>Parlamento e tributação;</li>
+<li>conflitos religiosos;</li>
+<li>Guerra Civil Inglesa;</li>
+<li>Oliver Cromwell;</li>
+<li>Revolução Gloriosa;</li>
+<li>Bill of Rights;</li>
+<li>constitucionalismo;</li>
+<li>comércio, navegação e expansão inglesa.</li>
+</ul>
+</section>
+<!-- Cria as questões autorais do capítulo. -->
+<section>
+<h2>📝 Questões autorais</h2>
+<div class="question">
+<h3>Questão 1</h3>
+<p>Durante o século XVII, conflitos envolvendo a monarquia inglesa e o Parlamento ultrapassaram debates institucionais e chegaram ao campo militar. Considerando esse processo, assinale a alternativa correta.</p>
+<ol type="A"><li>A Guerra Civil Inglesa terminou com a restauração imediata de Carlos I.</li><li>A Guerra Civil resultou na derrota do rei Carlos I e, posteriormente, na experiência republicana da Commonwealth.</li><li>O Parlamento foi abolido definitivamente após a vitória parlamentar.</li><li>A Revolução Gloriosa restaurou o absolutismo de Jaime II.</li><li>O Bill of Rights concedeu poderes ilimitados ao monarca.</li></ol>
+<button onclick="mostrar('r1')">Mostrar gabarito</button>
+<div class="answer" id="r1"><strong>Gabarito: B.</strong> A vitória das forças parlamentares levou à derrota de Carlos I, à sua execução em 1649 e à experiência republicana que se seguiu.</div>
+</div>
+<div class="question">
+<h3>Questão 2</h3>
+<p>A Revolução Gloriosa de 1688–1689 é frequentemente relacionada ao desenvolvimento do constitucionalismo inglês. Essa interpretação está associada principalmente:</p>
+<ol type="A"><li>à eliminação imediata de toda forma de monarquia.</li><li>à criação do sufrágio universal masculino e feminino.</li><li>ao fortalecimento de limites institucionais ao poder real e das prerrogativas do Parlamento.</li><li>à implantação de uma república sob Oliver Cromwell.</li><li>ao fim da participação inglesa no comércio atlântico.</li></ol>
+<button onclick="mostrar('r2')">Mostrar gabarito</button>
+<div class="answer" id="r2"><strong>Gabarito: C.</strong> A mudança política de 1688–1689 e o Bill of Rights reforçaram limites ao poder real e o papel do Parlamento, sem criar imediatamente a democracia contemporânea.</div>
+</div>
+</section>
+<!-- Fecha o capítulo com navegação para as páginas vizinhas. -->
+<section>
+<h2>🔗 Conexão com o curso</h2>
+<p><strong>1.20 Absolutismo</strong> → fortalecimento das monarquias</p>
+<p>↓</p>
+<p><strong>1.21 Reformas</strong> → conflitos religiosos e transformações políticas</p>
+<p>↓</p>
+<p><strong>1.22 Mercantilismo</strong> → Estado, comércio e expansão</p>
+<p>↓</p>
+<p><strong>1.23 Sistema Colonial</strong> → exploração e organização dos espaços coloniais</p>
+<p>↓</p>
+<p><strong>1.24 Revoluções Inglesas</strong> → disputa sobre os limites do poder monárquico</p>
+</section>
+<!-- Cria os botões de navegação final. -->
+<div class="footer-nav">
+<a class="btn" href="../23-Sistema-Colonial/index.html">← Voltar: Sistema Colonial</a>
+<a class="btn" href="../25-Primeira-Revolucao-Industrial/index.html">Próximo: 23 — Iluminismo e Despotismo Esclarecido →</a>
+</div>
+</main>
+<!-- Cria o botão fixo de retorno ao topo. -->
+<a class="top" href="#topo" aria-label="Voltar ao topo">↑</a>
+<!-- Inicia o JavaScript do capítulo. -->
+<script>
+// Cria uma função para mostrar ou esconder cada gabarito quando o aluno clicar.
+function mostrar(id){
+// Localiza o elemento de resposta pelo seu identificador.
+const resposta=document.getElementById(id);
+// Verifica se a resposta está escondida.
+if(resposta.style.display==='block'){
+// Esconde a resposta quando o botão é clicado novamente.
+resposta.style.display='none';
+}else{
+// Mostra a resposta quando o aluno solicita o gabarito.
+resposta.style.display='block';
+}
+}
+</script>
+
+<script>
+  const paginaAnterior = "21B - Os Teóricos do Absolutismo.html";
+  const paginaProxima = "23 - ILUMINISMO E DESPOTISMO ESCLARECIDO.html";
+</script>
+<script src="navegacao.js"></script>
+</body>
+</html>

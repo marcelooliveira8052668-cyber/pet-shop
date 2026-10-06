@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1.42 — Era Vargas | Professor Marcelo Oliveira</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { font-family: Arial, Helvetica, sans-serif; background: #f4f7fb; color: #263238; line-height: 1.7; }
+        .container { width: 92%; max-width: 1200px; margin: auto; }
+        header { background: linear-gradient(135deg, #172554, #2563eb); color: white; padding: 50px 20px; text-align: center; box-shadow: 0 5px 20px rgba(0, 0, 0, 0.18); }
+        .eyebrow { font-size: 0.95rem; letter-spacing: 2px; text-transform: uppercase; opacity: 0.9; margin-bottom: 12px; }
+        header h1 { font-size: clamp(2rem, 5vw, 3.5rem); margin-bottom: 15px; }
+        header p { max-width: 850px; margin: auto; font-size: 1.1rem; }
+        .navegacao { display: flex; justify-content: space-between; gap: 15px; margin: 25px auto; flex-wrap: wrap; }
+        .btn { display: inline-block; padding: 13px 20px; border-radius: 10px; text-decoration: none; font-weight: bold; transition: 0.3s; }
+        .btn-voltar { background: #475569; color: white; }
+        .btn-proximo { background: #2563eb; color: white; }
+        .btn:hover { transform: translateY(-2px); opacity: 0.9; }
+        .apresentacao { background: white; margin: 30px auto; padding: 30px; border-radius: 18px; border-left: 7px solid #2563eb; box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08); }
+        .secao { margin: 35px auto; padding: 30px; border-radius: 18px; background: white; box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07); }
+        .comeco { border-top: 8px solid #2563eb; }
+        .desenvolvimento { border-top: 8px solid #16a34a; }
+        .legado { border-top: 8px solid #7c3aed; }
+        .consequencias { border-top: 8px solid #eab308; }
+        .enem { border-top: 8px solid #0891b2; }
+        .lousa { border-top: 8px solid #111827; }
+        .secao h2 { margin-bottom: 20px; color: #172554; font-size: 1.8rem; }
+        .secao h3 { margin-top: 25px; margin-bottom: 10px; color: #334155; }
+        strong { color: #172554; }
+        ul, ol { margin: 15px 0 15px 25px; }
+        li { margin-bottom: 8px; }
+        .timeline { border-left: 4px solid #2563eb; padding-left: 25px; margin-top: 25px; }
+        .evento { margin-bottom: 25px; position: relative; }
+        .evento::before { content: ""; position: absolute; left: -36px; top: 7px; width: 14px; height: 14px; background: #2563eb; border-radius: 50%; }
+        .ano { font-weight: bold; color: #2563eb; }
+        .tabela-container { overflow-x: auto; margin-top: 20px; }
+        table { width: 100%; border-collapse: collapse; min-width: 650px; }
+        th, td { padding: 14px; border: 1px solid #cbd5e1; text-align: left; }
+        th { background: #172554; color: white; }
+        tr:nth-child(even) { background: #f8fafc; }
+        .conceitos { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 15px; margin-top: 20px; }
+        .conceito { background: #eff6ff; border: 1px solid #bfdbfe; padding: 18px; border-radius: 12px; }
+        .questao { background: #f8fafc; padding: 25px; border-radius: 14px; margin-top: 20px; border-left: 5px solid #0891b2; }
+        .btn-gabarito { margin-top: 15px; background: #0891b2; color: white; border: none; padding: 12px 18px; border-radius: 8px; cursor: pointer; font-weight: bold; }
+        .gabarito { display: none; margin-top: 15px; padding: 15px; background: #ecfeff; border-radius: 10px; border: 1px solid #67e8f9; }
+        .resumo { background: #172554; color: white; padding: 30px; border-radius: 18px; margin: 35px auto; }
+        .resumo strong { color: white; }
+        footer { background: #0f172a; color: white; text-align: center; padding: 35px 20px; margin-top: 50px; }
+        .assinatura { font-size: 1.2rem; font-weight: bold; margin-top: 10px; }
+        #topo { position: fixed; bottom: 20px; right: 20px; width: 48px; height: 48px; border: none; border-radius: 50%; background: #2563eb; color: white; cursor: pointer; font-size: 20px; display: none; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25); }
+        @media (max-width: 700px) { .secao, .apresentacao { padding: 20px; } .navegacao { flex-direction: column; } .btn { text-align: center; } }
+    </style>
+</head>
+
+<body id="inicio">
+
+    <header>
+        <div class="eyebrow">Curso de História Geral</div>
+        <h1>1.42 — Era Vargas</h1>
+        <p>O período de Getúlio Vargas no poder (1930–1945): revolução, governos provisório e constitucional, Estado Novo, trabalhismo e Segunda Guerra.</p>
+    </header>
+
+    <main class="container">
+
+        <nav class="navegacao">
+            <a class="btn btn-voltar" href="41 - República Velha - Parte 2.html">← República Velha — Parte 2</a>
+            <a class="btn btn-proximo" href="43 - República Liberal Populista.html">República Liberal Populista →</a>
+        </nav>
+
+        <section class="apresentacao">
+            <p>Por que estudar a Era Vargas? Porque foi um dos períodos mais importantes e debatidos da história brasileira, marcada pela centralização política, pela promulgação da CLT, pela modernização econômica e pelo autoritarismo do Estado Novo.</p>
+        </section>
+
+        <section class="secao comeco">
+            <h2>🔵 I — O COMEÇO: A REVOLUÇÃO DE 1930</h2>
+
+            <h3>1. A crise da República Velha</h3>
+            <p>A República Velha caiu em crise com a quebra da Bolsa de Nova York em 1929, que desvalorizou o café. O governo de Washington Luís e o domínio das oligarquias foram questionados pelo movimento tenentista e pela Aliança Liberal.</p>
+
+            <h3>2. A Revolução de 1930</h3>
+            <p>Em 1930, Getúlio Vargas, em aliança com setores militares e políticos mineiros e gaúchos, chefiou a Revolução de 1930, que derrubou o presidente eleito Júlio Prestes e impediu sua posse. Vargas assumiu o governo provisório, encerrando a República Velha.</p>
+
+            <h3>3. O Governo Provisório (1930–1934)</h3>
+            <p>Vargas dissolveu o Congresso, suspendeu a Constituição de 1891 e nomeou interventores nos estados, centralizando o poder. Em 1932, São Paulo reagiu com a Revolução Constitucionalista, exigindo uma nova Constituição.</p>
+
+            <h3>4. A Revolução Constitucionalista de 1932</h3>
+            <p>Em julho de 1932, o estado de <strong>São Paulo</strong>, liderado por políticos e militares paulistas, rebelou-se contra o governo de Getúlio Vargas. O movimento, conhecido como <strong>Revolução Constitucionalista</strong>, exigia a convocação de uma Assembleia Constituinte e o retorno da democracia.</p>
+            <p>Os revolucionários esperavam contar com o apoio de outros estados, mas não receberam ajuda substancial. São Paulo foi isolado militarmente e derrotado após cerca de três meses de conflitos. Apesar da derrota, a pressão paulista acelerou a convocação da Assembleia Constituinte, que acabou promulgando a <strong>Constituição de 1934</strong>.</p>
+            <p>A Revolução de 1932 é lembrada como um dos maiores conflitos armados da história republicana brasileira até então, mobilizando milhares de voluntários, incluindo mulheres (na chamada "República Velha, mataremos pela Pátria"), e deixando milhares de mortos.</p>
+
+            <h3>4.1 O MMDC</h3>
+            <p>Antes de o movimento eclodir como levante armado, quatro jovens paulistas foram mortos em conflito com forças militares em São Paulo. Em homenagem aos seus nomes — <strong>Mário Martins de Almeida, Euclides Miragaia, Dráusio Marcondes de Sousa e Antônio Américo de Camargo de Andrade</strong> — criou-se a sigla <strong>MMDC</strong>, símbolo da luta constitucionalista.</p>
+            <p>O MMDC passou a ser um marco simbólico e histórico do movimento de 1932, e a sigla ainda dá nome a um famoso centro cultural e museu na capital paulista.</p>
+        </section>
+
+        <section class="secao desenvolvimento">
+            <h2>🟢 II — O DESENVOLVIMENTO: CONSTITUCIONALISMO E ESTADO NOVO</h2>
+
+            <h3>5. A Constituição de 1934</h3>
+            <p>Após pressão dos constitucionalistas, Vargas convocou uma Assembleia Constituinte que promulgou a Constituição de 1934. Ela estabeleceu o voto secreto, o voto feminino, direitos trabalhistas e a justiça eleitoral.</p>
+
+            <h3>6. A Intentona Comunista (1935)</h3>
+            <p>Em 1935, militantes do Partido Comunista Brasileiro e setores militares rebeldes tentaram um levante — a Intentona Comunista. O movimento foi duramente reprimido, e Vargas usou a suposta ameaça comunista para fortalecer seu poder.</p>
+
+            <h3>7. O Plano Cohen e o Estado Novo (1937–1945)</h3>
+            <p>Em 1937, com a justificativa fake do "Plano Cohen" (um suposto plano comunista), Vargas fechou o Congresso, cancelou as eleições e implantou a ditadura do Estado Novo. A Constituição outorgada de 1937 centralizou ainda mais o poder.</p>
+
+            <h3>8. O trabalhismo e a CLT</h3>
+            <p>O Estado Novo criou a <strong>CLT (Consolidação das Leis do Trabalho)</strong>, regulamentando direitos como a jornada de 8 horas, férias, salário mínimo e a CLT. O trabalhismo buscava controlar sindicatos e consolidar a imagem de Vargas como "pai dos pobres".</p>
+
+            <h3>9. O Brasil e a Segunda Guerra</h3>
+            <p>Durante a Segunda Guerra Mundial, o Brasil integrou os Aliados e enviou a Força Expedicionária Brasileira (FEB) para a Itália. A participação na guerra gerou contradições com a ditadura do Estado Novo e pressionou pela redemocratização.</p>
+        </section>
+
+        <section class="secao comeco">
+            <h2>📅 LINHA DO TEMPO</h2>
+            <div class="timeline">
+                <div class="evento"><span class="ano">1930</span> — Revolução de 1930 leva Getúlio Vargas ao poder.</div>
+                <div class="evento"><span class="ano">1932</span> — Revolução Constitucionalista: São Paulo se revolta e é derrotado em três meses.</div>
+                <div class="evento"><span class="ano">1934</span> — Nova Constituição é promulgada.</div>
+                <div class="evento"><span class="ano">1935</span> — Intentona Comunista reprimida.</div>
+                <div class="evento"><span class="ano">1937</span> — Plano Cohen e início do Estado Novo.</div>
+                <div class="evento"><span class="ano">1943</span> — Getúlio Vargas faz o "trabalhismo" se consolidar com a CLT.</div>
+                <div class="evento"><span class="ano">1944–1945</span> — FEB participa da Segunda Guerra na Itália.</div>
+                <div class="evento"><span class="ano">1945</span> — Fim do Estado Novo e deposição de Vargas pelos militares.</div>
+            </div>
+        </section>
+
+        <section class="secao consequencias">
+            <h2>🟡 Consequências</h2>
+            <ul>
+                <li>Fim da República Velha e início da Era Vargas.</li>
+                <li>Centralização do poder na figura de Getúlio Vargas.</li>
+                <li>Promulgação da CLT e expansão de direitos trabalhistas.</li>
+                <li>Autoritarismo do Estado Novo e supressão das liberdades democráticas.</li>
+                <li>Revolução Constitucionalista de 1932 e pressão por uma nova Constituição.</li>
+                <li>Modernização econômica com investimento na indústria (Companhia Siderúrgica Nacional, CSN).</li>
+                <li>Participação brasileira na Segunda Guerra e início do processo de redemocratização.</li>
+            </ul>
+        </section>
+
+        <section class="secao legado">
+            <h2>🟣 III — O LEGADO E O MUNDO ATUAL</h2>
+            <p>A Era Vargas transformou profundamente o Brasil: industrializou o país, ampliou os direitos trabalhistas e criou um forte papel do Estado na economia. Porém, também deixou marcas de autoritarismo e censura. O trabalhismo varguista ainda influencia a política brasileira, e Vargas segue como uma das figuras mais emblemáticas da nossa história.</p>
+        </section>
+
+        <section class="secao">
+            <h2>📊 RESUMO: ERA VARGAS</h2>
+            <div class="tabela-container">
+                <table>
+                    <thead>
+                        <tr><th>Período</th><th>Evento</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1930–1934</td><td>Governo provisório e Revolução Constitucionalista</td></tr>
+                        <tr><td>1934–1937</td><td>Governo constitucional e Intentona Comunista</td></tr>
+                        <tr><td>1937–1945</td><td>Estado Novo, CLT e participação na Segunda Guerra</td></tr>
+                        <tr><td>1945</td><td>Queda do Estado Novo e redemocratização</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="secao lousa">
+            <h2>📋 BNCC — COMO TRABALHAR ESTE TEMA</h2>
+            <p>A BNCC sugere estudar a Era Vargas a partir dos processos políticos, sociais e econômicos que moldaram o Brasil moderno.</p>
+            <ul>
+                <li><strong>Habilidade (EF09HI02):</strong> Analisar o Estado Novo como regime autoritário e compreender o trabalhismo.</li>
+                <li><strong>Habilidade (EF09HI03):</strong> Discutir a relação entre o Brasil e a Segunda Guerra Mundial.</li>
+                <li><strong>Objetivo:</strong> Relacionar a crise de 1930, a centralização varguista e a modernização econômica.</li>
+            </ul>
+            <h3>💡 Sugestão de aula</h3>
+            <ul>
+                <li>Debate: "O Estado Novo foi uma ditadura ou um governo de progresso?"</li>
+                <li>Análise de propaganda varguista da época.</li>
+                <li>Comparativo da CLT de 1943 com os direitos atuais.</li>
+            </ul>
+        </section>
+
+        <section class="secao">
+            <h2>📚 CONCEITOS FUNDAMENTAIS</h2>
+            <div class="conceitos">
+                <div class="conceito"><strong>Revolução de 1930</strong><br>Movimento que levou Getúlio Vargas ao poder e encerrou a República Velha.</div>
+                <div class="conceito"><strong>Governo Provisório</strong><br>Primeiro governo de Vargas, de 1930 a 1934.</div>
+                <div class="conceito"><strong>Revolução Constitucionalista</strong><br>Levante em SP em 1932 exigindo nova Constituição.</div>
+                <div class="conceito"><strong>Intentona Comunista</strong><br>Tentativa de golpe em 1935 contra o governo Vargas.</div>
+                <div class="conceito"><strong>Estado Novo</strong><br>Ditadura de 1937 a 1945, com centralização e censura.</div>
+                <div class="conceito"><strong>CLT</strong><br>Consolidação das Leis do Trabalho (1943).</div>
+                <div class="conceito"><strong>Plano Cohen</strong><br>Falso plano comunista usado para justificar o Estado Novo.</div>
+                <div class="conceito"><strong>FEB</strong><br>Força Expedicionária Brasileira na Segunda Guerra.</div>
+            </div>
+        </section>
+
+        <section class="secao enem">
+            <h2>🎯 ENEM, Vestibular e Concurso</h2>
+            <p>Teste seus conhecimentos:</p>
+
+            <div class="questao">
+                <h3>Questão 1</h3>
+                <p>O Estado Novo, instaurado em 1937, caracterizou-se por:</p>
+                <ol type="A">
+                    <li>Democracia plena e voto universal.</li>
+                    <li>Autoritarismo, censura e centralização do poder.</li>
+                    <li>Federalismo e autonomia estadual absoluta.</li>
+                    <li>Governo parlamentarista.</li>
+                    <li>Totalitarismo de inspiração soviética.</li>
+                </ol>
+                <button class="btn-gabarito" onclick="mostrarGabarito('g1')">Mostrar gabarito</button>
+                <div class="gabarito" id="g1">
+                    <strong>Resposta: B.</strong> O Estado Novo foi um regime ditatorial, com supressão de liberdades, censura e forte centralização.
+                </div>
+            </div>
+
+            <div class="questao">
+                <h3>Questão 2</h3>
+                <p>A CLT (1943) consolidou importantes direitos trabalhistas. Entre eles, destacava-se:</p>
+                <ol type="A">
+                    <li>A licença maternidade de 180 dias.</li>
+                    <li>O sábado remunerado como dia trabalhado.</li>
+                    <li>A jornada máxima de 8 horas diárias, direito a férias e salário mínimo.</li>
+                    <li>A aposentadoria automática aos 60 anos.</li>
+                    <li>O trabalho infantil regulamentado.</li>
+                </ol>
+                <button class="btn-gabarito" onclick="mostrarGabarito('g2')">Mostrar gabarito</button>
+                <div class="gabarito" id="g2">
+                    <strong>Resposta: C.</strong> A CLT regulamentou a jornada de 8 horas, direito a férias, salário mínimo e outras garantias.
+                </div>
+            </div>
+        </section>
+
+        <section class="resumo">
+            <h2>🧠 RESUMO PARA O PROFESSOR</h2>
+            <p>
+                <strong>Tema:</strong> Era Vargas (1930–1945).<br>
+                <strong>Fases:</strong> Governo Provisório → Constitucional → Estado Novo.<br>
+                <strong>1930:</strong> Revolução e ascensão de Getúlio.<br>
+                <strong>1932:</strong> Revolução Constitucionalista.<br>
+                <strong>1937:</strong> Plano Cohen e Estado Novo.<br>
+                <strong>1943:</strong> CLT.<br>
+                <strong>1944–45:</strong> FEB na Segunda Guerra.<br>
+                <strong>1945:</strong> Fim do Estado Novo.<br>
+                <strong>Habilidade BNCC:</strong> EF09HI02 e EF09HI03 — Estado Novo, trabalhismo e Segunda Guerra.
+            </p>
+        </section>
+
+        <nav class="navegacao">
+            <a class="btn btn-voltar" href="41 - República Velha - Parte 2.html">← República Velha — Parte 2</a>
+            <a class="btn btn-proximo" href="43 - República Liberal Populista.html">República Liberal Populista →</a>
+        </nav>
+
+    </main>
+
+    <footer>
+        <p>Curso de História Geral — Fund II • Ensino Médio • ENEM • Vestibular • Concurso</p>
+        <p class="assinatura">Professor Marcelo Oliveira</p>
+    </footer>
+
+    <button id="topo" onclick="voltarAoTopo()">↑</button>
+
+    <script>
+        function mostrarGabarito(id) {
+            const resposta = document.getElementById(id);
+            resposta.style.display = (resposta.style.display === "block") ? "none" : "block";
+        }
+        const botaoTopo = document.getElementById("topo");
+        window.addEventListener("scroll", function () { botaoTopo.style.display = window.scrollY > 400 ? "block" : "none"; });
+        function voltarAoTopo() { window.scrollTo({ top: 0, behavior: "smooth" }); }
+    </script>
+    <script>
+  const paginaAnterior = "41 - República Velha - Parte 2.html";
+  const paginaProxima = "43 - República Liberal Populista.html";
+</script>
+<script src="navegacao.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,2063 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+    <!-- Define a codificação de caracteres da página. -->
+    <meta charset="UTF-8">
+
+
+<!-- Permite que a página seja responsiva em celulares e tablets. -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Define o título da aba do navegador. -->
+<title>1.31 — Era Napoleônica | Curso de História Geral</title>
+
+<style>
+
+    /* =========================================================
+       CONFIGURAÇÕES GERAIS
+       ========================================================= */
+
+    /* Remove margens e espaçamentos padrões do navegador. */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* Ativa rolagem suave na página. */
+    html {
+        scroll-behavior: smooth;
+    }
+
+    /* Define as características gerais do corpo. */
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: #f4f7fb;
+        color: #1f2937;
+        line-height: 1.7;
+    }
+
+    /* =========================================================
+       CABEÇALHO
+       ========================================================= */
+
+    /* Cria o cabeçalho principal. */
+    header {
+        background: linear-gradient(135deg, #172554, #1e40af, #0891b2);
+        color: white;
+        padding: 55px 20px;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+    }
+
+    /* Cria uma forma decorativa no cabeçalho. */
+    header::before {
+        content: "";
+        position: absolute;
+        width: 380px;
+        height: 380px;
+        background: rgba(255, 255, 255, 0.08);
+        border-radius: 50%;
+        top: -190px;
+        right: -100px;
+    }
+
+    /* Define o título principal. */
+    header h1 {
+        position: relative;
+        font-size: clamp(2rem, 5vw, 3.5rem);
+        margin-bottom: 15px;
+    }
+
+    /* Define o texto do cabeçalho. */
+    header p {
+        position: relative;
+        max-width: 900px;
+        margin: auto;
+        font-size: 1.1rem;
+    }
+
+    /* =========================================================
+       MENU
+       ========================================================= */
+
+    /* Cria a barra de navegação. */
+    nav {
+        background: white;
+        padding: 15px;
+        box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+    /* Organiza os itens do menu. */
+    nav ul {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        list-style: none;
+    }
+
+    /* Estiliza os links. */
+    nav a {
+        text-decoration: none;
+        color: #1e3a8a;
+        background: #eff6ff;
+        padding: 9px 15px;
+        border-radius: 20px;
+        font-weight: bold;
+        font-size: 0.9rem;
+        transition: 0.3s;
+    }
+
+    /* Efeito ao passar o mouse. */
+    nav a:hover {
+        background: #1d4ed8;
+        color: white;
+        transform: translateY(-2px);
+    }
+
+    /* =========================================================
+       CONTEÚDO
+       ========================================================= */
+
+    /* Define largura máxima do conteúdo. */
+    main {
+        max-width: 1200px;
+        margin: auto;
+        padding: 30px 18px;
+    }
+
+    /* Cria o cartão padrão. */
+    .card {
+        background: white;
+        border-radius: 18px;
+        padding: 30px;
+        margin-bottom: 25px;
+        box-shadow: 0 8px 25px rgba(15, 23, 42, 0.08);
+    }
+
+    /* Títulos principais dos cartões. */
+    .card h2 {
+        margin-bottom: 18px;
+        color: #172554;
+    }
+
+    /* Subtítulos. */
+    .card h3 {
+        margin-top: 22px;
+        margin-bottom: 10px;
+        color: #334155;
+    }
+
+    /* Parágrafos. */
+    .card p {
+        margin-bottom: 15px;
+    }
+
+    /* Listas. */
+    .card ul,
+    .card ol {
+        margin-left: 25px;
+        margin-bottom: 15px;
+    }
+
+    /* =========================================================
+       CORES DAS TRÊS PARTES
+       ========================================================= */
+
+    /* Parte I — começo. */
+    .parte-1 {
+        border-left: 8px solid #2563eb;
+        background: linear-gradient(135deg, #eff6ff, #ffffff);
+    }
+
+    /* Parte II — desenvolvimento. */
+    .parte-2 {
+        border-left: 8px solid #16a34a;
+        background: linear-gradient(135deg, #f0fdf4, #ffffff);
+    }
+
+    /* Parte III — legado. */
+    .parte-3 {
+        border-left: 8px solid #9333ea;
+        background: linear-gradient(135deg, #faf5ff, #ffffff);
+    }
+
+    /* Etiquetas das partes. */
+    .etiqueta {
+        display: inline-block;
+        padding: 7px 14px;
+        border-radius: 20px;
+        font-size: 0.8rem;
+        font-weight: bold;
+        margin-bottom: 12px;
+        color: white;
+    }
+
+    /* Cor azul. */
+    .azul {
+        background: #2563eb;
+    }
+
+    /* Cor verde. */
+    .verde {
+        background: #16a34a;
+    }
+
+    /* Cor roxa. */
+    .roxo {
+        background: #9333ea;
+    }
+
+    /* =========================================================
+       APRESENTAÇÃO
+       ========================================================= */
+
+    /* Cria a apresentação da aula. */
+    .apresentacao {
+        background: linear-gradient(135deg, #0f172a, #1e3a8a);
+        color: white;
+        border-radius: 20px;
+        padding: 35px;
+        margin-bottom: 25px;
+    }
+
+    /* Define a cor do título da apresentação. */
+    .apresentacao h2 {
+        color: white;
+    }
+
+    /* =========================================================
+       GRADE DE CARTÕES
+       ========================================================= */
+
+    /* Cria uma grade responsiva. */
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 18px;
+        margin-top: 20px;
+    }
+
+    /* Cria os cartões menores. */
+    .mini-card {
+        padding: 22px;
+        border-radius: 15px;
+        background: white;
+        border-top: 5px solid #2563eb;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    }
+
+    /* Remove margem superior dos títulos internos. */
+    .mini-card h3 {
+        margin-top: 0;
+    }
+
+    /* =========================================================
+       CAUSAS
+       ========================================================= */
+
+    /* Caixa laranja. */
+    .causas {
+        background: #fff7ed;
+        border-left: 8px solid #f97316;
+    }
+
+    /* Títulos da caixa de causas. */
+    .causas h2,
+    .causas h3 {
+        color: #c2410c;
+    }
+
+    /* =========================================================
+       CONSEQUÊNCIAS
+       ========================================================= */
+
+    /* Caixa amarela. */
+    .consequencias {
+        background: #fefce8;
+        border-left: 8px solid #eab308;
+    }
+
+    /* Títulos da caixa de consequências. */
+    .consequencias h2,
+    .consequencias h3 {
+        color: #a16207;
+    }
+
+    /* =========================================================
+       CONCEITOS
+       ========================================================= */
+
+    /* Caixa de conceitos. */
+    .conceitos {
+        background: #fffbeb;
+        border-left: 8px solid #eab308;
+    }
+
+    /* Título dos conceitos. */
+    .conceitos h2 {
+        color: #92400e;
+    }
+
+    /* =========================================================
+       ATENÇÃO
+       ========================================================= */
+
+    /* Caixa vermelha de atenção. */
+    .atencao {
+        background: #fef2f2;
+        border-left: 8px solid #dc2626;
+    }
+
+    /* Título da atenção. */
+    .atencao h2 {
+        color: #b91c1c;
+    }
+
+    /* =========================================================
+       LINHA DO TEMPO
+       ========================================================= */
+
+    /* Cria a linha vertical. */
+    .timeline {
+        border-left: 4px solid #2563eb;
+        margin: 25px 0;
+        padding-left: 25px;
+    }
+
+    /* Evento da linha do tempo. */
+    .evento {
+        position: relative;
+        margin-bottom: 25px;
+    }
+
+    /* Cria o ponto do evento. */
+    .evento::before {
+        content: "";
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        background: #2563eb;
+        border-radius: 50%;
+        left: -34px;
+        top: 7px;
+    }
+
+    /* Data do evento. */
+    .data {
+        font-weight: bold;
+        color: #2563eb;
+    }
+
+    /* =========================================================
+       TABELAS
+       ========================================================= */
+
+    /* Permite rolagem horizontal. */
+    .tabela-container {
+        overflow-x: auto;
+        margin-top: 20px;
+    }
+
+    /* Define a tabela. */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        min-width: 650px;
+    }
+
+    /* Define as células. */
+    th,
+    td {
+        border: 1px solid #bfdbfe;
+        padding: 13px;
+        text-align: left;
+    }
+
+    /* Cabeçalho da tabela. */
+    th {
+        background: #1d4ed8;
+        color: white;
+    }
+
+    /* Linhas alternadas. */
+    tr:nth-child(even) {
+        background: #eff6ff;
+    }
+
+    /* =========================================================
+       LOUSA
+       ========================================================= */
+
+    /* Caixa da lousa. */
+    .lousa {
+        background: #172554;
+        color: white;
+        border-radius: 18px;
+        padding: 30px;
+    }
+
+    /* Título da lousa. */
+    .lousa h2 {
+        color: #93c5fd;
+    }
+
+    /* Lista da lousa. */
+    .lousa ul {
+        margin-left: 25px;
+    }
+
+    /* =========================================================
+       PROFESSOR
+       ========================================================= */
+
+    /* Caixa de orientação ao professor. */
+    .professor {
+        background: #f1f5f9;
+        border-left: 8px solid #475569;
+    }
+
+    /* Título do professor. */
+    .professor h2 {
+        color: #334155;
+    }
+
+    /* =========================================================
+       ENEM
+       ========================================================= */
+
+    /* Caixa de provas. */
+    .provas {
+        background: linear-gradient(135deg, #ecfeff, #f0fdfa);
+        border-left: 8px solid #0891b2;
+    }
+
+    /* Título das provas. */
+    .provas h2 {
+        color: #0e7490;
+    }
+
+    /* =========================================================
+       QUESTÕES
+       ========================================================= */
+
+    /* Caixa de questão. */
+    .questao {
+        background: white;
+        border: 2px solid #e2e8f0;
+        border-radius: 15px;
+        padding: 25px;
+        margin-top: 20px;
+    }
+
+    /* Área das alternativas. */
+    .alternativas {
+        margin-top: 15px;
+    }
+
+    /* Cada alternativa. */
+    .alternativas div {
+        padding: 8px;
+        margin: 5px 0;
+        background: #f8fafc;
+        border-radius: 8px;
+    }
+
+    /* Botão do gabarito. */
+    .btn-gabarito {
+        border: none;
+        background: #7c3aed;
+        color: white;
+        padding: 11px 18px;
+        border-radius: 8px;
+        cursor: pointer;
+        margin-top: 15px;
+        font-weight: bold;
+    }
+
+    /* Efeito do botão. */
+    .btn-gabarito:hover {
+        background: #6d28d9;
+    }
+
+    /* Gabarito inicialmente escondido. */
+    .gabarito {
+        display: none;
+        margin-top: 15px;
+        padding: 15px;
+        background: #f3e8ff;
+        border-left: 5px solid #9333ea;
+        border-radius: 8px;
+    }
+
+    /* =========================================================
+       NAVEGAÇÃO
+       ========================================================= */
+
+    /* Área dos botões de navegação. */
+    .navegacao {
+        display: flex;
+        justify-content: space-between;
+        gap: 15px;
+        margin-top: 35px;
+    }
+
+    /* Botão de navegação. */
+    .btn {
+        display: inline-block;
+        text-decoration: none;
+        padding: 13px 20px;
+        border-radius: 10px;
+        font-weight: bold;
+        color: white;
+        background: #2563eb;
+        transition: 0.3s;
+    }
+
+    /* Efeito do botão. */
+    .btn:hover {
+        transform: translateY(-2px);
+        opacity: 0.9;
+    }
+
+    /* =========================================================
+       RODAPÉ
+       ========================================================= */
+
+    /* Cria o rodapé. */
+    footer {
+        background: #0f172a;
+        color: #cbd5e1;
+        text-align: center;
+        padding: 35px 20px;
+        margin-top: 30px;
+    }
+
+    /* Destaca o nome do curso. */
+    footer strong {
+        color: white;
+    }
+
+    /* =========================================================
+       BOTÃO VOLTAR AO TOPO
+       ========================================================= */
+
+    /* Cria o botão fixo. */
+    #topo {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        border: none;
+        background: #2563eb;
+        color: white;
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        cursor: pointer;
+        font-size: 20px;
+        display: none;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    /* =========================================================
+       RESPONSIVIDADE
+       ========================================================= */
+
+    /* Ajusta a página para celulares. */
+    @media (max-width: 700px) {
+
+        /* Diminui o espaço dos cartões. */
+        .card {
+            padding: 22px;
+        }
+
+        /* Diminui o cabeçalho. */
+        header {
+            padding: 40px 18px;
+        }
+
+        /* Diminui os links do menu. */
+        nav a {
+            font-size: 0.78rem;
+            padding: 7px 10px;
+        }
+
+        /* Coloca os botões em coluna. */
+        .navegacao {
+            flex-direction: column;
+        }
+
+        /* Faz os botões ocuparem toda a largura. */
+        .btn {
+            text-align: center;
+        }
+    }
+
+</style>
+
+</head>
+
+<body>
+
+<!-- =========================================================
+     CABEÇALHO
+     ========================================================= -->
+
+<header>
+
+    <!-- Nome do curso. -->
+    <p>CURSO DE HISTÓRIA GERAL</p>
+
+    <!-- Título do capítulo. -->
+    <h1>1.31 — Era Napoleônica</h1>
+
+    <!-- Subtítulo. -->
+    <p>
+        Da ascensão de Napoleão ao Consulado, ao Império,
+        às guerras europeias e à queda de 1815.
+    </p>
+
+</header>
+
+
+<!-- =========================================================
+     MENU
+     ========================================================= -->
+
+<nav>
+
+    <ul>
+
+        <!-- Link para o começo. -->
+        <li><a href="#comeco">O Começo</a></li>
+
+        <!-- Link para o desenvolvimento. -->
+        <li><a href="#desenvolvimento">Desenvolvimento</a></li>
+
+        <!-- Link para o legado. -->
+        <li><a href="#legado">Legado</a></li>
+
+        <!-- Link para conceitos. -->
+        <li><a href="#conceitos">Conceitos</a></li>
+
+        <!-- Link para cronologia. -->
+        <li><a href="#cronologia">Cronologia</a></li>
+
+        <!-- Link para professor. -->
+        <li><a href="#professor">Professor</a></li>
+
+        <!-- Link para provas. -->
+        <li><a href="#provas">ENEM</a></li>
+
+    </ul>
+
+</nav>
+
+
+<!-- =========================================================
+     CONTEÚDO PRINCIPAL
+     ========================================================= -->
+
+<main>
+
+
+    <!-- =====================================================
+         APRESENTAÇÃO
+         ===================================================== -->
+
+    <section class="apresentacao">
+
+        <h2>Apresentação da aula</h2>
+
+        <p>
+            A Era Napoleônica corresponde ao período em que Napoleão
+            Bonaparte exerceu papel central na política francesa e
+            europeia, entre o golpe do 18 de Brumário, em 1799,
+            e sua derrota definitiva em 1815.
+        </p>
+
+        <p>
+            Esse período esteve relacionado às transformações iniciadas
+            pela Revolução Francesa, mas também apresentou mudanças
+            próprias, especialmente na organização do Estado, no direito,
+            na guerra e nas relações internacionais.
+        </p>
+
+        <p>
+            Estudar Napoleão exige compreender tanto as conquistas e
+            reformas promovidas pelo governo francês quanto os conflitos
+            e resistências provocados pela expansão napoleônica.
+        </p>
+
+    </section>
+
+
+    <!-- =====================================================
+         PARTE I — O COMEÇO
+         ===================================================== -->
+
+    <section id="comeco" class="card parte-1">
+
+        <span class="etiqueta azul">I — O COMEÇO</span>
+
+        <h2>Da Revolução Francesa à ascensão de Napoleão</h2>
+
+        <p>
+            Em 1799, a França vivia uma situação de instabilidade política
+            após anos de revolução, guerra externa e conflitos internos.
+        </p>
+
+        <p>
+            O Diretório apresentava dificuldades para estabilizar o país.
+            Nesse contexto, o prestígio militar de Napoleão Bonaparte
+            aumentou.
+        </p>
+
+        <h3>O golpe do 18 de Brumário</h3>
+
+        <p>
+            Em 9 de novembro de 1799, correspondente a 18 de Brumário
+            no calendário revolucionário, Napoleão participou de um golpe
+            que derrubou o Diretório.
+        </p>
+
+        <p>
+            O golpe deu início ao Consulado.
+        </p>
+
+    </section>
+
+
+    <!-- =====================================================
+         NAPOLEÃO
+         ===================================================== -->
+
+    <section class="card">
+
+        <h2>Quem foi Napoleão Bonaparte?</h2>
+
+        <p>
+            Napoleão nasceu em 1769 na Córsega, pouco depois da incorporação
+            da ilha pela França.
+        </p>
+
+        <p>
+            Formou-se como oficial de artilharia e ganhou destaque durante
+            as guerras revolucionárias.
+        </p>
+
+        <p>
+            Seu sucesso militar contribuiu para sua ascensão política.
+        </p>
+
+        <div class="grid">
+
+            <div class="mini-card">
+
+                <h3>Militar</h3>
+
+                <p>
+                    Construiu sua reputação em campanhas militares
+                    durante o período revolucionário.
+                </p>
+
+            </div>
+
+            <div class="mini-card">
+
+                <h3>Político</h3>
+
+                <p>
+                    Utilizou sua popularidade e influência militar para
+                    assumir o poder.
+                </p>
+
+            </div>
+
+            <div class="mini-card">
+
+                <h3>Governante</h3>
+
+                <p>
+                    Reorganizou instituições francesas e centralizou
+                    o poder político.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         PARTE II
+         ===================================================== -->
+
+    <section id="desenvolvimento" class="card parte-2">
+
+        <span class="etiqueta verde">II — O DESENVOLVIMENTO</span>
+
+        <h2>O Consulado — 1799–1804</h2>
+
+        <p>
+            Durante o Consulado, Napoleão consolidou progressivamente
+            sua autoridade.
+        </p>
+
+        <p>
+            A nova organização política buscava estabilizar a França
+            depois de anos de conflitos revolucionários.
+        </p>
+
+    </section>
+
+
+    <!-- =====================================================
+         REFORMAS
+         ===================================================== -->
+
+    <section class="card">
+
+        <h2>As reformas napoleônicas</h2>
+
+        <p>
+            O governo de Napoleão promoveu uma série de reformas
+            administrativas, jurídicas, econômicas e educacionais.
+        </p>
+
+        <div class="grid">
+
+            <div class="mini-card">
+
+                <h3>Centralização</h3>
+
+                <p>
+                    Fortalecimento da autoridade do governo central
+                    sobre o território francês.
+                </p>
+
+            </div>
+
+            <div class="mini-card">
+
+                <h3>Educação</h3>
+
+                <p>
+                    Reorganização das instituições educacionais e criação
+                    de estruturas voltadas à formação de funcionários
+                    e profissionais.
+                </p>
+
+            </div>
+
+            <div class="mini-card">
+
+                <h3>Administração</h3>
+
+                <p>
+                    Fortalecimento da burocracia estatal e organização
+                    mais centralizada da administração.
+                </p>
+
+            </div>
+
+            <div class="mini-card">
+
+                <h3>Direito</h3>
+
+                <p>
+                    Criação e consolidação de códigos jurídicos,
+                    especialmente o Código Civil de 1804.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         CÓDIGO CIVIL
+         ===================================================== -->
+
+    <section class="card">
+
+        <h2>O Código Civil de 1804</h2>
+
+        <p>
+            O Código Civil Napoleônico organizou normas relacionadas
+            ao direito civil francês.
+        </p>
+
+        <p>
+            O código consolidou princípios como a igualdade jurídica
+            dos cidadãos do sexo masculino perante a lei, proteção
+            da propriedade privada e secularização de determinadas
+            relações jurídicas.
+        </p>
+
+        <div class="atencao">
+
+            <h2>⚠️ Atenção histórica</h2>
+
+            <p>
+                A igualdade jurídica proclamada não significou igualdade
+                social ou política completa. As mulheres, por exemplo,
+                permaneceram submetidas a fortes restrições jurídicas
+                e familiares.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         CONCORDATA
+         ===================================================== -->
+
+    <section class="card">
+
+        <h2>A Concordata de 1801</h2>
+
+        <p>
+            Napoleão buscou reorganizar as relações entre o Estado francês
+            e a Igreja Católica.
+        </p>
+
+        <p>
+            A Concordata de 1801 estabeleceu um novo acordo entre o governo
+            francês e o papado.
+        </p>
+
+        <p>
+            O Estado manteve importante controle sobre a organização
+            religiosa dentro do país.
+        </p>
+
+    </section>
+
+
+    <!-- =====================================================
+         IMPÉRIO
+         ===================================================== -->
+
+    <section class="card consequencias">
+
+        <h2>🟨 1804 — Napoleão torna-se imperador</h2>
+
+        <p>
+            Em 1804, Napoleão foi proclamado imperador dos franceses.
+        </p>
+
+        <p>
+            A mudança marcou a transformação do regime do Consulado
+            em Império.
+        </p>
+
+        <p>
+            A nova forma de governo manteve algumas conquistas jurídicas
+            da Revolução, mas concentrou grande quantidade de poder
+            nas mãos de Napoleão.
+        </p>
+
+    </section>
+
+
+    <!-- =====================================================
+         EXPANSÃO MILITAR
+         ===================================================== -->
+
+    <section class="card">
+
+        <h2>⚔️ A expansão napoleônica</h2>
+
+        <p>
+            Durante o Império, a França ampliou sua influência sobre
+            grande parte da Europa.
+        </p>
+
+        <p>
+            Napoleão enfrentou sucessivas coalizões formadas por
+            diferentes potências europeias que buscavam conter
+            a expansão francesa.
+        </p>
+
+        <p>
+            As guerras napoleônicas transformaram fronteiras, alianças
+            e estruturas políticas em diferentes regiões da Europa.
+        </p>
+
+    </section>
+
+
+    <!-- =====================================================
+         AUSTERLITZ
+         ===================================================== -->
+
+    <section class="card">
+
+        <h2>1805 — Austerlitz</h2>
+
+        <p>
+            A Batalha de Austerlitz, travada em 1805, foi uma das vitórias
+            militares mais importantes de Napoleão.
+        </p>
+
+        <p>
+            O exército francês derrotou forças austríacas e russas,
+            fortalecendo temporariamente a posição francesa na Europa.
+        </p>
+
+    </section>
+
+
+    <!-- =====================================================
+         BLOQUEIO CONTINENTAL
+         ===================================================== -->
+
+    <section class="card causas">
+
+        <h2>🟧 O Bloqueio Continental</h2>
+
+        <p>
+            A Grã-Bretanha era uma das principais adversárias da França
+            e possuía grande força naval e comercial.
+        </p>
+
+        <p>
+            Em 1806, Napoleão estabeleceu o Bloqueio Continental,
+            buscando impedir que países europeus comercializassem
+            com os britânicos.
+        </p>
+
+        <p>
+            O objetivo era enfraquecer economicamente a Grã-Bretanha.
+        </p>
+
+        <h3>O problema</h3>
+
+        <p>
+            O bloqueio também provocou dificuldades para economias
+            europeias que dependiam do comércio com os britânicos.
+        </p>
+
+    </section>
+
+
+    <!-- =====================================================
+         PORTUGAL E BRASIL
+         ===================================================== -->
+
+    <section class="card">
+
+        <h2>🇵🇹 Portugal, Bloqueio Continental e Brasil</h2>
+
+        <p>
+            Portugal mantinha relações comerciais importantes com
+            a Grã-Bretanha e enfrentou pressão para aderir ao Bloqueio
+            Continental.
+        </p>
+
+        <p>
+            A invasão francesa de Portugal contribuiu para a decisão
+            da corte portuguesa de transferir-se para o Brasil em 1807,
+            chegando ao Rio de Janeiro em 1808.
+        </p>
+
+        <p>
+            Esse acontecimento provocou profundas transformações na
+            América portuguesa e tornou-se fundamental para compreender
+            o processo que levaria à Independência do Brasil em 1822.
+        </p>
+
+    </section>
+
+
+    <!-- =====================================================
+         RÚSSIA
+         ===================================================== -->
+
+    <section class="card">
+
+        <h2>🇷🇺 A campanha contra a Rússia</h2>
+
+        <p>
+            As relações entre Napoleão e o Império Russo deterioraram-se
+            progressivamente.
+        </p>
+
+        <p>
+            Em 1812, Napoleão iniciou uma grande campanha militar contra
+            a Rússia.
+        </p>
+
+        <p>
+            A estratégia russa de recuo e destruição de recursos,
+            combinada com as dificuldades logísticas e climáticas,
+            contribuiu para o desastre do exército francês.
+        </p>
+
+    </section>
+
+
+    <!-- =====================================================
+         LEIPZIG
+         ===================================================== -->
+
+    <section class="card atencao">
+
+        <h2>🟥 1813 — Batalha de Leipzig</h2>
+
+        <p>
+            A Batalha de Leipzig, conhecida como Batalha das Nações,
+            resultou em uma importante derrota francesa.
+        </p>
+
+        <p>
+            A derrota enfraqueceu significativamente o domínio
+            napoleônico sobre a Europa.
+        </p>
+
+    </section>
+
+
+    <!-- =====================================================
+         PRIMEIRA ABDICAÇÃO
+         ===================================================== -->
+
+    <section class="card">
+
+        <h2>1814 — Primeira abdicação</h2>
+
+        <p>
+            Em 1814, as forças inimigas invadiram a França e Napoleão
+            foi obrigado a abdicar.
+        </p>
+
+        <p>
+            Ele foi enviado para a ilha de Elba.
+        </p>
+
+        <p>
+            A monarquia dos Bourbon foi restaurada com Luís XVIII.
+        </p>
+
+    </section>
+
+
+    <!-- =====================================================
+         CEM DIAS
+         ===================================================== -->
+
+    <section class="card">
+
+        <h2>1815 — Os Cem Dias</h2>
+
+        <p>
+            Napoleão retornou à França em 1815 e recuperou o poder
+            durante um curto período conhecido como Cem Dias.
+        </p>
+
+        <p>
+            As potências europeias organizaram uma nova coalizão
+            contra ele.
+        </p>
+
+    </section>
+
+
+    <!-- =====================================================
+         WATERLOO
+         ===================================================== -->
+
+    <section class="card atencao">
+
+        <h2>🟥 1815 — Waterloo</h2>
+
+        <p>
+            Em 18 de junho de 1815, Napoleão foi derrotado na Batalha
+            de Waterloo pelas forças comandadas pelo duque de Wellington
+            e pelo exército prussiano de Blücher.
+        </p>
+
+        <p>
+            Após a derrota, Napoleão foi enviado para a ilha de Santa
+            Helena, onde morreu em 1821.
+        </p>
+
+    </section>
+
+
+    <!-- =====================================================
+         CRONOLOGIA
+         ===================================================== -->
+
+    <section id="cronologia" class="card">
+
+        <h2>📅 Linha do tempo da Era Napoleônica</h2>
+
+        <div class="timeline">
+
+            <div class="evento">
+                <div class="data">1799</div>
+                <p>Golpe do 18 de Brumário e início do Consulado.</p>
+            </div>
+
+            <div class="evento">
+                <div class="data">1801</div>
+                <p>Concordata entre França e Igreja Católica.</p>
+            </div>
+
+            <div class="evento">
+                <div class="data">1804</div>
+                <p>Código Civil e proclamação de Napoleão como imperador.</p>
+            </div>
+
+            <div class="evento">
+                <div class="data">1805</div>
+                <p>Vitória francesa em Austerlitz.</p>
+            </div>
+
+            <div class="evento">
+                <div class="data">1806</div>
+                <p>Decreto do Bloqueio Continental.</p>
+            </div>
+
+            <div class="evento">
+                <div class="data">1807</div>
+                <p>Invasão francesa de Portugal e transferência da corte portuguesa.</p>
+            </div>
+
+            <div class="evento">
+                <div class="data">1812</div>
+                <p>Campanha de Napoleão contra a Rússia.</p>
+            </div>
+
+            <div class="evento">
+                <div class="data">1813</div>
+                <p>Derrota francesa em Leipzig.</p>
+            </div>
+
+            <div class="evento">
+                <div class="data">1814</div>
+                <p>Primeira abdicação de Napoleão.</p>
+            </div>
+
+            <div class="evento">
+                <div class="data">1815</div>
+                <p>Cem Dias e derrota em Waterloo.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         CAUSAS
+         ===================================================== -->
+
+    <section class="card causas">
+
+        <h2>🟧 Fatores que favoreceram a ascensão de Napoleão</h2>
+
+        <ul>
+
+            <li>Instabilidade política do Diretório.</li>
+
+            <li>Conflitos internos após anos de revolução.</li>
+
+            <li>Guerras contra potências europeias.</li>
+
+            <li>Prestígio militar de Napoleão.</li>
+
+            <li>Busca por estabilidade política.</li>
+
+            <li>Necessidade de reorganização administrativa e financeira.</li>
+
+        </ul>
+
+    </section>
+
+
+    <!-- =====================================================
+         CONSEQUÊNCIAS
+         ===================================================== -->
+
+    <section class="card consequencias">
+
+        <h2>🟨 Consequências da Era Napoleônica</h2>
+
+        <ul>
+
+            <li>Centralização do Estado francês.</li>
+
+            <li>Consolidação do Código Civil.</li>
+
+            <li>Reorganização administrativa.</li>
+
+            <li>Expansão territorial francesa.</li>
+
+            <li>Reação nacionalista em diferentes regiões europeias.</li>
+
+            <li>Transformação do equilíbrio político europeu.</li>
+
+            <li>Fortalecimento temporário da França.</li>
+
+            <li>Derrota de Napoleão em 1815.</li>
+
+            <li>Reorganização europeia no Congresso de Viena.</li>
+
+        </ul>
+
+    </section>
+
+
+    <!-- =====================================================
+         CONCEITOS
+         ===================================================== -->
+
+    <section id="conceitos" class="card conceitos">
+
+        <h2>🟨 Conceitos fundamentais</h2>
+
+        <div class="grid">
+
+            <div class="mini-card">
+
+                <h3>Consulado</h3>
+
+                <p>
+                    Regime político francês estabelecido após o golpe
+                    de 18 de Brumário.
+                </p>
+
+            </div>
+
+            <div class="mini-card">
+
+                <h3>Império</h3>
+
+                <p>
+                    Forma de governo estabelecida por Napoleão em 1804.
+                </p>
+
+            </div>
+
+            <div class="mini-card">
+
+                <h3>Bloqueio Continental</h3>
+
+                <p>
+                    Política destinada a impedir o comércio europeu
+                    com a Grã-Bretanha.
+                </p>
+
+            </div>
+
+            <div class="mini-card">
+
+                <h3>Coalizão</h3>
+
+                <p>
+                    Aliança formada por diferentes potências para
+                    enfrentar a expansão francesa.
+                </p>
+
+            </div>
+
+            <div class="mini-card">
+
+                <h3>Código Civil</h3>
+
+                <p>
+                    Conjunto de normas jurídicas promulgado em 1804.
+                </p>
+
+            </div>
+
+            <div class="mini-card">
+
+                <h3>18 de Brumário</h3>
+
+                <p>
+                    Golpe de Estado de 1799 que encerrou o Diretório
+                    e iniciou o Consulado.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         TABELA
+         ===================================================== -->
+
+    <section class="card">
+
+        <h2>Principais fases do período</h2>
+
+        <div class="tabela-container">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+                        <th>Período</th>
+                        <th>Regime</th>
+                        <th>Características</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>1799–1804</td>
+                        <td>Consulado</td>
+                        <td>Centralização e consolidação do poder de Napoleão.</td>
+                    </tr>
+
+                    <tr>
+                        <td>1804–1814</td>
+                        <td>Império</td>
+                        <td>Expansão militar e reorganização política europeia.</td>
+                    </tr>
+
+                    <tr>
+                        <td>1814–1815</td>
+                        <td>Primeira restauração</td>
+                        <td>Abdicação de Napoleão e retorno dos Bourbon.</td>
+                    </tr>
+
+                    <tr>
+                        <td>1815</td>
+                        <td>Cem Dias</td>
+                        <td>Retorno de Napoleão e derrota final.</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         LEGADO
+         ===================================================== -->
+
+    <section id="legado" class="card parte-3">
+
+        <span class="etiqueta roxo">III — O LEGADO E O MUNDO ATUAL</span>
+
+        <h2>O legado napoleônico</h2>
+
+        <p>
+            O período napoleônico deixou marcas profundas na história
+            política, jurídica e administrativa da Europa.
+        </p>
+
+        <h3>Legado jurídico</h3>
+
+        <p>
+            O Código Civil influenciou sistemas jurídicos de diferentes
+            países e contribuiu para a difusão de princípios relacionados
+            à propriedade e à igualdade jurídica masculina.
+        </p>
+
+        <h3>Legado administrativo</h3>
+
+        <p>
+            A centralização administrativa e a organização burocrática
+            francesa tornaram-se referências importantes para a formação
+            do Estado moderno.
+        </p>
+
+        <h3>Legado político</h3>
+
+        <p>
+            A expansão francesa também provocou reações nacionalistas
+            em diferentes regiões da Europa.
+        </p>
+
+    </section>
+
+
+    <!-- =====================================================
+         NACIONALISMOS
+         ===================================================== -->
+
+    <section class="card">
+
+        <h2>O crescimento dos nacionalismos</h2>
+
+        <p>
+            A dominação francesa contribuiu, em diferentes contextos,
+            para o fortalecimento de identidades nacionais e movimentos
+            de resistência.
+        </p>
+
+        <p>
+            Esse processo posteriormente se relacionaria com os
+            movimentos de unificação da Itália e da Alemanha no século XIX.
+        </p>
+
+    </section>
+
+
+    <!-- =====================================================
+         CONGRESSO DE VIENA
+         ===================================================== -->
+
+    <section class="card consequencias">
+
+        <h2>🟨 O caminho para o Congresso de Viena</h2>
+
+        <p>
+            A derrota definitiva de Napoleão criou a necessidade de
+            reorganizar politicamente a Europa.
+        </p>
+
+        <p>
+            Em 1814–1815, representantes das principais potências
+            europeias reuniram-se no Congresso de Viena.
+        </p>
+
+        <p>
+            O objetivo era reorganizar fronteiras, restaurar governos
+            e estabelecer um novo equilíbrio de poder.
+        </p>
+
+    </section>
+
+
+    <!-- =====================================================
+         BRASIL
+         ===================================================== -->
+
+    <section class="card">
+
+        <h2>🇧🇷 História Geral ↔ História do Brasil</h2>
+
+        <p>
+            A Era Napoleônica possui uma relação direta com a História
+            do Brasil.
+        </p>
+
+        <p>
+            A pressão francesa sobre Portugal e o Bloqueio Continental
+            contribuíram para a transferência da corte portuguesa
+            para o Rio de Janeiro em 1808.
+        </p>
+
+        <p>
+            A chegada da corte alterou profundamente a estrutura política
+            e econômica da América portuguesa.
+        </p>
+
+        <p>
+            Entre as mudanças estiveram a abertura dos portos, a criação
+            de instituições e a transformação do Rio de Janeiro em centro
+            político do Império Português.
+        </p>
+
+        <p>
+            Esses acontecimentos fazem parte do contexto que antecedeu
+            a Independência do Brasil.
+        </p>
+
+    </section>
+
+
+    <!-- =====================================================
+         PROFESSOR
+         ===================================================== -->
+
+    <section id="professor" class="card professor">
+
+        <h2>👨‍🏫 O que o professor precisa dominar</h2>
+
+        <ul>
+
+            <li>
+                Relação entre Revolução Francesa e ascensão de Napoleão.
+            </li>
+
+            <li>
+                Golpe do 18 de Brumário.
+            </li>
+
+            <li>
+                Diferenças entre Consulado e Império.
+            </li>
+
+            <li>
+                Reformas administrativas e jurídicas.
+            </li>
+
+            <li>
+                Código Civil de 1804.
+            </li>
+
+            <li>
+                Concordata de 1801.
+            </li>
+
+            <li>
+                Expansão militar francesa.
+            </li>
+
+            <li>
+                Bloqueio Continental.
+            </li>
+
+            <li>
+                Campanha da Rússia.
+            </li>
+
+            <li>
+                Derrota em Leipzig.
+            </li>
+
+            <li>
+                Cem Dias e Waterloo.
+            </li>
+
+            <li>
+                Relação entre Napoleão, Portugal e a transferência
+                da corte portuguesa para o Brasil.
+            </li>
+
+            <li>
+                Relação entre derrotas napoleônicas e Congresso de Viena.
+            </li>
+
+        </ul>
+
+    </section>
+
+
+    <!-- =====================================================
+         LOUSA
+         ===================================================== -->
+
+    <section class="lousa">
+
+        <h2>📝 O que colocar na lousa</h2>
+
+        <ul>
+
+            <li>1799 — 18 de Brumário</li>
+
+            <li>Consulado</li>
+
+            <li>1801 — Concordata</li>
+
+            <li>1804 — Código Civil</li>
+
+            <li>1804 — Império</li>
+
+            <li>1805 — Austerlitz</li>
+
+            <li>1806 — Bloqueio Continental</li>
+
+            <li>1807/1808 — Portugal e corte no Brasil</li>
+
+            <li>1812 — Rússia</li>
+
+            <li>1813 — Leipzig</li>
+
+            <li>1814 — Abdicação</li>
+
+            <li>1815 — Cem Dias</li>
+
+            <li>1815 — Waterloo</li>
+
+            <li>Congresso de Viena</li>
+
+        </ul>
+
+    </section>
+
+
+    <!-- =====================================================
+         ATENÇÃO PARA PROVAS
+         ===================================================== -->
+
+    <section class="card atencao">
+
+        <h2>🟥 Atenção — pontos que costumam aparecer em provas</h2>
+
+        <ul>
+
+            <li>
+                18 de Brumário = 1799.
+            </li>
+
+            <li>
+                Código Civil = 1804.
+            </li>
+
+            <li>
+                Napoleão tornou-se imperador em 1804.
+            </li>
+
+            <li>
+                Bloqueio Continental = 1806.
+            </li>
+
+            <li>
+                Campanha da Rússia = 1812.
+            </li>
+
+            <li>
+                Leipzig = 1813.
+            </li>
+
+            <li>
+                Primeira abdicação = 1814.
+            </li>
+
+            <li>
+                Waterloo = 1815.
+            </li>
+
+            <li>
+                Napoleão não foi derrotado definitivamente em 1814:
+                retornou durante os Cem Dias em 1815.
+            </li>
+
+        </ul>
+
+    </section>
+
+
+    <!-- =====================================================
+         ENEM
+         ===================================================== -->
+
+    <section id="provas" class="card provas">
+
+        <h2>🎯 ENEM, Vestibular e Concurso</h2>
+
+        <p>
+            A Era Napoleônica pode aparecer em questões sobre formação
+            do Estado moderno, transformações jurídicas, guerras,
+            nacionalismo, equilíbrio europeu e relações entre Europa
+            e América.
+        </p>
+
+        <p>
+            Para compreender o período, o estudante deve relacionar
+            Napoleão às transformações iniciadas pela Revolução Francesa,
+            sem confundir a continuidade de alguns princípios revolucionários
+            com a concentração de poder característica do governo napoleônico.
+        </p>
+
+    </section>
+
+
+    <!-- =====================================================
+         QUESTÃO 1
+         ===================================================== -->
+
+    <section class="questao">
+
+        <h2>Questão 1 — Estilo ENEM</h2>
+
+        <p>
+            Uma das principais características do governo napoleônico
+            foi a combinação entre centralização política e manutenção
+            de determinadas transformações jurídicas iniciadas durante
+            a Revolução Francesa.
+        </p>
+
+        <p>
+            Um exemplo dessa combinação foi:
+        </p>
+
+        <div class="alternativas">
+
+            <div>
+                A) o abandono completo das reformas jurídicas revolucionárias.
+            </div>
+
+            <div>
+                B) a consolidação do Código Civil e a centralização do Estado.
+            </div>
+
+            <div>
+                C) a restauração imediata dos privilégios feudais.
+            </div>
+
+            <div>
+                D) a dissolução completa do Estado francês.
+            </div>
+
+            <div>
+                E) a transferência do poder para o Parlamento britânico.
+            </div>
+
+        </div>
+
+        <button class="btn-gabarito" onclick="mostrarGabarito('g1')">
+            Mostrar gabarito
+        </button>
+
+        <div id="g1" class="gabarito">
+
+            <strong>Resposta: B.</strong>
+
+            <p>
+                O período napoleônico combinou centralização política
+                com a consolidação de importantes reformas jurídicas,
+                entre elas o Código Civil de 1804.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         QUESTÃO 2
+         ===================================================== -->
+
+    <section class="questao">
+
+        <h2>Questão 2 — Estilo ENEM</h2>
+
+        <p>
+            O Bloqueio Continental foi uma tentativa de Napoleão de
+            enfraquecer economicamente a Grã-Bretanha.
+        </p>
+
+        <p>
+            Entre suas consequências para o mundo português esteve:
+        </p>
+
+        <div class="alternativas">
+
+            <div>
+                A) a transferência da corte portuguesa para o Brasil.
+            </div>
+
+            <div>
+                B) a independência imediata do Brasil em 1806.
+            </div>
+
+            <div>
+                C) o fim do comércio entre Portugal e Brasil.
+            </div>
+
+            <div>
+                D) a invasão britânica da França.
+            </div>
+
+            <div>
+                E) a criação do Congresso de Viena em Lisboa.
+            </div>
+
+        </div>
+
+        <button class="btn-gabarito" onclick="mostrarGabarito('g2')">
+            Mostrar gabarito
+        </button>
+
+        <div id="g2" class="gabarito">
+
+            <strong>Resposta: A.</strong>
+
+            <p>
+                A pressão francesa sobre Portugal contribuiu para a
+                transferência da corte portuguesa para o Brasil em 1807–1808.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         RESUMO
+         ===================================================== -->
+
+    <section class="card">
+
+        <h2>📚 Resumo final</h2>
+
+        <p>
+            A Era Napoleônica começou com o golpe do 18 de Brumário,
+            em 1799, que levou Napoleão ao poder durante o Consulado.
+        </p>
+
+        <p>
+            Napoleão promoveu reformas administrativas, educacionais
+            e jurídicas, destacando-se o Código Civil de 1804.
+        </p>
+
+        <p>
+            Em 1804, tornou-se imperador e passou a expandir militarmente
+            a influência francesa pela Europa.
+        </p>
+
+        <p>
+            O Bloqueio Continental buscou enfraquecer economicamente
+            a Grã-Bretanha e teve consequências importantes para Portugal
+            e para a América portuguesa.
+        </p>
+
+        <p>
+            As derrotas de 1812 em diante enfraqueceram o domínio francês.
+            Napoleão abdicou em 1814, retornou durante os Cem Dias em 1815
+            e foi finalmente derrotado em Waterloo.
+        </p>
+
+        <p>
+            Sua queda abriu caminho para o Congresso de Viena e para
+            uma nova organização política da Europa.
+        </p>
+
+    </section>
+
+
+    <!-- =====================================================
+         NAVEGAÇÃO
+         ===================================================== -->
+
+    <div class="navegacao">
+
+        <!-- Volta ao capítulo anterior. -->
+        <a class="btn" href="../28-Revolucao-Francesa/index.html">
+            ← Revolução Francesa
+        </a>
+
+        <!-- Avança ao próximo capítulo. -->
+        <a class="btn" href="../30-Congresso-de-Viena/index.html">
+            1.31 — Congresso de Viena →
+        </a>
+
+    </div>
+
+</main>
+
+
+<!-- =========================================================
+     RODAPÉ
+     ========================================================= -->
+
+<footer>
+
+    <p>
+        <strong>Curso de História Geral</strong>
+    </p>
+
+    <p>
+        Fund II • Ensino Médio • ENEM • Vestibular • Concursos
+    </p>
+
+    <p>
+        Material didático — Professor Marcelo Oliveira
+    </p>
+
+</footer>
+
+
+<!-- =========================================================
+     BOTÃO VOLTAR AO TOPO
+     ========================================================= -->
+
+<button id="topo" onclick="voltarTopo()">
+    ↑
+</button>
+
+
+<!-- =========================================================
+     JAVASCRIPT
+     ========================================================= -->
+
+<script>
+
+    /* Cria a função responsável pelo gabarito. */
+    function mostrarGabarito(id) {
+
+        /* Localiza o elemento pelo ID recebido. */
+        const elemento = document.getElementById(id);
+
+        /* Verifica se o gabarito está aparecendo. */
+        if (elemento.style.display === "block") {
+
+            /* Esconde o gabarito. */
+            elemento.style.display = "none";
+
+        } else {
+
+            /* Mostra o gabarito. */
+            elemento.style.display = "block";
+
+        }
+
+    }
+
+
+    /* Localiza o botão de voltar ao topo. */
+    const botaoTopo = document.getElementById("topo");
+
+
+    /* Detecta quando o usuário movimenta a página. */
+    window.addEventListener("scroll", function () {
+
+        /* Verifica se a página foi rolada mais de 400 pixels. */
+        if (window.scrollY > 400) {
+
+            /* Mostra o botão. */
+            botaoTopo.style.display = "block";
+
+        } else {
+
+            /* Esconde o botão. */
+            botaoTopo.style.display = "none";
+
+        }
+
+    });
+
+
+    /* Cria a função de retorno ao topo. */
+    function voltarTopo() {
+
+        /* Faz a página subir suavemente. */
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+
+    }
+
+</script>
+<script>
+  const paginaAnterior = "30 - Revolucao-Francesa.html";
+  const paginaProxima = "32 - Brasil-Joanino.html";
+</script>
+<script src="navegacao.js"></script>
+
+</body>
+
+</html>

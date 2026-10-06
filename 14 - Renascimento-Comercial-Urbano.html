@@ -1,0 +1,2201 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Define a codificação de caracteres para aceitar acentos e caracteres especiais. -->
+    <meta charset="UTF-8">
+
+    <!-- Faz o site se adaptar corretamente a celulares, tablets e computadores. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Define o título que aparece na aba do navegador. -->
+    <title>1.14 — Renascimento Comercial e Urbano | História Geral</title>
+
+    <style>
+        /* ========================================================= */
+        /* CONFIGURAÇÕES GERAIS                                      */
+        /* ========================================================= */
+
+        /* Remove margens e preenchimentos padrões de todos os elementos. */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Define o comportamento de rolagem suave. */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Define a aparência geral da página. */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f6f8;
+            color: #1f2937;
+            line-height: 1.7;
+        }
+
+        /* ========================================================= */
+        /* CABEÇALHO                                                  */
+        /* ========================================================= */
+
+        /* Cria o cabeçalho principal do curso. */
+        header {
+            background: linear-gradient(135deg, #0f172a, #1e3a8a);
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+            border-bottom: 5px solid #d4af37;
+        }
+
+        /* Define o pequeno identificador da aula. */
+        .numero-aula {
+            display: inline-block;
+            background: #d4af37;
+            color: #111827;
+            padding: 8px 18px;
+            border-radius: 30px;
+            font-weight: bold;
+            margin-bottom: 18px;
+        }
+
+        /* Define o título principal. */
+        header h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        /* Define o subtítulo do cabeçalho. */
+        header p {
+            max-width: 850px;
+            margin: auto;
+            font-size: 18px;
+            color: #e5e7eb;
+        }
+
+        /* ========================================================= */
+        /* MENU                                                        */
+        /* ========================================================= */
+
+        /* Cria o menu fixo durante a navegação. */
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: #111827;
+            padding: 12px;
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Organiza os links do menu. */
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        /* Define a aparência dos links. */
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 14px;
+            border-radius: 6px;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        /* Cria efeito quando o mouse passa sobre os links. */
+        nav a:hover {
+            background: #d4af37;
+            color: #111827;
+        }
+
+        /* ========================================================= */
+        /* CONTAINER PRINCIPAL                                        */
+        /* ========================================================= */
+
+        /* Limita a largura do conteúdo e centraliza na tela. */
+        main {
+            max-width: 1150px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        /* ========================================================= */
+        /* CARTÕES                                                     */
+        /* ========================================================= */
+
+        /* Cria o padrão visual dos cartões de conteúdo. */
+        .card {
+            background: white;
+            padding: 32px;
+            margin-bottom: 28px;
+            border-radius: 14px;
+            box-shadow: 0 5px 20px rgba(15, 23, 42, 0.08);
+            border-left: 5px solid #1e3a8a;
+        }
+
+        /* Define os títulos principais das seções. */
+        .card h2 {
+            color: #1e3a8a;
+            margin-bottom: 20px;
+            font-size: 29px;
+        }
+
+        /* Define os subtítulos. */
+        .card h3 {
+            color: #334155;
+            margin-top: 25px;
+            margin-bottom: 12px;
+            font-size: 21px;
+        }
+
+        /* Define os parágrafos. */
+        .card p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        /* Define as listas. */
+        .card ul,
+        .card ol {
+            margin: 15px 0 15px 25px;
+        }
+
+        /* Cria espaçamento entre itens das listas. */
+        .card li {
+            margin-bottom: 8px;
+        }
+
+        /* ========================================================= */
+        /* DESTAQUES                                                   */
+        /* ========================================================= */
+
+        /* Cria uma caixa de destaque para conceitos importantes. */
+        .destaque {
+            background: #eff6ff;
+            border-left: 5px solid #2563eb;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        /* Cria destaque especial para atenção histórica. */
+        .atencao {
+            background: #fff7ed;
+            border-left: 5px solid #ea580c;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        /* Cria destaque para conexão com o Brasil. */
+        .brasil {
+            background: #f0fdf4;
+            border-left: 5px solid #16a34a;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        /* ========================================================= */
+        /* TRÍADE DA PERIODIZAÇÃO                                     */
+        /* ========================================================= */
+
+        /* Cria uma grade para apresentar as três partes da aula. */
+        .trilogia {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+            margin: 25px 0;
+        }
+
+        /* Estiliza cada bloco da trilogia. */
+        .trilogia div {
+            background: #f8fafc;
+            padding: 22px;
+            border-radius: 12px;
+            border-top: 4px solid #d4af37;
+        }
+
+        /* Define o título dos blocos da trilogia. */
+        .trilogia h3 {
+            margin-top: 0;
+            color: #1e3a8a;
+        }
+
+        /* ========================================================= */
+        /* TABELAS                                                     */
+        /* ========================================================= */
+
+        /* Permite rolagem horizontal em tabelas muito largas. */
+        .tabela-container {
+            overflow-x: auto;
+            margin: 20px 0;
+        }
+
+        /* Define a estrutura visual das tabelas. */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 650px;
+        }
+
+        /* Define células da tabela. */
+        th,
+        td {
+            padding: 14px;
+            border: 1px solid #dbe2ea;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        /* Define o cabeçalho da tabela. */
+        th {
+            background: #1e3a8a;
+            color: white;
+        }
+
+        /* Cria efeito alternado nas linhas. */
+        tr:nth-child(even) {
+            background: #f8fafc;
+        }
+
+        /* ========================================================= */
+        /* LINHA DO TEMPO                                             */
+        /* ========================================================= */
+
+        /* Cria a estrutura vertical da linha do tempo. */
+        .timeline {
+            border-left: 4px solid #d4af37;
+            padding-left: 25px;
+            margin: 25px 0;
+        }
+
+        /* Define cada acontecimento da linha do tempo. */
+        .evento {
+            position: relative;
+            margin-bottom: 25px;
+        }
+
+        /* Cria a bolinha da linha do tempo. */
+        .evento::before {
+            content: "";
+            position: absolute;
+            left: -36px;
+            top: 5px;
+            width: 14px;
+            height: 14px;
+            background: #1e3a8a;
+            border: 3px solid white;
+            border-radius: 50%;
+            box-shadow: 0 0 0 2px #d4af37;
+        }
+
+        /* Destaca a data do evento. */
+        .data {
+            font-weight: bold;
+            color: #1e3a8a;
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        /* ========================================================= */
+        /* CONCEITOS                                                   */
+        /* ========================================================= */
+
+        /* Organiza os conceitos em uma grade. */
+        .conceitos {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+
+        /* Cria o cartão individual de conceito. */
+        .conceito {
+            background: #f8fafc;
+            padding: 18px;
+            border-radius: 10px;
+            border: 1px solid #e2e8f0;
+        }
+
+        /* Destaca o nome do conceito. */
+        .conceito strong {
+            color: #1e3a8a;
+            display: block;
+            margin-bottom: 7px;
+        }
+
+        /* ========================================================= */
+        /* QUESTÕES                                                    */
+        /* ========================================================= */
+
+        /* Define a aparência de cada questão. */
+        .questao {
+            background: #f8fafc;
+            padding: 25px;
+            margin: 20px 0;
+            border-radius: 10px;
+            border: 1px solid #dbe2ea;
+        }
+
+        /* Define o texto das alternativas. */
+        .alternativas {
+            margin-top: 15px;
+        }
+
+        /* Cria espaçamento nas alternativas. */
+        .alternativas p {
+            margin-bottom: 8px;
+            text-align: left;
+        }
+
+        /* Define o botão de resposta. */
+        .btn-resposta {
+            background: #1e3a8a;
+            color: white;
+            border: none;
+            padding: 11px 18px;
+            border-radius: 7px;
+            cursor: pointer;
+            margin-top: 15px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        /* Cria efeito no botão. */
+        .btn-resposta:hover {
+            background: #d4af37;
+            color: #111827;
+        }
+
+        /* Esconde inicialmente o gabarito. */
+        .resposta {
+            display: none;
+            background: #ecfdf5;
+            border-left: 5px solid #16a34a;
+            padding: 18px;
+            margin-top: 15px;
+            border-radius: 8px;
+        }
+
+        /* ========================================================= */
+        /* BLOCO DO PROFESSOR                                         */
+        /* ========================================================= */
+
+        /* Cria o cartão especial para orientação docente. */
+        .professor {
+            background: #111827;
+            color: #f8fafc;
+            padding: 30px;
+            border-radius: 14px;
+            margin-bottom: 28px;
+        }
+
+        /* Define o título do bloco do professor. */
+        .professor h2 {
+            color: #d4af37;
+        }
+
+        /* Define os subtítulos dentro do bloco. */
+        .professor h3 {
+            color: #93c5fd;
+            margin-top: 22px;
+        }
+
+        /* ========================================================= */
+        /* NAVEGAÇÃO ENTRE AULAS                                      */
+        /* ========================================================= */
+
+        /* Organiza os botões de navegação. */
+        .navegacao {
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+            margin: 40px 0;
+        }
+
+        /* Estiliza os botões de navegação. */
+        .btn-nav {
+            display: inline-block;
+            text-decoration: none;
+            background: #1e3a8a;
+            color: white;
+            padding: 14px 22px;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        /* Cria efeito nos botões de navegação. */
+        .btn-nav:hover {
+            background: #d4af37;
+            color: #111827;
+        }
+
+        /* ========================================================= */
+        /* BOTÃO VOLTAR AO TOPO                                       */
+        /* ========================================================= */
+
+        /* Define o botão flutuante de voltar ao topo. */
+        #topo {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            background: #1e3a8a;
+            color: white;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Muda a cor do botão ao passar o mouse. */
+        #topo:hover {
+            background: #d4af37;
+            color: #111827;
+        }
+
+        /* ========================================================= */
+        /* RODAPÉ                                                      */
+        /* ========================================================= */
+
+        /* Define o rodapé do curso. */
+        footer {
+            background: #0f172a;
+            color: #cbd5e1;
+            text-align: center;
+            padding: 35px 20px;
+            margin-top: 50px;
+        }
+
+        /* Destaca o nome do professor no rodapé. */
+        footer strong {
+            color: #d4af37;
+        }
+
+        /* ========================================================= */
+        /* RESPONSIVIDADE                                              */
+        /* ========================================================= */
+
+        /* Ajusta o site para telas menores. */
+        @media (max-width: 800px) {
+
+            /* Reduz o tamanho do título principal. */
+            header h1 {
+                font-size: 31px;
+            }
+
+            /* Coloca os blocos da trilogia um abaixo do outro. */
+            .trilogia {
+                grid-template-columns: 1fr;
+            }
+
+            /* Coloca os conceitos em uma coluna. */
+            .conceitos {
+                grid-template-columns: 1fr;
+            }
+
+            /* Reduz o espaçamento dos cartões. */
+            .card {
+                padding: 22px;
+            }
+
+            /* Organiza os botões de navegação verticalmente. */
+            .navegacao {
+                flex-direction: column;
+            }
+
+            /* Faz os botões ocuparem toda a largura. */
+            .btn-nav {
+                text-align: center;
+            }
+
+            /* Permite que o menu ocupe várias linhas. */
+            nav a {
+                font-size: 12px;
+                padding: 7px 9px;
+            }
+        }
+    </style>
+</head>
+
+<body id="inicio">
+
+    <!-- ========================================================= -->
+    <!-- CABEÇALHO                                                   -->
+    <!-- ========================================================= -->
+
+    <header>
+
+        <!-- Mostra a numeração da aula. -->
+        <div class="numero-aula">
+            1.14
+        </div>
+
+        <!-- Mostra o título principal da aula. -->
+        <h1>
+            O Renascimento Comercial e Urbano
+        </h1>
+
+        <!-- Apresenta o objetivo geral da aula. -->
+        <p>
+            A expansão das atividades comerciais, o crescimento das cidades
+            e as transformações econômicas e sociais da Europa Ocidental
+            entre os séculos XI e XIV.
+        </p>
+
+    </header>
+
+    <!-- ========================================================= -->
+    <!-- MENU                                                        -->
+    <!-- ========================================================= -->
+
+    <nav>
+
+        <!-- Lista os principais pontos de navegação. -->
+        <ul>
+
+            <!-- Link para o começo. -->
+            <li><a href="#comeco">O Começo</a></li>
+
+            <!-- Link para o desenvolvimento. -->
+            <li><a href="#desenvolvimento">Desenvolvimento</a></li>
+
+            <!-- Link para o legado. -->
+            <li><a href="#legado">Legado</a></li>
+
+            <!-- Link para a linha do tempo. -->
+            <li><a href="#cronologia">Cronologia</a></li>
+
+            <!-- Link para os conceitos. -->
+            <li><a href="#conceitos">Conceitos</a></li>
+
+            <!-- Link para a orientação docente. -->
+            <li><a href="#professor">Professor</a></li>
+
+            <!-- Link para as questões. -->
+            <li><a href="#questoes">Questões</a></li>
+
+        </ul>
+
+    </nav>
+
+    <!-- ========================================================= -->
+    <!-- CONTEÚDO PRINCIPAL                                          -->
+    <!-- ========================================================= -->
+
+    <main>
+
+        <!-- ===================================================== -->
+        <!-- INTRODUÇÃO                                             -->
+        <!-- ===================================================== -->
+
+        <section class="card">
+
+            <!-- Título da introdução. -->
+            <h2>Introdução</h2>
+
+            <!-- Primeiro parágrafo. -->
+            <p>
+                O chamado <strong>Renascimento Comercial e Urbano</strong>
+                corresponde ao conjunto de transformações que marcou
+                principalmente a Europa Ocidental a partir dos séculos XI
+                e XII, quando diferentes regiões passaram por expansão
+                agrícola, crescimento demográfico, intensificação das trocas
+                e crescimento ou reorganização de centros urbanos.
+            </p>
+
+            <!-- Segundo parágrafo. -->
+            <p>
+                A expressão tradicional “Renascimento Comercial e Urbano”
+                é bastante utilizada no ensino de História. Entretanto,
+                é importante evitar a ideia de que o comércio e as cidades
+                simplesmente desapareceram durante a Alta Idade Média para
+                depois reaparecerem. Havia atividades comerciais e centros
+                urbanos antes desse processo. O que ocorreu foi uma
+                <strong>expansão, transformação e rearticulação</strong>
+                dessas atividades em várias partes da Europa.
+            </p>
+
+            <!-- Caixa de atenção historiográfica. -->
+            <div class="atencao">
+
+                <strong>⚠️ Atenção historiográfica:</strong>
+
+                <p>
+                    O crescimento comercial e urbano não foi igual em toda
+                    a Europa, nem ocorreu de maneira linear. Ele esteve
+                    relacionado a diferentes fatores: aumento da produção
+                    agrícola, crescimento populacional, segurança relativa
+                    de determinadas rotas, feiras, mercados, navegação,
+                    relações políticas e expansão das redes de circulação.
+                </p>
+
+            </div>
+
+            <!-- Apresenta a estrutura da trilogia. -->
+            <div class="trilogia">
+
+                <!-- Primeiro bloco. -->
+                <div>
+
+                    <h3>I — O COMEÇO</h3>
+
+                    <p>
+                        Expansão agrícola, crescimento populacional,
+                        circulação de mercadorias e crescimento dos
+                        centros urbanos.
+                    </p>
+
+                </div>
+
+                <!-- Segundo bloco. -->
+                <div>
+
+                    <h3>II — O DESENVOLVIMENTO</h3>
+
+                    <p>
+                        Feiras, rotas comerciais, corporações de ofício,
+                        burguesia, moedas, crédito, bancos e autonomia
+                        urbana.
+                    </p>
+
+                </div>
+
+                <!-- Terceiro bloco. -->
+                <div>
+
+                    <h3>III — O LEGADO</h3>
+
+                    <p>
+                        Transformações econômicas e sociais de longa duração
+                        e formação de importantes bases da sociedade urbana
+                        europeia posterior.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- I — O COMEÇO                                           -->
+        <!-- ===================================================== -->
+
+        <section class="card" id="comeco">
+
+            <!-- Título da primeira parte. -->
+            <h2>I — O COMEÇO: as bases da expansão</h2>
+
+            <!-- Subtítulo. -->
+            <h3>1. A transformação da Europa Ocidental</h3>
+
+            <!-- Texto explicativo. -->
+            <p>
+                A partir aproximadamente do século XI, várias regiões da
+                Europa Ocidental experimentaram crescimento da produção
+                agrícola e da população. A ampliação das áreas cultivadas,
+                combinada a determinadas inovações técnicas, contribuiu
+                para aumentar a capacidade produtiva em diferentes regiões.
+            </p>
+
+            <!-- Lista de transformações agrícolas. -->
+            <ul>
+
+                <li>
+                    uso mais amplo do <strong>arado pesado</strong> em
+                    determinadas regiões;
+                </li>
+
+                <li>
+                    aperfeiçoamento do uso da força animal, incluindo a
+                    <strong>coleira de ombros</strong> para cavalos;
+                </li>
+
+                <li>
+                    expansão da <strong>rotação trienal</strong> em áreas
+                    onde suas condições eram favoráveis;
+                </li>
+
+                <li>
+                    ampliação de áreas cultivadas;
+                </li>
+
+                <li>
+                    utilização de <strong>moinhos de água e de vento</strong>
+                    em diferentes regiões.
+                </li>
+
+            </ul>
+
+            <!-- Destaque sobre as inovações. -->
+            <div class="destaque">
+
+                <strong>Importante:</strong>
+
+                <p>
+                    Essas transformações não aconteceram de maneira
+                    simultânea ou uniforme em toda a Europa. O professor
+                    deve trabalhar com a ideia de mudanças graduais e
+                    regionalmente diferentes.
+                </p>
+
+            </div>
+
+            <!-- Subtítulo. -->
+            <h3>2. Produção agrícola e excedentes</h3>
+
+            <!-- Explicação. -->
+            <p>
+                Quando determinadas comunidades conseguiam produzir mais
+                alimentos do que necessitavam imediatamente para sua
+                sobrevivência, parte dessa produção podia ser destinada
+                às trocas. O excedente agrícola não explica sozinho o
+                crescimento comercial, mas criou condições para uma maior
+                circulação de produtos.
+            </p>
+
+            <!-- Lista de produtos. -->
+            <ul>
+
+                <li>cereais;</li>
+
+                <li>vinho;</li>
+
+                <li>sal;</li>
+
+                <li>lã;</li>
+
+                <li>metais;</li>
+
+                <li>tecidos;</li>
+
+                <li>produtos alimentícios regionais.</li>
+
+            </ul>
+
+            <!-- Subtítulo. -->
+            <h3>3. Crescimento populacional</h3>
+
+            <!-- Explicação. -->
+            <p>
+                A expansão agrícola esteve relacionada ao crescimento
+                populacional em várias regiões europeias entre os séculos
+                XI e XIII. Mais pessoas significavam também maior demanda
+                por alimentos, ferramentas, roupas, moradias e outros bens.
+            </p>
+
+            <!-- Relação causal. -->
+            <div class="destaque">
+
+                <strong>Relação histórica:</strong>
+
+                <p>
+                    Produção agrícola → crescimento populacional →
+                    aumento da demanda → expansão de mercados →
+                    crescimento das atividades comerciais e urbanas.
+                </p>
+
+            </div>
+
+            <!-- Subtítulo. -->
+            <h3>4. Os caminhos do comércio</h3>
+
+            <!-- Explicação. -->
+            <p>
+                O comércio europeu medieval utilizava diferentes rotas.
+                Algumas conectavam o Mediterrâneo ao interior europeu;
+                outras ligavam o norte da Europa ao Mar do Norte e ao
+                Báltico. Havia também rotas terrestres e grandes feiras.
+            </p>
+
+            <!-- Lista das regiões. -->
+            <ul>
+
+                <li>
+                    <strong>Mediterrâneo:</strong> cidades como Veneza,
+                    Gênova e Pisa participaram intensamente do comércio
+                    marítimo.
+                </li>
+
+                <li>
+                    <strong>Flandres:</strong> importante região de produção
+                    e comércio de tecidos.
+                </li>
+
+                <li>
+                    <strong>Feiras de Champagne:</strong> conectavam
+                    comerciantes de diferentes regiões europeias.
+                </li>
+
+                <li>
+                    <strong>Mar do Norte e Báltico:</strong> desenvolveram
+                    redes comerciais posteriormente associadas à
+                    Liga Hanseática.
+                </li>
+
+            </ul>
+
+            <!-- Subtítulo. -->
+            <h3>5. As cidades e os burgos</h3>
+
+            <!-- Explicação. -->
+            <p>
+                O crescimento das trocas favoreceu a expansão de antigas
+                cidades e o desenvolvimento de novos núcleos urbanos.
+                Muitos desses centros eram chamados de <strong>burgos</strong>.
+            </p>
+
+            <p>
+                Os habitantes ligados às atividades urbanas passaram a
+                desenvolver formas próprias de organização econômica,
+                social e política.
+            </p>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- II — DESENVOLVIMENTO                                    -->
+        <!-- ===================================================== -->
+
+        <section class="card" id="desenvolvimento">
+
+            <!-- Título da segunda parte. -->
+            <h2>II — O DESENVOLVIMENTO: comércio, cidades e novas relações sociais</h2>
+
+            <!-- Subtítulo. -->
+            <h3>1. As grandes áreas comerciais</h3>
+
+            <!-- Texto. -->
+            <p>
+                A expansão comercial medieval não formava um único mercado.
+                Existiam diferentes circuitos que se conectavam entre si.
+                Mercadores, navegadores e caravanas transportavam produtos
+                entre regiões distantes.
+            </p>
+
+            <!-- Tabela comercial. -->
+            <div class="tabela-container">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Região</th>
+
+                            <th>Características</th>
+
+                            <th>Produtos e atividades</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+
+                            <td>Mediterrâneo</td>
+
+                            <td>
+                                Forte participação de cidades marítimas
+                                italianas.
+                            </td>
+
+                            <td>
+                                Especiarias, tecidos, metais e produtos
+                                orientais.
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Flandres</td>
+
+                            <td>
+                                Centro importante da produção e circulação
+                                de tecidos.
+                            </td>
+
+                            <td>
+                                Lã e tecidos.
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Champagne</td>
+
+                            <td>
+                                Grande circuito de feiras.
+                            </td>
+
+                            <td>
+                                Troca de mercadorias entre diferentes
+                                regiões.
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Mar do Norte e Báltico</td>
+
+                            <td>
+                                Rede comercial envolvendo cidades do
+                                norte europeu.
+                            </td>
+
+                            <td>
+                                Cereais, madeira, peles, sal e outros
+                                produtos.
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+            <!-- Subtítulo. -->
+            <h3>2. As feiras medievais</h3>
+
+            <!-- Explicação. -->
+            <p>
+                As feiras eram espaços de encontro entre vendedores,
+                compradores e comerciantes. Algumas possuíam importância
+                regional e outras alcançavam circuitos internacionais.
+            </p>
+
+            <p>
+                As famosas <strong>feiras de Champagne</strong>, na atual
+                França, constituíram um importante ponto de ligação entre
+                diferentes circuitos comerciais europeus durante parte da
+                Baixa Idade Média.
+            </p>
+
+            <!-- Subtítulo. -->
+            <h3>3. A burguesia medieval</h3>
+
+            <!-- Explicação. -->
+            <p>
+                O crescimento das cidades contribuiu para o desenvolvimento
+                de grupos sociais urbanos. Entre eles estavam comerciantes,
+                artesãos e outros profissionais ligados à vida urbana.
+            </p>
+
+            <div class="atencao">
+
+                <strong>Cuidado com o conceito:</strong>
+
+                <p>
+                    A palavra <strong>burguesia</strong> não deve ser
+                    utilizada automaticamente com o mesmo significado
+                    que assumirá durante a Revolução Industrial e o
+                    capitalismo contemporâneo. Na sociedade medieval,
+                    designava grupos ligados à vida dos burgos, especialmente
+                    comerciantes e artesãos urbanos.
+                </p>
+
+            </div>
+
+            <!-- Subtítulo. -->
+            <h3>4. As corporações de ofício</h3>
+
+            <!-- Explicação. -->
+            <p>
+                Muitos artesãos organizaram-se em associações profissionais
+                conhecidas como <strong>corporações de ofício</strong>.
+                Elas podiam estabelecer regras sobre formação profissional,
+                qualidade dos produtos, preços, acesso ao ofício e relações
+                entre mestres, oficiais e aprendizes.
+            </p>
+
+            <!-- Estrutura profissional. -->
+            <ul>
+
+                <li>
+                    <strong>Mestre:</strong> artesão que possuía oficina e
+                    experiência profissional.
+                </li>
+
+                <li>
+                    <strong>Oficial:</strong> trabalhador especializado
+                    que já havia concluído parte da formação.
+                </li>
+
+                <li>
+                    <strong>Aprendiz:</strong> jovem em processo de formação
+                    profissional.
+                </li>
+
+            </ul>
+
+            <!-- Subtítulo. -->
+            <h3>5. As comunas e a autonomia urbana</h3>
+
+            <!-- Explicação. -->
+            <p>
+                Em algumas cidades, grupos urbanos buscaram ampliar sua
+                autonomia diante de senhores feudais e outras autoridades.
+                Surgiram diferentes formas de organização municipal,
+                frequentemente chamadas de <strong>comunas</strong>.
+            </p>
+
+            <p>
+                Essas experiências não foram iguais em todas as cidades,
+                mas contribuíram para o desenvolvimento de instituições
+                urbanas e para a participação política de determinados
+                grupos das cidades.
+            </p>
+
+            <!-- Subtítulo. -->
+            <h3>6. Dinheiro, crédito e bancos</h3>
+
+            <!-- Explicação. -->
+            <p>
+                A intensificação das trocas aumentou a importância da moeda
+                e de mecanismos de crédito. Comerciantes precisavam transportar
+                valores, financiar viagens e realizar pagamentos entre
+                cidades diferentes.
+            </p>
+
+            <p>
+                Nesse contexto desenvolveram-se práticas financeiras como
+                empréstimos, sociedades comerciais e formas de crédito.
+                As cidades italianas tiveram papel importante nesse processo.
+            </p>
+
+            <!-- Conceito de letra de câmbio. -->
+            <div class="destaque">
+
+                <strong>Letra de câmbio:</strong>
+
+                <p>
+                    Instrumento utilizado em operações comerciais e
+                    financeiras que facilitava pagamentos entre diferentes
+                    lugares sem a necessidade de transportar grandes
+                    quantidades de moeda metálica.
+                </p>
+
+            </div>
+
+            <!-- Subtítulo. -->
+            <h3>7. A questão da usura</h3>
+
+            <!-- Explicação. -->
+            <p>
+                A expansão do crédito também criou tensões religiosas e
+                morais. Em diversos contextos cristãos medievais,
+                determinados empréstimos com cobrança de juros eram
+                associados ao conceito de <strong>usura</strong> e
+                condenados por autoridades religiosas.
+            </p>
+
+            <p>
+                Na prática, entretanto, as necessidades comerciais fizeram
+                surgir mecanismos cada vez mais complexos de crédito e
+                financiamento.
+            </p>
+
+            <!-- Subtítulo. -->
+            <h3>8. A monetarização da economia</h3>
+
+            <!-- Explicação. -->
+            <p>
+                O crescimento das trocas favoreceu a utilização mais ampla
+                da moeda em determinadas regiões. Obrigações anteriormente
+                realizadas em produtos ou serviços podiam, em alguns casos,
+                ser convertidas em pagamentos monetários.
+            </p>
+
+            <p>
+                Isso não significa que a economia medieval tenha deixado de
+                ser rural ou que a economia monetária tenha substituído
+                imediatamente todas as formas de pagamento em produtos.
+                A mudança foi gradual e regionalmente desigual.
+            </p>
+
+            <!-- Subtítulo. -->
+            <h3>9. A Liga Hanseática</h3>
+
+            <!-- Explicação. -->
+            <p>
+                No norte da Europa, diversas cidades comerciais estabeleceram
+                relações de cooperação que ficaram associadas à
+                <strong>Liga Hanseática</strong>. A rede atuou principalmente
+                nos mares do Norte e Báltico e facilitou o comércio entre
+                cidades e regiões.
+            </p>
+
+            <!-- Subtítulo. -->
+            <h3>10. As cidades italianas</h3>
+
+            <!-- Explicação. -->
+            <p>
+                Cidades como Veneza e Gênova destacaram-se nas rotas do
+                Mediterrâneo. Sua localização e suas atividades marítimas
+                favoreceram o desenvolvimento de poderosos grupos mercantis.
+            </p>
+
+            <p>
+                Essas cidades mantiveram relações comerciais com diferentes
+                sociedades mediterrâneas, cristãs e muçulmanas, mostrando
+                que a história medieval também foi marcada por contatos,
+                negociações e intercâmbios, além de conflitos.
+            </p>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- III — LEGADO                                            -->
+        <!-- ===================================================== -->
+
+        <section class="card" id="legado">
+
+            <!-- Título da terceira parte. -->
+            <h2>III — O LEGADO E O MUNDO ATUAL</h2>
+
+            <!-- Subtítulo. -->
+            <h3>1. A cidade como espaço econômico</h3>
+
+            <!-- Explicação. -->
+            <p>
+                O crescimento urbano transformou as cidades em importantes
+                centros de comércio, produção artesanal, circulação de
+                pessoas e informações.
+            </p>
+
+            <!-- Subtítulo. -->
+            <h3>2. Novos grupos sociais urbanos</h3>
+
+            <!-- Explicação. -->
+            <p>
+                A expansão das atividades urbanas fortaleceu grupos ligados
+                ao comércio e ao artesanato. A sociedade medieval continuou
+                marcada por fortes hierarquias, mas as cidades criaram
+                experiências sociais diferentes daquelas predominantes no
+                mundo rural.
+            </p>
+
+            <!-- Subtítulo. -->
+            <h3>3. Transformações econômicas de longa duração</h3>
+
+            <!-- Explicação. -->
+            <p>
+                A expansão comercial contribuiu para ampliar o uso da moeda,
+                desenvolver redes mercantis e estimular práticas de crédito
+                e financiamento.
+            </p>
+
+            <p>
+                É importante, porém, não afirmar que o capitalismo moderno
+                já existia plenamente nesse período. O mais adequado é
+                compreender essas transformações como parte de processos
+                históricos de longa duração que contribuíram para mudanças
+                posteriores.
+            </p>
+
+            <!-- Subtítulo. -->
+            <h3>4. Relação com o Renascimento cultural</h3>
+
+            <!-- Explicação. -->
+            <p>
+                O crescimento de determinadas cidades, especialmente na
+                Península Itálica, criou ambientes de riqueza, circulação
+                cultural e patronato que posteriormente teriam grande
+                importância para o Renascimento.
+            </p>
+
+            <div class="atencao">
+
+                <strong>Evite uma explicação determinista:</strong>
+
+                <p>
+                    Não é correto afirmar simplesmente que “o Renascimento
+                    nasceu porque o comércio cresceu”. O Renascimento foi
+                    resultado de múltiplos processos econômicos, sociais,
+                    políticos, culturais e intelectuais.
+                </p>
+
+            </div>
+
+            <!-- Subtítulo. -->
+            <h3>5. Relação com a formação dos Estados</h3>
+
+            <!-- Explicação. -->
+            <p>
+                O crescimento das cidades e das atividades econômicas também
+                se relacionou às transformações políticas que ocorreriam
+                posteriormente na Europa. Monarquias ampliaram sua capacidade
+                administrativa e fiscal, enquanto cidades e grupos mercantis
+                passaram a ter importância crescente.
+            </p>
+
+            <!-- Subtítulo. -->
+            <h3>6. Conexão com o Brasil</h3>
+
+            <div class="brasil">
+
+                <strong>Da Europa medieval à expansão portuguesa:</strong>
+
+                <p>
+                    As transformações comerciais e urbanas da Europa
+                    Ocidental fazem parte do contexto de longa duração que
+                    antecede a expansão marítima portuguesa. O fortalecimento
+                    das atividades mercantis, das monarquias e das redes
+                    comerciais ajudou a criar condições históricas para os
+                    processos que serão estudados nas próximas aulas.
+                </p>
+
+                <p>
+                    Entretanto, é importante separar os períodos: a expansão
+                    comercial medieval não deve ser confundida diretamente
+                    com a expansão marítima dos séculos XV e XVI.
+                </p>
+
+            </div>
+
+            <!-- Subtítulo. -->
+            <h3>7. O mundo atual</h3>
+
+            <!-- Explicação. -->
+            <p>
+                Muitas características da vida contemporânea podem ser
+                analisadas em perspectiva histórica a partir dessas
+                transformações: mercados urbanos, circulação de mercadorias,
+                redes comerciais, instituições financeiras, especialização
+                profissional e importância econômica das cidades.
+            </p>
+
+            <p>
+                A principal contribuição dessa perspectiva é perceber que
+                as estruturas econômicas atuais possuem uma história e
+                foram construídas por transformações sucessivas.
+            </p>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- CRONOLOGIA                                              -->
+        <!-- ===================================================== -->
+
+        <section class="card" id="cronologia">
+
+            <!-- Título da cronologia. -->
+            <h2>Linha do Tempo</h2>
+
+            <!-- Estrutura da linha do tempo. -->
+            <div class="timeline">
+
+                <!-- Evento 1. -->
+                <div class="evento">
+
+                    <span class="data">c. século XI</span>
+
+                    <p>
+                        Intensificação da expansão agrícola e crescimento
+                        populacional em várias regiões da Europa Ocidental.
+                    </p>
+
+                </div>
+
+                <!-- Evento 2. -->
+                <div class="evento">
+
+                    <span class="data">Séculos XI–XIII</span>
+
+                    <p>
+                        Crescimento de mercados, feiras, atividades
+                        comerciais e centros urbanos.
+                    </p>
+
+                </div>
+
+                <!-- Evento 3. -->
+                <div class="evento">
+
+                    <span class="data">Século XII</span>
+
+                    <p>
+                        Expansão de importantes circuitos comerciais e
+                        fortalecimento das feiras de Champagne.
+                    </p>
+
+                </div>
+
+                <!-- Evento 4. -->
+                <div class="evento">
+
+                    <span class="data">Séculos XII–XIII</span>
+
+                    <p>
+                        Desenvolvimento de corporações de ofício,
+                        comunas e diferentes formas de organização urbana.
+                    </p>
+
+                </div>
+
+                <!-- Evento 5. -->
+                <div class="evento">
+
+                    <span class="data">Séculos XIII–XIV</span>
+
+                    <p>
+                        Fortalecimento de redes comerciais mediterrâneas
+                        e do norte europeu.
+                    </p>
+
+                </div>
+
+                <!-- Evento 6. -->
+                <div class="evento">
+
+                    <span class="data">Século XIV</span>
+
+                    <p>
+                        Crises demográficas e econômicas, incluindo a
+                        Peste Negra, alteram profundamente a dinâmica
+                        econômica e social europeia.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- CONCEITOS                                               -->
+        <!-- ===================================================== -->
+
+        <section class="card" id="conceitos">
+
+            <!-- Título. -->
+            <h2>Conceitos Fundamentais</h2>
+
+            <!-- Grade de conceitos. -->
+            <div class="conceitos">
+
+                <!-- Conceito 1. -->
+                <div class="conceito">
+
+                    <strong>Burgo</strong>
+
+                    <p>
+                        Núcleo urbano medieval associado ao crescimento
+                        das atividades comerciais e artesanais.
+                    </p>
+
+                </div>
+
+                <!-- Conceito 2. -->
+                <div class="conceito">
+
+                    <strong>Burguesia</strong>
+
+                    <p>
+                        Grupos sociais ligados à vida urbana, especialmente
+                        comerciantes e artesãos, no contexto medieval.
+                    </p>
+
+                </div>
+
+                <!-- Conceito 3. -->
+                <div class="conceito">
+
+                    <strong>Feira</strong>
+
+                    <p>
+                        Espaço ou evento periódico destinado à troca e
+                        comercialização de mercadorias.
+                    </p>
+
+                </div>
+
+                <!-- Conceito 4. -->
+                <div class="conceito">
+
+                    <strong>Corporação de ofício</strong>
+
+                    <p>
+                        Associação profissional que organizava determinados
+                        ofícios urbanos.
+                    </p>
+
+                </div>
+
+                <!-- Conceito 5. -->
+                <div class="conceito">
+
+                    <strong>Comuna</strong>
+
+                    <p>
+                        Forma de organização urbana que podia proporcionar
+                        maior autonomia política às cidades.
+                    </p>
+
+                </div>
+
+                <!-- Conceito 6. -->
+                <div class="conceito">
+
+                    <strong>Monetarização</strong>
+
+                    <p>
+                        Ampliação da utilização da moeda nas relações
+                        econômicas.
+                    </p>
+
+                </div>
+
+                <!-- Conceito 7. -->
+                <div class="conceito">
+
+                    <strong>Mercantilização</strong>
+
+                    <p>
+                        Ampliação da produção e circulação de bens destinados
+                        às trocas e aos mercados.
+                    </p>
+
+                </div>
+
+                <!-- Conceito 8. -->
+                <div class="conceito">
+
+                    <strong>Letra de câmbio</strong>
+
+                    <p>
+                        Instrumento financeiro utilizado para facilitar
+                        pagamentos e operações comerciais.
+                    </p>
+
+                </div>
+
+                <!-- Conceito 9. -->
+                <div class="conceito">
+
+                    <strong>Usura</strong>
+
+                    <p>
+                        Conceito historicamente associado à cobrança de juros
+                        considerada abusiva ou moralmente condenável em
+                        determinados contextos.
+                    </p>
+
+                </div>
+
+                <!-- Conceito 10. -->
+                <div class="conceito">
+
+                    <strong>Liga Hanseática</strong>
+
+                    <p>
+                        Rede de cidades comerciais do norte europeu que
+                        atuou especialmente nos mares do Norte e Báltico.
+                    </p>
+
+                </div>
+
+                <!-- Conceito 11. -->
+                <div class="conceito">
+
+                    <strong>Rotas comerciais</strong>
+
+                    <p>
+                        Caminhos terrestres e marítimos utilizados para
+                        transportar pessoas e mercadorias.
+                    </p>
+
+                </div>
+
+                <!-- Conceito 12. -->
+                <div class="conceito">
+
+                    <strong>Crédito</strong>
+
+                    <p>
+                        Relação econômica baseada na possibilidade de
+                        pagamento futuro de uma obrigação.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- CAUSAS E CONSEQUÊNCIAS                                  -->
+        <!-- ===================================================== -->
+
+        <section class="card">
+
+            <!-- Título. -->
+            <h2>Causas, Transformações e Consequências</h2>
+
+            <!-- Tabela. -->
+            <div class="tabela-container">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Processo</th>
+
+                            <th>Transformação</th>
+
+                            <th>Consequências</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+
+                            <td>Expansão agrícola</td>
+
+                            <td>
+                                Maior produção em determinadas regiões.
+                            </td>
+
+                            <td>
+                                Aumento dos excedentes e das trocas.
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Crescimento populacional</td>
+
+                            <td>
+                                Ampliação da demanda.
+                            </td>
+
+                            <td>
+                                Expansão de mercados.
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Expansão comercial</td>
+
+                            <td>
+                                Intensificação das rotas.
+                            </td>
+
+                            <td>
+                                Fortalecimento de comerciantes.
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Crescimento urbano</td>
+
+                            <td>
+                                Expansão dos burgos.
+                            </td>
+
+                            <td>
+                                Novas formas de organização social.
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Crédito e moeda</td>
+
+                            <td>
+                                Maior complexidade das transações.
+                            </td>
+
+                            <td>
+                                Desenvolvimento de práticas financeiras.
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Corporações de ofício</td>
+
+                            <td>
+                                Organização profissional dos artesãos.
+                            </td>
+
+                            <td>
+                                Regulamentação de atividades urbanas.
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- O QUE O PROFESSOR PRECISA DOMINAR                       -->
+        <!-- ===================================================== -->
+
+        <section class="professor" id="professor">
+
+            <!-- Título. -->
+            <h2>O que o professor precisa dominar</h2>
+
+            <!-- Primeiro ponto. -->
+            <h3>1. Não ensinar o processo como uma ruptura absoluta</h3>
+
+            <p>
+                O professor deve mostrar que comércio e cidades não
+                desapareceram durante a Alta Idade Média. O processo dos
+                séculos XI a XIII representa expansão, crescimento e
+                reorganização de atividades que possuíam antecedentes.
+            </p>
+
+            <!-- Segundo ponto. -->
+            <h3>2. Relacionar campo e cidade</h3>
+
+            <p>
+                O crescimento urbano dependia também da produção rural.
+                Campo e cidade faziam parte de uma rede econômica
+                interdependente.
+            </p>
+
+            <!-- Terceiro ponto. -->
+            <h3>3. Evitar o determinismo</h3>
+
+            <p>
+                Não apresentar uma única causa para o crescimento comercial.
+                O processo resultou da combinação de fatores econômicos,
+                demográficos, tecnológicos, políticos e geográficos.
+            </p>
+
+            <!-- Quarto ponto. -->
+            <h3>4. Diferenciar burguesia medieval e burguesia moderna</h3>
+
+            <p>
+                O significado histórico do termo mudou. O professor deve
+                evitar transportar automaticamente o conceito de burguesia
+                industrial dos séculos XVIII e XIX para a sociedade medieval.
+            </p>
+
+            <!-- Quinto ponto. -->
+            <h3>5. Explicar as corporações de ofício</h3>
+
+            <p>
+                Elas não eram simplesmente “sindicatos medievais”. Eram
+                instituições que podiam controlar formação profissional,
+                produção, qualidade, acesso ao ofício e relações econômicas.
+            </p>
+
+            <!-- Sexto ponto. -->
+            <h3>6. Relacionar o tema com as próximas aulas</h3>
+
+            <p>
+                Este capítulo prepara o aluno para compreender a formação
+                das monarquias nacionais, o Renascimento, a expansão
+                marítimo-comercial e o desenvolvimento de novas formas
+                econômicas na Europa.
+            </p>
+
+            <!-- Sétimo ponto. -->
+            <h3>7. Trabalhar permanências e mudanças</h3>
+
+            <p>
+                Mesmo com o crescimento comercial, a sociedade continuou
+                majoritariamente rural e fortemente hierarquizada durante
+                grande parte do período.
+            </p>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- O QUE COLOCAR NA LOUSA                                  -->
+        <!-- ===================================================== -->
+
+        <section class="card">
+
+            <!-- Título. -->
+            <h2>O que colocar na lousa</h2>
+
+            <!-- Conteúdo da lousa. -->
+            <div class="destaque">
+
+                <p><strong>RENASCIMENTO COMERCIAL E URBANO</strong></p>
+
+                <p>
+                    Séculos XI–XIII
+                </p>
+
+                <p>
+                    Expansão agrícola
+                    ↓
+                    Crescimento populacional
+                    ↓
+                    Excedentes
+                    ↓
+                    Feiras e mercados
+                    ↓
+                    Expansão comercial
+                    ↓
+                    Crescimento urbano
+                    ↓
+                    Burguesia + artesãos
+                    ↓
+                    Corporações de ofício
+                    ↓
+                    Moeda + crédito
+                    ↓
+                    Transformações sociais e econômicas
+                </p>
+
+            </div>
+
+            <!-- Frase para memorização. -->
+            <h3>Frase-chave para o aluno</h3>
+
+            <p>
+                <strong>
+                    “A expansão agrícola criou condições para o crescimento
+                    populacional e comercial, enquanto as cidades se
+                    transformaram em importantes centros de produção,
+                    circulação e poder.”
+                </strong>
+            </p>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- BNCC                                                     -->
+        <!-- ===================================================== -->
+
+        <section class="card">
+
+            <!-- Título. -->
+            <h2>BNCC — Possíveis articulações</h2>
+
+            <!-- Explicação. -->
+            <p>
+                Este tema pode ser articulado principalmente com habilidades
+                de História que trabalham organização social, trabalho,
+                circulação, transformações econômicas e relações entre
+                diferentes sociedades medievais.
+            </p>
+
+            <!-- Lista. -->
+            <ul>
+
+                <li>
+                    <strong>EF06HI16</strong> — análise das dinâmicas de
+                    abastecimento, formas de organização do trabalho e vida
+                    social em diferentes sociedades e períodos.
+                </li>
+
+                <li>
+                    <strong>EF06HI15</strong> — relações entre diferentes
+                    sociedades e circulação no espaço mediterrânico.
+                </li>
+
+                <li>
+                    Articulação interdisciplinar com Geografia para discutir
+                    redes, circulação, território, cidades e comércio.
+                </li>
+
+            </ul>
+
+            <!-- Observação. -->
+            <div class="atencao">
+
+                <strong>Para planejamento:</strong>
+
+                <p>
+                    A habilidade deve ser selecionada de acordo com o ano
+                    escolar, o currículo adotado pela rede de ensino e o
+                    objetivo específico da aula.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- ENEM, VESTIBULAR E CONCURSOS                            -->
+        <!-- ===================================================== -->
+
+        <section class="card">
+
+            <!-- Título. -->
+            <h2>ENEM • Vestibular • Concursos</h2>
+
+            <!-- Texto. -->
+            <p>
+                Em provas, o assunto costuma aparecer relacionado a
+                transformações econômicas e sociais da Baixa Idade Média.
+                O candidato deve saber interpretar relações entre campo,
+                cidade, comércio, trabalho, circulação e formação de grupos
+                urbanos.
+            </p>
+
+            <!-- Pontos de atenção. -->
+            <ul>
+
+                <li>
+                    relação entre expansão agrícola e crescimento urbano;
+                </li>
+
+                <li>
+                    importância das feiras;
+                </li>
+
+                <li>
+                    formação e atuação das corporações de ofício;
+                </li>
+
+                <li>
+                    características da burguesia medieval;
+                </li>
+
+                <li>
+                    crescimento das relações monetárias;
+                </li>
+
+                <li>
+                    rotas comerciais mediterrâneas e do norte europeu;
+                </li>
+
+                <li>
+                    transformações da sociedade feudal;
+                </li>
+
+                <li>
+                    permanências e mudanças entre campo e cidade.
+                </li>
+
+            </ul>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- QUESTÕES                                                 -->
+        <!-- ===================================================== -->
+
+        <section class="card" id="questoes">
+
+            <!-- Título. -->
+            <h2>Questões de revisão</h2>
+
+            <!-- Questão 1. -->
+            <div class="questao">
+
+                <!-- Enunciado. -->
+                <h3>Questão 1</h3>
+
+                <p>
+                    Entre os séculos XI e XIII, diferentes regiões da Europa
+                    Ocidental passaram por crescimento agrícola, populacional,
+                    comercial e urbano. Considerando esse processo, assinale
+                    a alternativa que melhor explica a relação entre essas
+                    transformações.
+                </p>
+
+                <!-- Alternativas. -->
+                <div class="alternativas">
+
+                    <p>
+                        <strong>A)</strong>
+                        O crescimento urbano ocorreu porque a produção rural
+                        deixou de ter importância econômica.
+                    </p>
+
+                    <p>
+                        <strong>B)</strong>
+                        A expansão agrícola e populacional contribuiu para
+                        ampliar excedentes, mercados e circulação de
+                        mercadorias.
+                    </p>
+
+                    <p>
+                        <strong>C)</strong>
+                        As cidades europeias desapareceram completamente
+                        durante a Alta Idade Média e foram reconstruídas
+                        somente no século XIII.
+                    </p>
+
+                    <p>
+                        <strong>D)</strong>
+                        O crescimento comercial eliminou imediatamente as
+                        relações feudais em toda a Europa.
+                    </p>
+
+                    <p>
+                        <strong>E)</strong>
+                        As atividades comerciais ficaram restritas às áreas
+                        rurais.
+                    </p>
+
+                </div>
+
+                <!-- Botão para mostrar resposta. -->
+                <button class="btn-resposta" onclick="mostrarResposta('resposta1')">
+                    Mostrar gabarito
+                </button>
+
+                <!-- Resposta escondida. -->
+                <div class="resposta" id="resposta1">
+
+                    <strong>Gabarito: B</strong>
+
+                    <p>
+                        O crescimento da produção agrícola e da população
+                        contribuiu, em diferentes regiões, para ampliar a
+                        oferta de produtos e a demanda por mercadorias,
+                        favorecendo mercados, feiras, comércio e crescimento
+                        urbano.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Questão 2. -->
+            <div class="questao">
+
+                <!-- Enunciado. -->
+                <h3>Questão 2</h3>
+
+                <p>
+                    As corporações de ofício constituíram importantes formas
+                    de organização do trabalho urbano medieval. Sua atuação
+                    estava relacionada principalmente:
+                </p>
+
+                <!-- Alternativas. -->
+                <div class="alternativas">
+
+                    <p>
+                        <strong>A)</strong>
+                        à organização profissional dos artesãos e à
+                        regulamentação de aspectos da produção.
+                    </p>
+
+                    <p>
+                        <strong>B)</strong>
+                        à eliminação completa da agricultura europeia.
+                    </p>
+
+                    <p>
+                        <strong>C)</strong>
+                        à formação dos exércitos nacionais modernos.
+                    </p>
+
+                    <p>
+                        <strong>D)</strong>
+                        à proibição de qualquer forma de comércio entre
+                        cidades.
+                    </p>
+
+                    <p>
+                        <strong>E)</strong>
+                        à substituição das cidades por comunidades rurais.
+                    </p>
+
+                </div>
+
+                <!-- Botão para mostrar resposta. -->
+                <button class="btn-resposta" onclick="mostrarResposta('resposta2')">
+                    Mostrar gabarito
+                </button>
+
+                <!-- Resposta escondida. -->
+                <div class="resposta" id="resposta2">
+
+                    <strong>Gabarito: A</strong>
+
+                    <p>
+                        As corporações de ofício reuniam profissionais de
+                        determinados setores e podiam estabelecer regras
+                        relacionadas à formação, qualidade, produção e
+                        exercício das atividades artesanais.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- REVISÃO DE 60 SEGUNDOS                                  -->
+        <!-- ===================================================== -->
+
+        <section class="card">
+
+            <!-- Título. -->
+            <h2>Revisão em 60 segundos</h2>
+
+            <!-- Resumo rápido. -->
+            <p>
+                <strong>Séculos XI–XIII:</strong> expansão agrícola e
+                crescimento populacional.
+            </p>
+
+            <p>
+                <strong>Produção:</strong> aumento de excedentes em
+                determinadas regiões.
+            </p>
+
+            <p>
+                <strong>Comércio:</strong> feiras, mercados e rotas
+                terrestres e marítimas.
+            </p>
+
+            <p>
+                <strong>Cidades:</strong> crescimento e reorganização dos
+                centros urbanos.
+            </p>
+
+            <p>
+                <strong>Sociedade:</strong> fortalecimento de grupos urbanos,
+                especialmente comerciantes e artesãos.
+            </p>
+
+            <p>
+                <strong>Trabalho:</strong> corporações de ofício.
+            </p>
+
+            <p>
+                <strong>Finanças:</strong> moeda, crédito e novas práticas
+                comerciais.
+            </p>
+
+            <p>
+                <strong>Longa duração:</strong> transformações econômicas,
+                sociais e urbanas que influenciaram processos posteriores.
+            </p>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- NAVEGAÇÃO                                               -->
+        <!-- ===================================================== -->
+
+        <div class="navegacao">
+
+            <!-- Link para a aula anterior. -->
+            <a class="btn-nav" href="../14-Cruzadas/index.html">
+                ← Aula anterior: As Cruzadas
+            </a>
+
+            <!-- Link para a próxima aula. -->
+            <a class="btn-nav" href="../16-Formacao-Monarquias-Nacionais/index.html">
+                Próxima aula: Formação das Monarquias Nacionais →
+            </a>
+
+        </div>
+
+    </main>
+
+    <!-- ========================================================= -->
+    <!-- BOTÃO VOLTAR AO TOPO                                       -->
+    <!-- ========================================================= -->
+
+    <a id="topo" href="#inicio" title="Voltar ao topo">
+        ↑
+    </a>
+
+    <!-- ========================================================= -->
+    <!-- RODAPÉ                                                     -->
+    <!-- ========================================================= -->
+
+    <footer>
+
+        <!-- Identificação do curso. -->
+        <p>
+            <strong>Curso de História Geral</strong>
+        </p>
+
+        <!-- Identificação do professor. -->
+        <p>
+            Professor Marcelo Oliveira
+        </p>
+
+        <!-- Público do curso. -->
+        <p>
+            Fund II • Ensino Médio • ENEM • Vestibular • Concursos
+        </p>
+
+        <!-- Identificação da aula. -->
+        <p>
+            Aula 1.14 — O Renascimento Comercial e Urbano
+        </p>
+
+    </footer>
+
+    <!-- ========================================================= -->
+    <!-- JAVASCRIPT                                                  -->
+    <!-- ========================================================= -->
+
+    <script>
+
+        // Cria a função responsável por mostrar ou esconder o gabarito.
+        function mostrarResposta(id) {
+
+            // Localiza o elemento pelo ID recebido pela função.
+            const resposta = document.getElementById(id);
+
+            // Verifica se a resposta está escondida.
+            if (resposta.style.display === "none" || resposta.style.display === "") {
+
+                // Mostra a resposta.
+                resposta.style.display = "block";
+
+            } else {
+
+                // Esconde novamente a resposta.
+                resposta.style.display = "none";
+
+            }
+
+        }
+
+    </script>
+    <script>
+  const paginaAnterior = "13 - as-cruzadas.html";
+  const paginaProxima = "15 - baixa -idade-média.html";
+</script>
+<script src="navegacao.js"></script>
+
+</body>
+
+</html>

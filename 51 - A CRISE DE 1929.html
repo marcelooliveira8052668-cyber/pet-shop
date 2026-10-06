@@ -1,0 +1,2029 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <!-- Define a codificação de caracteres da página. -->
+    <meta charset="UTF-8">
+
+    <!-- Faz a página funcionar em celulares, tablets e computadores. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Define o título da página. -->
+    <title>1.51 — A Crise de 1929 | Professor Marcelo Oliveira</title>
+
+    <style>
+
+        /* ==========================================================
+           CONFIGURAÇÕES GERAIS
+           ========================================================== */
+
+        /* Remove margens e espaçamentos padrões. */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Ativa rolagem suave. */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Define a aparência geral da página. */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f7fb;
+            color: #1f2937;
+            line-height: 1.7;
+        }
+
+        /* Remove sublinhado dos links. */
+        a {
+            text-decoration: none;
+        }
+
+        /* ==========================================================
+           CABEÇALHO
+           ========================================================== */
+
+        /* Cria o cabeçalho principal. */
+        header {
+            background: linear-gradient(135deg, #071a33, #123d6b);
+            color: white;
+            padding: 45px 20px;
+            text-align: center;
+            border-bottom: 6px solid #f97316;
+        }
+
+        /* Identificação do curso. */
+        .curso {
+            font-size: 0.95rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            opacity: 0.85;
+            margin-bottom: 12px;
+        }
+
+        /* Título principal. */
+        header h1 {
+            font-size: clamp(2rem, 5vw, 3.6rem);
+            margin-bottom: 15px;
+        }
+
+        /* Subtítulo. */
+        header p {
+            max-width: 900px;
+            margin: auto;
+            font-size: 1.1rem;
+        }
+
+        /* ==========================================================
+           CONTAINER
+           ========================================================== */
+
+        /* Limita a largura do conteúdo. */
+        .container {
+            width: min(1150px, 92%);
+            margin: auto;
+        }
+
+        /* ==========================================================
+           APRESENTAÇÃO
+           ========================================================== */
+
+        /* Cria o cartão de apresentação. */
+        .apresentacao {
+            background: white;
+            margin: 35px auto;
+            padding: 30px;
+            border-radius: 18px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            border-left: 7px solid #f97316;
+        }
+
+        /* Título da apresentação. */
+        .apresentacao h2 {
+            color: #071a33;
+            margin-bottom: 15px;
+        }
+
+        /* ==========================================================
+           PARTES
+           ========================================================== */
+
+        /* Espaçamento entre seções. */
+        section {
+            margin: 35px 0;
+        }
+
+        /* Parte I — azul. */
+        .parte1 {
+            background: #dbeafe;
+            border-left: 8px solid #2563eb;
+            padding: 25px;
+            border-radius: 15px;
+        }
+
+        /* Parte II — verde. */
+        .parte2 {
+            background: #dcfce7;
+            border-left: 8px solid #16a34a;
+            padding: 25px;
+            border-radius: 15px;
+        }
+
+        /* Parte III — roxo. */
+        .parte3 {
+            background: #f3e8ff;
+            border-left: 8px solid #9333ea;
+            padding: 25px;
+            border-radius: 15px;
+        }
+
+        /* Títulos das partes. */
+        .parte1 h2,
+        .parte2 h2,
+        .parte3 h2 {
+            margin-bottom: 12px;
+        }
+
+        /* Título azul. */
+        .parte1 h2 {
+            color: #1d4ed8;
+        }
+
+        /* Título verde. */
+        .parte2 h2 {
+            color: #15803d;
+        }
+
+        /* Título roxo. */
+        .parte3 h2 {
+            color: #7e22ce;
+        }
+
+        /* ==========================================================
+           CARTÕES
+           ========================================================== */
+
+        /* Cria cartões de conteúdo. */
+        .card {
+            background: white;
+            padding: 25px;
+            margin-top: 20px;
+            border-radius: 15px;
+            box-shadow: 0 7px 20px rgba(0, 0, 0, 0.07);
+        }
+
+        /* Títulos internos. */
+        .card h3 {
+            color: #071a33;
+            margin-bottom: 12px;
+        }
+
+        /* Espaçamento entre parágrafos. */
+        .card p {
+            margin-bottom: 12px;
+        }
+
+        /* Espaçamento das listas. */
+        .card ul,
+        .card ol {
+            margin-left: 25px;
+            margin-bottom: 15px;
+        }
+
+        /* ==========================================================
+           BLOCOS DIDÁTICOS
+           ========================================================== */
+
+        /* Bloco para causas. */
+        .causas {
+            background: #fff7ed;
+            border-left: 7px solid #f97316;
+            padding: 22px;
+            margin-top: 20px;
+            border-radius: 12px;
+        }
+
+        /* Bloco para consequências. */
+        .consequencias {
+            background: #fefce8;
+            border-left: 7px solid #eab308;
+            padding: 22px;
+            margin-top: 20px;
+            border-radius: 12px;
+        }
+
+        /* Bloco para conceitos. */
+        .conceitos {
+            background: #fef9c3;
+            border-left: 7px solid #ca8a04;
+            padding: 22px;
+            margin-top: 20px;
+            border-radius: 12px;
+        }
+
+        /* Bloco para atenção. */
+        .atencao {
+            background: #fee2e2;
+            border-left: 7px solid #dc2626;
+            padding: 22px;
+            margin-top: 20px;
+            border-radius: 12px;
+        }
+
+        /* Bloco para ENEM. */
+        .enem {
+            background: #cffafe;
+            border-left: 7px solid #0891b2;
+            padding: 22px;
+            margin-top: 20px;
+            border-radius: 12px;
+        }
+
+        /* Bloco da lousa. */
+        .lousa {
+            background: #172554;
+            color: white;
+            padding: 25px;
+            margin-top: 20px;
+            border-radius: 15px;
+        }
+
+        /* Título da lousa. */
+        .lousa h3 {
+            color: #93c5fd;
+            margin-bottom: 12px;
+        }
+
+        /* ==========================================================
+           TABELAS
+           ========================================================== */
+
+        /* Permite rolagem horizontal. */
+        .tabela-container {
+            overflow-x: auto;
+            margin-top: 20px;
+        }
+
+        /* Define tabela. */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+        }
+
+        /* Define células. */
+        th,
+        td {
+            padding: 14px;
+            border: 1px solid #d1d5db;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        /* Cabeçalho da tabela. */
+        th {
+            background: #071a33;
+            color: white;
+        }
+
+        /* Alterna cor das linhas. */
+        tr:nth-child(even) {
+            background: #f8fafc;
+        }
+
+        /* ==========================================================
+           LINHA DO TEMPO
+           ========================================================== */
+
+        /* Linha vertical da timeline. */
+        .timeline {
+            border-left: 5px solid #f97316;
+            padding-left: 25px;
+            margin-top: 20px;
+        }
+
+        /* Cartão do evento. */
+        .evento {
+            position: relative;
+            background: white;
+            padding: 18px;
+            margin-bottom: 18px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+        }
+
+        /* Marcador do evento. */
+        .evento::before {
+            content: "";
+            position: absolute;
+            left: -37px;
+            top: 20px;
+            width: 17px;
+            height: 17px;
+            background: #f97316;
+            border: 4px solid #ffedd5;
+            border-radius: 50%;
+        }
+
+        /* Destaque para datas. */
+        .ano {
+            color: #c2410c;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        /* ==========================================================
+           QUESTÕES
+           ========================================================== */
+
+        /* Cartão da questão. */
+        .questao {
+            background: white;
+            padding: 25px;
+            margin-top: 20px;
+            border-radius: 15px;
+            border-top: 5px solid #0891b2;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.07);
+        }
+
+        /* Espaçamento das alternativas. */
+        .alternativas {
+            margin-top: 15px;
+            padding-left: 25px;
+        }
+
+        /* Botão do gabarito. */
+        .btn-gabarito {
+            margin-top: 18px;
+            padding: 11px 18px;
+            border: none;
+            border-radius: 8px;
+            background: #0891b2;
+            color: white;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        /* Efeito ao passar o mouse. */
+        .btn-gabarito:hover {
+            opacity: 0.85;
+        }
+
+        /* Esconde o gabarito inicialmente. */
+        .gabarito {
+            display: none;
+            margin-top: 15px;
+            padding: 15px;
+            background: #ecfeff;
+            border-radius: 10px;
+            border-left: 5px solid #0891b2;
+        }
+
+        /* ==========================================================
+           NAVEGAÇÃO
+           ========================================================== */
+
+        /* Organiza os botões. */
+        .navegacao {
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+            margin: 45px 0;
+            flex-wrap: wrap;
+        }
+
+        /* Botões de navegação. */
+        .nav-btn {
+            display: inline-block;
+            padding: 14px 22px;
+            border-radius: 10px;
+            background: #071a33;
+            color: white;
+            font-weight: bold;
+        }
+
+        /* Efeito dos botões. */
+        .nav-btn:hover {
+            background: #123d6b;
+        }
+
+        /* ==========================================================
+           BOTÃO TOPO
+           ========================================================== */
+
+        /* Botão fixo. */
+        #topo {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            width: 48px;
+            height: 48px;
+            border: none;
+            border-radius: 50%;
+            background: #f97316;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+            display: none;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* ==========================================================
+           RODAPÉ
+           ========================================================== */
+
+        /* Cria o rodapé. */
+        footer {
+            background: #071a33;
+            color: white;
+            text-align: center;
+            padding: 35px 20px;
+            margin-top: 50px;
+        }
+
+        /* Destaca assinatura. */
+        footer strong {
+            color: #93c5fd;
+        }
+
+        /* ==========================================================
+           RESPONSIVIDADE
+           ========================================================== */
+
+        /* Ajusta a página para celulares. */
+        @media (max-width: 700px) {
+
+            /* Diminui o cabeçalho. */
+            header {
+                padding: 35px 15px;
+            }
+
+            /* Reduz o espaço interno dos cartões. */
+            .card,
+            .apresentacao {
+                padding: 20px;
+            }
+
+            /* Coloca os botões em coluna. */
+            .navegacao {
+                flex-direction: column;
+            }
+
+            /* Faz os botões ocuparem toda a largura. */
+            .nav-btn {
+                text-align: center;
+                width: 100%;
+            }
+
+            /* Reduz tamanho das tabelas. */
+            th,
+            td {
+                font-size: 0.9rem;
+                padding: 10px;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body id="inicio">
+
+    <!-- ==========================================================
+         CABEÇALHO
+         ========================================================== -->
+
+    <header>
+
+        <!-- Identificação do curso. -->
+        <div class="curso">
+            Curso de História Geral
+        </div>
+
+        <!-- Título do tema. -->
+        <h1>
+            1.51 — A Crise de 1929
+        </h1>
+
+        <!-- Subtítulo. -->
+        <p>
+            Da prosperidade dos anos 1920 ao colapso financeiro,
+            à Grande Depressão e às transformações do capitalismo.
+        </p>
+
+    </header>
+
+    <!-- Container principal. -->
+    <main class="container">
+
+        <!-- ======================================================
+             APRESENTAÇÃO
+             ====================================================== -->
+
+        <div class="apresentacao">
+
+            <!-- Título. -->
+            <h2>
+                Por que estudar a Crise de 1929?
+            </h2>
+
+            <!-- Texto. -->
+            <p>
+                A Crise de 1929 foi um dos acontecimentos econômicos
+                mais importantes do século XX. O colapso da Bolsa de
+                Valores de Nova York tornou-se o símbolo de uma crise
+                econômica muito mais ampla.
+            </p>
+
+            <!-- Texto. -->
+            <p>
+                A crise atingiu produção, comércio, crédito, emprego
+                e investimentos em diversos países, embora seus efeitos
+                tenham variado conforme as estruturas econômicas de cada
+                sociedade.
+            </p>
+
+            <!-- Texto. -->
+            <p>
+                Para compreender 1929, é necessário estudar a expansão
+                econômica dos anos 1920, o crédito, a especulação,
+                a produção industrial, as desigualdades e as limitações
+                do sistema econômico internacional.
+            </p>
+
+        </div>
+
+        <!-- ======================================================
+             PARTE I — O COMEÇO
+             ====================================================== -->
+
+        <section>
+
+            <!-- Cabeçalho da Parte I. -->
+            <div class="parte1">
+
+                <!-- Título. -->
+                <h2>
+                    I — O COMEÇO
+                </h2>
+
+                <!-- Descrição. -->
+                <p>
+                    A economia norte-americana e as condições que
+                    antecederam o colapso de 1929.
+                </p>
+
+            </div>
+
+            <!-- Pós-Primeira Guerra. -->
+            <div class="card">
+
+                <!-- Título. -->
+                <h3>
+                    Os Estados Unidos depois da Primeira Guerra Mundial
+                </h3>
+
+                <!-- Texto. -->
+                <p>
+                    A Primeira Guerra Mundial enfraqueceu economicamente
+                    diversas potências europeias e contribuiu para ampliar
+                    a posição dos Estados Unidos na economia internacional.
+                </p>
+
+                <!-- Texto. -->
+                <p>
+                    Durante os anos 1920, os Estados Unidos apresentaram
+                    forte crescimento industrial, expansão do consumo
+                    e aumento do crédito.
+                </p>
+
+            </div>
+
+            <!-- Anos 1920. -->
+            <div class="card">
+
+                <!-- Título. -->
+                <h3>
+                    Os "Loucos Anos 20"
+                </h3>
+
+                <!-- Texto. -->
+                <p>
+                    A década de 1920 foi marcada por crescimento econômico
+                    e transformações culturais em parte da sociedade
+                    norte-americana.
+                </p>
+
+                <!-- Lista. -->
+                <ul>
+
+                    <li>
+                        Expansão da indústria automobilística.
+                    </li>
+
+                    <li>
+                        Crescimento da produção em massa.
+                    </li>
+
+                    <li>
+                        Popularização de eletrodomésticos.
+                    </li>
+
+                    <li>
+                        Expansão do crédito ao consumidor.
+                    </li>
+
+                    <li>
+                        Desenvolvimento da publicidade.
+                    </li>
+
+                    <li>
+                        Crescimento do mercado de ações.
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <!-- Produção em massa. -->
+            <div class="card">
+
+                <!-- Título. -->
+                <h3>
+                    Produção em massa e consumo
+                </h3>
+
+                <!-- Texto. -->
+                <p>
+                    A expansão industrial aumentou a capacidade de
+                    produção das empresas.
+                </p>
+
+                <!-- Texto. -->
+                <p>
+                    A produção em massa permitiu fabricar grandes
+                    quantidades de determinados produtos, contribuindo
+                    para reduzir custos e ampliar o consumo.
+                </p>
+
+                <!-- Conceito. -->
+                <div class="conceitos">
+
+                    <strong>
+                        Conceito-chave:
+                    </strong>
+
+                    Produção em massa é a fabricação de grandes quantidades
+                    de produtos padronizados, associada à mecanização,
+                    divisão do trabalho e organização industrial.
+                </div>
+
+            </div>
+
+            <!-- Crédito. -->
+            <div class="card">
+
+                <!-- Título. -->
+                <h3>
+                    O crescimento do crédito
+                </h3>
+
+                <!-- Texto. -->
+                <p>
+                    Durante os anos 1920, o crédito facilitou o consumo
+                    de bens e também contribuiu para a expansão de
+                    investimentos no mercado financeiro.
+                </p>
+
+                <!-- Texto. -->
+                <p>
+                    O crescimento baseado em crédito, porém, também
+                    aumentava a exposição de consumidores e investidores
+                    a mudanças nas condições econômicas.
+                </p>
+
+            </div>
+
+            <!-- Bolsa. -->
+            <div class="card">
+
+                <!-- Título. -->
+                <h3>
+                    A expansão do mercado de ações
+                </h3>
+
+                <!-- Texto. -->
+                <p>
+                    Durante os anos 1920, muitas pessoas passaram a
+                    investir em ações esperando obter ganhos.
+                </p>
+
+                <!-- Texto. -->
+                <p>
+                    Parte das compras era realizada com recursos
+                    emprestados, o que ampliava os riscos caso os preços
+                    dos ativos caíssem.
+                </p>
+
+                <!-- Atenção. -->
+                <div class="atencao">
+
+                    <strong>
+                        Atenção:
+                    </strong>
+
+                    A crise não foi simplesmente causada por "pessoas
+                    comprando ações". O colapso esteve relacionado a um
+                    conjunto de desequilíbrios econômicos e financeiros.
+                </div>
+
+            </div>
+
+            <!-- Causas. -->
+            <div class="causas">
+
+                <!-- Título. -->
+                <h3>
+                    Fatores que contribuíram para a crise
+                </h3>
+
+                <!-- Lista. -->
+                <ul>
+
+                    <li>
+                        Especulação financeira.
+                    </li>
+
+                    <li>
+                        Expansão excessiva do crédito.
+                    </li>
+
+                    <li>
+                        Problemas de distribuição de renda.
+                    </li>
+
+                    <li>
+                        Superprodução em determinados setores.
+                    </li>
+
+                    <li>
+                        Fragilidades do sistema bancário.
+                    </li>
+
+                    <li>
+                        Dependência de empréstimos e relações financeiras
+                        internacionais.
+                    </li>
+
+                    <li>
+                        Queda da confiança dos investidores.
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </section>
+
+        <!-- ======================================================
+             PARTE II — DESENVOLVIMENTO
+             ====================================================== -->
+
+        <section>
+
+            <!-- Cabeçalho da Parte II. -->
+            <div class="parte2">
+
+                <!-- Título. -->
+                <h2>
+                    II — O DESENVOLVIMENTO
+                </h2>
+
+                <!-- Descrição. -->
+                <p>
+                    Do colapso da Bolsa à Grande Depressão e à reação
+                    dos governos.
+                </p>
+
+            </div>
+
+            <!-- Outubro de 1929. -->
+            <div class="card">
+
+                <!-- Título. -->
+                <h3>
+                    Outubro de 1929
+                </h3>
+
+                <!-- Texto. -->
+                <p>
+                    Em outubro de 1929, a forte queda dos preços das ações
+                    provocou uma crise de confiança no mercado financeiro
+                    norte-americano.
+                </p>
+
+                <!-- Texto. -->
+                <p>
+                    Os dias 24 e 29 de outubro ficaram associados aos
+                    momentos mais conhecidos do colapso da Bolsa de
+                    Nova York.
+                </p>
+
+            </div>
+
+            <!-- Bolsa e economia real. -->
+            <div class="card">
+
+                <!-- Título. -->
+                <h3>
+                    Da Bolsa para a economia real
+                </h3>
+
+                <!-- Texto. -->
+                <p>
+                    A crise financeira afetou bancos, empresas,
+                    investimentos, produção e emprego.
+                </p>
+
+                <!-- Texto. -->
+                <p>
+                    Com a redução do crédito e da demanda, empresas
+                    diminuíram a produção e muitas pessoas perderam
+                    seus empregos.
+                </p>
+
+                <!-- Texto. -->
+                <p>
+                    A crise financeira transformou-se em uma grande
+                    depressão econômica.
+                </p>
+
+            </div>
+
+            <!-- Grande Depressão. -->
+            <div class="card">
+
+                <!-- Título. -->
+                <h3>
+                    A Grande Depressão
+                </h3>
+
+                <!-- Texto. -->
+                <p>
+                    A Grande Depressão foi uma crise econômica prolongada
+                    que atingiu os Estados Unidos e se espalhou para
+                    diferentes partes do mundo.
+                </p>
+
+                <!-- Lista. -->
+                <ul>
+
+                    <li>
+                        Desemprego elevado.
+                    </li>
+
+                    <li>
+                        Falências empresariais.
+                    </li>
+
+                    <li>
+                        Crise bancária.
+                    </li>
+
+                    <li>
+                        Redução da produção.
+                    </li>
+
+                    <li>
+                        Queda do comércio internacional.
+                    </li>
+
+                    <li>
+                        Redução dos investimentos.
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <!-- Internacionalização. -->
+            <div class="card">
+
+                <!-- Título. -->
+                <h3>
+                    Por que a crise se espalhou?
+                </h3>
+
+                <!-- Texto. -->
+                <p>
+                    A economia internacional estava fortemente conectada
+                    por meio de empréstimos, investimentos e comércio.
+                </p>
+
+                <!-- Texto. -->
+                <p>
+                    Bancos e empresas norte-americanas possuíam relações
+                    financeiras com países europeus.
+                </p>
+
+                <!-- Texto. -->
+                <p>
+                    A retração do crédito norte-americano afetou outras
+                    economias, enquanto a queda do comércio internacional
+                    agravou a situação.
+                </p>
+
+            </div>
+
+            <!-- Protecionismo. -->
+            <div class="card">
+
+                <!-- Título. -->
+                <h3>
+                    Protecionismo e retração do comércio
+                </h3>
+
+                <!-- Texto. -->
+                <p>
+                    Muitos governos responderam à crise aumentando
+                    barreiras comerciais e buscando proteger suas
+                    economias nacionais.
+                </p>
+
+                <!-- Texto. -->
+                <p>
+                    Essas políticas contribuíram para reduzir ainda mais
+                    o comércio internacional em determinados momentos
+                    da depressão.
+                </p>
+
+            </div>
+
+            <!-- Hoover. -->
+            <div class="card">
+
+                <!-- Título. -->
+                <h3>
+                    O governo Hoover
+                </h3>
+
+                <!-- Texto. -->
+                <p>
+                    Herbert Hoover era presidente dos Estados Unidos
+                    quando ocorreu o colapso de 1929.
+                </p>
+
+                <!-- Texto. -->
+                <p>
+                    Seu governo adotou algumas medidas de intervenção,
+                    mas a resposta foi considerada insuficiente por
+                    diferentes grupos sociais diante da profundidade
+                    da crise.
+                </p>
+
+            </div>
+
+            <!-- New Deal. -->
+            <div class="card">
+
+                <!-- Título. -->
+                <h3>
+                    Roosevelt e o New Deal
+                </h3>
+
+                <!-- Texto. -->
+                <p>
+                    Franklin Delano Roosevelt assumiu a presidência
+                    dos Estados Unidos em 1933.
+                </p>
+
+                <!-- Texto. -->
+                <p>
+                    Seu governo implementou o New Deal, conjunto de
+                    políticas que ampliou a intervenção estatal na economia.
+                </p>
+
+                <!-- Lista. -->
+                <ul>
+
+                    <li>
+                        Programas de obras públicas.
+                    </li>
+
+                    <li>
+                        Medidas de apoio ao sistema bancário.
+                    </li>
+
+                    <li>
+                        Políticas de emprego.
+                    </li>
+
+                    <li>
+                        Regulamentações econômicas.
+                    </li>
+
+                    <li>
+                        Programas de assistência social.
+                    </li>
+
+                </ul>
+
+                <!-- Atenção. -->
+                <div class="atencao">
+
+                    <strong>
+                        Atenção para a prova:
+                    </strong>
+
+                    O New Deal representou uma ampliação da intervenção
+                    do Estado na economia norte-americana. Porém, a
+                    recuperação econômica foi gradual e a Segunda Guerra
+                    Mundial também teve papel importante na mobilização
+                    industrial posterior.
+                </div>
+
+            </div>
+
+            <!-- Linha do tempo. -->
+            <div class="card">
+
+                <!-- Título. -->
+                <h3>
+                    Linha do tempo
+                </h3>
+
+                <!-- Timeline. -->
+                <div class="timeline">
+
+                    <!-- Evento. -->
+                    <div class="evento">
+
+                        <div class="ano">
+                            1920–1928
+                        </div>
+
+                        <p>
+                            Crescimento econômico e expansão do consumo
+                            nos Estados Unidos.
+                        </p>
+
+                    </div>
+
+                    <!-- Evento. -->
+                    <div class="evento">
+
+                        <div class="ano">
+                            1929
+                        </div>
+
+                        <p>
+                            Colapso da Bolsa de Nova York e início
+                            da grande crise.
+                        </p>
+
+                    </div>
+
+                    <!-- Evento. -->
+                    <div class="evento">
+
+                        <div class="ano">
+                            1930–1932
+                        </div>
+
+                        <p>
+                            Aprofundamento da Grande Depressão.
+                        </p>
+
+                    </div>
+
+                    <!-- Evento. -->
+                    <div class="evento">
+
+                        <div class="ano">
+                            1933
+                        </div>
+
+                        <p>
+                            Franklin Roosevelt assume a presidência
+                            e inicia o New Deal.
+                        </p>
+
+                    </div>
+
+                    <!-- Evento. -->
+                    <div class="evento">
+
+                        <div class="ano">
+                            Década de 1930
+                        </div>
+
+                        <p>
+                            Diferentes países adotam políticas de
+                            intervenção, protecionismo e reorganização
+                            econômica.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ======================================================
+             PARTE III — LEGADO
+             ====================================================== -->
+
+        <section>
+
+            <!-- Cabeçalho da Parte III. -->
+            <div class="parte3">
+
+                <!-- Título. -->
+                <h2>
+                    III — O LEGADO E O MUNDO ATUAL
+                </h2>
+
+                <!-- Descrição. -->
+                <p>
+                    A transformação das relações entre Estado, mercado
+                    e sociedade.
+                </p>
+
+            </div>
+
+            <!-- Estado e economia. -->
+            <div class="card">
+
+                <!-- Título. -->
+                <h3>
+                    O fortalecimento da intervenção estatal
+                </h3>
+
+                <!-- Texto. -->
+                <p>
+                    A crise colocou em debate a ideia de que os mercados
+                    poderiam funcionar sem mecanismos de regulação e
+                    intervenção estatal.
+                </p>
+
+                <!-- Texto. -->
+                <p>
+                    Em diferentes países, os governos passaram a adotar
+                    políticas de maior intervenção econômica, embora os
+                    modelos adotados fossem diferentes.
+                </p>
+
+            </div>
+
+            <!-- Capitalismo. -->
+            <div class="card">
+
+                <!-- Título. -->
+                <h3>
+                    Transformações do capitalismo
+                </h3>
+
+                <!-- Texto. -->
+                <p>
+                    A crise contribuiu para mudanças na política econômica,
+                    na regulamentação financeira e na relação entre
+                    Estado e sociedade.
+                </p>
+
+                <!-- Texto. -->
+                <p>
+                    A experiência também influenciou debates sobre
+                    emprego, proteção social, políticas públicas
+                    e planejamento econômico.
+                </p>
+
+            </div>
+
+            <!-- Política. -->
+            <div class="card">
+
+                <!-- Título. -->
+                <h3>
+                    Crise econômica e radicalização política
+                </h3>
+
+                <!-- Texto. -->
+                <p>
+                    A Grande Depressão ocorreu em um período de forte
+                    instabilidade política internacional.
+                </p>
+
+                <!-- Texto. -->
+                <p>
+                    Em determinados países, o desemprego, a insegurança
+                    social e a crise das instituições contribuíram para
+                    o crescimento de movimentos políticos autoritários.
+                </p>
+
+                <!-- Atenção. -->
+                <div class="atencao">
+
+                    <strong>
+                        Importante:
+                    </strong>
+
+                    A crise de 1929 não "causou automaticamente" o
+                    nazismo ou outros regimes autoritários. Ela foi um
+                    dos fatores que contribuíram para o contexto político
+                    da década de 1930.
+                </div>
+
+            </div>
+
+            <!-- Consequências. -->
+            <div class="consequencias">
+
+                <!-- Título. -->
+                <h3>
+                    Principais consequências
+                </h3>
+
+                <!-- Lista. -->
+                <ul>
+
+                    <li>
+                        Forte aumento do desemprego em vários países.
+                    </li>
+
+                    <li>
+                        Falências bancárias e empresariais.
+                    </li>
+
+                    <li>
+                        Redução do comércio internacional.
+                    </li>
+
+                    <li>
+                        Aumento da intervenção estatal em diversas economias.
+                    </li>
+
+                    <li>
+                        Ampliação de políticas sociais em alguns países.
+                    </li>
+
+                    <li>
+                        Crescimento de tensões políticas.
+                    </li>
+
+                    <li>
+                        Fortalecimento de políticas econômicas nacionalistas
+                        e protecionistas.
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <!-- Brasil. -->
+            <div class="card">
+
+                <!-- Título. -->
+                <h3>
+                    A Crise de 1929 e o Brasil
+                </h3>
+
+                <!-- Texto. -->
+                <p>
+                    A economia brasileira dependia fortemente da exportação
+                    de produtos agrícolas, especialmente do café.
+                </p>
+
+                <!-- Texto. -->
+                <p>
+                    A crise internacional reduziu a demanda e afetou
+                    os preços e as condições de exportação.
+                </p>
+
+                <!-- Texto. -->
+                <p>
+                    O impacto da crise ocorreu em um contexto político
+                    já marcado pela crise da República Velha e pelas
+                    disputas que culminaram na Revolução de 1930.
+                </p>
+
+                <!-- Conceito. -->
+                <div class="conceitos">
+
+                    <strong>
+                        Conexão Brasil:
+                    </strong>
+
+                    1929 → crise do café → enfraquecimento das estruturas
+                    da República Velha → mudanças políticas de 1930.
+                </div>
+
+            </div>
+
+            <!-- Mundo atual. -->
+            <div class="card">
+
+                <!-- Título. -->
+                <h3>
+                    A crise e o mundo atual
+                </h3>
+
+                <!-- Texto. -->
+                <p>
+                    A Crise de 1929 permanece importante para compreender
+                    como crises financeiras podem atingir empresas,
+                    trabalhadores, bancos, governos e comércio internacional.
+                </p>
+
+                <!-- Texto. -->
+                <p>
+                    Ela também ajuda a estudar os debates sobre regulação
+                    financeira, políticas públicas, emprego, crédito e
+                    intervenção estatal.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- ======================================================
+             COMPARAÇÃO
+             ====================================================== -->
+
+        <section>
+
+            <!-- Título. -->
+            <div class="apresentacao">
+
+                <h2>
+                    Crise de 1929 × resposta econômica
+                </h2>
+
+            </div>
+
+            <!-- Tabela. -->
+            <div class="tabela-container">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>
+                                Problema
+                            </th>
+
+                            <th>
+                                Efeito
+                            </th>
+
+                            <th>
+                                Resposta
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+
+                            <td>
+                                Queda da Bolsa
+                            </td>
+
+                            <td>
+                                Perda de confiança e patrimônio.
+                            </td>
+
+                            <td>
+                                Medidas de estabilização financeira.
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>
+                                Crise bancária
+                            </td>
+
+                            <td>
+                                Redução do crédito.
+                            </td>
+
+                            <td>
+                                Regulamentação e intervenção estatal.
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>
+                                Queda da produção
+                            </td>
+
+                            <td>
+                                Redução de empregos.
+                            </td>
+
+                            <td>
+                                Obras públicas e políticas de estímulo.
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>
+                                Queda do comércio
+                            </td>
+
+                            <td>
+                                Redução das exportações e importações.
+                            </td>
+
+                            <td>
+                                Políticas comerciais e econômicas nacionais.
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+        <!-- ======================================================
+             O QUE O PROFESSOR PRECISA DOMINAR
+             ====================================================== -->
+
+        <section>
+
+            <div class="card">
+
+                <h2>
+                    O que o professor precisa dominar
+                </h2>
+
+                <ul>
+
+                    <li>
+                        O contexto econômico dos Estados Unidos nos anos 1920.
+                    </li>
+
+                    <li>
+                        Relação entre produção, consumo e crédito.
+                    </li>
+
+                    <li>
+                        Especulação financeira.
+                    </li>
+
+                    <li>
+                        Superprodução e problemas de demanda.
+                    </li>
+
+                    <li>
+                        O colapso da Bolsa em 1929.
+                    </li>
+
+                    <li>
+                        Diferença entre crise financeira e Grande Depressão.
+                    </li>
+
+                    <li>
+                        Internacionalização da crise.
+                    </li>
+
+                    <li>
+                        Protecionismo.
+                    </li>
+
+                    <li>
+                        New Deal.
+                    </li>
+
+                    <li>
+                        Relação entre crise econômica e instabilidade política.
+                    </li>
+
+                    <li>
+                        Impactos sobre o Brasil e a economia cafeeira.
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </section>
+
+        <!-- ======================================================
+             LOUSA
+             ====================================================== -->
+
+        <section>
+
+            <div class="lousa">
+
+                <h3>
+                    O que colocar na lousa
+                </h3>
+
+                <p>
+                    CRISE DE 1929
+                </p>
+
+                <br>
+
+                <p>
+                    ANOS 1920:
+                </p>
+
+                <p>
+                    Produção ↑ + consumo ↑ + crédito ↑ + especulação ↑
+                </p>
+
+                <br>
+
+                <p>
+                    PROBLEMAS:
+                </p>
+
+                <p>
+                    Superprodução + desigualdade + fragilidade financeira
+                </p>
+
+                <br>
+
+                <p>
+                    1929:
+                </p>
+
+                <p>
+                    Queda da Bolsa de Nova York
+                </p>
+
+                <br>
+
+                <p>
+                    CONSEQUÊNCIAS:
+                </p>
+
+                <p>
+                    Desemprego + falências + queda do comércio
+                </p>
+
+                <br>
+
+                <p>
+                    EUA:
+                </p>
+
+                <p>
+                    Roosevelt → New Deal
+                </p>
+
+                <br>
+
+                <p>
+                    BRASIL:
+                </p>
+
+                <p>
+                    Café + crise externa → crise da República Velha
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- ======================================================
+             CONCEITOS
+             ====================================================== -->
+
+        <section>
+
+            <div class="card">
+
+                <h2>
+                    Conceitos fundamentais
+                </h2>
+
+                <ul>
+
+                    <li>
+                        <strong>Especulação:</strong>
+                        compra de ativos buscando ganhos com mudanças
+                        esperadas em seus preços.
+                    </li>
+
+                    <li>
+                        <strong>Crédito:</strong>
+                        possibilidade de obter recursos para pagamento
+                        posterior.
+                    </li>
+
+                    <li>
+                        <strong>Superprodução:</strong>
+                        produção superior à capacidade de absorção
+                        do mercado em determinadas condições.
+                    </li>
+
+                    <li>
+                        <strong>Grande Depressão:</strong>
+                        prolongada crise econômica iniciada no final
+                        dos anos 1920 e com repercussões internacionais.
+                    </li>
+
+                    <li>
+                        <strong>Protecionismo:</strong>
+                        conjunto de políticas destinadas a proteger
+                        determinados setores econômicos nacionais
+                        da concorrência externa.
+                    </li>
+
+                    <li>
+                        <strong>New Deal:</strong>
+                        conjunto de políticas implementadas pelo governo
+                        Roosevelt a partir de 1933.
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </section>
+
+        <!-- ======================================================
+             ENEM
+             ====================================================== -->
+
+        <section>
+
+            <div class="enem">
+
+                <h2>
+                    ENEM • Vestibular • Concurso
+                </h2>
+
+                <p>
+                    Em provas, a Crise de 1929 costuma aparecer relacionada
+                    a industrialização, capitalismo, crédito, mercado
+                    financeiro, desemprego, políticas econômicas e
+                    transformações políticas.
+                </p>
+
+                <br>
+
+                <p>
+                    A principal estratégia é compreender a cadeia:
+                    crescimento econômico → desequilíbrios → crise financeira
+                    → crise econômica → desemprego → intervenção estatal.
+                </p>
+
+            </div>
+
+            <!-- Questão 1. -->
+            <div class="questao">
+
+                <h3>
+                    Questão 1 — Estilo ENEM
+                </h3>
+
+                <p>
+                    Durante os anos 1920, os Estados Unidos apresentaram
+                    forte crescimento econômico. Entretanto, a expansão
+                    da produção, do crédito e da especulação financeira
+                    coexistia com desequilíbrios que contribuíram para
+                    a crise do final da década.
+                </p>
+
+                <p>
+                    Uma interpretação historicamente adequada desse
+                    processo é:
+                </p>
+
+                <div class="alternativas">
+
+                    <p>
+                        A) o crescimento econômico eliminou os riscos
+                        financeiros.
+                    </p>
+
+                    <p>
+                        B) a crise ocorreu exclusivamente por causa
+                        de uma decisão política isolada.
+                    </p>
+
+                    <p>
+                        C) a expansão econômica conviveu com desequilíbrios
+                        que aumentaram a vulnerabilidade do sistema.
+                    </p>
+
+                    <p>
+                        D) a produção industrial norte-americana
+                        permaneceu estável durante toda a década.
+                    </p>
+
+                    <p>
+                        E) o mercado financeiro não possuía relação
+                        com a economia produtiva.
+                    </p>
+
+                </div>
+
+                <button
+                    class="btn-gabarito"
+                    onclick="mostrarGabarito('g1')"
+                >
+                    Mostrar gabarito
+                </button>
+
+                <div
+                    class="gabarito"
+                    id="g1"
+                >
+
+                    <strong>
+                        Gabarito: C.
+                    </strong>
+
+                    <p>
+                        A crise foi resultado de um conjunto de desequilíbrios
+                        econômicos e financeiros, e não de um único fator.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Questão 2. -->
+            <div class="questao">
+
+                <h3>
+                    Questão 2 — Estilo Vestibular
+                </h3>
+
+                <p>
+                    O New Deal, implementado nos Estados Unidos a partir
+                    de 1933, representou:
+                </p>
+
+                <div class="alternativas">
+
+                    <p>
+                        A) a retirada completa do Estado da economia.
+                    </p>
+
+                    <p>
+                        B) a ampliação da intervenção estatal para enfrentar
+                        os efeitos da Grande Depressão.
+                    </p>
+
+                    <p>
+                        C) o retorno ao padrão econômico anterior à Primeira
+                        Guerra Mundial sem qualquer mudança.
+                    </p>
+
+                    <p>
+                        D) a eliminação de todas as empresas privadas.
+                    </p>
+
+                    <p>
+                        E) o fim do comércio internacional.
+                    </p>
+
+                </div>
+
+                <button
+                    class="btn-gabarito"
+                    onclick="mostrarGabarito('g2')"
+                >
+                    Mostrar gabarito
+                </button>
+
+                <div
+                    class="gabarito"
+                    id="g2"
+                >
+
+                    <strong>
+                        Gabarito: B.
+                    </strong>
+
+                    <p>
+                        O New Deal ampliou a intervenção do Estado
+                        norte-americano na economia por meio de políticas
+                        financeiras, sociais e de obras públicas.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ======================================================
+             RESUMO
+             ====================================================== -->
+
+        <section>
+
+            <div class="apresentacao">
+
+                <h2>
+                    Resumo para revisão
+                </h2>
+
+                <p>
+                    Os anos 1920 foram marcados por forte expansão
+                    econômica nos Estados Unidos.
+                </p>
+
+                <br>
+
+                <p>
+                    O crescimento foi acompanhado pela expansão do crédito,
+                    do consumo e da especulação financeira.
+                </p>
+
+                <br>
+
+                <p>
+                    Em 1929, o colapso do mercado acionário desencadeou
+                    uma crise financeira que se transformou em uma
+                    Grande Depressão.
+                </p>
+
+                <br>
+
+                <p>
+                    A crise provocou desemprego, falências, redução
+                    da produção e queda do comércio internacional.
+                </p>
+
+                <br>
+
+                <p>
+                    O governo Roosevelt respondeu com o New Deal,
+                    ampliando a intervenção estatal na economia.
+                </p>
+
+                <br>
+
+                <p>
+                    No Brasil, a crise atingiu fortemente a economia
+                    cafeeira e contribuiu para o contexto da crise
+                    da República Velha.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- ======================================================
+             NAVEGAÇÃO
+             ====================================================== -->
+
+        <div class="navegacao">
+
+            <!-- Link para o tema anterior. -->
+            <a
+                class="nav-btn"
+                href="../37-Revolucao-Russa/index.html"
+            >
+                ← Tema anterior
+            </a>
+
+            <!-- Link para o próximo tema. -->
+            <a
+                class="nav-btn"
+                href="../39-Nazi-Fascismo/index.html"
+            >
+                Próximo tema →
+            </a>
+
+        </div>
+
+    </main>
+
+    <!-- ==========================================================
+         RODAPÉ
+         ========================================================== -->
+
+    <footer>
+
+        <!-- Nome do curso. -->
+        <p>
+            Curso de História Geral
+        </p>
+
+        <!-- Assinatura. -->
+        <p>
+            <strong>
+                Professor Marcelo Oliveira
+            </strong>
+        </p>
+
+        <!-- Público-alvo. -->
+        <p>
+            Fund II • Ensino Médio • ENEM • Vestibular • Concurso
+        </p>
+
+    </footer>
+
+    <!-- ==========================================================
+         BOTÃO VOLTAR AO TOPO
+         ========================================================== -->
+
+    <button
+        id="topo"
+        onclick="voltarAoTopo()"
+        aria-label="Voltar ao topo"
+    >
+        ↑
+    </button>
+
+    <!-- ==========================================================
+         JAVASCRIPT
+         ========================================================== -->
+
+    <script>
+
+        /* Função que mostra ou esconde o gabarito. */
+        function mostrarGabarito(id) {
+
+            /* Localiza o elemento pelo ID. */
+            const elemento = document.getElementById(id);
+
+            /* Verifica se o elemento está visível. */
+            if (elemento.style.display === "block") {
+
+                /* Esconde o gabarito. */
+                elemento.style.display = "none";
+
+            } else {
+
+                /* Mostra o gabarito. */
+                elemento.style.display = "block";
+
+            }
+
+        }
+
+        /* Localiza o botão de voltar ao topo. */
+        const botaoTopo = document.getElementById("topo");
+
+        /* Monitora a rolagem da página. */
+        window.addEventListener("scroll", function () {
+
+            /* Verifica se a página foi rolada mais de 400 pixels. */
+            if (window.scrollY > 400) {
+
+                /* Mostra o botão. */
+                botaoTopo.style.display = "block";
+
+            } else {
+
+                /* Esconde o botão. */
+                botaoTopo.style.display = "none";
+
+            }
+
+        });
+
+        /* Função para voltar ao topo. */
+        function voltarAoTopo() {
+
+            /* Faz a rolagem suave para o início. */
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+
+        }
+
+    </script>
+    
+<script>
+  const paginaAnterior = "50 - REVOLUÇÃO RUSSA.html";
+  const paginaProxima = "52 - O NAZI-FASCISMO.html";
+</script>
+<script src="navegacao.js"></script>
+</body>
+
+</html>
+

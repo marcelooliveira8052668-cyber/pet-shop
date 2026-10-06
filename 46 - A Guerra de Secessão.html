@@ -1,0 +1,1549 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Define a codificação dos caracteres. -->
+    <meta charset="UTF-8">
+
+    <!-- Faz a página se adaptar a celulares, tablets e computadores. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Define o título da página. -->
+    <title>1.46 — A Guerra de Secessão | Professor Marcelo Oliveira</title>
+
+    <style>
+
+        /* ========================================================= */
+        /* CONFIGURAÇÕES GERAIS                                     */
+        /* ========================================================= */
+
+        /* Remove margens e espaçamentos padrão do navegador. */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Ativa rolagem suave. */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Define a aparência geral da página. */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f7fb;
+            color: #263238;
+            line-height: 1.7;
+        }
+
+        /* Centraliza e limita a largura do conteúdo. */
+        .container {
+            width: 92%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        /* ========================================================= */
+        /* CABEÇALHO                                                 */
+        /* ========================================================= */
+
+        /* Cria o cabeçalho principal. */
+        header {
+            background: linear-gradient(135deg, #172554, #2563eb);
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.18);
+        }
+
+        /* Define o pequeno título superior. */
+        .eyebrow {
+            font-size: 0.95rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            opacity: 0.9;
+            margin-bottom: 12px;
+        }
+
+        /* Define o título principal. */
+        header h1 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            margin-bottom: 15px;
+        }
+
+        /* Define o texto introdutório. */
+        header p {
+            max-width: 850px;
+            margin: auto;
+            font-size: 1.1rem;
+        }
+
+        /* ========================================================= */
+        /* NAVEGAÇÃO                                                 */
+        /* ========================================================= */
+
+        /* Organiza os botões de navegação. */
+        .navegacao {
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+            margin: 25px auto;
+            flex-wrap: wrap;
+        }
+
+        /* Define a aparência geral dos botões. */
+        .btn {
+            display: inline-block;
+            padding: 13px 20px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        /* Define a cor do botão anterior. */
+        .btn-voltar {
+            background: #475569;
+            color: white;
+        }
+
+        /* Define a cor do botão seguinte. */
+        .btn-proximo {
+            background: #2563eb;
+            color: white;
+        }
+
+        /* Cria movimento ao passar o mouse. */
+        .btn:hover {
+            transform: translateY(-2px);
+            opacity: 0.9;
+        }
+
+        /* ========================================================= */
+        /* CARTÃO DE APRESENTAÇÃO                                   */
+        /* ========================================================= */
+
+        /* Cria o cartão inicial. */
+        .apresentacao {
+            background: white;
+            margin: 30px auto;
+            padding: 30px;
+            border-radius: 18px;
+            border-left: 7px solid #2563eb;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+        }
+
+        /* ========================================================= */
+        /* SEÇÕES                                                    */
+        /* ========================================================= */
+
+        /* Define o cartão padrão. */
+        .secao {
+            margin: 35px auto;
+            padding: 30px;
+            border-radius: 18px;
+            background: white;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+        }
+
+        /* Azul representa o começo. */
+        .comeco {
+            border-top: 8px solid #2563eb;
+        }
+
+        /* Verde representa o desenvolvimento. */
+        .desenvolvimento {
+            border-top: 8px solid #16a34a;
+        }
+
+        /* Roxo representa o legado. */
+        .legado {
+            border-top: 8px solid #7c3aed;
+        }
+
+        /* Laranja representa as causas. */
+        .causas {
+            border-top: 8px solid #f97316;
+        }
+
+        /* Amarelo representa as consequências. */
+        .consequencias {
+            border-top: 8px solid #eab308;
+        }
+
+        /* Vermelho representa pontos de atenção. */
+        .atencao {
+            border-top: 8px solid #dc2626;
+        }
+
+        /* Ciano representa ENEM e vestibular. */
+        .enem {
+            border-top: 8px solid #0891b2;
+        }
+
+        /* Preto representa a lousa. */
+        .lousa {
+            border-top: 8px solid #111827;
+        }
+
+        /* ========================================================= */
+        /* TÍTULOS                                                    */
+        /* ========================================================= */
+
+        /* Estiliza títulos principais. */
+        .secao h2 {
+            margin-bottom: 20px;
+            color: #172554;
+            font-size: 1.8rem;
+        }
+
+        /* Estiliza subtítulos. */
+        .secao h3 {
+            margin-top: 25px;
+            margin-bottom: 10px;
+            color: #334155;
+        }
+
+        /* Destaca palavras importantes. */
+        strong {
+            color: #172554;
+        }
+
+        /* ========================================================= */
+        /* LISTAS                                                     */
+        /* ========================================================= */
+
+        /* Define espaçamento das listas. */
+        ul,
+        ol {
+            margin: 15px 0 15px 25px;
+        }
+
+        /* Cria espaço entre os itens. */
+        li {
+            margin-bottom: 8px;
+        }
+
+        /* ========================================================= */
+        /* TABELAS                                                    */
+        /* ========================================================= */
+
+        /* Permite rolagem horizontal em telas pequenas. */
+        .tabela-container {
+            overflow-x: auto;
+            margin-top: 20px;
+        }
+
+        /* Define a largura da tabela. */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 650px;
+        }
+
+        /* Define células da tabela. */
+        th,
+        td {
+            padding: 14px;
+            border: 1px solid #cbd5e1;
+            text-align: left;
+        }
+
+        /* Define o cabeçalho da tabela. */
+        th {
+            background: #172554;
+            color: white;
+        }
+
+        /* Cria alternância de fundo. */
+        tr:nth-child(even) {
+            background: #f8fafc;
+        }
+
+        /* ========================================================= */
+        /* LINHA DO TEMPO                                            */
+        /* ========================================================= */
+
+        /* Cria a linha vertical. */
+        .timeline {
+            border-left: 4px solid #2563eb;
+            padding-left: 25px;
+            margin-top: 25px;
+        }
+
+        /* Define cada acontecimento. */
+        .evento {
+            margin-bottom: 25px;
+            position: relative;
+        }
+
+        /* Cria o marcador circular. */
+        .evento::before {
+            content: "";
+            position: absolute;
+            left: -36px;
+            top: 7px;
+            width: 14px;
+            height: 14px;
+            background: #2563eb;
+            border-radius: 50%;
+        }
+
+        /* Destaca datas. */
+        .ano {
+            font-weight: bold;
+            color: #2563eb;
+        }
+
+        /* ========================================================= */
+        /* CARTÕES DE CONCEITOS                                     */
+        /* ========================================================= */
+
+        /* Cria uma grade automática. */
+        .conceitos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        /* Define cada cartão. */
+        .conceito {
+            background: #eff6ff;
+            border: 1px solid #bfdbfe;
+            padding: 18px;
+            border-radius: 12px;
+        }
+
+        /* ========================================================= */
+        /* QUESTÕES                                                   */
+        /* ========================================================= */
+
+        /* Cria o cartão da questão. */
+        .questao {
+            background: #f8fafc;
+            padding: 25px;
+            border-radius: 14px;
+            margin-top: 20px;
+            border-left: 5px solid #0891b2;
+        }
+
+        /* Define o botão do gabarito. */
+        .btn-gabarito {
+            margin-top: 15px;
+            background: #0891b2;
+            color: white;
+            border: none;
+            padding: 12px 18px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        /* Esconde o gabarito inicialmente. */
+        .gabarito {
+            display: none;
+            margin-top: 15px;
+            padding: 15px;
+            background: #ecfeff;
+            border-radius: 10px;
+            border: 1px solid #67e8f9;
+        }
+
+        /* ========================================================= */
+        /* QUADRO NORTE E SUL                                       */
+        /* ========================================================= */
+
+        /* Cria uma grade para comparação. */
+        .comparacao {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        /* Cria cada cartão de comparação. */
+        .lado {
+            padding: 25px;
+            border-radius: 15px;
+        }
+
+        /* Define o cartão da União. */
+        .uniao {
+            background: #eff6ff;
+            border: 2px solid #60a5fa;
+        }
+
+        /* Define o cartão da Confederação. */
+        .confederacao {
+            background: #fff7ed;
+            border: 2px solid #fb923c;
+        }
+
+        /* ========================================================= */
+        /* RESUMO                                                     */
+        /* ========================================================= */
+
+        /* Cria o resumo final. */
+        .resumo {
+            background: #172554;
+            color: white;
+            padding: 30px;
+            border-radius: 18px;
+            margin: 35px auto;
+        }
+
+        /* Mantém palavras fortes visíveis no fundo escuro. */
+        .resumo strong {
+            color: white;
+        }
+
+        /* ========================================================= */
+        /* RODAPÉ                                                     */
+        /* ========================================================= */
+
+        /* Cria o rodapé. */
+        footer {
+            background: #0f172a;
+            color: white;
+            text-align: center;
+            padding: 35px 20px;
+            margin-top: 50px;
+        }
+
+        /* Define a assinatura. */
+        .assinatura {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        /* ========================================================= */
+        /* BOTÃO DE TOPO                                             */
+        /* ========================================================= */
+
+        /* Cria o botão fixo de retorno. */
+        #topo {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 48px;
+            height: 48px;
+            border: none;
+            border-radius: 50%;
+            background: #2563eb;
+            color: white;
+            cursor: pointer;
+            font-size: 20px;
+            display: none;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+        }
+
+        /* ========================================================= */
+        /* RESPONSIVIDADE                                             */
+        /* ========================================================= */
+
+        /* Ajusta a página para celulares. */
+        @media (max-width: 700px) {
+
+            /* Reduz o espaço interno. */
+            .secao,
+            .apresentacao {
+                padding: 20px;
+            }
+
+            /* Organiza os botões verticalmente. */
+            .navegacao {
+                flex-direction: column;
+            }
+
+            /* Faz os botões ocuparem toda a largura. */
+            .btn {
+                text-align: center;
+            }
+        }
+
+    </style>
+</head>
+
+<body id="inicio">
+
+    <!-- ========================================================= -->
+    <!-- CABEÇALHO                                                  -->
+    <!-- ========================================================= -->
+
+    <header>
+
+        <!-- Identifica o curso. -->
+        <div class="eyebrow">Curso de História Geral</div>
+
+        <!-- Apresenta o tema. -->
+        <h1>1.46 — A Guerra de Secessão</h1>
+
+        <!-- Apresenta o recorte histórico. -->
+        <p>
+            Estados Unidos no século XIX, escravidão, expansão territorial,
+            conflito entre Norte e Sul e construção da União após a guerra.
+        </p>
+
+    </header>
+
+    <!-- ========================================================= -->
+    <!-- CONTEÚDO PRINCIPAL                                        -->
+    <!-- ========================================================= -->
+
+    <main class="container">
+
+        <!-- ===================================================== -->
+        <!-- NAVEGAÇÃO SUPERIOR                                    -->
+        <!-- ===================================================== -->
+
+        <nav class="navegacao">
+
+            <!-- Volta para o tema anterior. -->
+            <a class="btn btn-voltar" href="../30-Congresso-de-Viena/index.html">
+                ← Ocupação e Expansão Territoriais
+            </a>
+
+            <!-- Avança para o próximo tema. -->
+            <a class="btn btn-proximo" href="../32-Independencia-America-Espanhola/index.html">
+                1.46 — Independência da América Espanhola →
+            </a>
+
+        </nav>
+
+        <!-- ===================================================== -->
+        <!-- APRESENTAÇÃO                                          -->
+        <!-- ===================================================== -->
+
+        <section class="apresentacao">
+
+            <h2>Por que estudar a Guerra de Secessão?</h2>
+
+            <p>
+                A <strong>Guerra de Secessão</strong>, também chamada de
+                <strong>Guerra Civil Americana</strong>, ocorreu entre
+                <strong>1861 e 1865</strong>.
+            </p>
+
+            <p>
+                O conflito colocou em lados opostos os estados que permaneceram
+                na <strong>União</strong> e os estados que formaram os
+                <strong>Estados Confederados da América</strong>.
+            </p>
+
+            <p>
+                A escravidão esteve no centro das disputas políticas e sociais,
+                especialmente nas discussões sobre sua expansão para os novos
+                territórios dos Estados Unidos.
+            </p>
+
+            <p>
+                Entretanto, o conflito também envolveu diferenças econômicas,
+                interesses regionais, expansão territorial e disputas sobre
+                a relação entre os governos estaduais e o governo federal.
+            </p>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- PARTE I                                                -->
+        <!-- ===================================================== -->
+
+        <section class="secao comeco">
+
+            <h2>🔵 I — O COMEÇO: OS ESTADOS UNIDOS ANTES DA GUERRA</h2>
+
+            <h3>1. Expansão territorial</h3>
+
+            <p>
+                Durante o século XIX, os Estados Unidos ampliaram
+                significativamente seu território.
+            </p>
+
+            <p>
+                A expansão para o oeste incorporou novas áreas e levantou
+                uma questão fundamental:
+                <strong>a escravidão seria permitida ou proibida nos novos territórios?</strong>
+            </p>
+
+            <p>
+                Essa pergunta provocou intensos conflitos políticos.
+            </p>
+
+            <h3>2. Norte e Sul</h3>
+
+            <p>
+                As regiões Norte e Sul apresentavam estruturas econômicas
+                diferentes, embora as diferenças não devam ser tratadas como
+                absolutas.
+            </p>
+
+            <div class="comparacao">
+
+                <div class="lado uniao">
+
+                    <h3>🔵 Norte</h3>
+
+                    <ul>
+
+                        <li>Maior industrialização.</li>
+
+                        <li>Crescimento urbano.</li>
+
+                        <li>Expansão de ferrovias.</li>
+
+                        <li>Maior diversificação econômica.</li>
+
+                        <li>Fortalecimento de setores favoráveis ao trabalho livre.</li>
+
+                    </ul>
+
+                </div>
+
+                <div class="lado confederacao">
+
+                    <h3>🟠 Sul</h3>
+
+                    <ul>
+
+                        <li>Economia fortemente ligada à agricultura de exportação.</li>
+
+                        <li>Grande importância do algodão.</li>
+
+                        <li>Uso sistemático do trabalho escravizado.</li>
+
+                        <li>Elite agrária muito influente.</li>
+
+                        <li>Defesa da manutenção da escravidão.</li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <h3>3. A questão da escravidão</h3>
+
+            <p>
+                A escravidão de africanos e seus descendentes existia nos
+                Estados Unidos desde o período colonial.
+            </p>
+
+            <p>
+                Ao longo do século XIX, o movimento abolicionista ganhou força,
+                enquanto os defensores da escravidão procuravam proteger e
+                expandir o sistema.
+            </p>
+
+            <p>
+                A disputa tornou-se especialmente intensa quando novos
+                territórios passaram a ser incorporados à União.
+            </p>
+
+            <h3>4. A expansão para o oeste</h3>
+
+            <p>
+                Cada novo território incorporado podia alterar o equilíbrio
+                político entre estados escravistas e estados livres.
+            </p>
+
+            <p>
+                Assim, a expansão territorial também se transformou em
+                <strong>disputa pelo futuro político da escravidão</strong>.
+            </p>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- CAUSAS                                                 -->
+        <!-- ===================================================== -->
+
+        <section class="secao causas">
+
+            <h2>🟠 Principais causas da Guerra de Secessão</h2>
+
+            <ul>
+
+                <li>
+                    <strong>Escravidão:</strong>
+                    principal questão social e política em disputa.
+                </li>
+
+                <li>
+                    <strong>Expansão territorial:</strong>
+                    disputa sobre a extensão da escravidão aos novos territórios.
+                </li>
+
+                <li>
+                    <strong>Diferenças econômicas:</strong>
+                    estruturas produtivas distintas entre as regiões.
+                </li>
+
+                <li>
+                    <strong>Conflitos políticos:</strong>
+                    disputa crescente pelo controle do governo federal.
+                </li>
+
+                <li>
+                    <strong>Direitos dos estados:</strong>
+                    argumento utilizado pelos sulistas para defender a autonomia
+                    dos estados diante do governo federal.
+                </li>
+
+                <li>
+                    <strong>Eleição de Abraham Lincoln:</strong>
+                    sua vitória em 1860 foi interpretada pelos líderes de vários
+                    estados sulistas como ameaça aos interesses escravistas.
+                </li>
+
+            </ul>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- DESENVOLVIMENTO                                       -->
+        <!-- ===================================================== -->
+
+        <section class="secao desenvolvimento">
+
+            <h2>🟢 II — O DESENVOLVIMENTO: A GUERRA</h2>
+
+            <h3>1. A eleição de Abraham Lincoln</h3>
+
+            <p>
+                Em 1860, <strong>Abraham Lincoln</strong>, do Partido
+                Republicano, venceu a eleição presidencial.
+            </p>
+
+            <p>
+                Lincoln se opunha à expansão da escravidão para os territórios
+                federais, embora suas posições políticas tenham evoluído durante
+                o próprio processo da guerra.
+            </p>
+
+            <p>
+                Sua eleição acelerou o processo de secessão de diversos estados
+                do Sul.
+            </p>
+
+            <h3>2. A secessão</h3>
+
+            <p>
+                Entre dezembro de 1860 e 1861, vários estados sulistas
+                declararam sua saída da União.
+            </p>
+
+            <p>
+                Esses estados formaram os
+                <strong>Estados Confederados da América</strong>.
+            </p>
+
+            <p>
+                Jefferson Davis foi escolhido presidente da Confederação.
+            </p>
+
+            <h3>3. O início do conflito</h3>
+
+            <p>
+                Em abril de 1861, forças confederadas atacaram
+                <strong>Fort Sumter</strong>, na Carolina do Sul.
+            </p>
+
+            <p>
+                O episódio é considerado o início da guerra aberta entre
+                a União e a Confederação.
+            </p>
+
+            <h3>4. A União</h3>
+
+            <p>
+                O governo federal liderado por Lincoln defendia a preservação
+                da União.
+            </p>
+
+            <p>
+                Durante a guerra, a questão da escravidão passou a ocupar
+                posição cada vez mais central na política militar e diplomática
+                da União.
+            </p>
+
+            <h3>5. A Proclamação de Emancipação</h3>
+
+            <p>
+                Em 1º de janeiro de 1863 entrou em vigor a
+                <strong>Proclamação de Emancipação</strong>.
+            </p>
+
+            <p>
+                Ela declarou livres os escravizados que estavam em áreas
+                controladas pela Confederação e em rebelião contra a União,
+                não sendo uma abolição imediata da escravidão em todos os
+                Estados Unidos.
+            </p>
+
+            <p>
+                A medida também transformou o significado político da guerra
+                e permitiu maior participação de soldados negros nas forças
+                da União.
+            </p>
+
+            <h3>6. Gettysburg</h3>
+
+            <p>
+                A <strong>Batalha de Gettysburg</strong>, em julho de 1863,
+                foi uma das principais batalhas da guerra.
+            </p>
+
+            <p>
+                A derrota confederada na campanha do Norte representou um
+                importante momento militar.
+            </p>
+
+            <h3>7. O fim da guerra</h3>
+
+            <p>
+                O avanço militar da União e o desgaste econômico e humano
+                enfraqueceram progressivamente a Confederação.
+            </p>
+
+            <p>
+                Em abril de 1865, o general confederado
+                <strong>Robert E. Lee</strong> rendeu-se ao general da União
+                <strong>Ulysses S. Grant</strong> em Appomattox Court House.
+            </p>
+
+            <p>
+                A guerra terminou em 1865.
+            </p>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- LINHA DO TEMPO                                         -->
+        <!-- ===================================================== -->
+
+        <section class="secao">
+
+            <h2>📅 Linha do Tempo</h2>
+
+            <div class="timeline">
+
+                <div class="evento">
+                    <div class="ano">1860</div>
+                    <p>
+                        Abraham Lincoln vence a eleição presidencial.
+                    </p>
+                </div>
+
+                <div class="evento">
+                    <div class="ano">1860–1861</div>
+                    <p>
+                        Estados do Sul iniciam o processo de secessão.
+                    </p>
+                </div>
+
+                <div class="evento">
+                    <div class="ano">1861</div>
+                    <p>
+                        Formação dos Estados Confederados da América.
+                    </p>
+                </div>
+
+                <div class="evento">
+                    <div class="ano">12 de abril de 1861</div>
+                    <p>
+                        Ataque confederado a Fort Sumter.
+                    </p>
+                </div>
+
+                <div class="evento">
+                    <div class="ano">1863</div>
+                    <p>
+                        Proclamação de Emancipação entra em vigor.
+                    </p>
+                </div>
+
+                <div class="evento">
+                    <div class="ano">1863</div>
+                    <p>
+                        Batalha de Gettysburg.
+                    </p>
+                </div>
+
+                <div class="evento">
+                    <div class="ano">1865</div>
+                    <p>
+                        Rendição de Robert E. Lee e fim da guerra.
+                    </p>
+                </div>
+
+                <div class="evento">
+                    <div class="ano">1865</div>
+                    <p>
+                        13ª Emenda constitucional abole a escravidão nos Estados Unidos.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- CONSEQUÊNCIAS                                          -->
+        <!-- ===================================================== -->
+
+        <section class="secao consequencias">
+
+            <h2>🟡 Consequências da Guerra</h2>
+
+            <ul>
+
+                <li>
+                    Preservação da União.
+                </li>
+
+                <li>
+                    Derrota militar da Confederação.
+                </li>
+
+                <li>
+                    Abolição constitucional da escravidão através da
+                    <strong>13ª Emenda</strong>.
+                </li>
+
+                <li>
+                    Fortalecimento do governo federal.
+                </li>
+
+                <li>
+                    Grande destruição material e perda de vidas.
+                </li>
+
+                <li>
+                    Início do período conhecido como
+                    <strong>Reconstrução</strong>.
+                </li>
+
+                <li>
+                    Transformações profundas nas relações sociais e políticas
+                    dos Estados Unidos.
+                </li>
+
+                <li>
+                    Persistência de conflitos raciais e de desigualdades
+                    após o fim da escravidão.
+                </li>
+
+            </ul>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- RECONSTRUÇÃO                                           -->
+        <!-- ===================================================== -->
+
+        <section class="secao legado">
+
+            <h2>🟣 III — O LEGADO E O MUNDO ATUAL</h2>
+
+            <h3>1. A Reconstrução</h3>
+
+            <p>
+                Após a guerra, os Estados Unidos entraram no período conhecido
+                como <strong>Reconstrução</strong>.
+            </p>
+
+            <p>
+                O objetivo era reorganizar os estados do Sul e definir as
+                condições políticas e sociais para sua reintegração à União.
+            </p>
+
+            <h3>2. As emendas da Reconstrução</h3>
+
+            <p>
+                O período foi acompanhado por importantes mudanças constitucionais.
+            </p>
+
+            <div class="tabela-container">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+                            <th>Emenda</th>
+                            <th>Ano</th>
+                            <th>Importância</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>13ª</td>
+                            <td>1865</td>
+                            <td>Aboliu a escravidão.</td>
+                        </tr>
+
+                        <tr>
+                            <td>14ª</td>
+                            <td>1868</td>
+                            <td>Estabeleceu cidadania e proteção jurídica federal para pessoas nascidas ou naturalizadas nos EUA.</td>
+                        </tr>
+
+                        <tr>
+                            <td>15ª</td>
+                            <td>1870</td>
+                            <td>Proibiu negar o direito de voto por motivo de raça, cor ou condição anterior de servidão.</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+            <h3>3. A abolição não significou igualdade imediata</h3>
+
+            <p>
+                O fim jurídico da escravidão não eliminou automaticamente
+                desigualdades sociais e raciais.
+            </p>
+
+            <p>
+                Durante e depois da Reconstrução, ocorreram disputas políticas,
+                violência racial, resistência à ampliação dos direitos civis
+                e criação de mecanismos de segregação.
+            </p>
+
+            <h3>4. Os Estados Unidos como potência</h3>
+
+            <p>
+                A preservação da União e o fortalecimento do governo federal
+                contribuíram para a consolidação do Estado nacional.
+            </p>
+
+            <p>
+                Nas décadas seguintes, a industrialização e a expansão
+                econômica transformaram os Estados Unidos em uma das principais
+                potências industriais do mundo.
+            </p>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- RELAÇÃO COM O BRASIL                                  -->
+        <!-- ===================================================== -->
+
+        <section class="secao">
+
+            <h2>🇧🇷 História Geral ↔ Brasil</h2>
+
+            <p>
+                A Guerra de Secessão possui relações importantes com a história
+                brasileira porque ocorreu em um período no qual a escravidão
+                ainda existia no Brasil.
+            </p>
+
+            <p>
+                Enquanto os Estados Unidos aboliram constitucionalmente a
+                escravidão em 1865, o Brasil manteve o sistema escravista
+                até <strong>1888</strong>.
+            </p>
+
+            <p>
+                Essa comparação permite discutir diferentes processos de
+                abolição e diferentes experiências políticas no continente
+                americano.
+            </p>
+
+            <p>
+                O tema também pode ser relacionado à economia do
+                <strong>algodão</strong>, ao comércio internacional e às
+                transformações do capitalismo no século XIX.
+            </p>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- ATENÇÃO HISTÓRICA                                     -->
+        <!-- ===================================================== -->
+
+        <section class="secao atencao">
+
+            <h2>🔴 Atenção: simplificações que devemos evitar</h2>
+
+            <p>
+                É incorreto explicar a Guerra de Secessão simplesmente como
+                uma guerra entre "Norte industrial" e "Sul agrícola".
+            </p>
+
+            <p>
+                As diferenças econômicas existiam, mas eram mais complexas.
+                O conflito também envolveu escravidão, expansão territorial,
+                poder federal, interesses políticos e questões constitucionais.
+            </p>
+
+            <p>
+                Também é importante evitar afirmar que Lincoln começou a guerra
+                simplesmente para abolir a escravidão.
+            </p>
+
+            <p>
+                A preservação da União foi central em sua política inicial,
+                enquanto a emancipação ganhou crescente importância durante
+                o conflito.
+            </p>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- O QUE O PROFESSOR PRECISA DOMINAR                    -->
+        <!-- ===================================================== -->
+
+        <section class="secao">
+
+            <h2>👨‍🏫 O que o professor precisa dominar</h2>
+
+            <ol>
+
+                <li>
+                    Explicar a expansão territorial dos Estados Unidos.
+                </li>
+
+                <li>
+                    Explicar a importância econômica e social da escravidão.
+                </li>
+
+                <li>
+                    Compreender a diferença entre União e Confederação.
+                </li>
+
+                <li>
+                    Explicar o processo de secessão.
+                </li>
+
+                <li>
+                    Contextualizar a eleição de Abraham Lincoln.
+                </li>
+
+                <li>
+                    Explicar a Proclamação de Emancipação sem transformá-la
+                    em uma abolição imediata nacional.
+                </li>
+
+                <li>
+                    Compreender o papel da 13ª, 14ª e 15ª Emendas.
+                </li>
+
+                <li>
+                    Relacionar a guerra ao processo de Reconstrução.
+                </li>
+
+                <li>
+                    Comparar a abolição nos Estados Unidos com a abolição
+                    no Brasil.
+                </li>
+
+            </ol>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- O QUE COLOCAR NA LOUSA                                -->
+        <!-- ===================================================== -->
+
+        <section class="secao lousa">
+
+            <h2>🧑‍🏫 O que colocar na lousa</h2>
+
+            <ul>
+
+                <li><strong>1861–1865 → Guerra de Secessão</strong></li>
+
+                <li><strong>Norte/União × Sul/Confederação</strong></li>
+
+                <li><strong>Questão central:</strong> escravidão e sua expansão.</li>
+
+                <li><strong>Outros fatores:</strong> economia + território + poder federal.</li>
+
+                <li><strong>1860:</strong> Lincoln eleito.</li>
+
+                <li><strong>1861:</strong> Fort Sumter.</li>
+
+                <li><strong>1863:</strong> Proclamação de Emancipação.</li>
+
+                <li><strong>1865:</strong> fim da guerra.</li>
+
+                <li><strong>1865:</strong> 13ª Emenda.</li>
+
+                <li><strong>Depois:</strong> Reconstrução.</li>
+
+                <li><strong>Brasil:</strong> escravidão abolida em 1888.</li>
+
+            </ul>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- CONCEITOS                                              -->
+        <!-- ===================================================== -->
+
+        <section class="secao">
+
+            <h2>📚 Conceitos fundamentais</h2>
+
+            <div class="conceitos">
+
+                <div class="conceito">
+                    <strong>Secessão</strong>
+                    <p>Processo de separação de um território de uma unidade política.</p>
+                </div>
+
+                <div class="conceito">
+                    <strong>União</strong>
+                    <p>Governo federal dos Estados Unidos durante a guerra.</p>
+                </div>
+
+                <div class="conceito">
+                    <strong>Confederação</strong>
+                    <p>Estados sulistas que romperam com a União e formaram um novo governo.</p>
+                </div>
+
+                <div class="conceito">
+                    <strong>Abolicionismo</strong>
+                    <p>Movimento político e social contrário à escravidão.</p>
+                </div>
+
+                <div class="conceito">
+                    <strong>Reconstrução</strong>
+                    <p>Período posterior à guerra marcado pela reorganização dos estados do Sul.</p>
+                </div>
+
+                <div class="conceito">
+                    <strong>Segregação</strong>
+                    <p>Separação institucional e social de grupos raciais, especialmente desenvolvida no Sul após a Reconstrução.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- ENEM                                                    -->
+        <!-- ===================================================== -->
+
+        <section class="secao enem">
+
+            <h2>🎯 ENEM, Vestibular e Concurso</h2>
+
+            <h3>O que o aluno precisa reconhecer?</h3>
+
+            <ul>
+
+                <li>A escravidão como questão central do conflito.</li>
+
+                <li>A disputa sobre a expansão da escravidão.</li>
+
+                <li>As diferenças econômicas e políticas entre as regiões.</li>
+
+                <li>A defesa da União pelo governo de Lincoln.</li>
+
+                <li>A Proclamação de Emancipação.</li>
+
+                <li>A 13ª Emenda.</li>
+
+                <li>A Reconstrução.</li>
+
+                <li>A permanência de conflitos raciais após a abolição.</li>
+
+                <li>A comparação com a escravidão no Brasil.</li>
+
+            </ul>
+
+            <!-- ================================================= -->
+            <!-- QUESTÃO 1                                          -->
+            <!-- ================================================= -->
+
+            <div class="questao">
+
+                <h3>Questão 1</h3>
+
+                <p>
+                    Durante o século XIX, a expansão territorial dos Estados
+                    Unidos provocou intensos conflitos políticos porque novos
+                    territórios poderiam alterar o equilíbrio entre estados
+                    livres e escravistas.
+                </p>
+
+                <p>
+                    Nesse contexto, a questão territorial estava diretamente
+                    relacionada:
+                </p>
+
+                <ol type="A">
+
+                    <li>
+                        ao futuro da escravidão nos novos territórios.
+                    </li>
+
+                    <li>
+                        à extinção imediata do federalismo.
+                    </li>
+
+                    <li>
+                        à formação de uma monarquia norte-americana.
+                    </li>
+
+                    <li>
+                        ao fim da industrialização do Norte.
+                    </li>
+
+                    <li>
+                        à independência das colônias espanholas.
+                    </li>
+
+                </ol>
+
+                <button class="btn-gabarito" onclick="mostrarGabarito('g1')">
+                    Mostrar gabarito
+                </button>
+
+                <div class="gabarito" id="g1">
+
+                    <strong>Resposta: A.</strong>
+
+                    <p>
+                        A expansão territorial levantava a questão de permitir
+                        ou não a escravidão nas novas áreas incorporadas aos
+                        Estados Unidos.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- ================================================= -->
+            <!-- QUESTÃO 2                                          -->
+            <!-- ================================================= -->
+
+            <div class="questao">
+
+                <h3>Questão 2</h3>
+
+                <p>
+                    A Guerra de Secessão terminou em 1865 e foi seguida por
+                    mudanças constitucionais profundas nos Estados Unidos.
+                </p>
+
+                <p>
+                    Uma dessas mudanças foi:
+                </p>
+
+                <ol type="A">
+
+                    <li>
+                        a restauração da escravidão.
+                    </li>
+
+                    <li>
+                        a abolição constitucional da escravidão.
+                    </li>
+
+                    <li>
+                        a dissolução da União.
+                    </li>
+
+                    <li>
+                        a transformação dos Estados Unidos em uma monarquia.
+                    </li>
+
+                    <li>
+                        a criação da Confederação como governo nacional.
+                    </li>
+
+                </ol>
+
+                <button class="btn-gabarito" onclick="mostrarGabarito('g2')">
+                    Mostrar gabarito
+                </button>
+
+                <div class="gabarito" id="g2">
+
+                    <strong>Resposta: B.</strong>
+
+                    <p>
+                        A 13ª Emenda, ratificada em 1865, aboliu a escravidão
+                        nos Estados Unidos.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- RESUMO FINAL                                           -->
+        <!-- ===================================================== -->
+
+        <section class="resumo">
+
+            <h2>🧠 Resumo para o professor</h2>
+
+            <p>
+                A <strong>Guerra de Secessão</strong> ocorreu entre
+                <strong>1861 e 1865</strong> e colocou a União contra os
+                Estados Confederados.
+            </p>
+
+            <p>
+                A escravidão esteve no centro do conflito, especialmente
+                diante da disputa sobre sua expansão para os novos territórios.
+            </p>
+
+            <p>
+                O conflito também envolveu diferenças econômicas, interesses
+                regionais, expansão territorial e disputas sobre o poder
+                federal e estadual.
+            </p>
+
+            <p>
+                A vitória da União preservou os Estados Unidos como uma
+                unidade política e levou à abolição constitucional da
+                escravidão.
+            </p>
+
+            <p>
+                Porém, a abolição não eliminou imediatamente as desigualdades
+                raciais, que continuaram a marcar a sociedade norte-americana.
+            </p>
+
+            <p>
+                <strong>
+                    Guerra de Secessão → escravidão + território + poder político
+                    → União × Confederação → vitória da União → abolição
+                    → Reconstrução → novos conflitos raciais.
+                </strong>
+            </p>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- NAVEGAÇÃO FINAL                                        -->
+        <!-- ===================================================== -->
+
+        <nav class="navegacao">
+
+            <!-- Volta ao capítulo anterior. -->
+            <a class="btn btn-voltar" href="../30-Congresso-de-Viena/index.html">
+                ← Voltar para 45
+            </a>
+
+            <!-- Vai para o capítulo seguinte. -->
+            <a class="btn btn-proximo" href="../32-Independencia-America-Espanhola/index.html">
+                Próximo: 47 — Unificações Alemã e Italiana →
+            </a>
+
+        </nav>
+
+    </main>
+
+    <!-- ========================================================= -->
+    <!-- RODAPÉ                                                    -->
+    <!-- ========================================================= -->
+
+    <footer>
+
+        <p>
+            Curso de História Geral — Fund II • Ensino Médio • ENEM • Vestibular • Concurso
+        </p>
+
+        <p class="assinatura">
+            Professor Marcelo Oliveira
+        </p>
+
+    </footer>
+
+    <!-- ========================================================= -->
+    <!-- BOTÃO VOLTAR AO TOPO                                      -->
+    <!-- ========================================================= -->
+
+    <button id="topo" onclick="voltarAoTopo()">
+        ↑
+    </button>
+
+    <!-- ========================================================= -->
+    <!-- JAVASCRIPT                                                 -->
+    <!-- ========================================================= -->
+
+    <script>
+
+        // Cria a função responsável por mostrar ou esconder o gabarito.
+        function mostrarGabarito(id) {
+
+            // Localiza o elemento pelo identificador recebido.
+            const resposta = document.getElementById(id);
+
+            // Verifica se o elemento está visível.
+            if (resposta.style.display === "block") {
+
+                // Esconde a resposta.
+                resposta.style.display = "none";
+
+            } else {
+
+                // Mostra a resposta.
+                resposta.style.display = "block";
+
+            }
+
+        }
+
+        // Localiza o botão de voltar ao topo.
+        const botaoTopo = document.getElementById("topo");
+
+        // Detecta a movimentação da página.
+        window.addEventListener("scroll", function () {
+
+            // Verifica se o usuário já desceu bastante.
+            if (window.scrollY > 400) {
+
+                // Mostra o botão.
+                botaoTopo.style.display = "block";
+
+            } else {
+
+                // Esconde o botão.
+                botaoTopo.style.display = "none";
+
+            }
+
+        });
+
+        // Cria a função responsável por voltar ao início.
+        function voltarAoTopo() {
+
+            // Move a página suavemente para o topo.
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+
+        }
+
+    </script>
+    <script>
+  const paginaAnterior = "45 - OCUPAÇÃO E EXPANSÃO TERRITORIAIS.html";
+  const paginaProxima = "47 - Unificações Alemã e Italiana.html";
+</script>
+<script src="navegacao.js"></script>
+
+</body>
+
+</html>
+

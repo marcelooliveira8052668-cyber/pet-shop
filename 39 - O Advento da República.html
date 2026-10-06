@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1.39 — O Advento da República | Professor Marcelo Oliveira</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { font-family: Arial, Helvetica, sans-serif; background: #f4f7fb; color: #263238; line-height: 1.7; }
+        .container { width: 92%; max-width: 1200px; margin: auto; }
+        header { background: linear-gradient(135deg, #172554, #2563eb); color: white; padding: 50px 20px; text-align: center; box-shadow: 0 5px 20px rgba(0, 0, 0, 0.18); }
+        .eyebrow { font-size: 0.95rem; letter-spacing: 2px; text-transform: uppercase; opacity: 0.9; margin-bottom: 12px; }
+        header h1 { font-size: clamp(2rem, 5vw, 3.5rem); margin-bottom: 15px; }
+        header p { max-width: 850px; margin: auto; font-size: 1.1rem; }
+        .navegacao { display: flex; justify-content: space-between; gap: 15px; margin: 25px auto; flex-wrap: wrap; }
+        .btn { display: inline-block; padding: 13px 20px; border-radius: 10px; text-decoration: none; font-weight: bold; transition: 0.3s; }
+        .btn-voltar { background: #475569; color: white; }
+        .btn-proximo { background: #2563eb; color: white; }
+        .btn:hover { transform: translateY(-2px); opacity: 0.9; }
+        .apresentacao { background: white; margin: 30px auto; padding: 30px; border-radius: 18px; border-left: 7px solid #2563eb; box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08); }
+        .secao { margin: 35px auto; padding: 30px; border-radius: 18px; background: white; box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07); }
+        .comeco { border-top: 8px solid #2563eb; }
+        .desenvolvimento { border-top: 8px solid #16a34a; }
+        .legado { border-top: 8px solid #7c3aed; }
+        .consequencias { border-top: 8px solid #eab308; }
+        .enem { border-top: 8px solid #0891b2; }
+        .lousa { border-top: 8px solid #111827; }
+        .secao h2 { margin-bottom: 20px; color: #172554; font-size: 1.8rem; }
+        .secao h3 { margin-top: 25px; margin-bottom: 10px; color: #334155; }
+        strong { color: #172554; }
+        ul, ol { margin: 15px 0 15px 25px; }
+        li { margin-bottom: 8px; }
+        .timeline { border-left: 4px solid #2563eb; padding-left: 25px; margin-top: 25px; }
+        .evento { margin-bottom: 25px; position: relative; }
+        .evento::before { content: ""; position: absolute; left: -36px; top: 7px; width: 14px; height: 14px; background: #2563eb; border-radius: 50%; }
+        .ano { font-weight: bold; color: #2563eb; }
+        .tabela-container { overflow-x: auto; margin-top: 20px; }
+        table { width: 100%; border-collapse: collapse; min-width: 650px; }
+        th, td { padding: 14px; border: 1px solid #cbd5e1; text-align: left; }
+        th { background: #172554; color: white; }
+        tr:nth-child(even) { background: #f8fafc; }
+        .conceitos { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 15px; margin-top: 20px; }
+        .conceito { background: #eff6ff; border: 1px solid #bfdbfe; padding: 18px; border-radius: 12px; }
+        .questao { background: #f8fafc; padding: 25px; border-radius: 14px; margin-top: 20px; border-left: 5px solid #0891b2; }
+        .btn-gabarito { margin-top: 15px; background: #0891b2; color: white; border: none; padding: 12px 18px; border-radius: 8px; cursor: pointer; font-weight: bold; }
+        .gabarito { display: none; margin-top: 15px; padding: 15px; background: #ecfeff; border-radius: 10px; border: 1px solid #67e8f9; }
+        .resumo { background: #172554; color: white; padding: 30px; border-radius: 18px; margin: 35px auto; }
+        .resumo strong { color: white; }
+        footer { background: #0f172a; color: white; text-align: center; padding: 35px 20px; margin-top: 50px; }
+        .assinatura { font-size: 1.2rem; font-weight: bold; margin-top: 10px; }
+        #topo { position: fixed; bottom: 20px; right: 20px; width: 48px; height: 48px; border: none; border-radius: 50%; background: #2563eb; color: white; cursor: pointer; font-size: 20px; display: none; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25); }
+        @media (max-width: 700px) { .secao, .apresentacao { padding: 20px; } .navegacao { flex-direction: column; } .btn { text-align: center; } }
+    </style>
+</head>
+
+<body id="inicio">
+
+    <header>
+        <div class="eyebrow">Curso de História Geral</div>
+        <h1>1.39 — O Advento da República</h1>
+        <p>A Proclamação da República de 1889 e a transição do Império para o novo regime.</p>
+    </header>
+
+    <main class="container">
+
+        <nav class="navegacao">
+            <a class="btn btn-voltar" href="38 - Segundo Reinado.html">← Segundo Reinado</a>
+            <a class="btn btn-proximo" href="40 - República Velha - Parte 1.html">República Velha — Parte 1 →</a>
+        </nav>
+
+        <section class="apresentacao">
+            <p>Por que estudar o advento da República? Porque ele encerrou quase sete décadas de monarquia no Brasil e inaugurou um novo ciclo político, a República Velha.</p>
+        </section>
+
+        <section class="secao comeco">
+            <h2>🔵 I — O COMEÇO: A CRISE DO IMPÉRIO</h2>
+
+            <h3>1. O isolamento de Dom Pedro II</h3>
+            <p>No final do século XIX, o Império perdia o apoio das elites. A abolição da escravidão (1888) afastou os fazendeiros, a crise com a Igreja aprofundou as tensões religiosas e os militares fortaleceram-se após a Guerra do Paraguai.</p>
+
+            <h3>2. O movimento republicano</h3>
+            <p>O ideal republicano ganhava força entre militares, intelectuais e fazendeiros paulistas, inspirados pelo <strong>positivismo</strong> de Auguste Comte e pela ideia de progresso. Benjamin Constant foi uma das principais figuras desse movimento.</p>
+        </section>
+
+        <section class="secao desenvolvimento">
+            <h2>🟢 II — O DESENVOLVIMENTO: O GOLPE DE 15 DE NOVEMBRO</h2>
+
+            <h3>3. A Proclamação da República</h3>
+            <p>Na madrugada de 15 de novembro de 1889, tropas lideradas pelo marechal <strong>Deodoro da Fonseca</strong> e apoiadas por republicanos avançaram sobre o Ministério, derrubando o governo imperial. A monarquia foi substituída pela república, e Dom Pedro II foi exilado.</p>
+
+            <h3>4. O Governo Provisório</h3>
+            <p>Deodoro da Fonseca assumiu o governo provisório. O Brasil enfrentou a crise financeira do <strong>encilhamento</strong> (especulação financeira) e, no campo político, a Revolta da Armada e outros conflitos internos.</p>
+        </section>
+
+        <section class="secao comeco">
+            <h2>📅 LINHA DO TEMPO</h2>
+            <div class="timeline">
+                <div class="evento"><span class="ano">1870</span> — Fim da Guerra do Paraguai; Exército ganha força política.</div>
+                <div class="evento"><span class="ano">1888</span> — Lei Áurea: abolição da escravidão fragiliza o Império.</div>
+                <div class="evento"><span class="ano">1889</span> — Proclamação da República (15 de novembro).</div>
+                <div class="evento"><span class="ano">1891</span> — Primeira Constituição Republicana; renúncia de Deodoro.</div>
+                <div class="evento"><span class="ano">1894</span> — Início do governo de Prudente de Moraes, primeiro presidente civil.</div>
+            </div>
+        </section>
+
+        <section class="secao consequencias">
+            <h2>🟡 Consequências</h2>
+            <ul>
+                <li>Fim da monarquia e exílio de Dom Pedro II.</li>
+                <li>Proclamação da República em 15 de novembro de 1889.</li>
+                <li>Início da República Velha e dos governos militares.</li>
+                <li>Crise econômica do encilhamento.</li>
+                <li>Reconfiguração do sistema político brasileiro.</li>
+            </ul>
+        </section>
+
+        <section class="secao legado">
+            <h2>🟣 III — O LEGADO E O MUNDO ATUAL</h2>
+            <p>A mudança de regime não significou alteração profunda na estrutura social do Brasil: a maioria da população continuava excluída da política. O mito do "golpe militar" mostra que a República nasceu de uma manobra das elites, mas também inaugurou experiências políticas que influenciariam o país por décadas.</p>
+        </section>
+
+        <section class="secao">
+            <h2>📊 RESUMO: O ADVENTO DA REPÚBLICA</h2>
+            <div class="tabela-container">
+                <table>
+                    <thead>
+                        <tr><th>Aspecto</th><th>Característica</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Data</td><td>15 de novembro de 1889</td></tr>
+                        <tr><td>Líder militar</td><td>Marechal Deodoro da Fonseca</td></tr>
+                        <tr><td>Base ideológica</td><td>Positivismo e ideais republicanos</td></tr>
+                        <tr><td>Fim</td><td>Império do Brasil</td></tr>
+                        <tr><td>Novo início</td><td>República Velha</td></tr>
+                        <tr><td>Crise do início</td><td>Encilhamento</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="secao lousa">
+            <h2>📋 BNCC — COMO TRABALHAR ESTE TEMA</h2>
+            <p>A BNCC sugere trabalhar o advento da República a partir do contexto de crise do Segundo Reinado e das disputas políticas que marcaram a transição.</p>
+            <ul>
+                <li><strong>Habilidade (EF08HI09):</strong> Analisar as causas da queda do Império e da proclamação da República.</li>
+                <li><strong>Habilidade (EF08HI10):</strong> Identificar os diferentes grupos sociais envolvidos no golpe de 1889.</li>
+                <li><strong>Objetivo:</strong> Compreender o papel dos militares e dos republicanos no desfecho do Império.</li>
+            </ul>
+            <h3>💡 Sugestão de aula</h3>
+            <ul>
+                <li>Análise do quadro "A Proclamação da República" de Henrique Bernardelli.</li>
+                <li>Debate: "A Proclamação foi um golpe popular ou militar?"</li>
+                <li>Comparação entre monarquia e república nas constituições de 1824 e 1891.</li>
+            </ul>
+        </section>
+
+        <section class="secao">
+            <h2>📚 CONCEITOS FUNDAMENTAIS</h2>
+            <div class="conceitos">
+                <div class="conceito"><strong>Proclamação da República</strong><br>Golpe militar de 15 de novembro de 1889 que encerrou o Império.</div>
+                <div class="conceito"><strong>Positivismo</strong><br>Corrente filosófica que defendia Ordem e Progresso.</div>
+                <div class="conceito"><strong>Deodoro da Fonseca</strong><br>Marechal que liderou a Proclamação da República.</div>
+                <div class="conceito"><strong>Benjamin Constant</strong><br>Principal líder intelectual do movimento republicano.</div>
+                <div class="conceito"><strong>Encilhamento</strong><br>Crise financeira especulativa do início da República.</div>
+                <div class="conceito"><strong>Dom Pedro II</strong><br>Último imperador do Brasil, exilado em 1889.</div>
+            </div>
+        </section>
+
+        <section class="secao enem">
+            <h2>🎯 ENEM, Vestibular e Concurso</h2>
+            <p>Teste seus conhecimentos:</p>
+
+            <div class="questao">
+                <h3>Questão 1</h3>
+                <p>A Proclamação da República, em 1889, foi acompanhada de uma série de fatores que enfraqueceram o Império. Entre eles, destaca-se:</p>
+                <ol type="A">
+                    <li>O apoio incondicional da Igreja ao Imperador.</li>
+                    <li>A perda de apoio político após a abolição da escravidão.</li>
+                    <li>A aliança entre fazendeiros e imperiais.</li>
+                    <li>A revolta popular de grande porte nas ruas do Rio.</li>
+                    <li>O apoio de Portugal ao golpe militar.</li>
+                </ol>
+                <button class="btn-gabarito" onclick="mostrarGabarito('g1')">Mostrar gabarito</button>
+                <div class="gabarito" id="g1">
+                    <strong>Resposta: B.</strong> A Lei Áurea afastou os fazendeiros escravistas do apoio à monarquia, enfraquecendo o Império.
+                </div>
+            </div>
+
+            <div class="questao">
+                <h3>Questão 2</h3>
+                <p>O movimento republicano brasileiro no final do século XIX teve como um de seus principais referenciais ideológicos:</p>
+                <ol type="A">
+                    <li>O socialismo utópico europeu.</li>
+                    <li>O positivismo, especialmente na tradição militar.</li>
+                    <li>O catolicismo tradicional.</li>
+                    <li>O marxismo-leninismo.</li>
+                    <li>O anarquismo russo.</li>
+                </ol>
+                <button class="btn-gabarito" onclick="mostrarGabarito('g2')">Mostrar gabarito</button>
+                <div class="gabarito" id="g2">
+                    <strong>Resposta: B.</strong> O positivismo de Augusto Comte, com a ideia de "Ordem e Progresso", influenciou fortemente os líderes republicanos.
+                </div>
+            </div>
+        </section>
+
+        <section class="resumo">
+            <h2>🧠 RESUMO PARA O PROFESSOR</h2>
+            <p>
+                <strong>Tema:</strong> O Advento da República (1889).<br>
+                <strong>Data:</strong> 15 de novembro de 1889.<br>
+                <strong>Liderança:</strong> Marechal Deodoro da Fonseca.<br>
+                <strong>Causas:</strong> Crise do Império, movimento republicano, positivismo.<br>
+                <strong>Crise inicial:</strong> Encilhamento.<br>
+                <strong>Habilidade BNCC:</strong> EF08HI09 e EF08HI10 — queda do Império e proclamação da República.
+            </p>
+        </section>
+
+        <nav class="navegacao">
+            <a class="btn btn-voltar" href="38 - Segundo Reinado.html">← Segundo Reinado</a>
+            <a class="btn btn-proximo" href="40 - República Velha - Parte 1.html">República Velha — Parte 1 →</a>
+        </nav>
+
+    </main>
+
+    <footer>
+        <p>Curso de História Geral — Fund II • Ensino Médio • ENEM • Vestibular • Concurso</p>
+        <p class="assinatura">Professor Marcelo Oliveira</p>
+    </footer>
+
+    <button id="topo" onclick="voltarAoTopo()">↑</button>
+
+    <script>
+        function mostrarGabarito(id) {
+            const resposta = document.getElementById(id);
+            resposta.style.display = (resposta.style.display === "block") ? "none" : "block";
+        }
+        const botaoTopo = document.getElementById("topo");
+        window.addEventListener("scroll", function () { botaoTopo.style.display = window.scrollY > 400 ? "block" : "none"; });
+        function voltarAoTopo() { window.scrollTo({ top: 0, behavior: "smooth" }); }
+    </script>
+    <script>
+  const paginaAnterior = "38 - Segundo Reinado.html";
+  const paginaProxima = "40 - República Velha - Parte 1.html";
+</script>
+<script src="navegacao.js"></script>
+
+</body>
+
+</html>

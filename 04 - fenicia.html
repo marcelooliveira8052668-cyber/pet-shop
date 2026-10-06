@@ -1,0 +1,1624 @@
+<!DOCTYPE html>
+<!-- Define que o documento utiliza HTML5. -->
+
+<html lang="pt-BR">
+<!-- Define o português do Brasil como idioma da página. -->
+
+<head>
+    <!-- Inicia as configurações da página. -->
+
+    <meta charset="UTF-8">
+    <!-- Permite utilizar corretamente acentos e caracteres especiais. -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Faz a página se adaptar a celulares, tablets e computadores. -->
+
+    <title>1.4 — Fenícia | Curso de História Geral</title>
+    <!-- Define o título da aba do navegador. -->
+
+    <style>
+        /* ========================================= */
+        /* CONFIGURAÇÕES GERAIS                      */
+        /* ========================================= */
+
+        * {
+            /* Seleciona todos os elementos da página. */
+            box-sizing: border-box;
+            /* Faz padding e bordas entrarem no cálculo do tamanho. */
+            margin: 0;
+            /* Remove margens padrão. */
+            padding: 0;
+            /* Remove espaçamentos internos padrão. */
+        }
+
+        html {
+            /* Configura o documento HTML. */
+            scroll-behavior: smooth;
+            /* Faz a navegação entre seções ser suave. */
+        }
+
+        body {
+            /* Configura o corpo da página. */
+            font-family: Arial, Helvetica, sans-serif;
+            /* Define uma fonte simples e profissional. */
+            background: #f3f6fa;
+            /* Define o fundo geral. */
+            color: #1f2937;
+            /* Define a cor principal dos textos. */
+            line-height: 1.7;
+            /* Melhora a leitura dos textos. */
+        }
+
+        button {
+            /* Configura todos os botões. */
+            font-family: inherit;
+            /* Faz o botão usar a mesma fonte. */
+            cursor: pointer;
+            /* Mostra o cursor de clique. */
+        }
+
+        /* ========================================= */
+        /* CABEÇALHO                                  */
+        /* ========================================= */
+
+        header {
+            /* Configura o cabeçalho. */
+            background: linear-gradient(135deg, #111827, #243447);
+            /* Cria um degradê escuro profissional. */
+            color: white;
+            /* Define os textos como brancos. */
+            padding: 55px 20px;
+            /* Cria espaçamento interno. */
+            text-align: center;
+            /* Centraliza os textos. */
+            border-bottom: 5px solid #c89b3c;
+            /* Cria uma linha dourada inferior. */
+        }
+
+        header .numero {
+            /* Configura o identificador do curso. */
+            color: #e5c76b;
+            /* Define a cor dourada. */
+            font-weight: bold;
+            /* Deixa o texto em negrito. */
+            letter-spacing: 2px;
+            /* Aumenta o espaçamento das letras. */
+            margin-bottom: 12px;
+            /* Cria espaço abaixo. */
+        }
+
+        header h1 {
+            /* Configura o título principal. */
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            /* Faz o tamanho se adaptar à tela. */
+            margin-bottom: 15px;
+            /* Cria espaço abaixo do título. */
+        }
+
+        header p {
+            /* Configura os textos do cabeçalho. */
+            max-width: 900px;
+            /* Limita a largura dos textos. */
+            margin: 8px auto;
+            /* Centraliza os textos. */
+            color: #dbe4ee;
+            /* Define uma cor clara. */
+        }
+
+        /* ========================================= */
+        /* MENU                                       */
+        /* ========================================= */
+
+        nav {
+            /* Configura a barra de navegação. */
+            position: sticky;
+            /* Mantém o menu preso ao topo. */
+            top: 0;
+            /* Define a posição superior. */
+            z-index: 1000;
+            /* Mantém o menu acima dos outros elementos. */
+            background: white;
+            /* Define fundo branco. */
+            border-bottom: 1px solid #dbe2ea;
+            /* Cria uma linha inferior. */
+            padding: 12px;
+            /* Cria espaço interno. */
+            display: flex;
+            /* Coloca os botões em linha. */
+            justify-content: center;
+            /* Centraliza os botões. */
+            gap: 10px;
+            /* Cria espaço entre os botões. */
+            flex-wrap: wrap;
+            /* Permite quebra em telas menores. */
+        }
+
+        nav button {
+            /* Configura os botões do menu. */
+            background: #eef2f7;
+            /* Define fundo claro. */
+            color: #243447;
+            /* Define a cor do texto. */
+            border: 1px solid #d5dde7;
+            /* Cria uma borda discreta. */
+            border-radius: 8px;
+            /* Arredonda os cantos. */
+            padding: 10px 16px;
+            /* Define o tamanho interno. */
+            font-weight: bold;
+            /* Deixa os textos destacados. */
+            transition: 0.2s;
+            /* Cria uma transição suave. */
+        }
+
+        nav button:hover {
+            /* Define o comportamento ao passar o mouse. */
+            background: #243447;
+            /* Muda o fundo para escuro. */
+            color: white;
+            /* Muda o texto para branco. */
+            transform: translateY(-2px);
+            /* Move o botão levemente para cima. */
+        }
+
+        /* ========================================= */
+        /* CONTEÚDO                                   */
+        /* ========================================= */
+
+        main {
+            /* Configura o conteúdo principal. */
+            max-width: 1150px;
+            /* Define uma largura máxima. */
+            margin: auto;
+            /* Centraliza o conteúdo. */
+            padding: 35px 20px 80px;
+            /* Define espaçamento interno. */
+        }
+
+        section {
+            /* Configura cada seção. */
+            background: white;
+            /* Define fundo branco. */
+            border-radius: 16px;
+            /* Arredonda os cantos. */
+            padding: 35px;
+            /* Cria espaço interno. */
+            margin-bottom: 30px;
+            /* Cria espaço entre seções. */
+            box-shadow: 0 8px 25px rgba(15, 23, 42, 0.07);
+            /* Adiciona uma sombra discreta. */
+            scroll-margin-top: 90px;
+            /* Evita que o menu esconda os títulos. */
+        }
+
+        section h2 {
+            /* Configura os títulos das seções. */
+            color: #243447;
+            /* Define a cor. */
+            font-size: 1.9rem;
+            /* Define o tamanho. */
+            margin-bottom: 20px;
+            /* Cria espaço abaixo. */
+            border-left: 5px solid #c89b3c;
+            /* Adiciona uma marca dourada lateral. */
+            padding-left: 14px;
+            /* Cria espaço entre a marca e o texto. */
+        }
+
+        section h3 {
+            /* Configura subtítulos. */
+            color: #334e68;
+            /* Define uma cor azul-acinzentada. */
+            margin-top: 25px;
+            /* Cria espaço acima. */
+            margin-bottom: 10px;
+            /* Cria espaço abaixo. */
+        }
+
+        p {
+            /* Configura os parágrafos. */
+            margin-bottom: 15px;
+            /* Cria espaço entre os parágrafos. */
+        }
+
+        strong {
+            /* Configura palavras em destaque. */
+            color: #172033;
+            /* Define uma cor mais forte. */
+        }
+
+        /* ========================================= */
+        /* CAIXAS DE DESTAQUE                         */
+        /* ========================================= */
+
+        .destaque {
+            /* Cria uma caixa de destaque. */
+            background: #f7f1df;
+            /* Define fundo bege. */
+            border-left: 5px solid #c89b3c;
+            /* Cria borda dourada. */
+            padding: 20px;
+            /* Cria espaço interno. */
+            border-radius: 10px;
+            /* Arredonda os cantos. */
+            margin: 20px 0;
+            /* Cria espaço acima e abaixo. */
+        }
+
+        .alerta {
+            /* Cria uma caixa de observação. */
+            background: #eef5fb;
+            /* Define fundo azul claro. */
+            border-left: 5px solid #4b7399;
+            /* Cria borda azul. */
+            padding: 20px;
+            /* Cria espaço interno. */
+            border-radius: 10px;
+            /* Arredonda os cantos. */
+            margin: 20px 0;
+            /* Cria espaçamento externo. */
+        }
+
+        /* ========================================= */
+        /* TRILOGIA                                   */
+        /* ========================================= */
+
+        .trilogia {
+            /* Cria a grade da trilogia. */
+            display: grid;
+            /* Ativa o sistema de grade. */
+            grid-template-columns: repeat(3, 1fr);
+            /* Cria três colunas. */
+            gap: 20px;
+            /* Cria espaço entre os cartões. */
+            margin-top: 25px;
+            /* Cria espaço acima. */
+        }
+
+        .card {
+            /* Configura os cartões. */
+            background: #f8fafc;
+            /* Define fundo claro. */
+            border: 1px solid #e1e7ef;
+            /* Define borda. */
+            border-radius: 12px;
+            /* Arredonda os cantos. */
+            padding: 22px;
+            /* Cria espaço interno. */
+        }
+
+        .card h3 {
+            /* Configura o título dos cartões. */
+            margin-top: 0;
+            /* Remove margem superior. */
+            color: #243447;
+            /* Define a cor. */
+        }
+
+        /* ========================================= */
+        /* LINHA DO TEMPO                             */
+        /* ========================================= */
+
+        .timeline {
+            /* Configura a linha do tempo. */
+            border-left: 4px solid #c89b3c;
+            /* Cria a linha vertical. */
+            padding-left: 25px;
+            /* Cria espaço entre a linha e o texto. */
+        }
+
+        .timeline-item {
+            /* Configura cada acontecimento. */
+            position: relative;
+            /* Permite posicionar o marcador. */
+            margin-bottom: 25px;
+            /* Cria espaço entre os itens. */
+        }
+
+        .timeline-item::before {
+            /* Cria o círculo da linha do tempo. */
+            content: "";
+            /* Cria um elemento vazio. */
+            position: absolute;
+            /* Permite posicionamento absoluto. */
+            left: -37px;
+            /* Coloca o círculo sobre a linha. */
+            top: 7px;
+            /* Define a posição vertical. */
+            width: 14px;
+            /* Define a largura. */
+            height: 14px;
+            /* Define a altura. */
+            background: #c89b3c;
+            /* Define a cor dourada. */
+            border-radius: 50%;
+            /* Transforma em círculo. */
+            border: 3px solid white;
+            /* Cria uma borda branca. */
+        }
+
+        .timeline-item strong {
+            /* Configura a data da linha do tempo. */
+            display: block;
+            /* Coloca a data em uma linha própria. */
+            color: #9a721f;
+            /* Define a cor dourada escura. */
+            margin-bottom: 4px;
+            /* Cria espaço abaixo. */
+        }
+
+        /* ========================================= */
+        /* LISTAS                                     */
+        /* ========================================= */
+
+        ul,
+        ol {
+            /* Configura listas. */
+            padding-left: 25px;
+            /* Cria espaço para marcadores. */
+            margin-bottom: 18px;
+            /* Cria espaço abaixo. */
+        }
+
+        li {
+            /* Configura cada item. */
+            margin-bottom: 8px;
+            /* Cria espaço entre itens. */
+        }
+
+        /* ========================================= */
+        /* GRADE DE CONCEITOS                         */
+        /* ========================================= */
+
+        .grid {
+            /* Configura uma grade. */
+            display: grid;
+            /* Ativa o sistema de grade. */
+            grid-template-columns: repeat(2, 1fr);
+            /* Cria duas colunas. */
+            gap: 18px;
+            /* Cria espaço entre cartões. */
+        }
+
+        /* ========================================= */
+        /* QUESTÕES                                   */
+        /* ========================================= */
+
+        .questao {
+            /* Configura cada questão. */
+            background: #f8fafc;
+            /* Define fundo claro. */
+            border: 1px solid #dce4ed;
+            /* Define uma borda. */
+            border-radius: 12px;
+            /* Arredonda os cantos. */
+            padding: 25px;
+            /* Cria espaço interno. */
+            margin-bottom: 20px;
+            /* Cria espaço entre questões. */
+        }
+
+        .alternativas {
+            /* Configura as alternativas. */
+            margin-top: 15px;
+            /* Cria espaço acima. */
+        }
+
+        .gabarito {
+            /* Configura o gabarito escondido. */
+            display: none;
+            /* Mantém o gabarito escondido inicialmente. */
+            margin-top: 15px;
+            /* Cria espaço acima. */
+            background: #eaf7ef;
+            /* Define fundo verde claro. */
+            border-left: 5px solid #2e7d4f;
+            /* Cria borda verde. */
+            padding: 18px;
+            /* Cria espaço interno. */
+            border-radius: 8px;
+            /* Arredonda os cantos. */
+        }
+
+        .btn-gabarito {
+            /* Configura o botão de gabarito. */
+            background: #243447;
+            /* Define fundo escuro. */
+            color: white;
+            /* Define texto branco. */
+            border: none;
+            /* Remove a borda. */
+            border-radius: 8px;
+            /* Arredonda os cantos. */
+            padding: 10px 16px;
+            /* Define o tamanho. */
+            margin-top: 15px;
+            /* Cria espaço acima. */
+        }
+
+        .btn-gabarito:hover {
+            /* Configura o efeito de passagem do mouse. */
+            background: #c89b3c;
+            /* Muda o fundo para dourado. */
+            color: #172033;
+            /* Muda a cor do texto. */
+        }
+
+        /* ========================================= */
+        /* RODAPÉ                                     */
+        /* ========================================= */
+
+        footer {
+            /* Configura o rodapé. */
+            background: #111827;
+            /* Define fundo escuro. */
+            color: #dbe4ee;
+            /* Define texto claro. */
+            text-align: center;
+            /* Centraliza o texto. */
+            padding: 35px 20px;
+            /* Cria espaço interno. */
+        }
+
+        footer strong {
+            /* Configura o nome no rodapé. */
+            color: #e5c76b;
+            /* Define a cor dourada. */
+        }
+
+        /* ========================================= */
+        /* RESPONSIVIDADE                             */
+        /* ========================================= */
+
+        @media (max-width: 850px) {
+            /* Aplica regras para telas menores. */
+
+            .trilogia {
+                /* Ajusta a trilogia. */
+                grid-template-columns: 1fr;
+                /* Coloca os cartões em uma coluna. */
+            }
+
+            .grid {
+                /* Ajusta a grade. */
+                grid-template-columns: 1fr;
+                /* Coloca os cartões em uma coluna. */
+            }
+
+            section {
+                /* Ajusta as seções. */
+                padding: 25px;
+                /* Reduz o espaçamento interno. */
+            }
+        }
+
+        @media (max-width: 600px) {
+            /* Aplica regras específicas para celulares. */
+
+            header {
+                /* Ajusta o cabeçalho. */
+                padding: 40px 15px;
+                /* Reduz o espaçamento. */
+            }
+
+            header h1 {
+                /* Ajusta o título. */
+                font-size: 2rem;
+                /* Reduz o tamanho. */
+            }
+
+            nav {
+                /* Ajusta o menu. */
+                justify-content: flex-start;
+                /* Alinha os botões à esquerda. */
+                overflow-x: auto;
+                /* Permite rolagem horizontal. */
+                flex-wrap: nowrap;
+                /* Mantém os botões em uma linha. */
+            }
+
+            nav button {
+                /* Ajusta os botões. */
+                white-space: nowrap;
+                /* Evita quebra do texto. */
+            }
+
+            main {
+                /* Ajusta o conteúdo. */
+                padding: 20px 12px 50px;
+                /* Reduz o espaçamento. */
+            }
+
+            section {
+                /* Ajusta as seções. */
+                padding: 20px;
+                /* Reduz o espaço interno. */
+                border-radius: 12px;
+                /* Reduz o arredondamento. */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Inicia o conteúdo visível. -->
+
+    <header>
+        <!-- Inicia o cabeçalho. -->
+
+        <div class="numero">CURSO DE HISTÓRIA GERAL</div>
+        <!-- Identifica o curso. -->
+
+        <h1>1.4 — Fenícia</h1>
+        <!-- Apresenta o título da aula. -->
+
+        <p>
+            Fund II • Ensino Médio • ENEM • Vestibular • Concursos
+        </p>
+        <!-- Apresenta o público-alvo. -->
+
+        <p>
+            Cidades portuárias, comércio, navegação, cultura e circulação pelo Mediterrâneo.
+        </p>
+        <!-- Apresenta o tema central. -->
+    </header>
+
+    <nav>
+        <!-- Inicia o menu. -->
+
+        <button onclick="irPara('começo')">I — O Começo</button>
+        <!-- Leva para a primeira parte. -->
+
+        <button onclick="irPara('desenvolvimento')">II — O Desenvolvimento</button>
+        <!-- Leva para a segunda parte. -->
+
+        <button onclick="irPara('legado')">III — O Legado</button>
+        <!-- Leva para a terceira parte. -->
+
+        <button onclick="irPara('questoes')">Questões</button>
+        <!-- Leva para as questões. -->
+
+        <button onclick="voltarPagina()">← Voltar</button>
+        <!-- Volta para a página anterior. -->
+    </nav>
+
+    <main>
+        <!-- Inicia o conteúdo principal. -->
+
+        <section id="começo">
+            <!-- Inicia a primeira parte da trilogia. -->
+
+            <h2>I — O COMEÇO</h2>
+            <!-- Título da primeira parte. -->
+
+            <p>
+                A <strong>Fenícia</strong> corresponde ao nome utilizado pelos gregos para designar
+                comunidades semíticas que ocupavam principalmente a faixa costeira do Mediterrâneo oriental,
+                em uma região que corresponde aproximadamente ao atual Líbano e áreas vizinhas.
+            </p>
+            <!-- Apresenta a localização histórica dos fenícios. -->
+
+            <p>
+                Diferentemente de grandes impérios territoriais do Oriente Próximo, as comunidades fenícias
+                organizaram-se principalmente em <strong>cidades-Estado independentes</strong>, entre as quais
+                se destacaram <strong>Biblos, Sidon e Tiro</strong>.
+            </p>
+            <!-- Explica a organização política. -->
+
+            <div class="destaque">
+                <!-- Cria uma caixa de destaque. -->
+
+                <strong>Ideia central:</strong>
+                <!-- Destaca a ideia principal. -->
+
+                o poder fenício esteve fortemente relacionado à posição geográfica,
+                às atividades marítimas, ao comércio, à produção artesanal e à capacidade
+                de estabelecer redes de circulação pelo Mediterrâneo.
+                <!-- Resume a característica central da sociedade fenícia. -->
+            </div>
+
+            <h3>1. A geografia e o mar</h3>
+            <!-- Cria um subtítulo. -->
+
+            <p>
+                A região ocupada pelas cidades fenícias apresentava uma estreita faixa costeira entre
+                o Mediterrâneo e áreas montanhosas. A presença do mar favoreceu a comunicação marítima
+                e a circulação de mercadorias.
+            </p>
+            <!-- Explica a importância geográfica. -->
+
+            <p>
+                Ao mesmo tempo, a disponibilidade limitada de terras agrícolas em algumas áreas e a
+                localização estratégica contribuíram para o desenvolvimento de atividades comerciais,
+                artesanais e marítimas.
+            </p>
+            <!-- Explica fatores econômicos e geográficos. -->
+
+            <h3>2. As cidades-Estado</h3>
+            <!-- Cria um subtítulo. -->
+
+            <p>
+                As principais cidades fenícias possuíam governos próprios e competiam entre si,
+                embora compartilhassem elementos culturais e religiosos.
+                Não existia um Estado fenício unificado durante toda a Antiguidade.
+            </p>
+            <!-- Explica a descentralização política. -->
+
+            <p>
+                <strong>Byblos, Sidon e Tiro</strong> tornaram-se importantes centros de comércio e navegação.
+                Cada uma delas possuía interesses próprios e estabelecia relações com diferentes povos.
+            </p>
+            <!-- Apresenta as principais cidades. -->
+
+            <h3>3. Sociedade e religião</h3>
+            <!-- Cria um subtítulo. -->
+
+            <p>
+                A sociedade fenícia apresentava hierarquias sociais. Comerciantes, proprietários,
+                autoridades políticas e religiosas, artesãos, trabalhadores e pessoas submetidas
+                a diferentes formas de dependência faziam parte desse universo social.
+            </p>
+            <!-- Explica a estrutura social. -->
+
+            <p>
+                A religião era <strong>politeísta</strong>. Diferentes cidades possuíam cultos e divindades
+                importantes, com destaque para divindades como <strong>Baal</strong> e <strong>Astarte</strong>,
+                embora os cultos variassem conforme o lugar e o período.
+            </p>
+            <!-- Explica a religião fenícia. -->
+
+            <h3>4. A economia marítima</h3>
+            <!-- Cria um subtítulo. -->
+
+            <p>
+                A economia fenícia combinava agricultura, pesca, artesanato e comércio.
+                A atividade marítima ganhou grande importância porque permitia conectar portos,
+                mercados e comunidades distantes.
+            </p>
+            <!-- Explica a base econômica. -->
+
+            <p>
+                Entre os produtos associados aos fenícios estavam objetos artesanais, tecidos,
+                madeira de cedro, metais, produtos agrícolas e o famoso <strong>corante púrpura</strong>,
+                relacionado à produção de tecidos de alto valor.
+            </p>
+            <!-- Apresenta produtos comercializados. -->
+
+            <div class="trilogia">
+                <!-- Inicia os cartões da trilogia. -->
+
+                <div class="card">
+                    <!-- Primeiro cartão. -->
+
+                    <h3>Geografia</h3>
+                    <!-- Título. -->
+
+                    <p>
+                        Faixa costeira + montanhas + Mediterrâneo → forte relação com o mar.
+                    </p>
+                    <!-- Conteúdo. -->
+                </div>
+
+                <div class="card">
+                    <!-- Segundo cartão. -->
+
+                    <h3>Política</h3>
+                    <!-- Título. -->
+
+                    <p>
+                        Cidades-Estado independentes como Biblos, Sidon e Tiro.
+                    </p>
+                    <!-- Conteúdo. -->
+                </div>
+
+                <div class="card">
+                    <!-- Terceiro cartão. -->
+
+                    <h3>Economia</h3>
+                    <!-- Título. -->
+
+                    <p>
+                        Comércio + navegação + artesanato + circulação de mercadorias.
+                    </p>
+                    <!-- Conteúdo. -->
+                </div>
+            </div>
+        </section>
+
+        <section id="desenvolvimento">
+            <!-- Inicia a segunda parte da trilogia. -->
+
+            <h2>II — O DESENVOLVIMENTO</h2>
+            <!-- Título da segunda parte. -->
+
+            <p>
+                O desenvolvimento das cidades fenícias ocorreu dentro de um contexto marcado pela
+                circulação de povos, mercadorias e culturas no Mediterrâneo.
+                As cidades fenícias não eram isoladas: faziam parte de redes comerciais mais amplas.
+            </p>
+            <!-- Introdução ao desenvolvimento. -->
+
+            <h3>1. Navegação e comércio</h3>
+            <!-- Cria um subtítulo. -->
+
+            <p>
+                Os navegadores fenícios desenvolveram embarcações e técnicas de navegação adequadas
+                à circulação pelo Mediterrâneo. O comércio marítimo conectava diferentes regiões
+                e possibilitava o intercâmbio de produtos, técnicas e conhecimentos.
+            </p>
+            <!-- Explica a navegação. -->
+
+            <p>
+                A expansão das redes comerciais também criou relações de dependência, alianças,
+                conflitos e negociações com diferentes povos.
+            </p>
+            <!-- Explica as consequências das redes comerciais. -->
+
+            <h3>2. As colônias e entrepostos</h3>
+            <!-- Cria um subtítulo. -->
+
+            <p>
+                A expansão marítima levou à fundação de diversos assentamentos e entrepostos
+                ao longo do Mediterrâneo. Um dos exemplos mais conhecidos foi <strong>Cartago</strong>,
+                fundada tradicionalmente por colonos de Tiro no norte da África.
+            </p>
+            <!-- Explica a expansão fenícia. -->
+
+            <div class="alerta">
+                <!-- Cria uma caixa de observação. -->
+
+                <strong>Importante:</strong>
+                <!-- Destaca o alerta. -->
+
+                a palavra “colônia” precisa ser contextualizada. Os assentamentos fenícios
+                podiam assumir formas diferentes de relação com as cidades de origem.
+                Não devemos imaginar todos eles como cópias de um sistema colonial moderno.
+                <!-- Evita uma interpretação anacrônica. -->
+            </div>
+
+            <h3>3. Cartago</h3>
+            <!-- Cria um subtítulo. -->
+
+            <p>
+                Cartago tornou-se posteriormente uma grande potência do Mediterrâneo ocidental.
+                Embora tenha origem fenícia, desenvolveu características políticas, econômicas e
+                culturais próprias ao longo de sua história.
+            </p>
+            <!-- Explica a importância de Cartago. -->
+
+            <p>
+                Sua expansão entrou em conflito com Roma, levando às
+                <strong>Guerras Púnicas</strong>, travadas entre Roma e Cartago nos séculos III e II a.C.
+            </p>
+            <!-- Conecta Cartago ao mundo romano. -->
+
+            <h3>4. A escrita alfabética</h3>
+            <!-- Cria um subtítulo. -->
+
+            <p>
+                Os fenícios são frequentemente associados à difusão de um sistema alfabético consonantal
+                pelo Mediterrâneo. Esse sistema teve influência importante sobre o <strong>alfabeto grego</strong>,
+                que posteriormente contribuiu para outras tradições alfabéticas.
+            </p>
+            <!-- Explica a importância histórica do alfabeto fenício. -->
+
+            <div class="alerta">
+                <!-- Cria uma observação importante. -->
+
+                <strong>Para o professor:</strong>
+                <!-- Destaca a orientação. -->
+
+                evite afirmar que os fenícios “inventaram a escrita”.
+                A escrita já existia havia muitos séculos em outras sociedades, especialmente
+                no Egito e na Mesopotâmia. A contribuição fenícia está relacionada à difusão
+                de uma tradição alfabética que teve grande impacto posterior.
+                <!-- Corrige uma simplificação comum. -->
+            </div>
+
+            <h3>5. A produção de púrpura</h3>
+            <!-- Cria um subtítulo. -->
+
+            <p>
+                A produção de tecidos tingidos de púrpura tornou-se uma atividade de grande prestígio.
+                O corante era obtido de moluscos marinhos do gênero <em>Murex</em>.
+                O processo era trabalhoso e contribuía para o alto valor do produto.
+            </p>
+            <!-- Explica a produção da púrpura. -->
+
+            <h3>6. Relações com grandes impérios</h3>
+            <!-- Cria um subtítulo. -->
+
+            <p>
+                As cidades fenícias estiveram em diferentes momentos sob influência ou domínio
+                de grandes potências do Oriente Próximo, incluindo egípcios, assírios, babilônios
+                e persas.
+            </p>
+            <!-- Explica as relações políticas. -->
+
+            <p>
+                Isso demonstra que a história fenícia não pode ser entendida apenas como uma história
+                de expansão comercial. As cidades também precisavam negociar sua autonomia,
+                pagar tributos, estabelecer alianças e lidar com grandes impérios territoriais.
+            </p>
+            <!-- Aprofunda a análise política. -->
+
+            <h3>7. Linha do tempo</h3>
+            <!-- Cria o título da linha do tempo. -->
+
+            <div class="timeline">
+                <!-- Inicia a linha do tempo. -->
+
+                <div class="timeline-item">
+                    <!-- Primeiro item. -->
+
+                    <strong>c. 2º milênio a.C.</strong>
+                    <!-- Indica um período aproximado. -->
+
+                    <p>
+                        Desenvolvimento e fortalecimento de importantes centros urbanos da costa levantina.
+                    </p>
+                    <!-- Explica o período. -->
+                </div>
+
+                <div class="timeline-item">
+                    <!-- Segundo item. -->
+
+                    <strong>c. 1200 a.C.</strong>
+                    <!-- Indica o período aproximado. -->
+
+                    <p>
+                        Transformações no Mediterrâneo oriental favorecem mudanças nas relações políticas
+                        e comerciais da região.
+                    </p>
+                    <!-- Explica o período. -->
+                </div>
+
+                <div class="timeline-item">
+                    <!-- Terceiro item. -->
+
+                    <strong>c. 1000–800 a.C.</strong>
+                    <!-- Indica o período de maior projeção de cidades fenícias. -->
+
+                    <p>
+                        Expansão das redes marítimas e comerciais e fortalecimento de cidades como Tiro e Sidon.
+                    </p>
+                    <!-- Explica o acontecimento. -->
+                </div>
+
+                <div class="timeline-item">
+                    <!-- Quarto item. -->
+
+                    <strong>Séculos IX–VII a.C.</strong>
+                    <!-- Indica o período. -->
+
+                    <p>
+                        Crescente pressão e domínio de impérios como o Assírio sobre cidades fenícias.
+                    </p>
+                    <!-- Explica o acontecimento. -->
+                </div>
+
+                <div class="timeline-item">
+                    <!-- Quinto item. -->
+
+                    <strong>Séculos VI–IV a.C.</strong>
+                    <!-- Indica o período. -->
+
+                    <p>
+                        Cidades fenícias passam a integrar o mundo político do Império Persa.
+                    </p>
+                    <!-- Explica o acontecimento. -->
+                </div>
+
+                <div class="timeline-item">
+                    <!-- Sexto item. -->
+
+                    <strong>332 a.C.</strong>
+                    <!-- Indica um marco importante. -->
+
+                    <p>
+                        Alexandre, o Grande, conquista Tiro após um cerco conhecido por sua importância militar.
+                    </p>
+                    <!-- Explica o acontecimento. -->
+                </div>
+            </div>
+        </section>
+
+        <section id="legado">
+            <!-- Inicia a terceira parte da trilogia. -->
+
+            <h2>III — O LEGADO E O MUNDO ATUAL</h2>
+            <!-- Título da terceira parte. -->
+
+            <p>
+                O legado fenício está relacionado principalmente às redes de circulação,
+                às experiências urbanas, ao comércio marítimo, à produção artesanal e à
+                difusão de uma tradição alfabética que influenciou outros sistemas.
+            </p>
+            <!-- Introdução ao legado. -->
+
+            <h3>1. O alfabeto e a circulação cultural</h3>
+            <!-- Cria um subtítulo. -->
+
+            <p>
+                O sistema alfabético associado aos fenícios apresentava sinais para representar
+                principalmente sons consonantais. Sua circulação pelo Mediterrâneo favoreceu
+                adaptações em diferentes culturas.
+            </p>
+            <!-- Explica o legado alfabético. -->
+
+            <p>
+                Os gregos adaptaram esse sistema e incorporaram sinais para representar vogais,
+                formando uma tradição que teve enorme importância na história da escrita ocidental.
+            </p>
+            <!-- Explica a adaptação grega. -->
+
+            <h3>2. Comércio e globalização histórica</h3>
+            <!-- Cria um subtítulo. -->
+
+            <p>
+                O comércio fenício permite trabalhar em sala de aula um conceito importante:
+                <strong>interdependência</strong>. Produtos, pessoas, técnicas e informações circulavam
+                entre diferentes regiões muito antes da globalização contemporânea.
+            </p>
+            <!-- Relaciona a Fenícia à circulação histórica. -->
+
+            <div class="destaque">
+                <!-- Cria uma caixa de reflexão. -->
+
+                <strong>Conexão com o presente:</strong>
+                <!-- Destaca a conexão. -->
+
+                as redes comerciais atuais são muito mais extensas e tecnológicas,
+                mas o princípio histórico da circulação de mercadorias e informações
+                entre diferentes regiões possui antecedentes muito antigos.
+                <!-- Faz uma comparação cuidadosa entre passado e presente. -->
+            </div>
+
+            <h3>3. Mediterrâneo como espaço de encontros</h3>
+            <!-- Cria um subtítulo. -->
+
+            <p>
+                O Mediterrâneo não deve ser visto apenas como uma barreira geográfica.
+                Para diferentes sociedades antigas, ele também funcionava como espaço de circulação,
+                comércio, migração, conflito e intercâmbio cultural.
+            </p>
+            <!-- Explica a importância histórica do Mediterrâneo. -->
+
+            <h3>4. Fenícia e mundo atual</h3>
+            <!-- Cria um subtítulo. -->
+
+            <p>
+                As antigas cidades fenícias estavam localizadas principalmente na faixa costeira
+                do Levante mediterrâneo. O território histórico está associado sobretudo ao atual
+                <strong>Líbano</strong> e a áreas próximas.
+            </p>
+            <!-- Faz a conexão geográfica com o presente. -->
+
+            <p>
+                É importante diferenciar a sociedade fenícia antiga das populações e Estados modernos.
+                A existência de continuidade geográfica não significa que uma sociedade atual seja
+                simplesmente uma reprodução da sociedade antiga.
+            </p>
+            <!-- Evita anacronismo. -->
+
+            <h3>5. Relação com a História do Brasil</h3>
+            <!-- Cria um subtítulo. -->
+
+            <p>
+                Não existe uma relação direta de formação entre a Fenícia antiga e a sociedade brasileira.
+                Entretanto, o estudo dos fenícios ajuda a compreender temas que aparecem posteriormente
+                na História, como comércio marítimo, circulação de mercadorias, colonização,
+                intercâmbio cultural e formação de redes econômicas.
+            </p>
+            <!-- Faz a conexão didática com o Brasil. -->
+
+            <h3>6. O que o professor precisa dominar</h3>
+            <!-- Cria um subtítulo. -->
+
+            <ul>
+                <!-- Inicia a lista. -->
+
+                <li>
+                    Fenícia corresponde a uma região e conjunto de cidades-Estado, não a um império unificado.
+                </li>
+                <!-- Primeiro ponto. -->
+
+                <li>
+                    Biblos, Sidon e Tiro foram importantes centros fenícios.
+                </li>
+                <!-- Segundo ponto. -->
+
+                <li>
+                    A posição geográfica favoreceu a navegação e o comércio marítimo.
+                </li>
+                <!-- Terceiro ponto. -->
+
+                <li>
+                    Os fenícios participaram de amplas redes de circulação pelo Mediterrâneo.
+                </li>
+                <!-- Quarto ponto. -->
+
+                <li>
+                    Cartago teve origem fenícia e posteriormente tornou-se uma potência própria no Mediterrâneo ocidental.
+                </li>
+                <!-- Quinto ponto. -->
+
+                <li>
+                    A tradição alfabética fenícia teve influência sobre o alfabeto grego.
+                </li>
+                <!-- Sexto ponto. -->
+
+                <li>
+                    A produção de púrpura foi uma atividade artesanal de grande valor.
+                </li>
+                <!-- Sétimo ponto. -->
+
+                <li>
+                    As cidades fenícias mantiveram relações de negociação, tributação e conflito com grandes impérios.
+                </li>
+                <!-- Oitavo ponto. -->
+            </ul>
+
+            <h3>7. O que colocar na lousa</h3>
+            <!-- Cria um subtítulo. -->
+
+            <div class="destaque">
+                <!-- Cria a caixa da lousa. -->
+
+                <p>
+                    <strong>FENÍCIA</strong>
+                </p>
+                <!-- Título da lousa. -->
+
+                <p>
+                    Litoral do Mediterrâneo Oriental → navegação → comércio → circulação cultural
+                </p>
+                <!-- Primeira sequência. -->
+
+                <p>
+                    Cidades-Estado → Biblos + Sidon + Tiro
+                </p>
+                <!-- Segunda sequência. -->
+
+                <p>
+                    Economia → comércio + artesanato + madeira + púrpura + navegação
+                </p>
+                <!-- Terceira sequência. -->
+
+                <p>
+                    Expansão → entrepostos/assentamentos → Cartago
+                </p>
+                <!-- Quarta sequência. -->
+
+                <p>
+                    Legado → tradição alfabética + comércio + circulação pelo Mediterrâneo
+                </p>
+                <!-- Quinta sequência. -->
+            </div>
+
+            <h3>8. Conceitos essenciais</h3>
+            <!-- Cria o título dos conceitos. -->
+
+            <div class="grid">
+                <!-- Inicia a grade de conceitos. -->
+
+                <div class="card">
+                    <!-- Primeiro conceito. -->
+
+                    <h3>Cidade-Estado</h3>
+                    <!-- Nome do conceito. -->
+
+                    <p>
+                        Unidade política independente centrada em uma cidade e seu território de influência.
+                    </p>
+                    <!-- Explicação. -->
+                </div>
+
+                <div class="card">
+                    <!-- Segundo conceito. -->
+
+                    <h3>Talassocracia</h3>
+                    <!-- Nome do conceito. -->
+
+                    <p>
+                        Termo utilizado para caracterizar formas de poder fortemente associadas ao domínio marítimo e comercial.
+                    </p>
+                    <!-- Explicação. -->
+                </div>
+
+                <div class="card">
+                    <!-- Terceiro conceito. -->
+
+                    <h3>Alfabeto</h3>
+                    <!-- Nome do conceito. -->
+
+                    <p>
+                        Sistema de escrita em que sinais representam unidades sonoras da língua.
+                    </p>
+                    <!-- Explicação. -->
+                </div>
+
+                <div class="card">
+                    <!-- Quarto conceito. -->
+
+                    <h3>Entreposto</h3>
+                    <!-- Nome do conceito. -->
+
+                    <p>
+                        Local utilizado para apoio, armazenamento e circulação de mercadorias em redes comerciais.
+                    </p>
+                    <!-- Explicação. -->
+                </div>
+
+                <div class="card">
+                    <!-- Quinto conceito. -->
+
+                    <h3>Diáspora</h3>
+                    <!-- Nome do conceito. -->
+
+                    <p>
+                        Dispersão de uma população para diferentes regiões; o conceito deve ser utilizado com atenção ao contexto histórico específico.
+                    </p>
+                    <!-- Explicação. -->
+                </div>
+
+                <div class="card">
+                    <!-- Sexto conceito. -->
+
+                    <h3>Mediterrâneo</h3>
+                    <!-- Nome do conceito. -->
+
+                    <p>
+                        Espaço marítimo que conectou diferentes sociedades por comércio, migração, guerra e intercâmbio cultural.
+                    </p>
+                    <!-- Explicação. -->
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <!-- Inicia a seção de causas e consequências. -->
+
+            <h2>Relações de Causa e Consequência</h2>
+            <!-- Título da seção. -->
+
+            <div class="grid">
+                <!-- Inicia a grade. -->
+
+                <div class="card">
+                    <!-- Primeiro cartão. -->
+
+                    <h3>Localização costeira</h3>
+                    <!-- Título. -->
+
+                    <p>
+                        Costa mediterrânea + portos → facilidade de navegação → expansão das redes comerciais.
+                    </p>
+                    <!-- Relação causal. -->
+                </div>
+
+                <div class="card">
+                    <!-- Segundo cartão. -->
+
+                    <h3>Comércio marítimo</h3>
+                    <!-- Título. -->
+
+                    <p>
+                        Circulação de produtos → contato com diferentes povos → intercâmbio cultural e econômico.
+                    </p>
+                    <!-- Relação causal. -->
+                </div>
+
+                <div class="card">
+                    <!-- Terceiro cartão. -->
+
+                    <h3>Expansão comercial</h3>
+                    <!-- Título. -->
+
+                    <p>
+                        Busca por novos mercados e pontos estratégicos → criação de assentamentos e entrepostos.
+                    </p>
+                    <!-- Relação causal. -->
+                </div>
+
+                <div class="card">
+                    <!-- Quarto cartão. -->
+
+                    <h3>Circulação da escrita</h3>
+                    <!-- Título. -->
+
+                    <p>
+                        Contatos mediterrâneos → circulação de sistemas de escrita → influência sobre outras tradições alfabéticas.
+                    </p>
+                    <!-- Relação causal. -->
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <!-- Inicia a seção da BNCC. -->
+
+            <h2>BNCC — Orientação Curricular</h2>
+            <!-- Título da seção. -->
+
+            <div class="destaque">
+                <!-- Cria uma caixa de destaque. -->
+
+                <p>
+                    <strong>EF06HI07</strong>
+                </p>
+                <!-- Apresenta o código. -->
+
+                <p>
+                    Identificar aspectos e formas de registro das sociedades antigas na África,
+                    no Oriente Médio e nas Américas, distinguindo alguns significados presentes
+                    na cultura material e na tradição oral dessas sociedades.
+                </p>
+                <!-- Apresenta a habilidade oficial. -->
+
+                <p>
+                    No estudo da Fenícia, a habilidade pode ser trabalhada por meio da análise
+                    da tradição alfabética, das inscrições, da cultura material, dos objetos
+                    arqueológicos e das evidências relacionadas às redes comerciais mediterrâneas.
+                </p>
+                <!-- Explica a aplicação da habilidade. -->
+            </div>
+        </section>
+
+        <section>
+            <!-- Inicia a seção de provas. -->
+
+            <h2>ENEM • Vestibular • Concurso</h2>
+            <!-- Título da seção. -->
+
+            <h3>O que merece atenção?</h3>
+            <!-- Subtítulo. -->
+
+            <ul>
+                <!-- Inicia a lista. -->
+
+                <li>
+                    Relação entre geografia e desenvolvimento econômico.
+                </li>
+                <!-- Primeiro ponto. -->
+
+                <li>
+                    Cidades-Estado fenícias.
+                </li>
+                <!-- Segundo ponto. -->
+
+                <li>
+                    Navegação e comércio mediterrâneo.
+                </li>
+                <!-- Terceiro ponto. -->
+
+                <li>
+                    Fundação e desenvolvimento de Cartago.
+                </li>
+                <!-- Quarto ponto. -->
+
+                <li>
+                    Tradição alfabética e influência sobre os gregos.
+                </li>
+                <!-- Quinto ponto. -->
+
+                <li>
+                    Relações entre fenícios e grandes impérios.
+                </li>
+                <!-- Sexto ponto. -->
+
+                <li>
+                    Circulação de pessoas, mercadorias e culturas.
+                </li>
+                <!-- Sétimo ponto. -->
+            </ul>
+        </section>
+
+        <section id="questoes">
+            <!-- Inicia a seção de questões. -->
+
+            <h2>Questões — Modelo ENEM</h2>
+            <!-- Título das questões. -->
+
+            <div class="questao">
+                <!-- Inicia a primeira questão. -->
+
+                <h3>Questão 1</h3>
+                <!-- Número da questão. -->
+
+                <p>
+                    As cidades fenícias desenvolveram intensa atividade comercial e marítima no Mediterrâneo.
+                    Esse processo esteve relacionado às características geográficas e à organização política
+                    dessas comunidades.
+                </p>
+                <!-- Contextualização. -->
+
+                <p>
+                    A relação apresentada pode ser corretamente explicada pela alternativa:
+                </p>
+                <!-- Comando da questão. -->
+
+                <div class="alternativas">
+                    <!-- Inicia as alternativas. -->
+
+                    <p>
+                        <strong>A)</strong> A localização costeira impediu qualquer contato entre os fenícios e outros povos.
+                    </p>
+                    <!-- Alternativa A. -->
+
+                    <p>
+                        <strong>B)</strong> A presença de portos e a organização em cidades-Estado favoreceram redes de navegação, comércio e intercâmbio cultural.
+                    </p>
+                    <!-- Alternativa B. -->
+
+                    <p>
+                        <strong>C)</strong> Os fenícios abandonaram a agricultura e passaram a depender exclusivamente da caça.
+                    </p>
+                    <!-- Alternativa C. -->
+
+                    <p>
+                        <strong>D)</strong> A atividade marítima foi proibida pelas grandes potências do Oriente Próximo.
+                    </p>
+                    <!-- Alternativa D. -->
+
+                    <p>
+                        <strong>E)</strong> As cidades fenícias formaram desde o início um único império centralizado.
+                    </p>
+                    <!-- Alternativa E. -->
+                </div>
+
+                <button class="btn-gabarito" onclick="mostrarGabarito('gabarito1')">
+                    Mostrar gabarito
+                </button>
+                <!-- Botão que mostra a resposta. -->
+
+                <div class="gabarito" id="gabarito1">
+                    <!-- Caixa do gabarito. -->
+
+                    <strong>Gabarito: B.</strong>
+                    <!-- Apresenta a alternativa correta. -->
+
+                    <p>
+                        A posição costeira, os portos e a organização política das cidades contribuíram
+                        para o desenvolvimento das redes marítimas e comerciais fenícias.
+                    </p>
+                    <!-- Explicação da resposta. -->
+                </div>
+            </div>
+
+            <div class="questao">
+                <!-- Inicia a segunda questão. -->
+
+                <h3>Questão 2</h3>
+                <!-- Número da questão. -->
+
+                <p>
+                    A tradição alfabética associada aos fenícios teve importante circulação pelo Mediterrâneo.
+                    Posteriormente, os gregos adaptaram esse sistema de escrita.
+                </p>
+                <!-- Contextualização. -->
+
+                <p>
+                    A importância histórica desse processo está relacionada principalmente:
+                </p>
+                <!-- Comando da questão. -->
+
+                <div class="alternativas">
+                    <!-- Inicia as alternativas. -->
+
+                    <p>
+                        <strong>A)</strong> à criação da primeira forma de escrita da humanidade.
+                    </p>
+                    <!-- Alternativa A. -->
+
+                    <p>
+                        <strong>B)</strong> à circulação de uma tradição alfabética que influenciou outras formas de escrita.
+                    </p>
+                    <!-- Alternativa B. -->
+
+                    <p>
+                        <strong>C)</strong> à substituição imediata de todas as escritas existentes no Oriente.
+                    </p>
+                    <!-- Alternativa C. -->
+
+                    <p>
+                        <strong>D)</strong> à criação da imprensa durante a Antiguidade.
+                    </p>
+                    <!-- Alternativa D. -->
+
+                    <p>
+                        <strong>E)</strong> ao abandono completo das inscrições em outras sociedades mediterrâneas.
+                    </p>
+                    <!-- Alternativa E. -->
+                </div>
+
+                <button class="btn-gabarito" onclick="mostrarGabarito('gabarito2')">
+                    Mostrar gabarito
+                </button>
+                <!-- Botão que mostra o gabarito. -->
+
+                <div class="gabarito" id="gabarito2">
+                    <!-- Caixa do segundo gabarito. -->
+
+                    <strong>Gabarito: B.</strong>
+                    <!-- Apresenta a resposta correta. -->
+
+                    <p>
+                        A importância dos fenícios está relacionada à circulação de uma tradição alfabética
+                        que foi adaptada por outras sociedades, especialmente pelos gregos.
+                    </p>
+                    <!-- Explica a resposta. -->
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <!-- Inicia a revisão final. -->
+
+            <h2>Revisão em 60 segundos</h2>
+            <!-- Título da revisão. -->
+
+            <div class="destaque">
+                <!-- Cria a caixa de revisão. -->
+
+                <p>
+                    <strong>Fenícia</strong> = faixa costeira do Mediterrâneo oriental.
+                </p>
+                <!-- Primeiro ponto. -->
+
+                <p>
+                    <strong>Política</strong> = cidades-Estado como Biblos, Sidon e Tiro.
+                </p>
+                <!-- Segundo ponto. -->
+
+                <p>
+                    <strong>Economia</strong> = comércio + navegação + artesanato + produção de púrpura.
+                </p>
+                <!-- Terceiro ponto. -->
+
+                <p>
+                    <strong>Expansão</strong> = redes marítimas + entrepostos + assentamentos.
+                </p>
+                <!-- Quarto ponto. -->
+
+                <p>
+                    <strong>Cartago</strong> = importante cidade de origem fenícia no Mediterrâneo ocidental.
+                </p>
+                <!-- Quinto ponto. -->
+
+                <p>
+                    <strong>Escrita</strong> = tradição alfabética fenícia → influência sobre os gregos.
+                </p>
+                <!-- Sexto ponto. -->
+
+                <p>
+                    <strong>Legado</strong> = circulação comercial, cultural e alfabética pelo Mediterrâneo.
+                </p>
+                <!-- Sétimo ponto. -->
+            </div>
+        </section>
+
+        <section>
+            <!-- Inicia o encerramento. -->
+
+            <h2>Encerramento da Aula</h2>
+            <!-- Título do encerramento. -->
+
+            <p>
+                Estudar a Fenícia permite compreender que a Antiguidade não foi formada apenas por
+                grandes impérios territoriais. Cidades comerciais e marítimas também tiveram papel
+                decisivo na circulação de pessoas, mercadorias, técnicas e conhecimentos.
+            </p>
+            <!-- Primeiro parágrafo de conclusão. -->
+
+            <p>
+                A experiência fenícia também demonstra a importância histórica do Mediterrâneo como
+                espaço de conexão entre sociedades diferentes. O comércio não transportava apenas
+                produtos: transportava informações, práticas culturais e sistemas de escrita.
+            </p>
+            <!-- Segundo parágrafo de conclusão. -->
+
+            <div class="destaque">
+                <!-- Cria a assinatura final. -->
+
+                <strong>Professor:</strong> Professor Marcelo Oliveira
+                <!-- Identifica o professor. -->
+
+                <br>
+                <!-- Cria uma quebra de linha. -->
+
+                <strong>Curso:</strong> História Geral — Fund II • Ensino Médio • ENEM • Vestibular • Concursos
+                <!-- Identifica o curso. -->
+            </div>
+
+            <button class="btn-gabarito" onclick="irPara('começo')">
+                ↑ Voltar ao topo da aula
+            </button>
+            <!-- Volta para o começo da aula. -->
+        </section>
+    </main>
+
+    <footer>
+        <!-- Inicia o rodapé. -->
+
+        <p>
+            Curso de História Geral — <strong>Professor Marcelo Oliveira</strong>
+        </p>
+        <!-- Identifica o curso e o professor. -->
+
+        <p>
+            Material didático para estudo, revisão e preparação para provas.
+        </p>
+        <!-- Informa a finalidade do material. -->
+    </footer>
+
+    <script>
+        // ==========================================
+        // FUNÇÃO DE NAVEGAÇÃO
+        // ==========================================
+
+        function irPara(id) {
+            // Cria uma função para navegar até uma seção específica.
+
+            const elemento = document.getElementById(id);
+            // Procura o elemento que possui o ID informado.
+
+            if (elemento) {
+                // Verifica se o elemento existe.
+
+                elemento.scrollIntoView({
+                    // Faz a página rolar até o elemento.
+
+                    behavior: "smooth",
+                    // Faz a rolagem acontecer suavemente.
+
+                    block: "start"
+                    // Posiciona o começo da seção no topo.
+                });
+            }
+        }
+
+        // ==========================================
+        // FUNÇÃO DO GABARITO
+        // ==========================================
+
+        function mostrarGabarito(id) {
+            // Cria uma função para mostrar ou esconder o gabarito.
+
+            const gabarito = document.getElementById(id);
+            // Localiza o gabarito pelo ID.
+
+            if (gabarito.style.display === "block") {
+                // Verifica se o gabarito está visível.
+
+                gabarito.style.display = "none";
+                // Esconde o gabarito.
+            } else {
+                // Executa quando o gabarito está escondido.
+
+                gabarito.style.display = "block";
+                // Mostra o gabarito.
+            }
+        }
+
+        // ==========================================
+        // FUNÇÃO VOLTAR
+        // ==========================================
+
+        function voltarPagina() {
+            // Cria a função do botão voltar.
+
+            window.history.back();
+            // Retorna para a página anterior do navegador.
+        }
+    </script>
+    <script>
+  const paginaAnterior = "03 - mesopotamia.html";
+  const paginaProxima = "05 - grécia.html";
+</script>
+<script src="navegacao.js"></script>
+</body>
+<!-- Finaliza o conteúdo da página. -->
+
+</html>
+<!-- Finaliza o documento HTML. -->

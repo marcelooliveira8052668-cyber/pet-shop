@@ -1,0 +1,2087 @@
+<!DOCTYPE html>
+<!-- Define que o documento utiliza HTML5. -->
+
+<html lang="pt-BR">
+<!-- Inicia o documento e define português do Brasil como idioma. -->
+
+<head>
+<!-- Inicia as configurações da página. -->
+
+<meta charset="UTF-8">
+<!-- Permite a utilização correta de acentos e caracteres especiais. -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Faz a página funcionar corretamente em celulares, tablets e computadores. -->
+
+<title>Antiguidade Oriental | Professor Marcelo Oliveira</title>
+<!-- Define o título exibido na aba do navegador. -->
+
+<style>
+/* Inicia o CSS responsável pelo visual da página. */
+
+/* Cria as variáveis de cores utilizadas no projeto. */
+:root {
+    --azul: #12355b;
+    --azul-claro: #1f5f8b;
+    --azul-suave: #eaf3f9;
+    --dourado: #c89b3c;
+    --texto: #263238;
+    --texto-suave: #607d8b;
+    --branco: #ffffff;
+    --fundo: #f4f7fa;
+    --borda: #d9e2e8;
+    --verde: #247a52;
+    --vermelho: #a33a3a;
+    --roxo: #60458c;
+}
+
+/* Remove margens e espaçamentos padrão dos elementos. */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Define o comportamento geral da página. */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--fundo);
+    color: var(--texto);
+    line-height: 1.7;
+}
+
+/* Define o cabeçalho principal. */
+header {
+    background: linear-gradient(135deg, var(--azul), #0b2239);
+    color: var(--branco);
+    padding: 55px 20px;
+    text-align: center;
+    border-bottom: 5px solid var(--dourado);
+}
+
+/* Define o texto pequeno acima do título. */
+header .categoria {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    opacity: 0.85;
+    margin-bottom: 12px;
+}
+
+/* Define o título principal do capítulo. */
+header h1 {
+    font-size: clamp(32px, 5vw, 56px);
+    margin-bottom: 15px;
+}
+
+/* Define os parágrafos do cabeçalho. */
+header p {
+    max-width: 900px;
+    margin: 10px auto;
+    font-size: 18px;
+    opacity: 0.92;
+}
+
+/* Cria a barra de navegação fixa. */
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(255,255,255,0.97);
+    border-bottom: 1px solid var(--borda);
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+}
+
+/* Organiza os botões da navegação. */
+.nav-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 12px 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* Define os botões da navegação. */
+.nav-btn {
+    border: none;
+    background: var(--azul-suave);
+    color: var(--azul);
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* Cria o efeito visual ao passar o mouse. */
+.nav-btn:hover {
+    background: var(--azul);
+    color: var(--branco);
+    transform: translateY(-2px);
+}
+
+/* Define o conteúdo principal. */
+main {
+    max-width: 1150px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Define o espaço entre as seções. */
+section {
+    margin-bottom: 35px;
+}
+
+/* Cria os cartões brancos do conteúdo. */
+.card {
+    background: var(--branco);
+    border: 1px solid var(--borda);
+    border-radius: 16px;
+    padding: 30px;
+    margin-bottom: 25px;
+    box-shadow: 0 8px 25px rgba(20,50,70,0.07);
+}
+
+/* Define os títulos principais. */
+h2 {
+    color: var(--azul);
+    font-size: 30px;
+    margin-bottom: 20px;
+    border-left: 5px solid var(--dourado);
+    padding-left: 15px;
+}
+
+/* Define os subtítulos. */
+h3 {
+    color: var(--azul-claro);
+    font-size: 22px;
+    margin: 25px 0 12px;
+}
+
+/* Define os parágrafos. */
+p {
+    margin-bottom: 15px;
+}
+
+/* Define listas. */
+ul,
+ol {
+    margin: 15px 0 20px 25px;
+}
+
+/* Define o espaçamento dos itens das listas. */
+li {
+    margin-bottom: 8px;
+}
+
+/* Cria uma caixa azul de destaque. */
+.destaque {
+    background: var(--azul-suave);
+    border-left: 5px solid var(--azul-claro);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+/* Cria uma caixa amarela de atenção histórica. */
+.alerta {
+    background: #fff8e8;
+    border-left: 5px solid var(--dourado);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+/* Cria uma caixa vermelha para erros comuns. */
+.erro {
+    background: #fff0f0;
+    border-left: 5px solid var(--vermelho);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+/* Cria uma caixa roxa para informações especiais. */
+.especial {
+    background: #f4effb;
+    border-left: 5px solid var(--roxo);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+/* Cria a representação da lousa. */
+.lousa {
+    background: #18242d;
+    color: #ffffff;
+    border-radius: 12px;
+    padding: 25px;
+    margin: 20px 0;
+}
+
+/* Define o título dentro da lousa. */
+.lousa h3 {
+    color: #ffffff;
+}
+
+/* Cria os marcadores de conceitos. */
+.conceito {
+    display: inline-block;
+    background: #eef2f5;
+    color: var(--azul);
+    padding: 7px 12px;
+    margin: 4px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+/* Cria a linha do tempo. */
+.timeline {
+    border-left: 4px solid var(--dourado);
+    padding-left: 25px;
+    margin: 25px 0;
+}
+
+/* Define cada item da linha do tempo. */
+.timeline-item {
+    margin-bottom: 25px;
+    position: relative;
+}
+
+/* Cria o círculo da linha do tempo. */
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -36px;
+    top: 7px;
+    width: 14px;
+    height: 14px;
+    background: var(--dourado);
+    border-radius: 50%;
+}
+
+/* Define a data da linha do tempo. */
+.timeline-date {
+    font-weight: bold;
+    color: var(--azul-claro);
+    margin-bottom: 5px;
+}
+
+/* Cria uma grade de cartões. */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 18px;
+}
+
+/* Define os cartões menores. */
+.mini-card {
+    background: #fafcfd;
+    border: 1px solid var(--borda);
+    border-radius: 12px;
+    padding: 20px;
+}
+
+/* Define o título dos cartões menores. */
+.mini-card strong {
+    color: var(--azul);
+    display: block;
+    margin-bottom: 8px;
+}
+
+/* Cria a área de comparação. */
+.tabela-container {
+    overflow-x: auto;
+    margin-top: 20px;
+}
+
+/* Define a tabela. */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 700px;
+}
+
+/* Define células da tabela. */
+th,
+td {
+    border: 1px solid var(--borda);
+    padding: 14px;
+    text-align: left;
+    vertical-align: top;
+}
+
+/* Define o cabeçalho da tabela. */
+th {
+    background: var(--azul);
+    color: var(--branco);
+}
+
+/* Cria efeito alternado nas linhas. */
+tr:nth-child(even) {
+    background: #f7fafc;
+}
+
+/* Cria o estilo das questões. */
+.questao {
+    background: #fbfcfd;
+    border: 1px solid var(--borda);
+    border-radius: 14px;
+    padding: 25px;
+    margin-top: 20px;
+}
+
+/* Define as alternativas. */
+.alternativa {
+    padding: 10px 12px;
+    border-bottom: 1px solid #e7ecef;
+}
+
+/* Define o botão de gabarito. */
+.btn-gabarito {
+    margin-top: 20px;
+    background: var(--verde);
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Define o efeito do botão de gabarito. */
+.btn-gabarito:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+}
+
+/* Esconde o gabarito inicialmente. */
+.gabarito {
+    display: none;
+    margin-top: 15px;
+    padding: 18px;
+    background: #eaf7ef;
+    border-left: 5px solid var(--verde);
+    border-radius: 8px;
+}
+
+/* Cria a área dos botões finais. */
+.acoes {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+
+/* Define os botões gerais. */
+.btn {
+    border: none;
+    padding: 14px 22px;
+    border-radius: 9px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+/* Define o botão principal. */
+.btn-principal {
+    background: var(--azul);
+    color: white;
+}
+
+/* Define o efeito do botão principal. */
+.btn-principal:hover {
+    background: var(--azul-claro);
+}
+
+/* Define o rodapé. */
+footer {
+    background: #0b2239;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+    margin-top: 50px;
+}
+
+/* Define a assinatura. */
+.assinatura {
+    color: var(--dourado);
+    font-weight: bold;
+}
+
+/* Ajusta o site para celulares. */
+@media (max-width: 700px) {
+
+    /* Reduz o espaçamento do cabeçalho. */
+    header {
+        padding: 40px 18px;
+    }
+
+    /* Ajusta o tamanho do título. */
+    header h1 {
+        font-size: 34px;
+    }
+
+    /* Reduz o espaço interno dos cartões. */
+    .card {
+        padding: 22px;
+    }
+
+    /* Reduz o tamanho dos títulos. */
+    h2 {
+        font-size: 25px;
+    }
+
+    /* Permite rolagem horizontal na navegação. */
+    .nav-container {
+        justify-content: flex-start;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+    }
+
+    /* Impede que os botões quebrem o texto. */
+    .nav-btn {
+        white-space: nowrap;
+    }
+}
+</style>
+<!-- Finaliza o CSS. -->
+
+</head>
+<!-- Finaliza o cabeçalho técnico. -->
+
+<body>
+<!-- Inicia o conteúdo visível. -->
+
+<header id="topo">
+<!-- Cria o cabeçalho principal. -->
+
+<div class="categoria">Curso de História Geral</div>
+<!-- Identifica o curso. -->
+
+<h1>1.1 — Antiguidade Oriental</h1>
+<!-- Apresenta o título do capítulo. -->
+
+<p>Professor Marcelo Oliveira • Fundamental II • Ensino Médio • ENEM • Vestibular • Concursos</p>
+<!-- Apresenta o público do curso. -->
+
+<p>Das primeiras cidades e Estados ao desenvolvimento das grandes sociedades do Oriente Antigo.</p>
+<!-- Apresenta a proposta do capítulo. -->
+
+</header>
+<!-- Finaliza o cabeçalho. -->
+
+<nav>
+<!-- Inicia a navegação. -->
+
+<div class="nav-container">
+<!-- Organiza os botões da navegação. -->
+
+<button class="nav-btn" onclick="irPara('começo')">O Começo</button>
+<!-- Leva o aluno para a primeira parte. -->
+
+<button class="nav-btn" onclick="irPara('desenvolvimento')">O Desenvolvimento</button>
+<!-- Leva o aluno para a segunda parte. -->
+
+<button class="nav-btn" onclick="irPara('hoje')">O Mundo Atual</button>
+<!-- Leva o aluno para a terceira parte. -->
+
+<button class="nav-btn" onclick="irPara('mesopotamia')">Mesopotâmia</button>
+<!-- Leva diretamente à seção aprofundada de Mesopotâmia. -->
+
+<button class="nav-btn" onclick="irPara('hamurabi')">Hamurábi</button>
+<!-- Leva diretamente à seção sobre Hamurábi. -->
+
+<button class="nav-btn" onclick="irPara('prova')">Questões</button>
+<!-- Leva às questões. -->
+
+<button class="nav-btn" onclick="voltarPagina()">← Voltar</button>
+<!-- Retorna à página anterior do navegador. -->
+
+</div>
+<!-- Finaliza a navegação. -->
+
+</nav>
+<!-- Finaliza a navegação. -->
+
+<main>
+<!-- Inicia o conteúdo principal. -->
+
+<section class="card">
+<!-- Cria o cartão introdutório. -->
+<img src="https://i.ytimg.com/vi/ePv6it5lNZE/maxresdefault.jpg" width="500" alt="">
+<img src="https://i.pinimg.com/originals/aa/18/34/aa1834a81de6cfe2265a90796da0cb8c.jpg" width="450" alt="">
+<h2>Introdução</h2>
+<!-- Apresenta o título da introdução. -->
+
+<p>
+A expressão <strong>Antiguidade Oriental</strong> é utilizada pela historiografia escolar para reunir diferentes sociedades antigas desenvolvidas principalmente em regiões do Norte da África e da Ásia, especialmente no chamado Oriente Próximo.
+</p>
+<!-- Explica o conceito de Antiguidade Oriental. -->
+
+<p>
+É fundamental compreender que não existiu uma única “civilização oriental”. Egípcios, sumérios, acádios, babilônios, assírios, fenícios, hebreus, persas e outros povos possuíam diferentes formas de organização política, econômica, social, cultural e religiosa.
+</p>
+<!-- Destaca a diversidade histórica. -->
+
+<div class="alerta">
+<!-- Cria uma caixa de atenção. -->
+
+<strong>Atenção para o professor:</strong>
+<!-- Identifica a orientação. -->
+
+“Antiguidade Oriental” é uma categoria didática. Ela não significa que todos esses povos formavam uma mesma civilização ou compartilhavam uma única cultura.
+<!-- Explica o cuidado historiográfico. -->
+
+</div>
+<!-- Finaliza a caixa. -->
+
+</section>
+<!-- Finaliza a introdução. -->
+
+
+<section id="começo" class="card">
+<!-- Inicia a primeira parte da trilogia. -->
+
+<h2>I — O COMEÇO: A FORMAÇÃO DAS PRIMEIRAS SOCIEDADES COMPLEXAS</h2>
+<!-- Apresenta a primeira etapa. -->
+
+<h3>Da agricultura às sociedades complexas</h3>
+<!-- Apresenta o primeiro assunto. -->
+
+<p>
+Durante o Neolítico, diferentes grupos humanos passaram por processos de sedentarização e desenvolvimento agrícola. Esses processos ocorreram em momentos diferentes e em diversas regiões do planeta.
+</p>
+<!-- Explica a diversidade do processo agrícola. -->
+
+<p>
+A agricultura não produziu automaticamente as primeiras cidades ou Estados. Entretanto, em algumas regiões, a produção regular de alimentos, o armazenamento de excedentes, o crescimento populacional e a especialização do trabalho contribuíram para o surgimento de sociedades mais complexas.
+</p>
+<!-- Evita uma explicação determinista. -->
+
+<div class="destaque">
+<!-- Cria um destaque. -->
+
+<strong>Fórmula histórica importante:</strong>
+<!-- Identifica a síntese. -->
+
+Agricultura → excedentes → crescimento populacional → especialização do trabalho → cidades → instituições políticas → Estados mais complexos.
+<!-- Resume o processo. -->
+
+</div>
+<!-- Finaliza o destaque. -->
+
+
+<h3>O papel dos rios</h3>
+<!-- Apresenta a importância dos rios. -->
+
+<p>
+Os grandes rios tiveram papel fundamental em diversas sociedades antigas. Eles forneciam água, favoreciam a agricultura, facilitavam o transporte e podiam estimular a concentração populacional.
+</p>
+<!-- Explica a importância dos rios. -->
+
+<p>
+No Egito, destacou-se o rio Nilo. Na Mesopotâmia, destacaram-se os rios Tigre e Eufrates.
+</p>
+<!-- Apresenta os principais rios. -->
+
+<p>
+Entretanto, os rios não devem ser tratados como a única explicação para o surgimento das civilizações. Técnicas, trabalho humano, instituições, conflitos, relações de poder e decisões coletivas também foram fundamentais.
+</p>
+<!-- Apresenta uma interpretação histórica mais sofisticada. -->
+
+
+<h3>O surgimento das cidades</h3>
+<!-- Apresenta o desenvolvimento urbano. -->
+
+<p>
+Com o crescimento das comunidades e a especialização das atividades, algumas regiões desenvolveram centros urbanos que concentravam funções religiosas, econômicas, políticas e administrativas.
+</p>
+<!-- Explica a concentração urbana. -->
+
+<p>
+Na Mesopotâmia, algumas dessas cidades tornaram-se <strong>cidades-Estado</strong>, possuindo instituições próprias, autoridades, divindades tutelares e territórios de influência.
+</p>
+<!-- Introduz o conceito de cidade-Estado. -->
+
+
+<h3>Escrita e administração</h3>
+<!-- Apresenta a escrita. -->
+
+<p>
+O crescimento das atividades econômicas e administrativas criou novas necessidades de registro. Na Mesopotâmia, desenvolveram-se sistemas de escrita que passaram a registrar informações sobre produtos, propriedades, pessoas, transações, leis, religião e administração.
+</p>
+<!-- Explica a relação entre escrita e administração. -->
+
+<div class="especial">
+<!-- Cria uma caixa especial. -->
+
+<strong>Ponto importante:</strong>
+<!-- Identifica a informação. -->
+
+Não devemos ensinar que a escrita surgiu simplesmente porque alguém decidiu “inventá-la para escrever livros”. Seus primeiros usos conhecidos na Mesopotâmia estão fortemente relacionados a registros administrativos e econômicos, embora posteriormente a escrita tenha adquirido inúmeras outras funções.
+<!-- Explica a função inicial da escrita. -->
+
+</div>
+<!-- Finaliza a caixa especial. -->
+
+</section>
+<!-- Finaliza a primeira parte. -->
+
+
+<section class="card">
+<!-- Inicia a linha do tempo. -->
+
+<h2>Linha do tempo essencial</h2>
+<!-- Apresenta a cronologia. -->
+
+<div class="timeline">
+<!-- Inicia a linha do tempo. -->
+
+<div class="timeline-item">
+<!-- Primeiro período. -->
+
+<div class="timeline-date">Neolítico</div>
+<!-- Identifica o período. -->
+
+<p>Expansão da agricultura e da sedentarização em diferentes regiões.</p>
+<!-- Explica o processo. -->
+
+</div>
+<!-- Finaliza o item. -->
+
+<div class="timeline-item">
+<!-- Segundo período. -->
+
+<div class="timeline-date">IV milênio a.C.</div>
+<!-- Identifica o período aproximado. -->
+
+<p>Expansão de cidades e sistemas administrativos na Mesopotâmia e consolidação de processos estatais no Egito.</p>
+<!-- Explica o processo. -->
+
+</div>
+<!-- Finaliza o item. -->
+
+<div class="timeline-item">
+<!-- Terceiro período. -->
+
+<div class="timeline-date">c. 3400–3000 a.C.</div>
+<!-- Identifica aproximadamente o período. -->
+
+<p>Desenvolvimento da escrita cuneiforme em contextos urbanos da Mesopotâmia.</p>
+<!-- Explica o processo. -->
+
+</div>
+<!-- Finaliza o item. -->
+
+<div class="timeline-item">
+<!-- Quarto período. -->
+
+<div class="timeline-date">c. 2334–2154 a.C.</div>
+<!-- Identifica aproximadamente o período do Império Acádio. -->
+
+<p>Expansão do Império Acádio associado a Sargão da Acádia.</p>
+<!-- Explica o acontecimento. -->
+
+</div>
+<!-- Finaliza o item. -->
+
+<div class="timeline-item">
+<!-- Quinto período. -->
+
+<div class="timeline-date">c. 1792–1750 a.C.</div>
+<!-- Identifica aproximadamente o reinado de Hamurábi. -->
+
+<p>Hamurábi governa a Babilônia e amplia o poder do Primeiro Império Babilônico.</p>
+<!-- Explica o acontecimento. -->
+
+</div>
+<!-- Finaliza o item. -->
+
+<div class="timeline-item">
+<!-- Sexto período. -->
+
+<div class="timeline-date">Séculos VIII–VII a.C.</div>
+<!-- Identifica o período assírio de expansão imperial. -->
+
+<p>O Império Neoassírio alcança grande extensão territorial no Oriente Próximo.</p>
+<!-- Explica o acontecimento. -->
+
+</div>
+<!-- Finaliza o item. -->
+
+</div>
+<!-- Finaliza a linha do tempo. -->
+
+</section>
+<!-- Finaliza a linha do tempo. -->
+
+
+<section id="desenvolvimento" class="card">
+<!-- Inicia a segunda parte da trilogia. -->
+
+<h2>II — O DESENVOLVIMENTO: CIVILIZAÇÕES, PODER E TRANSFORMAÇÕES</h2>
+<!-- Apresenta a segunda etapa. -->
+
+
+<section id="mesopotamia">
+<!-- Inicia o aprofundamento da Mesopotâmia. -->
+
+<h3>Mesopotâmia — a “terra entre rios”</h3>
+<!-- Apresenta a Mesopotâmia. -->
+
+<p>
+A palavra <strong>Mesopotâmia</strong> vem do grego e significa aproximadamente “terra entre rios”. A região correspondia principalmente às áreas entre os rios Tigre e Eufrates e seus arredores.
+</p>
+<!-- Explica o significado geográfico do termo. -->
+
+<p>
+A Mesopotâmia não foi um Estado único durante toda a Antiguidade. Diferentes povos dominaram partes da região em diferentes períodos.
+</p>
+<!-- Explica a diversidade política. -->
+
+</section>
+<!-- Finaliza a apresentação da Mesopotâmia. -->
+
+
+<h3>Os sumérios</h3>
+<!-- Apresenta os sumérios. -->
+
+<p>
+Os <strong>sumérios</strong> desenvolveram-se principalmente no sul da Mesopotâmia e estiveram entre os povos responsáveis pela formação de importantes centros urbanos da região.
+</p>
+<!-- Apresenta a localização dos sumérios. -->
+
+<p>
+Entre as cidades sumérias destacaram-se <strong>Uruk, Ur, Lagash, Nippur e Kish</strong>. Muitas funcionavam como cidades-Estado, com instituições políticas, religiosas e econômicas próprias.
+</p>
+<!-- Apresenta as cidades-Estado. -->
+
+<p>
+A organização dessas cidades envolvia templos, autoridades políticas, sacerdotes, artesãos, agricultores, comerciantes e trabalhadores submetidos a diferentes relações de dependência.
+</p>
+<!-- Explica a organização social. -->
+
+<h3>Uruk e o processo de urbanização</h3>
+<!-- Apresenta Uruk. -->
+
+<p>
+<strong>Uruk</strong> tornou-se um dos grandes centros urbanos da Mesopotâmia antiga e é frequentemente associada aos processos iniciais de urbanização e desenvolvimento da escrita.
+</p>
+<!-- Explica a importância de Uruk. -->
+
+<p>
+O crescimento urbano exigia formas de administrar terras, colheitas, animais, trabalhadores e produtos. Nesse contexto, registros escritos tornaram-se instrumentos importantes para a administração.
+</p>
+<!-- Relaciona urbanização e escrita. -->
+
+
+<h3>A escrita cuneiforme</h3>
+<!-- Apresenta a escrita cuneiforme. -->
+
+<p>
+A <strong>escrita cuneiforme</strong> foi desenvolvida na Mesopotâmia e recebeu esse nome devido ao formato produzido por marcas feitas em materiais como a argila.
+</p>
+<!-- Explica o nome da escrita. -->
+
+<p>
+Os escribas utilizavam instrumentos apropriados para produzir sinais. Ao longo do tempo, a escrita foi utilizada por diferentes povos e para diferentes finalidades.
+</p>
+<!-- Explica a continuidade da escrita. -->
+
+<div class="destaque">
+<!-- Cria um destaque. -->
+
+<strong>Para a prova:</strong>
+<!-- Identifica o foco de prova. -->
+
+Escrita cuneiforme → Mesopotâmia → administração, economia, religião, direito e literatura.
+<!-- Resume a associação histórica. -->
+
+</div>
+<!-- Finaliza o destaque. -->
+
+
+<h3>Os acádios e Sargão</h3>
+<!-- Apresenta os acádios. -->
+
+<p>
+Os <strong>acádios</strong> estabeleceram um importante domínio político na Mesopotâmia. Seu principal governante, <strong>Sargão da Acádia</strong>, é tradicionalmente associado à formação de um dos primeiros grandes impérios territoriais da região.
+</p>
+<!-- Apresenta Sargão e o Império Acádio. -->
+
+<p>
+O processo de expansão acádia demonstra uma transformação importante: comunidades organizadas em cidades-Estado também podiam ser integradas em estruturas políticas territoriais mais amplas.
+</p>
+<!-- Explica a transformação política. -->
+
+
+<h3>O Primeiro Império Babilônico</h3>
+<!-- Apresenta a Babilônia. -->
+
+<p>
+Séculos depois, a cidade da <strong>Babilônia</strong> tornou-se o centro de um importante reino mesopotâmico. A dinastia que governou a Babilônia nesse período é conhecida como dinastia amorita.
+</p>
+<!-- Apresenta o contexto babilônico. -->
+
+<p>
+O principal governante dessa fase foi <strong>Hamurábi</strong>, cujo reinado é geralmente situado entre aproximadamente 1792 e 1750 a.C.
+</p>
+<!-- Apresenta Hamurábi e seu período. -->
+
+</section>
+<!-- Finaliza a seção de desenvolvimento até Babilônia. -->
+
+
+<section id="hamurabi" class="card">
+<!-- Inicia a seção especial sobre Hamurábi. -->
+
+<h2>Hamurábi — quem foi?</h2>
+<!-- Apresenta o título. -->
+
+<p>
+<strong>Hamurábi</strong> foi rei da Babilônia durante o século XVIII a.C. e pertenceu à dinastia amorita. Seu governo esteve marcado pela expansão do poder babilônico e pela organização política e administrativa de seu reino.
+</p>
+<!-- Explica quem foi Hamurábi. -->
+
+<p>
+Durante seu reinado, a Babilônia passou a exercer maior influência sobre partes importantes da Mesopotâmia. Hamurábi utilizou alianças, diplomacia e guerras para ampliar e consolidar seu domínio.
+</p>
+<!-- Explica a expansão política. -->
+
+<div class="destaque">
+<!-- Cria uma caixa de destaque. -->
+
+<strong>O que o aluno precisa lembrar:</strong>
+<!-- Identifica o ponto central. -->
+
+Hamurábi = rei da Babilônia + século XVIII a.C. + expansão política + administração + conjunto de leis conhecido como Código de Hamurábi.
+<!-- Resume a importância de Hamurábi. -->
+
+</div>
+<!-- Finaliza o destaque. -->
+
+
+<h3>O Código de Hamurábi</h3>
+<!-- Apresenta o Código. -->
+
+<p>
+O chamado <strong>Código de Hamurábi</strong> é um importante conjunto de disposições jurídicas da Babilônia antiga. Ele foi registrado em escrita cuneiforme e preservado em uma grande estela de pedra.
+</p>
+<!-- Explica o documento. -->
+
+<p>
+A estela apresenta uma representação de Hamurábi diante da divindade associada à justiça, tradicionalmente identificada como Shamash, reforçando a relação entre autoridade política, religião e justiça.
+</p>
+<!-- Explica a dimensão política e religiosa da estela. -->
+
+<p>
+O conjunto tradicionalmente associado ao Código contém <strong>282 disposições numeradas</strong>, tratando de assuntos relacionados à propriedade, comércio, família, trabalho, danos, contratos e punições.
+</p>
+<!-- Apresenta a estrutura geral do Código. -->
+
+<div class="alerta">
+<!-- Cria uma caixa de atenção. -->
+
+<strong>Cuidado com uma pegadinha de prova:</strong>
+<!-- Identifica a possível pegadinha. -->
+
+O Código de Hamurábi <strong>não foi o primeiro conjunto de leis da História</strong>. Já existiam tradições jurídicas mesopotâmicas anteriores. Sua importância histórica está relacionada à preservação do texto, à amplitude dos assuntos tratados e ao que ele revela sobre a sociedade babilônica.
+<!-- Corrige uma ideia comum. -->
+
+</div>
+<!-- Finaliza a caixa. -->
+
+
+<h3>Lei de Talião</h3>
+<!-- Apresenta o conceito. -->
+
+<p>
+O Código de Hamurábi é frequentemente associado à <strong>Lei de Talião</strong>, tradicionalmente resumida pela expressão “olho por olho, dente por dente”.
+</p>
+<!-- Apresenta a Lei de Talião. -->
+
+<p>
+A ideia fundamental estava relacionada à proporcionalidade entre determinadas ofensas e punições. Entretanto, o próprio conjunto de leis apresenta diferenças de tratamento de acordo com a posição social das pessoas envolvidas.
+</p>
+<!-- Explica a complexidade do princípio. -->
+
+<div class="erro">
+<!-- Cria uma caixa de erro comum. -->
+
+<strong>Não ensine assim:</strong> “Hamurábi criou a ideia de olho por olho e todas as pessoas recebiam a mesma punição.”
+<!-- Apresenta o erro. -->
+
+<p>
+O documento revela uma sociedade hierarquizada, na qual as consequências jurídicas podiam variar de acordo com a situação e a posição social dos envolvidos.
+</p>
+<!-- Corrige a interpretação. -->
+
+</div>
+<!-- Finaliza a caixa. -->
+
+
+<h3>O que o Código revela sobre a sociedade?</h3>
+<!-- Apresenta a análise histórica. -->
+
+<div class="grid">
+<!-- Cria a grade. -->
+
+<div class="mini-card">
+<!-- Cria o primeiro cartão. -->
+
+<strong>Propriedade</strong>
+<!-- Apresenta o tema. -->
+
+<p>Existiam regras relacionadas à posse, utilização e transmissão de propriedades.</p>
+<!-- Explica o tema. -->
+
+</div>
+<!-- Finaliza o cartão. -->
+
+<div class="mini-card">
+<!-- Cria o segundo cartão. -->
+
+<strong>Comércio</strong>
+<!-- Apresenta o tema. -->
+
+<p>Existiam normas relacionadas a transações, empréstimos e atividades comerciais.</p>
+<!-- Explica o tema. -->
+
+</div>
+<!-- Finaliza o cartão. -->
+
+<div class="mini-card">
+<!-- Cria o terceiro cartão. -->
+
+<strong>Família</strong>
+<!-- Apresenta o tema. -->
+
+<p>O conjunto tratava de casamento, herança, relações familiares e outras questões sociais.</p>
+<!-- Explica o tema. -->
+
+</div>
+<!-- Finaliza o cartão. -->
+
+<div class="mini-card">
+<!-- Cria o quarto cartão. -->
+
+<strong>Trabalho</strong>
+<!-- Apresenta o tema. -->
+
+<p>Existiam disposições relacionadas a diferentes atividades profissionais e responsabilidades.</p>
+<!-- Explica o tema. -->
+
+</div>
+<!-- Finaliza o cartão. -->
+
+<div class="mini-card">
+<!-- Cria o quinto cartão. -->
+
+<strong>Hierarquia social</strong>
+<!-- Apresenta o tema. -->
+
+<p>As normas revelam uma sociedade marcada por diferenças de status e condição social.</p>
+<!-- Explica o tema. -->
+
+</div>
+<!-- Finaliza o cartão. -->
+
+<div class="mini-card">
+<!-- Cria o sexto cartão. -->
+
+<strong>Poder</strong>
+<!-- Apresenta o tema. -->
+
+<p>O documento também reforçava a autoridade do rei e sua imagem como garantidor da justiça.</p>
+<!-- Explica o tema. -->
+
+</div>
+<!-- Finaliza o cartão. -->
+
+</div>
+<!-- Finaliza a grade. -->
+
+</section>
+<!-- Finaliza a seção de Hamurábi. -->
+
+
+<section class="card">
+<!-- Inicia a seção sobre outros povos mesopotâmicos. -->
+
+<h3>Os assírios</h3>
+<!-- Apresenta os assírios. -->
+
+<p>
+Os <strong>assírios</strong> construíram um poderoso império no Oriente Próximo. O Império Neoassírio, especialmente entre os séculos VIII e VII a.C., destacou-se pela expansão territorial e pela organização militar.
+</p>
+<!-- Explica a expansão assíria. -->
+
+<p>
+O poder assírio envolveu conquistas militares, cobrança de tributos, deportações populacionais e administração de territórios submetidos ao império.
+</p>
+<!-- Explica mecanismos imperiais. -->
+
+<div class="destaque">
+<!-- Cria um destaque. -->
+
+<strong>Comparação:</strong>
+<!-- Apresenta a comparação. -->
+
+Sumérios → cidades-Estado e urbanização.<br>
+Acádios → expansão territorial e império.<br>
+Babilônios → Babilônia e Hamurábi.<br>
+Assírios → militarização e grande expansão imperial.
+<!-- Resume quatro momentos importantes. -->
+
+</div>
+<!-- Finaliza o destaque. -->
+
+</section>
+<!-- Finaliza a seção dos assírios. -->
+
+
+<section class="card">
+<!-- Inicia a seção do Egito. -->
+
+<h3>Egito</h3>
+<!-- Apresenta o Egito. -->
+
+<p>
+A civilização egípcia desenvolveu-se ao longo do vale do Nilo. O rio desempenhou papel importante na agricultura, no transporte e na organização da sociedade.
+</p>
+<!-- Explica a base geográfica egípcia. -->
+
+<p>
+O faraó ocupava posição central na organização política e religiosa do Estado. A sociedade era hierarquizada e envolvia funcionários, sacerdotes, militares, artesãos, camponeses e trabalhadores submetidos a diferentes relações de dependência.
+</p>
+<!-- Explica a sociedade egípcia. -->
+
+</section>
+<!-- Finaliza o Egito. -->
+
+
+<section class="card">
+<!-- Inicia a seção dos fenícios. -->
+
+<h3>Fenícios</h3>
+<!-- Apresenta os fenícios. -->
+
+<p>
+Os fenícios desenvolveram-se principalmente na costa do Mediterrâneo Oriental. A localização favoreceu atividades marítimas e comerciais.
+</p>
+<!-- Explica a localização fenícia. -->
+
+<p>
+Suas cidades desenvolveram redes de circulação pelo Mediterrâneo e contribuíram para a difusão de práticas comerciais, produtos e elementos culturais.
+</p>
+<!-- Explica a importância comercial. -->
+
+<p>
+O alfabeto fenício também teve grande importância histórica por sua influência sobre outros sistemas de escrita alfabética.
+</p>
+<!-- Explica a importância do alfabeto. -->
+
+</section>
+<!-- Finaliza os fenícios. -->
+
+
+<section class="card">
+<!-- Inicia a seção dos hebreus. -->
+
+<h3>Hebreus</h3>
+<!-- Apresenta os hebreus. -->
+
+<p>
+A história dos antigos hebreus está relacionada às populações e comunidades do Levante. A tradição religiosa hebraica teve importância fundamental para a formação histórica do judaísmo.
+</p>
+<!-- Explica a importância religiosa. -->
+
+<p>
+Sua história envolveu reinos, conflitos, dominações estrangeiras, deslocamentos e diferentes formas de organização política.
+</p>
+<!-- Explica a dinâmica histórica. -->
+
+</section>
+<!-- Finaliza os hebreus. -->
+
+
+<section class="card">
+<!-- Inicia a seção dos persas. -->
+
+<h3>Persas</h3>
+<!-- Apresenta os persas. -->
+
+<p>
+Os persas construíram um dos maiores impérios do mundo antigo. O Império Aquemênida desenvolveu mecanismos administrativos para governar territórios extensos e populações diversas.
+</p>
+<!-- Explica o Império Persa. -->
+
+<p>
+A divisão administrativa em satrapias, a rede de estradas e os sistemas de comunicação contribuíram para a administração imperial.
+</p>
+<!-- Explica mecanismos administrativos. -->
+
+</section>
+<!-- Finaliza os persas. -->
+
+
+<section class="card">
+<!-- Inicia a comparação entre povos. -->
+
+<h2>Comparando as principais sociedades</h2>
+<!-- Apresenta o título da comparação. -->
+
+<div class="tabela-container">
+<!-- Cria a área que permite rolagem da tabela em telas pequenas. -->
+
+<table>
+<!-- Inicia a tabela. -->
+
+<thead>
+<!-- Inicia o cabeçalho da tabela. -->
+
+<tr>
+<!-- Cria uma linha. -->
+
+<th>Sociedade</th>
+<!-- Define a primeira coluna. -->
+
+<th>Principal característica</th>
+<!-- Define a segunda coluna. -->
+
+<th>O que lembrar</th>
+<!-- Define a terceira coluna. -->
+
+</tr>
+<!-- Finaliza a linha. -->
+
+</thead>
+<!-- Finaliza o cabeçalho. -->
+
+<tbody>
+<!-- Inicia o corpo da tabela. -->
+
+<tr>
+<!-- Cria uma linha. -->
+
+<td>Sumérios</td>
+<!-- Apresenta os sumérios. -->
+
+<td>Cidades-Estado</td>
+<!-- Apresenta uma característica. -->
+
+<td>Uruk, Ur, escrita cuneiforme, templos e urbanização.</td>
+<!-- Apresenta elementos importantes. -->
+
+</tr>
+<!-- Finaliza a linha. -->
+
+<tr>
+<!-- Cria uma linha. -->
+
+<td>Acádios</td>
+<!-- Apresenta os acádios. -->
+
+<td>Expansão territorial</td>
+<!-- Apresenta a característica. -->
+
+<td>Sargão e formação de um grande domínio territorial.</td>
+<!-- Apresenta elementos importantes. -->
+
+</tr>
+<!-- Finaliza a linha. -->
+
+<tr>
+<!-- Cria uma linha. -->
+
+<td>Babilônios</td>
+<!-- Apresenta os babilônios. -->
+
+<td>Centralidade da Babilônia</td>
+<!-- Apresenta a característica. -->
+
+<td>Hamurábi e seu famoso conjunto de leis.</td>
+<!-- Apresenta elementos importantes. -->
+
+</tr>
+<!-- Finaliza a linha. -->
+
+<tr>
+<!-- Cria uma linha. -->
+
+<td>Assírios</td>
+<!-- Apresenta os assírios. -->
+
+<td>Militarização e expansão</td>
+<!-- Apresenta a característica. -->
+
+<td>Império Neoassírio e domínio territorial.</td>
+<!-- Apresenta elementos importantes. -->
+
+</tr>
+<!-- Finaliza a linha. -->
+
+<tr>
+<!-- Cria uma linha. -->
+
+<td>Egípcios</td>
+<!-- Apresenta os egípcios. -->
+
+<td>Vale do Nilo</td>
+<!-- Apresenta a característica. -->
+
+<td>Faraó, agricultura, religião e Estado centralizado.</td>
+<!-- Apresenta elementos importantes. -->
+
+</tr>
+<!-- Finaliza a linha. -->
+
+<tr>
+<!-- Cria uma linha. -->
+
+<td>Fenícios</td>
+<!-- Apresenta os fenícios. -->
+
+<td>Comércio marítimo</td>
+<!-- Apresenta a característica. -->
+
+<td>Cidades costeiras, navegação e circulação pelo Mediterrâneo.</td>
+<!-- Apresenta elementos importantes. -->
+
+</tr>
+<!-- Finaliza a linha. -->
+
+<tr>
+<!-- Cria uma linha. -->
+
+<td>Hebreus</td>
+<!-- Apresenta os hebreus. -->
+
+<td>Tradição religiosa</td>
+<!-- Apresenta a característica. -->
+
+<td>Formação histórica do judaísmo e diferentes experiências políticas.</td>
+<!-- Apresenta elementos importantes. -->
+
+</tr>
+<!-- Finaliza a linha. -->
+
+<tr>
+<!-- Cria uma linha. -->
+
+<td>Persas</td>
+<!-- Apresenta os persas. -->
+
+<td>Grande império territorial</td>
+<!-- Apresenta a característica. -->
+
+<td>Satrapias, estradas, administração e diversidade populacional.</td>
+<!-- Apresenta elementos importantes. -->
+
+</tr>
+<!-- Finaliza a linha. -->
+
+</tbody>
+<!-- Finaliza o corpo da tabela. -->
+
+</table>
+<!-- Finaliza a tabela. -->
+
+</div>
+<!-- Finaliza o container da tabela. -->
+
+</section>
+<!-- Finaliza a comparação. -->
+
+
+<section class="card">
+<!-- Inicia a seção de conceitos. -->
+
+<h2>Conceitos que o professor precisa dominar</h2>
+<!-- Apresenta os conceitos fundamentais. -->
+
+<div>
+<!-- Inicia os marcadores de conceitos. -->
+
+<span class="conceito">Sedentarização</span>
+<!-- Conceito. -->
+
+<span class="conceito">Agricultura</span>
+<!-- Conceito. -->
+
+<span class="conceito">Excedente</span>
+<!-- Conceito. -->
+
+<span class="conceito">Cidade-Estado</span>
+<!-- Conceito. -->
+
+<span class="conceito">Estado</span>
+<!-- Conceito. -->
+
+<span class="conceito">Escrita cuneiforme</span>
+<!-- Conceito. -->
+
+<span class="conceito">Zigurate</span>
+<!-- Conceito. -->
+
+<span class="conceito">Tributação</span>
+<!-- Conceito. -->
+
+<span class="conceito">Império</span>
+<!-- Conceito. -->
+
+<span class="conceito">Código de Hamurábi</span>
+<!-- Conceito. -->
+
+<span class="conceito">Lei de Talião</span>
+<!-- Conceito. -->
+
+<span class="conceito">Cidades-Estado</span>
+<!-- Conceito. -->
+
+<span class="conceito">Satrapia</span>
+<!-- Conceito. -->
+
+<span class="conceito">Monoteísmo</span>
+<!-- Conceito. -->
+
+<span class="conceito">Comércio</span>
+<!-- Conceito. -->
+
+</div>
+<!-- Finaliza os conceitos. -->
+
+</section>
+<!-- Finaliza a seção. -->
+
+
+<section class="card">
+<!-- Inicia a seção de causa e consequência. -->
+
+<h2>Relações de causa e consequência</h2>
+<!-- Apresenta o título. -->
+
+<div class="grid">
+<!-- Cria a grade. -->
+
+<div class="mini-card">
+<!-- Primeiro cartão. -->
+
+<strong>Agricultura</strong>
+<!-- Apresenta o fator. -->
+
+<p>Agricultura → excedentes → crescimento populacional → maior complexidade social.</p>
+<!-- Explica a relação. -->
+
+</div>
+<!-- Finaliza o cartão. -->
+
+<div class="mini-card">
+<!-- Segundo cartão. -->
+
+<strong>Urbanização</strong>
+<!-- Apresenta o fator. -->
+
+<p>Crescimento urbano → especialização do trabalho → administração → novas formas de poder.</p>
+<!-- Explica a relação. -->
+
+</div>
+<!-- Finaliza o cartão. -->
+
+<div class="mini-card">
+<!-- Terceiro cartão. -->
+
+<strong>Escrita</strong>
+<!-- Apresenta o fator. -->
+
+<p>Administração → necessidade de registros → escrita → ampliação das formas de documentação.</p>
+<!-- Explica a relação. -->
+
+</div>
+<!-- Finaliza o cartão. -->
+
+<div class="mini-card">
+<!-- Quarto cartão. -->
+
+<strong>Impérios</strong>
+<!-- Apresenta o fator. -->
+
+<p>Conquista → tributação → administração territorial → integração e conflito entre diferentes povos.</p>
+<!-- Explica a relação. -->
+
+</div>
+<!-- Finaliza o cartão. -->
+
+</div>
+<!-- Finaliza a grade. -->
+
+</section>
+<!-- Finaliza a seção. -->
+
+
+<section class="card">
+<!-- Inicia a seção sobre o trabalho docente. -->
+
+<h2>O que o professor precisa dominar</h2>
+<!-- Apresenta o título. -->
+
+<ol>
+<!-- Inicia a lista. -->
+
+<li>Entender que a Mesopotâmia não foi um único império.</li>
+<!-- Primeiro ponto. -->
+
+<li>Explicar a importância das cidades-Estado sumérias.</li>
+<!-- Segundo ponto. -->
+
+<li>Relacionar urbanização e desenvolvimento da escrita cuneiforme.</li>
+<!-- Terceiro ponto. -->
+
+<li>Saber explicar quem foram os acádios e a importância de Sargão.</li>
+<!-- Quarto ponto. -->
+
+<li>Identificar a Babilônia como centro político de grande importância.</li>
+<!-- Quinto ponto. -->
+
+<li>Saber quem foi Hamurábi e situá-lo no século XVIII a.C.</li>
+<!-- Sexto ponto. -->
+
+<li>Explicar o Código de Hamurábi sem afirmar que ele foi o primeiro código legal da História.</li>
+<!-- Sétimo ponto. -->
+
+<li>Explicar a Lei de Talião dentro do contexto social e jurídico da época.</li>
+<!-- Oitavo ponto. -->
+
+<li>Reconhecer que as leis refletiam uma sociedade hierarquizada.</li>
+<!-- Nono ponto. -->
+
+<li>Diferenciar sumérios, acádios, babilônios e assírios.</li>
+<!-- Décimo ponto. -->
+
+<li>Relacionar Egito, Mesopotâmia, Fenícia, hebreus e persas sem transformá-los em uma única civilização.</li>
+<!-- Décimo primeiro ponto. -->
+
+</ol>
+<!-- Finaliza a lista. -->
+
+</section>
+<!-- Finaliza a seção docente. -->
+
+
+<section class="card">
+<!-- Inicia a seção da lousa. -->
+
+<h2>O que colocar na lousa</h2>
+<!-- Apresenta o título. -->
+
+<div class="lousa">
+<!-- Cria a representação da lousa. -->
+
+<h3>ANTIGUIDADE ORIENTAL</h3>
+<!-- Título da lousa. -->
+
+<p><strong>1.</strong> Agricultura → excedente → cidades → Estado</p>
+<!-- Primeiro esquema. -->
+
+<p><strong>2.</strong> MESOPOTÂMIA → Tigre + Eufrates</p>
+<!-- Segundo esquema. -->
+
+<p><strong>3.</strong> SUMÉRIOS → Uruk / Ur / Lagash → cidades-Estado</p>
+<!-- Terceiro esquema. -->
+
+<p><strong>4.</strong> ESCRITA → cuneiforme → administração</p>
+<!-- Quarto esquema. -->
+
+<p><strong>5.</strong> ACÁDIOS → Sargão → expansão territorial</p>
+<!-- Quinto esquema. -->
+
+<p><strong>6.</strong> BABILÔNIA → Hamurábi → Código de Hamurábi</p>
+<!-- Sexto esquema. -->
+
+<p><strong>7.</strong> CÓDIGO → propriedade / família / comércio / trabalho / punições</p>
+<!-- Sétimo esquema. -->
+
+<p><strong>8.</strong> ASSÍRIOS → militarização → expansão imperial</p>
+<!-- Oitavo esquema. -->
+
+<p><strong>9.</strong> EGITO → Nilo → faraó → Estado</p>
+<!-- Nono esquema. -->
+
+<p><strong>10.</strong> FENÍCIOS → navegação → comércio</p>
+<!-- Décimo esquema. -->
+
+<p><strong>11.</strong> HEBREUS → tradição do judaísmo</p>
+<!-- Décimo primeiro esquema. -->
+
+<p><strong>12.</strong> PERSAS → império → satrapias → administração</p>
+<!-- Décimo segundo esquema. -->
+
+</div>
+<!-- Finaliza a lousa. -->
+
+</section>
+<!-- Finaliza a seção da lousa. -->
+
+
+<section id="hoje" class="card">
+<!-- Inicia a terceira parte da trilogia. -->
+
+<h2>III — O LEGADO E O MUNDO DE HOJE</h2>
+<!-- Apresenta a terceira etapa. -->
+
+<h3>Por que estudar a Antiguidade Oriental?</h3>
+<!-- Apresenta a questão central. -->
+
+<p>
+O estudo dessas sociedades permite analisar experiências históricas relacionadas à urbanização, organização política, administração, escrita, religião, direito, comércio, agricultura e formação de grandes estruturas territoriais.
+</p>
+<!-- Explica a importância do estudo. -->
+
+<p>
+O objetivo não é afirmar que as sociedades atuais são simples continuação das antigas. O mundo passou por milhares de anos de mudanças, migrações, conquistas, transformações econômicas, religiosas e políticas.
+</p>
+<!-- Evita uma interpretação linear. -->
+
+
+<h3>O legado da escrita</h3>
+<!-- Apresenta o legado da escrita. -->
+
+<p>
+A preservação de documentos escritos permite aos historiadores estudar aspectos das sociedades antigas que não seriam conhecidos apenas pela arqueologia material.
+</p>
+<!-- Explica a importância das fontes escritas. -->
+
+<h3>O legado das experiências jurídicas</h3>
+<!-- Apresenta o legado jurídico. -->
+
+<p>
+Documentos jurídicos como o Código de Hamurábi são fontes importantes para compreender como determinadas sociedades pensavam propriedade, família, trabalho, danos, punições e autoridade.
+</p>
+<!-- Explica a importância histórica das leis. -->
+
+<div class="alerta">
+<!-- Cria uma caixa de atenção. -->
+
+<strong>Importante:</strong>
+<!-- Identifica o ponto. -->
+
+Não devemos dizer que o Código de Hamurábi criou o direito moderno. Ele é uma fonte histórica que permite estudar uma sociedade específica da antiga Babilônia.
+<!-- Evita anacronismo. -->
+
+</div>
+<!-- Finaliza a caixa. -->
+
+</section>
+<!-- Finaliza a terceira parte. -->
+
+
+<section class="card">
+<!-- Inicia a seção Brasil. -->
+
+<h2>Antiguidade Oriental e História do Brasil</h2>
+<!-- Apresenta o título. -->
+
+<p>
+O Brasil não existia como Estado ou sociedade durante a Antiguidade Oriental. Portanto, a relação com a História do Brasil deve ser construída por meio de processos históricos posteriores.
+</p>
+<!-- Explica a relação cronológica. -->
+
+<p>
+Uma abordagem interessante é mostrar aos alunos como tradições religiosas, formas de organização política, conhecimentos, práticas comerciais e referências culturais antigas foram reinterpretadas e transmitidas ao longo de muitos séculos.
+</p>
+<!-- Explica a conexão histórica. -->
+
+<p>
+Também é importante apresentar a Antiguidade dentro de uma perspectiva mundial, evitando uma narrativa que trate apenas Grécia e Roma como referências centrais da História antiga.
+</p>
+<!-- Amplia a perspectiva histórica. -->
+
+</section>
+<!-- Finaliza a seção Brasil. -->
+
+
+<section class="card">
+<!-- Inicia a seção BNCC. -->
+
+<h2>BNCC — Orientação pedagógica</h2>
+<!-- Apresenta a seção BNCC. -->
+
+<p>
+Para o Ensino Fundamental, o estudo das sociedades antigas pode ser articulado às habilidades que trabalham formas de registro, organização política, aspectos econômicos, sociais e culturais e os legados das sociedades antigas.
+</p>
+<!-- Explica a relação com a BNCC. -->
+
+<div class="destaque">
+<!-- Cria um destaque. -->
+
+<strong>Habilidade especialmente relacionada:</strong>
+<!-- Apresenta a habilidade. -->
+
+EF06HI07 — trabalhar aspectos e formas de registro das sociedades antigas na África, Ásia, Oriente Médio e Américas, analisando seus significados e legados.
+<!-- Apresenta a habilidade de forma resumida. -->
+
+</div>
+<!-- Finaliza o destaque. -->
+
+<p>
+A aplicação da habilidade deve ser adaptada ao currículo da escola, ao ano/série e ao planejamento pedagógico da rede de ensino.
+</p>
+<!-- Orienta a utilização da BNCC. -->
+
+</section>
+<!-- Finaliza a seção BNCC. -->
+
+
+<section class="card">
+<!-- Inicia a seção de foco para provas. -->
+
+<h2>ENEM, vestibular e concursos — o que pode ser cobrado?</h2>
+<!-- Apresenta o título. -->
+
+<div class="grid">
+<!-- Cria a grade. -->
+
+<div class="mini-card">
+<!-- Primeiro cartão. -->
+
+<strong>Mesopotâmia</strong>
+<!-- Apresenta o tema. -->
+
+<p>Relação entre rios, agricultura, cidades, Estado e escrita.</p>
+<!-- Explica o foco. -->
+
+</div>
+<!-- Finaliza o cartão. -->
+
+<div class="mini-card">
+<!-- Segundo cartão. -->
+
+<strong>Sumérios</strong>
+<!-- Apresenta o tema. -->
+
+<p>Cidades-Estado, urbanização e escrita cuneiforme.</p>
+<!-- Explica o foco. -->
+
+</div>
+<!-- Finaliza o cartão. -->
+
+<div class="mini-card">
+<!-- Terceiro cartão. -->
+
+<strong>Hamurábi</strong>
+<!-- Apresenta o tema. -->
+
+<p>Babilônia, poder político, legislação e hierarquia social.</p>
+<!-- Explica o foco. -->
+
+</div>
+<!-- Finaliza o cartão. -->
+
+<div class="mini-card">
+<!-- Quarto cartão. -->
+
+<strong>Lei de Talião</strong>
+<!-- Apresenta o tema. -->
+
+<p>Proporcionalidade das punições e diferenças de status social.</p>
+<!-- Explica o foco. -->
+
+</div>
+<!-- Finaliza o cartão. -->
+
+<div class="mini-card">
+<!-- Quinto cartão. -->
+
+<strong>Egito</strong>
+<!-- Apresenta o tema. -->
+
+<p>Nilo, agricultura, Estado e organização social.</p>
+<!-- Explica o foco. -->
+
+</div>
+<!-- Finaliza o cartão. -->
+
+<div class="mini-card">
+<!-- Sexto cartão. -->
+
+<strong>Impérios</strong>
+<!-- Apresenta o tema. -->
+
+<p>Conquista, administração, tributação e diversidade populacional.</p>
+<!-- Explica o foco. -->
+
+</div>
+<!-- Finaliza o cartão. -->
+
+</div>
+<!-- Finaliza a grade. -->
+
+</section>
+<!-- Finaliza a seção. -->
+
+
+<section class="card">
+<!-- Inicia a síntese docente. -->
+
+<h2>O que o professor precisa guardar</h2>
+<!-- Apresenta o título. -->
+
+<ol>
+<!-- Inicia a lista. -->
+
+<li>A Antiguidade Oriental reúne sociedades diferentes.</li>
+<!-- Primeiro ponto. -->
+
+<li>A Mesopotâmia não foi um único império.</li>
+<!-- Segundo ponto. -->
+
+<li>Os sumérios tiveram papel fundamental na urbanização mesopotâmica.</li>
+<!-- Terceiro ponto. -->
+
+<li>As cidades sumérias possuíam importantes características de cidades-Estado.</li>
+<!-- Quarto ponto. -->
+
+<li>A escrita cuneiforme esteve ligada a necessidades administrativas e posteriormente assumiu muitas outras funções.</li>
+<!-- Quinto ponto. -->
+
+<li>Sargão esteve associado à formação do Império Acádio.</li>
+<!-- Sexto ponto. -->
+
+<li>Hamurábi foi rei da Babilônia no século XVIII a.C.</li>
+<!-- Sétimo ponto. -->
+
+<li>O Código de Hamurábi não foi o primeiro conjunto de leis da História.</li>
+<!-- Oitavo ponto. -->
+
+<li>O Código permite estudar a sociedade, o direito, a economia e as relações de poder da Babilônia.</li>
+<!-- Nono ponto. -->
+
+<li>A Lei de Talião deve ser compreendida dentro de seu contexto histórico e social.</li>
+<!-- Décimo ponto. -->
+
+<li>Os assírios construíram um poderoso império marcado por forte capacidade militar e administrativa.</li>
+<!-- Décimo primeiro ponto. -->
+
+<li>Egípcios, fenícios, hebreus e persas desenvolveram experiências históricas próprias.</li>
+<!-- Décimo segundo ponto. -->
+
+</ol>
+<!-- Finaliza a lista. -->
+
+</section>
+<!-- Finaliza a síntese. -->
+
+
+<section id="prova" class="card">
+<!-- Inicia a seção de questões. -->
+
+<h2>Questões — estilo ENEM</h2>
+<!-- Apresenta o título. -->
+
+<p>
+As questões abaixo são autorais e trabalham interpretação histórica, relações de causa e consequência e análise de fontes e instituições.
+</p>
+<!-- Explica a proposta. -->
+
+
+<div class="questao">
+<!-- Inicia a primeira questão. -->
+
+<h3>Questão 1 — Sumérios e urbanização</h3>
+<!-- Identifica a questão. -->
+
+<p>
+Na Mesopotâmia, algumas cidades do sul da região desenvolveram complexas instituições políticas, religiosas e econômicas. A administração de produtos agrícolas, trabalhadores e propriedades criou necessidades crescentes de registro.
+</p>
+<!-- Apresenta o texto-base. -->
+
+<p>
+A situação descrita contribuiu historicamente para:
+</p>
+<!-- Apresenta o comando. -->
+
+<div class="alternativa"><strong>A)</strong> o abandono das atividades agrícolas pelas populações urbanas.</div>
+<!-- Alternativa A. -->
+
+<div class="alternativa"><strong>B)</strong> a formação de cidades-Estado e o desenvolvimento de sistemas de registro.</div>
+<!-- Alternativa B. -->
+
+<div class="alternativa"><strong>C)</strong> o desaparecimento dos templos religiosos.</div>
+<!-- Alternativa C. -->
+
+<div class="alternativa"><strong>D)</strong> a criação imediata de um Estado mesopotâmico unificado.</div>
+<!-- Alternativa D. -->
+
+<div class="alternativa"><strong>E)</strong> o fim das diferenças sociais.</div>
+<!-- Alternativa E. -->
+
+<button class="btn-gabarito" onclick="mostrarGabarito('gabarito1')">
+<!-- Cria o botão do gabarito. -->
+
+Mostrar gabarito
+<!-- Texto do botão. -->
+
+</button>
+<!-- Finaliza o botão. -->
+
+<div id="gabarito1" class="gabarito">
+<!-- Cria a área escondida do gabarito. -->
+
+<strong>Gabarito: B.</strong>
+<!-- Apresenta a resposta. -->
+
+As cidades mesopotâmicas, especialmente as associadas aos sumérios, desenvolveram instituições políticas e econômicas complexas. A necessidade de administrar recursos contribuiu para o desenvolvimento e uso da escrita.
+<!-- Explica a resposta. -->
+
+</div>
+<!-- Finaliza o gabarito. -->
+
+</div>
+<!-- Finaliza a questão. -->
+
+
+<div class="questao">
+<!-- Inicia a segunda questão. -->
+
+<h3>Questão 2 — Código de Hamurábi</h3>
+<!-- Identifica a questão. -->
+
+<p>
+O Código de Hamurábi reúne disposições relacionadas à propriedade, família, comércio, trabalho e punições. Seu conteúdo apresenta diferenças de tratamento entre pessoas pertencentes a diferentes posições sociais.
+</p>
+<!-- Apresenta o texto-base. -->
+
+<p>
+A análise histórica desse documento permite concluir que:
+</p>
+<!-- Apresenta o comando. -->
+
+<div class="alternativa"><strong>A)</strong> a sociedade babilônica desconhecia diferenças sociais.</div>
+<!-- Alternativa A. -->
+
+<div class="alternativa"><strong>B)</strong> todas as pessoas estavam submetidas às mesmas punições independentemente de sua condição social.</div>
+<!-- Alternativa B. -->
+
+<div class="alternativa"><strong>C)</strong> o documento permite perceber relações entre direito, poder e hierarquia social.</div>
+<!-- Alternativa C. -->
+
+<div class="alternativa"><strong>D)</strong> Hamurábi criou as primeiras leis da humanidade.</div>
+<!-- Alternativa D. -->
+
+<div class="alternativa"><strong>E)</strong> o documento tratava exclusivamente de crimes violentos.</div>
+<!-- Alternativa E. -->
+
+<button class="btn-gabarito" onclick="mostrarGabarito('gabarito2')">
+<!-- Cria o botão do gabarito. -->
+
+Mostrar gabarito
+<!-- Texto do botão. -->
+
+</button>
+<!-- Finaliza o botão. -->
+
+<div id="gabarito2" class="gabarito">
+<!-- Cria a área escondida do gabarito. -->
+
+<strong>Gabarito: C.</strong>
+<!-- Apresenta a resposta. -->
+
+O Código é uma fonte histórica que revela aspectos jurídicos, econômicos e sociais da Babilônia, inclusive diferenças relacionadas à posição social dos indivíduos.
+<!-- Explica a resposta. -->
+
+</div>
+<!-- Finaliza o gabarito. -->
+
+</div>
+<!-- Finaliza a questão. -->
+
+
+<div class="questao">
+<!-- Inicia a terceira questão. -->
+
+<h3>Questão 3 — Interpretação histórica</h3>
+<!-- Identifica a questão. -->
+
+<p>
+Um professor afirma: “A existência do Código de Hamurábi prova que Hamurábi inventou o direito escrito e que antes dele não existiam leis.”
+</p>
+<!-- Apresenta a afirmação. -->
+
+<p>
+A afirmação deve ser considerada:
+</p>
+<!-- Apresenta o comando. -->
+
+<div class="alternativa"><strong>A)</strong> correta, pois nenhuma sociedade possuía normas jurídicas antes da Babilônia.</div>
+<!-- Alternativa A. -->
+
+<div class="alternativa"><strong>B)</strong> correta, porque Hamurábi foi o primeiro governante da Mesopotâmia.</div>
+<!-- Alternativa B. -->
+
+<div class="alternativa"><strong>C)</strong> inadequada, pois existiram tradições jurídicas mesopotâmicas anteriores a Hamurábi.</div>
+<!-- Alternativa C. -->
+
+<div class="alternativa"><strong>D)</strong> correta, pois o Código apresenta todas as leis existentes no mundo antigo.</div>
+<!-- Alternativa D. -->
+
+<div class="alternativa"><strong>E)</strong> inadequada apenas porque Hamurábi não era rei da Babilônia.</div>
+<!-- Alternativa E. -->
+
+<button class="btn-gabarito" onclick="mostrarGabarito('gabarito3')">
+<!-- Cria o botão do gabarito. -->
+
+Mostrar gabarito
+<!-- Texto do botão. -->
+
+</button>
+<!-- Finaliza o botão. -->
+
+<div id="gabarito3" class="gabarito">
+<!-- Cria a área escondida. -->
+
+<strong>Gabarito: C.</strong>
+<!-- Apresenta a resposta. -->
+
+Existiram tradições jurídicas mesopotâmicas anteriores. O Código de Hamurábi é uma fonte especialmente importante e preservada, mas não deve ser apresentado como a primeira lei da humanidade.
+<!-- Explica a resposta. -->
+
+</div>
+<!-- Finaliza o gabarito. -->
+
+</div>
+<!-- Finaliza a questão. -->
+
+</section>
+<!-- Finaliza as questões. -->
+
+
+<section class="card">
+<!-- Inicia a revisão final. -->
+
+<h2>Revisão em 60 segundos</h2>
+<!-- Apresenta o título. -->
+
+<p>
+<strong>Antiguidade Oriental</strong> → agricultura → excedentes → cidades → Estado → escrita → administração → hierarquia social → comércio → impérios.
+</p>
+<!-- Apresenta a primeira síntese. -->
+
+<p>
+<strong>Mesopotâmia</strong> → Tigre + Eufrates → Sumérios → cidades-Estado → escrita cuneiforme → Acádios → Sargão → Babilônia → Hamurábi → Código de Hamurábi → Assírios.
+</p>
+<!-- Apresenta a síntese da Mesopotâmia. -->
+
+<div class="destaque">
+<!-- Cria o destaque final. -->
+
+<strong>Pergunta-chave para o professor:</strong>
+<!-- Apresenta a pergunta pedagógica. -->
+
+Como a necessidade de organizar produção, trabalho, propriedade e poder contribuiu para o desenvolvimento das cidades, da escrita, das leis e dos Estados na Antiguidade?
+<!-- Apresenta a pergunta de fechamento. -->
+
+</div>
+<!-- Finaliza o destaque. -->
+
+</section>
+<!-- Finaliza a revisão. -->
+
+
+
+
+</main>
+<!-- Finaliza o conteúdo principal. -->
+
+
+<footer>
+<!-- Inicia o rodapé. -->
+
+<p>Curso de História Geral</p>
+<!-- Identifica o curso. -->
+
+<p class="assinatura">Professor Marcelo Oliveira</p>
+<!-- Apresenta a assinatura. -->
+
+<p>Fundamental II • Ensino Médio • ENEM • Vestibular • Concursos</p>
+<!-- Apresenta o público do curso. -->
+
+</footer>
+<!-- Finaliza o rodapé. -->
+
+
+<script>
+/* Inicia o JavaScript da página. */
+
+/* Cria a função responsável pela navegação interna. */
+function irPara(id) {
+
+    /* Procura na página o elemento correspondente ao ID informado. */
+    const elemento = document.getElementById(id);
+
+    /* Verifica se o elemento existe. */
+    if (elemento) {
+
+        /* Faz uma rolagem suave até o elemento encontrado. */
+        elemento.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+        });
+    }
+}
+
+/* Cria a função responsável por mostrar ou esconder os gabaritos. */
+function mostrarGabarito(id) {
+
+    /* Localiza o gabarito pelo ID. */
+    const gabarito = document.getElementById(id);
+
+    /* Verifica se o gabarito está escondido. */
+    if (gabarito.style.display === "none" || gabarito.style.display === "") {
+
+        /* Mostra o gabarito. */
+        gabarito.style.display = "block";
+
+    } else {
+
+        /* Esconde novamente o gabarito. */
+        gabarito.style.display = "none";
+    }
+}
+
+/* Cria a função responsável por voltar à página anterior. */
+function voltarPagina() {
+
+    /* Verifica se existe histórico anterior no navegador. */
+    if (window.history.length > 1) {
+
+        /* Retorna para a página anterior. */
+        window.history.back();
+
+    } else {
+
+        /* Caso não exista histórico, volta ao topo. */
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    }
+}
+<!-- Finaliza o JavaScript. -->
+
+</script>
+<!-- Finaliza o bloco JavaScript. --><script>
+  const paginaAnterior = "00 - Pré-História.html";
+  const paginaProxima = "02 - Egito.html"; // Próxima página
+</script>
+<script src="navegacao.js"></script>
+</body>
+
+</body>
+<!-- Finaliza o corpo da página. -->
+
+</html>
+<!-- Finaliza o documento HTML. -->

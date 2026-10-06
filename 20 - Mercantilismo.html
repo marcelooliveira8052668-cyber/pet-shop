@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<!-- Define a codificação de caracteres para aceitar acentos e símbolos corretamente. -->
+<meta charset="UTF-8">
+<!-- Faz a página se adaptar a celulares, tablets e computadores. -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Define o título que aparece na aba do navegador. -->
+<title>1.20 — Mercantilismo | Curso de História Geral</title>
+<!-- Inicia os estilos visuais da página. -->
+<style>
+/* Cria variáveis para facilitar a manutenção das cores do capítulo. */
+:root{--azul:#102a43;--azul2:#1f5f8b;--dourado:#c99a2e;--creme:#f7f1e3;--branco:#ffffff;--texto:#243447;--cinza:#667085;--verde:#2f855a;--borda:#d9dee7;--sombra:0 12px 35px rgba(16,42,67,.10);}
+/* Remove margens padrão e define o comportamento geral dos elementos. */
+*{box-sizing:border-box;margin:0;padding:0;}
+/* Define a fonte, a cor e o fundo geral do documento. */
+body{font-family:Arial,Helvetica,sans-serif;background:#eef3f7;color:var(--texto);line-height:1.7;}
+/* Cria o cabeçalho principal com aparência institucional. */
+header{background:linear-gradient(135deg,var(--azul),#173f62 60%,var(--azul2));color:var(--branco);padding:70px 20px 55px;text-align:center;border-bottom:6px solid var(--dourado);}
+/* Estiliza a identificação do curso. */
+header .curso{font-size:.9rem;letter-spacing:2px;text-transform:uppercase;color:#f4d98a;font-weight:bold;margin-bottom:14px;}
+/* Estiliza o título principal. */
+header h1{font-size:clamp(2rem,5vw,4rem);margin-bottom:12px;}
+/* Estiliza o subtítulo do capítulo. */
+header p{max-width:900px;margin:auto;color:#e8eef4;font-size:1.08rem;}
+/* Centraliza e limita a largura do conteúdo. */
+.container{width:min(1120px,92%);margin:0 auto;}
+/* Cria um painel de apresentação logo abaixo do cabeçalho. */
+.hero{background:var(--branco);margin:-28px auto 35px;padding:28px;border-radius:18px;box-shadow:var(--sombra);position:relative;}
+/* Organiza os cartões de informação inicial. */
+.hero-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
+/* Estiliza cada cartão de informação. */
+.info-card{background:var(--creme);padding:18px;border-left:4px solid var(--dourado);border-radius:10px;}
+/* Estiliza o título pequeno dos cartões. */
+.info-card strong{display:block;color:var(--azul);margin-bottom:5px;}
+/* Define o espaçamento entre as seções. */
+section{background:var(--branco);margin:28px 0;padding:34px;border-radius:18px;box-shadow:var(--sombra);}
+/* Estiliza títulos de seção. */
+h2{color:var(--azul);font-size:clamp(1.5rem,3vw,2.2rem);border-bottom:3px solid var(--dourado);padding-bottom:9px;margin-bottom:20px;}
+/* Estiliza subtítulos internos. */
+h3{color:var(--azul2);margin:22px 0 10px;font-size:1.25rem;}
+/* Cria espaço entre parágrafos. */
+p{margin-bottom:13px;}
+/* Estiliza listas. */
+ul,ol{padding-left:24px;margin-bottom:16px;}
+/* Cria cartões para conceitos. */
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:20px;}
+/* Estiliza cartões de conteúdo. */
+.card{border:1px solid var(--borda);border-radius:14px;padding:20px;background:#fbfcfd;transition:.25s;}
+/* Cria um pequeno efeito quando o usuário passa o mouse. */
+.card:hover{transform:translateY(-3px);box-shadow:0 10px 25px rgba(16,42,67,.08);}
+/* Destaca o título dos cartões. */
+.card h3{margin-top:0;}
+/* Cria uma caixa de atenção histórica. */
+.note{background:#fff8df;border-left:6px solid var(--dourado);padding:20px;border-radius:10px;margin:20px 0;}
+/* Cria uma caixa especial para conexões históricas. */
+.connection{background:#eaf5ef;border-left:6px solid var(--verde);padding:20px;border-radius:10px;margin:20px 0;}
+/* Cria uma tabela responsiva através de rolagem horizontal. */
+.table-wrap{overflow-x:auto;margin:20px 0;}
+/* Define a aparência da tabela. */
+table{width:100%;border-collapse:collapse;min-width:700px;}
+/* Define bordas e espaçamento das células. */
+th,td{border:1px solid var(--borda);padding:13px;text-align:left;vertical-align:top;}
+/* Destaca o cabeçalho da tabela. */
+th{background:var(--azul);color:var(--branco);}
+/* Cria uma linha do tempo vertical. */
+.timeline{border-left:4px solid var(--dourado);padding-left:25px;margin:25px 0;}
+/* Cria cada acontecimento da linha do tempo. */
+.event{position:relative;margin:0 0 25px;}
+/* Cria a marca circular da linha do tempo. */
+.event::before{content:"";position:absolute;left:-37px;top:7px;width:14px;height:14px;border-radius:50%;background:var(--dourado);border:3px solid var(--branco);box-shadow:0 0 0 2px var(--dourado);}
+/* Destaca a data da linha do tempo. */
+.event strong{color:var(--azul2);}
+/* Estiliza o quadro para a lousa. */
+.board{background:#142b22;color:#f4f1df;border-radius:14px;padding:28px;font-family:Georgia,serif;box-shadow:inset 0 0 25px rgba(0,0,0,.25);}
+/* Destaca as palavras do quadro. */
+.board b{color:#f5d77a;}
+/* Cria uma área de fórmula histórica. */
+.formula{background:linear-gradient(90deg,#edf5fb,#fff8df);padding:22px;border-radius:14px;text-align:center;font-size:1.12rem;font-weight:bold;color:var(--azul);margin:22px 0;}
+/* Cria botões de navegação. */
+.nav{display:flex;justify-content:space-between;gap:15px;margin:30px 0;flex-wrap:wrap;}
+/* Estiliza os links como botões. */
+.btn{display:inline-block;background:var(--azul);color:var(--branco);text-decoration:none;padding:13px 20px;border-radius:9px;font-weight:bold;border:0;cursor:pointer;transition:.2s;}
+/* Muda a aparência dos botões ao passar o mouse. */
+.btn:hover{background:var(--azul2);transform:translateY(-2px);}
+/* Define o botão de gabarito como inicialmente oculto. */
+.answer{display:none;background:#eef8f1;border-left:5px solid var(--verde);padding:18px;margin-top:15px;border-radius:8px;}
+/* Estiliza a assinatura do curso. */
+.signature{text-align:center;padding:35px 15px;color:var(--cinza);}
+/* Cria o botão flutuante de retorno ao topo. */
+.top{position:fixed;right:20px;bottom:20px;width:46px;height:46px;border-radius:50%;background:var(--dourado);color:var(--azul);border:0;font-size:20px;font-weight:bold;cursor:pointer;box-shadow:var(--sombra);}
+/* Ajusta o layout para telas médias. */
+@media(max-width:800px){.hero-grid,.grid{grid-template-columns:1fr 1fr;}section{padding:25px;}}
+/* Ajusta o layout para celulares pequenos. */
+@media(max-width:560px){.hero-grid,.grid{grid-template-columns:1fr;}header{padding:50px 16px 40px;}section{padding:20px;border-radius:13px;}.nav{flex-direction:column;}.btn{text-align:center;width:100%;}}
+</style>
+</head>
+<body>
+<!-- Cria o cabeçalho do capítulo. -->
+<header id="topo">
+<!-- Identifica o curso ao qual esta aula pertence. -->
+<div class="curso">Curso de História Geral • Professor Marcelo Oliveira</div>
+<!-- Apresenta o número e o nome do tema. -->
+<h1>1.20 — MERCANTILISMO</h1>
+<!-- Resume a ideia central do capítulo. -->
+<p>Comércio, riqueza, Estado, colônias e poder: como as práticas mercantilistas ajudaram a organizar a economia das monarquias europeias na formação do mundo moderno.</p>
+</header>
+<!-- Inicia o conteúdo principal. -->
+<main class="container">
+<!-- Cria o painel introdutório. -->
+<div class="hero">
+<!-- Organiza três informações fundamentais. -->
+<div class="hero-grid">
+<!-- Primeiro cartão: período. -->
+<div class="info-card"><strong>PERÍODO</strong>Principalmente entre os séculos XVI e XVIII, com práticas diferentes conforme cada Estado.</div>
+<!-- Segundo cartão: eixo de estudo. -->
+<div class="info-card"><strong>EIXO</strong>Economia, Estado, comércio, colonização e competição internacional.</div>
+<!-- Terceiro cartão: ideia-chave. -->
+<div class="info-card"><strong>IDEIA-CHAVE</strong>O poder econômico e o poder político estavam profundamente relacionados.</div>
+</div>
+</div>
+<!-- Apresenta o começo do processo. -->
+<section>
+<h2>I — O COMEÇO: POR QUE SURGIU O MERCANTILISMO?</h2>
+<p>O chamado <strong>mercantilismo</strong> não foi uma doutrina econômica única aplicada da mesma maneira em toda a Europa. O termo é usado pelos historiadores para reunir práticas e políticas econômicas associadas à formação e ao fortalecimento dos Estados europeus entre os séculos XVI e XVIII.</p>
+<p>Esse processo ocorreu em um contexto de expansão comercial, crescimento das cidades, fortalecimento das monarquias, expansão marítima e formação de impérios coloniais.</p>
+<h3>1. O mundo europeu estava mudando</h3>
+<ul>
+<li>As monarquias ampliavam sua capacidade administrativa e fiscal.</li>
+<li>As rotas comerciais ligavam cada vez mais Europa, África, Ásia e América.</li>
+<li>Produtos coloniais passaram a circular em grandes redes de comércio.</li>
+<li>Metais preciosos provenientes das Américas tiveram enorme importância para as economias europeias.</li>
+<li>Os Estados buscavam aumentar suas receitas e sua capacidade militar.</li>
+</ul>
+<div class="note"><strong>Cuidado com a simplificação:</strong> não devemos ensinar que todos os países europeus seguiram exatamente o mesmo modelo. Portugal, Espanha, França, Inglaterra e República Holandesa desenvolveram práticas diferentes conforme suas estruturas políticas, comerciais e coloniais.</div>
+</section>
+<!-- Explica os principais mecanismos mercantilistas. -->
+<section>
+<h2>II — O DESENVOLVIMENTO: COMO FUNCIONAVAM AS PRÁTICAS MERCANTILISTAS?</h2>
+<p>As políticas mercantilistas procuravam fortalecer a capacidade econômica dos Estados. Para isso, governos utilizavam impostos, regulamentações comerciais, monopólios, tarifas, companhias privilegiadas e políticas de proteção da produção interna.</p>
+<div class="grid">
+<!-- Apresenta o metalismo. -->
+<div class="card"><h3>🪙 Metalismo</h3><p>Valorização da acumulação de metais preciosos, especialmente ouro e prata, associados à riqueza e à capacidade financeira dos Estados.</p></div>
+<!-- Apresenta a balança comercial. -->
+<div class="card"><h3>📦 Balança comercial</h3><p>Busca por ampliar as exportações e limitar determinadas importações, procurando favorecer a entrada de recursos.</p></div>
+<!-- Apresenta o protecionismo. -->
+<div class="card"><h3>🛡️ Protecionismo</h3><p>Uso de tarifas e outras medidas para proteger determinados produtores e atividades econômicas internas.</p></div>
+<!-- Apresenta os monopólios. -->
+<div class="card"><h3>🏛️ Monopólios</h3><p>Concessão ou controle de determinados negócios por agentes autorizados pelo Estado, inclusive companhias comerciais privilegiadas.</p></div>
+<!-- Apresenta o colonialismo. -->
+<div class="card"><h3>🌎 Colônias</h3><p>Territórios coloniais eram integrados às estratégias econômicas e políticas das metrópoles, em relações marcadas por desigualdade e coerção.</p></div>
+<!-- Apresenta a intervenção estatal. -->
+<div class="card"><h3>👑 Estado</h3><p>As monarquias intervinham no comércio, na tributação e na produção de acordo com seus interesses políticos e econômicos.</p></div>
+</div>
+<div class="formula"><strong>Estado mais forte → maior capacidade de arrecadação → exército e marinha → proteção e expansão de interesses → disputa por mercados e territórios.</strong></div>
+</section>
+<!-- Explica os diferentes casos nacionais. -->
+<section>
+<h2>III — AS GRANDES POTÊNCIAS E A DISPUTA PELO COMÉRCIO</h2>
+<p>Não existiu um único país que simplesmente “controlasse todo o comércio do mundo”. A história foi marcada por mudanças e disputas entre diferentes centros comerciais e marítimos.</p>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Potência</th><th>Práticas e características</th><th>Importância histórica</th></tr></thead>
+<tbody>
+<tr><td><strong>Portugal</strong></td><td>Rotas marítimas, comércio atlântico e oriental, produtos coloniais e exploração do Brasil.</td><td>Construiu uma rede marítima de grande alcance desde o século XVI.</td></tr>
+<tr><td><strong>Espanha</strong></td><td>Exploração colonial americana, circulação de prata e administração de vastos territórios.</td><td>Transformou a América espanhola em eixo fundamental do poder econômico e político da monarquia.</td></tr>
+<tr><td><strong>República Holandesa</strong></td><td>Comércio marítimo, navegação, finanças e companhias como a VOC.</td><td>Teve papel central no comércio europeu e intercontinental durante o século XVII.</td></tr>
+<tr><td><strong>França</strong></td><td>Proteção da produção, intervenção estatal e política associada ao ministro Jean-Baptiste Colbert.</td><td>O chamado colbertismo buscou fortalecer as manufaturas, as exportações e o poder econômico da monarquia.</td></tr>
+<tr><td><strong>Inglaterra</strong></td><td>Atos de Navegação, companhias comerciais, expansão naval e colonial.</td><td>Ampliou progressivamente sua presença marítima e comercial, especialmente entre os séculos XVII e XVIII.</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+<!-- Apresenta as guerras ligadas à competição entre potências. -->
+<section>
+<h2>⚔️ COMÉRCIO, MARINHA E GUERRAS</h2>
+<p>A competição econômica não acontecia apenas em feiras e portos. Estados e companhias comerciais disputavam rotas, mercados, territórios e posições estratégicas. Por isso, a expansão comercial esteve ligada à construção de marinhas e à rivalidade entre potências.</p>
+<div class="grid">
+<div class="card"><h3>🇳🇱🇬🇧 Guerras Anglo-Holandesas</h3><p>Conflitos do século XVII envolvendo interesses marítimos e comerciais. A competição incluía navegação, rotas e posições estratégicas.</p></div>
+<div class="card"><h3>🇫🇷🇳🇱 Guerra Franco-Holandesa</h3><p>Entre 1672 e 1678, a República Holandesa enfrentou uma ampla coalizão em um contexto de rivalidades políticas e econômicas europeias.</p></div>
+<div class="card"><h3>🇪🇸🇫🇷 Guerra de Sucessão Espanhola</h3><p>De 1701 a 1714, envolveu uma grande disputa dinástica e alterou o equilíbrio de poder europeu, incluindo interesses comerciais e coloniais.</p></div>
+</div>
+<div class="note"><strong>Para o aluno:</strong> uma guerra mercantilista não deve ser entendida como uma “guerra apenas por dinheiro”. Os conflitos combinavam interesses dinásticos, territoriais, religiosos, estratégicos, coloniais e comerciais.</div>
+</section>
+<!-- Cria uma linha do tempo do desenvolvimento mercantilista. -->
+<section>
+<h2>📅 LINHA DO TEMPO</h2>
+<div class="timeline">
+<div class="event"><strong>1492–1494</strong><p>As viagens atlânticas e o Tratado de Tordesilhas ajudam a organizar disputas ibéricas sobre áreas de expansão.</p></div>
+<div class="event"><strong>Século XVI</strong><p>Portugal e Espanha ampliam redes marítimas e impérios coloniais; ouro e prata americanos ganham enorme importância.</p></div>
+<div class="event"><strong>1600</strong><p>Criação da English East India Company, exemplo da participação de companhias privilegiadas na expansão comercial inglesa.</p></div>
+<div class="event"><strong>1602</strong><p>Criação da VOC, companhia holandesa que se tornou importante instrumento da expansão comercial neerlandesa na Ásia.</p></div>
+<div class="event"><strong>1651</strong><p>O primeiro Ato de Navegação inglês reforça a política de controle sobre determinados fluxos marítimos e comerciais.</p></div>
+<div class="event"><strong>Século XVII</strong><p>A República Holandesa alcança grande projeção comercial e marítima, enquanto Inglaterra e França ampliam sua competição.</p></div>
+<div class="event"><strong>1661 em diante</strong><p>Colbert ganha destaque no governo de Luís XIV e desenvolve políticas associadas ao fortalecimento das manufaturas e do comércio francês.</p></div>
+<div class="event"><strong>1701–1714</strong><p>A Guerra de Sucessão Espanhola reorganiza relações de poder e possui importantes consequências comerciais e coloniais.</p></div>
+</div>
+</section>
+<!-- Explica a relação com o Brasil. -->
+<section>
+<h2>🇧🇷 MERCANTILISMO E BRASIL</h2>
+<p>A colonização portuguesa da América esteve integrada às estratégias econômicas da monarquia portuguesa. O Brasil forneceu produtos e riquezas que interessavam ao comércio atlântico, enquanto sua economia colonial foi organizada em estruturas de exploração e dependência em relação à metrópole.</p>
+<h3>O açúcar como exemplo</h3>
+<p>A produção açucareira desenvolvida principalmente no Nordeste colonial articulou terra, trabalho escravizado, produção agrícola, crédito, transporte marítimo e comércio internacional.</p>
+<h3>O exclusivo metropolitano</h3>
+<p>O chamado <strong>exclusivo colonial</strong> expressava a intenção da metrópole de controlar relações comerciais da colônia. Na prática histórica, porém, o comércio colonial também envolveu contrabando, conflitos, comerciantes estrangeiros e diferentes formas de negociação.</p>
+<div class="connection"><strong>Conexão essencial:</strong> estudar Mercantilismo ajuda o aluno a compreender por que a colonização não foi apenas ocupação territorial. Ela também fazia parte de redes de produção, tributação, comércio e disputa internacional.</div>
+</section>
+<!-- Mostra a relação entre os capítulos do curso. -->
+<section>
+<h2>🔗 CONEXÃO ENTRE OS TEMAS</h2>
+<div class="formula">Expansão marítimo-comercial → Absolutismo → Reformas → Mercantilismo → Sistema Colonial</div>
+<p>Esses processos não aconteceram isoladamente. A expansão marítima abriu novas rotas; as monarquias fortaleceram instrumentos de poder; as Reformas alteraram relações políticas e religiosas; e as práticas mercantilistas integraram economia, Estado e expansão colonial.</p>
+</section>
+<!-- Lista conceitos indispensáveis. -->
+<section>
+<h2>📚 CONCEITOS QUE O ALUNO PRECISA DOMINAR</h2>
+<div class="grid">
+<div class="card"><h3>Metalismo</h3><p>Valorização da acumulação de metais preciosos como componente importante da riqueza e das finanças estatais.</p></div>
+<div class="card"><h3>Protecionismo</h3><p>Medidas destinadas a proteger determinadas atividades econômicas internas da concorrência externa.</p></div>
+<div class="card"><h3>Colbertismo</h3><p>Políticas associadas a Jean-Baptiste Colbert, ministro de Luís XIV, voltadas ao fortalecimento econômico da França.</p></div>
+<div class="card"><h3>Companhia privilegiada</h3><p>Empresa autorizada pelo Estado a exercer determinadas atividades comerciais sob privilégios específicos.</p></div>
+<div class="card"><h3>Exclusivo colonial</h3><p>Princípio pelo qual a metrópole procurava controlar as relações comerciais de sua colônia.</p></div>
+<div class="card"><h3>Balança comercial</h3><p>Relação entre exportações e importações, usada nas políticas econômicas mercantilistas como referência para o comércio exterior.</p></div>
+</div>
+</section>
+<!-- Orienta o professor sobre o domínio do conteúdo. -->
+<section>
+<h2>👨‍🏫 O QUE O PROFESSOR PRECISA DOMINAR</h2>
+<ul>
+<li>Mercantilismo é uma categoria historiográfica ampla, não um manual econômico único.</li>
+<li>As práticas econômicas variaram conforme cada Estado e período.</li>
+<li>Economia e política estavam profundamente conectadas à construção do poder monárquico.</li>
+<li>Colônias eram espaços de exploração, mas também de conflitos, negociações, resistências e adaptações.</li>
+<li>O comércio atlântico dependia de redes envolvendo Europa, África e América e também se conectava às rotas asiáticas.</li>
+<li>A escravização de africanos foi elemento central de muitas economias coloniais e deve ser tratada como parte estrutural desse processo histórico.</li>
+</ul>
+</section>
+<!-- Apresenta uma sugestão de quadro para a sala de aula. -->
+<section>
+<h2>🧑‍🏫 O QUE COLOCAR NA LOUSA</h2>
+<div class="board">
+<p><b>MERCANTILISMO</b></p>
+<p>• Estado + Economia</p>
+<p>• Metalismo</p>
+<p>• Protecionismo</p>
+<p>• Exportações ↑ / Importações ↓</p>
+<p>• Monopólios e companhias</p>
+<p>• Comércio marítimo</p>
+<p>• Colônias</p>
+<p>• Impostos e receitas</p>
+<p>• Marinha e guerras</p>
+<p>• Competição entre Estados</p>
+<p><b>Fórmula:</b></p>
+<p>Comércio → Receita → Poder estatal → Marinha/Exército → Expansão → Comércio</p>
+</div>
+</section>
+<!-- Apresenta uma síntese de causas e consequências. -->
+<section>
+<h2>🎯 CAUSAS E CONSEQUÊNCIAS</h2>
+<div class="grid">
+<div class="card"><h3>Causas</h3><ul><li>Fortalecimento das monarquias.</li><li>Expansão comercial.</li><li>Expansão marítima.</li><li>Competição entre Estados.</li><li>Necessidade de receitas.</li></ul></div>
+<div class="card"><h3>Práticas</h3><ul><li>Metalismo.</li><li>Protecionismo.</li><li>Monopólios.</li><li>Companhias privilegiadas.</li><li>Controle colonial.</li></ul></div>
+<div class="card"><h3>Consequências</h3><ul><li>Ampliação das redes comerciais.</li><li>Fortalecimento de Estados.</li><li>Expansão colonial.</li><li>Conflitos internacionais.</li><li>Transformações econômicas de longa duração.</li></ul></div>
+</div>
+</section>
+<!-- Apresenta referências curriculares de forma cuidadosa. -->
+<section>
+<h2>📘 BNCC — COMO TRABALHAR O TEMA</h2>
+<p>O conteúdo pode ser articulado principalmente ao estudo da formação dos Estados modernos, da expansão marítima, das relações de poder, das transformações econômicas e da formação do mundo moderno. Na elaboração do planejamento escolar, o professor deve conferir a habilidade específica da etapa e da rede de ensino adotada.</p>
+</section>
+<!-- Apresenta os focos de provas. -->
+<section>
+<h2>📝 ENEM, VESTIBULAR E CONCURSOS</h2>
+<ul>
+<li>Relação entre Estado e economia.</li>
+<li>Colonização e exploração econômica.</li>
+<li>Mercantilismo e expansão marítima.</li>
+<li>Diferenças entre metalismo, protecionismo e balança comercial.</li>
+<li>Relação entre comércio e formação das monarquias.</li>
+<li>Companhias comerciais e expansão colonial.</li>
+<li>Interpretação de mapas, textos econômicos e documentos históricos.</li>
+</ul>
+</section>
+<!-- Cria questões autorais para treinamento. -->
+<section>
+<h2>📝 QUESTÕES AUTORAIS</h2>
+<h3>Questão 1</h3>
+<p>Durante a formação dos Estados modernos europeus, governos passaram a utilizar diferentes instrumentos para ampliar receitas, proteger determinadas atividades econômicas e fortalecer sua posição diante de outras potências. Considerando esse contexto, uma característica associada ao mercantilismo é:</p>
+<ol type="A"><li>a defesa de uma economia completamente independente da intervenção estatal.</li><li>a combinação entre interesses econômicos, poder político e expansão comercial.</li><li>a eliminação dos monopólios concedidos pelas monarquias.</li><li>a rejeição da expansão colonial como instrumento econômico.</li><li>a separação absoluta entre comércio e política internacional.</li></ol>
+<button class="btn" onclick="mostrar('r1')">Mostrar gabarito</button>
+<div id="r1" class="answer"><strong>Gabarito: B.</strong> As práticas mercantilistas estavam relacionadas ao fortalecimento dos Estados, ao comércio, à tributação, à expansão colonial e à competição internacional.</div>
+<h3>Questão 2</h3>
+<p>A competição entre potências marítimas europeias envolveu comércio, territórios, rotas e recursos. Sobre esse processo, é correto afirmar que:</p>
+<ol type="A"><li>um único Estado europeu controlou permanentemente todo o comércio mundial.</li><li>as disputas comerciais ocorreram isoladamente, sem relação com conflitos políticos ou militares.</li><li>diferentes potências construíram redes comerciais e disputaram posições estratégicas em momentos distintos.</li><li>as colônias tiveram função exclusivamente religiosa.</li><li>as marinhas europeias não possuíam relação com a expansão comercial.</li></ol>
+<button class="btn" onclick="mostrar('r2')">Mostrar gabarito</button>
+<div id="r2" class="answer"><strong>Gabarito: C.</strong> Portugal, Espanha, República Holandesa, França e Inglaterra tiveram posições diferentes ao longo do período e competiram por rotas, mercados e territórios.</div>
+</section>
+<!-- Cria os botões para navegar entre capítulos. -->
+<div class="nav">
+<!-- Link para o capítulo anterior. -->
+<a class="btn" href="../21-Reformas/index.html">← Reforma</a>
+<!-- Link para o próximo capítulo. -->
+<a class="btn" href="../23-O-Sistema-Colonial/index.html">1.20 — O Sistema Colonial →</a>
+</div>
+<!-- Exibe a assinatura do material. -->
+<div class="signature">Professor Marcelo Oliveira • Curso de História Geral • Material didático digital</div>
+</main>
+<!-- Cria o botão flutuante para retornar ao início. -->
+<button class="top" onclick="voltarTopo()" aria-label="Voltar ao topo">↑</button>
+<!-- Inicia o JavaScript responsável pelas interações. -->
+<script>
+// Cria uma função para revelar cada gabarito quando o professor ou aluno clicar no botão.
+function mostrar(id){document.getElementById(id).style.display='block';}
+// Cria uma função para levar suavemente o usuário de volta ao começo da página.
+function voltarTopo(){window.scrollTo({top:0,behavior:'smooth'});}
+</script>
+<script>
+  const paginaAnterior = "19 - Reformas.html";
+  const paginaProxima = "21 - Absolutismo.html";
+</script>
+<script src="navegacao.js"></script>
+</body>
+</html>

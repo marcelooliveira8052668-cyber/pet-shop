@@ -1,0 +1,1502 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Define a codificação de caracteres para permitir acentos e caracteres especiais. -->
+    <meta charset="UTF-8">
+
+    <!-- Faz o site se adaptar corretamente a celulares, tablets e computadores. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Define o título exibido na aba do navegador. -->
+    <title>1.34 — Congresso de Viena | Professor Marcelo Oliveira</title>
+
+    <style>
+
+        /* ========================================================= */
+        /* CONFIGURAÇÕES GERAIS                                     */
+        /* ========================================================= */
+
+        /* Remove margens e espaçamentos padrão do navegador. */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Define o comportamento de rolagem suave. */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Define a aparência geral da página. */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f7fb;
+            color: #263238;
+            line-height: 1.7;
+        }
+
+        /* Define a largura máxima e centraliza o conteúdo. */
+        .container {
+            width: 92%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        /* ========================================================= */
+        /* CABEÇALHO                                                 */
+        /* ========================================================= */
+
+        /* Cria o cabeçalho principal. */
+        header {
+            background: linear-gradient(135deg, #172554, #2563eb);
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.18);
+        }
+
+        /* Define o pequeno texto superior do cabeçalho. */
+        .eyebrow {
+            font-size: 0.95rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            opacity: 0.9;
+            margin-bottom: 12px;
+        }
+
+        /* Define o título principal. */
+        header h1 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            margin-bottom: 15px;
+        }
+
+        /* Define o subtítulo. */
+        header p {
+            max-width: 850px;
+            margin: auto;
+            font-size: 1.1rem;
+        }
+
+        /* ========================================================= */
+        /* NAVEGAÇÃO                                                 */
+        /* ========================================================= */
+
+        /* Cria a área dos botões de navegação. */
+        .navegacao {
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+            margin: 25px auto;
+            flex-wrap: wrap;
+        }
+
+        /* Estiliza os links da navegação. */
+        .btn {
+            display: inline-block;
+            padding: 13px 20px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        /* Define o botão anterior. */
+        .btn-voltar {
+            background: #475569;
+            color: white;
+        }
+
+        /* Define o botão próximo. */
+        .btn-proximo {
+            background: #2563eb;
+            color: white;
+        }
+
+        /* Cria efeito ao passar o mouse. */
+        .btn:hover {
+            transform: translateY(-2px);
+            opacity: 0.9;
+        }
+
+        /* ========================================================= */
+        /* APRESENTAÇÃO                                              */
+        /* ========================================================= */
+
+        /* Cria o cartão de apresentação. */
+        .apresentacao {
+            background: white;
+            margin: 30px auto;
+            padding: 30px;
+            border-radius: 18px;
+            border-left: 7px solid #2563eb;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+        }
+
+        /* ========================================================= */
+        /* SEÇÕES COLORIDAS                                         */
+        /* ========================================================= */
+
+        /* Define o cartão geral de conteúdo. */
+        .secao {
+            margin: 35px auto;
+            padding: 30px;
+            border-radius: 18px;
+            background: white;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+        }
+
+        /* Define a cor da Parte I. */
+        .comeco {
+            border-top: 8px solid #2563eb;
+        }
+
+        /* Define a cor da Parte II. */
+        .desenvolvimento {
+            border-top: 8px solid #16a34a;
+        }
+
+        /* Define a cor da Parte III. */
+        .legado {
+            border-top: 8px solid #7c3aed;
+        }
+
+        /* Define a cor da seção de causas. */
+        .causas {
+            border-top: 8px solid #f97316;
+        }
+
+        /* Define a cor da seção de consequências. */
+        .consequencias {
+            border-top: 8px solid #eab308;
+        }
+
+        /* Define a cor da seção de atenção histórica. */
+        .atencao {
+            border-top: 8px solid #dc2626;
+        }
+
+        /* Define a cor da seção ENEM. */
+        .enem {
+            border-top: 8px solid #0891b2;
+        }
+
+        /* Define a cor da lousa. */
+        .lousa {
+            border-top: 8px solid #111827;
+        }
+
+        /* ========================================================= */
+        /* TÍTULOS                                                    */
+        /* ========================================================= */
+
+        /* Define o estilo dos títulos das seções. */
+        .secao h2 {
+            margin-bottom: 20px;
+            color: #172554;
+            font-size: 1.8rem;
+        }
+
+        /* Define o estilo dos subtítulos. */
+        .secao h3 {
+            margin-top: 25px;
+            margin-bottom: 10px;
+            color: #334155;
+        }
+
+        /* Destaca palavras importantes. */
+        strong {
+            color: #172554;
+        }
+
+        /* ========================================================= */
+        /* LISTAS                                                     */
+        /* ========================================================= */
+
+        /* Cria espaçamento interno nas listas. */
+        ul,
+        ol {
+            margin: 15px 0 15px 25px;
+        }
+
+        /* Cria espaço entre itens das listas. */
+        li {
+            margin-bottom: 8px;
+        }
+
+        /* ========================================================= */
+        /* LINHA DO TEMPO                                            */
+        /* ========================================================= */
+
+        /* Cria a estrutura da linha do tempo. */
+        .timeline {
+            border-left: 4px solid #2563eb;
+            padding-left: 25px;
+            margin-top: 25px;
+        }
+
+        /* Cria cada acontecimento da linha do tempo. */
+        .evento {
+            margin-bottom: 25px;
+            position: relative;
+        }
+
+        /* Cria a bolinha da linha do tempo. */
+        .evento::before {
+            content: "";
+            position: absolute;
+            left: -36px;
+            top: 7px;
+            width: 14px;
+            height: 14px;
+            background: #2563eb;
+            border-radius: 50%;
+        }
+
+        /* Destaca o ano. */
+        .ano {
+            font-weight: bold;
+            color: #2563eb;
+        }
+
+        /* ========================================================= */
+        /* TABELAS                                                    */
+        /* ========================================================= */
+
+        /* Permite rolagem horizontal em tabelas pequenas. */
+        .tabela-container {
+            overflow-x: auto;
+            margin-top: 20px;
+        }
+
+        /* Define a tabela. */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 650px;
+        }
+
+        /* Define células da tabela. */
+        th,
+        td {
+            padding: 14px;
+            border: 1px solid #cbd5e1;
+            text-align: left;
+        }
+
+        /* Define o cabeçalho da tabela. */
+        th {
+            background: #172554;
+            color: white;
+        }
+
+        /* Alterna visualmente as linhas. */
+        tr:nth-child(even) {
+            background: #f8fafc;
+        }
+
+        /* ========================================================= */
+        /* CONCEITOS                                                  */
+        /* ========================================================= */
+
+        /* Cria a grade de conceitos. */
+        .conceitos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        /* Cria cada cartão de conceito. */
+        .conceito {
+            background: #eff6ff;
+            border: 1px solid #bfdbfe;
+            padding: 18px;
+            border-radius: 12px;
+        }
+
+        /* ========================================================= */
+        /* QUESTÕES                                                   */
+        /* ========================================================= */
+
+        /* Cria o cartão de questão. */
+        .questao {
+            background: #f8fafc;
+            padding: 25px;
+            border-radius: 14px;
+            margin-top: 20px;
+            border-left: 5px solid #0891b2;
+        }
+
+        /* Cria o botão de gabarito. */
+        .btn-gabarito {
+            margin-top: 15px;
+            background: #0891b2;
+            color: white;
+            border: none;
+            padding: 12px 18px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        /* Esconde o gabarito inicialmente. */
+        .gabarito {
+            display: none;
+            margin-top: 15px;
+            padding: 15px;
+            background: #ecfeff;
+            border-radius: 10px;
+            border: 1px solid #67e8f9;
+        }
+
+        /* ========================================================= */
+        /* RESUMO                                                     */
+        /* ========================================================= */
+
+        /* Cria o cartão do resumo. */
+        .resumo {
+            background: #172554;
+            color: white;
+            padding: 30px;
+            border-radius: 18px;
+            margin: 35px auto;
+        }
+
+        /* Remove a cor escura dos textos fortes dentro do resumo. */
+        .resumo strong {
+            color: white;
+        }
+
+        /* ========================================================= */
+        /* RODAPÉ                                                     */
+        /* ========================================================= */
+
+        /* Cria o rodapé. */
+        footer {
+            background: #0f172a;
+            color: white;
+            text-align: center;
+            padding: 35px 20px;
+            margin-top: 50px;
+        }
+
+        /* Define a assinatura. */
+        .assinatura {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        /* ========================================================= */
+        /* BOTÃO VOLTAR AO TOPO                                      */
+        /* ========================================================= */
+
+        /* Cria o botão fixo. */
+        #topo {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 48px;
+            height: 48px;
+            border: none;
+            border-radius: 50%;
+            background: #2563eb;
+            color: white;
+            cursor: pointer;
+            font-size: 20px;
+            display: none;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+        }
+
+        /* ========================================================= */
+        /* RESPONSIVIDADE                                             */
+        /* ========================================================= */
+
+        /* Ajusta o conteúdo para telas menores. */
+        @media (max-width: 700px) {
+
+            /* Reduz o espaçamento dos cartões. */
+            .secao,
+            .apresentacao {
+                padding: 20px;
+            }
+
+            /* Organiza os botões verticalmente. */
+            .navegacao {
+                flex-direction: column;
+            }
+
+            /* Faz os botões ocuparem a largura disponível. */
+            .btn {
+                text-align: center;
+            }
+        }
+
+    </style>
+</head>
+
+<body id="inicio">
+
+    <!-- ========================================================= -->
+    <!-- CABEÇALHO                                                  -->
+    <!-- ========================================================= -->
+
+    <header>
+
+        <!-- Identificação do curso. -->
+        <div class="eyebrow">Curso de História Geral</div>
+
+        <!-- Título principal. -->
+        <h1>1.34 — Congresso de Viena</h1>
+
+        <!-- Apresentação do conteúdo. -->
+        <p>
+            A reorganização da Europa após as Guerras Napoleônicas,
+            o equilíbrio de poderes e a formação de uma nova ordem diplomática.
+        </p>
+
+    </header>
+
+    <!-- ========================================================= -->
+    <!-- CONTEÚDO PRINCIPAL                                        -->
+    <!-- ========================================================= -->
+
+    <main class="container">
+
+        <!-- ===================================================== -->
+        <!-- NAVEGAÇÃO                                             -->
+        <!-- ===================================================== -->
+
+        <nav class="navegacao">
+
+            <!-- Link para o tema anterior. -->
+            <a class="btn btn-voltar" href="../29-Era-Napoleonica/index.html">
+                ← A Independência da América Espanhola
+            </a>
+
+            <!-- Link para o próximo tema. -->
+            <a class="btn btn-proximo" href="../31-Guerra-de-Secessao/index.html">
+                1.34 — Guerra de Secessão →
+            </a>
+
+        </nav>
+
+        <!-- ===================================================== -->
+        <!-- APRESENTAÇÃO                                          -->
+        <!-- ===================================================== -->
+
+        <section class="apresentacao">
+
+            <h2>Por que estudar o Congresso de Viena?</h2>
+
+            <p>
+                O Congresso de Viena ocorreu entre <strong>1814 e 1815</strong>,
+                em um contexto marcado pela derrota de Napoleão Bonaparte e pela
+                necessidade das principais potências europeias de reorganizar
+                politicamente o continente.
+            </p>
+
+            <p>
+                Mais do que simplesmente redesenhar fronteiras, o Congresso
+                procurou estabelecer uma nova lógica de relações internacionais,
+                baseada principalmente em <strong>equilíbrio de poder</strong>,
+                <strong>legitimidade dinástica</strong> e cooperação entre
+                grandes potências.
+            </p>
+
+            <p>
+                Seu legado ajuda a compreender as disputas entre
+                <strong>conservadorismo, liberalismo e nacionalismo</strong>
+                durante o século XIX.
+            </p>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- PARTE I                                                -->
+        <!-- ===================================================== -->
+
+        <section class="secao comeco">
+
+            <h2>🔵 I — O COMEÇO: A EUROPA DEPOIS DE NAPOLEÃO</h2>
+
+            <h3>1. O fim da ordem napoleônica</h3>
+
+            <p>
+                Durante aproximadamente duas décadas, as Guerras Revolucionárias
+                Francesas e as Guerras Napoleônicas transformaram profundamente
+                o mapa político europeu.
+            </p>
+
+            <p>
+                Napoleão ampliou o poder francês e reorganizou territórios,
+                provocando mudanças políticas e sociais que ultrapassaram as
+                fronteiras da França.
+            </p>
+
+            <p>
+                Com a derrota de Napoleão em 1814, as potências vencedoras
+                precisaram discutir uma questão fundamental:
+                <strong>como reorganizar a Europa?</strong>
+            </p>
+
+            <h3>2. Quem participou?</h3>
+
+            <p>
+                Diversos Estados estiveram representados, mas as decisões
+                fundamentais foram especialmente influenciadas pelas grandes
+                potências.
+            </p>
+
+            <ul>
+                <li><strong>Áustria:</strong> representada pelo chanceler Klemens von Metternich.</li>
+                <li><strong>Rússia:</strong> representada pelo czar Alexandre I.</li>
+                <li><strong>Prússia:</strong> importante potência militar germânica.</li>
+                <li><strong>Grã-Bretanha:</strong> representada por diplomatas como Castlereagh.</li>
+                <li><strong>França:</strong> representada por Talleyrand após a restauração bourbon.</li>
+            </ul>
+
+            <h3>3. A situação europeia</h3>
+
+            <p>
+                O continente estava marcado por guerras, mudanças territoriais,
+                crise financeira, deslocamentos populacionais e crescimento de
+                ideias políticas que questionavam o Antigo Regime.
+            </p>
+
+            <p>
+                Portanto, o Congresso precisava lidar simultaneamente com
+                <strong>território, segurança, legitimidade e estabilidade política</strong>.
+            </p>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- PARTE II                                               -->
+        <!-- ===================================================== -->
+
+        <section class="secao desenvolvimento">
+
+            <h2>🟢 II — O DESENVOLVIMENTO: A NOVA ORDEM EUROPEIA</h2>
+
+            <h3>1. O princípio do equilíbrio de poder</h3>
+
+            <p>
+                Um dos principais objetivos diplomáticos era impedir que uma
+                única potência europeia voltasse a concentrar poder suficiente
+                para dominar o continente.
+            </p>
+
+            <p>
+                O conceito ficou conhecido como
+                <strong>equilíbrio de poder</strong>.
+            </p>
+
+            <p>
+                A ideia não significava igualdade entre todos os países.
+                Tratava-se de construir uma distribuição de forças que
+                dificultasse uma nova hegemonia continental.
+            </p>
+
+            <h3>2. O princípio da legitimidade</h3>
+
+            <p>
+                As potências conservadoras defenderam a restauração de dinastias
+                consideradas legítimas antes das transformações revolucionárias
+                e napoleônicas.
+            </p>
+
+            <p>
+                Entretanto, a chamada legitimidade não explica sozinha todas as
+                decisões do Congresso. Os interesses estratégicos e o equilíbrio
+                entre as potências também foram fundamentais.
+            </p>
+
+            <h3>3. A reorganização territorial</h3>
+
+            <p>
+                O mapa europeu foi reorganizado por meio de negociações entre
+                as potências.
+            </p>
+
+            <p>
+                Não houve simplesmente uma volta automática ao mapa anterior
+                à Revolução Francesa. Algumas fronteiras foram modificadas,
+                novos arranjos políticos foram criados e determinadas potências
+                receberam territórios estratégicos.
+            </p>
+
+            <div class="tabela-container">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+                            <th>Potência</th>
+                            <th>Interesse principal</th>
+                            <th>Resultado geral</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>Áustria</td>
+                            <td>Manter influência na Europa Central</td>
+                            <td>Ampliação da influência sobre territórios italianos</td>
+                        </tr>
+
+                        <tr>
+                            <td>Rússia</td>
+                            <td>Expandir sua influência no leste europeu</td>
+                            <td>Fortalecimento de sua posição territorial</td>
+                        </tr>
+
+                        <tr>
+                            <td>Prússia</td>
+                            <td>Fortalecer-se na Europa Central</td>
+                            <td>Recebeu importantes territórios</td>
+                        </tr>
+
+                        <tr>
+                            <td>Grã-Bretanha</td>
+                            <td>Equilíbrio continental e segurança marítima</td>
+                            <td>Consolidou sua posição como grande potência</td>
+                        </tr>
+
+                        <tr>
+                            <td>França</td>
+                            <td>Evitar isolamento diplomático</td>
+                            <td>Foi progressivamente reintegrada ao sistema europeu</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+            <h3>4. A Confederação Germânica</h3>
+
+            <p>
+                O antigo Sacro Império Romano-Germânico havia sido dissolvido
+                em 1806.
+            </p>
+
+            <p>
+                O Congresso criou a <strong>Confederação Germânica</strong>,
+                formada por diversos Estados germânicos.
+            </p>
+
+            <p>
+                Ela não formou uma Alemanha unificada. A unificação alemã
+                aconteceria somente décadas depois, no contexto das disputas
+                políticas e nacionais do século XIX.
+            </p>
+
+            <h3>5. A Santa Aliança</h3>
+
+            <p>
+                Em 1815, Rússia, Áustria e Prússia formaram a
+                <strong>Santa Aliança</strong>.
+            </p>
+
+            <p>
+                O acordo expressava uma visão conservadora da política europeia
+                e defendia cooperação entre os monarcas.
+            </p>
+
+            <h3>6. A Quádrupla Aliança</h3>
+
+            <p>
+                Também em 1815, Grã-Bretanha, Áustria, Prússia e Rússia
+                formaram a <strong>Quádrupla Aliança</strong>.
+            </p>
+
+            <p>
+                Seu objetivo estava ligado à manutenção da ordem estabelecida
+                após as guerras contra Napoleão e à cooperação entre as grandes
+                potências.
+            </p>
+
+            <h3>7. O Concerto Europeu</h3>
+
+            <p>
+                A cooperação entre as grandes potências ficou conhecida como
+                <strong>Concerto Europeu</strong>.
+            </p>
+
+            <p>
+                A ideia era resolver determinadas crises por meio de negociações
+                e reuniões diplomáticas, reduzindo o risco de novas guerras
+                gerais no continente.
+            </p>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- LINHA DO TEMPO                                        -->
+        <!-- ===================================================== -->
+
+        <section class="secao">
+
+            <h2>📅 Linha do Tempo</h2>
+
+            <div class="timeline">
+
+                <div class="evento">
+                    <div class="ano">1814</div>
+                    <p>
+                        Primeira abdicação de Napoleão e início das negociações
+                        para reorganizar a Europa.
+                    </p>
+                </div>
+
+                <div class="evento">
+                    <div class="ano">1814</div>
+                    <p>
+                        Início do Congresso de Viena.
+                    </p>
+                </div>
+
+                <div class="evento">
+                    <div class="ano">1815</div>
+                    <p>
+                        Napoleão retorna durante os Cem Dias.
+                    </p>
+                </div>
+
+                <div class="evento">
+                    <div class="ano">18 de junho de 1815</div>
+                    <p>
+                        Batalha de Waterloo.
+                    </p>
+                </div>
+
+                <div class="evento">
+                    <div class="ano">1815</div>
+                    <p>
+                        Conclusão do Ato Final do Congresso de Viena.
+                    </p>
+                </div>
+
+                <div class="evento">
+                    <div class="ano">1815</div>
+                    <p>
+                        Formação da Santa Aliança e da Quádrupla Aliança.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- CAUSAS                                                 -->
+        <!-- ===================================================== -->
+
+        <section class="secao causas">
+
+            <h2>🟠 Principais fatores que levaram ao Congresso</h2>
+
+            <ul>
+
+                <li>
+                    <strong>Derrota de Napoleão:</strong>
+                    criou a necessidade de reorganização política.
+                </li>
+
+                <li>
+                    <strong>Guerras europeias:</strong>
+                    deixaram profundas alterações territoriais.
+                </li>
+
+                <li>
+                    <strong>Medo de uma nova hegemonia:</strong>
+                    as potências buscavam impedir outro domínio continental.
+                </li>
+
+                <li>
+                    <strong>Defesa das monarquias:</strong>
+                    setores conservadores desejavam restaurar a ordem política.
+                </li>
+
+                <li>
+                    <strong>Interesses territoriais:</strong>
+                    cada grande potência buscava fortalecer sua posição.
+                </li>
+
+                <li>
+                    <strong>Necessidade diplomática:</strong>
+                    era preciso criar mecanismos de negociação entre as potências.
+                </li>
+
+            </ul>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- CONSEQUÊNCIAS                                          -->
+        <!-- ===================================================== -->
+
+        <section class="secao consequencias">
+
+            <h2>🟡 Consequências</h2>
+
+            <ul>
+
+                <li>
+                    Reorganização do mapa europeu.
+                </li>
+
+                <li>
+                    Fortalecimento das grandes potências.
+                </li>
+
+                <li>
+                    Criação da Confederação Germânica.
+                </li>
+
+                <li>
+                    Fortalecimento do princípio do equilíbrio de poder.
+                </li>
+
+                <li>
+                    Reintegração diplomática gradual da França.
+                </li>
+
+                <li>
+                    Formação da Santa Aliança.
+                </li>
+
+                <li>
+                    Formação da Quádrupla Aliança.
+                </li>
+
+                <li>
+                    Desenvolvimento do chamado Concerto Europeu.
+                </li>
+
+                <li>
+                    Reação conservadora aos movimentos liberais e nacionais.
+                </li>
+
+            </ul>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- PARTE III                                              -->
+        <!-- ===================================================== -->
+
+        <section class="secao legado">
+
+            <h2>🟣 III — O LEGADO E O MUNDO ATUAL</h2>
+
+            <h3>1. Restauração e conservadorismo</h3>
+
+            <p>
+                O sistema construído depois de 1815 procurou preservar a
+                estabilidade política e conter movimentos revolucionários.
+            </p>
+
+            <p>
+                Porém, as ideias liberais e nacionalistas não desapareceram.
+                Pelo contrário, continuaram circulando entre estudantes,
+                intelectuais, grupos políticos e movimentos sociais.
+            </p>
+
+            <h3>2. Revoluções de 1820, 1830 e 1848</h3>
+
+            <p>
+                Durante o século XIX, diversas revoltas e revoluções questionaram
+                a ordem conservadora estabelecida depois de Viena.
+            </p>
+
+            <p>
+                Entre suas diferentes reivindicações estavam
+                <strong>constituições, direitos políticos, soberania nacional
+                e independência de determinados povos</strong>.
+            </p>
+
+            <h3>3. O nacionalismo</h3>
+
+            <p>
+                O nacionalismo ganhou força durante o século XIX.
+            </p>
+
+            <p>
+                Movimentos nacionalistas contribuíram posteriormente para
+                processos como as <strong>unificações italiana e alemã</strong>.
+            </p>
+
+            <h3>4. O legado diplomático</h3>
+
+            <p>
+                O Congresso de Viena é importante para compreender a formação
+                de uma diplomacia baseada na negociação entre grandes potências.
+            </p>
+
+            <p>
+                A ideia de realizar conferências e buscar acordos multilaterais
+                tornou-se parte importante da história das relações internacionais.
+            </p>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- HISTÓRIA GERAL E BRASIL                                -->
+        <!-- ===================================================== -->
+
+        <section class="secao">
+
+            <h2>🇧🇷 História Geral ↔ Brasil</h2>
+
+            <p>
+                O Congresso de Viena não provocou diretamente a Independência
+                do Brasil, mas ocorreu dentro do mesmo grande contexto
+                internacional produzido pelas Guerras Napoleônicas.
+            </p>
+
+            <p>
+                A transferência da Corte portuguesa para o Rio de Janeiro,
+                em 1807–1808, esteve diretamente relacionada às guerras
+                napoleônicas e à invasão de Portugal.
+            </p>
+
+            <p>
+                Depois da derrota de Napoleão, Portugal enfrentou conflitos
+                políticos relacionados à permanência da Corte no Brasil.
+            </p>
+
+            <p>
+                A <strong>Revolução Liberal do Porto de 1820</strong>,
+                a volta de D. João VI para Portugal em 1821 e a permanência
+                de D. Pedro no Brasil fazem parte desse contexto de
+                transformações políticas do mundo pós-napoleônico.
+            </p>
+
+            <p>
+                Em 1822, o Brasil declarou sua independência.
+            </p>
+
+            <p>
+                Portanto, é importante ensinar o aluno a conectar:
+            </p>
+
+            <ul>
+
+                <li>Guerras Napoleônicas;</li>
+                <li>transferência da Corte portuguesa;</li>
+                <li>Revolução do Porto;</li>
+                <li>retorno de D. João VI;</li>
+                <li>processo de independência do Brasil.</li>
+
+            </ul>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- ATENÇÃO HISTÓRICA                                      -->
+        <!-- ===================================================== -->
+
+        <section class="secao atencao">
+
+            <h2>🔴 Atenção: não simplifique o Congresso</h2>
+
+            <p>
+                Um erro comum é ensinar que o Congresso de Viena simplesmente
+                "apagou" a Revolução Francesa e colocou a Europa exatamente
+                como ela era antes de 1789.
+            </p>
+
+            <p>
+                A realidade foi mais complexa.
+            </p>
+
+            <p>
+                Os diplomatas precisaram negociar interesses territoriais,
+                estratégicos e dinásticos.
+            </p>
+
+            <p>
+                Além disso, ideias liberais e nacionalistas continuaram
+                existindo e entraram em conflito com a ordem conservadora.
+            </p>
+
+            <p>
+                Portanto, o século XIX deve ser entendido como uma disputa
+                entre <strong>restauração e transformação</strong>.
+            </p>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- O QUE O PROFESSOR PRECISA DOMINAR                    -->
+        <!-- ===================================================== -->
+
+        <section class="secao">
+
+            <h2>👨‍🏫 O que o professor precisa dominar</h2>
+
+            <ol>
+
+                <li>
+                    Contextualizar o Congresso dentro das Guerras Napoleônicas.
+                </li>
+
+                <li>
+                    Explicar o equilíbrio de poder.
+                </li>
+
+                <li>
+                    Diferenciar legitimidade, restauração e conservadorismo.
+                </li>
+
+                <li>
+                    Identificar os interesses das grandes potências.
+                </li>
+
+                <li>
+                    Explicar a Confederação Germânica.
+                </li>
+
+                <li>
+                    Diferenciar Santa Aliança e Quádrupla Aliança.
+                </li>
+
+                <li>
+                    Relacionar o Congresso aos movimentos liberais e nacionais.
+                </li>
+
+                <li>
+                    Conectar o contexto europeu ao Brasil do período joanino
+                    e ao processo de independência.
+                </li>
+
+            </ol>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- O QUE COLOCAR NA LOUSA                                -->
+        <!-- ===================================================== -->
+
+        <section class="secao lousa">
+
+            <h2>🧑‍🏫 O que colocar na lousa</h2>
+
+            <p>
+                Uma estrutura simples e eficiente:
+            </p>
+
+            <ul>
+
+                <li><strong>1814–1815 → Congresso de Viena</strong></li>
+
+                <li><strong>Objetivo:</strong> reorganizar a Europa.</li>
+
+                <li><strong>Princípios:</strong> legitimidade + equilíbrio de poder.</li>
+
+                <li><strong>Potências:</strong> Áustria + Rússia + Prússia + Grã-Bretanha + França.</li>
+
+                <li><strong>1815:</strong> Santa Aliança.</li>
+
+                <li><strong>1815:</strong> Quádrupla Aliança.</li>
+
+                <li><strong>Resultado:</strong> Concerto Europeu.</li>
+
+                <li><strong>Problema:</strong> liberalismo + nacionalismo.</li>
+
+                <li><strong>Século XIX:</strong> restauração × revoluções.</li>
+
+            </ul>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- CONCEITOS                                               -->
+        <!-- ===================================================== -->
+
+        <section class="secao">
+
+            <h2>📚 Conceitos fundamentais</h2>
+
+            <div class="conceitos">
+
+                <div class="conceito">
+                    <strong>Legitimidade</strong>
+                    <p>Defesa da restauração de dinastias consideradas legítimas.</p>
+                </div>
+
+                <div class="conceito">
+                    <strong>Equilíbrio de poder</strong>
+                    <p>Distribuição de forças para impedir uma hegemonia continental.</p>
+                </div>
+
+                <div class="conceito">
+                    <strong>Restauração</strong>
+                    <p>Reorganização política europeia após as guerras napoleônicas.</p>
+                </div>
+
+                <div class="conceito">
+                    <strong>Conservadorismo</strong>
+                    <p>Defesa da ordem política e social tradicional.</p>
+                </div>
+
+                <div class="conceito">
+                    <strong>Nacionalismo</strong>
+                    <p>Ideia de pertencimento nacional e defesa da soberania dos povos.</p>
+                </div>
+
+                <div class="conceito">
+                    <strong>Concerto Europeu</strong>
+                    <p>Cooperação diplomática entre grandes potências.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- BNCC                                                     -->
+        <!-- ===================================================== -->
+
+        <section class="secao">
+
+            <h2>📘 BNCC — Como trabalhar o tema</h2>
+
+            <p>
+                O Congresso de Viena pode ser articulado a habilidades da área
+                de Ciências Humanas relacionadas à análise de processos
+                históricos, relações de poder, transformações políticas,
+                nacionalismos e formação da ordem internacional.
+            </p>
+
+            <p>
+                No planejamento pedagógico, o professor deve selecionar a
+                habilidade BNCC correspondente ao segmento e à etapa de ensino
+                trabalhados, evitando utilizar códigos sem conferir sua
+                correspondência oficial.
+            </p>
+
+            <p>
+                Para Ensino Médio, o tema dialoga especialmente com a análise
+                histórica das relações de poder, conflitos, transformações
+                políticas e diferentes projetos de sociedade.
+            </p>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- ENEM / VESTIBULAR                                     -->
+        <!-- ===================================================== -->
+
+        <section class="secao enem">
+
+            <h2>🎯 ENEM, Vestibular e Concurso</h2>
+
+            <h3>O que costuma ser importante?</h3>
+
+            <ul>
+
+                <li>
+                    Contexto pós-Napoleão.
+                </li>
+
+                <li>
+                    Equilíbrio de poder.
+                </li>
+
+                <li>
+                    Restauração conservadora.
+                </li>
+
+                <li>
+                    Legitimidade dinástica.
+                </li>
+
+                <li>
+                    Santa Aliança.
+                </li>
+
+                <li>
+                    Concerto Europeu.
+                </li>
+
+                <li>
+                    Relação entre restauração e nacionalismo.
+                </li>
+
+                <li>
+                    Relação entre Congresso de Viena e revoluções do século XIX.
+                </li>
+
+            </ul>
+
+            <!-- Questão 1. -->
+            <div class="questao">
+
+                <h3>Questão 1</h3>
+
+                <p>
+                    Após a derrota de Napoleão Bonaparte, as principais potências
+                    europeias participaram de negociações destinadas a reorganizar
+                    o continente.
+                </p>
+
+                <p>
+                    Entre os objetivos centrais dessa reorganização estava:
+                </p>
+
+                <ol type="A">
+
+                    <li>
+                        estabelecer a supremacia permanente da França.
+                    </li>
+
+                    <li>
+                        impedir a concentração excessiva de poder em uma única potência.
+                    </li>
+
+                    <li>
+                        eliminar todas as monarquias europeias.
+                    </li>
+
+                    <li>
+                        criar imediatamente uma Alemanha unificada.
+                    </li>
+
+                    <li>
+                        estabelecer uma república continental europeia.
+                    </li>
+
+                </ol>
+
+                <button class="btn-gabarito" onclick="mostrarGabarito('g1')">
+                    Mostrar gabarito
+                </button>
+
+                <div class="gabarito" id="g1">
+                    <strong>Resposta: B.</strong>
+                    O equilíbrio de poder buscava evitar que uma única potência
+                    voltasse a dominar a Europa.
+                </div>
+
+            </div>
+
+            <!-- Questão 2. -->
+            <div class="questao">
+
+                <h3>Questão 2</h3>
+
+                <p>
+                    O Congresso de Viena estabeleceu uma ordem política que
+                    entrou em tensão com movimentos liberais e nacionalistas
+                    durante o século XIX.
+                </p>
+
+                <p>
+                    Essa tensão pode ser representada pela oposição entre:
+                </p>
+
+                <ol type="A">
+
+                    <li>
+                        restauração conservadora e movimentos de transformação política.
+                    </li>
+
+                    <li>
+                        feudalismo e capitalismo industrial exclusivamente.
+                    </li>
+
+                    <li>
+                        escravidão e abolição exclusivamente.
+                    </li>
+
+                    <li>
+                        monoteísmo e politeísmo.
+                    </li>
+
+                    <li>
+                        agricultura e caça.
+                    </li>
+
+                </ol>
+
+                <button class="btn-gabarito" onclick="mostrarGabarito('g2')">
+                    Mostrar gabarito
+                </button>
+
+                <div class="gabarito" id="g2">
+                    <strong>Resposta: A.</strong>
+                    O sistema conservador estabelecido depois de 1815 entrou
+                    em conflito com movimentos liberais e nacionalistas.
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- RESUMO FINAL                                           -->
+        <!-- ===================================================== -->
+
+        <section class="resumo">
+
+            <h2>🧠 Resumo para o professor</h2>
+
+            <p>
+                O <strong>Congresso de Viena</strong> reorganizou a Europa
+                após as Guerras Napoleônicas.
+            </p>
+
+            <p>
+                Seus principais objetivos estavam relacionados à
+                <strong>legitimidade dinástica, equilíbrio de poder e
+                estabilidade política</strong>.
+            </p>
+
+            <p>
+                O sistema criado em 1815 fortaleceu as grandes potências
+                e favoreceu uma política conservadora.
+            </p>
+
+            <p>
+                Entretanto, o liberalismo e o nacionalismo continuaram
+                avançando e contribuíram para as revoluções e transformações
+                políticas do século XIX.
+            </p>
+
+            <p>
+                A grande chave para o aluno compreender o tema é perceber:
+            </p>
+
+            <p>
+                <strong>
+                    Congresso de Viena → restauração → conservadorismo
+                    → liberalismo e nacionalismo → revoluções do século XIX.
+                </strong>
+            </p>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- NAVEGAÇÃO FINAL                                        -->
+        <!-- ===================================================== -->
+
+        <nav class="navegacao">
+
+            <!-- Volta para o capítulo anterior. -->
+            <a class="btn btn-voltar" href="../29-Era-Napoleonica/index.html">
+                ← Voltar para 33
+            </a>
+
+            <!-- Avança para o capítulo seguinte. -->
+            <a class="btn btn-proximo" href="../31-Guerra-de-Secessao/index.html">
+                Próximo: 35 — Processo de Independência →
+            </a>
+
+        </nav>
+
+    </main>
+
+    <!-- ========================================================= -->
+    <!-- RODAPÉ                                                    -->
+    <!-- ========================================================= -->
+
+    <footer>
+
+        <p>
+            Curso de História Geral — Fund II • Ensino Médio • ENEM • Vestibular • Concurso
+        </p>
+
+        <p class="assinatura">
+            Professor Marcelo Oliveira
+        </p>
+
+    </footer>
+
+    <!-- ========================================================= -->
+    <!-- BOTÃO VOLTAR AO TOPO                                      -->
+    <!-- ========================================================= -->
+
+    <button id="topo" onclick="voltarAoTopo()">
+        ↑
+    </button>
+
+    <!-- ========================================================= -->
+    <!-- JAVASCRIPT                                                 -->
+    <!-- ========================================================= -->
+
+    <script>
+
+        // Cria a função responsável por mostrar ou esconder o gabarito.
+        function mostrarGabarito(id) {
+
+            // Localiza o elemento pelo seu ID.
+            const resposta = document.getElementById(id);
+
+            // Verifica se o gabarito está escondido.
+            if (resposta.style.display === "block") {
+
+                // Esconde o gabarito novamente.
+                resposta.style.display = "none";
+
+            } else {
+
+                // Mostra o gabarito.
+                resposta.style.display = "block";
+
+            }
+
+        }
+
+        // Localiza o botão de voltar ao topo.
+        const botaoTopo = document.getElementById("topo");
+
+        // Detecta quando o usuário movimenta a página.
+        window.addEventListener("scroll", function () {
+
+            // Verifica se a página foi deslocada verticalmente.
+            if (window.scrollY > 400) {
+
+                // Mostra o botão.
+                botaoTopo.style.display = "block";
+
+            } else {
+
+                // Esconde o botão.
+                botaoTopo.style.display = "none";
+
+            }
+
+        });
+
+        // Cria a função que leva o usuário ao início da página.
+        function voltarAoTopo() {
+
+            // Faz a página voltar suavemente para o topo.
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+
+        }
+
+    </script>
+    <script>
+  const paginaAnterior = "33 - A Independência da América Espanhola.html";
+  const paginaProxima = "35 - Processo-de-Independencia.html";
+</script>
+<script src="navegacao.js"></script>
+
+</body>
+
+</html>
+

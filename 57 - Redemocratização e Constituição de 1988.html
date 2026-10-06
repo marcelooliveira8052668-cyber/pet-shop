@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3º EM — Redemocratização e Constituição de 1988 | Professor Marcelo Oliveira</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { font-family: Arial, Helvetica, sans-serif; background: #f4f7fb; color: #263238; line-height: 1.7; }
+        .container { width: 92%; max-width: 1200px; margin: auto; }
+        header { background: linear-gradient(135deg, #172554, #2563eb); color: white; padding: 50px 20px; text-align: center; box-shadow: 0 5px 20px rgba(0, 0, 0, 0.18); }
+        .eyebrow { font-size: 0.95rem; letter-spacing: 2px; text-transform: uppercase; opacity: 0.9; margin-bottom: 12px; }
+        header h1 { font-size: clamp(2rem, 5vw, 3.5rem); margin-bottom: 15px; }
+        header p { max-width: 850px; margin: auto; font-size: 1.1rem; }
+        .navegacao { display: flex; justify-content: space-between; gap: 15px; margin: 25px auto; flex-wrap: wrap; }
+        .btn { display: inline-block; padding: 13px 20px; border-radius: 10px; text-decoration: none; font-weight: bold; transition: 0.3s; }
+        .btn-voltar { background: #475569; color: white; }
+        .btn-proximo { background: #2563eb; color: white; }
+        .btn:hover { transform: translateY(-2px); opacity: 0.9; }
+        .apresentacao { background: white; margin: 30px auto; padding: 30px; border-radius: 18px; border-left: 7px solid #2563eb; box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08); }
+        .secao { margin: 35px auto; padding: 30px; border-radius: 18px; background: white; box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07); }
+        .comeco { border-top: 8px solid #2563eb; }
+        .desenvolvimento { border-top: 8px solid #16a34a; }
+        .legado { border-top: 8px solid #7c3aed; }
+        .consequencias { border-top: 8px solid #eab308; }
+        .enem { border-top: 8px solid #0891b2; }
+        .lousa { border-top: 8px solid #111827; }
+        .secao h2 { margin-bottom: 20px; color: #172554; font-size: 1.8rem; }
+        .secao h3 { margin-top: 25px; margin-bottom: 10px; color: #334155; }
+        strong { color: #172554; }
+        ul, ol { margin: 15px 0 15px 25px; }
+        li { margin-bottom: 8px; }
+        .timeline { border-left: 4px solid #2563eb; padding-left: 25px; margin-top: 25px; }
+        .evento { margin-bottom: 25px; position: relative; }
+        .evento::before { content: ""; position: absolute; left: -36px; top: 7px; width: 14px; height: 14px; background: #2563eb; border-radius: 50%; }
+        .ano { font-weight: bold; color: #2563eb; }
+        .tabela-container { overflow-x: auto; margin-top: 20px; }
+        table { width: 100%; border-collapse: collapse; min-width: 650px; }
+        th, td { padding: 14px; border: 1px solid #cbd5e1; text-align: left; }
+        th { background: #172554; color: white; }
+        tr:nth-child(even) { background: #f8fafc; }
+        .conceitos { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 15px; margin-top: 20px; }
+        .conceito { background: #eff6ff; border: 1px solid #bfdbfe; padding: 18px; border-radius: 12px; }
+        .questao { background: #f8fafc; padding: 25px; border-radius: 14px; margin-top: 20px; border-left: 5px solid #0891b2; }
+        .btn-gabarito { margin-top: 15px; background: #0891b2; color: white; border: none; padding: 12px 18px; border-radius: 8px; cursor: pointer; font-weight: bold; }
+        .gabarito { display: none; margin-top: 15px; padding: 15px; background: #ecfeff; border-radius: 10px; border: 1px solid #67e8f9; }
+        .resumo { background: #172554; color: white; padding: 30px; border-radius: 18px; margin: 35px auto; }
+        .resumo strong { color: white; }
+        footer { background: #0f172a; color: white; text-align: center; padding: 35px 20px; margin-top: 50px; }
+        .assinatura { font-size: 1.2rem; font-weight: bold; margin-top: 10px; }
+        #topo { position: fixed; bottom: 20px; right: 20px; width: 48px; height: 48px; border: none; border-radius: 50%; background: #2563eb; color: white; cursor: pointer; font-size: 20px; display: none; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25); }
+        @media (max-width: 700px) { .secao, .apresentacao { padding: 20px; } .navegacao { flex-direction: column; } .btn { text-align: center; } }
+    </style>
+</head>
+
+<body id="inicio">
+
+    <header>
+        <div class="eyebrow">3º Ano — Ensino Médio</div>
+        <h1>Redemocratização e a Constituição de 1988</h1>
+        <p>O retorno da democracia com a Constituição Cidadã.</p>
+    </header>
+
+    <main class="container">
+
+        <nav class="navegacao">
+            <a class="btn btn-voltar" href="56 - Ditadura Militar (1964-1985).html">← Ditadura Militar</a>
+            <a class="btn btn-proximo" href="58 - Nova República e Desafios Contemporâneos.html">Nova República →</a>
+        </nav>
+
+        <section class="apresentacao">
+            <p>Por que estudar a redemocratização? Porque a Constituição de 1988 definiu os direitos e a arquitetura política do Brasil atual, consolidando a democracia após mais de duas décadas de regime militar.</p>
+        </section>
+
+        <section class="secao comeco">
+            <h2>🔵 I — O COMEÇO: O FIM DA DITADURA</h2>
+
+            <h3>1. A transição pelo "abrandamento"</h3>
+            <p>Após a Lei da Anistia de 1979, militares e oposição negociaram a abertura. A pressão pela realização de eleições diretas culminou no movimento das Diretas Já (1983–1984), que exigia o voto popular para presidente.</p>
+
+            <h3>2. As eleições indiretas de 1985</h3>
+            <p>Apesar da pressão popular, a eleição presidencial de 1985 foi indireta, realizada pelo Congresso. Tancredo Neves venceu, mas faleceu antes de assumir. Seu vice, José Sarney, assumiu a presidência.</p>
+        </section>
+
+        <section class="secao desenvolvimento">
+            <h2>🟢 II — O DESENVOLVIMENTO: A CONSTITUINTE</h2>
+
+            <h3>3. A Constituição de 1988</h3>
+            <p>A Assembleia Nacional Constituinte, convocada em 1987, promulgou a Constituição de 1988, conhecida como "Constituição Cidadã". Ela ampliou direitos sociais, políticos e civis, restabeleceu o voto direto, garantiu direitos indígenas e ambientais, e fixou bases para a democracia participativa.</p>
+
+            <h3>4. Principais direitos e estrutura</h3>
+            <ul>
+                <li>Voto universal e secreto a partir dos 16 anos.</li>
+                <li>Liberdade de expressão, imprensa e organização política.</li>
+                <li>Direitos sociais: saúde, educação, moradia e assistência.</li>
+                <li>Federalismo e descentralização de recursos para estados e municípios.</li>
+            </ul>
+        </section>
+
+        <section class="secao comeco">
+            <h2>📅 LINHA DO TEMPO</h2>
+            <div class="timeline">
+                <div class="evento"><span class="ano">1983–1984</span> — Diretas Já: mobilização pela eleição direta.</div>
+                <div class="evento"><span class="ano">1985</span> — Eleição indireta de Tancredo Neves; José Sarney assume.</div>
+                <div class="evento"><span class="ano">1987</span> — Assembleia Constituinte inicia os debates.</div>
+                <div class="evento"><span class="ano">1988</span> — Promulgação da Constituição Cidadã.</div>
+                <div class="evento"><span class="ano">1989</span> — Primeiras eleições diretas pós-ditadura; Collor vence.</div>
+            </div>
+        </section>
+
+        <section class="secao consequencias">
+            <h2>🟡 Consequências</h2>
+            <ul>
+                <li>Restauração da democracia e eleições diretas periódicas.</li>
+                <li>Ampliação de direitos civis e sociais.</li>
+                <li>Fortalecimento dos estados e municípios.</li>
+                <li>Bases institucionais para a Nova República.</li>
+            </ul>
+        </section>
+
+        <section class="secao legado">
+            <h2>🟣 III — O LEGADO E O MUNDO ATUAL</h2>
+            <p>A Constituição de 1988 ainda rege o Brasil. Seus artigos orientam políticas públicas, garantem a liberdade de imprensa e servem de referência para a cidadania. Amparar esse documento em estudos escolares fortalece a democracia.</p>
+        </section>
+
+        <section class="secao">
+            <h2>📊 RESUMO: REDEMOCRATIZAÇÃO</h2>
+            <div class="tabela-container">
+                <table>
+                    <thead>
+                        <tr><th>Período</th><th>Característica</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1983–1984</td><td>Diretas Já: pressão popular por eleição direta</td></tr>
+                        <tr><td>1985</td><td>Eleição indireta de Tancredo e posse de Sarney</td></tr>
+                        <tr><td>1987–1988</td><td>Constituinte e promulgação da Constituição</td></tr>
+                        <tr><td>1989</td><td>Eleição direta e inauguração da Nova República</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="secao lousa">
+            <h2>📋 BNCC — COMO TRABALHAR ESTE TEMA</h2>
+            <p>A BNCC orienta o estudo da redemocratização pela análise da Constituição de 1988 e dos movimentos sociais do período.</p>
+            <ul>
+                <li><strong>Habilidade (EM13CHS1015):</strong> Comparar os direitos e garantias da Constituição de 1988 com regimes autoritários anteriores.</li>
+                <li><strong>Habilidade (EM13CHS304):</strong> Identificar os processos de abertura democrática no Brasil.</li>
+                <li><strong>Objetivo:</strong> Relacionar a Constituinte com a ampliação de direitos e a consolidação democrática.</li>
+            </ul>
+            <h3>💡 Sugestão de aula</h3>
+            <ul>
+                <li>Debate sobre os principais direitos da Constituição de 1988.</li>
+                <li>Análise de jornais da época do Diretas Já.</li>
+                <li>Montagem de mural com os "1988" em diferentes contextos.</li>
+            </ul>
+        </section>
+
+        <section class="secao">
+            <h2>📚 CONCEITOS FUNDAMENTAIS</h2>
+            <div class="conceitos">
+                <div class="conceito"><strong>Diretas Já</strong><br>Movimento popular pela eleição direta para presidente.</div>
+                <div class="conceito"><strong>Constituição Cidadã</strong><br>Nome popular da Constituição de 1988.</div>
+                <div class="conceito"><strong>Assembleia Constituinte</strong><br>Órgão que elaborou a nova Constituição.</div>
+                <div class="conceito"><strong>Lei da Anistia</strong><br>Marco da abertura política em 1979.</div>
+                <div class="conceito"><strong>Nova República</strong><br>Período democrático iniciado em 1985.</div>
+                <div class="conceito"><strong>Federalização</strong><br>Distribuição equilibrada de poderes entre União, estados e municípios.</div>
+            </div>
+        </section>
+
+        <section class="secao enem">
+            <h2>🎯 ENEM, Vestibular e Concurso</h2>
+            <p>Teste seus conhecimentos:</p>
+
+            <div class="questao">
+                <h3>Questão 1</h3>
+                <p>A Constituição de 1988 ficou conhecida como "Constituição Cidadã" porque:</p>
+                <ol type="A">
+                    <li>Instituiu a monarquia no Brasil.</li>
+                    <li>Ampliou os direitos civis, sociais e políticos dos cidadãos.</li>
+                    <li>Abolitou todos os direitos trabalhistas.</li>
+                    <li>Centralizou todo o poder na União.</li>
+                    <li>Estabeleceu o voto apenas para maiores de 21 anos.</li>
+                </ol>
+                <button class="btn-gabarito" onclick="mostrarGabarito('g1')">Mostrar gabarito</button>
+                <div class="gabarito" id="g1">
+                    <strong>Resposta: B.</strong> A Constituição assegurou direitos fundamentais, voto universal e garantias sociais.
+                </div>
+            </div>
+
+            <div class="questao">
+                <h3>Questão 2</h3>
+                <p>O movimento Diretas Já exigiu:</p>
+                <ol type="A">
+                    <li>O retorno à monarquia.</li>
+                    <li>A eleição direta para presidente da República.</li>
+                    <li>A proibição do voto feminino.</li>
+                    <li>A criação de uma nova ditadura.</li>
+                    <li>A estatização de todas as indústrias.</li>
+                </ol>
+                <button class="btn-gabarito" onclick="mostrarGabarito('g2')">Mostrar gabarito</button>
+                <div class="gabarito" id="g2">
+                    <strong>Resposta: B.</strong> O movimento reivindicava o direito de o povo escolher diretamente o presidente.
+                </div>
+            </div>
+        </section>
+
+        <section class="resumo">
+            <h2>🧠 RESUMO PARA O PROFESSOR</h2>
+            <p>
+                <strong>Tema:</strong> Redemocratização brasileira (1985–1989).<br>
+                <strong>Marco:</strong> Diretas Já e eleição indireta de Tancredo.<br>
+                <strong>Constituição de 1988:</strong> Ampliação de direitos e consolidação democrática.<br>
+                <strong>Habilidade BNCC:</strong> EM13CHS1015 — Redemocratização e Constituição.
+            </p>
+        </section>
+
+        <nav class="navegacao">
+            <a class="btn btn-voltar" href="56 - Ditadura Militar (1964-1985).html">← Ditadura Militar</a>
+            <a class="btn btn-proximo" href="58 - Nova República e Desafios Contemporâneos.html">Nova República →</a>
+        </nav>
+
+    </main>
+
+    <footer>
+        <p>3º Ano — Ensino Médio • Curso de História Geral</p>
+        <p class="assinatura">Professor Marcelo Oliveira</p>
+    </footer>
+
+    <button id="topo" onclick="voltarAoTopo()">↑</button>
+
+    <script>
+        function mostrarGabarito(id) {
+            const resposta = document.getElementById(id);
+            resposta.style.display = (resposta.style.display === "block") ? "none" : "block";
+        }
+        const botaoTopo = document.getElementById("topo");
+        window.addEventListener("scroll", function () { botaoTopo.style.display = window.scrollY > 400 ? "block" : "none"; });
+        function voltarAoTopo() { window.scrollTo({ top: 0, behavior: "smooth" }); }
+    </script>
+    <script>
+  const paginaAnterior = "56 - Ditadura Militar (1964-1985).html";
+  const paginaProxima = "58 - Nova República e Desafios Contemporâneos.html";
+</script>
+<script src="navegacao.js"></script>
+
+</body>
+
+</html>

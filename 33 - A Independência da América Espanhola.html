@@ -1,0 +1,1777 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Define a codificação de caracteres da página. -->
+    <meta charset="UTF-8">
+
+    <!-- Permite que a página seja responsiva em celulares, tablets e computadores. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Define o título exibido na aba do navegador. -->
+    <title>1.33 — Independência da América Espanhola | Professor Marcelo Oliveira</title>
+
+    <style>
+
+        /* ========================================================= */
+        /* CONFIGURAÇÕES GERAIS                                     */
+        /* ========================================================= */
+
+        /* Remove margens e espaçamentos padrão do navegador. */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Ativa rolagem suave na página. */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Define a aparência geral do documento. */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f7fb;
+            color: #263238;
+            line-height: 1.7;
+        }
+
+        /* Centraliza o conteúdo e limita sua largura. */
+        .container {
+            width: 92%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        /* ========================================================= */
+        /* CABEÇALHO                                                 */
+        /* ========================================================= */
+
+        /* Cria o cabeçalho principal. */
+        header {
+            background: linear-gradient(135deg, #172554, #2563eb);
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.18);
+        }
+
+        /* Define o pequeno título superior. */
+        .eyebrow {
+            font-size: 0.95rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            opacity: 0.9;
+            margin-bottom: 12px;
+        }
+
+        /* Define o título principal. */
+        header h1 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            margin-bottom: 15px;
+        }
+
+        /* Define o subtítulo do cabeçalho. */
+        header p {
+            max-width: 900px;
+            margin: auto;
+            font-size: 1.1rem;
+        }
+
+        /* ========================================================= */
+        /* NAVEGAÇÃO                                                 */
+        /* ========================================================= */
+
+        /* Organiza os botões de navegação. */
+        .navegacao {
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+            margin: 25px auto;
+            flex-wrap: wrap;
+        }
+
+        /* Define a aparência geral dos botões. */
+        .btn {
+            display: inline-block;
+            padding: 13px 20px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        /* Define o botão de retorno. */
+        .btn-voltar {
+            background: #475569;
+            color: white;
+        }
+
+        /* Define o botão de avanço. */
+        .btn-proximo {
+            background: #2563eb;
+            color: white;
+        }
+
+        /* Cria efeito visual ao passar o mouse. */
+        .btn:hover {
+            transform: translateY(-2px);
+            opacity: 0.9;
+        }
+
+        /* ========================================================= */
+        /* APRESENTAÇÃO                                              */
+        /* ========================================================= */
+
+        /* Cria o cartão introdutório. */
+        .apresentacao {
+            background: white;
+            margin: 30px auto;
+            padding: 30px;
+            border-radius: 18px;
+            border-left: 7px solid #2563eb;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+        }
+
+        /* ========================================================= */
+        /* SEÇÕES COLORIDAS                                         */
+        /* ========================================================= */
+
+        /* Define o cartão padrão. */
+        .secao {
+            margin: 35px auto;
+            padding: 30px;
+            border-radius: 18px;
+            background: white;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+        }
+
+        /* Azul representa o começo. */
+        .comeco {
+            border-top: 8px solid #2563eb;
+        }
+
+        /* Verde representa o desenvolvimento. */
+        .desenvolvimento {
+            border-top: 8px solid #16a34a;
+        }
+
+        /* Roxo representa o legado. */
+        .legado {
+            border-top: 8px solid #7c3aed;
+        }
+
+        /* Laranja representa causas e fatores. */
+        .causas {
+            border-top: 8px solid #f97316;
+        }
+
+        /* Amarelo representa consequências. */
+        .consequencias {
+            border-top: 8px solid #eab308;
+        }
+
+        /* Vermelho representa pontos de atenção. */
+        .atencao {
+            border-top: 8px solid #dc2626;
+        }
+
+        /* Ciano representa ENEM e vestibular. */
+        .enem {
+            border-top: 8px solid #0891b2;
+        }
+
+        /* Preto representa a lousa. */
+        .lousa {
+            border-top: 8px solid #111827;
+        }
+
+        /* ========================================================= */
+        /* TÍTULOS                                                    */
+        /* ========================================================= */
+
+        /* Estiliza os títulos das seções. */
+        .secao h2 {
+            margin-bottom: 20px;
+            color: #172554;
+            font-size: 1.8rem;
+        }
+
+        /* Estiliza os subtítulos. */
+        .secao h3 {
+            margin-top: 25px;
+            margin-bottom: 10px;
+            color: #334155;
+        }
+
+        /* Destaca palavras importantes. */
+        strong {
+            color: #172554;
+        }
+
+        /* ========================================================= */
+        /* LISTAS                                                     */
+        /* ========================================================= */
+
+        /* Define o espaçamento das listas. */
+        ul,
+        ol {
+            margin: 15px 0 15px 25px;
+        }
+
+        /* Cria espaço entre os itens. */
+        li {
+            margin-bottom: 8px;
+        }
+
+        /* ========================================================= */
+        /* TABELAS                                                    */
+        /* ========================================================= */
+
+        /* Permite rolagem horizontal em telas pequenas. */
+        .tabela-container {
+            overflow-x: auto;
+            margin-top: 20px;
+        }
+
+        /* Define a largura da tabela. */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 650px;
+        }
+
+        /* Define as células. */
+        th,
+        td {
+            padding: 14px;
+            border: 1px solid #cbd5e1;
+            text-align: left;
+        }
+
+        /* Define o cabeçalho da tabela. */
+        th {
+            background: #172554;
+            color: white;
+        }
+
+        /* Alterna a cor das linhas. */
+        tr:nth-child(even) {
+            background: #f8fafc;
+        }
+
+        /* ========================================================= */
+        /* LINHA DO TEMPO                                            */
+        /* ========================================================= */
+
+        /* Cria a linha vertical da cronologia. */
+        .timeline {
+            border-left: 4px solid #2563eb;
+            padding-left: 25px;
+            margin-top: 25px;
+        }
+
+        /* Define cada acontecimento. */
+        .evento {
+            margin-bottom: 25px;
+            position: relative;
+        }
+
+        /* Cria o marcador circular. */
+        .evento::before {
+            content: "";
+            position: absolute;
+            left: -36px;
+            top: 7px;
+            width: 14px;
+            height: 14px;
+            background: #2563eb;
+            border-radius: 50%;
+        }
+
+        /* Destaca os anos. */
+        .ano {
+            font-weight: bold;
+            color: #2563eb;
+        }
+
+        /* ========================================================= */
+        /* COMPARAÇÕES                                                */
+        /* ========================================================= */
+
+        /* Cria uma grade para comparar grupos sociais. */
+        .comparacao {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        /* Define o cartão de cada grupo. */
+        .grupo {
+            padding: 25px;
+            border-radius: 15px;
+        }
+
+        /* Define o cartão dos criollos. */
+        .criollos {
+            background: #eff6ff;
+            border: 2px solid #60a5fa;
+        }
+
+        /* Define o cartão dos peninsulares. */
+        .peninsulares {
+            background: #fef2f2;
+            border: 2px solid #f87171;
+        }
+
+        /* Define o cartão das populações indígenas. */
+        .indigenas {
+            background: #f0fdf4;
+            border: 2px solid #4ade80;
+        }
+
+        /* Define o cartão dos mestiços. */
+        .mesticos {
+            background: #fff7ed;
+            border: 2px solid #fb923c;
+        }
+
+        /* ========================================================= */
+        /* CONCEITOS                                                  */
+        /* ========================================================= */
+
+        /* Cria uma grade de conceitos. */
+        .conceitos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        /* Cria cada cartão de conceito. */
+        .conceito {
+            background: #eff6ff;
+            border: 1px solid #bfdbfe;
+            padding: 18px;
+            border-radius: 12px;
+        }
+
+        /* ========================================================= */
+        /* QUESTÕES                                                   */
+        /* ========================================================= */
+
+        /* Cria o cartão da questão. */
+        .questao {
+            background: #f8fafc;
+            padding: 25px;
+            border-radius: 14px;
+            margin-top: 20px;
+            border-left: 5px solid #0891b2;
+        }
+
+        /* Define o botão de gabarito. */
+        .btn-gabarito {
+            margin-top: 15px;
+            background: #0891b2;
+            color: white;
+            border: none;
+            padding: 12px 18px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        /* Esconde o gabarito inicialmente. */
+        .gabarito {
+            display: none;
+            margin-top: 15px;
+            padding: 15px;
+            background: #ecfeff;
+            border-radius: 10px;
+            border: 1px solid #67e8f9;
+        }
+
+        /* ========================================================= */
+        /* RESUMO                                                     */
+        /* ========================================================= */
+
+        /* Cria o cartão de resumo final. */
+        .resumo {
+            background: #172554;
+            color: white;
+            padding: 30px;
+            border-radius: 18px;
+            margin: 35px auto;
+        }
+
+        /* Mantém o texto forte visível no fundo escuro. */
+        .resumo strong {
+            color: white;
+        }
+
+        /* ========================================================= */
+        /* RODAPÉ                                                     */
+        /* ========================================================= */
+
+        /* Cria o rodapé. */
+        footer {
+            background: #0f172a;
+            color: white;
+            text-align: center;
+            padding: 35px 20px;
+            margin-top: 50px;
+        }
+
+        /* Define a assinatura. */
+        .assinatura {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        /* ========================================================= */
+        /* BOTÃO VOLTAR AO TOPO                                      */
+        /* ========================================================= */
+
+        /* Cria o botão fixo. */
+        #topo {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 48px;
+            height: 48px;
+            border: none;
+            border-radius: 50%;
+            background: #2563eb;
+            color: white;
+            cursor: pointer;
+            font-size: 20px;
+            display: none;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+        }
+
+        /* ========================================================= */
+        /* RESPONSIVIDADE                                             */
+        /* ========================================================= */
+
+        /* Ajusta os elementos em telas pequenas. */
+        @media (max-width: 700px) {
+
+            /* Reduz o espaçamento dos cartões. */
+            .secao,
+            .apresentacao {
+                padding: 20px;
+            }
+
+            /* Coloca os botões um abaixo do outro. */
+            .navegacao {
+                flex-direction: column;
+            }
+
+            /* Faz os botões ocuparem toda a largura. */
+            .btn {
+                text-align: center;
+            }
+        }
+
+    </style>
+</head>
+
+<body id="inicio">
+
+    <!-- ========================================================= -->
+    <!-- CABEÇALHO                                                  -->
+    <!-- ========================================================= -->
+
+    <header>
+
+        <!-- Identificação do curso. -->
+        <div class="eyebrow">Curso de História Geral</div>
+
+        <!-- Título principal. -->
+        <h1>1.33 — A Independência da América Espanhola</h1>
+
+        <!-- Subtítulo explicativo. -->
+        <p>
+            A crise do sistema colonial espanhol, as revoluções atlânticas,
+            os movimentos de independência e a formação dos novos Estados americanos.
+        </p>
+
+    </header>
+
+    <!-- ========================================================= -->
+    <!-- CONTEÚDO PRINCIPAL                                        -->
+    <!-- ========================================================= -->
+
+    <main class="container">
+
+        <!-- ===================================================== -->
+        <!-- NAVEGAÇÃO                                             -->
+        <!-- ===================================================== -->
+
+        <nav class="navegacao">
+
+            <!-- Link para o capítulo anterior. -->
+            <a class="btn btn-voltar" href="../31-Guerra-de-Secessao/index.html">
+                ← Brasil Joanino
+            </a>
+
+            <!-- Link para o capítulo seguinte. -->
+            <a class="btn btn-proximo" href="../33-Revolucoes-Liberais/index.html">
+                1.33 — Revoluções Liberais →
+            </a>
+
+        </nav>
+
+        <!-- ===================================================== -->
+        <!-- APRESENTAÇÃO                                          -->
+        <!-- ===================================================== -->
+
+        <section class="apresentacao">
+
+            <h2>Por que estudar as independências hispano-americanas?</h2>
+
+            <p>
+                Entre o final do século XVIII e as primeiras décadas do século XIX,
+                grande parte dos territórios americanos controlados pela Espanha
+                entrou em processo de ruptura com o domínio colonial.
+            </p>
+
+            <p>
+                Esse processo não aconteceu de maneira uniforme.
+                Diferentes regiões tiveram guerras, lideranças, conflitos sociais
+                e diferentes formas de organização política.
+            </p>
+
+            <p>
+                As independências foram influenciadas por fatores internos e
+                externos, como a <strong>crise do sistema colonial</strong>,
+                o <strong>Iluminismo</strong>, a <strong>Revolução Francesa</strong>,
+                a <strong>independência dos Estados Unidos</strong> e a
+                <strong>invasão napoleônica da Península Ibérica</strong>.
+            </p>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- PARTE I                                                -->
+        <!-- ===================================================== -->
+
+        <section class="secao comeco">
+
+            <h2>🔵 I — O COMEÇO: A AMÉRICA ESPANHOLA COLONIAL</h2>
+
+            <h3>1. A organização do domínio espanhol</h3>
+
+            <p>
+                A Espanha construiu na América um amplo sistema colonial
+                baseado na exploração econômica, na administração imperial
+                e na hierarquia social.
+            </p>
+
+            <p>
+                Grandes áreas foram organizadas em
+                <strong>vice-reinos e outras unidades administrativas</strong>.
+            </p>
+
+            <p>
+                Entre os principais vice-reinos estavam:
+            </p>
+
+            <ul>
+
+                <li>Vice-Reino da Nova Espanha;</li>
+
+                <li>Vice-Reino do Peru;</li>
+
+                <li>Vice-Reino de Nova Granada;</li>
+
+                <li>Vice-Reino do Rio da Prata.</li>
+
+            </ul>
+
+            <h3>2. A sociedade colonial</h3>
+
+            <p>
+                A sociedade hispano-americana era marcada por fortes
+                hierarquias sociais.
+            </p>
+
+            <div class="comparacao">
+
+                <div class="grupo peninsulares">
+
+                    <h3>🔴 Peninsulares</h3>
+
+                    <p>
+                        Espanhóis nascidos na Península Ibérica.
+                        Ocupavam muitos dos principais cargos administrativos
+                        e políticos.
+                    </p>
+
+                </div>
+
+                <div class="grupo criollos">
+
+                    <h3>🔵 Criollos</h3>
+
+                    <p>
+                        Descendentes de espanhóis nascidos na América.
+                        Podiam possuir riqueza e propriedades, mas enfrentavam
+                        restrições para ocupar os cargos mais importantes.
+                    </p>
+
+                </div>
+
+                <div class="grupo indigenas">
+
+                    <h3>🟢 Povos indígenas</h3>
+
+                    <p>
+                        Diversos povos originários submetidos a diferentes
+                        formas de exploração, tributos e trabalho compulsório.
+                    </p>
+
+                </div>
+
+                <div class="grupo mesticos">
+
+                    <h3>🟠 Mestiços e outros grupos</h3>
+
+                    <p>
+                        A sociedade colonial também incluía mestiços,
+                        africanos escravizados, afrodescendentes livres
+                        e outros grupos sociais.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <h3>3. O sistema colonial</h3>
+
+            <p>
+                A Espanha procurava controlar o comércio colonial e direcionar
+                a produção e circulação de riquezas de acordo com os interesses
+                metropolitanos.
+            </p>
+
+            <p>
+                Entretanto, contrabando, comércio intercolonial e interesses
+                econômicos locais também fizeram parte da realidade colonial.
+            </p>
+
+            <h3>4. O crescimento dos criollos</h3>
+
+            <p>
+                Durante o século XVIII, setores criollos ampliaram sua
+                importância econômica.
+            </p>
+
+            <p>
+                Muitos passaram a questionar os privilégios dos peninsulares
+                e o controle político exercido pela metrópole.
+            </p>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- CAUSAS                                                 -->
+        <!-- ===================================================== -->
+
+        <section class="secao causas">
+
+            <h2>🟠 Fatores que contribuíram para as independências</h2>
+
+            <h3>Fatores internos</h3>
+
+            <ul>
+
+                <li>
+                    Insatisfação de setores criollos com os privilégios dos peninsulares.
+                </li>
+
+                <li>
+                    Restrições comerciais impostas pela metrópole.
+                </li>
+
+                <li>
+                    Conflitos sociais nas colônias.
+                </li>
+
+                <li>
+                    Crescimento de interesses econômicos locais.
+                </li>
+
+                <li>
+                    Insatisfação com a administração colonial.
+                </li>
+
+            </ul>
+
+            <h3>Fatores externos</h3>
+
+            <ul>
+
+                <li>
+                    Iluminismo.
+                </li>
+
+                <li>
+                    Independência dos Estados Unidos.
+                </li>
+
+                <li>
+                    Revolução Francesa.
+                </li>
+
+                <li>
+                    Revolução Haitiana.
+                </li>
+
+                <li>
+                    Guerras Napoleônicas.
+                </li>
+
+                <li>
+                    Invasão francesa da Espanha em 1808.
+                </li>
+
+            </ul>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- PARTE II                                               -->
+        <!-- ===================================================== -->
+
+        <section class="secao desenvolvimento">
+
+            <h2>🟢 II — O DESENVOLVIMENTO: AS LUTAS DE INDEPENDÊNCIA</h2>
+
+            <h3>1. O impacto de Napoleão</h3>
+
+            <p>
+                Em 1808, Napoleão Bonaparte invadiu a Península Ibérica.
+            </p>
+
+            <p>
+                O rei espanhol Fernando VII foi afastado do poder e José
+                Bonaparte foi colocado no trono espanhol.
+            </p>
+
+            <p>
+                A crise da monarquia espanhola provocou uma questão fundamental
+                nas colônias:
+                <strong>quem deveria exercer a soberania na ausência do rei legítimo?</strong>
+            </p>
+
+            <h3>2. Juntas de governo</h3>
+
+            <p>
+                Em diversas regiões americanas foram formadas juntas que
+                inicialmente afirmavam governar em nome de Fernando VII.
+            </p>
+
+            <p>
+                Em alguns lugares, esse processo evoluiu gradualmente para
+                projetos de independência.
+            </p>
+
+            <h3>3. Simón Bolívar</h3>
+
+            <p>
+                <strong>Simón Bolívar</strong> tornou-se uma das principais
+                lideranças das lutas de independência no norte da América do Sul.
+            </p>
+
+            <p>
+                Atuou em processos ligados à independência da Venezuela,
+                Colômbia, Equador e Bolívia.
+            </p>
+
+            <p>
+                Bolívar defendia a união política de parte das novas repúblicas,
+                mas enfrentou dificuldades regionais, econômicas e políticas.
+            </p>
+
+            <h3>4. José de San Martín</h3>
+
+            <p>
+                <strong>José de San Martín</strong> foi uma das principais
+                lideranças militares da independência da América do Sul.
+            </p>
+
+            <p>
+                Sua atuação esteve relacionada principalmente aos processos
+                de independência da região do Rio da Prata, Chile e Peru.
+            </p>
+
+            <h3>5. México</h3>
+
+            <p>
+                O processo mexicano teve características próprias.
+            </p>
+
+            <p>
+                Em 1810, <strong>Hidalgo</strong> iniciou uma grande revolta
+                contra o domínio colonial.
+            </p>
+
+            <p>
+                Posteriormente, <strong>José María Morelos</strong> deu
+                continuidade à luta.
+            </p>
+
+            <p>
+                A independência mexicana foi consolidada em 1821,
+                após uma aliança entre diferentes grupos políticos e sociais.
+            </p>
+
+            <h3>6. Haiti: um processo diferente</h3>
+
+            <p>
+                A Revolução Haitiana teve enorme impacto sobre o mundo atlântico.
+            </p>
+
+            <p>
+                No Haiti, uma revolução de pessoas escravizadas levou à
+                independência em <strong>1804</strong>.
+            </p>
+
+            <p>
+                O caso haitiano tornou-se referência e também provocou medo
+                entre setores escravistas das Américas.
+            </p>
+
+            <h3>7. A formação dos novos Estados</h3>
+
+            <p>
+                A independência política não resolveu automaticamente
+                os problemas econômicos e sociais das novas nações.
+            </p>
+
+            <p>
+                Muitos novos Estados enfrentaram:
+            </p>
+
+            <ul>
+
+                <li>disputas internas;</li>
+
+                <li>conflitos entre grupos políticos;</li>
+
+                <li>dificuldades econômicas;</li>
+
+                <li>fragmentação territorial;</li>
+
+                <li>disputas sobre centralização e federalismo;</li>
+
+                <li>manutenção de desigualdades sociais.</li>
+
+            </ul>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- LINHA DO TEMPO                                         -->
+        <!-- ===================================================== -->
+
+        <section class="secao">
+
+            <h2>📅 Linha do Tempo</h2>
+
+            <div class="timeline">
+
+                <div class="evento">
+                    <div class="ano">1776</div>
+                    <p>
+                        Independência dos Estados Unidos.
+                    </p>
+                </div>
+
+                <div class="evento">
+                    <div class="ano">1789</div>
+                    <p>
+                        Revolução Francesa.
+                    </p>
+                </div>
+
+                <div class="evento">
+                    <div class="ano">1791–1804</div>
+                    <p>
+                        Revolução Haitiana e independência do Haiti.
+                    </p>
+                </div>
+
+                <div class="evento">
+                    <div class="ano">1808</div>
+                    <p>
+                        Invasão napoleônica da Espanha e crise da monarquia espanhola.
+                    </p>
+                </div>
+
+                <div class="evento">
+                    <div class="ano">1810</div>
+                    <p>
+                        Início da revolta de Hidalgo no México e formação de
+                        juntas em diferentes regiões americanas.
+                    </p>
+                </div>
+
+                <div class="evento">
+                    <div class="ano">1816</div>
+                    <p>
+                        Independência das Províncias Unidas do Rio da Prata
+                        é declarada.
+                    </p>
+                </div>
+
+                <div class="evento">
+                    <div class="ano">1818</div>
+                    <p>
+                        Independência do Chile é consolidada.
+                    </p>
+                </div>
+
+                <div class="evento">
+                    <div class="ano">1821</div>
+                    <p>
+                        Independência do México e do Peru no contexto das
+                        campanhas militares sul-americanas.
+                    </p>
+                </div>
+
+                <div class="evento">
+                    <div class="ano">1822</div>
+                    <p>
+                        Independência do Brasil.
+                    </p>
+                </div>
+
+                <div class="evento">
+                    <div class="ano">1824</div>
+                    <p>
+                        Batalha de Ayacucho contribui para o encerramento do
+                        domínio espanhol em grande parte da América do Sul.
+                    </p>
+                </div>
+
+                <div class="evento">
+                    <div class="ano">1825</div>
+                    <p>
+                        Independência da Bolívia é consolidada.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- TABELA DE PROCESSOS                                    -->
+        <!-- ===================================================== -->
+
+        <section class="secao">
+
+            <h2>🌎 Alguns processos de independência</h2>
+
+            <div class="tabela-container">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+                            <th>Região</th>
+                            <th>Principal contexto</th>
+                            <th>Data de referência</th>
+                            <th>Destaques</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>Argentina / Rio da Prata</td>
+                            <td>Crise da monarquia espanhola</td>
+                            <td>1816</td>
+                            <td>San Martín e processo revolucionário</td>
+                        </tr>
+
+                        <tr>
+                            <td>Chile</td>
+                            <td>Guerras de independência</td>
+                            <td>1818</td>
+                            <td>San Martín e Bernardo O'Higgins</td>
+                        </tr>
+
+                        <tr>
+                            <td>México</td>
+                            <td>Revoltas populares e crise colonial</td>
+                            <td>1821</td>
+                            <td>Hidalgo, Morelos e posteriormente Iturbide</td>
+                        </tr>
+
+                        <tr>
+                            <td>Venezuela</td>
+                            <td>Crise imperial e guerras de independência</td>
+                            <td>1810–1821</td>
+                            <td>Simón Bolívar</td>
+                        </tr>
+
+                        <tr>
+                            <td>Colômbia</td>
+                            <td>Guerras de independência</td>
+                            <td>1810–1819</td>
+                            <td>Bolívar e formação da Grã-Colômbia</td>
+                        </tr>
+
+                        <tr>
+                            <td>Peru</td>
+                            <td>Campanhas militares finais</td>
+                            <td>1821</td>
+                            <td>San Martín e Bolívar</td>
+                        </tr>
+
+                        <tr>
+                            <td>Bolívia</td>
+                            <td>Derrota do domínio espanhol</td>
+                            <td>1825</td>
+                            <td>Antonio José de Sucre e Bolívar</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- CONSEQUÊNCIAS                                          -->
+        <!-- ===================================================== -->
+
+        <section class="secao consequencias">
+
+            <h2>🟡 Consequências das independências</h2>
+
+            <ul>
+
+                <li>
+                    Fim do domínio político espanhol em grande parte da América continental.
+                </li>
+
+                <li>
+                    Formação de novos Estados independentes.
+                </li>
+
+                <li>
+                    Fragmentação política de antigas estruturas coloniais.
+                </li>
+
+                <li>
+                    Fortalecimento das elites locais em muitos países.
+                </li>
+
+                <li>
+                    Criação de repúblicas em grande parte da América espanhola.
+                </li>
+
+                <li>
+                    Permanência de desigualdades sociais.
+                </li>
+
+                <li>
+                    Conflitos entre centralização e federalismo.
+                </li>
+
+                <li>
+                    Dependência econômica externa em diferentes graus.
+                </li>
+
+            </ul>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- PARTE III                                               -->
+        <!-- ===================================================== -->
+
+        <section class="secao legado">
+
+            <h2>🟣 III — O LEGADO E O MUNDO ATUAL</h2>
+
+            <h3>1. Independência política não significou igualdade social</h3>
+
+            <p>
+                Um dos pontos mais importantes para compreender as
+                independências hispano-americanas é perceber que a ruptura
+                com a Espanha não eliminou automaticamente as hierarquias
+                sociais herdadas do período colonial.
+            </p>
+
+            <p>
+                Em diversas regiões, grupos que participaram das lutas
+                continuaram enfrentando desigualdades econômicas, políticas
+                e raciais.
+            </p>
+
+            <h3>2. O problema da fragmentação</h3>
+
+            <p>
+                Simón Bolívar imaginava uma América Hispânica mais integrada.
+            </p>
+
+            <p>
+                Entretanto, diferenças regionais, interesses das elites,
+                dificuldades de comunicação e disputas políticas contribuíram
+                para a formação de diversos Estados independentes.
+            </p>
+
+            <h3>3. A Grã-Colômbia</h3>
+
+            <p>
+                A experiência da <strong>Grã-Colômbia</strong> demonstrou as
+                dificuldades de manter uma grande unidade política.
+            </p>
+
+            <p>
+                O projeto reuniu territórios que atualmente correspondem,
+                de forma geral, a Colômbia, Venezuela, Equador e Panamá,
+                mas entrou em crise e foi dissolvido na década de 1830.
+            </p>
+
+            <h3>4. O legado do nacionalismo</h3>
+
+            <p>
+                As independências contribuíram para a formação de identidades
+                nacionais e para o surgimento de novos projetos políticos.
+            </p>
+
+            <p>
+                O nacionalismo, entretanto, assumiu diferentes formas e
+                entrou em disputa com projetos de integração regional.
+            </p>
+
+            <h3>5. América Latina no mundo contemporâneo</h3>
+
+            <p>
+                A formação dos Estados nacionais no século XIX ajuda a
+                compreender questões contemporâneas relacionadas a
+                <strong>fronteiras, identidades nacionais, integração regional,
+                desigualdade social e soberania</strong>.
+            </p>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- RELAÇÃO COM O BRASIL                                  -->
+        <!-- ===================================================== -->
+
+        <section class="secao">
+
+            <h2>🇧🇷 História Geral ↔ Brasil</h2>
+
+            <p>
+                A independência das colônias espanholas ocorreu em um período
+                próximo ao processo de independência do Brasil.
+            </p>
+
+            <p>
+                Porém, os processos foram diferentes.
+            </p>
+
+            <div class="tabela-container">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+                            <th>América Espanhola</th>
+                            <th>Brasil</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>Grande quantidade de guerras regionais.</td>
+                            <td>Processo relativamente centralizado em torno de D. Pedro.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Formação de várias repúblicas.</td>
+                            <td>Manutenção da monarquia após 1822.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Fragmentação de antigos espaços coloniais.</td>
+                            <td>Preservação da unidade territorial em grande medida.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Conflitos entre diferentes projetos de organização política.</td>
+                            <td>Conflitos políticos também ocorreram durante o Primeiro Reinado e o Período Regencial.</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+            <p>
+                Essa comparação é excelente para o aluno perceber que
+                <strong>independência não é um modelo único</strong>.
+            </p>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- ATENÇÃO HISTÓRICA                                     -->
+        <!-- ===================================================== -->
+
+        <section class="secao atencao">
+
+            <h2>🔴 Atenção: independência não foi uma única revolução</h2>
+
+            <p>
+                É incorreto tratar a independência da América Espanhola
+                como um único acontecimento.
+            </p>
+
+            <p>
+                Foram diversos processos, ocorridos em diferentes regiões,
+                com lideranças, cronologias e conflitos próprios.
+            </p>
+
+            <p>
+                Também é importante evitar a ideia de que todos os grupos
+                sociais possuíam os mesmos objetivos.
+            </p>
+
+            <p>
+                Criollos, indígenas, mestiços, africanos escravizados,
+                afrodescendentes e outros grupos poderiam possuir interesses
+                diferentes durante as guerras de independência.
+            </p>
+
+            <p>
+                Portanto:
+                <strong>independência política não significa automaticamente
+                revolução social completa.</strong>
+            </p>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- PROFESSOR                                              -->
+        <!-- ===================================================== -->
+
+        <section class="secao">
+
+            <h2>👨‍🏫 O que o professor precisa dominar</h2>
+
+            <ol>
+
+                <li>
+                    Estrutura do sistema colonial espanhol.
+                </li>
+
+                <li>
+                    Hierarquia social entre peninsulares e criollos.
+                </li>
+
+                <li>
+                    Influência do Iluminismo.
+                </li>
+
+                <li>
+                    Influência das revoluções atlânticas.
+                </li>
+
+                <li>
+                    Importância da Revolução Haitiana.
+                </li>
+
+                <li>
+                    Crise da monarquia espanhola em 1808.
+                </li>
+
+                <li>
+                    Papel das juntas de governo.
+                </li>
+
+                <li>
+                    Atuação de Simón Bolívar.
+                </li>
+
+                <li>
+                    Atuação de José de San Martín.
+                </li>
+
+                <li>
+                    Processo mexicano.
+                </li>
+
+                <li>
+                    Formação dos novos Estados.
+                </li>
+
+                <li>
+                    Limites sociais das independências.
+                </li>
+
+                <li>
+                    Relação com a independência brasileira.
+                </li>
+
+            </ol>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- LOUSA                                                   -->
+        <!-- ===================================================== -->
+
+        <section class="secao lousa">
+
+            <h2>🧑‍🏫 O que colocar na lousa</h2>
+
+            <ul>
+
+                <li><strong>América Espanhola → crise colonial</strong></li>
+
+                <li><strong>Fatores:</strong> Iluminismo + EUA + França + Haiti + Napoleão.</li>
+
+                <li><strong>1808:</strong> invasão da Espanha.</li>
+
+                <li><strong>Juntas:</strong> crise de legitimidade.</li>
+
+                <li><strong>Bolívar:</strong> norte da América do Sul.</li>
+
+                <li><strong>San Martín:</strong> sul da América do Sul.</li>
+
+                <li><strong>México:</strong> Hidalgo + Morelos + Iturbide.</li>
+
+                <li><strong>Resultado:</strong> novos Estados.</li>
+
+                <li><strong>Problema:</strong> fragmentação + desigualdade.</li>
+
+                <li><strong>Brasil:</strong> independência em 1822.</li>
+
+            </ul>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- CONCEITOS                                               -->
+        <!-- ===================================================== -->
+
+        <section class="secao">
+
+            <h2>📚 Conceitos fundamentais</h2>
+
+            <div class="conceitos">
+
+                <div class="conceito">
+                    <strong>Criollo</strong>
+                    <p>Descendente de espanhóis nascido na América.</p>
+                </div>
+
+                <div class="conceito">
+                    <strong>Peninsular</strong>
+                    <p>Espanhol nascido na Península Ibérica.</p>
+                </div>
+
+                <div class="conceito">
+                    <strong>Junta</strong>
+                    <p>Órgão político formado durante a crise da monarquia espanhola.</p>
+                </div>
+
+                <div class="conceito">
+                    <strong>Independência</strong>
+                    <p>Ruptura da submissão política em relação à metrópole.</p>
+                </div>
+
+                <div class="conceito">
+                    <strong>Soberania</strong>
+                    <p>Autoridade política suprema exercida sobre determinado território.</p>
+                </div>
+
+                <div class="conceito">
+                    <strong>Nacionalismo</strong>
+                    <p>Construção de identidades políticas vinculadas à ideia de nação.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- BNCC                                                    -->
+        <!-- ===================================================== -->
+
+        <section class="secao">
+
+            <h2>📘 BNCC — Como trabalhar o tema</h2>
+
+            <p>
+                O tema pode ser trabalhado por meio da análise das revoluções
+                atlânticas, das relações de poder, da crise dos impérios
+                coloniais e da formação dos Estados nacionais americanos.
+            </p>
+
+            <p>
+                No Ensino Médio, o conteúdo permite discutir conceitos como
+                <strong>poder, soberania, cidadania, colonialismo, nacionalismo,
+                identidade e desigualdade</strong>.
+            </p>
+
+            <p>
+                Para o planejamento oficial, o professor deve selecionar as
+                habilidades e competências BNCC correspondentes à etapa e ao
+                currículo adotado pela instituição, conferindo os códigos na
+                documentação oficial.
+            </p>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- ENEM                                                    -->
+        <!-- ===================================================== -->
+
+        <section class="secao enem">
+
+            <h2>🎯 ENEM, Vestibular e Concurso</h2>
+
+            <h3>O que merece atenção?</h3>
+
+            <ul>
+
+                <li>
+                    Crise do sistema colonial.
+                </li>
+
+                <li>
+                    Privilégios dos peninsulares.
+                </li>
+
+                <li>
+                    Ascensão dos criollos.
+                </li>
+
+                <li>
+                    Iluminismo.
+                </li>
+
+                <li>
+                    Revoluções Americana, Francesa e Haitiana.
+                </li>
+
+                <li>
+                    Invasão napoleônica da Espanha.
+                </li>
+
+                <li>
+                    Bolívar e San Martín.
+                </li>
+
+                <li>
+                    Fragmentação política.
+                </li>
+
+                <li>
+                    Permanência das desigualdades sociais.
+                </li>
+
+                <li>
+                    Comparação com a Independência do Brasil.
+                </li>
+
+            </ul>
+
+            <!-- ================================================= -->
+            <!-- QUESTÃO 1                                          -->
+            <!-- ================================================= -->
+
+            <div class="questao">
+
+                <h3>Questão 1</h3>
+
+                <p>
+                    No início do século XIX, a invasão napoleônica da Espanha
+                    provocou uma crise de legitimidade política que atingiu
+                    também os territórios americanos.
+                </p>
+
+                <p>
+                    Uma consequência desse processo foi:
+                </p>
+
+                <ol type="A">
+
+                    <li>
+                        o fortalecimento definitivo do controle espanhol sobre as colônias.
+                    </li>
+
+                    <li>
+                        a formação de juntas e o avanço de movimentos de autonomia.
+                    </li>
+
+                    <li>
+                        a criação imediata de uma única república hispano-americana.
+                    </li>
+
+                    <li>
+                        o desaparecimento dos conflitos entre criollos e peninsulares.
+                    </li>
+
+                    <li>
+                        a restauração imediata do sistema colonial sem oposição.
+                    </li>
+
+                </ol>
+
+                <button class="btn-gabarito" onclick="mostrarGabarito('g1')">
+                    Mostrar gabarito
+                </button>
+
+                <div class="gabarito" id="g1">
+
+                    <strong>Resposta: B.</strong>
+
+                    <p>
+                        A crise da monarquia espanhola favoreceu a formação de
+                        juntas e abriu espaço para processos de autonomia e,
+                        posteriormente, independência.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- ================================================= -->
+            <!-- QUESTÃO 2                                          -->
+            <!-- ================================================= -->
+
+            <div class="questao">
+
+                <h3>Questão 2</h3>
+
+                <p>
+                    Apesar da independência política, muitas sociedades
+                    hispano-americanas mantiveram estruturas de desigualdade
+                    herdadas do período colonial.
+                </p>
+
+                <p>
+                    Esse fato demonstra que:
+                </p>
+
+                <ol type="A">
+
+                    <li>
+                        toda independência política produz automaticamente igualdade social.
+                    </li>
+
+                    <li>
+                        as independências foram apenas conflitos religiosos.
+                    </li>
+
+                    <li>
+                        a ruptura com a metrópole não eliminou imediatamente as hierarquias sociais.
+                    </li>
+
+                    <li>
+                        as elites criollas desapareceram após a independência.
+                    </li>
+
+                    <li>
+                        os povos indígenas passaram imediatamente a controlar os novos governos.
+                    </li>
+
+                </ol>
+
+                <button class="btn-gabarito" onclick="mostrarGabarito('g2')">
+                    Mostrar gabarito
+                </button>
+
+                <div class="gabarito" id="g2">
+
+                    <strong>Resposta: C.</strong>
+
+                    <p>
+                        A independência política rompeu o domínio colonial,
+                        mas não eliminou automaticamente as desigualdades
+                        sociais e econômicas.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- RESUMO FINAL                                           -->
+        <!-- ===================================================== -->
+
+        <section class="resumo">
+
+            <h2>🧠 Resumo para o professor</h2>
+
+            <p>
+                A independência da América Espanhola foi formada por
+                <strong>diversos processos regionais</strong> ocorridos
+                principalmente entre o início do século XIX e a década de 1820.
+            </p>
+
+            <p>
+                Suas causas envolveram a crise do sistema colonial,
+                interesses dos criollos, Iluminismo, revoluções atlânticas
+                e a crise da monarquia espanhola provocada por Napoleão.
+            </p>
+
+            <p>
+                Lideranças como <strong>Simón Bolívar</strong> e
+                <strong>José de San Martín</strong> tiveram papéis importantes
+                em diferentes regiões.
+            </p>
+
+            <p>
+                O resultado foi a formação de diversos Estados independentes,
+                mas também a permanência de desigualdades e conflitos políticos.
+            </p>
+
+            <p>
+                <strong>
+                    Crise colonial → Iluminismo e revoluções atlânticas
+                    → crise espanhola em 1808 → juntas → guerras de independência
+                    → novos Estados → conflitos políticos e sociais.
+                </strong>
+            </p>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- NAVEGAÇÃO FINAL                                        -->
+        <!-- ===================================================== -->
+
+        <nav class="navegacao">
+
+            <!-- Volta para o tema anterior. -->
+            <a class="btn btn-voltar" href="../31-Guerra-de-Secessao/index.html">
+                ← Voltar para 32
+            </a>
+
+            <!-- Avança para o próximo tema. -->
+            <a class="btn btn-proximo" href="../33-Revolucoes-Liberais/index.html">
+                Próximo: 34 — Congresso de Viena →
+            </a>
+
+        </nav>
+
+    </main>
+
+    <!-- ========================================================= -->
+    <!-- RODAPÉ                                                    -->
+    <!-- ========================================================= -->
+
+    <footer>
+
+        <p>
+            Curso de História Geral — Fund II • Ensino Médio • ENEM • Vestibular • Concurso
+        </p>
+
+        <p class="assinatura">
+            Professor Marcelo Oliveira
+        </p>
+
+    </footer>
+
+    <!-- ========================================================= -->
+    <!-- BOTÃO VOLTAR AO TOPO                                      -->
+    <!-- ========================================================= -->
+
+    <button id="topo" onclick="voltarAoTopo()">
+        ↑
+    </button>
+
+    <!-- ========================================================= -->
+    <!-- JAVASCRIPT                                                 -->
+    <!-- ========================================================= -->
+
+    <script>
+
+        // Cria a função responsável por mostrar ou esconder o gabarito.
+        function mostrarGabarito(id) {
+
+            // Localiza o elemento correspondente ao ID recebido.
+            const resposta = document.getElementById(id);
+
+            // Verifica se o gabarito está visível.
+            if (resposta.style.display === "block") {
+
+                // Esconde o gabarito.
+                resposta.style.display = "none";
+
+            } else {
+
+                // Mostra o gabarito.
+                resposta.style.display = "block";
+
+            }
+
+        }
+
+        // Localiza o botão de voltar ao topo.
+        const botaoTopo = document.getElementById("topo");
+
+        // Observa a movimentação vertical da página.
+        window.addEventListener("scroll", function () {
+
+            // Verifica se o usuário desceu mais de 400 pixels.
+            if (window.scrollY > 400) {
+
+                // Exibe o botão.
+                botaoTopo.style.display = "block";
+
+            } else {
+
+                // Esconde o botão.
+                botaoTopo.style.display = "none";
+
+            }
+
+        });
+
+        // Cria a função de retorno ao início da página.
+        function voltarAoTopo() {
+
+            // Faz a página subir suavemente.
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+
+        }
+
+    </script>
+    <script>
+  const paginaAnterior = "32 - Brasil-Joanino.html";
+  const paginaProxima = "34 - Congresso-de-Viena.html";
+</script>
+<script src="navegacao.js"></script>
+
+</body>
+
+</html>

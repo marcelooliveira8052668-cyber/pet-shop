@@ -1,0 +1,1760 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <!-- Define a codificação de caracteres da página -->
+    <meta charset="UTF-8">
+
+    <!-- Faz a página se adaptar a celulares, tablets e computadores -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Define o título da aba do navegador -->
+    <title>1.13 — As Cruzadas | História Geral</title>
+
+    <style>
+
+        /* ========================================================= */
+        /* CONFIGURAÇÕES GERAIS                                     */
+        /* ========================================================= */
+
+        /* Remove margens e espaçamentos padrão */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Ativa rolagem suave */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Configura o corpo da página */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f6f8;
+            color: #20242a;
+            line-height: 1.7;
+        }
+
+        /* ========================================================= */
+        /* CABEÇALHO                                                 */
+        /* ========================================================= */
+
+        /* Cabeçalho principal */
+        header {
+            background: linear-gradient(135deg, #111827, #243b53);
+            color: white;
+            text-align: center;
+            padding: 55px 20px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.18);
+        }
+
+        /* Identificação do curso */
+        .curso {
+            font-size: 14px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            opacity: 0.8;
+            margin-bottom: 12px;
+        }
+
+        /* Título principal */
+        header h1 {
+            font-size: 42px;
+            margin-bottom: 12px;
+        }
+
+        /* Subtítulo */
+        header p {
+            font-size: 18px;
+            max-width: 850px;
+            margin: auto;
+            opacity: 0.92;
+        }
+
+        /* ========================================================= */
+        /* MENU                                                       */
+        /* ========================================================= */
+
+        /* Barra de navegação */
+        nav {
+            background: #ffffff;
+            border-bottom: 1px solid #ddd;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        /* Área interna do menu */
+        .menu {
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 8px;
+            padding: 12px;
+        }
+
+        /* Links do menu */
+        .menu a {
+            text-decoration: none;
+            color: #243b53;
+            font-weight: bold;
+            font-size: 14px;
+            padding: 9px 14px;
+            border-radius: 6px;
+            transition: 0.3s;
+        }
+
+        /* Efeito ao passar o mouse */
+        .menu a:hover {
+            background: #243b53;
+            color: white;
+        }
+
+        /* ========================================================= */
+        /* CONTEÚDO PRINCIPAL                                       */
+        /* ========================================================= */
+
+        /* Limita a largura do conteúdo */
+        main {
+            max-width: 1150px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        /* Card de conteúdo */
+        .card {
+            background: white;
+            border-radius: 14px;
+            padding: 30px;
+            margin-bottom: 28px;
+            box-shadow: 0 5px 18px rgba(0, 0, 0, 0.07);
+            border: 1px solid #e5e7eb;
+        }
+
+        /* Títulos das seções */
+        .card h2 {
+            color: #243b53;
+            font-size: 28px;
+            margin-bottom: 20px;
+            border-left: 5px solid #d4a017;
+            padding-left: 14px;
+        }
+
+        /* Subtítulos */
+        .card h3 {
+            color: #334e68;
+            margin-top: 24px;
+            margin-bottom: 10px;
+        }
+
+        /* Parágrafos */
+        .card p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        /* Listas */
+        .card ul,
+        .card ol {
+            margin-left: 25px;
+            margin-bottom: 18px;
+        }
+
+        /* Itens das listas */
+        .card li {
+            margin-bottom: 8px;
+        }
+
+        /* Caixa de destaque */
+        .destaque {
+            background: #f8f3df;
+            border-left: 5px solid #d4a017;
+            padding: 18px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        /* ========================================================= */
+        /* TABELAS                                                    */
+        /* ========================================================= */
+
+        /* Permite rolagem horizontal no celular */
+        .table-container {
+            overflow-x: auto;
+            margin: 20px 0;
+        }
+
+        /* Tabela */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 650px;
+        }
+
+        /* Células */
+        th,
+        td {
+            border: 1px solid #d8dee4;
+            padding: 13px;
+            text-align: left;
+        }
+
+        /* Cabeçalho */
+        th {
+            background: #243b53;
+            color: white;
+        }
+
+        /* Linhas alternadas */
+        tr:nth-child(even) {
+            background: #f7f9fb;
+        }
+
+        /* ========================================================= */
+        /* LINHA DO TEMPO                                            */
+        /* ========================================================= */
+
+        /* Linha vertical da cronologia */
+        .timeline {
+            border-left: 4px solid #d4a017;
+            margin: 25px 0;
+            padding-left: 25px;
+        }
+
+        /* Cada acontecimento */
+        .evento {
+            margin-bottom: 25px;
+            position: relative;
+        }
+
+        /* Marcador do evento */
+        .evento::before {
+            content: "";
+            position: absolute;
+            width: 13px;
+            height: 13px;
+            background: #d4a017;
+            border-radius: 50%;
+            left: -33px;
+            top: 7px;
+        }
+
+        /* Data */
+        .data {
+            font-weight: bold;
+            color: #243b53;
+        }
+
+        /* ========================================================= */
+        /* CONCEITOS                                                 */
+        /* ========================================================= */
+
+        /* Grade de conceitos */
+        .conceitos {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 18px;
+        }
+
+        /* Caixa de conceito */
+        .conceito {
+            background: #f7f9fb;
+            padding: 18px;
+            border-radius: 10px;
+            border: 1px solid #e1e5e9;
+        }
+
+        /* Nome do conceito */
+        .conceito strong {
+            color: #243b53;
+        }
+
+        /* ========================================================= */
+        /* QUESTÕES                                                   */
+        /* ========================================================= */
+
+        /* Caixa da questão */
+        .questao {
+            background: #f8fafc;
+            border: 1px solid #dce2e8;
+            padding: 22px;
+            margin: 20px 0;
+            border-radius: 10px;
+        }
+
+        /* Alternativas */
+        .alternativas {
+            margin-top: 15px;
+        }
+
+        /* Espaçamento */
+        .alternativas p {
+            margin: 8px 0;
+        }
+
+        /* Botão */
+        button {
+            background: #243b53;
+            color: white;
+            border: none;
+            padding: 11px 18px;
+            border-radius: 7px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        /* Efeito do botão */
+        button:hover {
+            background: #d4a017;
+            color: #111827;
+        }
+
+        /* Gabarito escondido */
+        .resposta {
+            display: none;
+            background: #eaf4ea;
+            border-left: 5px solid #3b7d3b;
+            padding: 15px;
+            margin-top: 15px;
+            border-radius: 6px;
+        }
+
+        /* ========================================================= */
+        /* ÁREA DO PROFESSOR                                         */
+        /* ========================================================= */
+
+        /* Card especial do professor */
+        .professor {
+            background: linear-gradient(135deg, #eef3f8, #ffffff);
+            border: 1px solid #d6dee7;
+        }
+
+        /* ========================================================= */
+        /* NAVEGAÇÃO                                                  */
+        /* ========================================================= */
+
+        /* Área dos botões */
+        .navegacao {
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+            margin: 35px 0;
+            flex-wrap: wrap;
+        }
+
+        /* Botões de navegação */
+        .btn {
+            text-decoration: none;
+            background: #243b53;
+            color: white;
+            padding: 13px 20px;
+            border-radius: 7px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        /* Efeito */
+        .btn:hover {
+            background: #d4a017;
+            color: #111827;
+        }
+
+        /* ========================================================= */
+        /* RODAPÉ                                                     */
+        /* ========================================================= */
+
+        /* Rodapé */
+        footer {
+            background: #111827;
+            color: white;
+            text-align: center;
+            padding: 35px 20px;
+            margin-top: 50px;
+        }
+
+        /* Parágrafos do rodapé */
+        footer p {
+            margin: 6px 0;
+            opacity: 0.85;
+        }
+
+        /* ========================================================= */
+        /* RESPONSIVIDADE                                             */
+        /* ========================================================= */
+
+        /* Ajustes para tablets */
+        @media (max-width: 800px) {
+
+            /* Reduz o título */
+            header h1 {
+                font-size: 32px;
+            }
+
+            /* Coloca conceitos em uma coluna */
+            .conceitos {
+                grid-template-columns: 1fr;
+            }
+
+            /* Reduz o espaçamento */
+            .card {
+                padding: 22px;
+            }
+        }
+
+        /* Ajustes para celulares */
+        @media (max-width: 550px) {
+
+            /* Reduz título */
+            header h1 {
+                font-size: 27px;
+            }
+
+            /* Reduz subtítulo */
+            header p {
+                font-size: 16px;
+            }
+
+            /* Ajusta menu */
+            .menu {
+                justify-content: flex-start;
+            }
+
+            /* Reduz títulos */
+            .card h2 {
+                font-size: 23px;
+            }
+
+            /* Remove justificação */
+            .card p {
+                text-align: left;
+            }
+
+            /* Botões ocupam a largura */
+            .btn {
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- ========================================================= -->
+    <!-- CABEÇALHO                                                 -->
+    <!-- ========================================================= -->
+
+    <header id="topo">
+
+        <!-- Nome do curso -->
+        <div class="curso">
+            Curso de História Geral
+        </div>
+
+        <!-- Título do capítulo -->
+        <h1>1.13 — As Cruzadas</h1>
+
+        <!-- Público-alvo -->
+        <p>
+            Fund II • Ensino Médio • ENEM • Vestibular • Concursos
+        </p>
+
+    </header>
+
+    <!-- ========================================================= -->
+    <!-- MENU                                                       -->
+    <!-- ========================================================= -->
+
+    <nav>
+
+        <!-- Links internos -->
+        <div class="menu">
+
+            <!-- Link para o começo -->
+            <a href="#comeco">O Começo</a>
+
+            <!-- Link para desenvolvimento -->
+            <a href="#desenvolvimento">Desenvolvimento</a>
+
+            <!-- Link para legado -->
+            <a href="#legado">Legado</a>
+
+            <!-- Link para cronologia -->
+            <a href="#cronologia">Cronologia</a>
+
+            <!-- Link para conceitos -->
+            <a href="#conceitos">Conceitos</a>
+
+            <!-- Link para questões -->
+            <a href="#questoes">Questões</a>
+
+        </div>
+
+    </nav>
+
+    <!-- ========================================================= -->
+    <!-- CONTEÚDO PRINCIPAL                                        -->
+    <!-- ========================================================= -->
+
+    <main>
+
+        <!-- ===================================================== -->
+        <!-- INTRODUÇÃO                                             -->
+        <!-- ===================================================== -->
+
+        <section class="card">
+
+            <h2>Introdução</h2>
+
+            <p>
+                As <strong>Cruzadas</strong> foram um conjunto de expedições
+                militares realizadas principalmente entre os séculos XI e XIII,
+                envolvendo diferentes grupos cristãos da Europa Ocidental.
+            </p>
+
+            <p>
+                O fenômeno cruzadista esteve relacionado a diferentes fatores:
+                religiosos, políticos, sociais, econômicos e militares.
+            </p>
+
+            <p>
+                A ideia de que todas as Cruzadas tiveram uma única causa,
+                exclusivamente religiosa ou exclusivamente econômica, simplifica
+                excessivamente um processo histórico complexo.
+            </p>
+
+            <div class="destaque">
+
+                <strong>Ideia central:</strong>
+
+                <p>
+                    As Cruzadas devem ser estudadas como um fenômeno multifacetado,
+                    que envolveu religião, poder político, guerra, interesses
+                    territoriais, relações sociais e circulação entre diferentes
+                    sociedades.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- I — O COMEÇO                                           -->
+        <!-- ===================================================== -->
+
+        <section class="card" id="comeco">
+
+            <h2>I — O COMEÇO</h2>
+
+            <h3>1. A Europa cristã medieval</h3>
+
+            <p>
+                Durante a Alta e a Baixa Idade Média, o cristianismo latino
+                possuía enorme influência sobre a sociedade da Europa Ocidental.
+            </p>
+
+            <p>
+                A Igreja Católica participava da organização social, cultural e
+                política e possuía grande autoridade religiosa.
+            </p>
+
+            <h3>2. O contexto do século XI</h3>
+
+            <p>
+                A partir do século XI, a Europa passou por crescimento populacional,
+                expansão agrícola, crescimento das cidades e intensificação das
+                atividades comerciais.
+            </p>
+
+            <p>
+                Ao mesmo tempo, existiam conflitos entre diferentes poderes
+                políticos e militares.
+            </p>
+
+            <h3>3. O Oriente Mediterrâneo</h3>
+
+            <p>
+                O Mediterrâneo oriental era uma região de intenso contato entre
+                diferentes sociedades.
+            </p>
+
+            <p>
+                Ali conviviam e se relacionavam populações cristãs, muçulmanas
+                e judaicas, além de diferentes comunidades políticas e culturais.
+            </p>
+
+            <h3>4. Jerusalém</h3>
+
+            <p>
+                Jerusalém possuía enorme importância religiosa para cristãos,
+                muçulmanos e judeus.
+            </p>
+
+            <p>
+                Para os cristãos medievais, a cidade estava associada à vida,
+                morte e ressurreição de Jesus.
+            </p>
+
+            <p>
+                Para os muçulmanos, Jerusalém também possuía grande importância
+                religiosa, especialmente por sua associação com a tradição
+                islâmica.
+            </p>
+
+            <h3>5. O Império Bizantino</h3>
+
+            <p>
+                O Império Bizantino enfrentava pressões militares de diferentes
+                grupos, especialmente no contexto da expansão dos turcos
+                seljúcidas.
+            </p>
+
+            <p>
+                O imperador bizantino Aleixo I Comneno solicitou apoio militar
+                ao Ocidente latino.
+            </p>
+
+            <h3>6. O Concílio de Clermont</h3>
+
+            <p>
+                Em 1095, o papa Urbano II convocou uma expedição militar em apoio
+                aos cristãos do Oriente e à recuperação de lugares considerados
+                sagrados pelos cristãos.
+            </p>
+
+            <p>
+                O discurso de Clermont tornou-se um marco tradicional do início
+                da Primeira Cruzada.
+            </p>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- II — DESENVOLVIMENTO                                   -->
+        <!-- ===================================================== -->
+
+        <section class="card" id="desenvolvimento">
+
+            <h2>II — O DESENVOLVIMENTO</h2>
+
+            <h3>1. A Primeira Cruzada</h3>
+
+            <p>
+                A Primeira Cruzada ocorreu entre 1096 e 1099.
+            </p>
+
+            <p>
+                Diferentes grupos de nobres, cavaleiros e outros participantes
+                partiram da Europa Ocidental em direção ao Oriente.
+            </p>
+
+            <p>
+                Em 1099, Jerusalém foi conquistada pelos cruzados.
+            </p>
+
+            <p>
+                Após a conquista, foram estabelecidos Estados cruzados no Oriente
+                Mediterrâneo.
+            </p>
+
+            <h3>2. Os Estados cruzados</h3>
+
+            <p>
+                Entre os territórios estabelecidos pelos cruzados estavam o
+                Reino de Jerusalém, o Condado de Edessa, o Principado de Antioquia
+                e o Condado de Trípoli.
+            </p>
+
+            <p>
+                Esses Estados enfrentaram conflitos permanentes com poderes
+                muçulmanos da região.
+            </p>
+
+            <h3>3. A Segunda Cruzada</h3>
+
+            <p>
+                A Segunda Cruzada ocorreu entre 1147 e 1149.
+            </p>
+
+            <p>
+                Ela foi organizada após a queda do Condado de Edessa em 1144.
+            </p>
+
+            <p>
+                A expedição não conseguiu alcançar seus principais objetivos.
+            </p>
+
+            <h3>4. Saladino</h3>
+
+            <p>
+                No século XII, o líder muçulmano <strong>Saladino</strong>
+                tornou-se uma das principais figuras políticas e militares da
+                região.
+            </p>
+
+            <p>
+                Em 1187, suas forças derrotaram os cruzados na Batalha de Hattin
+                e posteriormente retomaram Jerusalém.
+            </p>
+
+            <h3>5. A Terceira Cruzada</h3>
+
+            <p>
+                A conquista de Jerusalém por Saladino estimulou a organização da
+                Terceira Cruzada, entre 1189 e 1192.
+            </p>
+
+            <p>
+                Entre os principais líderes cristãos estavam Ricardo I da Inglaterra,
+                Filipe II da França e o imperador Frederico Barbarossa.
+            </p>
+
+            <p>
+                A expedição não recuperou Jerusalém, mas garantiu aos cristãos
+                ocidentais acesso a alguns lugares da região.
+            </p>
+
+            <h3>6. A Quarta Cruzada</h3>
+
+            <p>
+                A Quarta Cruzada apresenta uma das maiores mudanças de direção
+                do movimento cruzadista.
+            </p>
+
+            <p>
+                Em 1204, os cruzados conquistaram e saquearam Constantinopla,
+                capital do Império Bizantino.
+            </p>
+
+            <p>
+                O episódio aprofundou as divisões entre cristãos do Ocidente
+                e do Oriente.
+            </p>
+
+            <div class="destaque">
+
+                <strong>Para o professor:</strong>
+
+                <p>
+                    A Quarta Cruzada é um excelente exemplo de como interesses
+                    políticos, financeiros e estratégicos podiam alterar os
+                    objetivos originalmente apresentados para uma expedição.
+                </p>
+
+            </div>
+
+            <h3>7. Outras cruzadas</h3>
+
+            <p>
+                Além das expedições tradicionalmente numeradas, existiram outros
+                movimentos considerados cruzadistas em diferentes regiões.
+            </p>
+
+            <p>
+                Entre eles estiveram campanhas na Península Ibérica, no Báltico
+                e contra grupos considerados inimigos da Igreja.
+            </p>
+
+            <h3>8. Cruzada Albigense</h3>
+
+            <p>
+                No início do século XIII, uma cruzada foi dirigida contra os
+                cátaros no sul da França.
+            </p>
+
+            <p>
+                O episódio demonstra que a ideia de cruzada não ficou limitada
+                à disputa pelo controle de Jerusalém.
+            </p>
+
+            <h3>9. A chamada Cruzada das Crianças</h3>
+
+            <p>
+                A chamada “Cruzada das Crianças”, associada principalmente a
+                acontecimentos de 1212, é cercada por problemas documentais e
+                interpretações posteriores.
+            </p>
+
+            <p>
+                Por isso, o professor deve tratar o episódio com cuidado,
+                evitando apresentar versões lendárias como fatos históricos
+                plenamente comprovados.
+            </p>
+
+            <h3>10. Motivação religiosa</h3>
+
+            <p>
+                A religião foi elemento fundamental para mobilizar muitos
+                participantes.
+            </p>
+
+            <p>
+                A ideia de peregrinação armada, penitência e defesa da fé
+                cristã aparecia em discursos e práticas do movimento.
+            </p>
+
+            <h3>11. Interesses políticos</h3>
+
+            <p>
+                Reis, nobres, papas, senhores feudais e outros grupos possuíam
+                interesses políticos próprios.
+            </p>
+
+            <p>
+                As Cruzadas também estavam relacionadas às disputas pelo poder
+                dentro da própria sociedade cristã europeia.
+            </p>
+
+            <h3>12. Interesses econômicos</h3>
+
+            <p>
+                As atividades comerciais também estavam relacionadas ao contexto
+                das Cruzadas.
+            </p>
+
+            <p>
+                Cidades mercantis italianas, como Veneza e Gênova, participaram
+                intensamente das redes de transporte e comércio associadas às
+                expedições.
+            </p>
+
+            <p>
+                Entretanto, é incorreto explicar todas as Cruzadas apenas como
+                uma tentativa de enriquecimento comercial.
+            </p>
+
+            <h3>13. Contatos entre sociedades</h3>
+
+            <p>
+                As Cruzadas ampliaram contatos entre europeus ocidentais,
+                bizantinos e populações muçulmanas.
+            </p>
+
+            <p>
+                Esses contatos envolveram conflitos, mas também comércio,
+                circulação de conhecimentos, tecnologias, produtos e práticas
+                culturais.
+            </p>
+
+            <h3>14. Relações entre cristãos</h3>
+
+            <p>
+                Um aspecto importante é perceber que os conflitos não ocorreram
+                apenas entre cristãos e muçulmanos.
+            </p>
+
+            <p>
+                A Quarta Cruzada mostrou que os próprios cristãos ocidentais e
+                orientais podiam entrar em conflito profundo.
+            </p>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- III — LEGADO                                           -->
+        <!-- ===================================================== -->
+
+        <section class="card" id="legado">
+
+            <h2>III — O LEGADO E O MUNDO ATUAL</h2>
+
+            <h3>1. Intensificação das conexões mediterrâneas</h3>
+
+            <p>
+                As Cruzadas ocorreram dentro de um Mediterrâneo caracterizado
+                por circulação de pessoas, mercadorias e conhecimentos.
+            </p>
+
+            <p>
+                O movimento cruzadista fez parte desse sistema mais amplo de
+                contatos.
+            </p>
+
+            <h3>2. Comércio</h3>
+
+            <p>
+                Mercadores e cidades portuárias participaram das redes de
+                circulação ligadas ao Mediterrâneo oriental.
+            </p>
+
+            <p>
+                Veneza e Gênova, por exemplo, aumentaram sua presença comercial
+                na região.
+            </p>
+
+            <h3>3. Relações entre cristãos e muçulmanos</h3>
+
+            <p>
+                As Cruzadas deixaram uma memória histórica complexa.
+            </p>
+
+            <p>
+                Para diferentes sociedades, o significado desses acontecimentos
+                foi construído de maneiras distintas ao longo dos séculos.
+            </p>
+
+            <h3>4. Relações entre Ocidente e Oriente cristão</h3>
+
+            <p>
+                A conquista de Constantinopla em 1204 agravou a ruptura entre
+                cristãos latinos e bizantinos.
+            </p>
+
+            <p>
+                O episódio é fundamental para compreender a complexidade das
+                relações dentro do próprio cristianismo medieval.
+            </p>
+
+            <h3>5. Impacto cultural</h3>
+
+            <p>
+                Os contatos entre diferentes sociedades contribuíram para a
+                circulação de conhecimentos, técnicas e produtos.
+            </p>
+
+            <p>
+                Entretanto, é importante evitar a ideia simplista de que os
+                europeus “descobriram” todo o conhecimento oriental por causa
+                das Cruzadas.
+            </p>
+
+            <h3>6. Uma leitura crítica no presente</h3>
+
+            <p>
+                O estudo das Cruzadas também permite compreender como acontecimentos
+                históricos podem ser reinterpretados posteriormente por diferentes
+                sociedades.
+            </p>
+
+            <p>
+                Termos como “cruzada” e “guerra santa” podem adquirir significados
+                diferentes dependendo do contexto histórico em que são utilizados.
+            </p>
+
+            <div class="destaque">
+
+                <strong>Conexão com o presente:</strong>
+
+                <p>
+                    Estudar as Cruzadas historicamente exige distinguir os
+                    acontecimentos medievais de usos políticos e religiosos
+                    posteriores da memória desses acontecimentos.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- CRONOLOGIA                                              -->
+        <!-- ===================================================== -->
+
+        <section class="card" id="cronologia">
+
+            <h2>Cronologia essencial</h2>
+
+            <div class="timeline">
+
+                <div class="evento">
+
+                    <div class="data">1095</div>
+
+                    Concílio de Clermont e convocação da Primeira Cruzada.
+
+                </div>
+
+                <div class="evento">
+
+                    <div class="data">1096–1099</div>
+
+                    Primeira Cruzada.
+
+                </div>
+
+                <div class="evento">
+
+                    <div class="data">1099</div>
+
+                    Conquista de Jerusalém pelos cruzados.
+
+                </div>
+
+                <div class="evento">
+
+                    <div class="data">1144</div>
+
+                    Queda de Edessa.
+
+                </div>
+
+                <div class="evento">
+
+                    <div class="data">1147–1149</div>
+
+                    Segunda Cruzada.
+
+                </div>
+
+                <div class="evento">
+
+                    <div class="data">1187</div>
+
+                    Saladino derrota os cruzados em Hattin e retoma Jerusalém.
+
+                </div>
+
+                <div class="evento">
+
+                    <div class="data">1189–1192</div>
+
+                    Terceira Cruzada.
+
+                </div>
+
+                <div class="evento">
+
+                    <div class="data">1204</div>
+
+                    Quarta Cruzada conquista e saqueia Constantinopla.
+
+                </div>
+
+                <div class="evento">
+
+                    <div class="data">Século XIII</div>
+
+                    Expansão de movimentos cruzadistas para outras regiões e conflitos.
+
+                </div>
+
+                <div class="evento">
+
+                    <div class="data">1291</div>
+
+                    Queda de Acre, um dos últimos grandes centros cruzados no Oriente.
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- CONCEITOS                                               -->
+        <!-- ===================================================== -->
+
+        <section class="card" id="conceitos">
+
+            <h2>Conceitos fundamentais</h2>
+
+            <div class="conceitos">
+
+                <div class="conceito">
+
+                    <strong>Cruzadas:</strong>
+
+                    Expedições militares de caráter religioso e político associadas principalmente ao cristianismo latino medieval.
+
+                </div>
+
+                <div class="conceito">
+
+                    <strong>Guerra Santa:</strong>
+
+                    Conceito utilizado em diferentes contextos históricos para caracterizar conflitos considerados religiosamente legitimados.
+
+                </div>
+
+                <div class="conceito">
+
+                    <strong>Peregrinação:</strong>
+
+                    Viagem realizada por motivos religiosos até um local considerado sagrado.
+
+                </div>
+
+                <div class="conceito">
+
+                    <strong>Jerusalém:</strong>
+
+                    Cidade de enorme importância religiosa para judaísmo, cristianismo e islamismo.
+
+                </div>
+
+                <div class="conceito">
+
+                    <strong>Estados Cruzados:</strong>
+
+                    Territórios estabelecidos pelos cruzados no Oriente Mediterrâneo.
+
+                </div>
+
+                <div class="conceito">
+
+                    <strong>Saladino:</strong>
+
+                    Líder muçulmano que enfrentou os cruzados e retomou Jerusalém em 1187.
+
+                </div>
+
+                <div class="conceito">
+
+                    <strong>Reconquista:</strong>
+
+                    Processo histórico de expansão dos reinos cristãos na Península Ibérica contra territórios sob domínio muçulmano.
+
+                </div>
+
+                <div class="conceito">
+
+                    <strong>Concílio de Clermont:</strong>
+
+                    Assembleia de 1095 associada à convocação da Primeira Cruzada.
+
+                </div>
+
+                <div class="conceito">
+
+                    <strong>Quarta Cruzada:</strong>
+
+                    Expedição que culminou na conquista e saque de Constantinopla em 1204.
+
+                </div>
+
+                <div class="conceito">
+
+                    <strong>Oriente Mediterrâneo:</strong>
+
+                    Região estratégica de contato entre diferentes sociedades, religiões e redes comerciais.
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- CAUSAS E CONSEQUÊNCIAS                                 -->
+        <!-- ===================================================== -->
+
+        <section class="card">
+
+            <h2>Causas e consequências</h2>
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Processo</th>
+
+                            <th>Contexto / causas</th>
+
+                            <th>Consequências</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+
+                            <td>Primeira Cruzada</td>
+
+                            <td>Apelo religioso, pedido bizantino de auxílio e interesses políticos</td>
+
+                            <td>Conquista de Jerusalém e formação dos Estados Cruzados</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Segunda Cruzada</td>
+
+                            <td>Queda de Edessa</td>
+
+                            <td>Fracasso da expedição</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Terceira Cruzada</td>
+
+                            <td>Retomada de Jerusalém por Saladino</td>
+
+                            <td>Manutenção de posições cristãs no litoral e acordo de acesso a Jerusalém</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Quarta Cruzada</td>
+
+                            <td>Interesses políticos e financeiros e conflitos com Bizâncio</td>
+
+                            <td>Conquista e saque de Constantinopla</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Expansão comercial</td>
+
+                            <td>Intensificação das redes mediterrâneas</td>
+
+                            <td>Maior circulação de mercadorias e comerciantes</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Contatos culturais</td>
+
+                            <td>Circulação de pessoas e conhecimentos</td>
+
+                            <td>Intercâmbios culturais, técnicos e científicos</td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- O QUE O PROFESSOR PRECISA DOMINAR                     -->
+        <!-- ===================================================== -->
+
+        <section class="card professor">
+
+            <h2>O que o professor precisa dominar</h2>
+
+            <ul>
+
+                <li>
+                    Explicar o contexto europeu do século XI.
+                </li>
+
+                <li>
+                    Explicar por que Jerusalém era uma cidade estratégica e religiosa.
+                </li>
+
+                <li>
+                    Relacionar as Cruzadas ao contexto do Império Bizantino.
+                </li>
+
+                <li>
+                    Explicar o papel do papa Urbano II.
+                </li>
+
+                <li>
+                    Conhecer as principais Cruzadas.
+                </li>
+
+                <li>
+                    Explicar a formação dos Estados Cruzados.
+                </li>
+
+                <li>
+                    Compreender o papel de Saladino.
+                </li>
+
+                <li>
+                    Explicar a importância da Quarta Cruzada.
+                </li>
+
+                <li>
+                    Relacionar Cruzadas e comércio mediterrâneo.
+                </li>
+
+                <li>
+                    Evitar explicações monocausais.
+                </li>
+
+                <li>
+                    Diferenciar acontecimentos históricos de interpretações posteriores.
+                </li>
+
+            </ul>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- LOUSA                                                    -->
+        <!-- ===================================================== -->
+
+        <section class="card">
+
+            <h2>O que colocar na lousa</h2>
+
+            <div class="destaque">
+
+                <p>
+                    <strong>CRUZADAS — SÉCULOS XI–XIII</strong>
+                </p>
+
+                <p>
+                    Contexto europeu
+                </p>
+
+                <p>
+                    ↓
+                </p>
+
+                <p>
+                    Crescimento populacional + expansão comercial
+                </p>
+
+                <p>
+                    ↓
+                </p>
+
+                <p>
+                    1095 → Urbano II
+                </p>
+
+                <p>
+                    ↓
+                </p>
+
+                <p>
+                    1096–1099 → 1ª Cruzada
+                </p>
+
+                <p>
+                    ↓
+                </p>
+
+                <p>
+                    1099 → Jerusalém
+                </p>
+
+                <p>
+                    ↓
+                </p>
+
+                <p>
+                    Estados Cruzados
+                </p>
+
+                <p>
+                    ↓
+                </p>
+
+                <p>
+                    1187 → Saladino retoma Jerusalém
+                </p>
+
+                <p>
+                    ↓
+                </p>
+
+                <p>
+                    1189–1192 → 3ª Cruzada
+                </p>
+
+                <p>
+                    ↓
+                </p>
+
+                <p>
+                    1204 → 4ª Cruzada → Constantinopla
+                </p>
+
+                <p>
+                    <strong>Motivações: religião + política + território + economia</strong>
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- BNCC                                                    -->
+        <!-- ===================================================== -->
+
+        <section class="card">
+
+            <h2>BNCC — possibilidades de trabalho</h2>
+
+            <p>
+                O estudo das Cruzadas pode ser articulado às habilidades da BNCC
+                que tratam das relações entre populações, circulação no
+                Mediterrâneo e papel da religião na organização das sociedades
+                medievais.
+            </p>
+
+            <ul>
+
+                <li>
+
+                    <strong>EF06HI14:</strong>
+
+                    análise das diferentes formas de contato, adaptação ou
+                    exclusão entre populações em diferentes tempos e espaços.
+
+                </li>
+
+                <li>
+
+                    <strong>EF06HI15:</strong>
+
+                    estudo das dinâmicas de circulação de pessoas, produtos e
+                    culturas no Mediterrâneo.
+
+                </li>
+
+                <li>
+
+                    <strong>EF06HI18:</strong>
+
+                    análise do papel da religião cristã na cultura e nos modos
+                    de organização social medieval.
+
+                </li>
+
+            </ul>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- ENEM                                                    -->
+        <!-- ===================================================== -->
+
+        <section class="card">
+
+            <h2>ENEM • Vestibular • Concurso</h2>
+
+            <h3>Pontos importantes</h3>
+
+            <ul>
+
+                <li>
+                    Contexto europeu do século XI.
+                </li>
+
+                <li>
+                    Concílio de Clermont.
+                </li>
+
+                <li>
+                    Urbano II.
+                </li>
+
+                <li>
+                    Primeira Cruzada.
+                </li>
+
+                <li>
+                    Estados Cruzados.
+                </li>
+
+                <li>
+                    Saladino e Jerusalém.
+                </li>
+
+                <li>
+                    Terceira Cruzada.
+                </li>
+
+                <li>
+                    Quarta Cruzada.
+                </li>
+
+                <li>
+                    Constantinopla em 1204.
+                </li>
+
+                <li>
+                    Relação entre religião, política e economia.
+                </li>
+
+                <li>
+                    Circulação de pessoas, produtos e conhecimentos.
+                </li>
+
+            </ul>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- QUESTÕES                                                -->
+        <!-- ===================================================== -->
+
+        <section class="card" id="questoes">
+
+            <h2>Questões de revisão</h2>
+
+            <!-- QUESTÃO 1 -->
+
+            <div class="questao">
+
+                <h3>Questão 1 — ENEM</h3>
+
+                <p>
+                    As Cruzadas foram apresentadas por seus organizadores
+                    medievais utilizando argumentos religiosos. Entretanto,
+                    sua realização envolveu também disputas políticas,
+                    interesses territoriais e relações econômicas.
+                </p>
+
+                <p>
+                    A interpretação histórica mais adequada desse processo é
+                </p>
+
+                <div class="alternativas">
+
+                    <p>
+                        <strong>A)</strong>
+                        considerar as Cruzadas exclusivamente como fenômeno econômico.
+                    </p>
+
+                    <p>
+                        <strong>B)</strong>
+                        considerar as Cruzadas exclusivamente como fenômeno religioso.
+                    </p>
+
+                    <p>
+                        <strong>C)</strong>
+                        analisar a combinação de diferentes fatores históricos.
+                    </p>
+
+                    <p>
+                        <strong>D)</strong>
+                        considerar que as Cruzadas não tiveram relação com religião.
+                    </p>
+
+                    <p>
+                        <strong>E)</strong>
+                        considerar que todos os participantes possuíam exatamente os mesmos interesses.
+                    </p>
+
+                </div>
+
+                <button onclick="mostrarResposta('resposta1')">
+                    Mostrar gabarito
+                </button>
+
+                <div class="resposta" id="resposta1">
+
+                    <strong>Gabarito: C.</strong>
+
+                    <p>
+                        O fenômeno cruzadista envolveu diferentes fatores,
+                        incluindo religião, política, território, guerra,
+                        relações sociais e interesses econômicos.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- QUESTÃO 2 -->
+
+            <div class="questao">
+
+                <h3>Questão 2 — Vestibular</h3>
+
+                <p>
+                    Em 1204, participantes da Quarta Cruzada conquistaram e
+                    saquearam Constantinopla, cidade central do Império Bizantino.
+                </p>
+
+                <p>
+                    Esse acontecimento demonstra que
+                </p>
+
+                <div class="alternativas">
+
+                    <p>
+                        <strong>A)</strong>
+                        os conflitos medievais ocorreram exclusivamente entre cristãos e muçulmanos.
+                    </p>
+
+                    <p>
+                        <strong>B)</strong>
+                        as relações entre cristãos ocidentais e orientais também podiam envolver conflitos políticos e militares.
+                    </p>
+
+                    <p>
+                        <strong>C)</strong>
+                        o Império Bizantino deixou de existir imediatamente em 1204.
+                    </p>
+
+                    <p>
+                        <strong>D)</strong>
+                        as Cruzadas sempre obedeceram rigorosamente aos objetivos religiosos inicialmente anunciados.
+                    </p>
+
+                    <p>
+                        <strong>E)</strong>
+                        Constantinopla não possuía importância estratégica.
+                    </p>
+
+                </div>
+
+                <button onclick="mostrarResposta('resposta2')">
+                    Mostrar gabarito
+                </button>
+
+                <div class="resposta" id="resposta2">
+
+                    <strong>Gabarito: B.</strong>
+
+                    <p>
+                        A Quarta Cruzada evidencia que os conflitos medievais
+                        também ocorreram dentro do próprio mundo cristão,
+                        envolvendo interesses políticos, econômicos e militares.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- REVISÃO DE 60 SEGUNDOS                                 -->
+        <!-- ===================================================== -->
+
+        <section class="card">
+
+            <h2>Revisão em 60 segundos</h2>
+
+            <p>
+                As Cruzadas foram expedições militares realizadas principalmente
+                entre os séculos XI e XIII e envolveram múltiplos fatores.
+            </p>
+
+            <p>
+                A Primeira Cruzada foi convocada após o Concílio de Clermont,
+                em 1095, e terminou com a conquista de Jerusalém em 1099.
+            </p>
+
+            <p>
+                Os cruzados estabeleceram Estados no Oriente Mediterrâneo.
+                Posteriormente, Saladino retomou Jerusalém em 1187.
+            </p>
+
+            <p>
+                A Terceira Cruzada ocorreu entre 1189 e 1192.
+            </p>
+
+            <p>
+                Em 1204, a Quarta Cruzada conquistou Constantinopla,
+                aprofundando a divisão entre cristãos ocidentais e orientais.
+            </p>
+
+            <p>
+                As Cruzadas também ampliaram contatos entre diferentes sociedades,
+                influenciando relações comerciais, políticas e culturais.
+            </p>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- NAVEGAÇÃO                                               -->
+        <!-- ===================================================== -->
+
+        <div class="navegacao">
+
+            <!-- Volta ao capítulo anterior -->
+            <a class="btn" href="../13-Baixa-Idade-Media/index.html">
+                ← Voltar — Baixa Idade Média
+            </a>
+
+            <!-- Volta ao topo -->
+            <a class="btn" href="#topo">
+                ↑ Voltar ao topo
+            </a>
+
+            <!-- Vai para o próximo capítulo -->
+            <a class="btn" href="../15-Renascimento-Comercial-Urbano/index.html">
+                Próximo — Renascimento Comercial e Urbano →
+            </a>
+
+        </div>
+
+    </main>
+
+    <!-- ========================================================= -->
+    <!-- RODAPÉ                                                    -->
+    <!-- ========================================================= -->
+
+    <footer>
+
+        <!-- Nome do curso -->
+        <p>
+            <strong>Curso de História Geral</strong>
+        </p>
+
+        <!-- Nome do professor -->
+        <p>
+            Professor Marcelo Oliveira
+        </p>
+
+        <!-- Público do curso -->
+        <p>
+            Fund II • Ensino Médio • ENEM • Vestibular • Concursos
+        </p>
+
+        <!-- Identificação do material -->
+        <p>
+            Material didático de apoio ao ensino de História.
+        </p>
+
+    </footer>
+
+    <!-- ========================================================= -->
+    <!-- JAVASCRIPT                                                -->
+    <!-- ========================================================= -->
+
+    <script>
+
+        // Cria a função responsável por mostrar ou esconder o gabarito.
+        function mostrarResposta(id) {
+
+            // Localiza a resposta pelo ID recebido.
+            const resposta = document.getElementById(id);
+
+            // Verifica se a resposta está escondida.
+            if (resposta.style.display === "none" || resposta.style.display === "") {
+
+                // Mostra a resposta.
+                resposta.style.display = "block";
+
+            } else {
+
+                // Esconde a resposta.
+                resposta.style.display = "none";
+
+            }
+
+        }
+
+    </script>
+    <script>
+  const paginaAnterior = "12 - Questao-das-Investiduras.html";
+  const paginaProxima = "14 - Renascimento-Comercial-Urbano.html";
+</script>
+<script src="navegacao.js"></script>
+
+</body>
+
+</html>

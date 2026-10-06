@@ -1,0 +1,1856 @@
+<!DOCTYPE html>
+<!-- Define que o documento utiliza HTML5. -->
+
+<html lang="pt-BR">
+<!-- Define o português do Brasil como idioma da página. -->
+
+<head>
+    <!-- Inicia a área de configurações do documento. -->
+
+    <meta charset="UTF-8">
+    <!-- Permite acentos e caracteres especiais corretamente. -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Faz a página se adaptar a celulares, tablets e computadores. -->
+
+    <title>1.5 — Grécia | Curso de História Geral</title>
+    <!-- Define o título da aba do navegador. -->
+
+    <style>
+        /* ========================================= */
+        /* CONFIGURAÇÕES GERAIS                      */
+        /* ========================================= */
+
+        * {
+            /* Seleciona todos os elementos da página. */
+            box-sizing: border-box;
+            /* Faz padding e bordas serem considerados dentro do tamanho. */
+            margin: 0;
+            /* Remove margens padrão. */
+            padding: 0;
+            /* Remove espaçamentos padrão. */
+        }
+
+        html {
+            /* Configura o documento HTML. */
+            scroll-behavior: smooth;
+            /* Faz a rolagem entre seções acontecer suavemente. */
+        }
+
+        body {
+            /* Configura o corpo da página. */
+            font-family: Arial, Helvetica, sans-serif;
+            /* Define uma fonte profissional e compatível. */
+            background: #f3f6fa;
+            /* Define o fundo geral. */
+            color: #1f2937;
+            /* Define a cor principal dos textos. */
+            line-height: 1.7;
+            /* Melhora a leitura dos parágrafos. */
+        }
+
+        button {
+            /* Configura todos os botões. */
+            font-family: inherit;
+            /* Faz o botão usar a mesma fonte da página. */
+            cursor: pointer;
+            /* Mostra o cursor de clique. */
+        }
+
+        /* ========================================= */
+        /* CABEÇALHO                                  */
+        /* ========================================= */
+
+        header {
+            /* Configura o cabeçalho principal. */
+            background: linear-gradient(135deg, #111827, #243447);
+            /* Cria um degradê escuro profissional. */
+            color: white;
+            /* Define os textos como brancos. */
+            padding: 55px 20px;
+            /* Cria espaço interno. */
+            text-align: center;
+            /* Centraliza os textos. */
+            border-bottom: 5px solid #c89b3c;
+            /* Cria uma linha dourada na parte inferior. */
+        }
+
+        header .numero {
+            /* Configura o identificador da aula. */
+            color: #e5c76b;
+            /* Define a cor dourada. */
+            font-weight: bold;
+            /* Coloca o texto em negrito. */
+            letter-spacing: 2px;
+            /* Aumenta o espaçamento entre as letras. */
+            margin-bottom: 12px;
+            /* Cria espaço abaixo. */
+        }
+
+        header h1 {
+            /* Configura o título principal. */
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            /* Faz o título se adaptar ao tamanho da tela. */
+            margin-bottom: 15px;
+            /* Cria espaço abaixo do título. */
+        }
+
+        header p {
+            /* Configura os parágrafos do cabeçalho. */
+            max-width: 900px;
+            /* Limita a largura dos textos. */
+            margin: 8px auto;
+            /* Centraliza os textos. */
+            color: #dbe4ee;
+            /* Define uma cor clara. */
+        }
+
+        /* ========================================= */
+        /* MENU DE NAVEGAÇÃO                          */
+        /* ========================================= */
+
+        nav {
+            /* Configura a barra de navegação. */
+            position: sticky;
+            /* Mantém o menu preso ao topo durante a rolagem. */
+            top: 0;
+            /* Define a posição superior. */
+            z-index: 1000;
+            /* Mantém o menu acima dos demais elementos. */
+            background: white;
+            /* Define fundo branco. */
+            border-bottom: 1px solid #dbe2ea;
+            /* Cria uma linha inferior. */
+            padding: 12px;
+            /* Cria espaço interno. */
+            display: flex;
+            /* Coloca os botões em linha. */
+            justify-content: center;
+            /* Centraliza os botões. */
+            gap: 10px;
+            /* Cria espaço entre os botões. */
+            flex-wrap: wrap;
+            /* Permite quebra em telas pequenas. */
+        }
+
+        nav button {
+            /* Configura os botões do menu. */
+            background: #eef2f7;
+            /* Define fundo claro. */
+            color: #243447;
+            /* Define a cor do texto. */
+            border: 1px solid #d5dde7;
+            /* Cria uma borda discreta. */
+            border-radius: 8px;
+            /* Arredonda os cantos. */
+            padding: 10px 16px;
+            /* Define o espaço interno. */
+            font-weight: bold;
+            /* Deixa o texto destacado. */
+            transition: 0.2s;
+            /* Cria uma transição suave. */
+        }
+
+        nav button:hover {
+            /* Define o efeito ao passar o mouse. */
+            background: #243447;
+            /* Muda o fundo para escuro. */
+            color: white;
+            /* Muda o texto para branco. */
+            transform: translateY(-2px);
+            /* Move levemente o botão para cima. */
+        }
+
+        /* ========================================= */
+        /* CONTEÚDO PRINCIPAL                         */
+        /* ========================================= */
+
+        main {
+            /* Configura o conteúdo principal. */
+            max-width: 1150px;
+            /* Limita a largura máxima. */
+            margin: auto;
+            /* Centraliza o conteúdo. */
+            padding: 35px 20px 80px;
+            /* Cria espaçamento interno. */
+        }
+
+        section {
+            /* Configura cada seção. */
+            background: white;
+            /* Define fundo branco. */
+            border-radius: 16px;
+            /* Arredonda os cantos. */
+            padding: 35px;
+            /* Cria espaço interno. */
+            margin-bottom: 30px;
+            /* Cria espaço entre seções. */
+            box-shadow: 0 8px 25px rgba(15, 23, 42, 0.07);
+            /* Adiciona uma sombra discreta. */
+            scroll-margin-top: 90px;
+            /* Evita que o menu esconda os títulos. */
+        }
+
+        section h2 {
+            /* Configura os títulos das seções. */
+            color: #243447;
+            /* Define a cor do título. */
+            font-size: 1.9rem;
+            /* Define o tamanho. */
+            margin-bottom: 20px;
+            /* Cria espaço abaixo. */
+            border-left: 5px solid #c89b3c;
+            /* Cria uma marca dourada lateral. */
+            padding-left: 14px;
+            /* Cria espaço entre a borda e o texto. */
+        }
+
+        section h3 {
+            /* Configura os subtítulos. */
+            color: #334e68;
+            /* Define uma cor azul-acinzentada. */
+            margin-top: 25px;
+            /* Cria espaço acima. */
+            margin-bottom: 10px;
+            /* Cria espaço abaixo. */
+        }
+
+        p {
+            /* Configura os parágrafos. */
+            margin-bottom: 15px;
+            /* Cria espaço entre os parágrafos. */
+        }
+
+        strong {
+            /* Configura textos em destaque. */
+            color: #172033;
+            /* Define uma cor mais forte. */
+        }
+
+        /* ========================================= */
+        /* CAIXAS DE DESTAQUE                         */
+        /* ========================================= */
+
+        .destaque {
+            /* Cria uma caixa de destaque. */
+            background: #f7f1df;
+            /* Define fundo bege. */
+            border-left: 5px solid #c89b3c;
+            /* Cria uma borda dourada. */
+            padding: 20px;
+            /* Cria espaço interno. */
+            border-radius: 10px;
+            /* Arredonda os cantos. */
+            margin: 20px 0;
+            /* Cria espaço acima e abaixo. */
+        }
+
+        .alerta {
+            /* Cria uma caixa de observação. */
+            background: #eef5fb;
+            /* Define fundo azul claro. */
+            border-left: 5px solid #4b7399;
+            /* Cria uma borda azul. */
+            padding: 20px;
+            /* Cria espaço interno. */
+            border-radius: 10px;
+            /* Arredonda os cantos. */
+            margin: 20px 0;
+            /* Cria espaço acima e abaixo. */
+        }
+
+        /* ========================================= */
+        /* TRILOGIA                                   */
+        /* ========================================= */
+
+        .trilogia {
+            /* Configura os três cartões principais. */
+            display: grid;
+            /* Ativa o sistema de grade. */
+            grid-template-columns: repeat(3, 1fr);
+            /* Cria três colunas. */
+            gap: 20px;
+            /* Cria espaço entre os cartões. */
+            margin-top: 25px;
+            /* Cria espaço acima. */
+        }
+
+        .card {
+            /* Configura cada cartão. */
+            background: #f8fafc;
+            /* Define fundo claro. */
+            border: 1px solid #e1e7ef;
+            /* Define uma borda discreta. */
+            border-radius: 12px;
+            /* Arredonda os cantos. */
+            padding: 22px;
+            /* Cria espaço interno. */
+        }
+
+        .card h3 {
+            /* Configura o título do cartão. */
+            margin-top: 0;
+            /* Remove margem superior. */
+            color: #243447;
+            /* Define a cor. */
+        }
+
+        /* ========================================= */
+        /* LINHA DO TEMPO                             */
+        /* ========================================= */
+
+        .timeline {
+            /* Configura a linha do tempo. */
+            border-left: 4px solid #c89b3c;
+            /* Cria a linha vertical. */
+            padding-left: 25px;
+            /* Cria espaço entre linha e texto. */
+        }
+
+        .timeline-item {
+            /* Configura cada acontecimento. */
+            position: relative;
+            /* Permite posicionar o marcador. */
+            margin-bottom: 25px;
+            /* Cria espaço entre os acontecimentos. */
+        }
+
+        .timeline-item::before {
+            /* Cria o marcador da linha do tempo. */
+            content: "";
+            /* Cria um elemento vazio. */
+            position: absolute;
+            /* Permite posicionamento absoluto. */
+            left: -37px;
+            /* Coloca o marcador sobre a linha. */
+            top: 7px;
+            /* Define a posição vertical. */
+            width: 14px;
+            /* Define a largura. */
+            height: 14px;
+            /* Define a altura. */
+            background: #c89b3c;
+            /* Define a cor dourada. */
+            border-radius: 50%;
+            /* Transforma o marcador em círculo. */
+            border: 3px solid white;
+            /* Cria uma borda branca. */
+        }
+
+        .timeline-item strong {
+            /* Configura as datas. */
+            display: block;
+            /* Coloca a data em linha própria. */
+            color: #9a721f;
+            /* Define a cor dourada escura. */
+            margin-bottom: 4px;
+            /* Cria espaço abaixo. */
+        }
+
+        /* ========================================= */
+        /* LISTAS                                     */
+        /* ========================================= */
+
+        ul,
+        ol {
+            /* Configura as listas. */
+            padding-left: 25px;
+            /* Cria espaço para os marcadores. */
+            margin-bottom: 18px;
+            /* Cria espaço abaixo. */
+        }
+
+        li {
+            /* Configura cada item. */
+            margin-bottom: 8px;
+            /* Cria espaço entre os itens. */
+        }
+
+        /* ========================================= */
+        /* GRADE DE CONCEITOS                         */
+        /* ========================================= */
+
+        .grid {
+            /* Configura a grade. */
+            display: grid;
+            /* Ativa o sistema de grade. */
+            grid-template-columns: repeat(2, 1fr);
+            /* Cria duas colunas. */
+            gap: 18px;
+            /* Cria espaço entre cartões. */
+        }
+
+        /* ========================================= */
+        /* QUESTÕES                                   */
+        /* ========================================= */
+
+        .questao {
+            /* Configura cada questão. */
+            background: #f8fafc;
+            /* Define fundo claro. */
+            border: 1px solid #dce4ed;
+            /* Define borda. */
+            border-radius: 12px;
+            /* Arredonda os cantos. */
+            padding: 25px;
+            /* Cria espaço interno. */
+            margin-bottom: 20px;
+            /* Cria espaço entre questões. */
+        }
+
+        .alternativas {
+            /* Configura as alternativas. */
+            margin-top: 15px;
+            /* Cria espaço acima. */
+        }
+
+        .gabarito {
+            /* Configura o gabarito. */
+            display: none;
+            /* Mantém o gabarito escondido inicialmente. */
+            margin-top: 15px;
+            /* Cria espaço acima. */
+            background: #eaf7ef;
+            /* Define fundo verde claro. */
+            border-left: 5px solid #2e7d4f;
+            /* Cria borda verde. */
+            padding: 18px;
+            /* Cria espaço interno. */
+            border-radius: 8px;
+            /* Arredonda os cantos. */
+        }
+
+        .btn-gabarito {
+            /* Configura o botão do gabarito. */
+            background: #243447;
+            /* Define fundo escuro. */
+            color: white;
+            /* Define texto branco. */
+            border: none;
+            /* Remove borda padrão. */
+            border-radius: 8px;
+            /* Arredonda os cantos. */
+            padding: 10px 16px;
+            /* Define tamanho interno. */
+            margin-top: 15px;
+            /* Cria espaço acima. */
+        }
+
+        .btn-gabarito:hover {
+            /* Define o efeito do botão. */
+            background: #c89b3c;
+            /* Muda o fundo para dourado. */
+            color: #172033;
+            /* Muda a cor do texto. */
+        }
+
+        /* ========================================= */
+        /* RODAPÉ                                     */
+        /* ========================================= */
+
+        footer {
+            /* Configura o rodapé. */
+            background: #111827;
+            /* Define fundo escuro. */
+            color: #dbe4ee;
+            /* Define texto claro. */
+            text-align: center;
+            /* Centraliza o conteúdo. */
+            padding: 35px 20px;
+            /* Cria espaço interno. */
+        }
+
+        footer strong {
+            /* Configura o nome do professor. */
+            color: #e5c76b;
+            /* Define a cor dourada. */
+        }
+
+        /* ========================================= */
+        /* RESPONSIVIDADE                             */
+        /* ========================================= */
+
+        @media (max-width: 850px) {
+            /* Aplica regras para telas menores. */
+
+            .trilogia {
+                /* Ajusta a trilogia. */
+                grid-template-columns: 1fr;
+                /* Coloca os cartões em uma coluna. */
+            }
+
+            .grid {
+                /* Ajusta a grade. */
+                grid-template-columns: 1fr;
+                /* Coloca os cartões em uma coluna. */
+            }
+
+            section {
+                /* Ajusta as seções. */
+                padding: 25px;
+                /* Reduz o espaço interno. */
+            }
+        }
+
+        @media (max-width: 600px) {
+            /* Aplica regras específicas para celulares. */
+
+            header {
+                /* Ajusta o cabeçalho. */
+                padding: 40px 15px;
+                /* Reduz o espaçamento. */
+            }
+
+            header h1 {
+                /* Ajusta o título. */
+                font-size: 2rem;
+                /* Reduz o tamanho. */
+            }
+
+            nav {
+                /* Ajusta o menu. */
+                justify-content: flex-start;
+                /* Alinha os botões à esquerda. */
+                overflow-x: auto;
+                /* Permite rolagem horizontal. */
+                flex-wrap: nowrap;
+                /* Mantém os botões na mesma linha. */
+            }
+
+            nav button {
+                /* Ajusta os botões. */
+                white-space: nowrap;
+                /* Impede quebra do texto. */
+            }
+
+            main {
+                /* Ajusta o conteúdo. */
+                padding: 20px 12px 50px;
+                /* Reduz o espaçamento. */
+            }
+
+            section {
+                /* Ajusta as seções. */
+                padding: 20px;
+                /* Reduz o espaço interno. */
+                border-radius: 12px;
+                /* Reduz o arredondamento. */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Inicia o conteúdo visível da página. -->
+
+    <header>
+        <!-- Inicia o cabeçalho. -->
+
+        <div class="numero">CURSO DE HISTÓRIA GERAL</div>
+        <!-- Identifica o curso. -->
+
+        <h1>1.5 — Grécia</h1>
+        <!-- Apresenta o título da aula. -->
+
+        <p>
+            Fund II • Ensino Médio • ENEM • Vestibular • Concursos
+        </p>
+        <!-- Apresenta o público-alvo. -->
+
+        <p>
+            Da formação das pólis ao mundo helenístico: política, sociedade, religião, cultura e cidadania.
+        </p>
+        <!-- Apresenta o tema central. -->
+    </header>
+
+    <nav>
+        <!-- Inicia o menu de navegação. -->
+
+        <button onclick="irPara('começo')">I — O Começo</button>
+        <!-- Leva à primeira parte. -->
+
+        <button onclick="irPara('desenvolvimento')">II — O Desenvolvimento</button>
+        <!-- Leva à segunda parte. -->
+
+        <button onclick="irPara('legado')">III — O Legado</button>
+        <!-- Leva à terceira parte. -->
+
+        <button onclick="irPara('questoes')">Questões</button>
+        <!-- Leva às questões. -->
+
+        <button onclick="voltarPagina()">← Voltar</button>
+        <!-- Volta para a página anterior. -->
+    </nav>
+
+    <main>
+        <!-- Inicia o conteúdo principal. -->
+
+        <section id="começo">
+            <!-- Inicia a primeira parte da trilogia. -->
+<img src="https://lh5.googleusercontent.com/yApPLJExUcFwClZ8h4kw0EXy56AnnoqL1mRjS0SafXkUJDmzwtEYnNcBoaLQoBwTF5pmEW7C5-Bgaq9FvqwSneP8uoF9jF2leY0WQdzbwfMr-mdvlrgKJc84n1oSn7CdlgoVD9q5XbjiOfT0k3ZExw=w1200-h630-p-k-no-nu" width="600" alt="">
+<img src="https://images.twinkl.co.uk/tw1n/image/private/s--4dd3r7nu--/e_sharpen:100,q_auto:eco,w_1260/image_repo/f9/3a/br-h-1737330873-a-grecia-antiga_ver_1.jpeg" width="600" alt="">
+            <h2>I — O COMEÇO</h2>
+            <!-- Título da primeira parte. -->
+
+            <p>
+                A chamada <strong>Grécia Antiga</strong> não correspondia a um Estado nacional unificado
+                como os Estados modernos. O mundo grego era formado por diferentes comunidades e
+                cidades-Estado, conhecidas como <strong>pólis</strong>, que compartilhavam elementos
+                linguísticos, religiosos e culturais, mas também apresentavam diferenças políticas e sociais.
+            </p>
+            <!-- Apresenta a ideia fundamental sobre a Grécia Antiga. -->
+
+            <p>
+                O espaço grego localizava-se principalmente no sul da Península Balcânica,
+                nas ilhas do mar Egeu e em áreas do litoral da Ásia Menor. O relevo montanhoso,
+                a presença de numerosas ilhas e o acesso ao Mediterrâneo influenciaram a organização
+                econômica e política das comunidades gregas.
+            </p>
+            <!-- Explica a geografia. -->
+
+            <div class="destaque">
+                <!-- Cria uma caixa de destaque. -->
+
+                <strong>Ideia central:</strong>
+                <!-- Destaca a ideia principal. -->
+
+                compreender a Grécia Antiga exige abandonar a ideia de uma única “nação grega”.
+                É necessário observar a diversidade das pólis, suas instituições, seus conflitos
+                e as redes que conectavam o mundo grego.
+                <!-- Explica a ideia central da aula. -->
+            </div>
+
+            <h3>1. O mundo egeu antes das pólis</h3>
+            <!-- Cria um subtítulo. -->
+
+            <p>
+                Antes da formação das pólis clássicas, diferentes sociedades desenvolveram-se no espaço
+                do mar Egeu. Entre elas destacam-se a <strong>civilização minoica</strong>, na ilha de Creta,
+                e a <strong>civilização micênica</strong>, no continente grego.
+            </p>
+            <!-- Apresenta as sociedades pré-pólis. -->
+
+            <p>
+                Os micênicos desenvolveram centros palacianos e participaram de redes de circulação
+                pelo Mediterrâneo oriental. A chamada Idade do Bronze do Egeu foi marcada por contatos,
+                comércio e conflitos entre diferentes comunidades.
+            </p>
+            <!-- Explica as sociedades do período. -->
+
+            <h3>2. A formação das pólis</h3>
+            <!-- Cria um subtítulo. -->
+
+            <p>
+                Entre os séculos VIII e VI a.C., aproximadamente, consolidaram-se diversas
+                <strong>pólis</strong>. A pólis era mais do que uma cidade: envolvia uma comunidade política,
+                um território, instituições, cultos e formas próprias de participação e pertencimento.
+            </p>
+            <!-- Explica o conceito de pólis. -->
+
+            <p>
+                Atenas, Esparta, Corinto e Tebas são exemplos de pólis que desenvolveram estruturas
+                políticas diferentes.
+            </p>
+            <!-- Apresenta exemplos de pólis. -->
+
+            <h3>3. Colonização grega</h3>
+            <!-- Cria um subtítulo. -->
+
+            <p>
+                A partir do período arcaico, grupos gregos fundaram numerosos assentamentos
+                em diferentes áreas do Mediterrâneo e do mar Negro.
+                Esse movimento está relacionado a fatores econômicos, sociais, políticos e demográficos.
+            </p>
+            <!-- Explica a expansão grega. -->
+
+            <p>
+                Esses assentamentos estabeleceram relações variadas com populações locais.
+                Por isso, é inadequado imaginar uma simples ocupação uniforme de territórios.
+                Houve comércio, conflitos, intercâmbios e diferentes formas de interação.
+            </p>
+            <!-- Explica a complexidade das relações coloniais. -->
+
+            <h3>4. Religião e mitologia</h3>
+            <!-- Cria um subtítulo. -->
+
+            <p>
+                A religião grega era predominantemente <strong>politeísta</strong>.
+                Divindades como Zeus, Atena, Apolo, Afrodite e Poseidon ocupavam lugares importantes
+                nos sistemas religiosos de diferentes comunidades.
+            </p>
+            <!-- Apresenta a religião grega. -->
+
+            <p>
+                Os mitos não devem ser tratados apenas como “histórias inventadas”.
+                Para o historiador, eles constituem fontes culturais que permitem investigar
+                valores, representações, relações sociais e formas de compreender o mundo.
+            </p>
+            <!-- Explica a importância histórica dos mitos. -->
+
+            <div class="trilogia">
+                <!-- Inicia os três cartões da trilogia. -->
+
+                <div class="card">
+                    <!-- Primeiro cartão. -->
+
+                    <h3>Geografia</h3>
+                    <!-- Título do cartão. -->
+
+                    <p>
+                        Montanhas + ilhas + litoral mediterrâneo → diversidade regional e circulação marítima.
+                    </p>
+                    <!-- Conteúdo do cartão. -->
+                </div>
+
+                <div class="card">
+                    <!-- Segundo cartão. -->
+
+                    <h3>Pólis</h3>
+                    <!-- Título do cartão. -->
+
+                    <p>
+                        Comunidade política + território + instituições + identidade própria.
+                    </p>
+                    <!-- Conteúdo do cartão. -->
+                </div>
+
+                <div class="card">
+                    <!-- Terceiro cartão. -->
+
+                    <h3>Cultura</h3>
+                    <!-- Título do cartão. -->
+
+                    <p>
+                        Religião + mitologia + filosofia + teatro + arte + diferentes formas de conhecimento.
+                    </p>
+                    <!-- Conteúdo do cartão. -->
+                </div>
+            </div>
+        </section>
+
+        <section id="desenvolvimento">
+            <!-- Inicia a segunda parte da trilogia. -->
+
+            <h2>II — O DESENVOLVIMENTO</h2>
+            <!-- Título da segunda parte. -->
+
+            <p>
+                O mundo grego desenvolveu diferentes modelos de organização política.
+                Atenas e Esparta tornaram-se especialmente importantes para o estudo histórico,
+                mas não devem ser tratadas como representantes de todas as experiências gregas.
+            </p>
+            <!-- Introdução ao desenvolvimento. -->
+
+            <h3>1. Atenas</h3>
+            <!-- Cria um subtítulo. -->
+
+            <p>
+                Atenas passou por diferentes formas de organização política.
+                Ao longo do período arcaico, reformas contribuíram para modificar as relações
+                entre grupos sociais e instituições políticas.
+            </p>
+            <!-- Explica o desenvolvimento político ateniense. -->
+
+            <p>
+                No século V a.C., especialmente após as reformas de <strong>Clístenes</strong>,
+                desenvolveu-se uma experiência democrática ateniense.
+                A participação política estava vinculada à cidadania e era limitada a uma parcela
+                da população.
+            </p>
+            <!-- Explica a democracia ateniense. -->
+
+            <div class="alerta">
+                <!-- Cria uma caixa de atenção. -->
+
+                <strong>Para prova:</strong>
+                <!-- Destaca a informação. -->
+
+                a democracia ateniense não era uma democracia universal.
+                Mulheres, escravizados e estrangeiros residentes não participavam da cidadania política
+                nos mesmos termos dos cidadãos homens adultos.
+                <!-- Explica a inclusão e exclusão. -->
+            </div>
+
+            <h3>2. Esparta</h3>
+            <!-- Cria um subtítulo. -->
+
+            <p>
+                Esparta desenvolveu uma organização política e social bastante diferente da ateniense.
+                A sociedade espartana estava fortemente vinculada à formação militar e ao controle
+                da população submetida em seu território.
+            </p>
+            <!-- Explica Esparta. -->
+
+            <p>
+                Os <strong>hilotas</strong> eram uma população submetida à exploração pelos espartanos.
+                A organização social espartana dependia desse sistema de trabalho e de uma rígida
+                estrutura política e militar.
+            </p>
+            <!-- Explica a condição dos hilotas. -->
+
+            <h3>3. Guerras Médicas</h3>
+            <!-- Cria um subtítulo. -->
+
+            <p>
+                As chamadas <strong>Guerras Médicas</strong> envolveram conflitos entre cidades gregas
+                e o Império Persa no início do século V a.C.
+                Batalhas como Maratona, Termópilas e Salamina tornaram-se importantes referências
+                desse processo.
+            </p>
+            <!-- Explica as Guerras Médicas. -->
+
+            <p>
+                A vitória de diferentes forças gregas contribuiu para o fortalecimento de Atenas,
+                que posteriormente liderou a Liga de Delos.
+            </p>
+            <!-- Explica uma consequência política. -->
+
+            <h3>4. Guerra do Peloponeso</h3>
+            <!-- Cria um subtítulo. -->
+
+            <p>
+                O crescimento do poder ateniense provocou tensões com Esparta e seus aliados.
+                A <strong>Guerra do Peloponeso</strong>, entre 431 e 404 a.C., terminou com a derrota
+                de Atenas e enfraqueceu as principais pólis gregas.
+            </p>
+            <!-- Explica a guerra. -->
+
+            <h3>5. Macedônia e Alexandre</h3>
+            <!-- Cria um subtítulo. -->
+
+            <p>
+                No século IV a.C., a Macedônia aumentou sua influência sobre as cidades gregas.
+                <strong>Filipe II</strong> consolidou o poder macedônico sobre grande parte da Grécia.
+            </p>
+            <!-- Explica a ascensão macedônica. -->
+
+            <p>
+                Seu filho, <strong>Alexandre</strong>, conquistou o Império Persa e estabeleceu
+                um vasto domínio que alcançou regiões do Mediterrâneo oriental, Egito, Mesopotâmia
+                e áreas da Ásia Central.
+            </p>
+            <!-- Explica as conquistas de Alexandre. -->
+
+            <h3>6. Helenismo</h3>
+            <!-- Cria um subtítulo. -->
+
+            <p>
+                Após as conquistas de Alexandre, elementos culturais gregos circularam por vastas regiões.
+                Ao mesmo tempo, culturas locais influenciaram as sociedades dos reinos helenísticos.
+                Esse processo é chamado de <strong>Helenismo</strong>.
+            </p>
+            <!-- Explica o conceito de Helenismo. -->
+
+            <p>
+                O Helenismo não deve ser entendido simplesmente como uma “imposição da cultura grega”.
+                Houve mistura, adaptação e criação de novas experiências culturais.
+            </p>
+            <!-- Corrige uma simplificação sobre o Helenismo. -->
+
+            <h3>7. Trabalho e escravidão</h3>
+            <!-- Cria um subtítulo. -->
+
+            <p>
+                A economia das pólis dependia de diferentes formas de trabalho.
+                A escravidão esteve presente em várias sociedades gregas, embora as condições
+                e proporções variassem de acordo com o lugar e o período.
+            </p>
+            <!-- Explica a escravidão. -->
+
+            <p>
+                O trabalho agrícola, artesanal, doméstico e ligado às atividades comerciais
+                era realizado por diferentes grupos sociais.
+            </p>
+            <!-- Explica as atividades econômicas. -->
+
+            <h3>8. Filosofia, teatro e conhecimento</h3>
+            <!-- Cria um subtítulo. -->
+
+            <p>
+                A tradição intelectual grega produziu importantes debates sobre natureza,
+                política, ética, conhecimento e sociedade.
+                <strong>Sócrates, Platão e Aristóteles</strong> tornaram-se referências
+                fundamentais da filosofia ocidental.
+            </p>
+            <!-- Explica a filosofia. -->
+
+            <p>
+                O teatro também teve grande importância, com o desenvolvimento de gêneros
+                como a tragédia e a comédia.
+            </p>
+            <!-- Explica o teatro. -->
+
+            <h3>9. Linha do tempo</h3>
+            <!-- Cria o título da linha do tempo. -->
+
+            <div class="timeline">
+                <!-- Inicia a linha do tempo. -->
+
+                <div class="timeline-item">
+                    <!-- Primeiro item. -->
+
+                    <strong>c. 2000–1450 a.C.</strong>
+                    <!-- Indica o período aproximado da civilização minoica em seu auge. -->
+
+                    <p>
+                        Desenvolvimento de centros palacianos na ilha de Creta.
+                    </p>
+                    <!-- Explica o acontecimento. -->
+                </div>
+
+                <div class="timeline-item">
+                    <!-- Segundo item. -->
+
+                    <strong>c. 1600–1100 a.C.</strong>
+                    <!-- Indica o período micênico aproximado. -->
+
+                    <p>
+                        Desenvolvimento das sociedades micênicas no continente grego.
+                    </p>
+                    <!-- Explica o acontecimento. -->
+                </div>
+
+                <div class="timeline-item">
+                    <!-- Terceiro item. -->
+
+                    <strong>Séculos VIII–VI a.C.</strong>
+                    <!-- Indica o período arcaico. -->
+
+                    <p>
+                        Formação e consolidação de numerosas pólis e expansão das redes gregas pelo Mediterrâneo.
+                    </p>
+                    <!-- Explica o acontecimento. -->
+                </div>
+
+                <div class="timeline-item">
+                    <!-- Quarto item. -->
+
+                    <strong>Século V a.C.</strong>
+                    <!-- Indica o período clássico. -->
+
+                    <p>
+                        Apogeu cultural de Atenas, Guerras Médicas e posterior Guerra do Peloponeso.
+                    </p>
+                    <!-- Explica o acontecimento. -->
+                </div>
+
+                <div class="timeline-item">
+                    <!-- Quinto item. -->
+
+                    <strong>338 a.C.</strong>
+                    <!-- Indica um marco macedônico. -->
+
+                    <p>
+                        Vitória de Filipe II na batalha de Queroneia e fortalecimento do domínio macedônico sobre a Grécia.
+                    </p>
+                    <!-- Explica o acontecimento. -->
+                </div>
+
+                <div class="timeline-item">
+                    <!-- Sexto item. -->
+
+                    <strong>336–323 a.C.</strong>
+                    <!-- Indica o período de Alexandre. -->
+
+                    <p>
+                        Reinado de Alexandre e expansão de seu império sobre territórios anteriormente controlados pelos persas.
+                    </p>
+                    <!-- Explica o acontecimento. -->
+                </div>
+
+                <div class="timeline-item">
+                    <!-- Sétimo item. -->
+
+                    <strong>323–31 a.C.</strong>
+                    <!-- Indica o período helenístico. -->
+
+                    <p>
+                        Desenvolvimento dos reinos helenísticos após a morte de Alexandre.
+                    </p>
+                    <!-- Explica o acontecimento. -->
+                </div>
+            </div>
+        </section>
+
+        <section id="legado">
+            <!-- Inicia a terceira parte da trilogia. -->
+
+            <h2>III — O LEGADO E O MUNDO ATUAL</h2>
+            <!-- Título da terceira parte. -->
+
+            <p>
+                O legado grego é amplo, mas deve ser analisado historicamente.
+                Muitas instituições e conceitos contemporâneos possuem relações com experiências
+                gregas antigas, mas não são cópias diretas delas.
+            </p>
+            <!-- Introduz o legado. -->
+
+            <h3>1. Cidadania</h3>
+            <!-- Cria um subtítulo. -->
+
+            <p>
+                A experiência ateniense contribuiu historicamente para diferentes formas de pensar
+                participação política e cidadania. Porém, a cidadania ateniense era restrita e
+                baseada em critérios de pertencimento específicos.
+            </p>
+            <!-- Explica o legado da cidadania. -->
+
+            <div class="destaque">
+                <!-- Cria uma caixa de destaque. -->
+
+                <strong>Conceito-chave:</strong>
+                <!-- Destaca o conceito. -->
+
+                cidadania é um conceito histórico. Seus critérios de inclusão e exclusão mudam
+                conforme a sociedade, o período e as instituições políticas.
+                <!-- Explica o caráter histórico da cidadania. -->
+            </div>
+
+            <h3>2. Filosofia</h3>
+            <!-- Cria um subtítulo. -->
+
+            <p>
+                A tradição filosófica grega influenciou profundamente diferentes áreas do conhecimento.
+                O debate racional sobre natureza, ética, política e conhecimento tornou-se parte
+                importante da história intelectual do Mediterrâneo e posteriormente de outras regiões.
+            </p>
+            <!-- Explica o legado filosófico. -->
+
+            <h3>3. Política e democracia</h3>
+            <!-- Cria um subtítulo. -->
+
+            <p>
+                O termo “democracia” tem origem grega e está relacionado à ideia de poder do povo.
+                A experiência ateniense é uma referência histórica importante para estudar o conceito,
+                mas as democracias contemporâneas possuem instituições, direitos e princípios diferentes.
+            </p>
+            <!-- Faz a conexão com o presente. -->
+
+            <h3>4. Arte e arquitetura</h3>
+            <!-- Cria um subtítulo. -->
+
+            <p>
+                A arquitetura, a escultura e outras manifestações artísticas gregas influenciaram
+                diversas tradições posteriores. Elementos da arquitetura clássica podem ser encontrados
+                em edifícios modernos de diferentes países.
+            </p>
+            <!-- Explica o legado artístico. -->
+
+            <h3>5. Ciência e conhecimento</h3>
+            <!-- Cria um subtítulo. -->
+
+            <p>
+                Matemática, astronomia, medicina, filosofia natural e outras formas de investigação
+                foram desenvolvidas por diferentes pensadores do mundo grego e helenístico.
+            </p>
+            <!-- Explica o legado científico. -->
+
+            <h3>6. Helenismo e circulação cultural</h3>
+            <!-- Cria um subtítulo. -->
+
+            <p>
+                O mundo helenístico mostra que culturas não permanecem isoladas.
+                A circulação de pessoas, conhecimentos, idiomas e práticas religiosas produziu
+                novas combinações culturais.
+            </p>
+            <!-- Explica o legado do Helenismo. -->
+
+            <h3>7. Relação com a História do Brasil</h3>
+            <!-- Cria um subtítulo. -->
+
+            <p>
+                A sociedade brasileira recebeu influências indiretas da tradição clássica por meio
+                de diferentes processos históricos, especialmente através das culturas europeias
+                que participaram da formação do mundo moderno.
+            </p>
+            <!-- Relaciona a Grécia ao Brasil. -->
+
+            <p>
+                Conceitos políticos, referências artísticas, modelos educacionais, filosofia,
+                literatura e arquitetura brasileiras podem apresentar diálogos com tradições
+                intelectuais que remontam ao mundo clássico.
+            </p>
+            <!-- Aprofunda a conexão. -->
+
+            <h3>8. O que o professor precisa dominar</h3>
+            <!-- Cria um subtítulo. -->
+
+            <ul>
+                <!-- Inicia a lista. -->
+
+                <li>
+                    A Grécia Antiga era formada por diferentes comunidades e pólis.
+                </li>
+                <!-- Primeiro ponto. -->
+
+                <li>
+                    A pólis era uma comunidade política, não simplesmente uma cidade.
+                </li>
+                <!-- Segundo ponto. -->
+
+                <li>
+                    Atenas e Esparta desenvolveram modelos políticos e sociais diferentes.
+                </li>
+                <!-- Terceiro ponto. -->
+
+                <li>
+                    A democracia ateniense possuía participação restrita.
+                </li>
+                <!-- Quarto ponto. -->
+
+                <li>
+                    A escravidão esteve presente em diferentes sociedades gregas.
+                </li>
+                <!-- Quinto ponto. -->
+
+                <li>
+                    As Guerras Médicas envolveram as pólis gregas e o Império Persa.
+                </li>
+                <!-- Sexto ponto. -->
+
+                <li>
+                    A Guerra do Peloponeso alterou o equilíbrio político entre as principais pólis.
+                </li>
+                <!-- Sétimo ponto. -->
+
+                <li>
+                    A expansão macedônica levou à formação do mundo helenístico.
+                </li>
+                <!-- Oitavo ponto. -->
+
+                <li>
+                    A cultura helenística resultou de contatos e transformações entre diferentes sociedades.
+                </li>
+                <!-- Nono ponto. -->
+            </ul>
+
+            <h3>9. O que colocar na lousa</h3>
+            <!-- Cria um subtítulo. -->
+
+            <div class="destaque">
+                <!-- Cria a caixa de resumo. -->
+
+                <p>
+                    <strong>GRÉCIA ANTIGA</strong>
+                </p>
+                <!-- Título da lousa. -->
+
+                <p>
+                    Geografia → montanhas + ilhas + Mediterrâneo → diversidade das pólis
+                </p>
+                <!-- Primeiro resumo. -->
+
+                <p>
+                    Pólis → comunidade política + território + instituições
+                </p>
+                <!-- Segundo resumo. -->
+
+                <p>
+                    Atenas → democracia direta restrita + participação dos cidadãos
+                </p>
+                <!-- Terceiro resumo. -->
+
+                <p>
+                    Esparta → militarização + oligarquia + exploração dos hilotas
+                </p>
+                <!-- Quarto resumo. -->
+
+                <p>
+                    Guerras Médicas → gregos × persas
+                </p>
+                <!-- Quinto resumo. -->
+
+                <p>
+                    Guerra do Peloponeso → Atenas × Esparta
+                </p>
+                <!-- Sexto resumo. -->
+
+                <p>
+                    Macedônia → Filipe II → Alexandre → Helenismo
+                </p>
+                <!-- Sétimo resumo. -->
+
+                <p>
+                    Legado → filosofia + política + arte + ciência + literatura + teatro
+                </p>
+                <!-- Oitavo resumo. -->
+            </div>
+
+            <h3>10. Conceitos essenciais</h3>
+            <!-- Cria o título dos conceitos. -->
+
+            <div class="grid">
+                <!-- Inicia a grade. -->
+
+                <div class="card">
+                    <!-- Primeiro conceito. -->
+
+                    <h3>Pólis</h3>
+                    <!-- Nome do conceito. -->
+
+                    <p>
+                        Comunidade política grega organizada em torno de um centro urbano e seu território.
+                    </p>
+                    <!-- Explicação. -->
+                </div>
+
+                <div class="card">
+                    <!-- Segundo conceito. -->
+
+                    <h3>Cidadania</h3>
+                    <!-- Nome do conceito. -->
+
+                    <p>
+                        Condição política que define direitos, deveres e participação dentro de determinada comunidade.
+                    </p>
+                    <!-- Explicação. -->
+                </div>
+
+                <div class="card">
+                    <!-- Terceiro conceito. -->
+
+                    <h3>Democracia</h3>
+                    <!-- Nome do conceito. -->
+
+                    <p>
+                        Forma de organização política baseada na participação dos cidadãos; em Atenas, essa participação era restrita.
+                    </p>
+                    <!-- Explicação. -->
+                </div>
+
+                <div class="card">
+                    <!-- Quarto conceito. -->
+
+                    <h3>Oligarquia</h3>
+                    <!-- Nome do conceito. -->
+
+                    <p>
+                        Forma de governo em que o poder político está concentrado em um grupo restrito.
+                    </p>
+                    <!-- Explicação. -->
+                </div>
+
+                <div class="card">
+                    <!-- Quinto conceito. -->
+
+                    <h3>Helenismo</h3>
+                    <!-- Nome do conceito. -->
+
+                    <p>
+                        Processo histórico de circulação e transformação cultural no mundo formado após as conquistas de Alexandre.
+                    </p>
+                    <!-- Explicação. -->
+                </div>
+
+                <div class="card">
+                    <!-- Sexto conceito. -->
+
+                    <h3>Antiguidade Clássica</h3>
+                    <!-- Nome do conceito. -->
+
+                    <p>
+                        Categoria historiográfica relacionada principalmente às experiências históricas de Grécia e Roma, com limites e significados específicos.
+                    </p>
+                    <!-- Explicação. -->
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <!-- Inicia a seção de causas e consequências. -->
+
+            <h2>Relações de Causa e Consequência</h2>
+            <!-- Título. -->
+
+            <div class="grid">
+                <!-- Inicia a grade. -->
+
+                <div class="card">
+                    <!-- Primeiro cartão. -->
+
+                    <h3>Geografia</h3>
+                    <!-- Título. -->
+
+                    <p>
+                        Relevo fragmentado + ilhas + litoral → comunidades regionais diversificadas → formação de diferentes pólis.
+                    </p>
+                    <!-- Relação causal. -->
+                </div>
+
+                <div class="card">
+                    <!-- Segundo cartão. -->
+
+                    <h3>Conflitos sociais</h3>
+                    <!-- Título. -->
+
+                    <p>
+                        Disputas entre grupos → reformas políticas → mudanças nas instituições de algumas pólis.
+                    </p>
+                    <!-- Relação causal. -->
+                </div>
+
+                <div class="card">
+                    <!-- Terceiro cartão. -->
+
+                    <h3>Guerras</h3>
+                    <!-- Título. -->
+
+                    <p>
+                        Conflitos entre pólis e potências externas → mudanças no equilíbrio político do mundo grego.
+                    </p>
+                    <!-- Relação causal. -->
+                </div>
+
+                <div class="card">
+                    <!-- Quarto cartão. -->
+
+                    <h3>Conquistas macedônicas</h3>
+                    <!-- Título. -->
+
+                    <p>
+                        Expansão macedônica → conquista do Império Persa → formação do mundo helenístico.
+                    </p>
+                    <!-- Relação causal. -->
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <!-- Inicia a seção da BNCC. -->
+
+            <h2>BNCC — Orientação Curricular</h2>
+            <!-- Título. -->
+
+            <div class="destaque">
+                <!-- Cria a caixa da BNCC. -->
+
+                <p>
+                    <strong>EF06HI09</strong>
+                </p>
+                <!-- Código da habilidade. -->
+
+                <p>
+                    Discutir o conceito de Antiguidade Clássica, seu alcance e limite na tradição ocidental,
+                    assim como os impactos sobre outras sociedades e culturas.
+                </p>
+                <!-- Descrição da habilidade. -->
+
+                <p>
+                    <strong>EF06HI10</strong>
+                </p>
+                <!-- Segundo código. -->
+
+                <p>
+                    Explicar a formação da Grécia Antiga, com ênfase na formação da pólis e nas transformações políticas, sociais e culturais.
+                </p>
+                <!-- Descrição da habilidade. -->
+
+                <p>
+                    <strong>EF06HI12</strong>
+                </p>
+                <!-- Terceiro código. -->
+
+                <p>
+                    Associar o conceito de cidadania a dinâmicas de inclusão e exclusão na Grécia e Roma antigas.
+                </p>
+                <!-- Descrição da habilidade. -->
+
+                <p>
+                    <strong>EF06HI15</strong>
+                </p>
+                <!-- Quarto código. -->
+
+                <p>
+                    Descrever as dinâmicas de circulação de pessoas, produtos e culturas no Mediterrâneo e seu significado.
+                </p>
+                <!-- Descrição da habilidade. -->
+
+                <p>
+                    Essas habilidades permitem trabalhar a Grécia de maneira integrada, relacionando
+                    formação política, cidadania, cultura, conflitos e circulação mediterrânea.
+                </p>
+                <!-- Explicação pedagógica. -->
+            </div>
+        </section>
+
+        <section>
+            <!-- Inicia a seção de preparação para provas. -->
+
+            <h2>ENEM • Vestibular • Concurso</h2>
+            <!-- Título. -->
+
+            <h3>O que mais merece atenção?</h3>
+            <!-- Subtítulo. -->
+
+            <ul>
+                <!-- Inicia a lista. -->
+
+                <li>
+                    Formação e características das pólis.
+                </li>
+                <!-- Primeiro ponto. -->
+
+                <li>
+                    Diferenças entre Atenas e Esparta.
+                </li>
+                <!-- Segundo ponto. -->
+
+                <li>
+                    Democracia ateniense e seus limites.
+                </li>
+                <!-- Terceiro ponto. -->
+
+                <li>
+                    Cidadania e exclusão social.
+                </li>
+                <!-- Quarto ponto. -->
+
+                <li>
+                    Guerras Médicas e Guerra do Peloponeso.
+                </li>
+                <!-- Quinto ponto. -->
+
+                <li>
+                    Macedônia, Alexandre e Helenismo.
+                </li>
+                <!-- Sexto ponto. -->
+
+                <li>
+                    Filosofia, teatro, arte e ciência.
+                </li>
+                <!-- Sétimo ponto. -->
+
+                <li>
+                    Relação entre Grécia, Mediterrâneo e outras culturas.
+                </li>
+                <!-- Oitavo ponto. -->
+            </ul>
+        </section>
+
+        <section id="questoes">
+            <!-- Inicia a seção de questões. -->
+
+            <h2>Questões — Modelo ENEM</h2>
+            <!-- Título. -->
+
+            <div class="questao">
+                <!-- Inicia a primeira questão. -->
+
+                <h3>Questão 1</h3>
+                <!-- Número da questão. -->
+
+                <p>
+                    A experiência democrática ateniense é frequentemente estudada como uma referência
+                    histórica para a compreensão da participação política.
+                    Entretanto, a cidadania ateniense apresentava limites importantes.
+                </p>
+                <!-- Contextualização. -->
+
+                <p>
+                    Uma característica dessa experiência foi:
+                </p>
+                <!-- Comando. -->
+
+                <div class="alternativas">
+                    <!-- Inicia as alternativas. -->
+
+                    <p>
+                        <strong>A)</strong> a participação política de todos os habitantes, independentemente de sua condição.
+                    </p>
+                    <!-- Alternativa A. -->
+
+                    <p>
+                        <strong>B)</strong> a participação política restrita aos cidadãos reconhecidos pela comunidade, excluindo grande parte dos habitantes.
+                    </p>
+                    <!-- Alternativa B. -->
+
+                    <p>
+                        <strong>C)</strong> a ausência completa de instituições políticas.
+                    </p>
+                    <!-- Alternativa C. -->
+
+                    <p>
+                        <strong>D)</strong> a participação exclusiva de estrangeiros residentes.
+                    </p>
+                    <!-- Alternativa D. -->
+
+                    <p>
+                        <strong>E)</strong> a existência de eleições presidenciais nos moldes contemporâneos.
+                    </p>
+                    <!-- Alternativa E. -->
+                </div>
+
+                <button class="btn-gabarito" onclick="mostrarGabarito('gabarito1')">
+                    Mostrar gabarito
+                </button>
+                <!-- Botão do gabarito. -->
+
+                <div class="gabarito" id="gabarito1">
+                    <!-- Caixa do gabarito. -->
+
+                    <strong>Gabarito: B.</strong>
+                    <!-- Apresenta a resposta. -->
+
+                    <p>
+                        A cidadania ateniense era limitada. Mulheres, escravizados e estrangeiros residentes,
+                        entre outros grupos, não possuíam os mesmos direitos políticos dos cidadãos homens.
+                    </p>
+                    <!-- Explicação. -->
+                </div>
+            </div>
+
+            <div class="questao">
+                <!-- Inicia a segunda questão. -->
+
+                <h3>Questão 2</h3>
+                <!-- Número da questão. -->
+
+                <p>
+                    Após as conquistas de Alexandre, elementos culturais gregos circularam por extensas
+                    regiões do Mediterrâneo oriental e da Ásia, entrando em contato com diferentes
+                    tradições locais.
+                </p>
+                <!-- Contextualização. -->
+
+                <p>
+                    Esse processo histórico é conhecido como:
+                </p>
+                <!-- Comando. -->
+
+                <div class="alternativas">
+                    <!-- Inicia as alternativas. -->
+
+                    <p>
+                        <strong>A)</strong> Feudalismo.
+                    </p>
+                    <!-- Alternativa A. -->
+
+                    <p>
+                        <strong>B)</strong> Helenismo.
+                    </p>
+                    <!-- Alternativa B. -->
+
+                    <p>
+                        <strong>C)</strong> Mercantilismo.
+                    </p>
+                    <!-- Alternativa C. -->
+
+                    <p>
+                        <strong>D)</strong> Neocolonialismo.
+                    </p>
+                    <!-- Alternativa D. -->
+
+                    <p>
+                        <strong>E)</strong> Absolutismo.
+                    </p>
+                    <!-- Alternativa E. -->
+                </div>
+
+                <button class="btn-gabarito" onclick="mostrarGabarito('gabarito2')">
+                    Mostrar gabarito
+                </button>
+                <!-- Botão do gabarito. -->
+
+                <div class="gabarito" id="gabarito2">
+                    <!-- Caixa do segundo gabarito. -->
+
+                    <strong>Gabarito: B.</strong>
+                    <!-- Apresenta a resposta. -->
+
+                    <p>
+                        O Helenismo corresponde ao processo histórico de circulação e transformação
+                        cultural associado ao mundo formado após as conquistas de Alexandre.
+                    </p>
+                    <!-- Explicação. -->
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <!-- Inicia a revisão final. -->
+
+            <h2>Revisão em 60 segundos</h2>
+            <!-- Título da revisão. -->
+
+            <div class="destaque">
+                <!-- Cria a caixa de revisão. -->
+
+                <p>
+                    <strong>Grécia Antiga</strong> = conjunto de comunidades e pólis do mundo grego.
+                </p>
+                <!-- Primeiro ponto. -->
+
+                <p>
+                    <strong>Pólis</strong> = comunidade política + território + instituições.
+                </p>
+                <!-- Segundo ponto. -->
+
+                <p>
+                    <strong>Atenas</strong> = experiência democrática restrita + cidadania.
+                </p>
+                <!-- Terceiro ponto. -->
+
+                <p>
+                    <strong>Esparta</strong> = organização militar + oligarquia + hilotas.
+                </p>
+                <!-- Quarto ponto. -->
+
+                <p>
+                    <strong>Guerras Médicas</strong> = conflitos entre gregos e persas.
+                </p>
+                <!-- Quinto ponto. -->
+
+                <p>
+                    <strong>Guerra do Peloponeso</strong> = Atenas × Esparta.
+                </p>
+                <!-- Sexto ponto. -->
+
+                <p>
+                    <strong>Alexandre</strong> = expansão macedônica + mundo helenístico.
+                </p>
+                <!-- Sétimo ponto. -->
+
+                <p>
+                    <strong>Legado</strong> = filosofia + política + arte + ciência + teatro + literatura.
+                </p>
+                <!-- Oitavo ponto. -->
+            </div>
+        </section>
+
+        <section>
+            <!-- Inicia o encerramento da aula. -->
+
+            <h2>Encerramento da Aula</h2>
+            <!-- Título. -->
+
+            <p>
+                Estudar a Grécia Antiga significa compreender uma experiência histórica marcada
+                pela diversidade política, pela formação das pólis, por conflitos sociais e militares
+                e por intensas redes de circulação no Mediterrâneo.
+            </p>
+            <!-- Primeiro parágrafo de conclusão. -->
+
+            <p>
+                Também é fundamental compreender que conceitos como democracia, cidadania e cultura
+                possuem história. A experiência grega oferece referências importantes, mas não deve
+                ser confundida com as instituições e sociedades do mundo contemporâneo.
+            </p>
+            <!-- Segundo parágrafo de conclusão. -->
+
+            <div class="destaque">
+                <!-- Cria a assinatura final. -->
+
+                <strong>Professor:</strong> Professor Marcelo Oliveira
+                <!-- Identifica o professor. -->
+
+                <br>
+                <!-- Cria uma quebra de linha. -->
+
+                <strong>Curso:</strong> História Geral — Fund II • Ensino Médio • ENEM • Vestibular • Concursos
+                <!-- Identifica o curso. -->
+            </div>
+
+            
+                <!-- === BOTÕES DE NAVEGAÇÃO ENTRE AS 57 PÁGINAS (COLOQUE AQUI) === -->
+<div class="page-navigator">
+  <button id="prevBtn" class="nav-btn-flutuante" onclick="goToPage(-1)">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+    Anterior
+  </button>
+  
+  <span id="pageIndicator" class="page-indicator">Tema X de 57</span>
+
+  <button id="nextBtn" class="nav-btn-flutuante" onclick="goToPage(1)">
+    Próxima
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+  </button>
+</div>
+
+<style>
+  /* Estilo visual flutuante com cores combinando com o seu tema azul/dourado */
+  .page-navigator {
+    position: fixed;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: rgba(255, 255, 255, 0.90);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    padding: 10px 22px;
+    border-radius: 50px;
+    box-shadow: 0 8px 30px rgba(18, 53, 91, 0.2);
+    border: 1px solid var(--borda, #d9e2e8);
+    z-index: 9999;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .nav-btn-flutuante {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--azul, #12355b);
+    color: #ffffff;
+    border: none;
+    padding: 9px 18px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    box-shadow: 0 4px 12px rgba(18, 53, 91, 0.25);
+  }
+
+  .nav-btn-flutuante:hover {
+    background: var(--azul-claro, #1f5f8b);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(31, 95, 139, 0.35);
+  }
+
+  .nav-btn-flutuante:active {
+    transform: translateY(0);
+  }
+
+  .page-indicator {
+    font-size: 13px;
+    font-weight: bold;
+    color: var(--texto, #263238);
+    min-width: 90px;
+    text-align: center;
+  }
+</style>
+
+<script>
+  // Descobre automaticamente o número da página pelo nome do arquivo (ex: tema1.html -> 1)
+  function getCurrentPageNumber() {
+    const path = window.location.pathname;
+    const filename = path.split("/").pop();
+    const match = filename.match(/\d+/);
+    return match ? parseInt(match[0], 10) : 1;
+  }
+
+  const totalPages = 57;
+  const currentNum = getCurrentPageNumber();
+
+  // Atualiza o texto indicador (Ex: "Tema 1 de 57")
+  document.getElementById("pageIndicator").innerText = `Tema ${currentNum} de ${totalPages}`;
+
+  // Função para avançar ou voltar
+  function goToPage(direction) {
+    let targetNum = currentNum + direction;
+
+    if (targetNum >= 1 && targetNum <= totalPages) {
+      const currentPath = window.location.pathname;
+      const filename = currentPath.split("/").pop();
+      const newFilename = filename.replace(/\d+/, targetNum);
+      
+      window.location.href = currentPath.replace(filename, newFilename);
+    }
+  }
+
+  // Desativa o botão "Anterior" na página 1 e "Próxima" na página 57
+  if (currentNum <= 1) {
+    const prev = document.getElementById("prevBtn");
+    prev.style.opacity = "0.3";
+    prev.style.pointerEvents = "none";
+  }
+  if (currentNum >= totalPages) {
+    const next = document.getElementById("nextBtn");
+    next.style.opacity = "0.3";
+    next.style.pointerEvents = "none";
+  }
+</script>
+<!-- FIM DOS BOTÕES DE NAVEGAÇÃO -->
+            <!-- Leva o usuário para o início da aula. -->
+        </section>
+    </main>
+
+    <footer>
+        <!-- Inicia o rodapé. -->
+
+        <p>
+            Curso de História Geral — <strong>Professor Marcelo Oliveira</strong>
+        </p>
+        <!-- Identifica o curso. -->
+
+        <p>
+            Material didático para estudo, revisão e preparação para provas.
+        </p>
+        <!-- Apresenta a finalidade do material. -->
+    </footer>
+
+    <script>
+        // ==========================================
+        // FUNÇÃO DE NAVEGAÇÃO
+        // ==========================================
+
+        function irPara(id) {
+            // Cria uma função para navegar até uma seção.
+
+            const elemento = document.getElementById(id);
+            // Localiza o elemento pelo ID informado.
+
+            if (elemento) {
+                // Verifica se o elemento existe.
+
+                elemento.scrollIntoView({
+                    // Faz a página rolar até o elemento.
+
+                    behavior: "smooth",
+                    // Faz a rolagem suavemente.
+
+                    block: "start"
+                    // Posiciona o começo da seção no topo.
+                });
+            }
+        }
+
+        // ==========================================
+        // FUNÇÃO DO GABARITO
+        // ==========================================
+
+        function mostrarGabarito(id) {
+            // Cria uma função para mostrar ou esconder o gabarito.
+
+            const gabarito = document.getElementById(id);
+            // Localiza o gabarito pelo ID.
+
+            if (gabarito.style.display === "block") {
+                // Verifica se o gabarito já está aparecendo.
+
+                gabarito.style.display = "none";
+                // Esconde o gabarito.
+            } else {
+                // Executa quando o gabarito está escondido.
+
+                gabarito.style.display = "block";
+                // Mostra o gabarito.
+            }
+        }
+
+        // ==========================================
+        // FUNÇÃO VOLTAR
+        // ==========================================
+
+        function voltarPagina() {
+            // Cria a função do botão voltar.
+
+            window.history.back();
+            // Retorna para a página anterior do navegador.
+        }
+    </script>
+    
+
+  <script>
+  const paginaAnterior = "04 - fenicia.html";
+  const paginaProxima = "06 - Roma.html";
+</script>
+<script src="navegacao.js"></script>
+<!-- FIM DA NAVEGAÇÃO CORRIGIDA -->
+</body>
+<!-- Finaliza o conteúdo visível. -->
+
+</html>
+<!-- Finaliza o documento HTML. -->

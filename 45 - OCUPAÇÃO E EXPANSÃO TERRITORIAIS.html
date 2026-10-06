@@ -1,0 +1,1629 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+    <!-- Define a codificação dos caracteres. -->
+    <meta charset="UTF-8">
+
+
+<!-- Permite que a página seja responsiva em celulares e tablets. -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Define o título da página no navegador. -->
+<title>1.45 — Ocupação e Expansão Territoriais | História Geral</title>
+
+<style>
+
+    /* ==========================================================
+       CONFIGURAÇÕES GERAIS
+       ========================================================== */
+
+    /* Remove margens e espaçamentos padrão. */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* Ativa rolagem suave. */
+    html {
+        scroll-behavior: smooth;
+    }
+
+    /* Define a aparência geral da página. */
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: #f4f7fb;
+        color: #1d2939;
+        line-height: 1.7;
+    }
+
+    /* ==========================================================
+       CABEÇALHO
+       ========================================================== */
+
+    /* Define o cabeçalho principal. */
+    header {
+        background: linear-gradient(135deg, #071a35, #123b6d);
+        color: white;
+        text-align: center;
+        padding: 45px 20px;
+        border-bottom: 6px solid #22c55e;
+    }
+
+    /* Identificação do curso. */
+    .curso {
+        color: #93c5fd;
+        font-size: 0.95rem;
+        font-weight: bold;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        margin-bottom: 12px;
+    }
+
+    /* Título principal. */
+    header h1 {
+        font-size: clamp(2rem, 5vw, 3.5rem);
+        margin-bottom: 15px;
+    }
+
+    /* Texto de apresentação. */
+    header p {
+        max-width: 950px;
+        margin: auto;
+        color: #e5e7eb;
+        font-size: 1.1rem;
+    }
+
+    /* ==========================================================
+       CONTAINER
+       ========================================================== */
+
+    /* Limita a largura do conteúdo. */
+    main {
+        max-width: 1150px;
+        margin: auto;
+        padding: 30px 18px 80px;
+    }
+
+    /* ==========================================================
+       CARDS
+       ========================================================== */
+
+    /* Define os cartões de conteúdo. */
+    .card {
+        background: white;
+        margin: 25px 0;
+        padding: 30px;
+        border-radius: 18px;
+        box-shadow: 0 8px 25px rgba(15, 23, 42, 0.08);
+        border-left: 6px solid #2563eb;
+    }
+
+    /* Títulos principais dos cards. */
+    .card h2 {
+        color: #123b6d;
+        margin-bottom: 18px;
+        font-size: clamp(1.5rem, 3vw, 2.1rem);
+    }
+
+    /* Títulos secundários. */
+    .card h3 {
+        color: #1e40af;
+        margin: 22px 0 10px;
+    }
+
+    /* Espaçamento dos parágrafos. */
+    .card p {
+        margin-bottom: 15px;
+    }
+
+    /* Espaçamento das listas. */
+    .card ul,
+    .card ol {
+        margin: 15px 0 15px 25px;
+    }
+
+    /* Espaçamento dos itens. */
+    .card li {
+        margin-bottom: 8px;
+    }
+
+    /* ==========================================================
+       CAIXAS DIDÁTICAS
+       ========================================================== */
+
+    /* Caixa azul para conceitos. */
+    .conceito {
+        background: #eff6ff;
+        border-left: 6px solid #2563eb;
+        padding: 20px;
+        border-radius: 12px;
+        margin: 20px 0;
+    }
+
+    /* Caixa laranja para causas. */
+    .causas {
+        background: #fff7ed;
+        border-left: 6px solid #f97316;
+        padding: 20px;
+        border-radius: 12px;
+        margin: 20px 0;
+    }
+
+    /* Caixa amarela para consequências. */
+    .consequencias {
+        background: #fefce8;
+        border-left: 6px solid #eab308;
+        padding: 20px;
+        border-radius: 12px;
+        margin: 20px 0;
+    }
+
+    /* Caixa vermelha para atenção. */
+    .atencao {
+        background: #fef2f2;
+        border-left: 6px solid #dc2626;
+        padding: 20px;
+        border-radius: 12px;
+        margin: 20px 0;
+    }
+
+    /* Caixa ciano para ENEM. */
+    .enem {
+        background: #ecfeff;
+        border-left: 6px solid #0891b2;
+        padding: 20px;
+        border-radius: 12px;
+        margin: 20px 0;
+    }
+
+    /* Caixa roxa para orientação do professor. */
+    .professor {
+        background: #f5f3ff;
+        border-left: 6px solid #7c3aed;
+        padding: 20px;
+        border-radius: 12px;
+        margin: 20px 0;
+    }
+
+    /* Caixa escura simulando a lousa. */
+    .lousa {
+        background: #172554;
+        color: white;
+        border-radius: 14px;
+        padding: 25px;
+        margin: 20px 0;
+    }
+
+    /* ==========================================================
+       TABELAS
+       ========================================================== */
+
+    /* Permite rolagem horizontal em telas pequenas. */
+    .tabela-container {
+        overflow-x: auto;
+        margin: 20px 0;
+    }
+
+    /* Configuração da tabela. */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        min-width: 650px;
+    }
+
+    /* Configuração das células. */
+    th,
+    td {
+        border: 1px solid #dbe3ef;
+        padding: 13px;
+        text-align: left;
+    }
+
+    /* Cabeçalho da tabela. */
+    th {
+        background: #123b6d;
+        color: white;
+    }
+
+    /* Linhas pares. */
+    tr:nth-child(even) {
+        background: #f8fafc;
+    }
+
+    /* ==========================================================
+       LINHA DO TEMPO
+       ========================================================== */
+
+    /* Linha vertical da cronologia. */
+    .timeline {
+        border-left: 4px solid #22c55e;
+        margin: 25px 0;
+        padding-left: 25px;
+    }
+
+    /* Cada acontecimento. */
+    .evento {
+        margin-bottom: 25px;
+        position: relative;
+    }
+
+    /* Marcador do acontecimento. */
+    .evento::before {
+        content: "";
+        position: absolute;
+        left: -36px;
+        top: 7px;
+        width: 14px;
+        height: 14px;
+        background: #22c55e;
+        border-radius: 50%;
+        border: 3px solid white;
+        box-shadow: 0 0 0 2px #22c55e;
+    }
+
+    /* Destaca os anos. */
+    .ano {
+        font-weight: bold;
+        color: #15803d;
+    }
+
+    /* ==========================================================
+       QUESTÕES
+       ========================================================== */
+
+    /* Caixa de questão. */
+    .questao {
+        background: #f8fafc;
+        border: 1px solid #dbe3ef;
+        border-radius: 14px;
+        padding: 25px;
+        margin: 25px 0;
+    }
+
+    /* Botões. */
+    button {
+        border: none;
+        border-radius: 10px;
+        padding: 12px 18px;
+        background: #123b6d;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    /* Efeito ao passar o mouse. */
+    button:hover {
+        background: #1d4ed8;
+        transform: translateY(-2px);
+    }
+
+    /* Alternativas. */
+    .alternativas {
+        margin: 15px 0;
+    }
+
+    /* Espaçamento das alternativas. */
+    .alternativas p {
+        margin: 8px 0;
+    }
+
+    /* Gabarito escondido inicialmente. */
+    .resposta {
+        display: none;
+        margin-top: 15px;
+        padding: 15px;
+        background: #dcfce7;
+        border-left: 5px solid #16a34a;
+        border-radius: 10px;
+    }
+
+    /* ==========================================================
+       NAVEGAÇÃO
+       ========================================================== */
+
+    /* Área dos links entre capítulos. */
+    .navegacao {
+        display: flex;
+        justify-content: space-between;
+        gap: 15px;
+        flex-wrap: wrap;
+        margin-top: 40px;
+    }
+
+    /* Links de navegação. */
+    .navegacao a {
+        text-decoration: none;
+        color: white;
+        background: #123b6d;
+        padding: 13px 20px;
+        border-radius: 10px;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+    /* Efeito dos links. */
+    .navegacao a:hover {
+        background: #1d4ed8;
+        transform: translateY(-2px);
+    }
+
+    /* Botão flutuante de retorno ao topo. */
+    .topo {
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        background: #22c55e;
+        color: #052e16;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        font-weight: bold;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    /* ==========================================================
+       RODAPÉ
+       ========================================================== */
+
+    /* Rodapé. */
+    footer {
+        background: #071a35;
+        color: white;
+        text-align: center;
+        padding: 35px 20px;
+    }
+
+    /* Destaque da assinatura. */
+    footer strong {
+        color: #93c5fd;
+    }
+
+    /* ==========================================================
+       RESPONSIVIDADE
+       ========================================================== */
+
+    /* Ajustes para celulares. */
+    @media (max-width: 700px) {
+
+        /* Reduz o espaço interno dos cards. */
+        .card {
+            padding: 20px;
+        }
+
+        /* Reduz o cabeçalho. */
+        header {
+            padding: 35px 15px;
+        }
+
+        /* Coloca a navegação em coluna. */
+        .navegacao {
+            flex-direction: column;
+        }
+
+        /* Faz os links ocuparem toda a largura. */
+        .navegacao a {
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+</style>
+
+</head>
+
+<body id="topo">
+
+<!-- ==========================================================
+     CABEÇALHO
+     ========================================================== -->
+
+<header>
+
+    <!-- Nome do curso. -->
+    <div class="curso">
+        Curso de História Geral
+    </div>
+
+    <!-- Título do capítulo. -->
+    <h1>1.45 — Ocupação e Expansão Territoriais</h1>
+
+    <!-- Apresentação do tema. -->
+    <p>
+        A expansão da presença portuguesa na América, os caminhos da
+        ocupação territorial e a formação histórica do espaço brasileiro.
+    </p>
+
+</header>
+
+<!-- ==========================================================
+     CONTEÚDO PRINCIPAL
+     ========================================================== -->
+
+<main>
+
+    <!-- ========================================================
+         INTRODUÇÃO
+         ======================================================== -->
+
+    <section class="card">
+
+        <h2>Introdução — Como o território foi ocupado?</h2>
+
+        <p>
+            A ocupação portuguesa da América não aconteceu de maneira
+            uniforme nem ocorreu de uma só vez.
+        </p>
+
+        <p>
+            Inicialmente, a presença portuguesa estava mais concentrada
+            no litoral, onde se encontravam importantes áreas de
+            exploração econômica e onde era mais fácil manter contato
+            com as rotas atlânticas.
+        </p>
+
+        <p>
+            Com o passar do tempo, diferentes agentes avançaram para
+            áreas do interior: colonos, criadores de gado, bandeirantes,
+            missionários, autoridades coloniais, soldados e outros
+            grupos.
+        </p>
+
+        <p>
+            Esse processo provocou conflitos, deslocamentos de
+            populações indígenas, formação de novas áreas econômicas
+            e disputas entre Portugal e outras potências europeias.
+        </p>
+
+        <div class="atencao">
+
+            <strong>Ideia central:</strong>
+
+            <p>
+                A formação territorial do Brasil foi resultado de um
+                processo histórico complexo, marcado por ocupação,
+                exploração econômica, conflitos, negociações, expansão
+                de fronteiras e violência contra populações indígenas.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- ========================================================
+         PARTE I
+         ======================================================== -->
+
+    <section class="card">
+
+        <h2>PARTE I — O COMEÇO</h2>
+
+        <h3>1. O litoral como primeiro espaço de ocupação</h3>
+
+        <p>
+            Durante os primeiros períodos da colonização, a presença
+            portuguesa concentrou-se principalmente no litoral.
+        </p>
+
+        <p>
+            Isso estava relacionado às características da economia
+            colonial, à facilidade de comunicação com Portugal e à
+            localização de portos e áreas produtoras.
+        </p>
+
+        <p>
+            A produção de açúcar, especialmente em partes do Nordeste,
+            reforçou a importância da faixa litorânea.
+        </p>
+
+        <h3>2. Por que avançar para o interior?</h3>
+
+        <div class="causas">
+
+            <h3>Principais fatores da expansão territorial</h3>
+
+            <ul>
+                <li>Busca por novas terras.</li>
+                <li>Criação de gado.</li>
+                <li>Busca por metais e pedras preciosas.</li>
+                <li>Captura e escravização de indígenas.</li>
+                <li>Atuação de missões religiosas.</li>
+                <li>Exploração de recursos naturais.</li>
+                <li>Defesa e ocupação das fronteiras.</li>
+                <li>Interesses comerciais.</li>
+                <li>Conflitos e disputas territoriais.</li>
+            </ul>
+
+        </div>
+
+        <h3>3. A pecuária e a interiorização</h3>
+
+        <p>
+            A criação de gado teve papel importante na expansão da
+            ocupação para áreas afastadas do litoral.
+        </p>
+
+        <p>
+            A pecuária fornecia alimentos, couro, animais para transporte
+            e outros recursos necessários à economia colonial.
+        </p>
+
+        <p>
+            Em determinadas regiões, a criação de gado avançou para o
+            interior, reduzindo a competição por terras próximas às
+            áreas destinadas à produção açucareira.
+        </p>
+
+        <div class="conceito">
+
+            <strong>Interiorização:</strong>
+
+            <p>
+                Processo de expansão da presença colonial para áreas
+                situadas além das regiões inicialmente ocupadas,
+                contribuindo para a formação do território.
+            </p>
+
+        </div>
+
+        <h3>4. Os bandeirantes</h3>
+
+        <p>
+            As expedições conhecidas como bandeiras tiveram origem
+            principalmente na região de São Paulo e desempenharam
+            diferentes funções.
+        </p>
+
+        <p>
+            Algumas buscaram capturar indígenas para escravização.
+            Outras procuraram metais preciosos. Também houve expedições
+            relacionadas ao apresamento de indígenas e à exploração do
+            interior.
+        </p>
+
+        <p>
+            A atuação dos bandeirantes contribuiu para a expansão da
+            presença portuguesa para além de áreas inicialmente ocupadas,
+            mas esteve associada também à violência contra povos
+            indígenas e à destruição ou desestruturação de comunidades.
+        </p>
+
+        <div class="atencao">
+
+            <strong>Evite uma visão simplificada:</strong>
+
+            <p>
+                A imagem tradicional do bandeirante como simples
+                “desbravador” não explica toda a complexidade histórica.
+                É necessário considerar tanto sua participação na
+                expansão territorial quanto as práticas de escravização,
+                violência e conflitos envolvendo povos indígenas.
+            </p>
+
+        </div>
+
+        <h3>5. As missões religiosas</h3>
+
+        <p>
+            Missionários também participaram da ocupação do interior.
+        </p>
+
+        <p>
+            As missões ou aldeamentos buscavam reunir populações
+            indígenas em determinados espaços para fins de catequese
+            e organização sob controle missionário.
+        </p>
+
+        <p>
+            A relação entre missionários, colonos e indígenas foi
+            marcada por cooperação em alguns contextos e conflitos
+            em outros, especialmente em torno do controle da mão de
+            obra indígena e das terras.
+        </p>
+
+    </section>
+
+    <!-- ========================================================
+         PARTE II
+         ======================================================== -->
+
+    <section class="card">
+
+        <h2>PARTE II — O DESENVOLVIMENTO</h2>
+
+        <h3>1. A expansão não foi apenas econômica</h3>
+
+        <p>
+            A expansão territorial não pode ser explicada apenas pela
+            procura de riquezas.
+        </p>
+
+        <p>
+            Ela envolveu uma combinação de fatores econômicos,
+            estratégicos, políticos, religiosos e sociais.
+        </p>
+
+        <div class="tabela-container">
+
+            <table>
+
+                <tr>
+                    <th>Agente</th>
+                    <th>Interesse / atividade</th>
+                    <th>Impactos</th>
+                </tr>
+
+                <tr>
+                    <td>Colonos</td>
+                    <td>Terras e produção</td>
+                    <td>Ampliação da ocupação.</td>
+                </tr>
+
+                <tr>
+                    <td>Criadores de gado</td>
+                    <td>Pecuária</td>
+                    <td>Interiorização.</td>
+                </tr>
+
+                <tr>
+                    <td>Bandeirantes</td>
+                    <td>Apresamento, exploração e busca de riquezas</td>
+                    <td>Expansão e conflitos indígenas.</td>
+                </tr>
+
+                <tr>
+                    <td>Missionários</td>
+                    <td>Catequese e aldeamentos</td>
+                    <td>Transformação das relações com populações indígenas.</td>
+                </tr>
+
+                <tr>
+                    <td>Coroa</td>
+                    <td>Controle territorial e político</td>
+                    <td>Fortalecimento da ocupação colonial.</td>
+                </tr>
+
+            </table>
+
+        </div>
+
+        <h3>2. A descoberta de ouro</h3>
+
+        <p>
+            A descoberta de ouro em diferentes áreas do interior,
+            especialmente a partir do final do século XVII, provocou
+            profundas transformações.
+        </p>
+
+        <p>
+            A mineração atraiu pessoas de diferentes regiões,
+            estimulou o crescimento de núcleos urbanos e aumentou
+            a preocupação da Coroa com a fiscalização e a arrecadação.
+        </p>
+
+        <p>
+            A atividade mineradora também contribuiu para a mudança
+            do eixo econômico e político da colônia.
+        </p>
+
+        <h3>3. Expansão e escravização indígena</h3>
+
+        <p>
+            A expansão colonial provocou inúmeros conflitos com povos
+            indígenas.
+        </p>
+
+        <p>
+            Em diversos contextos, colonizadores procuraram controlar
+            terras e mão de obra indígena. Expedições de apresamento
+            contribuíram para a escravização de indígenas, enquanto
+            missões e aldeamentos também alteraram profundamente
+            formas tradicionais de organização indígena.
+        </p>
+
+        <p>
+            É importante destacar que os povos indígenas não foram
+            agentes passivos. Eles resistiram, negociaram, estabeleceram
+            alianças, migraram e desenvolveram diferentes estratégias
+            diante da colonização.
+        </p>
+
+        <h3>4. O território além de Tordesilhas</h3>
+
+        <p>
+            Um dos pontos mais importantes para compreender a formação
+            territorial brasileira é perceber que a ocupação portuguesa
+            avançou para áreas situadas além dos limites definidos pelo
+            Tratado de Tordesilhas.
+        </p>
+
+        <p>
+            O avanço efetivo da ocupação portuguesa produziu uma
+            situação que posteriormente precisaria ser negociada
+            diplomaticamente com a Espanha.
+        </p>
+
+        <h3>5. A União Ibérica</h3>
+
+        <p>
+            Entre 1580 e 1640, Portugal e Espanha estiveram sob a mesma
+            monarquia, período conhecido como <strong>União Ibérica</strong>.
+        </p>
+
+        <p>
+            Nesse contexto, a antiga divisão estabelecida pelo Tratado
+            de Tordesilhas perdeu parte de sua força prática, facilitando
+            determinados movimentos de expansão portuguesa para o interior.
+        </p>
+
+        <div class="conceito">
+
+            <strong>União Ibérica — 1580–1640:</strong>
+
+            <p>
+                Período em que a Coroa portuguesa ficou sob a mesma
+                monarquia da Coroa espanhola. Não significa que Portugal
+                e Espanha tenham deixado de possuir identidades políticas
+                próprias, mas houve uma união dinástica.
+            </p>
+
+        </div>
+
+        <h3>6. Tratados de limites</h3>
+
+        <p>
+            A expansão efetiva da ocupação portuguesa levou Portugal e
+            Espanha a negociar novos critérios para definir fronteiras.
+        </p>
+
+        <p>
+            O <strong>Tratado de Madri, de 1750</strong>, foi um dos
+            mais importantes acordos desse processo.
+        </p>
+
+        <p>
+            Um princípio importante das negociações foi o
+            <strong>uti possidetis</strong>, segundo o qual a ocupação
+            efetiva poderia ser utilizada como referência para a
+            definição dos territórios.
+        </p>
+
+        <p>
+            O processo não foi simples e envolveu disputas, negociações,
+            conflitos e posteriormente novas alterações diplomáticas.
+        </p>
+
+        <h3>7. Tratado de Santo Ildefonso</h3>
+
+        <p>
+            Em 1777, Portugal e Espanha assinaram o
+            <strong>Tratado de Santo Ildefonso</strong>, que reorganizou
+            parte das fronteiras entre os territórios das duas coroas.
+        </p>
+
+        <p>
+            Os acordos demonstram que a formação territorial brasileira
+            foi também resultado de diplomacia e disputas internacionais.
+        </p>
+
+    </section>
+
+    <!-- ========================================================
+         MAPA CONCEITUAL
+         ======================================================== -->
+
+    <section class="card">
+
+        <h2>Mapa conceitual — Expansão territorial</h2>
+
+        <div class="conceito">
+
+            <p><strong>LITORAL</strong></p>
+
+            <p>↓</p>
+
+            <p>Produção açucareira + portos + ocupação inicial</p>
+
+            <p>↓</p>
+
+            <p><strong>INTERIORIZAÇÃO</strong></p>
+
+            <p>↓</p>
+
+            <p>
+                Pecuária + bandeiras + missões + mineração
+            </p>
+
+            <p>↓</p>
+
+            <p><strong>EXPANSÃO DA OCUPAÇÃO</strong></p>
+
+            <p>↓</p>
+
+            <p>
+                Conflitos + negociações + tratados
+            </p>
+
+            <p>↓</p>
+
+            <p><strong>FORMAÇÃO TERRITORIAL DO BRASIL</strong></p>
+
+        </div>
+
+    </section>
+
+    <!-- ========================================================
+         CONSEQUÊNCIAS
+         ======================================================== -->
+
+    <section class="card">
+
+        <h2>Consequências da ocupação e expansão territorial</h2>
+
+        <div class="consequencias">
+
+            <ul>
+
+                <li>
+                    Ampliação da presença portuguesa no interior.
+                </li>
+
+                <li>
+                    Formação de novos núcleos de povoamento.
+                </li>
+
+                <li>
+                    Expansão da pecuária.
+                </li>
+
+                <li>
+                    Desenvolvimento da mineração.
+                </li>
+
+                <li>
+                    Ampliação das redes comerciais internas.
+                </li>
+
+                <li>
+                    Mudanças no eixo econômico da colônia.
+                </li>
+
+                <li>
+                    Conflitos e deslocamentos de povos indígenas.
+                </li>
+
+                <li>
+                    Ampliação da escravização indígena em determinados
+                    contextos.
+                </li>
+
+                <li>
+                    Expansão das áreas efetivamente controladas por
+                    Portugal.
+                </li>
+
+                <li>
+                    Necessidade de negociação das fronteiras com a Espanha.
+                </li>
+
+            </ul>
+
+        </div>
+
+    </section>
+
+    <!-- ========================================================
+         PARTE III
+         ======================================================== -->
+
+    <section class="card">
+
+        <h2>PARTE III — O LEGADO E O MUNDO ATUAL</h2>
+
+        <h3>1. A formação do território brasileiro</h3>
+
+        <p>
+            O território brasileiro atual é resultado de um longo
+            processo histórico.
+        </p>
+
+        <p>
+            Ele não estava definido desde 1500. Foi construído por
+            meio de ocupações, deslocamentos populacionais, atividades
+            econômicas, conflitos, tratados e decisões políticas.
+        </p>
+
+        <h3>2. A dimensão indígena</h3>
+
+        <p>
+            A expansão colonial teve enorme impacto sobre os povos
+            indígenas.
+        </p>
+
+        <p>
+            A perda de territórios, as guerras, as epidemias, a
+            escravização e as transformações culturais provocadas pela
+            colonização afetaram profundamente numerosas sociedades
+            indígenas.
+        </p>
+
+        <p>
+            Ao mesmo tempo, os povos indígenas continuaram existindo,
+            resistindo e reivindicando seus territórios e direitos
+            ao longo dos séculos.
+        </p>
+
+        <h3>3. Fronteiras e identidade nacional</h3>
+
+        <p>
+            A dimensão territorial tornou-se posteriormente elemento
+            importante da construção do Estado brasileiro.
+        </p>
+
+        <p>
+            A enorme extensão territorial brasileira influencia até
+            hoje questões relacionadas à integração regional,
+            infraestrutura, economia, defesa, meio ambiente e políticas
+            públicas.
+        </p>
+
+        <h3>4. São Paulo e a interiorização</h3>
+
+        <p>
+            A região de São Paulo ocupou papel importante em diferentes
+            etapas da expansão territorial, especialmente por meio das
+            bandeiras e posteriormente de atividades econômicas ligadas
+            ao interior.
+        </p>
+
+        <p>
+            Entretanto, a expansão paulista também deve ser estudada
+            considerando os conflitos e a violência praticada contra
+            povos indígenas.
+        </p>
+
+        <h3>5. História e território no Brasil atual</h3>
+
+        <p>
+            Questões atuais envolvendo terras indígenas, fronteiras,
+            distribuição fundiária, ocupação da Amazônia e expansão
+            econômica possuem dimensões históricas que podem ser
+            compreendidas parcialmente a partir desse processo colonial.
+        </p>
+
+        <div class="atencao">
+
+            <strong>Importante:</strong>
+
+            <p>
+                Não devemos afirmar que todos os problemas territoriais
+                atuais são simplesmente consequência direta da colonização.
+                O Brasil passou por profundas transformações posteriores.
+                O objetivo do estudo histórico é identificar continuidades,
+                mudanças e rupturas.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- ========================================================
+         CONCEITOS
+         ======================================================== -->
+
+    <section class="card">
+
+        <h2>Conceitos fundamentais</h2>
+
+        <div class="conceito">
+
+            <p>
+                <strong>Interiorização:</strong>
+                expansão da ocupação para regiões do interior.
+            </p>
+
+            <p>
+                <strong>Bandeiras:</strong>
+                expedições organizadas principalmente a partir de São
+                Paulo, com diferentes objetivos econômicos e de
+                apresamento.
+            </p>
+
+            <p>
+                <strong>Pecuária:</strong>
+                criação de animais, importante para a expansão da
+                ocupação em determinadas áreas.
+            </p>
+
+            <p>
+                <strong>Missões:</strong>
+                espaços ligados à atuação missionária e à catequese
+                de populações indígenas.
+            </p>
+
+            <p>
+                <strong>União Ibérica:</strong>
+                período de 1580 a 1640 em que Portugal e Espanha
+                estiveram sob a mesma monarquia.
+            </p>
+
+            <p>
+                <strong>Tratado de Madri:</strong>
+                acordo de 1750 que redefiniu parâmetros para as fronteiras
+                entre territórios portugueses e espanhóis na América.
+            </p>
+
+            <p>
+                <strong>Uti possidetis:</strong>
+                princípio diplomático relacionado à consideração da
+                posse ou ocupação efetiva na definição territorial.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- ========================================================
+         LINHA DO TEMPO
+         ======================================================== -->
+
+    <section class="card">
+
+        <h2>Linha do Tempo</h2>
+
+        <div class="timeline">
+
+            <div class="evento">
+
+                <div class="ano">1500</div>
+
+                <p>
+                    Chegada da expedição portuguesa à América.
+                </p>
+
+            </div>
+
+            <div class="evento">
+
+                <div class="ano">1534</div>
+
+                <p>
+                    Implantação das Capitanias Hereditárias.
+                </p>
+
+            </div>
+
+            <div class="evento">
+
+                <div class="ano">1549</div>
+
+                <p>
+                    Instalação do Governo-Geral em Salvador.
+                </p>
+
+            </div>
+
+            <div class="evento">
+
+                <div class="ano">1580–1640</div>
+
+                <p>
+                    União Ibérica.
+                </p>
+
+            </div>
+
+            <div class="evento">
+
+                <div class="ano">Final do século XVII</div>
+
+                <p>
+                    Expansão da mineração e intensificação da
+                    interiorização.
+                </p>
+
+            </div>
+
+            <div class="evento">
+
+                <div class="ano">1750</div>
+
+                <p>
+                    Tratado de Madri.
+                </p>
+
+            </div>
+
+            <div class="evento">
+
+                <div class="ano">1763</div>
+
+                <p>
+                    Transferência da capital para o Rio de Janeiro.
+                </p>
+
+            </div>
+
+            <div class="evento">
+
+                <div class="ano">1777</div>
+
+                <p>
+                    Tratado de Santo Ildefonso.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================================================
+         O PROFESSOR
+         ======================================================== -->
+
+    <section class="card">
+
+        <h2>O que o professor precisa dominar</h2>
+
+        <div class="professor">
+
+            <ul>
+
+                <li>
+                    Explicar por que a ocupação começou concentrada
+                    no litoral.
+                </li>
+
+                <li>
+                    Relacionar a produção açucareira à ocupação inicial.
+                </li>
+
+                <li>
+                    Explicar a importância da pecuária na interiorização.
+                </li>
+
+                <li>
+                    Diferenciar os vários objetivos das bandeiras.
+                </li>
+
+                <li>
+                    Evitar a visão romantizada dos bandeirantes.
+                </li>
+
+                <li>
+                    Explicar a participação das missões religiosas.
+                </li>
+
+                <li>
+                    Relacionar mineração e interiorização.
+                </li>
+
+                <li>
+                    Explicar a importância da União Ibérica.
+                </li>
+
+                <li>
+                    Compreender o significado do Tratado de Madri.
+                </li>
+
+                <li>
+                    Explicar o princípio do uti possidetis.
+                </li>
+
+                <li>
+                    Relacionar expansão territorial e conflitos
+                    indígenas.
+                </li>
+
+                <li>
+                    Mostrar que a formação territorial foi um processo
+                    histórico e não um acontecimento único.
+                </li>
+
+            </ul>
+
+        </div>
+
+    </section>
+
+    <!-- ========================================================
+         LOUSA
+         ======================================================== -->
+
+    <section class="card">
+
+        <h2>O que colocar na lousa</h2>
+
+        <div class="lousa">
+
+            <h3>OCUPAÇÃO E EXPANSÃO TERRITORIAIS</h3>
+
+            <p>Litoral → ocupação inicial</p>
+
+            <p>Açúcar → litoral</p>
+
+            <p>↓</p>
+
+            <p>Pecuária → interiorização</p>
+
+            <p>Bandeiras → apresamento + riquezas</p>
+
+            <p>Missões → catequese + aldeamentos</p>
+
+            <p>Mineração → expansão para o interior</p>
+
+            <p>1580–1640 → União Ibérica</p>
+
+            <p>1750 → Tratado de Madri</p>
+
+            <p>Uti possidetis → ocupação efetiva</p>
+
+            <p>1777 → Santo Ildefonso</p>
+
+            <p>Resultado → expansão da ocupação portuguesa</p>
+
+        </div>
+
+    </section>
+
+    <!-- ========================================================
+         ENEM
+         ======================================================== -->
+
+    <section class="card">
+
+        <h2>Foco ENEM, Vestibular e Concurso</h2>
+
+        <div class="enem">
+
+            <p>
+                Para provas, o mais importante não é decorar uma lista
+                de bandeirantes ou tratados. O aluno precisa compreender
+                a relação entre <strong>economia, território, poder,
+                população indígena e diplomacia</strong>.
+            </p>
+
+            <p>
+                Uma sequência importante para memorizar é:
+            </p>
+
+            <p>
+                <strong>
+                    litoral → interiorização → expansão econômica →
+                    conflitos → ocupação efetiva → negociação das fronteiras
+                </strong>
+            </p>
+
+            <p>
+                Também é importante reconhecer que a formação territorial
+                envolveu tanto ações da Coroa quanto iniciativas de
+                grupos particulares e conflitos com diferentes povos.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- ========================================================
+         QUESTÃO 1
+         ======================================================== -->
+
+    <section class="card">
+
+        <h2>Questões de revisão — estilo ENEM</h2>
+
+        <div class="questao">
+
+            <h3>Questão 1</h3>
+
+            <p>
+                Durante a colonização portuguesa, a expansão da ocupação
+                para áreas do interior da América Portuguesa esteve
+                relacionada a diferentes atividades e interesses.
+                Entre esses fatores, destaca-se:
+            </p>
+
+            <div class="alternativas">
+
+                <p>
+                    <strong>A)</strong>
+                    a existência de uma política portuguesa de abandono
+                    completo do litoral.
+                </p>
+
+                <p>
+                    <strong>B)</strong>
+                    a combinação entre atividades econômicas,
+                    exploração territorial, missões e busca por riquezas.
+                </p>
+
+                <p>
+                    <strong>C)</strong>
+                    a determinação espanhola de transferir sua população
+                    para o interior brasileiro.
+                </p>
+
+                <p>
+                    <strong>D)</strong>
+                    a criação de um Estado brasileiro independente
+                    durante o século XVI.
+                </p>
+
+                <p>
+                    <strong>E)</strong>
+                    a proibição da circulação de colonos pelo interior.
+                </p>
+
+            </div>
+
+            <button onclick="mostrarResposta('resposta1')">
+                Mostrar gabarito
+            </button>
+
+            <div class="resposta" id="resposta1">
+
+                <strong>Gabarito: B.</strong>
+
+                <p>
+                    A interiorização resultou da combinação de diferentes
+                    fatores, como pecuária, bandeiras, mineração, missões,
+                    busca por terras e interesses estratégicos da Coroa.
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- ====================================================
+             QUESTÃO 2
+             ==================================================== -->
+
+        <div class="questao">
+
+            <h3>Questão 2</h3>
+
+            <p>
+                O Tratado de Madri, assinado em 1750, está relacionado
+                à formação territorial da América portuguesa porque:
+            </p>
+
+            <div class="alternativas">
+
+                <p>
+                    <strong>A)</strong>
+                    restaurou integralmente os limites originais do
+                    Tratado de Tordesilhas.
+                </p>
+
+                <p>
+                    <strong>B)</strong>
+                    estabeleceu parâmetros para a redefinição das
+                    fronteiras entre territórios portugueses e espanhóis.
+                </p>
+
+                <p>
+                    <strong>C)</strong>
+                    declarou a independência do Brasil.
+                </p>
+
+                <p>
+                    <strong>D)</strong>
+                    encerrou imediatamente todas as disputas territoriais
+                    entre Portugal e Espanha.
+                </p>
+
+                <p>
+                    <strong>E)</strong>
+                    determinou a retirada portuguesa de todas as áreas
+                    situadas no interior.
+                </p>
+
+            </div>
+
+            <button onclick="mostrarResposta('resposta2')">
+                Mostrar gabarito
+            </button>
+
+            <div class="resposta" id="resposta2">
+
+                <strong>Gabarito: B.</strong>
+
+                <p>
+                    O Tratado de Madri procurou estabelecer novos critérios
+                    para as fronteiras luso-espanholas na América,
+                    considerando, entre outros elementos, a ocupação
+                    efetiva dos territórios.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================================================
+         BNCC
+         ======================================================== -->
+
+    <section class="card">
+
+        <h2>BNCC — Como trabalhar o tema</h2>
+
+        <p>
+            Este conteúdo pode ser articulado às habilidades da BNCC
+            relacionadas à formação territorial, colonização portuguesa,
+            relações de poder, sociedades indígenas, circulação de
+            pessoas e mercadorias e construção histórica do Brasil.
+        </p>
+
+        <p>
+            Em sala de aula, o professor pode trabalhar mapas históricos
+            juntamente com linhas do tempo para mostrar que as fronteiras
+            brasileiras foram construídas gradualmente.
+        </p>
+
+        <p>
+            Uma boa estratégia é comparar o mapa correspondente ao
+            Tratado de Tordesilhas com mapas posteriores, destacando
+            ocupação, expansão e negociações diplomáticas.
+        </p>
+
+    </section>
+
+    <!-- ========================================================
+         RESUMO
+         ======================================================== -->
+
+    <section class="card">
+
+        <h2>Resumo para revisão rápida</h2>
+
+        <ul>
+
+            <li>
+                A ocupação portuguesa começou principalmente no litoral.
+            </li>
+
+            <li>
+                A economia açucareira reforçou a ocupação litorânea.
+            </li>
+
+            <li>
+                A pecuária contribuiu para a interiorização.
+            </li>
+
+            <li>
+                As bandeiras participaram de diferentes formas de
+                exploração e expansão territorial.
+            </li>
+
+            <li>
+                A atuação bandeirante também esteve associada à
+                escravização e à violência contra povos indígenas.
+            </li>
+
+            <li>
+                Missões religiosas participaram da ocupação de áreas
+                do interior.
+            </li>
+
+            <li>
+                A mineração ampliou a ocupação do interior.
+            </li>
+
+            <li>
+                A União Ibérica alterou as condições políticas da
+                expansão territorial.
+            </li>
+
+            <li>
+                O Tratado de Madri, em 1750, foi fundamental nas
+                negociações de fronteiras.
+            </li>
+
+            <li>
+                O uti possidetis valorizava a ocupação efetiva como
+                referência territorial.
+            </li>
+
+            <li>
+                A formação territorial brasileira foi resultado de
+                processos econômicos, políticos, militares,
+                diplomáticos e sociais.
+            </li>
+
+        </ul>
+
+    </section>
+
+    <!-- ========================================================
+         NAVEGAÇÃO
+         ======================================================== -->
+
+    <div class="navegacao">
+
+        <a href="../45-Montagem-da-Administracao-Colonial/index.html">
+            ← Voltar: 1.45
+        </a>
+
+        <a href="../47-A-Crise-do-Sistema-Colonial/index.html">
+            Próximo: 46 — A Guerra de Secessão →
+        </a>
+
+    </div>
+
+</main>
+
+<!-- ==========================================================
+     RODAPÉ
+     ========================================================== -->
+
+<footer>
+
+    <p>
+        <strong>Curso de História Geral</strong>
+    </p>
+
+    <p>
+        Fund II • Ensino Médio • ENEM • Vestibular • Concurso
+    </p>
+
+    <p>
+        Professor Marcelo Oliveira
+    </p>
+
+</footer>
+
+<!-- ==========================================================
+     BOTÃO VOLTAR AO TOPO
+     ========================================================== -->
+
+<a href="#topo" class="topo" aria-label="Voltar ao topo">
+    ↑
+</a>
+
+<!-- ==========================================================
+     JAVASCRIPT
+     ========================================================== -->
+
+<script>
+
+    /* Cria a função responsável por mostrar o gabarito. */
+    function mostrarResposta(id) {
+
+        /* Busca o elemento pelo identificador recebido. */
+        const resposta = document.getElementById(id);
+
+        /* Verifica se a resposta está visível. */
+        if (resposta.style.display === "block") {
+
+            /* Esconde a resposta. */
+            resposta.style.display = "none";
+
+        } else {
+
+            /* Mostra a resposta. */
+            resposta.style.display = "block";
+
+        }
+
+    }
+
+</script>
+
+<script>
+  const paginaAnterior = "44 - Revoluções Liberais.html";
+  const paginaProxima = "46 - A Guerra de Secessão.html";
+</script>
+<script src="navegacao.js"></script>
+</body>
+
+</html>

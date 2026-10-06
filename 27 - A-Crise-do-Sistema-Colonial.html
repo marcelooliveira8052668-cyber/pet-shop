@@ -1,0 +1,1430 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+    <!-- Define a codificação dos caracteres. -->
+    <meta charset="UTF-8">
+
+
+<!-- Deixa a página responsiva em celulares, tablets e computadores. -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Título exibido na aba do navegador. -->
+<title>1.27 — A Crise do Sistema Colonial | História Geral</title>
+
+<style>
+
+    /* Remove as configurações padrão do navegador. */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* Ativa a rolagem suave. */
+    html {
+        scroll-behavior: smooth;
+    }
+
+    /* Define a aparência geral da página. */
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: #f4f7fb;
+        color: #1d2939;
+        line-height: 1.7;
+    }
+
+    /* Cabeçalho principal. */
+    header {
+        background: linear-gradient(135deg, #071a35, #123b6d);
+        color: white;
+        text-align: center;
+        padding: 45px 20px;
+        border-bottom: 6px solid #f97316;
+    }
+
+    /* Nome do curso. */
+    .curso {
+        color: #93c5fd;
+        font-size: 0.95rem;
+        font-weight: bold;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        margin-bottom: 12px;
+    }
+
+    /* Título do capítulo. */
+    header h1 {
+        font-size: clamp(2rem, 5vw, 3.5rem);
+        margin-bottom: 15px;
+    }
+
+    /* Subtítulo. */
+    header p {
+        max-width: 950px;
+        margin: auto;
+        color: #e5e7eb;
+        font-size: 1.1rem;
+    }
+
+    /* Área principal do conteúdo. */
+    main {
+        max-width: 1150px;
+        margin: auto;
+        padding: 30px 18px 80px;
+    }
+
+    /* Cartões de conteúdo. */
+    .card {
+        background: white;
+        margin: 25px 0;
+        padding: 30px;
+        border-radius: 18px;
+        box-shadow: 0 8px 25px rgba(15, 23, 42, 0.08);
+        border-left: 6px solid #2563eb;
+    }
+
+    /* Títulos dos cartões. */
+    .card h2 {
+        color: #123b6d;
+        margin-bottom: 18px;
+        font-size: clamp(1.5rem, 3vw, 2.1rem);
+    }
+
+    /* Subtítulos. */
+    .card h3 {
+        color: #1e40af;
+        margin: 22px 0 10px;
+    }
+
+    /* Espaçamento dos parágrafos. */
+    .card p {
+        margin-bottom: 15px;
+    }
+
+    /* Espaçamento das listas. */
+    .card ul,
+    .card ol {
+        margin: 15px 0 15px 25px;
+    }
+
+    /* Espaçamento dos itens. */
+    .card li {
+        margin-bottom: 8px;
+    }
+
+    /* Caixa azul para conceitos. */
+    .conceito {
+        background: #eff6ff;
+        border-left: 6px solid #2563eb;
+        padding: 20px;
+        border-radius: 12px;
+        margin: 20px 0;
+    }
+
+    /* Caixa laranja para causas. */
+    .causas {
+        background: #fff7ed;
+        border-left: 6px solid #f97316;
+        padding: 20px;
+        border-radius: 12px;
+        margin: 20px 0;
+    }
+
+    /* Caixa amarela para consequências. */
+    .consequencias {
+        background: #fefce8;
+        border-left: 6px solid #eab308;
+        padding: 20px;
+        border-radius: 12px;
+        margin: 20px 0;
+    }
+
+    /* Caixa vermelha para informações que exigem atenção. */
+    .atencao {
+        background: #fef2f2;
+        border-left: 6px solid #dc2626;
+        padding: 20px;
+        border-radius: 12px;
+        margin: 20px 0;
+    }
+
+    /* Caixa ciano para o ENEM. */
+    .enem {
+        background: #ecfeff;
+        border-left: 6px solid #0891b2;
+        padding: 20px;
+        border-radius: 12px;
+        margin: 20px 0;
+    }
+
+    /* Caixa roxa para orientações ao professor. */
+    .professor {
+        background: #f5f3ff;
+        border-left: 6px solid #7c3aed;
+        padding: 20px;
+        border-radius: 12px;
+        margin: 20px 0;
+    }
+
+    /* Caixa escura que representa a lousa. */
+    .lousa {
+        background: #172554;
+        color: white;
+        border-radius: 14px;
+        padding: 25px;
+        margin: 20px 0;
+    }
+
+    /* Permite rolagem horizontal em tabelas no celular. */
+    .tabela-container {
+        overflow-x: auto;
+        margin: 20px 0;
+    }
+
+    /* Define a tabela. */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        min-width: 650px;
+    }
+
+    /* Define células da tabela. */
+    th,
+    td {
+        border: 1px solid #dbe3ef;
+        padding: 13px;
+        text-align: left;
+    }
+
+    /* Cabeçalho da tabela. */
+    th {
+        background: #123b6d;
+        color: white;
+    }
+
+    /* Alterna a cor das linhas. */
+    tr:nth-child(even) {
+        background: #f8fafc;
+    }
+
+    /* Linha vertical da cronologia. */
+    .timeline {
+        border-left: 4px solid #f97316;
+        margin: 25px 0;
+        padding-left: 25px;
+    }
+
+    /* Cada evento da linha do tempo. */
+    .evento {
+        margin-bottom: 25px;
+        position: relative;
+    }
+
+    /* Círculo que marca cada evento. */
+    .evento::before {
+        content: "";
+        position: absolute;
+        left: -36px;
+        top: 7px;
+        width: 14px;
+        height: 14px;
+        background: #f97316;
+        border-radius: 50%;
+        border: 3px solid white;
+        box-shadow: 0 0 0 2px #f97316;
+    }
+
+    /* Destaca as datas. */
+    .ano {
+        font-weight: bold;
+        color: #c2410c;
+    }
+
+    /* Caixa das questões. */
+    .questao {
+        background: #f8fafc;
+        border: 1px solid #dbe3ef;
+        border-radius: 14px;
+        padding: 25px;
+        margin: 25px 0;
+    }
+
+    /* Botões da página. */
+    button {
+        border: none;
+        border-radius: 10px;
+        padding: 12px 18px;
+        background: #123b6d;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    /* Efeito visual dos botões. */
+    button:hover {
+        background: #1d4ed8;
+        transform: translateY(-2px);
+    }
+
+    /* Espaçamento das alternativas. */
+    .alternativas {
+        margin: 15px 0;
+    }
+
+    /* Espaçamento de cada alternativa. */
+    .alternativas p {
+        margin: 8px 0;
+    }
+
+    /* Gabarito escondido inicialmente. */
+    .resposta {
+        display: none;
+        margin-top: 15px;
+        padding: 15px;
+        background: #dcfce7;
+        border-left: 5px solid #16a34a;
+        border-radius: 10px;
+    }
+
+    /* Área de navegação. */
+    .navegacao {
+        display: flex;
+        justify-content: space-between;
+        gap: 15px;
+        flex-wrap: wrap;
+        margin-top: 40px;
+    }
+
+    /* Links de navegação. */
+    .navegacao a {
+        text-decoration: none;
+        color: white;
+        background: #123b6d;
+        padding: 13px 20px;
+        border-radius: 10px;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+    /* Efeito dos links. */
+    .navegacao a:hover {
+        background: #1d4ed8;
+        transform: translateY(-2px);
+    }
+
+    /* Botão flutuante de voltar ao topo. */
+    .topo {
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        background: #f97316;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        font-weight: bold;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Rodapé. */
+    footer {
+        background: #071a35;
+        color: white;
+        text-align: center;
+        padding: 35px 20px;
+    }
+
+    /* Destaque da assinatura. */
+    footer strong {
+        color: #93c5fd;
+    }
+
+    /* Ajustes para celulares. */
+    @media (max-width: 700px) {
+
+        /* Reduz o tamanho interno dos cartões. */
+        .card {
+            padding: 20px;
+        }
+
+        /* Reduz o espaço do cabeçalho. */
+        header {
+            padding: 35px 15px;
+        }
+
+        /* Coloca a navegação em coluna. */
+        .navegacao {
+            flex-direction: column;
+        }
+
+        /* Faz os botões ocuparem toda a largura. */
+        .navegacao a {
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+</style>
+
+
+</head>
+
+<body id="topo">
+
+
+<!-- Nome e identificação do curso. -->
+<header>
+
+    <div class="curso">
+        Curso de História Geral
+    </div>
+
+    <h1>1.27 — A Crise do Sistema Colonial</h1>
+
+    <p>
+        As transformações econômicas, políticas e sociais que
+        enfraqueceram o sistema colonial português na América
+        e contribuíram para os movimentos de emancipação.
+    </p>
+
+</header>
+
+<!-- Conteúdo principal. -->
+<main>
+
+    <section class="card">
+
+        <h2>Introdução — Por que o sistema colonial entrou em crise?</h2>
+
+        <p>
+            O sistema colonial português na América foi construído para
+            atender aos interesses da metrópole. Durante séculos,
+            Portugal buscou controlar o comércio, a produção e a
+            circulação de riquezas produzidas na colônia.
+        </p>
+
+        <p>
+            Porém, a partir do século XVIII, esse sistema começou a
+            enfrentar transformações profundas.
+        </p>
+
+        <p>
+            Mudanças econômicas, ideias iluministas, conflitos
+            internacionais, crescimento de grupos coloniais e o
+            aumento das exigências fiscais da Coroa criaram tensões
+            cada vez maiores.
+        </p>
+
+        <div class="conceito">
+
+            <strong>Ideia central:</strong>
+
+            <p>
+                A crise do sistema colonial não foi um acontecimento
+                único. Ela foi um processo histórico formado por
+                diferentes transformações que alteraram as relações
+                entre Portugal e sua colônia americana.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="card">
+
+        <h2>PARTE I — O COMEÇO</h2>
+
+        <h3>1. O sistema colonial e suas contradições</h3>
+
+        <p>
+            O sistema colonial estabelecia relações econômicas e
+            políticas entre metrópole e colônia.
+        </p>
+
+        <p>
+            A América Portuguesa deveria produzir riquezas e integrar
+            uma estrutura comercial que favorecesse Portugal.
+        </p>
+
+        <p>
+            Entretanto, a própria expansão econômica da colônia criou
+            grupos sociais que passaram a possuir interesses próprios.
+        </p>
+
+        <p>
+            Proprietários rurais, comerciantes, mineradores e outros
+            setores da sociedade colonial passaram a participar de uma
+            economia cada vez mais complexa.
+        </p>
+
+        <h3>2. O crescimento econômico da colônia</h3>
+
+        <p>
+            Durante o século XVIII, a mineração provocou crescimento
+            populacional, expansão do comércio interno e formação de
+            novas áreas urbanas.
+        </p>
+
+        <p>
+            A economia colonial deixou de depender exclusivamente das
+            atividades tradicionais do litoral.
+        </p>
+
+        <p>
+            Isso aumentou a importância econômica da própria sociedade
+            colonial e criou novas tensões com as políticas de controle
+            da metrópole.
+        </p>
+
+        <h3>3. A exploração colonial</h3>
+
+        <p>
+            A Coroa portuguesa utilizava diferentes mecanismos para
+            arrecadar recursos da América.
+        </p>
+
+        <p>
+            Na região mineradora, por exemplo, foram estabelecidos
+            mecanismos de fiscalização e cobrança de tributos sobre o
+            ouro.
+        </p>
+
+        <div class="causas">
+
+            <h3>Fatores que contribuíram para o aumento das tensões</h3>
+
+            <ul>
+                <li>Pressão fiscal da Coroa.</li>
+                <li>Fiscalização das atividades econômicas.</li>
+                <li>Interesses das elites coloniais.</li>
+                <li>Endividamento de setores da sociedade.</li>
+                <li>Crises econômicas de Portugal.</li>
+                <li>Influência de novas ideias políticas.</li>
+                <li>Transformações internacionais.</li>
+            </ul>
+
+        </div>
+
+    </section>
+
+    <section class="card">
+
+        <h2>PARTE II — O DESENVOLVIMENTO</h2>
+
+        <h3>1. A mineração e a cobrança de impostos</h3>
+
+        <p>
+            A descoberta de ouro aumentou a capacidade de arrecadação
+            da Coroa, mas também aumentou a presença fiscal e
+            administrativa portuguesa.
+        </p>
+
+        <p>
+            Um dos tributos mais conhecidos foi o
+            <strong>quinto</strong>, que correspondia à cobrança de uma
+            parcela do ouro extraído.
+        </p>
+
+        <p>
+            A preocupação com a arrecadação levou a Coroa a criar
+            mecanismos de fiscalização cada vez mais rigorosos.
+        </p>
+
+        <h3>2. A derrama</h3>
+
+        <p>
+            A chamada <strong>derrama</strong> estava relacionada à
+            cobrança de valores devidos à Coroa na região mineradora.
+        </p>
+
+        <p>
+            A possibilidade de medidas de cobrança mais rigorosas
+            contribuiu para o ambiente de tensão que marcou a
+            sociedade mineradora no final do século XVIII.
+        </p>
+
+        <div class="atencao">
+
+            <strong>Atenção para a prova:</strong>
+
+            <p>
+                Não é correto afirmar que a derrama foi simplesmente
+                “um imposto normal cobrado todos os anos”.
+                Ela estava relacionada à cobrança de valores atrasados
+                quando as metas de arrecadação não eram atingidas.
+            </p>
+
+        </div>
+
+        <h3>3. O Iluminismo</h3>
+
+        <p>
+            As ideias iluministas contribuíram para questionar formas
+            tradicionais de autoridade política e social.
+        </p>
+
+        <p>
+            Conceitos como liberdade, direitos, representação política,
+            soberania e crítica ao absolutismo circularam pelo mundo
+            atlântico.
+        </p>
+
+        <p>
+            Essas ideias não foram automaticamente aceitas por todos
+            os grupos coloniais, mas participaram do ambiente intelectual
+            no qual surgiram diferentes movimentos de contestação.
+        </p>
+
+        <h3>4. A Independência dos Estados Unidos</h3>
+
+        <p>
+            A Independência das Treze Colônias inglesas, em 1776,
+            tornou-se uma referência importante no mundo atlântico.
+        </p>
+
+        <p>
+            O processo demonstrou que uma sociedade colonial poderia
+            romper politicamente com uma metrópole.
+        </p>
+
+        <p>
+            Ideias e exemplos políticos circularam entre diferentes
+            regiões, influenciando debates e movimentos posteriores.
+        </p>
+
+        <h3>5. A Revolução Francesa</h3>
+
+        <p>
+            A Revolução Francesa, iniciada em 1789, aprofundou a
+            circulação de ideias sobre cidadania, direitos e soberania.
+        </p>
+
+        <p>
+            Seus efeitos ultrapassaram as fronteiras francesas e
+            contribuíram para transformar o ambiente político europeu
+            e americano.
+        </p>
+
+        <h3>6. A Revolução Industrial</h3>
+
+        <p>
+            A Revolução Industrial também transformou as relações
+            econômicas internacionais.
+        </p>
+
+        <p>
+            A expansão do capitalismo industrial aumentaria
+            progressivamente as críticas às antigas estruturas
+            comerciais coloniais baseadas em monopólios e privilégios.
+        </p>
+
+        <h3>7. As revoltas coloniais</h3>
+
+        <p>
+            Durante o período colonial ocorreram diferentes movimentos
+            de contestação.
+        </p>
+
+        <p>
+            Entre os mais conhecidos estão a
+            <strong>Inconfidência Mineira</strong>, de 1789, e a
+            <strong>Conjuração Baiana</strong>, de 1798.
+        </p>
+
+        <div class="tabela-container">
+
+            <table>
+
+                <tr>
+                    <th>Movimento</th>
+                    <th>Ano</th>
+                    <th>Características</th>
+                </tr>
+
+                <tr>
+                    <td>Inconfidência Mineira</td>
+                    <td>1789</td>
+                    <td>Movimento articulado principalmente por setores das elites de Minas Gerais, relacionado à crise da mineração e às ideias de emancipação.</td>
+                </tr>
+
+                <tr>
+                    <td>Conjuração Baiana</td>
+                    <td>1798</td>
+                    <td>Movimento com participação social mais ampla, defendendo mudanças políticas e sociais, incluindo propostas de igualdade.</td>
+                </tr>
+
+            </table>
+
+        </div>
+
+        <h3>8. A Inconfidência Mineira</h3>
+
+        <p>
+            A Inconfidência Mineira ocorreu em 1789, em Minas Gerais.
+        </p>
+
+        <p>
+            O movimento envolveu proprietários, militares, religiosos,
+            intelectuais e outros participantes.
+        </p>
+
+        <p>
+            Entre os fatores estavam a crise da mineração, a cobrança
+            de tributos e a influência de ideias políticas do período.
+        </p>
+
+        <p>
+            O movimento foi descoberto antes de sua execução.
+            <strong>Joaquim José da Silva Xavier, o Tiradentes</strong>,
+            foi posteriormente condenado à morte.
+        </p>
+
+        <h3>9. A Conjuração Baiana</h3>
+
+        <p>
+            A Conjuração Baiana, também chamada Revolta dos Alfaiates,
+            ocorreu em Salvador em 1798.
+        </p>
+
+        <p>
+            Diferentemente da Inconfidência Mineira, apresentou
+            participação significativa de setores populares e defendeu
+            propostas sociais e políticas mais amplas.
+        </p>
+
+        <p>
+            Entre suas propostas estiveram ideias de igualdade,
+            liberdade e mudanças na estrutura social.
+        </p>
+
+        <div class="atencao">
+
+            <strong>Comparação importante:</strong>
+
+            <p>
+                Não devemos tratar os dois movimentos como se fossem
+                idênticos. Eles ocorreram em contextos diferentes e
+                reuniram grupos sociais e projetos políticos distintos.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="card">
+
+        <h2>As principais forças da crise colonial</h2>
+
+        <div class="tabela-container">
+
+            <table>
+
+                <tr>
+                    <th>Fator</th>
+                    <th>Como contribuiu para a crise</th>
+                </tr>
+
+                <tr>
+                    <td>Pressão fiscal</td>
+                    <td>Aumentou conflitos entre Coroa e setores coloniais.</td>
+                </tr>
+
+                <tr>
+                    <td>Iluminismo</td>
+                    <td>Questionou formas tradicionais de autoridade.</td>
+                </tr>
+
+                <tr>
+                    <td>Revolução Americana</td>
+                    <td>Apresentou um exemplo de independência colonial.</td>
+                </tr>
+
+                <tr>
+                    <td>Revolução Francesa</td>
+                    <td>Ampliou a circulação de ideias sobre direitos e cidadania.</td>
+                </tr>
+
+                <tr>
+                    <td>Revolução Industrial</td>
+                    <td>Transformou a economia mundial e as relações comerciais.</td>
+                </tr>
+
+                <tr>
+                    <td>Interesses coloniais</td>
+                    <td>Setores locais passaram a defender maior autonomia.</td>
+                </tr>
+
+            </table>
+
+        </div>
+
+    </section>
+
+    <section class="card">
+
+        <h2>PARTE III — O LEGADO E O MUNDO ATUAL</h2>
+
+        <h3>1. A crise não significou independência imediata</h3>
+
+        <p>
+            Um ponto fundamental é compreender que a crise do sistema
+            colonial não provocou automaticamente a Independência do
+            Brasil.
+        </p>
+
+        <p>
+            Houve um processo de transformações políticas, econômicas
+            e sociais que se desenvolveu durante décadas.
+        </p>
+
+        <h3>2. A crise do antigo sistema colonial</h3>
+
+        <p>
+            No final do século XVIII e início do século XIX, as antigas
+            relações coloniais foram sendo pressionadas por mudanças
+            no mundo atlântico.
+        </p>
+
+        <p>
+            As revoluções políticas, o crescimento do capitalismo e as
+            transformações das relações comerciais enfraqueceram
+            progressivamente estruturas baseadas em monopólios coloniais.
+        </p>
+
+        <h3>3. A chegada da Corte portuguesa</h3>
+
+        <p>
+            Em 1808, a transferência da Corte portuguesa para o Rio de
+            Janeiro provocou uma transformação decisiva na relação
+            entre Brasil e Portugal.
+        </p>
+
+        <p>
+            A abertura dos portos às nações amigas e outras medidas
+            modificaram profundamente a estrutura econômica e política
+            da América Portuguesa.
+        </p>
+
+        <p>
+            Essas transformações seriam fundamentais para compreender
+            o processo de Independência iniciado posteriormente.
+        </p>
+
+        <h3>4. Da crise à Independência</h3>
+
+        <p>
+            A crise do sistema colonial criou condições para que
+            diferentes grupos discutissem novas formas de organização
+            política.
+        </p>
+
+        <p>
+            Porém, a Independência brasileira de 1822 não representou
+            uma ruptura completa com todas as estruturas sociais
+            existentes.
+        </p>
+
+        <p>
+            A escravidão continuou, a concentração de terras permaneceu
+            e muitos grupos das elites continuaram exercendo influência
+            política.
+        </p>
+
+        <div class="consequencias">
+
+            <h3>Legados importantes</h3>
+
+            <ul>
+
+                <li>
+                    Fortalecimento de debates sobre autonomia política.
+                </li>
+
+                <li>
+                    Circulação de ideias de liberdade e representação.
+                </li>
+
+                <li>
+                    Crescimento das tensões entre elites coloniais e
+                    autoridades metropolitanas.
+                </li>
+
+                <li>
+                    Formação de movimentos de contestação.
+                </li>
+
+                <li>
+                    Preparação de condições políticas para a
+                    Independência.
+                </li>
+
+            </ul>
+
+        </div>
+
+    </section>
+
+    <section class="card">
+
+        <h2>Conceitos fundamentais</h2>
+
+        <div class="conceito">
+
+            <p>
+                <strong>Crise colonial:</strong>
+                processo de enfraquecimento das relações tradicionais
+                entre metrópole e colônia.
+            </p>
+
+            <p>
+                <strong>Quinto:</strong>
+                cobrança correspondente a um quinto do ouro extraído,
+                conforme a legislação colonial.
+            </p>
+
+            <p>
+                <strong>Derrama:</strong>
+                mecanismo de cobrança de valores devidos à Coroa
+                quando as metas de arrecadação não eram alcançadas.
+            </p>
+
+            <p>
+                <strong>Iluminismo:</strong>
+                conjunto diversificado de ideias que valorizava razão,
+                crítica e novas concepções sobre política e sociedade.
+            </p>
+
+            <p>
+                <strong>Inconfidência Mineira:</strong>
+                movimento de 1789, em Minas Gerais, relacionado a
+                tensões coloniais e projetos de emancipação.
+            </p>
+
+            <p>
+                <strong>Conjuração Baiana:</strong>
+                movimento de 1798, marcado por participação de setores
+                populares e por propostas de transformação política
+                e social.
+            </p>
+
+            <p>
+                <strong>Emancipação política:</strong>
+                processo pelo qual um território rompe ou reduz sua
+                dependência política em relação a outro poder.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="card">
+
+        <h2>Linha do Tempo</h2>
+
+        <div class="timeline">
+
+            <div class="evento">
+
+                <div class="ano">1750</div>
+
+                <p>
+                    Tratado de Madri e reorganização das fronteiras
+                    entre Portugal e Espanha na América.
+                </p>
+
+            </div>
+
+            <div class="evento">
+
+                <div class="ano">1759</div>
+
+                <p>
+                    Expulsão dos jesuítas dos territórios portugueses.
+                </p>
+
+            </div>
+
+            <div class="evento">
+
+                <div class="ano">1776</div>
+
+                <p>
+                    Independência das Treze Colônias inglesas.
+                </p>
+
+            </div>
+
+            <div class="evento">
+
+                <div class="ano">1789</div>
+
+                <p>
+                    Revolução Francesa e Inconfidência Mineira.
+                </p>
+
+            </div>
+
+            <div class="evento">
+
+                <div class="ano">1798</div>
+
+                <p>
+                    Conjuração Baiana.
+                </p>
+
+            </div>
+
+            <div class="evento">
+
+                <div class="ano">1808</div>
+
+                <p>
+                    Chegada da Corte portuguesa ao Rio de Janeiro e
+                    abertura dos portos.
+                </p>
+
+            </div>
+
+            <div class="evento">
+
+                <div class="ano">1822</div>
+
+                <p>
+                    Independência do Brasil.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="card">
+
+        <h2>O que o professor precisa dominar</h2>
+
+        <div class="professor">
+
+            <ul>
+
+                <li>
+                    Explicar o conceito de crise do sistema colonial.
+                </li>
+
+                <li>
+                    Relacionar mineração e pressão fiscal.
+                </li>
+
+                <li>
+                    Explicar o quinto e a derrama.
+                </li>
+
+                <li>
+                    Relacionar Iluminismo e contestação política.
+                </li>
+
+                <li>
+                    Explicar a importância da Independência dos Estados
+                    Unidos no mundo atlântico.
+                </li>
+
+                <li>
+                    Relacionar a Revolução Francesa à circulação de
+                    ideias políticas.
+                </li>
+
+                <li>
+                    Diferenciar Inconfidência Mineira e Conjuração Baiana.
+                </li>
+
+                <li>
+                    Evitar afirmar que todos os participantes das
+                    revoltas tinham os mesmos objetivos.
+                </li>
+
+                <li>
+                    Explicar que a crise colonial foi um processo e
+                    não um acontecimento isolado.
+                </li>
+
+                <li>
+                    Relacionar a crise colonial às transformações que
+                    levariam à Independência.
+                </li>
+
+            </ul>
+
+        </div>
+
+    </section>
+
+    <section class="card">
+
+        <h2>O que colocar na lousa</h2>
+
+        <div class="lousa">
+
+            <h3>CRISE DO SISTEMA COLONIAL</h3>
+
+            <p>Mineração → maior fiscalização</p>
+
+            <p>↓</p>
+
+            <p>Pressão fiscal → tensões</p>
+
+            <p>↓</p>
+
+            <p>Iluminismo → novas ideias</p>
+
+            <p>↓</p>
+
+            <p>1776 → Independência dos EUA</p>
+
+            <p>1789 → Inconfidência Mineira</p>
+
+            <p>1789 → Revolução Francesa</p>
+
+            <p>1798 → Conjuração Baiana</p>
+
+            <p>↓</p>
+
+            <p>Crise do sistema colonial</p>
+
+            <p>↓</p>
+
+            <p>1808 → Corte portuguesa no Brasil</p>
+
+            <p>↓</p>
+
+            <p>1822 → Independência</p>
+
+        </div>
+
+    </section>
+
+    <section class="card">
+
+        <h2>Foco ENEM, Vestibular e Concurso</h2>
+
+        <div class="enem">
+
+            <p>
+                Em provas, a crise colonial costuma ser apresentada
+                dentro de um contexto maior de transformação do mundo
+                atlântico.
+            </p>
+
+            <p>
+                O estudante deve relacionar:
+            </p>
+
+            <p>
+                <strong>
+                    crise econômica + pressão fiscal + Iluminismo +
+                    revoluções atlânticas + interesses coloniais
+                </strong>
+            </p>
+
+            <p>
+                Também é importante perceber que diferentes movimentos
+                de contestação possuíam participantes, interesses e
+                projetos distintos.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="card">
+
+        <h2>Questões de revisão — estilo ENEM</h2>
+
+        <div class="questao">
+
+            <h3>Questão 1</h3>
+
+            <p>
+                Durante o século XVIII, diferentes fatores contribuíram
+                para o aumento das tensões entre setores da sociedade
+                colonial e a administração portuguesa. Um desses fatores
+                foi:
+            </p>
+
+            <div class="alternativas">
+
+                <p>
+                    <strong>A)</strong>
+                    a completa ausência de cobrança de tributos.
+                </p>
+
+                <p>
+                    <strong>B)</strong>
+                    a redução da fiscalização da atividade mineradora.
+                </p>
+
+                <p>
+                    <strong>C)</strong>
+                    o aumento da pressão fiscal e das medidas de controle
+                    da Coroa.
+                </p>
+
+                <p>
+                    <strong>D)</strong>
+                    a proibição de circulação de ideias políticas.
+                </p>
+
+                <p>
+                    <strong>E)</strong>
+                    o fim imediato da escravidão colonial.
+                </p>
+
+            </div>
+
+            <button onclick="mostrarResposta('resposta1')">
+                Mostrar gabarito
+            </button>
+
+            <div class="resposta" id="resposta1">
+
+                <strong>Gabarito: C.</strong>
+
+                <p>
+                    O aumento da fiscalização e da pressão fiscal,
+                    especialmente em regiões mineradoras, contribuiu
+                    para ampliar tensões entre setores coloniais e
+                    a administração portuguesa.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="questao">
+
+            <h3>Questão 2</h3>
+
+            <p>
+                A Inconfidência Mineira e a Conjuração Baiana fazem
+                parte do contexto de crise do sistema colonial, mas
+                apresentaram diferenças importantes. Uma dessas
+                diferenças está relacionada:
+            </p>
+
+            <div class="alternativas">
+
+                <p>
+                    <strong>A)</strong>
+                    à ausência completa de ideias políticas nos dois
+                    movimentos.
+                </p>
+
+                <p>
+                    <strong>B)</strong>
+                    à participação social e às propostas defendidas
+                    por seus diferentes grupos.
+                </p>
+
+                <p>
+                    <strong>C)</strong>
+                    ao fato de os dois movimentos terem ocorrido
+                    simultaneamente.
+                </p>
+
+                <p>
+                    <strong>D)</strong>
+                    à defesa da manutenção integral do sistema colonial
+                    pelos dois movimentos.
+                </p>
+
+                <p>
+                    <strong>E)</strong>
+                    à inexistência de influência das transformações
+                    internacionais.
+                </p>
+
+            </div>
+
+            <button onclick="mostrarResposta('resposta2')">
+                Mostrar gabarito
+            </button>
+
+            <div class="resposta" id="resposta2">
+
+                <strong>Gabarito: B.</strong>
+
+                <p>
+                    Os dois movimentos ocorreram em contextos diferentes
+                    e reuniram grupos sociais distintos, apresentando
+                    também diferenças em suas propostas políticas e
+                    sociais.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="card">
+
+        <h2>BNCC — Como trabalhar o tema</h2>
+
+        <p>
+            O conteúdo pode ser trabalhado em conjunto com os estudos
+            sobre Iluminismo, revoluções atlânticas, colonização,
+            relações de poder, formação do Estado e processos de
+            emancipação política.
+        </p>
+
+        <p>
+            Uma abordagem interessante é utilizar documentos históricos,
+            mapas, trechos de textos políticos e linhas do tempo para
+            mostrar como ideias e acontecimentos circularam pelo
+            mundo atlântico.
+        </p>
+
+        <p>
+            Também é importante discutir as diferenças sociais entre
+            os participantes das revoltas coloniais e evitar tratar
+            todos os movimentos de contestação como se possuíssem
+            o mesmo projeto político.
+        </p>
+
+    </section>
+
+    <section class="card">
+
+        <h2>Resumo para revisão rápida</h2>
+
+        <ul>
+
+            <li>
+                A crise colonial foi um processo histórico.
+            </li>
+
+            <li>
+                A mineração aumentou a importância econômica do interior.
+            </li>
+
+            <li>
+                A Coroa ampliou a fiscalização e a cobrança de tributos.
+            </li>
+
+            <li>
+                O quinto estava relacionado à tributação sobre o ouro.
+            </li>
+
+            <li>
+                A derrama estava ligada à cobrança de valores devidos.
+            </li>
+
+            <li>
+                O Iluminismo contribuiu para a circulação de novas ideias
+                políticas.
+            </li>
+
+            <li>
+                A Independência dos Estados Unidos tornou-se uma
+                referência no mundo atlântico.
+            </li>
+
+            <li>
+                A Revolução Francesa ampliou debates sobre cidadania
+                e soberania.
+            </li>
+
+            <li>
+                A Inconfidência Mineira ocorreu em 1789.
+            </li>
+
+            <li>
+                A Conjuração Baiana ocorreu em 1798.
+            </li>
+
+            <li>
+                A crise colonial ajudou a criar condições para o
+                processo de Independência.
+            </li>
+
+            <li>
+                A chegada da Corte portuguesa em 1808 alterou
+                profundamente a relação entre Brasil e Portugal.
+            </li>
+
+        </ul>
+
+    </section>
+
+    <div class="navegacao">
+
+        <a href="../46-Ocupacao-e-Expansao-Territoriais/index.html">
+            ← Voltar: 1.46
+        </a>
+
+        <a href="../48-Brasil-Joanino/index.html">
+            Próximo: 28 — Primeira Revolução Industrial →
+        </a>
+
+    </div>
+
+</main>
+
+<footer>
+
+    <p>
+        <strong>Curso de História Geral</strong>
+    </p>
+
+    <p>
+        Fund II • Ensino Médio • ENEM • Vestibular • Concurso
+    </p>
+
+    <p>
+        Professor Marcelo Oliveira
+    </p>
+
+</footer>
+
+<a href="#topo" class="topo" aria-label="Voltar ao topo">
+    ↑
+</a>
+
+<script>
+
+    /* Mostra ou esconde o gabarito de cada questão. */
+    function mostrarResposta(id) {
+
+        /* Localiza a resposta pelo ID. */
+        const resposta = document.getElementById(id);
+
+        /* Verifica se a resposta está aberta. */
+        if (resposta.style.display === "block") {
+
+            /* Esconde a resposta. */
+            resposta.style.display = "none";
+
+        } else {
+
+            /* Mostra a resposta. */
+            resposta.style.display = "block";
+
+        }
+    }
+
+</script>
+
+<script>
+  const paginaAnterior = "26C - Zumbi dos Palmares.html";
+  const paginaProxima = "28 - PRIMEIRA REVOLUÇÃO INDUSTRIAL.html";
+</script>
+<script src="navegacao.js"></script>
+</body>
+
+</html>

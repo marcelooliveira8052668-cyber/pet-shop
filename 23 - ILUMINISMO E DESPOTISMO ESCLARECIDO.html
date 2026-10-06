@@ -1,0 +1,1793 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <!-- Define a codificação dos caracteres. -->
+    <meta charset="UTF-8">
+
+    <!-- Permite que a página seja responsiva em celulares e tablets. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Define o título da página. -->
+    <title>1.23 — Iluminismo e Despotismo Esclarecido | Curso de História Geral</title>
+
+    <!-- ========================================================= -->
+    <!-- CSS                                                       -->
+    <!-- ========================================================= -->
+
+    <style>
+
+        /* Remove margens e espaçamentos padrão. */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Ativa rolagem suave. */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Define a aparência geral. */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #e7e7e7;
+            color: #252525;
+            line-height: 1.7;
+        }
+
+        /* Remove decoração dos links. */
+        a {
+            text-decoration: none;
+        }
+
+        /* ======================================================= */
+        /* CABEÇALHO                                               */
+        /* ======================================================= */
+
+        /* Cria o cabeçalho grafite. */
+        header {
+            background: #292929;
+            color: #ffffff;
+            padding: 30px 7%;
+            border-bottom: 5px solid #555555;
+        }
+
+        /* Identificação do curso. */
+        .identificacao {
+            color: #cccccc;
+            font-size: 14px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        /* Título principal. */
+        header h1 {
+            font-size: clamp(32px, 5vw, 58px);
+            line-height: 1.1;
+            margin-bottom: 15px;
+        }
+
+        /* Descrição do capítulo. */
+        header p {
+            max-width: 900px;
+            color: #d6d6d6;
+            font-size: 18px;
+        }
+
+        /* ======================================================= */
+        /* NAVEGAÇÃO                                               */
+        /* ======================================================= */
+
+        /* Barra de navegação. */
+        .navegacao {
+            background: #3a3a3a;
+            padding: 14px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        /* Links da navegação. */
+        .navegacao a {
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        /* Efeito dos links. */
+        .navegacao a:hover {
+            color: #bbbbbb;
+        }
+
+        /* ======================================================= */
+        /* CONTAINER                                                */
+        /* ======================================================= */
+
+        /* Limita a largura do conteúdo. */
+        .container {
+            width: min(1200px, 90%);
+            margin: 40px auto;
+        }
+
+        /* ======================================================= */
+        /* CARTÕES                                                  */
+        /* ======================================================= */
+
+        /* Cria os cartões de conteúdo. */
+        .card {
+            background: #ffffff;
+            border: 1px solid #cccccc;
+            border-left: 6px solid #444444;
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+        }
+
+        /* Títulos dos cartões. */
+        .card h2 {
+            color: #292929;
+            font-size: 30px;
+            margin-bottom: 18px;
+        }
+
+        /* Subtítulos. */
+        .card h3 {
+            color: #3d3d3d;
+            margin-top: 25px;
+            margin-bottom: 10px;
+            font-size: 21px;
+        }
+
+        /* Parágrafos. */
+        .card p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        /* Listas. */
+        .card ul,
+        .card ol {
+            margin: 15px 0 20px 25px;
+        }
+
+        /* Itens das listas. */
+        .card li {
+            margin-bottom: 8px;
+        }
+
+        /* ======================================================= */
+        /* CAIXAS DE DESTAQUE                                       */
+        /* ======================================================= */
+
+        /* Caixa de conceito. */
+        .conceito {
+            background: #eeeeee;
+            border-left: 5px solid #555555;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 6px;
+        }
+
+        /* Caixa para orientação do professor. */
+        .professor {
+            background: #333333;
+            color: #ffffff;
+            padding: 25px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        /* Título da caixa do professor. */
+        .professor h3 {
+            color: #ffffff;
+            margin-top: 0;
+        }
+
+        /* Caixa que representa a lousa. */
+        .lousa {
+            background: #202020;
+            color: #eeeeee;
+            padding: 25px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        /* Título da lousa. */
+        .lousa h3 {
+            color: #ffffff;
+            margin-top: 0;
+        }
+
+        /* ======================================================= */
+        /* LINHA DO TEMPO                                           */
+        /* ======================================================= */
+
+        /* Linha vertical. */
+        .timeline {
+            border-left: 4px solid #555555;
+            padding-left: 25px;
+            margin: 25px 0;
+        }
+
+        /* Evento individual. */
+        .evento {
+            margin-bottom: 25px;
+            position: relative;
+        }
+
+        /* Marca do evento. */
+        .evento::before {
+            content: "";
+            width: 13px;
+            height: 13px;
+            background: #444444;
+            border-radius: 50%;
+            position: absolute;
+            left: -34px;
+            top: 8px;
+        }
+
+        /* Ano. */
+        .ano {
+            font-weight: bold;
+            color: #333333;
+            font-size: 18px;
+        }
+
+        /* ======================================================= */
+        /* TABELAS                                                 */
+        /* ======================================================= */
+
+        /* Permite rolagem da tabela em telas pequenas. */
+        .tabela-container {
+            overflow-x: auto;
+            margin: 20px 0;
+        }
+
+        /* Configuração da tabela. */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 650px;
+        }
+
+        /* Células. */
+        th,
+        td {
+            border: 1px solid #cccccc;
+            padding: 14px;
+            text-align: left;
+        }
+
+        /* Cabeçalho. */
+        th {
+            background: #333333;
+            color: #ffffff;
+        }
+
+        /* Linhas alternadas. */
+        tr:nth-child(even) {
+            background: #f2f2f2;
+        }
+
+        /* ======================================================= */
+        /* QUESTÕES                                                */
+        /* ======================================================= */
+
+        /* Caixa das questões. */
+        .questao {
+            background: #f5f5f5;
+            border: 1px solid #cccccc;
+            padding: 25px;
+            border-radius: 8px;
+            margin: 25px 0;
+        }
+
+        /* Alternativas. */
+        .alternativas {
+            margin-top: 15px;
+        }
+
+        /* Cada alternativa. */
+        .alternativas p {
+            margin-bottom: 8px;
+            text-align: left;
+        }
+
+        /* Botão. */
+        button {
+            background: #333333;
+            color: #ffffff;
+            border: none;
+            padding: 12px 18px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        /* Efeito do botão. */
+        button:hover {
+            background: #555555;
+        }
+
+        /* Gabarito inicialmente escondido. */
+        .gabarito {
+            display: none;
+            background: #dddddd;
+            border-left: 5px solid #333333;
+            padding: 18px;
+            margin-top: 15px;
+        }
+
+        /* ======================================================= */
+        /* NAVEGAÇÃO FINAL                                          */
+        /* ======================================================= */
+
+        /* Organiza os botões finais. */
+        .final-navegacao {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+
+        /* Botões de navegação. */
+        .botao {
+            background: #292929;
+            color: #ffffff;
+            padding: 14px 22px;
+            border-radius: 7px;
+            font-weight: bold;
+        }
+
+        /* Efeito. */
+        .botao:hover {
+            background: #505050;
+        }
+
+        /* ======================================================= */
+        /* RODAPÉ                                                  */
+        /* ======================================================= */
+
+        /* Rodapé. */
+        footer {
+            background: #292929;
+            color: #ffffff;
+            text-align: center;
+            padding: 35px 20px;
+            margin-top: 60px;
+        }
+
+        /* Texto principal do rodapé. */
+        footer p {
+            margin-bottom: 5px;
+        }
+
+        /* Assinatura. */
+        .assinatura {
+            color: #bdbdbd;
+            font-size: 14px;
+        }
+
+        /* ======================================================= */
+        /* BOTÃO TOPO                                               */
+        /* ======================================================= */
+
+        /* Posicionamento do botão. */
+        #topo {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            display: none;
+            z-index: 1000;
+        }
+
+        /* ======================================================= */
+        /* RESPONSIVIDADE                                           */
+        /* ======================================================= */
+
+        /* Ajustes para telas menores. */
+        @media (max-width: 700px) {
+
+            /* Reduz o cabeçalho. */
+            header {
+                padding: 25px 5%;
+            }
+
+            /* Reduz o texto. */
+            header p {
+                font-size: 16px;
+            }
+
+            /* Aumenta a área útil. */
+            .container {
+                width: 94%;
+            }
+
+            /* Reduz o cartão. */
+            .card {
+                padding: 22px;
+            }
+
+            /* Reduz o título. */
+            .card h2 {
+                font-size: 25px;
+            }
+
+            /* Remove justificação em telas pequenas. */
+            .card p {
+                text-align: left;
+            }
+
+            /* Organiza os botões verticalmente. */
+            .final-navegacao {
+                flex-direction: column;
+            }
+
+            /* Centraliza os botões. */
+            .botao {
+                text-align: center;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body id="inicio">
+
+
+    <!-- ========================================================= -->
+    <!-- CABEÇALHO                                                 -->
+    <!-- ========================================================= -->
+
+    <header>
+
+        <!-- Nome do curso. -->
+        <div class="identificacao">
+            Curso de História Geral
+        </div>
+
+        <!-- Título principal. -->
+        <h1>
+            1.23 — Iluminismo e Despotismo Esclarecido
+        </h1>
+
+        <!-- Apresentação do tema. -->
+        <p>
+            Razão, crítica ao Antigo Regime, novas ideias políticas
+            e as diferentes respostas das monarquias europeias
+            às transformações do século XVIII.
+        </p>
+
+    </header>
+
+
+    <!-- ========================================================= -->
+    <!-- NAVEGAÇÃO                                                 -->
+    <!-- ========================================================= -->
+
+    <nav class="navegacao">
+
+        <!-- Tema anterior. -->
+        <a href="../25-Primeira-Revolucao-Industrial/index.html">
+            ← Tema anterior
+        </a>
+
+        <!-- Início do curso. -->
+        <a href="../index.html">
+            Curso de História Geral
+        </a>
+
+        <!-- Próximo tema. -->
+        <a href="../27-Independencia-dos-Estados-Unidos/index.html">
+            Próximo tema →
+        </a>
+
+    </nav>
+
+
+    <!-- ========================================================= -->
+    <!-- CONTEÚDO                                                  -->
+    <!-- ========================================================= -->
+
+    <main class="container">
+
+
+        <!-- ===================================================== -->
+        <!-- APRESENTAÇÃO                                          -->
+        <!-- ===================================================== -->
+
+        <section class="card">
+
+            <h2>
+                Apresentação
+            </h2>
+
+            <p>
+                O Iluminismo foi um movimento intelectual de grande importância
+                desenvolvido principalmente na Europa durante os séculos XVII
+                e XVIII. Seus autores discutiram temas como razão, liberdade,
+                tolerância, conhecimento, governo, direitos e organização da sociedade.
+            </p>
+
+            <p>
+                O movimento não foi homogêneo. Os pensadores iluministas
+                apresentaram ideias diferentes e, em alguns casos, divergentes.
+                Por isso, é importante evitar a ideia de que existiu um único
+                "pensamento iluminista".
+            </p>
+
+            <p>
+                No campo político, várias ideias iluministas questionaram aspectos
+                do absolutismo e dos privilégios do Antigo Regime. Ao mesmo tempo,
+                algumas monarquias europeias procuraram incorporar determinadas
+                ideias de reforma sem abandonar a estrutura monárquica.
+            </p>
+
+            <div class="conceito">
+
+                <strong>Ideia central:</strong>
+
+                O Iluminismo valorizou a razão, a investigação e a crítica
+                intelectual, contribuindo para debates sobre liberdade, poder,
+                direitos, leis e organização política.
+
+            </div>
+
+        </section>
+
+
+        <!-- ===================================================== -->
+        <!-- I — O COMEÇO                                          -->
+        <!-- ===================================================== -->
+
+        <section class="card">
+
+            <h2>
+                I — O COMEÇO
+            </h2>
+
+            <h3>
+                1. O contexto europeu
+            </h3>
+
+            <p>
+                O Iluminismo desenvolveu-se em um contexto de grandes transformações
+                intelectuais, científicas, econômicas e políticas.
+            </p>
+
+            <p>
+                A Revolução Científica dos séculos XVI e XVII fortaleceu novas
+                formas de investigação da natureza. Pensadores passaram a enfatizar
+                observação, experimentação, matemática e argumentação racional.
+            </p>
+
+            <p>
+                O crescimento da circulação de livros, jornais, revistas,
+                academias e sociedades científicas também ampliou a circulação
+                das ideias.
+            </p>
+
+
+            <h3>
+                2. Razão e conhecimento
+            </h3>
+
+            <p>
+                Uma característica importante do pensamento iluminista foi a
+                valorização da razão como instrumento para investigar o mundo
+                e questionar conhecimentos considerados estabelecidos.
+            </p>
+
+            <p>
+                Isso não significa que todos os iluministas rejeitassem a religião.
+                Alguns eram deístas, outros mantinham diferentes formas de
+                religiosidade e outros desenvolveram críticas mais profundas
+                às instituições religiosas.
+            </p>
+
+
+            <h3>
+                3. Crítica ao Antigo Regime
+            </h3>
+
+            <p>
+                Diversos pensadores criticaram aspectos da sociedade europeia
+                marcada pelo absolutismo monárquico, pelos privilégios jurídicos
+                e sociais e pela existência de instituições corporativas.
+            </p>
+
+            <p>
+                A crítica iluminista ajudou a fortalecer debates sobre igualdade
+                perante a lei, liberdade individual, tolerância religiosa,
+                representação política e limites do poder.
+            </p>
+
+        </section>
+
+
+        <!-- ===================================================== -->
+        <!-- II — DESENVOLVIMENTO                                   -->
+        <!-- ===================================================== -->
+
+        <section class="card">
+
+            <h2>
+                II — O DESENVOLVIMENTO
+            </h2>
+
+            <h3>
+                1. John Locke
+            </h3>
+
+            <p>
+                John Locke, pensador inglês do século XVII, desenvolveu ideias
+                importantes sobre direitos naturais, governo e legitimidade política.
+            </p>
+
+            <p>
+                Locke defendia que os indivíduos possuíam direitos naturais,
+                associados especialmente à vida, à liberdade e à propriedade.
+            </p>
+
+            <p>
+                Para Locke, o governo deveria existir em função da sociedade
+                e poderia perder sua legitimidade caso violasse os direitos
+                que deveria proteger.
+            </p>
+
+
+            <h3>
+                2. Montesquieu
+            </h3>
+
+            <p>
+                Charles de Secondat, conhecido como Montesquieu, analisou
+                diferentes formas de governo e desenvolveu uma teoria sobre
+                a separação dos poderes.
+            </p>
+
+            <p>
+                Em sua obra <em>O Espírito das Leis</em>, publicada em 1748,
+                discutiu a organização dos poderes do Estado.
+            </p>
+
+            <div class="conceito">
+
+                <strong>Conceito fundamental:</strong>
+
+                A separação de poderes procura impedir a concentração excessiva
+                da autoridade política por meio da distribuição das funções
+                estatais.
+
+            </div>
+
+
+            <h3>
+                3. Voltaire
+            </h3>
+
+            <p>
+                Voltaire destacou-se pelas críticas à intolerância, ao fanatismo
+                e aos abusos de autoridade.
+            </p>
+
+            <p>
+                Sua produção intelectual esteve fortemente associada à defesa
+                da liberdade de pensamento e de expressão e à crítica de
+                formas de intolerância religiosa.
+            </p>
+
+
+            <h3>
+                4. Jean-Jacques Rousseau
+            </h3>
+
+            <p>
+                Rousseau apresentou uma perspectiva própria dentro do pensamento
+                do século XVIII.
+            </p>
+
+            <p>
+                Em <em>Do Contrato Social</em>, de 1762, discutiu soberania
+                popular e a relação entre indivíduo, sociedade e poder político.
+            </p>
+
+            <p>
+                Sua reflexão sobre a soberania popular teve grande impacto
+                sobre debates políticos posteriores.
+            </p>
+
+
+            <h3>
+                5. Diderot e a Enciclopédia
+            </h3>
+
+            <p>
+                Denis Diderot e Jean le Rond d'Alembert estiveram associados
+                à publicação da <strong>Enciclopédia</strong>, uma grande obra
+                de organização e divulgação do conhecimento.
+            </p>
+
+            <p>
+                A Enciclopédia reuniu conhecimentos de diferentes áreas e
+                contribuiu para a circulação das ideias intelectuais do período.
+            </p>
+
+
+            <h3>
+                6. Adam Smith
+            </h3>
+
+            <p>
+                Adam Smith ficou associado ao desenvolvimento da economia política
+                e às discussões sobre divisão do trabalho, produção e comércio.
+            </p>
+
+            <p>
+                Sua obra <em>A Riqueza das Nações</em>, publicada em 1776,
+                analisou mecanismos econômicos e criticou determinadas formas
+                de intervenção mercantilista.
+            </p>
+
+            <p>
+                É importante, porém, não transformar todo o Iluminismo em
+                defesa de uma única doutrina econômica. O pensamento iluminista
+                foi diversificado.
+            </p>
+
+        </section>
+
+
+        <!-- ===================================================== -->
+        <!-- PRINCIPAIS PENSADORES                                  -->
+        <!-- ===================================================== -->
+
+        <section class="card">
+
+            <h2>
+                Pensadores e ideias
+            </h2>
+
+            <div class="tabela-container">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>
+                                Pensador
+                            </th>
+
+                            <th>
+                                Ideia / contribuição
+                            </th>
+
+                            <th>
+                                Obra ou referência
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+
+                            <td>
+                                John Locke
+                            </td>
+
+                            <td>
+                                Direitos naturais e governo limitado.
+                            </td>
+
+                            <td>
+                                Segundo Tratado sobre o Governo
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>
+                                Montesquieu
+                            </td>
+
+                            <td>
+                                Separação dos poderes.
+                            </td>
+
+                            <td>
+                                O Espírito das Leis
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>
+                                Voltaire
+                            </td>
+
+                            <td>
+                                Crítica à intolerância e defesa da liberdade de pensamento.
+                            </td>
+
+                            <td>
+                                Cartas e escritos filosóficos
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>
+                                Rousseau
+                            </td>
+
+                            <td>
+                                Soberania popular e contrato social.
+                            </td>
+
+                            <td>
+                                Do Contrato Social
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>
+                                Diderot
+                            </td>
+
+                            <td>
+                                Divulgação e organização do conhecimento.
+                            </td>
+
+                            <td>
+                                Enciclopédia
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>
+                                Adam Smith
+                            </td>
+
+                            <td>
+                                Divisão do trabalho e economia política.
+                            </td>
+
+                            <td>
+                                A Riqueza das Nações
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+        <!-- ===================================================== -->
+        <!-- DESPOTISMO ESCLARECIDO                                 -->
+        <!-- ===================================================== -->
+
+        <section class="card">
+
+            <h2>
+                7. Despotismo Esclarecido
+            </h2>
+
+            <p>
+                O chamado <strong>Despotismo Esclarecido</strong> corresponde
+                à política de determinados monarcas europeus que adotaram
+                algumas reformas inspiradas por ideias do século XVIII,
+                mantendo, entretanto, a estrutura monárquica e a autoridade
+                centralizada.
+            </p>
+
+            <p>
+                Não se tratou de um sistema político uniforme. As reformas
+                variaram de acordo com cada reino e com os objetivos de seus
+                governantes.
+            </p>
+
+            <h3>
+                Principais características
+            </h3>
+
+            <ul>
+
+                <li>
+                    fortalecimento da administração estatal;
+                </li>
+
+                <li>
+                    reformas educacionais;
+                </li>
+
+                <li>
+                    reorganização fiscal;
+                </li>
+
+                <li>
+                    mudanças administrativas;
+                </li>
+
+                <li>
+                    incentivo a determinadas atividades econômicas;
+                </li>
+
+                <li>
+                    redução ou controle de alguns privilégios tradicionais;
+                </li>
+
+                <li>
+                    manutenção da autoridade monárquica.
+                </li>
+
+            </ul>
+
+
+            <h3>
+                Exemplos
+            </h3>
+
+            <p>
+                Entre os monarcas frequentemente associados ao chamado
+                Despotismo Esclarecido estão Frederico II da Prússia,
+                Catarina II da Rússia, José II da Áustria e, em determinados
+                aspectos, José I de Portugal durante o período do marquês de Pombal.
+            </p>
+
+            <div class="conceito">
+
+                <strong>Atenção:</strong>
+
+                A expressão "despotismo esclarecido" é uma categoria histórica
+                utilizada para analisar reformas realizadas por monarquias
+                absolutistas. Ela não significa que esses governantes tenham
+                adotado integralmente as ideias políticas de todos os iluministas.
+
+            </div>
+
+        </section>
+
+
+        <!-- ===================================================== -->
+        <!-- PORTUGAL E POMBAL                                     -->
+        <!-- ===================================================== -->
+
+        <section class="card">
+
+            <h2>
+                Portugal e o reformismo pombalino
+            </h2>
+
+            <p>
+                No mundo português, o governo de Sebastião José de Carvalho
+                e Melo, o marquês de Pombal, durante o reinado de D. José I,
+                promoveu reformas administrativas, econômicas e educacionais.
+            </p>
+
+            <p>
+                Entre suas medidas esteve a expulsão dos jesuítas dos domínios
+                portugueses em 1759 e reformas no sistema educacional.
+            </p>
+
+            <p>
+                No Brasil, as reformas pombalinas tiveram consequências
+                importantes para a administração colonial, a educação e
+                as relações entre a Coroa e diferentes grupos da sociedade.
+            </p>
+
+        </section>
+
+
+        <!-- ===================================================== -->
+        <!-- LINHA DO TEMPO                                         -->
+        <!-- ===================================================== -->
+
+        <section class="card">
+
+            <h2>
+                Linha do tempo essencial
+            </h2>
+
+            <div class="timeline">
+
+                <div class="evento">
+
+                    <div class="ano">
+                        1689
+                    </div>
+
+                    <p>
+                        Publicação do <em>Segundo Tratado sobre o Governo</em>,
+                        de John Locke.
+                    </p>
+
+                </div>
+
+
+                <div class="evento">
+
+                    <div class="ano">
+                        1748
+                    </div>
+
+                    <p>
+                        Montesquieu publica <em>O Espírito das Leis</em>.
+                    </p>
+
+                </div>
+
+
+                <div class="evento">
+
+                    <div class="ano">
+                        Década de 1750
+                    </div>
+
+                    <p>
+                        Intensificação da publicação e circulação da Enciclopédia.
+                    </p>
+
+                </div>
+
+
+                <div class="evento">
+
+                    <div class="ano">
+                        1762
+                    </div>
+
+                    <p>
+                        Rousseau publica <em>Do Contrato Social</em>.
+                    </p>
+
+                </div>
+
+
+                <div class="evento">
+
+                    <div class="ano">
+                        1776
+                    </div>
+
+                    <p>
+                        Adam Smith publica <em>A Riqueza das Nações</em>.
+                        No mesmo ano ocorre a Declaração de Independência
+                        dos Estados Unidos.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ===================================================== -->
+        <!-- O LEGADO                                               -->
+        <!-- ===================================================== -->
+
+        <section class="card">
+
+            <h2>
+                III — O LEGADO E O MUNDO ATUAL
+            </h2>
+
+            <h3>
+                1. Ideias políticas
+            </h3>
+
+            <p>
+                As discussões iluministas contribuíram para debates posteriores
+                sobre direitos, cidadania, liberdade, representação política,
+                soberania e organização dos poderes.
+            </p>
+
+            <p>
+                Essas ideias foram reinterpretadas em diferentes contextos
+                históricos e não produziram automaticamente as mesmas instituições
+                em todos os países.
+            </p>
+
+
+            <h3>
+                2. Revoluções políticas
+            </h3>
+
+            <p>
+                O pensamento iluminista esteve presente no ambiente intelectual
+                que antecedeu acontecimentos como a Independência dos Estados
+                Unidos e a Revolução Francesa.
+            </p>
+
+            <p>
+                Entretanto, é importante evitar uma relação mecânica:
+                uma revolução não aconteceu simplesmente porque um filósofo
+                escreveu determinado livro. Processos revolucionários envolvem
+                múltiplas causas econômicas, sociais, políticas e culturais.
+            </p>
+
+
+            <h3>
+                3. Direitos e cidadania
+            </h3>
+
+            <p>
+                Debates sobre liberdade, igualdade perante a lei e soberania
+                popular continuam presentes nas sociedades contemporâneas.
+            </p>
+
+            <p>
+                Ao mesmo tempo, a experiência histórica demonstra que a
+                universalização desses direitos foi gradual, conflituosa e
+                marcada por exclusões.
+            </p>
+
+
+            <h3>
+                4. Ciência e pensamento crítico
+            </h3>
+
+            <p>
+                A valorização da investigação, da argumentação e da crítica
+                contribuiu para a formação de uma cultura intelectual que
+                continua importante na ciência e na educação contemporâneas.
+            </p>
+
+        </section>
+
+
+        <!-- ===================================================== -->
+        <!-- HISTÓRIA GERAL ↔ BRASIL                                -->
+        <!-- ===================================================== -->
+
+        <section class="card">
+
+            <h2>
+                História Geral ↔ Brasil
+            </h2>
+
+            <p>
+                As ideias do século XVIII circularam no mundo português e
+                chegaram à América portuguesa por diferentes meios.
+            </p>
+
+            <p>
+                Ideias relacionadas a liberdade, soberania, direitos e
+                crítica ao domínio colonial apareceram em movimentos e
+                conspirações do final do século XVIII, como a Conjuração Mineira.
+            </p>
+
+            <p>
+                A relação entre Iluminismo e movimentos políticos no Brasil
+                deve ser estudada com cuidado: os participantes possuíam
+                interesses, projetos e contextos sociais diferentes.
+            </p>
+
+            <div class="conceito">
+
+                <strong>Para o professor:</strong>
+
+                Uma boa comparação em sala é perguntar como ideias produzidas
+                na Europa foram apropriadas, transformadas ou utilizadas
+                por grupos sociais em diferentes regiões do mundo.
+
+            </div>
+
+        </section>
+
+
+        <!-- ===================================================== -->
+        <!-- O QUE O PROFESSOR PRECISA DOMINAR                      -->
+        <!-- ===================================================== -->
+
+        <section class="card">
+
+            <h2>
+                O que o professor precisa dominar
+            </h2>
+
+            <div class="professor">
+
+                <h3>
+                    Pontos fundamentais
+                </h3>
+
+                <ul>
+
+                    <li>
+                        O Iluminismo não foi um movimento totalmente homogêneo.
+                    </li>
+
+                    <li>
+                        A razão e a crítica foram elementos importantes do pensamento iluminista.
+                    </li>
+
+                    <li>
+                        A Revolução Científica criou condições intelectuais importantes.
+                    </li>
+
+                    <li>
+                        Locke discutiu direitos naturais e governo.
+                    </li>
+
+                    <li>
+                        Montesquieu discutiu a separação dos poderes.
+                    </li>
+
+                    <li>
+                        Voltaire criticou a intolerância e defendeu a liberdade de pensamento.
+                    </li>
+
+                    <li>
+                        Rousseau desenvolveu reflexões sobre soberania popular e contrato social.
+                    </li>
+
+                    <li>
+                        A Enciclopédia ajudou a organizar e divulgar conhecimentos.
+                    </li>
+
+                    <li>
+                        Adam Smith participou do desenvolvimento da economia política.
+                    </li>
+
+                    <li>
+                        O Despotismo Esclarecido combinou reformas com a manutenção da autoridade monárquica.
+                    </li>
+
+                    <li>
+                        As ideias iluministas influenciaram debates revolucionários,
+                        mas não explicam sozinhas as revoluções.
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </section>
+
+
+        <!-- ===================================================== -->
+        <!-- O QUE COLOCAR NA LOUSA                                 -->
+        <!-- ===================================================== -->
+
+        <section class="card">
+
+            <h2>
+                O que colocar na lousa
+            </h2>
+
+            <div class="lousa">
+
+                <h3>
+                    ILUMINISMO
+                </h3>
+
+                <p>
+                    <strong>Período:</strong> séculos XVII–XVIII
+                </p>
+
+                <p>
+                    <strong>Base:</strong> razão + crítica + conhecimento
+                </p>
+
+                <p>
+                    <strong>Críticas:</strong> privilégios + intolerância
+                    + concentração de poder
+                </p>
+
+                <p>
+                    <strong>Locke:</strong> direitos naturais
+                </p>
+
+                <p>
+                    <strong>Montesquieu:</strong> separação dos poderes
+                </p>
+
+                <p>
+                    <strong>Voltaire:</strong> tolerância e liberdade de pensamento
+                </p>
+
+                <p>
+                    <strong>Rousseau:</strong> soberania popular
+                </p>
+
+                <p>
+                    <strong>Smith:</strong> economia política
+                </p>
+
+                <p>
+                    <strong>Legado:</strong> debates sobre direitos,
+                    cidadania e poder político
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ===================================================== -->
+        <!-- CONCEITOS                                              -->
+        <!-- ===================================================== -->
+
+        <section class="card">
+
+            <h2>
+                Conceitos fundamentais
+            </h2>
+
+            <ul>
+
+                <li>
+                    <strong>Iluminismo:</strong>
+                    movimento intelectual associado à valorização da razão,
+                    da crítica e da investigação.
+                </li>
+
+                <li>
+                    <strong>Razão:</strong>
+                    capacidade humana de analisar, questionar e argumentar.
+                </li>
+
+                <li>
+                    <strong>Direitos naturais:</strong>
+                    direitos considerados inerentes aos indivíduos.
+                </li>
+
+                <li>
+                    <strong>Soberania popular:</strong>
+                    princípio segundo o qual a legitimidade política está
+                    relacionada à vontade dos cidadãos.
+                </li>
+
+                <li>
+                    <strong>Separação dos poderes:</strong>
+                    distribuição das funções do Estado para evitar
+                    concentração excessiva de autoridade.
+                </li>
+
+                <li>
+                    <strong>Despotismo Esclarecido:</strong>
+                    reformas realizadas por determinados monarcas mantendo
+                    a estrutura monárquica e a autoridade centralizada.
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- ===================================================== -->
+        <!-- BNCC                                                    -->
+        <!-- ===================================================== -->
+
+        <section class="card">
+
+            <h2>
+                BNCC — possibilidades de trabalho pedagógico
+            </h2>
+
+            <p>
+                O tema pode ser trabalhado em articulação com habilidades da
+                BNCC relacionadas ao Iluminismo, às transformações políticas
+                e sociais da modernidade, às revoluções atlânticas e à formação
+                de concepções modernas de cidadania e direitos.
+            </p>
+
+            <p>
+                A habilidade específica deve ser selecionada de acordo com
+                a etapa de ensino, o currículo adotado e o planejamento
+                pedagógico da instituição.
+            </p>
+
+            <div class="conceito">
+
+                <strong>Orientação:</strong>
+
+                No planejamento escolar, confira a redação oficial da habilidade
+                correspondente à série antes de registrar o código da BNCC
+                no plano de aula.
+
+            </div>
+
+        </section>
+
+
+        <!-- ===================================================== -->
+        <!-- ENEM / VESTIBULAR / CONCURSO                            -->
+        <!-- ===================================================== -->
+
+        <section class="card">
+
+            <h2>
+                ENEM, Vestibular e Concurso
+            </h2>
+
+            <h3>
+                Pontos para revisão
+            </h3>
+
+            <ul>
+
+                <li>
+                    características do Iluminismo;
+                </li>
+
+                <li>
+                    contexto da Revolução Científica;
+                </li>
+
+                <li>
+                    John Locke;
+                </li>
+
+                <li>
+                    Montesquieu;
+                </li>
+
+                <li>
+                    Voltaire;
+                </li>
+
+                <li>
+                    Rousseau;
+                </li>
+
+                <li>
+                    Enciclopédia;
+                </li>
+
+                <li>
+                    Adam Smith;
+                </li>
+
+                <li>
+                    Despotismo Esclarecido;
+                </li>
+
+                <li>
+                    relação entre Iluminismo e Revoluções Atlânticas.
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- ===================================================== -->
+        <!-- QUESTÃO 1                                              -->
+        <!-- ===================================================== -->
+
+        <section class="card">
+
+            <h2>
+                Questões de revisão
+            </h2>
+
+            <div class="questao">
+
+                <h3>
+                    Questão 1 — Estilo ENEM
+                </h3>
+
+                <p>
+                    No século XVIII, diferentes pensadores europeus passaram
+                    a discutir os limites do poder político, a liberdade,
+                    os direitos individuais e a organização do Estado.
+                    Essas reflexões ocorreram em meio à circulação crescente
+                    de livros, debates científicos e novas formas de produção
+                    intelectual.
+                </p>
+
+                <p>
+                    Uma característica associada ao Iluminismo foi:
+                </p>
+
+                <div class="alternativas">
+
+                    <p>
+                        <strong>A)</strong> a defesa da manutenção de todos
+                        os privilégios do Antigo Regime.
+                    </p>
+
+                    <p>
+                        <strong>B)</strong> a valorização da razão e da crítica
+                        como instrumentos de conhecimento.
+                    </p>
+
+                    <p>
+                        <strong>C)</strong> a rejeição de toda investigação científica.
+                    </p>
+
+                    <p>
+                        <strong>D)</strong> a defesa da concentração absoluta
+                        do poder político.
+                    </p>
+
+                    <p>
+                        <strong>E)</strong> a proibição da circulação de livros.
+                    </p>
+
+                </div>
+
+                <button onclick="mostrarGabarito('gabarito1')">
+                    Mostrar gabarito
+                </button>
+
+                <div id="gabarito1" class="gabarito">
+
+                    <strong>Resposta: B.</strong>
+
+                    A valorização da razão, da investigação e da crítica
+                    foi uma característica importante do pensamento iluminista.
+
+                </div>
+
+            </div>
+
+
+            <!-- ================================================= -->
+            <!-- QUESTÃO 2                                           -->
+            <!-- ================================================= -->
+
+            <div class="questao">
+
+                <h3>
+                    Questão 2 — Estilo ENEM
+                </h3>
+
+                <p>
+                    Determinados monarcas europeus adotaram reformas administrativas,
+                    econômicas e educacionais durante o século XVIII, mas mantiveram
+                    a estrutura monárquica e a concentração de autoridade política.
+                </p>
+
+                <p>
+                    Essa prática é tradicionalmente denominada:
+                </p>
+
+                <div class="alternativas">
+
+                    <p>
+                        <strong>A)</strong> Liberalismo revolucionário.
+                    </p>
+
+                    <p>
+                        <strong>B)</strong> Socialismo utópico.
+                    </p>
+
+                    <p>
+                        <strong>C)</strong> Despotismo Esclarecido.
+                    </p>
+
+                    <p>
+                        <strong>D)</strong> Absolutismo teocrático medieval.
+                    </p>
+
+                    <p>
+                        <strong>E)</strong> Republicanismo democrático.
+                    </p>
+
+                </div>
+
+                <button onclick="mostrarGabarito('gabarito2')">
+                    Mostrar gabarito
+                </button>
+
+                <div id="gabarito2" class="gabarito">
+
+                    <strong>Resposta: C.</strong>
+
+                    O Despotismo Esclarecido corresponde à adoção de determinadas
+                    reformas por monarquias europeias sem abandono da autoridade
+                    monárquica.
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ===================================================== -->
+        <!-- RESUMO FINAL                                           -->
+        <!-- ===================================================== -->
+
+        <section class="card">
+
+            <h2>
+                Resumo para memorizar
+            </h2>
+
+            <div class="conceito">
+
+                <p>
+                    <strong>Revolução Científica</strong>
+                    →
+                    <strong>razão</strong>
+                    →
+                    <strong>crítica ao Antigo Regime</strong>
+                    →
+                    <strong>novas ideias políticas</strong>
+                    →
+                    <strong>direitos</strong>
+                    →
+                    <strong>soberania</strong>
+                    →
+                    <strong>reformas</strong>
+                    →
+                    <strong>Revoluções Atlânticas</strong>.
+                </p>
+
+            </div>
+
+            <p>
+                O Iluminismo foi um movimento intelectual diverso que transformou
+                debates sobre conhecimento, sociedade, economia e política.
+                Suas ideias circularam por diferentes regiões e foram apropriadas
+                de maneiras distintas pelos grupos sociais e políticos.
+            </p>
+
+        </section>
+
+
+        <!-- ===================================================== -->
+        <!-- NAVEGAÇÃO FINAL                                        -->
+        <!-- ===================================================== -->
+
+        <div class="final-navegacao">
+
+            <!-- Link para o tema anterior. -->
+            <a
+                class="botao"
+                href="../25-Primeira-Revolucao-Industrial/index.html"
+            >
+                ← Revoluções Inglesas do Século XVII
+            </a>
+
+            <!-- Link para o próximo tema. -->
+            <a
+                class="botao"
+                href="../27-Independencia-dos-Estados-Unidos/index.html"
+            >
+                1.23 — Independência dos Estados Unidos →
+            </a>
+
+        </div>
+
+    </main>
+
+
+    <!-- ========================================================= -->
+    <!-- BOTÃO VOLTAR AO TOPO                                      -->
+    <!-- ========================================================= -->
+
+    <button
+        id="topo"
+        onclick="voltarAoTopo()"
+    >
+        ↑ Topo
+    </button>
+
+
+    <!-- ========================================================= -->
+    <!-- RODAPÉ                                                    -->
+    <!-- ========================================================= -->
+
+    <footer>
+
+        <p>
+            Curso de História Geral
+        </p>
+
+        <div class="assinatura">
+            Professor Marcelo Oliveira • História Geral • Educação
+        </div>
+
+    </footer>
+
+
+    <!-- ========================================================= -->
+    <!-- JAVASCRIPT                                                 -->
+    <!-- ========================================================= -->
+
+    <script>
+
+        // Cria a função responsável por mostrar ou esconder o gabarito.
+        function mostrarGabarito(id) {
+
+            // Procura o elemento pelo ID recebido.
+            const elemento = document.getElementById(id);
+
+            // Verifica se o gabarito está aparecendo.
+            if (elemento.style.display === "block") {
+
+                // Esconde o gabarito.
+                elemento.style.display = "none";
+
+            } else {
+
+                // Mostra o gabarito.
+                elemento.style.display = "block";
+
+            }
+
+        }
+
+
+        // Localiza o botão de voltar ao topo.
+        const botaoTopo = document.getElementById("topo");
+
+
+        // Detecta quando o usuário movimenta a página.
+        window.addEventListener("scroll", function () {
+
+            // Verifica se a página foi rolada mais de 400 pixels.
+            if (window.scrollY > 400) {
+
+                // Mostra o botão.
+                botaoTopo.style.display = "block";
+
+            } else {
+
+                // Esconde o botão.
+                botaoTopo.style.display = "none";
+
+            }
+
+        });
+
+
+        // Cria a função para retornar ao início.
+        function voltarAoTopo() {
+
+            // Faz a página subir suavemente.
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+
+        }
+
+    </script>
+    <script>
+  const paginaAnterior = "22 - REVOLUÇÕES INGLESAS DO SÉCULO XVII.html";
+  const paginaProxima = "24 - MONTAGEM DO SISTEMA COLONIAL.html";
+</script>
+<script src="navegacao.js"></script>
+
+</body>
+
+</html>
+```

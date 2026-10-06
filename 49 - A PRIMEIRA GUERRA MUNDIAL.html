@@ -1,0 +1,2202 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Define a codificação de caracteres para aceitar acentos e caracteres especiais. -->
+    <meta charset="UTF-8">
+
+    <!-- Faz o site se adaptar a celulares, tablets e computadores. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Define o título que aparecerá na aba do navegador. -->
+    <title>1.49 — A Primeira Guerra Mundial | Professor Marcelo Oliveira</title>
+
+    <style>
+        /* ============================================================
+           CONFIGURAÇÕES GERAIS
+           ============================================================ */
+
+        /* Remove margens e espaçamentos padrões do navegador. */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Define o comportamento de rolagem suave. */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Define a aparência geral do corpo da página. */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f7fb;
+            color: #1f2937;
+            line-height: 1.7;
+        }
+
+        /* Remove o sublinhado padrão dos links. */
+        a {
+            text-decoration: none;
+        }
+
+        /* ============================================================
+           CABEÇALHO
+           ============================================================ */
+
+        /* Cria o cabeçalho principal do curso. */
+        header {
+            background: linear-gradient(135deg, #071a33, #123d6b);
+            color: white;
+            padding: 45px 20px;
+            text-align: center;
+            border-bottom: 6px solid #e63946;
+        }
+
+        /* Define o pequeno identificador do curso. */
+        .curso {
+            font-size: 0.95rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            opacity: 0.85;
+            margin-bottom: 12px;
+        }
+
+        /* Define o título principal. */
+        header h1 {
+            font-size: clamp(2rem, 5vw, 3.6rem);
+            margin-bottom: 15px;
+        }
+
+        /* Define o subtítulo do cabeçalho. */
+        header p {
+            max-width: 900px;
+            margin: auto;
+            font-size: 1.1rem;
+        }
+
+        /* ============================================================
+           CONTAINER
+           ============================================================ */
+
+        /* Limita a largura do conteúdo para facilitar a leitura. */
+        .container {
+            width: min(1150px, 92%);
+            margin: auto;
+        }
+
+        /* ============================================================
+           INTRODUÇÃO
+           ============================================================ */
+
+        /* Cria o cartão de apresentação. */
+        .apresentacao {
+            background: white;
+            margin: 35px auto;
+            padding: 30px;
+            border-radius: 18px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            border-left: 7px solid #e63946;
+        }
+
+        /* Formata o título da apresentação. */
+        .apresentacao h2 {
+            color: #071a33;
+            margin-bottom: 15px;
+        }
+
+        /* ============================================================
+           PARTES DA PERIODIZAÇÃO
+           ============================================================ */
+
+        /* Estiliza todos os blocos principais. */
+        section {
+            margin: 35px 0;
+        }
+
+        /* Cria o cabeçalho da Parte I. */
+        .parte1 {
+            background: #dbeafe;
+            border-left: 8px solid #2563eb;
+            padding: 25px;
+            border-radius: 15px;
+        }
+
+        /* Cria o cabeçalho da Parte II. */
+        .parte2 {
+            background: #dcfce7;
+            border-left: 8px solid #16a34a;
+            padding: 25px;
+            border-radius: 15px;
+        }
+
+        /* Cria o cabeçalho da Parte III. */
+        .parte3 {
+            background: #f3e8ff;
+            border-left: 8px solid #9333ea;
+            padding: 25px;
+            border-radius: 15px;
+        }
+
+        /* Formata os títulos das partes. */
+        .parte1 h2,
+        .parte2 h2,
+        .parte3 h2 {
+            margin-bottom: 12px;
+        }
+
+        /* Define a cor do título da Parte I. */
+        .parte1 h2 {
+            color: #1d4ed8;
+        }
+
+        /* Define a cor do título da Parte II. */
+        .parte2 h2 {
+            color: #15803d;
+        }
+
+        /* Define a cor do título da Parte III. */
+        .parte3 h2 {
+            color: #7e22ce;
+        }
+
+        /* ============================================================
+           CARTÕES
+           ============================================================ */
+
+        /* Cria o padrão dos cartões internos. */
+        .card {
+            background: white;
+            padding: 25px;
+            margin-top: 20px;
+            border-radius: 15px;
+            box-shadow: 0 7px 20px rgba(0, 0, 0, 0.07);
+        }
+
+        /* Formata títulos dentro dos cartões. */
+        .card h3 {
+            color: #071a33;
+            margin-bottom: 12px;
+        }
+
+        /* Cria espaçamento entre parágrafos. */
+        .card p {
+            margin-bottom: 12px;
+        }
+
+        /* Formata listas. */
+        .card ul,
+        .card ol {
+            margin-left: 25px;
+            margin-bottom: 15px;
+        }
+
+        /* ============================================================
+           DESTAQUES
+           ============================================================ */
+
+        /* Destaca causas históricas. */
+        .causas {
+            background: #fff7ed;
+            border-left: 7px solid #f97316;
+            padding: 22px;
+            margin-top: 20px;
+            border-radius: 12px;
+        }
+
+        /* Destaca consequências históricas. */
+        .consequencias {
+            background: #fefce8;
+            border-left: 7px solid #eab308;
+            padding: 22px;
+            margin-top: 20px;
+            border-radius: 12px;
+        }
+
+        /* Destaca conceitos fundamentais. */
+        .conceitos {
+            background: #fef9c3;
+            border-left: 7px solid #ca8a04;
+            padding: 22px;
+            margin-top: 20px;
+            border-radius: 12px;
+        }
+
+        /* Destaca informações importantes. */
+        .atencao {
+            background: #fee2e2;
+            border-left: 7px solid #dc2626;
+            padding: 22px;
+            margin-top: 20px;
+            border-radius: 12px;
+        }
+
+        /* Destaca conteúdo relacionado ao ENEM. */
+        .enem {
+            background: #cffafe;
+            border-left: 7px solid #0891b2;
+            padding: 22px;
+            margin-top: 20px;
+            border-radius: 12px;
+        }
+
+        /* Destaca o conteúdo para a lousa. */
+        .lousa {
+            background: #172554;
+            color: white;
+            padding: 25px;
+            margin-top: 20px;
+            border-radius: 15px;
+        }
+
+        /* Define a cor do título da lousa. */
+        .lousa h3 {
+            color: #93c5fd;
+            margin-bottom: 12px;
+        }
+
+        /* ============================================================
+           TABELAS
+           ============================================================ */
+
+        /* Permite rolagem horizontal em tabelas pequenas. */
+        .tabela-container {
+            overflow-x: auto;
+            margin-top: 20px;
+        }
+
+        /* Define a tabela. */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+        }
+
+        /* Define células da tabela. */
+        th,
+        td {
+            padding: 14px;
+            border: 1px solid #d1d5db;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        /* Define o cabeçalho das tabelas. */
+        th {
+            background: #071a33;
+            color: white;
+        }
+
+        /* Cria efeito visual nas linhas pares. */
+        tr:nth-child(even) {
+            background: #f8fafc;
+        }
+
+        /* ============================================================
+           LINHA DO TEMPO
+           ============================================================ */
+
+        /* Cria o bloco da linha do tempo. */
+        .timeline {
+            border-left: 5px solid #2563eb;
+            padding-left: 25px;
+            margin-top: 20px;
+        }
+
+        /* Cria cada acontecimento da linha do tempo. */
+        .evento {
+            position: relative;
+            background: white;
+            padding: 18px;
+            margin-bottom: 18px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+        }
+
+        /* Cria o marcador circular da linha do tempo. */
+        .evento::before {
+            content: "";
+            position: absolute;
+            left: -37px;
+            top: 20px;
+            width: 17px;
+            height: 17px;
+            background: #2563eb;
+            border: 4px solid #dbeafe;
+            border-radius: 50%;
+        }
+
+        /* Destaca o ano do evento. */
+        .ano {
+            color: #1d4ed8;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        /* ============================================================
+           QUESTÕES
+           ============================================================ */
+
+        /* Cria o cartão das questões. */
+        .questao {
+            background: white;
+            padding: 25px;
+            margin-top: 20px;
+            border-radius: 15px;
+            border-top: 5px solid #0891b2;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.07);
+        }
+
+        /* Estiliza as alternativas. */
+        .alternativas {
+            margin-top: 15px;
+            padding-left: 25px;
+        }
+
+        /* Cria o botão do gabarito. */
+        .btn-gabarito {
+            margin-top: 18px;
+            padding: 11px 18px;
+            border: none;
+            border-radius: 8px;
+            background: #0891b2;
+            color: white;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        /* Cria efeito ao passar o mouse. */
+        .btn-gabarito:hover {
+            opacity: 0.85;
+        }
+
+        /* Esconde o gabarito inicialmente. */
+        .gabarito {
+            display: none;
+            margin-top: 15px;
+            padding: 15px;
+            background: #ecfeff;
+            border-radius: 10px;
+            border-left: 5px solid #0891b2;
+        }
+
+        /* ============================================================
+           NAVEGAÇÃO
+           ============================================================ */
+
+        /* Organiza os botões de navegação. */
+        .navegacao {
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+            margin: 45px 0;
+            flex-wrap: wrap;
+        }
+
+        /* Estiliza os links de navegação. */
+        .nav-btn {
+            display: inline-block;
+            padding: 14px 22px;
+            border-radius: 10px;
+            background: #071a33;
+            color: white;
+            font-weight: bold;
+        }
+
+        /* Cria efeito visual nos botões. */
+        .nav-btn:hover {
+            background: #123d6b;
+        }
+
+        /* ============================================================
+           BOTÃO VOLTAR AO TOPO
+           ============================================================ */
+
+        /* Cria o botão fixo no canto inferior. */
+        #topo {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            width: 48px;
+            height: 48px;
+            border: none;
+            border-radius: 50%;
+            background: #e63946;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+            display: none;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* ============================================================
+           RODAPÉ
+           ============================================================ */
+
+        /* Cria o rodapé da página. */
+        footer {
+            background: #071a33;
+            color: white;
+            text-align: center;
+            padding: 35px 20px;
+            margin-top: 50px;
+        }
+
+        /* Destaca a assinatura do professor. */
+        footer strong {
+            color: #93c5fd;
+        }
+
+        /* ============================================================
+           RESPONSIVIDADE
+           ============================================================ */
+
+        /* Ajusta o conteúdo para telas menores. */
+        @media (max-width: 700px) {
+
+            /* Diminui o espaçamento do cabeçalho. */
+            header {
+                padding: 35px 15px;
+            }
+
+            /* Diminui o tamanho dos cartões. */
+            .card,
+            .apresentacao {
+                padding: 20px;
+            }
+
+            /* Organiza os botões verticalmente. */
+            .navegacao {
+                flex-direction: column;
+            }
+
+            /* Faz os botões ocuparem toda a largura. */
+            .nav-btn {
+                text-align: center;
+                width: 100%;
+            }
+
+            /* Diminui o tamanho da tabela. */
+            th,
+            td {
+                font-size: 0.9rem;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body id="inicio">
+
+    <!-- ============================================================
+         CABEÇALHO PRINCIPAL
+         ============================================================ -->
+
+    <header>
+
+        <!-- Identificação do curso. -->
+        <div class="curso">
+            Curso de História Geral
+        </div>
+
+        <!-- Título do tema. -->
+        <h1>
+            1.49 — A Primeira Guerra Mundial
+        </h1>
+
+        <!-- Subtítulo do tema. -->
+        <p>
+            Fundamentos, causas, desenvolvimento, consequências e legado
+            de um conflito que transformou profundamente o século XX.
+        </p>
+
+    </header>
+
+    <!-- Container principal da página. -->
+    <main class="container">
+
+        <!-- ========================================================
+             APRESENTAÇÃO
+             ======================================================== -->
+
+        <div class="apresentacao">
+
+            <!-- Título da apresentação. -->
+            <h2>
+                Por que estudar a Primeira Guerra Mundial?
+            </h2>
+
+            <!-- Texto introdutório. -->
+            <p>
+                A Primeira Guerra Mundial, ocorrida entre 1914 e 1918,
+                foi um conflito de dimensões internacionais que alterou
+                profundamente as relações políticas, econômicas e sociais.
+            </p>
+
+            <!-- Segundo parágrafo. -->
+            <p>
+                Para compreender a guerra, não basta decorar a data de
+                1914. É necessário entender o processo histórico que
+                envolveu industrialização, imperialismo, nacionalismos,
+                alianças militares, corrida armamentista e disputas
+                territoriais.
+            </p>
+
+            <!-- Terceiro parágrafo. -->
+            <p>
+                Também é fundamental perceber que o conflito não terminou
+                completamente com o armistício de 1918. Suas consequências
+                contribuíram para transformações que marcaram todo o século XX.
+            </p>
+
+        </div>
+
+        <!-- ========================================================
+             PARTE I — O COMEÇO
+             ======================================================== -->
+
+        <section>
+
+            <!-- Cabeçalho da Parte I. -->
+            <div class="parte1">
+
+                <!-- Título da Parte I. -->
+                <h2>
+                    I — O COMEÇO
+                </h2>
+
+                <!-- Explicação da parte. -->
+                <p>
+                    A formação das tensões internacionais que antecederam
+                    o conflito.
+                </p>
+
+            </div>
+
+            <!-- Contexto europeu. -->
+            <div class="card">
+
+                <!-- Título. -->
+                <h3>
+                    A Europa antes de 1914
+                </h3>
+
+                <!-- Conteúdo. -->
+                <p>
+                    Nas décadas anteriores à Primeira Guerra Mundial,
+                    algumas potências europeias vivenciaram forte
+                    industrialização, crescimento econômico, expansão
+                    imperialista e desenvolvimento tecnológico.
+                </p>
+
+                <!-- Conteúdo. -->
+                <p>
+                    Esse período é frequentemente associado à expressão
+                    <strong>Belle Époque</strong>, especialmente para
+                    determinados setores das sociedades europeias.
+                </p>
+
+                <!-- Conteúdo. -->
+                <p>
+                    Porém, a ideia de uma Europa vivendo apenas um período
+                    de prosperidade é insuficiente. Ao mesmo tempo em que
+                    existiam avanços científicos e culturais, cresciam
+                    rivalidades entre Estados.
+                </p>
+
+            </div>
+
+            <!-- Causas. -->
+            <div class="causas">
+
+                <!-- Título. -->
+                <h3>
+                    Principais fatores de tensão
+                </h3>
+
+                <!-- Lista. -->
+                <ul>
+
+                    <!-- Item. -->
+                    <li>
+                        Nacionalismos europeus.
+                    </li>
+
+                    <!-- Item. -->
+                    <li>
+                        Imperialismo e disputa por mercados e territórios.
+                    </li>
+
+                    <!-- Item. -->
+                    <li>
+                        Corrida armamentista.
+                    </li>
+
+                    <!-- Item. -->
+                    <li>
+                        Rivalidades econômicas entre potências.
+                    </li>
+
+                    <!-- Item. -->
+                    <li>
+                        Sistema de alianças diplomáticas e militares.
+                    </li>
+
+                    <!-- Item. -->
+                    <li>
+                        Conflitos nacionalistas nos Bálcãs.
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <!-- Sistema de alianças. -->
+            <div class="card">
+
+                <!-- Título. -->
+                <h3>
+                    As alianças europeias
+                </h3>
+
+                <!-- Texto. -->
+                <p>
+                    Antes da guerra, as potências europeias formaram
+                    diferentes acordos diplomáticos que contribuíram para
+                    criar dois grandes campos de relacionamento.
+                </p>
+
+                <!-- Tabela. -->
+                <div class="tabela-container">
+
+                    <table>
+
+                        <!-- Cabeçalho. -->
+                        <thead>
+
+                            <tr>
+                                <th>
+                                    Bloco
+                                </th>
+
+                                <th>
+                                    Principais integrantes
+                                </th>
+
+                                <th>
+                                    Observação
+                                </th>
+                            </tr>
+
+                        </thead>
+
+                        <!-- Corpo. -->
+                        <tbody>
+
+                            <tr>
+
+                                <td>
+                                    Tríplice Aliança
+                                </td>
+
+                                <td>
+                                    Alemanha, Áustria-Hungria e Itália
+                                </td>
+
+                                <td>
+                                    A Itália fazia parte do acordo,
+                                    mas declarou neutralidade em 1914
+                                    e entrou na guerra em 1915 contra
+                                    os antigos parceiros da aliança.
+                                </td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>
+                                    Tríplice Entente
+                                </td>
+
+                                <td>
+                                    França, Reino Unido e Rússia
+                                </td>
+
+                                <td>
+                                    Foi uma aproximação diplomática entre
+                                    as potências e não uma aliança militar
+                                    única com funcionamento idêntico ao
+                                    da Tríplice Aliança.
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+            <!-- Nacionalismo e Bálcãs. -->
+            <div class="card">
+
+                <!-- Título. -->
+                <h3>
+                    Nacionalismos e a questão dos Bálcãs
+                </h3>
+
+                <!-- Texto. -->
+                <p>
+                    A região dos Bálcãs reunia diferentes povos,
+                    nacionalidades, religiões e projetos políticos.
+                </p>
+
+                <!-- Texto. -->
+                <p>
+                    O enfraquecimento do Império Otomano e as disputas
+                    envolvendo Estados e movimentos nacionalistas
+                    contribuíram para tornar a região um dos principais
+                    focos de tensão da Europa.
+                </p>
+
+                <!-- Atenção. -->
+                <div class="atencao">
+
+                    <strong>
+                        Atenção:
+                    </strong>
+
+                    A Primeira Guerra Mundial não foi causada por um único
+                    acontecimento. O assassinato do arquiduque Francisco
+                    Ferdinando foi o estopim de uma crise que já possuía
+                    profundas tensões estruturais.
+
+                </div>
+
+            </div>
+
+            <!-- Estopim. -->
+            <div class="card">
+
+                <!-- Título. -->
+                <h3>
+                    O assassinato de Francisco Ferdinando
+                </h3>
+
+                <!-- Texto. -->
+                <p>
+                    Em 28 de junho de 1914, o arquiduque Francisco
+                    Ferdinando, herdeiro do trono austro-húngaro,
+                    foi assassinado em Sarajevo.
+                </p>
+
+                <!-- Texto. -->
+                <p>
+                    O atentado desencadeou uma crise diplomática que
+                    rapidamente envolveu diferentes Estados devido ao
+                    sistema de alianças e às decisões políticas tomadas
+                    nas semanas seguintes.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- ========================================================
+             PARTE II — O DESENVOLVIMENTO
+             ======================================================== -->
+
+        <section>
+
+            <!-- Cabeçalho da Parte II. -->
+            <div class="parte2">
+
+                <!-- Título. -->
+                <h2>
+                    II — O DESENVOLVIMENTO
+                </h2>
+
+                <!-- Descrição. -->
+                <p>
+                    Da crise de 1914 à transformação da guerra em um
+                    conflito de dimensões mundiais.
+                </p>
+
+            </div>
+
+            <!-- Crise de julho. -->
+            <div class="card">
+
+                <!-- Título. -->
+                <h3>
+                    A crise de julho de 1914
+                </h3>
+
+                <!-- Texto. -->
+                <p>
+                    Após o assassinato de Francisco Ferdinando,
+                    a Áustria-Hungria responsabilizou a Sérvia e
+                    apresentou exigências ao governo sérvio.
+                </p>
+
+                <!-- Texto. -->
+                <p>
+                    A sequência de ultimatos, mobilizações, declarações
+                    de guerra e compromissos entre diferentes potências
+                    transformou uma crise regional em um conflito europeu.
+                </p>
+
+            </div>
+
+            <!-- Frentes de batalha. -->
+            <div class="card">
+
+                <!-- Título. -->
+                <h3>
+                    As principais frentes de guerra
+                </h3>
+
+                <!-- Lista. -->
+                <ul>
+
+                    <li>
+                        <strong>Frente Ocidental:</strong>
+                        principalmente Alemanha contra França e Reino Unido,
+                        posteriormente com participação dos Estados Unidos.
+                    </li>
+
+                    <li>
+                        <strong>Frente Oriental:</strong>
+                        envolvendo principalmente Alemanha, Áustria-Hungria
+                        e Rússia.
+                    </li>
+
+                    <li>
+                        <strong>Bálcãs:</strong>
+                        região marcada por diferentes operações militares
+                        e disputas políticas.
+                    </li>
+
+                    <li>
+                        <strong>Oriente Médio:</strong>
+                        envolvendo o Império Otomano e forças adversárias.
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <!-- Guerra de trincheiras. -->
+            <div class="card">
+
+                <!-- Título. -->
+                <h3>
+                    A guerra de trincheiras
+                </h3>
+
+                <!-- Texto. -->
+                <p>
+                    Na Frente Ocidental, a tentativa de avanço rápido
+                    deu lugar a uma longa guerra de posições.
+                </p>
+
+                <!-- Texto. -->
+                <p>
+                    As trincheiras tornaram-se uma das principais
+                    características do conflito, especialmente entre
+                    1915 e 1917.
+                </p>
+
+                <!-- Conceito. -->
+                <div class="conceitos">
+
+                    <strong>
+                        Conceito-chave:
+                    </strong>
+
+                    Guerra de trincheiras é uma forma de combate em que
+                    posições defensivas fortificadas possuem papel central,
+                    dificultando grandes avanços territoriais.
+
+                </div>
+
+            </div>
+
+            <!-- Guerra total. -->
+            <div class="card">
+
+                <!-- Título. -->
+                <h3>
+                    A guerra total
+                </h3>
+
+                <!-- Texto. -->
+                <p>
+                    A Primeira Guerra Mundial mobilizou não apenas os
+                    exércitos, mas também as economias, as indústrias,
+                    os trabalhadores e os recursos dos Estados envolvidos.
+                </p>
+
+                <!-- Texto. -->
+                <p>
+                    A produção industrial passou a ser fundamental para
+                    fabricar armamentos, munições, veículos e equipamentos.
+                </p>
+
+                <!-- Texto. -->
+                <p>
+                    A população civil também passou a sentir os efeitos
+                    econômicos, sociais e políticos do conflito.
+                </p>
+
+            </div>
+
+            <!-- Tecnologia. -->
+            <div class="card">
+
+                <!-- Título. -->
+                <h3>
+                    Tecnologia e guerra industrial
+                </h3>
+
+                <!-- Tabela. -->
+                <div class="tabela-container">
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+
+                                <th>
+                                    Tecnologia
+                                </th>
+
+                                <th>
+                                    Função no conflito
+                                </th>
+
+                                <th>
+                                    Importância histórica
+                                </th>
+
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+
+                                <td>
+                                    Metralhadoras
+                                </td>
+
+                                <td>
+                                    Aumentaram significativamente
+                                    o poder de fogo defensivo.
+                                </td>
+
+                                <td>
+                                    Contribuíram para dificultar
+                                    avanços em determinadas frentes.
+                                </td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>
+                                    Artilharia pesada
+                                </td>
+
+                                <td>
+                                    Bombardeamento de posições adversárias.
+                                </td>
+
+                                <td>
+                                    Mostrou a dimensão industrial
+                                    do conflito.
+                                </td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>
+                                    Aviões
+                                </td>
+
+                                <td>
+                                    Reconhecimento e posteriormente
+                                    combate aéreo.
+                                </td>
+
+                                <td>
+                                    Ampliaram a dimensão tecnológica
+                                    dos conflitos modernos.
+                                </td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>
+                                    Submarinos
+                                </td>
+
+                                <td>
+                                    Ataques a embarcações e bloqueios.
+                                </td>
+
+                                <td>
+                                    Tornaram a guerra marítima ainda
+                                    mais estratégica.
+                                </td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>
+                                    Tanques
+                                </td>
+
+                                <td>
+                                    Apoio às operações terrestres.
+                                </td>
+
+                                <td>
+                                    Tornaram-se importantes na evolução
+                                    das operações militares.
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+            <!-- Entrada dos EUA. -->
+            <div class="card">
+
+                <!-- Título. -->
+                <h3>
+                    A entrada dos Estados Unidos
+                </h3>
+
+                <!-- Texto. -->
+                <p>
+                    Em 6 de abril de 1917, os Estados Unidos declararam
+                    guerra à Alemanha.
+                </p>
+
+                <!-- Texto. -->
+                <p>
+                    A entrada norte-americana ampliou os recursos
+                    econômicos e militares disponíveis para a Entente.
+                </p>
+
+            </div>
+
+            <!-- Revolução Russa e saída da Rússia. -->
+            <div class="card">
+
+                <!-- Título. -->
+                <h3>
+                    A Revolução Russa e a saída da Rússia
+                </h3>
+
+                <!-- Texto. -->
+                <p>
+                    A Rússia enfrentava enormes dificuldades militares,
+                    econômicas e sociais.
+                </p>
+
+                <!-- Texto. -->
+                <p>
+                    As revoluções de 1917 alteraram profundamente a
+                    política russa e contribuíram para a retirada do país
+                    da guerra.
+                </p>
+
+                <!-- Texto. -->
+                <p>
+                    Em março de 1918, o governo bolchevique assinou o
+                    Tratado de Brest-Litovsk com as Potências Centrais.
+                </p>
+
+            </div>
+
+            <!-- Final da guerra. -->
+            <div class="card">
+
+                <!-- Título. -->
+                <h3>
+                    1918: o fim do conflito
+                </h3>
+
+                <!-- Texto. -->
+                <p>
+                    Durante 1918, as Potências Centrais enfrentaram
+                    dificuldades crescentes.
+                </p>
+
+                <!-- Texto. -->
+                <p>
+                    O avanço dos adversários, a entrada dos Estados Unidos,
+                    as dificuldades econômicas e a crise política interna
+                    contribuíram para o colapso das Potências Centrais.
+                </p>
+
+                <!-- Texto. -->
+                <p>
+                    Em 11 de novembro de 1918, foi assinado o armistício
+                    que encerrou os combates na Frente Ocidental.
+                </p>
+
+            </div>
+
+            <!-- Linha do tempo. -->
+            <div class="card">
+
+                <!-- Título. -->
+                <h3>
+                    Linha do tempo essencial
+                </h3>
+
+                <!-- Timeline. -->
+                <div class="timeline">
+
+                    <div class="evento">
+
+                        <div class="ano">
+                            1914
+                        </div>
+
+                        <p>
+                            Assassinato de Francisco Ferdinando e início
+                            da Primeira Guerra Mundial.
+                        </p>
+
+                    </div>
+
+                    <div class="evento">
+
+                        <div class="ano">
+                            1915
+                        </div>
+
+                        <p>
+                            A Itália entra na guerra ao lado da Entente.
+                        </p>
+
+                    </div>
+
+                    <div class="evento">
+
+                        <div class="ano">
+                            1917
+                        </div>
+
+                        <p>
+                            Estados Unidos entram na guerra e ocorrem
+                            as revoluções na Rússia.
+                        </p>
+
+                    </div>
+
+                    <div class="evento">
+
+                        <div class="ano">
+                            1918
+                        </div>
+
+                        <p>
+                            Rússia formaliza sua saída e o armistício
+                            encerra os combates em novembro.
+                        </p>
+
+                    </div>
+
+                    <div class="evento">
+
+                        <div class="ano">
+                            1919
+                        </div>
+
+                        <p>
+                            Assinatura do Tratado de Versalhes.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ========================================================
+             PARTE III — LEGADO
+             ======================================================== -->
+
+        <section>
+
+            <!-- Cabeçalho da Parte III. -->
+            <div class="parte3">
+
+                <!-- Título. -->
+                <h2>
+                    III — O LEGADO E O MUNDO ATUAL
+                </h2>
+
+                <!-- Descrição. -->
+                <p>
+                    Como a Primeira Guerra Mundial transformou a política,
+                    a economia e a sociedade do século XX.
+                </p>
+
+            </div>
+
+            <!-- Tratado de Versalhes. -->
+            <div class="card">
+
+                <!-- Título. -->
+                <h3>
+                    O Tratado de Versalhes
+                </h3>
+
+                <!-- Texto. -->
+                <p>
+                    O Tratado de Versalhes foi assinado em 28 de junho
+                    de 1919 e estabeleceu condições de paz específicas
+                    para a Alemanha.
+                </p>
+
+                <!-- Texto. -->
+                <p>
+                    Entre seus efeitos estavam perdas territoriais,
+                    limitações militares e obrigações financeiras
+                    impostas à Alemanha.
+                </p>
+
+                <!-- Atenção. -->
+                <div class="atencao">
+
+                    <strong>
+                        Atenção para o ENEM:
+                    </strong>
+
+                    É incorreto explicar todos os acontecimentos posteriores
+                    da Europa apenas pelo Tratado de Versalhes. Ele foi um
+                    elemento importante do cenário pós-guerra, mas não explica
+                    sozinho a crise política, econômica e social das décadas
+                    seguintes.
+
+                </div>
+
+            </div>
+
+            <!-- Fim dos impérios. -->
+            <div class="card">
+
+                <!-- Título. -->
+                <h3>
+                    O desaparecimento de grandes impérios
+                </h3>
+
+                <!-- Lista. -->
+                <ul>
+
+                    <li>
+                        Império Alemão.
+                    </li>
+
+                    <li>
+                        Império Austro-Húngaro.
+                    </li>
+
+                    <li>
+                        Império Otomano.
+                    </li>
+
+                    <li>
+                        Império Russo.
+                    </li>
+
+                </ul>
+
+                <!-- Texto. -->
+                <p>
+                    A guerra acelerou transformações territoriais e políticas
+                    que alteraram o mapa europeu e do Oriente Médio.
+                </p>
+
+            </div>
+
+            <!-- Liga das Nações. -->
+            <div class="card">
+
+                <!-- Título. -->
+                <h3>
+                    A Liga das Nações
+                </h3>
+
+                <!-- Texto. -->
+                <p>
+                    A Liga das Nações foi criada no contexto do pós-guerra
+                    com o objetivo de promover mecanismos de cooperação
+                    internacional e evitar novos conflitos.
+                </p>
+
+                <!-- Texto. -->
+                <p>
+                    A organização começou suas atividades em 1920.
+                </p>
+
+                <!-- Texto. -->
+                <p>
+                    Os Estados Unidos, apesar de terem participado
+                    decisivamente da guerra, não aderiram à Liga das Nações.
+                </p>
+
+            </div>
+
+            <!-- Consequências. -->
+            <div class="consequencias">
+
+                <!-- Título. -->
+                <h3>
+                    Principais consequências
+                </h3>
+
+                <!-- Lista. -->
+                <ul>
+
+                    <li>
+                        Milhões de mortos, feridos e deslocados.
+                    </li>
+
+                    <li>
+                        Crise econômica e financeira em diferentes países.
+                    </li>
+
+                    <li>
+                        Enfraquecimento das antigas potências europeias.
+                    </li>
+
+                    <li>
+                        Fortalecimento relativo dos Estados Unidos.
+                    </li>
+
+                    <li>
+                        Transformação do mapa político europeu.
+                    </li>
+
+                    <li>
+                        Formação de novos Estados e reorganização territorial.
+                    </li>
+
+                    <li>
+                        Fortalecimento de movimentos políticos radicais
+                        no período posterior.
+                    </li>
+
+                    <li>
+                        Criação da Liga das Nações.
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <!-- Conexão com o século XX. -->
+            <div class="card">
+
+                <!-- Título. -->
+                <h3>
+                    Da Primeira Guerra ao restante do século XX
+                </h3>
+
+                <!-- Texto. -->
+                <p>
+                    A Primeira Guerra Mundial não explica sozinha os
+                    acontecimentos posteriores, mas criou condições
+                    históricas importantes para compreender o período
+                    entre guerras.
+                </p>
+
+                <!-- Sequência. -->
+                <p>
+                    Uma sequência didática útil é:
+                </p>
+
+                <!-- Lista. -->
+                <ol>
+
+                    <li>
+                        Primeira Guerra Mundial.
+                    </li>
+
+                    <li>
+                        Revolução Russa.
+                    </li>
+
+                    <li>
+                        Crise e reorganização do pós-guerra.
+                    </li>
+
+                    <li>
+                        Crise de 1929.
+                    </li>
+
+                    <li>
+                        Ascensão de regimes autoritários.
+                    </li>
+
+                    <li>
+                        Segunda Guerra Mundial.
+                    </li>
+
+                </ol>
+
+            </div>
+
+            <!-- ====================================================
+                 BRASIL
+                 ==================================================== -->
+
+            <div class="card">
+
+                <!-- Título. -->
+                <h3>
+                    A Primeira Guerra Mundial e o Brasil
+                </h3>
+
+                <!-- Texto. -->
+                <p>
+                    O Brasil inicialmente manteve uma posição de neutralidade.
+                </p>
+
+                <!-- Texto. -->
+                <p>
+                    Em 1917, após ataques de submarinos alemães a navios
+                    brasileiros, o governo brasileiro rompeu relações com
+                    a Alemanha e posteriormente declarou guerra.
+                </p>
+
+                <!-- Texto. -->
+                <p>
+                    A participação brasileira ocorreu principalmente por
+                    meios navais, médicos e diplomáticos, sem a formação
+                    de uma grande força terrestre brasileira combatendo
+                    na Frente Ocidental.
+                </p>
+
+                <!-- Conexão. -->
+                <div class="conceitos">
+
+                    <strong>
+                        Conexão Brasil:
+                    </strong>
+
+                    A guerra também afetou a economia brasileira,
+                    especialmente por causa das dificuldades comerciais
+                    e das transformações provocadas pelo conflito
+                    internacional.
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ========================================================
+             CAUSAS E CONSEQUÊNCIAS
+             ======================================================== -->
+
+        <section>
+
+            <!-- Título. -->
+            <div class="apresentacao">
+
+                <h2>
+                    Causas e consequências — visão de professor
+                </h2>
+
+            </div>
+
+            <!-- Tabela. -->
+            <div class="tabela-container">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>
+                                Causas / fatores
+                            </th>
+
+                            <th>
+                                Desenvolvimento
+                            </th>
+
+                            <th>
+                                Consequências
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+
+                            <td>
+                                Imperialismo
+                            </td>
+
+                            <td>
+                                Rivalidades entre potências.
+                            </td>
+
+                            <td>
+                                Intensificação das disputas internacionais.
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>
+                                Nacionalismos
+                            </td>
+
+                            <td>
+                                Conflitos entre diferentes projetos nacionais.
+                            </td>
+
+                            <td>
+                                Transformações territoriais e políticas.
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>
+                                Corrida armamentista
+                            </td>
+
+                            <td>
+                                Crescimento dos arsenais e da capacidade militar.
+                            </td>
+
+                            <td>
+                                Aumento do poder destrutivo da guerra.
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>
+                                Alianças
+                            </td>
+
+                            <td>
+                                Ampliação de uma crise regional.
+                            </td>
+
+                            <td>
+                                Internacionalização do conflito.
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>
+                                Crise nos Bálcãs
+                            </td>
+
+                            <td>
+                                Assassinato de Francisco Ferdinando
+                                e crise diplomática.
+                            </td>
+
+                            <td>
+                                Início da guerra em 1914.
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+        <!-- ========================================================
+             O QUE O PROFESSOR PRECISA DOMINAR
+             ======================================================== -->
+
+        <section>
+
+            <div class="card">
+
+                <h2>
+                    O que o professor precisa dominar
+                </h2>
+
+                <ul>
+
+                    <li>
+                        Diferenciar causas estruturais e estopim.
+                    </li>
+
+                    <li>
+                        Explicar imperialismo e nacionalismo.
+                    </li>
+
+                    <li>
+                        Compreender o sistema de alianças.
+                    </li>
+
+                    <li>
+                        Explicar a guerra de trincheiras.
+                    </li>
+
+                    <li>
+                        Relacionar guerra e industrialização.
+                    </li>
+
+                    <li>
+                        Explicar a entrada dos Estados Unidos.
+                    </li>
+
+                    <li>
+                        Relacionar a guerra à Revolução Russa.
+                    </li>
+
+                    <li>
+                        Explicar o Tratado de Versalhes.
+                    </li>
+
+                    <li>
+                        Compreender a reorganização política do pós-guerra.
+                    </li>
+
+                    <li>
+                        Relacionar o pós-guerra aos conflitos políticos
+                        das décadas seguintes sem estabelecer uma relação
+                        automática ou simplista.
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </section>
+
+        <!-- ========================================================
+             O QUE COLOCAR NA LOUSA
+             ======================================================== -->
+
+        <section>
+
+            <div class="lousa">
+
+                <h3>
+                    O que colocar na lousa
+                </h3>
+
+                <p>
+                    PRIMEIRA GUERRA MUNDIAL — 1914–1918
+                </p>
+
+                <br>
+
+                <p>
+                    CAUSAS:
+                </p>
+
+                <p>
+                    Imperialismo + Nacionalismo + Alianças +
+                    Corrida Armamentista + Bálcãs
+                </p>
+
+                <br>
+
+                <p>
+                    ESTOPIM:
+                </p>
+
+                <p>
+                    Assassinato de Francisco Ferdinando — 1914
+                </p>
+
+                <br>
+
+                <p>
+                    1917:
+                </p>
+
+                <p>
+                    EUA entram na guerra + Revolução Russa
+                </p>
+
+                <br>
+
+                <p>
+                    1918:
+                </p>
+
+                <p>
+                    Armistício
+                </p>
+
+                <br>
+
+                <p>
+                    1919:
+                </p>
+
+                <p>
+                    Tratado de Versalhes
+                </p>
+
+                <br>
+
+                <p>
+                    LEGADO:
+                </p>
+
+                <p>
+                    Novo mapa europeu + crise do pós-guerra +
+                    Liga das Nações + novas tensões políticas
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- ========================================================
+             CONCEITOS FUNDAMENTAIS
+             ======================================================== -->
+
+        <section>
+
+            <div class="card">
+
+                <h2>
+                    Conceitos fundamentais
+                </h2>
+
+                <ul>
+
+                    <li>
+                        <strong>Imperialismo:</strong>
+                        expansão do poder político, econômico e territorial
+                        de determinadas potências.
+                    </li>
+
+                    <li>
+                        <strong>Nacionalismo:</strong>
+                        valorização da identidade nacional e dos interesses
+                        associados à nação.
+                    </li>
+
+                    <li>
+                        <strong>Aliança:</strong>
+                        acordo entre Estados com objetivos políticos,
+                        diplomáticos ou militares.
+                    </li>
+
+                    <li>
+                        <strong>Guerra total:</strong>
+                        mobilização ampla dos recursos econômicos,
+                        industriais e sociais de um Estado.
+                    </li>
+
+                    <li>
+                        <strong>Trincheira:</strong>
+                        estrutura defensiva utilizada para proteger tropas
+                        e manter posições no campo de batalha.
+                    </li>
+
+                    <li>
+                        <strong>Armistício:</strong>
+                        acordo para interromper os combates.
+                    </li>
+
+                    <li>
+                        <strong>Tratado de paz:</strong>
+                        instrumento diplomático destinado a estabelecer
+                        condições políticas e territoriais após um conflito.
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </section>
+
+        <!-- ========================================================
+             ENEM / VESTIBULAR / CONCURSO
+             ======================================================== -->
+
+        <section>
+
+            <div class="enem">
+
+                <h2>
+                    ENEM • Vestibular • Concurso
+                </h2>
+
+                <p>
+                    As provas costumam trabalhar a Primeira Guerra Mundial
+                    por meio das relações entre industrialização, imperialismo,
+                    nacionalismo, tecnologia, transformações políticas e
+                    consequências sociais.
+                </p>
+
+                <br>
+
+                <p>
+                    Uma boa estratégia é evitar decorar apenas datas.
+                    O estudante deve compreender relações de causa,
+                    desenvolvimento e consequência.
+                </p>
+
+            </div>
+
+            <!-- Questão 1. -->
+            <div class="questao">
+
+                <h3>
+                    Questão 1 — Estilo ENEM
+                </h3>
+
+                <p>
+                    A Primeira Guerra Mundial não pode ser compreendida
+                    exclusivamente a partir do atentado de Sarajevo.
+                    O acontecimento de 1914 ocorreu em um contexto marcado
+                    por rivalidades entre potências europeias.
+                </p>
+
+                <p>
+                    Entre os fatores que contribuíram para esse ambiente
+                    de tensão estava:
+                </p>
+
+                <div class="alternativas">
+
+                    <p>
+                        A) a completa ausência de disputas imperialistas.
+                    </p>
+
+                    <p>
+                        B) a redução das forças militares europeias.
+                    </p>
+
+                    <p>
+                        C) a combinação entre imperialismo, nacionalismos,
+                        alianças e corrida armamentista.
+                    </p>
+
+                    <p>
+                        D) o desaparecimento dos Estados nacionais europeus.
+                    </p>
+
+                    <p>
+                        E) o fim das rivalidades econômicas entre as potências.
+                    </p>
+
+                </div>
+
+                <button class="btn-gabarito" onclick="mostrarGabarito('g1')">
+                    Mostrar gabarito
+                </button>
+
+                <div class="gabarito" id="g1">
+
+                    <strong>
+                        Gabarito: C.
+                    </strong>
+
+                    <p>
+                        A guerra resultou de um conjunto de tensões estruturais.
+                        O assassinato de Francisco Ferdinando funcionou como
+                        estopim de uma crise internacional já marcada por
+                        rivalidades.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Questão 2. -->
+            <div class="questao">
+
+                <h3>
+                    Questão 2 — Estilo Vestibular
+                </h3>
+
+                <p>
+                    O ano de 1917 representa um momento decisivo da Primeira
+                    Guerra Mundial porque:
+                </p>
+
+                <div class="alternativas">
+
+                    <p>
+                        A) marcou o início da guerra.
+                    </p>
+
+                    <p>
+                        B) ocorreu a assinatura do Tratado de Versalhes.
+                    </p>
+
+                    <p>
+                        C) os Estados Unidos entraram no conflito e a Rússia
+                        passou por revoluções que levariam à sua retirada.
+                    </p>
+
+                    <p>
+                        D) terminou definitivamente o Império Otomano.
+                    </p>
+
+                    <p>
+                        E) a Liga das Nações começou suas atividades.
+                    </p>
+
+                </div>
+
+                <button class="btn-gabarito" onclick="mostrarGabarito('g2')">
+                    Mostrar gabarito
+                </button>
+
+                <div class="gabarito" id="g2">
+
+                    <strong>
+                        Gabarito: C.
+                    </strong>
+
+                    <p>
+                        Em 1917, os Estados Unidos entraram na guerra e
+                        ocorreram as revoluções russas, acontecimentos que
+                        alteraram profundamente o equilíbrio político e militar
+                        do conflito.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ========================================================
+             RESUMO FINAL
+             ======================================================== -->
+
+        <section>
+
+            <div class="apresentacao">
+
+                <h2>
+                    Resumo para revisão
+                </h2>
+
+                <p>
+                    A Primeira Guerra Mundial ocorreu entre 1914 e 1918
+                    em um contexto de imperialismo, nacionalismo,
+                    rivalidades econômicas, alianças e corrida armamentista.
+                </p>
+
+                <br>
+
+                <p>
+                    O assassinato de Francisco Ferdinando foi o estopim
+                    de uma crise que levou as principais potências europeias
+                    à guerra.
+                </p>
+
+                <br>
+
+                <p>
+                    O conflito apresentou características de guerra
+                    industrial e total, com grande mobilização econômica,
+                    tecnológica e social.
+                </p>
+
+                <br>
+
+                <p>
+                    Em 1917, os Estados Unidos entraram no conflito e a
+                    Rússia passou por revoluções que contribuíram para sua
+                    retirada da guerra.
+                </p>
+
+                <br>
+
+                <p>
+                    O armistício de 11 de novembro de 1918 encerrou os
+                    combates, mas não eliminou as tensões internacionais.
+                </p>
+
+                <br>
+
+                <p>
+                    O pós-guerra foi marcado pelo Tratado de Versalhes,
+                    pela reorganização territorial da Europa, pela criação
+                    da Liga das Nações e por profundas transformações
+                    políticas e sociais.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- ========================================================
+             NAVEGAÇÃO
+             ======================================================== -->
+
+        <div class="navegacao">
+
+            <!-- Link para o tema anterior. -->
+            <a
+                class="nav-btn"
+                href="../35-Segunda-Revolucao-Industrial-Neocolonialismo-Imperialismo/index.html"
+            >
+                ← Tema anterior
+            </a>
+
+            <!-- Link para o próximo tema. -->
+            <a
+                class="nav-btn"
+                href="../37-Revolucao-Russa/index.html"
+            >
+                Próximo tema →
+            </a>
+
+        </div>
+
+    </main>
+
+    <!-- ============================================================
+         RODAPÉ
+         ============================================================ -->
+
+    <footer>
+
+        <p>
+            Curso de História Geral
+        </p>
+
+        <p>
+            <strong>
+                Professor Marcelo Oliveira
+            </strong>
+        </p>
+
+        <p>
+            Fund II • Ensino Médio • ENEM • Vestibular • Concurso
+        </p>
+
+    </footer>
+
+    <!-- ============================================================
+         BOTÃO VOLTAR AO TOPO
+         ============================================================ -->
+
+    <button
+        id="topo"
+        onclick="voltarAoTopo()"
+        aria-label="Voltar ao topo"
+    >
+        ↑
+    </button>
+
+    <!-- ============================================================
+         JAVASCRIPT
+         ============================================================ -->
+
+    <script>
+
+        /* Função responsável por mostrar ou esconder o gabarito. */
+        function mostrarGabarito(id) {
+
+            /* Localiza o elemento pelo ID recebido. */
+            const elemento = document.getElementById(id);
+
+            /* Verifica se o elemento está escondido. */
+            if (elemento.style.display === "block") {
+
+                /* Esconde novamente o gabarito. */
+                elemento.style.display = "none";
+
+            } else {
+
+                /* Mostra o gabarito. */
+                elemento.style.display = "block";
+
+            }
+
+        }
+
+        /* Localiza o botão de voltar ao topo. */
+        const botaoTopo = document.getElementById("topo");
+
+        /* Monitora a rolagem da página. */
+        window.addEventListener("scroll", function () {
+
+            /* Verifica se o usuário já desceu a página. */
+            if (window.scrollY > 400) {
+
+                /* Mostra o botão. */
+                botaoTopo.style.display = "block";
+
+            } else {
+
+                /* Esconde o botão. */
+                botaoTopo.style.display = "none";
+
+            }
+
+        });
+
+        /* Cria a função que retorna ao início da página. */
+        function voltarAoTopo() {
+
+            /* Faz a página subir suavemente. */
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+
+        }
+
+    </script>
+    
+<script>
+  const paginaAnterior = "48 - A Segunda Revolução Industrial, Neocolonialismo e Imperialismo.html";
+  const paginaProxima = "50 - REVOLUÇÃO RUSSA.html";
+</script>
+<script src="navegacao.js"></script>
+</body>
+</html>
+

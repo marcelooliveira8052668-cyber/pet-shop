@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<!-- Declara que este documento utiliza HTML5. -->
+<html lang="pt-BR">
+<!-- Define o idioma principal da página como português do Brasil. -->
+<head>
+<!-- Inicia a área de configurações invisíveis da página. -->
+<meta charset="UTF-8">
+<!-- Permite acentos e caracteres especiais corretamente. -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Faz o layout se adaptar a celulares, tablets e computadores. -->
+<title>1.19 — Reformas | Curso de História Geral</title>
+<!-- Define o título exibido na aba do navegador. -->
+<style>
+/* Cria variáveis para facilitar a manutenção das cores deste capítulo. */
+:root{--vinho:#6b1e2e;--vinho2:#8f2f42;--dourado:#c89b3c;--creme:#f7f1e5;--papel:#fffdf8;--texto:#2d2a26;--cinza:#6d6860;--verde:#355c4b;--borda:#e2d7c5;--sombra:0 12px 30px rgba(45,42,38,.10);}
+/* Remove margens padrão e melhora o cálculo de tamanho dos elementos. */
+*{box-sizing:border-box;margin:0;padding:0;}
+/* Define o comportamento de rolagem suave para os links internos. */
+html{scroll-behavior:smooth;}
+/* Define a aparência geral do corpo da página. */
+body{font-family:Georgia,"Times New Roman",serif;background:var(--creme);color:var(--texto);line-height:1.75;}
+/* Cria o cabeçalho principal com aparência de livro histórico. */
+header{background:linear-gradient(135deg,var(--vinho),#42131d);color:white;padding:70px 20px 55px;text-align:center;border-bottom:6px solid var(--dourado);}
+/* Limita a largura do conteúdo para facilitar a leitura. */
+.container{width:min(1120px,92%);margin:auto;}
+/* Estiliza o pequeno identificador do curso. */
+.eyebrow{letter-spacing:3px;text-transform:uppercase;color:#f0d99b;font:700 13px Arial,sans-serif;margin-bottom:12px;}
+/* Estiliza o título principal. */
+h1{font-size:clamp(38px,6vw,70px);line-height:1.05;margin-bottom:15px;}
+/* Estiliza o subtítulo do capítulo. */
+.subtitle{max-width:820px;margin:auto;color:#f6ead1;font-size:20px;}
+/* Cria uma área de conteúdo com espaçamento vertical. */
+main{padding:45px 0 80px;}
+/* Cria cartões brancos para cada bloco didático. */
+.card{background:var(--papel);border:1px solid var(--borda);border-radius:18px;padding:30px;margin-bottom:28px;box-shadow:var(--sombra);}
+/* Cria títulos de seção com uma barra lateral dourada. */
+h2{font-size:31px;color:var(--vinho);border-left:6px solid var(--dourado);padding-left:14px;margin-bottom:18px;}
+/* Estiliza subtítulos internos. */
+h3{font-size:22px;color:var(--vinho2);margin:24px 0 10px;}
+/* Mantém os parágrafos confortáveis para leitura. */
+p{margin-bottom:14px;}
+/* Destaca palavras importantes. */
+strong{color:var(--vinho);}
+/* Cria uma grade responsiva para cartões menores. */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px;margin-top:20px;}
+/* Cria cartões compactos para conceitos e personagens. */
+.mini{background:#fbf6eb;border:1px solid var(--borda);border-radius:14px;padding:20px;}
+/* Estiliza os títulos dos cartões compactos. */
+.mini h3{margin-top:0;font-size:19px;}
+/* Cria uma caixa de atenção histórica. */
+.alerta{background:#f4e8c9;border-left:6px solid var(--dourado);padding:20px;border-radius:10px;margin:20px 0;}
+/* Cria uma caixa de ligação entre temas. */
+.conexao{background:#e9f0ec;border-left:6px solid var(--verde);padding:20px;border-radius:10px;margin:20px 0;}
+/* Organiza a linha do tempo verticalmente. */
+.timeline{border-left:3px solid var(--dourado);margin:25px 0 10px 12px;padding-left:25px;}
+/* Cria cada evento da linha do tempo. */
+.evento{position:relative;margin-bottom:25px;}
+/* Cria o marcador circular de cada evento. */
+.evento::before{content:"";position:absolute;left:-34px;top:8px;width:12px;height:12px;background:var(--vinho);border:3px solid var(--papel);border-radius:50%;box-shadow:0 0 0 2px var(--dourado);}
+/* Destaca o ano dos acontecimentos. */
+.ano{font:bold 18px Arial,sans-serif;color:var(--vinho);}
+/* Organiza tabelas largas com possibilidade de rolagem horizontal. */
+.table-wrap{overflow-x:auto;margin-top:20px;}
+/* Define a aparência básica das tabelas. */
+table{width:100%;border-collapse:collapse;min-width:700px;}
+/* Define células e cabeçalhos da tabela. */
+th,td{padding:13px;border:1px solid var(--borda);text-align:left;vertical-align:top;}
+/* Destaca a linha de cabeçalho. */
+th{background:var(--vinho);color:white;font-family:Arial,sans-serif;}
+/* Cria listas com espaçamento adequado. */
+ul,ol{padding-left:25px;margin:12px 0 18px;}
+/* Destaca perguntas de exercícios. */
+.questao{background:#f8f2e8;border:1px solid var(--borda);border-radius:14px;padding:22px;margin-top:20px;}
+/* Estiliza os botões interativos. */
+button,.botao{border:0;border-radius:10px;padding:12px 18px;background:var(--vinho);color:white;font-weight:bold;cursor:pointer;text-decoration:none;display:inline-block;margin-top:12px;transition:.2s;}
+/* Cria um efeito visual ao passar o mouse sobre os botões. */
+button:hover,.botao:hover{background:var(--vinho2);transform:translateY(-1px);}
+/* Esconde o gabarito até que o aluno solicite sua visualização. */
+.gabarito{display:none;background:#e8f0e9;border-left:5px solid var(--verde);padding:16px;margin-top:15px;border-radius:8px;}
+/* Cria uma navegação inferior entre capítulos. */
+.nav-final{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;margin-top:35px;}
+/* Cria o botão flutuante para retornar ao topo. */
+.topo{position:fixed;right:20px;bottom:20px;width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:var(--dourado);color:#321f0b;text-decoration:none;font:bold 22px Arial,sans-serif;box-shadow:var(--sombra);}
+/* Estiliza o rodapé. */
+footer{background:#351017;color:#eadfce;text-align:center;padding:30px 20px;font-family:Arial,sans-serif;}
+/* Ajusta os elementos para telas pequenas. */
+@media(max-width:700px){.card{padding:21px;}h2{font-size:26px;}h1{font-size:42px;}.subtitle{font-size:17px;}table{font-size:14px;}}
+</style>
+</head>
+<body id="topo">
+<!-- Inicia o cabeçalho visível do capítulo. -->
+<header>
+<!-- Centraliza o conteúdo do cabeçalho. -->
+<div class="container">
+<!-- Identifica o curso e a etapa do conteúdo. -->
+<div class="eyebrow">Curso de História Geral • Fund. II • Ensino Médio • ENEM • Vestibulares • Concursos</div>
+<!-- Apresenta o número e o nome do tema. -->
+<h1>1.19 — REFORMAS</h1>
+<!-- Apresenta a ideia central do capítulo. -->
+<p class="subtitle">Religião, poder, conflitos e transformações na Europa do século XVI: como as Reformas alteraram a vida religiosa e política e ajudaram a transformar o mundo moderno.</p>
+</div>
+</header>
+<!-- Inicia o conteúdo principal. -->
+<main>
+<!-- Limita a largura de leitura. -->
+<div class="container">
+<!-- Apresenta a introdução geral do tema. -->
+<section class="card">
+<!-- Título da introdução. -->
+<h2>Antes de começar</h2>
+<!-- Explica o significado histórico de Reforma. -->
+<p>Quando estudamos as <strong>Reformas religiosas do século XVI</strong>, não estamos falando apenas de uma discussão teológica. As mudanças atingiram instituições, governos, comunidades, relações de poder, educação, cultura e formas de organização social.</p>
+<!-- Apresenta uma advertência contra simplificações. -->
+<div class="alerta"><strong>Atenção histórica:</strong> a Reforma Protestante não surgiu por uma única causa e não pode ser explicada somente como uma reação contra a Igreja Católica. Havia questões religiosas, políticas, econômicas, culturais e sociais que se combinaram de maneiras diferentes em cada região.</div>
+<!-- Mostra a conexão com os capítulos anteriores. -->
+<div class="conexao"><strong>Ligação com os capítulos anteriores:</strong> o Renascimento valorizou novas formas de investigação e circulação de ideias; a expansão marítimo-comercial ampliou contatos e interesses econômicos; o Absolutismo fortaleceu monarquias. As Reformas aconteceram dentro desse mundo em transformação.</div>
+</section>
+<!-- Inicia a primeira parte da periodização. -->
+<section class="card" id="comeco">
+<!-- Título da primeira parte. -->
+<h2>I — O COMEÇO: uma Igreja em uma Europa em transformação</h2>
+<!-- Explica a posição da Igreja antes das Reformas. -->
+<p>No final da Idade Média e no início da Idade Moderna, a Igreja Católica possuía enorme influência religiosa, cultural e política na Europa ocidental. Ao mesmo tempo, críticas a práticas e comportamentos de membros do clero já apareciam em diferentes contextos.</p>
+<!-- Explica as mudanças sociais e econômicas. -->
+<h3>1. Uma Europa diferente daquela do início da Idade Média</h3>
+<p>O crescimento das cidades, do comércio, das monarquias e da circulação de pessoas e ideias criou novas relações sociais. A imprensa de tipos móveis, associada a <strong>Johannes Gutenberg</strong> no século XV, aumentou a capacidade de reprodução de textos e contribuiu para a circulação de escritos religiosos e políticos.</p>
+<!-- Explica críticas religiosas. -->
+<h3>2. Críticas dentro do cristianismo ocidental</h3>
+<p>Havia críticas à venda de indulgências, ao comportamento de parte do clero, à riqueza institucional e a determinadas práticas religiosas. Antes de Martinho Lutero, outros movimentos e pensadores já haviam questionado aspectos da vida religiosa, como <strong>John Wycliffe</strong> na Inglaterra e <strong>Jan Hus</strong> na Boêmia.</p>
+<!-- Explica o papel das indulgências sem simplificação. -->
+<div class="alerta"><strong>Indulgência não é sinônimo de “comprar o perdão”:</strong> historicamente, a indulgência estava relacionada à remissão de penas temporais associadas ao pecado dentro da doutrina católica. A venda e a pregação abusiva de indulgências foram alvo de fortes críticas no período.</div>
+<!-- Apresenta as causas gerais. -->
+<h3>3. Principais fatores que ajudam a explicar as Reformas</h3>
+<div class="grid">
+<!-- Primeiro fator. -->
+<div class="mini"><h3>Religioso</h3><p>Críticas doutrinárias e pastorais e debates sobre autoridade, salvação, sacramentos e interpretação das Escrituras.</p></div>
+<!-- Segundo fator. -->
+<div class="mini"><h3>Político</h3><p>Monarcas e autoridades locais podiam utilizar a ruptura religiosa para ampliar autonomia diante de Roma.</p></div>
+<!-- Terceiro fator. -->
+<div class="mini"><h3>Econômico</h3><p>Interesses sobre terras, tributos, riquezas e propriedades eclesiásticas variavam conforme a região.</p></div>
+<!-- Quarto fator. -->
+<div class="mini"><h3>Cultural</h3><p>Humanismo, imprensa e aumento da circulação de textos favoreceram debates religiosos.</p></div>
+</div>
+</section>
+<!-- Inicia a segunda parte. -->
+<section class="card" id="desenvolvimento">
+<!-- Título da segunda parte. -->
+<h2>II — O DESENVOLVIMENTO: as Reformas Protestantes</h2>
+<!-- Apresenta Lutero e 1517. -->
+<h3>1. Martinho Lutero e o início da Reforma Luterana</h3>
+<p>Em <strong>1517</strong>, Martinho Lutero, monge e professor de teologia, tornou públicas suas críticas às indulgências e a outros aspectos da prática religiosa. As chamadas <strong>95 Teses</strong> tornaram-se um marco simbólico da Reforma, embora a ruptura com Roma tenha sido um processo posterior e complexo.</p>
+<!-- Explica princípios luteranos. -->
+<div class="grid">
+<!-- Primeiro princípio. -->
+<div class="mini"><h3>Justificação pela fé</h3><p>Lutero enfatizou a fé como elemento central da justificação, em oposição à ideia de que práticas humanas pudessem ser tratadas como meio de compra da salvação.</p></div>
+<!-- Segundo princípio. -->
+<div class="mini"><h3>Escrituras</h3><p>A autoridade das Escrituras ganhou papel central na teologia luterana, em contraste com a estrutura de autoridade da Igreja Católica.</p></div>
+<!-- Terceiro princípio. -->
+<div class="mini"><h3>Sacerdócio universal</h3><p>A Reforma questionou a separação rígida entre clero e leigos em determinados aspectos da vida cristã.</p></div>
+<!-- Quarto princípio. -->
+<div class="mini"><h3>Língua vernácula</h3><p>A tradução e circulação de textos religiosos em línguas locais ampliaram o acesso de diferentes públicos às Escrituras.</p></div>
+</div>
+<!-- Explica a expansão do luteranismo. -->
+<h3>2. Por que a Reforma se expandiu?</h3>
+<p>As ideias de Lutero encontraram apoio em diferentes grupos e territórios. Príncipes alemães tiveram interesses políticos próprios, cidades possuíam dinâmicas econômicas específicas e parte da população aderiu por motivos religiosos. A imprensa ajudou a multiplicar textos, sermões e debates.</p>
+<!-- Apresenta Calvino. -->
+<h3>3. João Calvino e o Calvinismo</h3>
+<p><strong>João Calvino</strong> desenvolveu uma teologia reformada que ganhou força especialmente em Genebra e posteriormente em regiões como França, Países Baixos, Escócia e partes da Europa central. A doutrina da <strong>predestinação</strong> tornou-se um de seus elementos conhecidos, embora o pensamento calvinista seja mais amplo do que esse conceito isolado.</p>
+<!-- Apresenta o Anglicanismo. -->
+<h3>4. A Reforma Inglesa e o Anglicanismo</h3>
+<p>Na Inglaterra, a ruptura com a autoridade papal ocorreu em contexto político específico. Durante o reinado de <strong>Henrique VIII</strong>, o Ato de Supremacia de 1534 reconheceu o monarca como chefe supremo da Igreja da Inglaterra. A trajetória religiosa inglesa continuou a sofrer mudanças nos reinados seguintes.</p>
+<!-- Explica que Anglicanismo não foi simplesmente igual ao luteranismo. -->
+<div class="alerta"><strong>Para não confundir:</strong> a Reforma Inglesa não deve ser reduzida à história pessoal do casamento de Henrique VIII. A ruptura envolveu autoridade política, relação com Roma, propriedades e organização institucional da Igreja inglesa, além de questões dinásticas.</div>
+</section>
+<!-- Inicia a seção sobre a Reforma Católica. -->
+<section class="card">
+<!-- Título da resposta católica. -->
+<h2>A REFORMA CATÓLICA OU CONTRARREFORMA</h2>
+<!-- Explica o movimento católico. -->
+<p>A Igreja Católica respondeu aos desafios do século XVI com reformas internas, reafirmação doutrinária e ações de expansão missionária. O processo não foi apenas uma reação ao protestantismo: também envolveu esforços de renovação religiosa que já existiam dentro do catolicismo.</p>
+<!-- Apresenta o Concílio de Trento. -->
+<h3>Concílio de Trento — 1545–1563</h3>
+<p>O <strong>Concílio de Trento</strong> reafirmou doutrinas católicas, tratou da disciplina do clero e estabeleceu medidas para melhorar a formação sacerdotal. Entre suas consequências esteve o fortalecimento da organização interna da Igreja Católica.</p>
+<!-- Apresenta a Companhia de Jesus. -->
+<h3>Companhia de Jesus</h3>
+<p>Fundada por <strong>Inácio de Loyola</strong> e reconhecida pelo papa em 1540, a Companhia de Jesus atuou fortemente na educação e nas missões. No contexto da expansão ultramarina, jesuítas participaram da evangelização em diferentes partes da América, Ásia e África.</p>
+</section>
+<!-- Cria uma seção especial sobre guerras e política. -->
+<section class="card" id="guerras">
+<!-- Título da seção de conflitos. -->
+<h2>⚔️ REFORMAS, REIS E GUERRAS RELIGIOSAS</h2>
+<!-- Explica a relação entre religião e política. -->
+<p>A divisão religiosa não ficou restrita às igrejas. Em várias regiões, ela se misturou a disputas dinásticas, interesses territoriais, autonomia política e competição entre Estados. Por isso, algumas guerras do período tiveram <strong>dimensões religiosas e políticas simultaneamente</strong>.</p>
+<!-- Apresenta a Guerra dos Camponeses. -->
+<h3>Guerra dos Camponeses Alemães — 1524–1525</h3>
+<p>Movimentos camponeses em territórios germânicos apresentaram reivindicações sociais, econômicas e religiosas. Embora alguns líderes tenham relacionado suas demandas às ideias da Reforma, o conflito não pode ser entendido simplesmente como uma “guerra luterana”. Lutero rejeitou a revolta armada e defendeu sua repressão.</p>
+<!-- Apresenta as guerras de religião na França. -->
+<h3>Guerras de Religião na França — 1562–1598</h3>
+<p>Católicos e protestantes franceses, especialmente os <strong>huguenotes</strong>, participaram de uma longa sequência de conflitos. O processo terminou politicamente com o <strong>Edito de Nantes</strong>, promulgado por Henrique IV em 1598, que concedeu direitos aos protestantes dentro de determinadas condições.</p>
+<!-- Apresenta a Guerra dos Trinta Anos. -->
+<h3>Guerra dos Trinta Anos — 1618–1648</h3>
+<p>Começou no contexto do Sacro Império Romano-Germânico e envolveu conflitos religiosos, dinásticos e geopolíticos. Com o tempo, potências católicas e protestantes fizeram alianças que não obedeciam simplesmente à divisão religiosa. A França católica, por exemplo, enfrentou os Habsburgos em busca de interesses estratégicos.</p>
+<!-- Apresenta Westfália com cuidado histórico. -->
+<div class="conexao"><strong>Paz de Vestfália — 1648:</strong> os tratados de Münster e Osnabrück encerraram a Guerra dos Trinta Anos. Eles são importantes para a história das relações internacionais e da diplomacia, mas é simplificador afirmar que “criaram sozinhos o Estado moderno”. A formação dos Estados ocorreu por processos muito mais longos.</div>
+<!-- Cria uma tabela de conflitos. -->
+<div class="table-wrap">
+<!-- Tabela comparativa dos conflitos. -->
+<table>
+<!-- Cabeçalho da tabela. -->
+<thead><tr><th>Conflito</th><th>Período</th><th>Dimensões principais</th><th>Importância histórica</th></tr></thead>
+<!-- Corpo da tabela. -->
+<tbody>
+<!-- Linha sobre a Guerra dos Camponeses. -->
+<tr><td>Guerra dos Camponeses Alemães</td><td>1524–1525</td><td>Social, econômica e religiosa</td><td>Mostra que a Reforma se relacionou com tensões sociais, mas não explica sozinha o movimento.</td></tr>
+<!-- Linha sobre as Guerras de Religião francesas. -->
+<tr><td>Guerras de Religião na França</td><td>1562–1598</td><td>Religiosa, dinástica e política</td><td>Revela a complexidade das disputas entre católicos e huguenotes e a consolidação da monarquia.</td></tr>
+<!-- Linha sobre a Guerra dos Trinta Anos. -->
+<tr><td>Guerra dos Trinta Anos</td><td>1618–1648</td><td>Religiosa, dinástica e geopolítica</td><td>Alterou equilíbrios de poder na Europa e fortaleceu práticas diplomáticas associadas à ordem europeia.</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+<!-- Cria a linha do tempo principal. -->
+<section class="card">
+<!-- Título da cronologia. -->
+<h2>🕰️ LINHA DO TEMPO DAS REFORMAS</h2>
+<!-- Inicia a linha do tempo. -->
+<div class="timeline">
+<!-- Evento 1. -->
+<div class="evento"><div class="ano">1415</div><p>Execução de Jan Hus, símbolo das críticas religiosas anteriores à Reforma do século XVI.</p></div>
+<!-- Evento 2. -->
+<div class="evento"><div class="ano">c. 1450</div><p>Expansão da imprensa de tipos móveis na Europa, associada a Gutenberg.</p></div>
+<!-- Evento 3. -->
+<div class="evento"><div class="ano">1517</div><p>Publicação das 95 Teses de Martinho Lutero.</p></div>
+<!-- Evento 4. -->
+<div class="evento"><div class="ano">1521</div><p>Dieta de Worms e condenação de Lutero no contexto do conflito com a autoridade imperial e papal.</p></div>
+<!-- Evento 5. -->
+<div class="evento"><div class="ano">1534</div><p>Ato de Supremacia na Inglaterra, durante o reinado de Henrique VIII.</p></div>
+<!-- Evento 6. -->
+<div class="evento"><div class="ano">1540</div><p>Reconhecimento da Companhia de Jesus pelo papa.</p></div>
+<!-- Evento 7. -->
+<div class="evento"><div class="ano">1545–1563</div><p>Concílio de Trento.</p></div>
+<!-- Evento 8. -->
+<div class="evento"><div class="ano">1562–1598</div><p>Guerras de Religião na França.</p></div>
+<!-- Evento 9. -->
+<div class="evento"><div class="ano">1598</div><p>Edito de Nantes, de Henrique IV.</p></div>
+<!-- Evento 10. -->
+<div class="evento"><div class="ano">1618–1648</div><p>Guerra dos Trinta Anos.</p></div>
+<!-- Evento 11. -->
+<div class="evento"><div class="ano">1648</div><p>Paz de Vestfália e encerramento da Guerra dos Trinta Anos.</p></div>
+</div>
+</section>
+<!-- Apresenta a relação entre Reformas e Absolutismo. -->
+<section class="card">
+<!-- Título da conexão. -->
+<h2>👑 REFORMAS × ABSOLUTISMO × PODER</h2>
+<!-- Explica que a relação variou conforme o Estado. -->
+<p>A religião foi utilizada e interpretada de formas diferentes pelos poderes políticos. Em alguns territórios, a adoção de uma igreja reformada ampliou a autonomia do governante em relação a Roma. Em outros, monarquias católicas fortaleceram sua identidade política em torno da defesa do catolicismo.</p>
+<!-- Apresenta exemplos. -->
+<div class="grid">
+<!-- França. -->
+<div class="mini"><h3>França</h3><p>A monarquia enfrentou guerras religiosas internas e posteriormente consolidou a autoridade real sob a dinastia Bourbon.</p></div>
+<!-- Inglaterra. -->
+<div class="mini"><h3>Inglaterra</h3><p>A ruptura com Roma fortaleceu a autonomia institucional da monarquia sobre a Igreja inglesa.</p></div>
+<!-- Sacro Império. -->
+<div class="mini"><h3>Territórios germânicos</h3><p>Príncipes tiveram papel decisivo na expansão ou contenção das reformas em diferentes territórios.</p></div>
+<!-- Espanha. -->
+<div class="mini"><h3>Espanha</h3><p>A monarquia hispânica permaneceu fortemente vinculada ao catolicismo e apoiou a atuação da Igreja Católica.</p></div>
+</div>
+</section>
+<!-- Apresenta o legado mundial. -->
+<section class="card">
+<!-- Título do legado. -->
+<h2>III — O LEGADO E O MUNDO ATUAL</h2>
+<!-- Explica consequências religiosas. -->
+<h3>1. Pluralização religiosa</h3>
+<p>A Europa ocidental deixou de possuir uma única autoridade cristã reconhecida em todos os territórios. Luteranos, calvinistas, anglicanos e católicos passaram a coexistir em diferentes combinações e, em vários lugares, essa coexistência foi marcada por conflitos.</p>
+<!-- Explica consequências políticas. -->
+<h3>2. Relações entre religião e Estado</h3>
+<p>As Reformas contribuíram para debates sobre autoridade política, liberdade religiosa, tolerância e organização das igrejas. Os resultados foram diferentes conforme o país e o período.</p>
+<!-- Explica consequências culturais. -->
+<h3>3. Educação e circulação de textos</h3>
+<p>A leitura religiosa, a tradução das Escrituras e a expansão da produção impressa estimularam mudanças nos hábitos de leitura e na educação, embora o acesso à alfabetização permanecesse socialmente desigual.</p>
+<!-- Explica o impacto no mundo colonial. -->
+<h3>4. Reformas e expansão ultramarina</h3>
+<p>As divisões religiosas também atravessaram a expansão europeia. Católicos e protestantes participaram de projetos coloniais diferentes, enquanto missões religiosas, comércio e rivalidades políticas se cruzavam na América, na África e na Ásia.</p>
+<!-- Faz a conexão com o Brasil. -->
+<div class="conexao"><strong>Brasil:</strong> a colonização portuguesa ocorreu sob forte influência católica. A Companhia de Jesus teve papel importante na catequese e na educação colonial. Ao mesmo tempo, franceses e holandeses, ligados a contextos protestantes, participaram de experiências coloniais e disputas no território americano, especialmente durante os séculos XVI e XVII.</div>
+</section>
+<!-- Apresenta os conceitos fundamentais. -->
+<section class="card">
+<!-- Título dos conceitos. -->
+<h2>📚 CONCEITOS QUE O ALUNO PRECISA DOMINAR</h2>
+<!-- Grade de conceitos. -->
+<div class="grid">
+<!-- Conceito Reforma. -->
+<div class="mini"><h3>Reforma Protestante</h3><p>Conjunto de movimentos religiosos do século XVI que romperam ou se afastaram da autoridade da Igreja Católica em diferentes territórios.</p></div>
+<!-- Conceito Contrarreforma. -->
+<div class="mini"><h3>Reforma Católica</h3><p>Processo de renovação, disciplina e reafirmação doutrinária desenvolvido pela Igreja Católica, especialmente no século XVI.</p></div>
+<!-- Conceito indulgência. -->
+<div class="mini"><h3>Indulgência</h3><p>Remissão de penas temporais relacionadas ao pecado segundo a doutrina católica, cuja venda abusiva foi criticada por reformadores.</p></div>
+<!-- Conceito predestinação. -->
+<div class="mini"><h3>Predestinação</h3><p>Doutrina associada ao calvinismo segundo a qual o destino da salvação está relacionado à soberania divina.</p></div>
+<!-- Conceito huguenotes. -->
+<div class="mini"><h3>Huguenotes</h3><p>Nome usado para os protestantes, principalmente calvinistas, na França.</p></div>
+<!-- Conceito tolerância. -->
+<div class="mini"><h3>Tolerância religiosa</h3><p>Ideia relacionada à possibilidade de diferentes crenças coexistirem sob determinadas condições jurídicas e políticas.</p></div>
+</div>
+</section>
+<!-- Orienta o professor especialista. -->
+<section class="card">
+<!-- Título da seção docente. -->
+<h2>👨‍🏫 O QUE O PROFESSOR PRECISA DOMINAR</h2>
+<!-- Lista os pontos essenciais para aula. -->
+<ol>
+<!-- Ponto 1. -->
+<li>Explicar que as Reformas tiveram causas múltiplas e não podem ser reduzidas a uma única causa.</li>
+<!-- Ponto 2. -->
+<li>Diferenciar Reforma Luterana, Calvinismo, Anglicanismo e Reforma Católica.</li>
+<!-- Ponto 3. -->
+<li>Relacionar religião, poder político e formação dos Estados sem transformar toda guerra do período em “guerra religiosa”.</li>
+<!-- Ponto 4. -->
+<li>Explicar o papel da imprensa na circulação de ideias.</li>
+<!-- Ponto 5. -->
+<li>Compreender que a Reforma aconteceu de maneiras diferentes conforme o território.</li>
+<!-- Ponto 6. -->
+<li>Relacionar as Reformas à expansão marítima, à colonização e às disputas entre potências europeias.</li>
+</ol>
+</section>
+<!-- Orienta o conteúdo para a lousa. -->
+<section class="card">
+<!-- Título da lousa. -->
+<h2>🧑‍🏫 O QUE COLOCAR NA LOUSA</h2>
+<!-- Apresenta um resumo pronto para quadro. -->
+<div class="alerta"><strong>REFORMAS — SÉCULO XVI</strong><br>Contexto → Igreja medieval em transformação + Humanismo + imprensa + críticas religiosas<br><br>1517 → Lutero → Reforma Luterana<br>Calvino → Calvinismo<br>Henrique VIII → Igreja da Inglaterra<br>1545–1563 → Concílio de Trento<br>Jesuítas → educação + missões<br><br>REFORMA → conflitos religiosos + disputas políticas<br>↓<br>Pluralização religiosa da Europa<br>↓<br>Novas relações entre religião e Estado</div>
+</section>
+<!-- Apresenta causas e consequências. -->
+<section class="card">
+<!-- Título da síntese causal. -->
+<h2>🔎 CAUSAS, TRANSFORMAÇÕES E CONSEQUÊNCIAS</h2>
+<!-- Cria uma tabela de síntese. -->
+<div class="table-wrap">
+<!-- Tabela de estudo. -->
+<table>
+<!-- Cabeçalho. -->
+<thead><tr><th>Dimensão</th><th>Antes / contexto</th><th>Transformação</th><th>Consequência</th></tr></thead>
+<!-- Corpo. -->
+<tbody>
+<!-- Linha religiosa. -->
+<tr><td>Religião</td><td>Predomínio da Igreja Católica no Ocidente</td><td>Rupturas e reformas</td><td>Pluralização cristã</td></tr>
+<!-- Linha política. -->
+<tr><td>Política</td><td>Autoridade papal e poderes monárquicos em tensão</td><td>Maior autonomia de alguns Estados e territórios</td><td>Novas relações entre Estado e religião</td></tr>
+<!-- Linha cultural. -->
+<tr><td>Cultura</td><td>Circulação limitada de manuscritos</td><td>Imprensa e textos religiosos em línguas locais</td><td>Ampliação da circulação de ideias</td></tr>
+<!-- Linha social. -->
+<tr><td>Sociedade</td><td>Estruturas religiosas tradicionais</td><td>Novas comunidades confessionais</td><td>Conflitos e novas formas de identidade</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+<!-- Apresenta uma conexão direta com os temas anteriores e posteriores. -->
+<section class="card">
+<!-- Título da trilha histórica. -->
+<h2>🔗 ONDE ESTE TEMA ENTRA NA NOSSA TRILOGIA</h2>
+<!-- Mostra a sequência histórica. -->
+<p><strong>1.18 Renascimento</strong> → circulação de ideias e transformações culturais</p>
+<p>↓</p>
+<p><strong>1.19 Expansão Marítimo-Comercial</strong> → novas rotas, comércio e contatos</p>
+<p>↓</p>
+<p><strong>1.20 Absolutismo</strong> → fortalecimento das monarquias</p>
+<p>↓</p>
+<p><strong>1.21 Reformas</strong> → transformação religiosa e política</p>
+<p>↓</p>
+<p><strong>1.22 Mercantilismo</strong> → organização econômica dos Estados modernos</p>
+<p>↓</p>
+<p><strong>1.23 Sistema Colonial</strong> → expansão das relações coloniais</p>
+</section>
+<!-- Apresenta a referência curricular. -->
+<section class="card">
+<!-- Título da BNCC. -->
+<h2>📘 BNCC — CONEXÕES CURRICULARES</h2>
+<!-- Explica que a habilidade deve ser usada de forma contextualizada. -->
+<p>No Ensino Fundamental, o tema pode ser trabalhado principalmente no componente de História do <strong>7º ano</strong>, em articulação com as transformações da Europa moderna, a formação das monarquias e as mudanças religiosas e culturais.</p>
+<!-- Indica uma habilidade relacionada sem inventar uma citação literal. -->
+<div class="alerta"><strong>Orientação docente:</strong> ao montar uma versão oficial para uso escolar, confira a redação e o código da habilidade diretamente no documento curricular adotado pela rede de ensino, porque escolas e sistemas podem organizar suas habilidades e complementações de maneiras diferentes.</div>
+</section>
+<!-- Apresenta questões autorais. -->
+<section class="card" id="questoes">
+<!-- Título das questões. -->
+<h2>📝 QUESTÕES — ESTILO ENEM / VESTIBULAR</h2>
+<!-- Primeira questão. -->
+<div class="questao">
+<!-- Enunciado da questão 1. -->
+<p><strong>Questão 1.</strong> No século XVI, diferentes movimentos religiosos questionaram práticas e autoridades estabelecidas no cristianismo ocidental. A expansão dessas ideias ocorreu em um contexto marcado pelo crescimento das cidades, pelo fortalecimento de poderes políticos e pela circulação ampliada de textos.</p>
+<!-- Pergunta da questão 1. -->
+<p>Uma interpretação histórica adequada desse processo é:</p>
+<!-- Alternativas da questão 1. -->
+<ol type="A"><li>As Reformas foram exclusivamente causadas por interesses econômicos dos comerciantes.</li><li>A imprensa impediu a circulação de ideias religiosas fora das universidades.</li><li>As Reformas resultaram da combinação de fatores religiosos, políticos, culturais e sociais.</li><li>Todos os governantes europeus apoiaram as reformas protestantes.</li><li>A Reforma Católica extinguiu imediatamente as divisões religiosas europeias.</li></ol>
+<!-- Botão para revelar o gabarito da questão 1. -->
+<button onclick="mostrarGabarito('g1',this)">Mostrar gabarito</button>
+<!-- Gabarito escondido da questão 1. -->
+<div class="gabarito" id="g1"><strong>Gabarito: C.</strong> O processo foi multifatorial e variou conforme as regiões e os grupos envolvidos.</div>
+</div>
+<!-- Segunda questão. -->
+<div class="questao">
+<!-- Enunciado da questão 2. -->
+<p><strong>Questão 2.</strong> A Guerra dos Trinta Anos começou em um ambiente de fortes tensões confessionais no Sacro Império, mas posteriormente envolveu diferentes potências europeias com interesses estratégicos próprios.</p>
+<!-- Pergunta da questão 2. -->
+<p>O exemplo demonstra que:</p>
+<!-- Alternativas da questão 2. -->
+<ol type="A"><li>Os conflitos europeus do período tinham sempre uma única causa religiosa.</li><li>Religião e política podiam se combinar com interesses dinásticos e geopolíticos.</li><li>A França abandonou completamente seus interesses políticos em razão do catolicismo.</li><li>A Guerra dos Trinta Anos ocorreu exclusivamente fora do território europeu.</li><li>A Paz de Vestfália eliminou todos os conflitos religiosos da Europa.</li></ol>
+<!-- Botão para revelar o gabarito da questão 2. -->
+<button onclick="mostrarGabarito('g2',this)">Mostrar gabarito</button>
+<!-- Gabarito escondido da questão 2. -->
+<div class="gabarito" id="g2"><strong>Gabarito: B.</strong> O conflito envolveu dimensões religiosas, dinásticas e geopolíticas que se transformaram ao longo da guerra.</div>
+</div>
+</section>
+<!-- Cria a navegação entre os capítulos. -->
+<div class="nav-final">
+<!-- Link para o capítulo anterior. -->
+<a class="botao" href="../20-Absolutismo/index.html">← Voltar ao 1.19 — Absolutismo</a>
+<!-- Link para o capítulo seguinte. -->
+<a class="botao" href="../22-Mercantilismo/index.html">Ir para o 1.19 — Mercantilismo →</a>
+</div>
+</div>
+</main>
+<!-- Cria o rodapé da página. -->
+<footer>
+<!-- Assinatura do material. -->
+<p>Curso de História Geral • Professor Marcelo Oliveira</p>
+<!-- Identifica a proposta pedagógica. -->
+<p>Fundamental II • Ensino Médio • ENEM • Vestibular • Concurso</p>
+</footer>
+<!-- Cria o botão flutuante de retorno ao topo. -->
+<a class="topo" href="#topo" aria-label="Voltar ao topo">↑</a>
+<script>
+// Cria uma função responsável por revelar o gabarito de uma questão.
+function mostrarGabarito(id,botao){
+// Localiza no HTML o gabarito correspondente ao identificador recebido.
+const gabarito=document.getElementById(id);
+// Verifica se o gabarito está atualmente escondido.
+if(gabarito.style.display!=="block"){
+// Mostra o gabarito para o aluno.
+gabarito.style.display="block";
+// Altera o texto do botão para indicar que o conteúdo está aberto.
+botao.textContent="Ocultar gabarito";
+// Encerra esta parte da condição.
+}else{
+// Esconde novamente o gabarito.
+gabarito.style.display="none";
+// Retorna o texto original do botão.
+botao.textContent="Mostrar gabarito";
+}
+// Encerra a função responsável pelo gabarito.
+}
+</script>
+<script>
+  const paginaAnterior = "18 - EXPANSÃO MARÍTIMO-COMERCIAL.html";
+  const paginaProxima = "20 - Mercantilismo.html";
+</script>
+<script src="navegacao.js"></script>
+</body>
+</html>

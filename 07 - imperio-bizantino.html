@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Define a codificação de caracteres para permitir acentos e caracteres especiais. -->
+    <meta charset="UTF-8">
+
+    <!-- Faz o site se adaptar corretamente a celulares, tablets e computadores. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Define o título exibido na aba do navegador. -->
+    <title>1.7 — O Império Bizantino | Professor Marcelo Oliveira</title>
+
+    <style>
+
+        /* ========================================================= */
+        /* CONFIGURAÇÕES GERAIS                                     */
+        /* ========================================================= */
+
+        /* Remove margens e espaçamentos padrão do navegador. */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Define o comportamento de rolagem suave. */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Define a aparência geral da página. */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f7fb;
+            color: #263238;
+            line-height: 1.7;
+        }
+
+        /* Define a largura máxima e centraliza o conteúdo. */
+        .container {
+            width: 92%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        /* ========================================================= */
+        /* CABEÇALHO                                                 */
+        /* ========================================================= */
+
+        /* Cria o cabeçalho principal. */
+        header {
+            background: linear-gradient(135deg, #172554, #2563eb);
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.18);
+        }
+
+        /* Define o pequeno texto superior do cabeçalho. */
+        .eyebrow {
+            font-size: 0.95rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            opacity: 0.9;
+            margin-bottom: 12px;
+        }
+
+        /* Define o título principal. */
+        header h1 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            margin-bottom: 15px;
+        }
+
+        /* Define o subtítulo. */
+        header p {
+            max-width: 850px;
+            margin: auto;
+            font-size: 1.1rem;
+        }
+
+        /* ========================================================= */
+        /* NAVEGAÇÃO                                                 */
+        /* ========================================================= */
+
+        /* Cria a área dos botões de navegação. */
+        .navegacao {
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+            margin: 25px auto;
+            flex-wrap: wrap;
+        }
+
+        /* Estiliza os links da navegação. */
+        .btn {
+            display: inline-block;
+            padding: 13px 20px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        /* Define o botão anterior. */
+        .btn-voltar {
+            background: #475569;
+            color: white;
+        }
+
+        /* Define o botão próximo. */
+        .btn-proximo {
+            background: #2563eb;
+            color: white;
+        }
+
+        /* Cria efeito ao passar o mouse. */
+        .btn:hover {
+            transform: translateY(-2px);
+            opacity: 0.9;
+        }
+
+        /* Cria o cartão de apresentação. */
+        .apresentacao {
+            background: white;
+            margin: 30px auto;
+            padding: 30px;
+            border-radius: 18px;
+            border-left: 7px solid #2563eb;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+        }
+
+        /* ========================================================= */
+        /* SEÇÕES COLORIDAS                                         */
+        /* ========================================================= */
+
+        /* Define o cartão geral de conteúdo. */
+        .secao {
+            margin: 35px auto;
+            padding: 30px;
+            border-radius: 18px;
+            background: white;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+        }
+
+        /* Define a cor da Parte I. */
+        .comeco {
+            border-top: 8px solid #2563eb;
+        }
+
+        /* Define a cor da Parte II. */
+        .desenvolvimento {
+            border-top: 8px solid #16a34a;
+        }
+
+        /* Define a cor da Parte III. */
+        .legado {
+            border-top: 8px solid #7c3aed;
+        }
+
+        /* Define a cor da seção de causas. */
+        .causas {
+            border-top: 8px solid #f97316;
+        }
+
+        /* Define a cor da seção de consequências. */
+        .consequencias {
+            border-top: 8px solid #eab308;
+        }
+
+        /* Define a cor da seção de atenção histórica. */
+        .atencao {
+            border-top: 8px solid #dc2626;
+        }
+
+        /* Define a cor da seção ENEM. */
+        .enem {
+            border-top: 8px solid #0891b2;
+        }
+
+        /* Define a cor da lousa. */
+        .lousa {
+            border-top: 8px solid #111827;
+        }
+
+        /* ========================================================= */
+        /* TÍTULOS                                                    */
+        /* ========================================================= */
+
+        /* Define o estilo dos títulos das seções. */
+        .secao h2 {
+            margin-bottom: 20px;
+            color: #172554;
+            font-size: 1.8rem;
+        }
+
+        /* Define o estilo dos subtítulos. */
+        .secao h3 {
+            margin-top: 25px;
+            margin-bottom: 10px;
+            color: #334155;
+        }
+
+        /* Destaca palavras importantes. */
+        strong {
+            color: #172554;
+        }
+
+        /* ========================================================= */
+        /* LISTAS                                                     */
+        /* ========================================================= */
+
+        /* Cria espaçamento interno nas listas. */
+        ul,
+        ol {
+            margin: 15px 0 15px 25px;
+        }
+
+        /* Cria espaço entre itens das listas. */
+        li {
+            margin-bottom: 8px;
+        }
+
+        /* ========================================================= */
+        /* LINHA DO TEMPO                                            */
+        /* ========================================================= */
+
+        /* Cria a estrutura da linha do tempo. */
+        .timeline {
+            border-left: 4px solid #2563eb;
+            padding-left: 25px;
+            margin-top: 25px;
+        }
+
+        /* Cria cada acontecimento da linha do tempo. */
+        .evento {
+            margin-bottom: 25px;
+            position: relative;
+        }
+
+        /* Cria a bolinha da linha do tempo. */
+        .evento::before {
+            content: "";
+            position: absolute;
+            left: -36px;
+            top: 7px;
+            width: 14px;
+            height: 14px;
+            background: #2563eb;
+            border-radius: 50%;
+        }
+
+        /* Destaca o ano. */
+        .ano {
+            font-weight: bold;
+            color: #2563eb;
+        }
+
+        /* ========================================================= */
+        /* TABELAS                                                    */
+        /* ========================================================= */
+
+        /* Permite rolagem horizontal em tabelas pequenas. */
+        .tabela-container {
+            overflow-x: auto;
+            margin-top: 20px;
+        }
+
+        /* Define a tabela. */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 650px;
+        }
+
+        /* Define células da tabela. */
+        th,
+        td {
+            padding: 14px;
+            border: 1px solid #cbd5e1;
+            text-align: left;
+        }
+
+        /* Define o cabeçalho da tabela. */
+        th {
+            background: #172554;
+            color: white;
+        }
+
+        /* Alterna visualmente as linhas. */
+        tr:nth-child(even) {
+            background: #f8fafc;
+        }
+
+        /* ========================================================= */
+        /* CONCEITOS                                                  */
+        /* ========================================================= */
+
+        /* Cria a grade de conceitos. */
+        .conceitos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        /* Cria cada cartão de conceito. */
+        .conceito {
+            background: #eff6ff;
+            border: 1px solid #bfdbfe;
+            padding: 18px;
+            border-radius: 12px;
+        }
+
+        /* ========================================================= */
+        /* QUESTÕES                                                   */
+        /* ========================================================= */
+
+        /* Cria o cartão de questão. */
+        .questao {
+            background: #f8fafc;
+            padding: 25px;
+            border-radius: 14px;
+            margin-top: 20px;
+            border-left: 5px solid #0891b2;
+        }
+
+        /* Cria o botão de gabarito. */
+        .btn-gabarito {
+            margin-top: 15px;
+            background: #0891b2;
+            color: white;
+            border: none;
+            padding: 12px 18px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        /* Esconde o gabarito inicialmente. */
+        .gabarito {
+            display: none;
+            margin-top: 15px;
+            padding: 15px;
+            background: #ecfeff;
+            border-radius: 10px;
+            border: 1px solid #67e8f9;
+        }
+
+        /* ========================================================= */
+        /* RESUMO                                                     */
+        /* ========================================================= */
+
+        /* Cria o cartão do resumo. */
+        .resumo {
+            background: #172554;
+            color: white;
+            padding: 30px;
+            border-radius: 18px;
+            margin: 35px auto;
+        }
+
+        /* Remove a cor escura dos textos fortes dentro do resumo. */
+        .resumo strong {
+            color: white;
+        }
+
+        /* ========================================================= */
+        /* RODAPÉ                                                     */
+        /* ========================================================= */
+
+        /* Cria o rodapé. */
+        footer {
+            background: #0f172a;
+            color: white;
+            text-align: center;
+            padding: 35px 20px;
+            margin-top: 50px;
+        }
+
+        /* Define a assinatura. */
+        .assinatura {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        /* ========================================================= */
+        /* BOTÃO VOLTAR AO TOPO                                      */
+        /* ========================================================= */
+
+        /* Cria o botão fixo. */
+        #topo {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 48px;
+            height: 48px;
+            border: none;
+            border-radius: 50%;
+            background: #2563eb;
+            color: white;
+            cursor: pointer;
+            font-size: 20px;
+            display: none;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+        }
+
+        /* ========================================================= */
+        /* RESPONSIVIDADE                                             */
+        /* ========================================================= */
+
+        /* Ajusta o conteúdo para telas menores. */
+        @media (max-width: 700px) {
+
+            /* Reduz o espaçamento dos cartões. */
+            .secao,
+            .apresentacao {
+                padding: 20px;
+            }
+
+            /* Organiza os botões verticalmente. */
+            .navegacao {
+                flex-direction: column;
+            }
+
+            /* Faz os botões ocuparem a largura disponível. */
+            .btn {
+                text-align: center;
+            }
+        }
+
+    </style>
+</head>
+
+<body id="inicio">
+
+    <!-- ========================================================= -->
+    <!-- CABEÇALHO                                                  -->
+    <!-- ========================================================= -->
+
+    <header>
+
+        <!-- Identificação do curso. -->
+        <div class="eyebrow">Curso de História Geral</div>
+
+        <!-- Título principal. -->
+        <h1>1.7 — O Império Bizantino</h1>
+
+        <!-- Apresentação do conteúdo. -->
+        <p>
+            O legado romano do Oriente: Constantinopla, o Código Justiniano e a influência sobre a Europa medieval.
+        </p>
+
+    </header>
+
+    <!-- ========================================================= -->
+    <!-- CONTEÚDO PRINCIPAL                                        -->
+    <!-- ========================================================= -->
+
+    <main class="container">
+
+        <!-- ===================================================== -->
+        <!-- NAVEGAÇÃO SUPERIOR                                    -->
+        <!-- ===================================================== -->
+
+        <nav class="navegacao">
+            <a class="btn btn-voltar" href="06 - Roma.html">
+                ← Roma
+            </a>
+            <a class="btn btn-proximo" href="08 - mundo-Arabe.html">
+                Mundo Árabe →
+            </a>
+        </nav>
+
+        <!-- ========================================================= -->
+        <!-- APRESENTAÇÃO                                              -->
+        <!-- ========================================================= -->
+
+        <section class="apresentacao">
+            <p>
+                Por que estudar o Império Bizantino? Porque ele foi o grande guardião do legado romano e cristão durante mais de mil anos, influenciando profundamente o direito, a arte, a arquitetura e a política da Europa e do Oriente.
+            </p>
+        </section>
+
+        <!-- ========================================================= -->
+        <!-- I — CONTEXTO                                              -->
+        <!-- ========================================================= -->
+
+        <section class="secao comeco">
+            <h2>🔵 I — O COMEÇO: O IMPÉRIO ROMANO DO ORIENTE</h2>
+
+            <h3>1. A crise e a divisão do Império Romano</h3>
+            <p>
+                No século III, o Império Romano mergulhou numa profunda crise econômica, militar e política. Para tentar salvá-lo, o imperador Diocleciano dividiu o vasto território em duas grandes regiões administrativas: Ocidente e Oriente. Com o tempo, essa divisão se tornou definitiva.
+            </p>
+            <p>
+                Em <strong>395 d.C.</strong>, o imperador Teodósio separou oficialmente o Império Romano em duas partes: o <strong>Império Romano do Ocidente</strong>, com capital em Roma, e o <strong>Império Romano do Oriente</strong>, com capital nas terras de Bizâncio. Enquanto o Ocidente caiu em 476 d.C., o Império do Oriente sobreviveu e ficou conhecido pela história como <strong>Império Bizantino</strong>.
+            </p>
+
+            <h3>2. Constantinopla: a Nova Roma</h3>
+            <p>
+                A capital bizantina foi fundada pelo imperador <strong>Constantino, o Grande</strong>, em 330 d.C., sobre a antiga cidade grega de Bizâncio, às margens do Estreito de Bósforo. Localizada num ponto estratégico entre a Europa e a Ásia, Constantinopla conectava importantes rotas comerciais terrestres e marítimas. A cidade foi fortificada com muralhas gigantescas e se tornou uma das maiores e mais ricas do mundo, enriquecendo com o comércio de seda, especiarias, cereais e escravos.
+            </p>
+        </section>
+
+        <!-- ========================================================= -->
+        <!-- II — DESENVOLVIMENTO                                      -->
+        <!-- ========================================================= -->
+
+        <section class="secao desenvolvimento">
+            <h2>🟢 II — O DESENVOLVIMENTO: O AUGE DO IMPÉRIO</h2>
+
+            <h3>3. Justiniano e o Código Justiniano</h3>
+            <p>
+                O governo mais famoso de Bizâncio foi o do imperador <strong>Justiniano I</strong> (527–565 d.C.). Justiniano tentou reconstituir o antigo Império Romano, reconquistando parte da Itália e do norte da África. Sua obra mais importante, porém, foi jurídica: ele ordenou a organização das leis romanas num único código, o <strong>Código Justiniano</strong> (Corpus Juris Civilis). Este documento preservou a sabedoria do direito romano e tornou-se uma das principais bases dos sistemas jurídicos ocidentais.
+            </p>
+
+            <h3>4. A Igreja e a arte bizantina</h3>
+            <p>
+                Bizâncio preservou e desenvolveu o <strong>cristianismo ortodoxo</strong>. As igrejas bizantinas, com cúpulas enormes e mosaicos dourados — como a magnífica <strong>Santa Sofia</strong> (Hagia Sophia) em Constantinopla —, serviam tanto a Deus quanto ao imperador, pois a arte era usada para mostrar o poder divino e político.
+            </p>
+
+            <h3>5. A língua e a cultura</h3>
+            <p>
+                Embora fundado sobre a cultura latina, o Império Bizantino adotou cada vez mais o <strong>grego</strong> como língua oficial, preservando os textos da literatura, filosofia e ciência gregas antigas. Essa preservação foi fundamental para que o conhecimento clássico não se perdesse durante os séculos da Idade Média.
+            </p>
+        </section>
+
+        <!-- ========================================================= -->
+        <!-- LINHA DO TEMPO                                            -->
+        <!-- ========================================================= -->
+
+        <section class="secao comeco">
+            <h2>📅 LINHA DO TEMPO</h2>
+
+            <div class="timeline">
+                <div class="evento">
+                    <span class="ano">330 d.C.</span> — Fundação de Constantinopla pelo imperador Constantino.
+                </div>
+                <div class="evento">
+                    <span class="ano">395 d.C.</span> — Divisão do Império Romano em Oriente e Ocidente.
+                </div>
+                <div class="evento">
+                    <span class="ano">476 d.C.</span> — Queda de Roma; início do domínio bizantino sobre o Oriente.
+                </div>
+                <div class="evento">
+                    <span class="ano">527–565 d.C.</span> — Reinado de Justiniano; criação do Código Justiniano.
+                </div>
+                <div class="evento">
+                    <span class="ano">1054</span> — Cisma do Oriente; separação entre Igreja Católica e Ortodoxa.
+                </div>
+                <div class="evento">
+                    <span class="ano">1453</span> — Constantinopla é conquistada pelos otomanos; fim do Império Bizantino.
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================================= -->
+        <!-- CONSEQUÊNCIAS                                             -->
+        <!-- ========================================================= -->
+
+        <section class="secao consequencias">
+            <h2>🟡 Consequências</h2>
+
+            <ul>
+                <li>Preservação e transmissão da cultura greco-romana para a Idade Média.</li>
+                <li>Criação do Código Justiniano, base do direito civil moderno.</li>
+                <li>Grande influência artística e religiosa no Oriente e na Europa Oriental.</li>
+                <li>Abertura do caminho para rotas comerciais entre o Oriente e o Ocidente.</li>
+                <li>Queda em 1453, marcando o fim da era romana e a ascensão otomana.</li>
+            </ul>
+        </section>
+
+        <!-- ========================================================= -->
+        <!-- III — LEGADO                                              -->
+        <!-- ========================================================= -->
+
+        <section class="secao legado">
+            <h2>🟣 III — O LEGADO E O MUNDO ATUAL</h2>
+
+            <p>
+                O Império Bizantino foi uma ponte entre a Antiguidade e a Idade Média, preservando quase 1.500 anos de cultura romana. Seu legado continua presente hoje: as bases do direito moderno (através do Código Justiniano), a arquitetura das cúpulas e mosaicos, a Fé Ortodoxa e a ideia de que um estado forte pode preservar a civilização por séculos.
+            </p>
+        </section>
+
+        <!-- ========================================================= -->
+        <!-- TABELA RESUMO                                             -->
+        <!-- ========================================================= -->
+
+        <section class="secao">
+            <h2>📊 RESUMO: CONSTANTINOPLA E O IMPÉRIO BIZANTINO</h2>
+
+            <div class="tabela-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Aspecto</th>
+                            <th>Características</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Localização</td>
+                            <td>Estreito de Bósforo, entre Europa e Ásia</td>
+                        </tr>
+                        <tr>
+                            <td>Capital</td>
+                            <td>Constantinopla (atual Istambul)</td>
+                        </tr>
+                        <tr>
+                            <td>Língua oficial</td>
+                            <td>Grego (com latim no início)</td>
+                        </tr>
+                        <tr>
+                            <td>Religião</td>
+                            <td>Cristianismo Ortodoxo</td>
+                        </tr>
+                        <tr>
+                            <td>Economia</td>
+                            <td>Comércio (seda, especiarias, ouro)</td>
+                        </tr>
+                        <tr>
+                            <td>Arte</td>
+                            <td>Mosaicos, cúpulas, Santa Sofia</td>
+                        </tr>
+                        <tr>
+                            <td>Fim</td>
+                            <td>1453 — Conquista otomana</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- ========================================================= -->
+        <!-- BNCC                                                      -->
+        <!-- ========================================================= -->
+
+        <section class="secao lousa">
+            <h2>📋 BNCC — COMO TRABALHAR ESTE TEMA</h2>
+
+            <p>
+                A Base Nacional Comum Curricular (BNCC) propõe abordar o Império Bizantino dentro da área de <strong>Ciências Humanas</strong>, enfocando a relação entre sociedade, tempo e espaço.
+            </p>
+
+            <ul>
+                <li><strong>Competências gerais:</strong> Valorização da diversidade de saberes e reconhecer que as culturas e as civilizações se modificam no tempo.</li>
+                <li><strong>Habilidade (EF06HI04):</strong> Identificar as principais características da formação do Império Romano, do seu legado e da sua influência na cultura ocidental.</li>
+                <li><strong>Habilidade (EF06HI05):</strong> Caracterizar a formação do Império Romano na Antiguidade, discutindo sua importância na consolidação de instituições e valores no mundo ocidental.</li>
+                <li><strong>Objetivo de aprendizagem:</strong> Analisar as continuidades e rupturas entre o Império Romano e o Bizantino, compreendendo como Constantinopla conectou Oriente e Ocidente.</li>
+            </ul>
+
+            <h3>💡 Sugestão de aula</h3>
+            <ul>
+                <li>Usar mapas da bacia do Mediterrâneo para mostrar a extensão dos dois impérios.</li>
+                <li>Comparar mosaicos romanos e bizantinos em sala.</li>
+                <li>Promover debate: "O Império Bizantino foi continuação ou contraponto de Roma?"</li>
+            </ul>
+        </section>
+
+        <!-- ========================================================= -->
+        <!-- CONCEITOS                                                  -->
+        <!-- ========================================================= -->
+
+        <section class="secao">
+            <h2>📚 CONCEITOS FUNDAMENTAIS</h2>
+
+            <div class="conceitos">
+                <div class="conceito">
+                    <strong>Império Romano do Oriente</strong><br>
+                    Entidade política herdada do Império Romano, centrada em Constantinopla.
+                </div>
+                <div class="conceito">
+                    <strong>Código Justiniano</strong><br>
+                    Compilação de leis romanas promovida pelo imperador Justiniano.
+                </div>
+                <div class="conceito">
+                    <strong>Cristianismo Ortodoxo</strong><br>
+                    Vertente do cristianismo que se consolidou no Império Bizantino.
+                </div>
+                <div class="conceito">
+                    <strong>Santa Sofia</strong><br>
+                    Basílica-igreja de Constantinopla, símbolo máximo da arte bizantina.
+                </div>
+                <div class="conceito">
+                    <strong>Cisma do Oriente</strong><br>
+                    Separação entre a Igreja de Roma e a Igreja de Constantinopla (1054).
+                </div>
+                <div class="conceito">
+                    <strong>Hagia Sophia</strong><br>
+                    Nome grego da Santa Sofia, hoje museu em Istambul.
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================================= -->
+        <!-- ENEM                                                      -->
+        <!-- ========================================================= -->
+
+        <section class="secao enem">
+            <h2>🎯 ENEM, Vestibular e Concurso</h2>
+
+            <p>Teste seus conhecimentos:</p>
+
+            <div class="questao">
+                <h3>Questão 1</h3>
+                <p>
+                    A cidade de Constantinopla desempenhou papel fundamental na história da Idade Média. Entre os fatores que contribuíram para sua riqueza e poder, destaca-se:
+                </p>
+                <ol type="A">
+                    <li>O controle estratégico sobre rotas comerciais que conectavam o Oriente ao Ocidente.</li>
+                    <li>A sua posição isolada no vale do Nilo.</li>
+                    <li>A ausência de muralhas de defesa.</li>
+                    <li>A exploração exclusiva de minas de ouro na Europa.</li>
+                    <li>O apoio da Igreja de Roma à capital bizantina.</li>
+                </ol>
+                <button class="btn-gabarito" onclick="mostrarGabarito('g1')">
+                    Mostrar gabarito
+                </button>
+                <div class="gabarito" id="g1">
+                    <strong>Resposta: A.</strong> Constantinopla estava localizada no Estreito de Bósforo, conectando rotas comerciais entre a Europa e a Ásia, o que garantiu à cidade grande riqueza e poder.
+                </div>
+            </div>
+
+            <div class="questao">
+                <h3>Questão 2</h3>
+                <p>
+                    O Código Justiniano representou uma das maiores contribuições do Império Bizantino para o mundo ocidental, pois:
+                </p>
+                <ol type="A">
+                    <li>Organizou e preservou o direito romano clássico em uma única obra.</li>
+                    <li>Aboliu definitivamente a escravidão em todo o império.</li>
+                    <li>Criou o primeiro calendário solar da Europa.</li>
+                    <li>Fundou o sistema de castas do Império Otomano.</li>
+                    <li>Estabeleceu a democracia direta no governo de Justiniano.</li>
+                </ol>
+                <button class="btn-gabarito" onclick="mostrarGabarito('g2')">
+                    Mostrar gabarito
+                </button>
+                <div class="gabarito" id="g2">
+                    <strong>Resposta: A.</strong> O Código Justiniano sistematizou e preservou as leis romanas, tornando-se uma referência fundamental para os sistemas jurídicos modernos.
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================================= -->
+        <!-- RESUMO                                                     -->
+        <!-- ========================================================= -->
+
+        <section class="resumo">
+            <h2>🧠 RESUMO PARA O PROFESSOR</h2>
+
+            <p>
+                <strong>Tema:</strong> O Império Bizantino (395–1453 d.C.).<br>
+                <strong>Capital:</strong> Constantinopla.<br>
+                <strong>Grande marco:</strong> Código Justiniano e a arte de Santa Sofia.<br>
+                <strong>Religião:</strong> Cristianismo Ortodoxo.<br>
+                <strong>Fim:</strong> Conquista otomana (1453).<br>
+                <strong>Habilidade BNCC:</strong> EF06HI04 e EF06HI05 — formação do Império Romano e seu legado.
+            </p>
+        </section>
+
+        <!-- ========================================================= -->
+        <!-- NAVEGAÇÃO FINAL                                           -->
+        <!-- ========================================================= -->
+
+        <nav class="navegacao">
+            <a class="btn btn-voltar" href="06 - Roma.html">
+                ← Roma
+            </a>
+            <a class="btn btn-proximo" href="08 - mundo-Arabe.html">
+                Mundo Árabe →
+            </a>
+        </nav>
+
+    </main>
+
+    <!-- ========================================================= -->
+    <!-- RODAPÉ                                                    -->
+    <!-- ========================================================= -->
+
+    <footer>
+
+        <p>
+            Curso de História Geral — Fund II • Ensino Médio • ENEM • Vestibular • Concurso
+        </p>
+
+        <p class="assinatura">
+            Professor Marcelo Oliveira
+        </p>
+
+    </footer>
+
+    <!-- ========================================================= -->
+    <!-- BOTÃO VOLTAR AO TOPO                                      -->
+    <!-- ========================================================= -->
+
+    <button id="topo" onclick="voltarAoTopo()">
+        ↑
+    </button>
+
+    <!-- ========================================================= -->
+    <!-- JAVASCRIPT                                                 -->
+    <!-- ========================================================= -->
+
+    <script>
+
+        // Cria a função responsável por mostrar ou esconder o gabarito.
+        function mostrarGabarito(id) {
+
+            // Localiza o elemento pelo seu ID.
+            const resposta = document.getElementById(id);
+
+            // Verifica se o gabarito está escondido.
+            if (resposta.style.display === "block") {
+
+                // Esconde o gabarito novamente.
+                resposta.style.display = "none";
+
+            } else {
+
+                // Mostra o gabarito.
+                resposta.style.display = "block";
+
+            }
+
+        }
+
+        // Localiza o botão de voltar ao topo.
+        const botaoTopo = document.getElementById("topo");
+
+        // Detecta quando o usuário movimenta a página.
+        window.addEventListener("scroll", function () {
+
+            // Verifica se a página foi deslocada verticalmente.
+            if (window.scrollY > 400) {
+
+                // Mostra o botão.
+                botaoTopo.style.display = "block";
+
+            } else {
+
+                // Esconde o botão.
+                botaoTopo.style.display = "none";
+
+            }
+
+        });
+
+        // Cria a função que leva o usuário ao início da página.
+        function voltarAoTopo() {
+
+            // Faz a página voltar suavemente para o topo.
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+
+        }
+
+    </script>
+    <script>
+  const paginaAnterior = "06 - Roma.html";
+  const paginaProxima = "08 - mundo-Arabe.html";
+</script>
+<script src="navegacao.js"></script>
+
+</body>
+
+</html>

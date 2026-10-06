@@ -1,0 +1,1537 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Define a codificação de caracteres da página. -->
+    <meta charset="UTF-8">
+
+    <!-- Faz a página se adaptar a celulares, tablets e computadores. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Define o título que aparecerá na aba do navegador. -->
+    <title>1.54 — Descolonização | Curso de História Geral</title>
+
+    <style>
+        /* ============================================================
+           CONFIGURAÇÕES GERAIS
+           ============================================================ */
+
+        /* Remove margens e espaçamentos padrão do navegador. */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Define o comportamento de rolagem suave. */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Define a aparência geral do corpo da página. */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f3f6fa;
+            color: #202938;
+            line-height: 1.7;
+        }
+
+        /* ============================================================
+           CABEÇALHO
+           ============================================================ */
+
+        /* Cria o cabeçalho principal. */
+        header {
+            background: #071a33;
+            color: white;
+            padding: 45px 20px;
+            text-align: center;
+            border-bottom: 6px solid #f39c12;
+        }
+
+        /* Define o título principal. */
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 12px;
+        }
+
+        /* Define o subtítulo do cabeçalho. */
+        header p {
+            font-size: 1.1rem;
+            max-width: 900px;
+            margin: auto;
+            color: #dce8f5;
+        }
+
+        /* ============================================================
+           CONTAINER PRINCIPAL
+           ============================================================ */
+
+        /* Limita a largura do conteúdo e centraliza a página. */
+        main {
+            width: min(1100px, 92%);
+            margin: 30px auto;
+        }
+
+        /* Cria cartões brancos para organizar o conteúdo. */
+        .card {
+            background: white;
+            padding: 30px;
+            margin-bottom: 25px;
+            border-radius: 14px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.07);
+        }
+
+        /* Define títulos das seções. */
+        .card h2 {
+            margin-bottom: 18px;
+            color: #071a33;
+        }
+
+        /* Define subtítulos. */
+        .card h3 {
+            margin-top: 22px;
+            margin-bottom: 10px;
+            color: #173f6d;
+        }
+
+        /* Organiza listas. */
+        ul,
+        ol {
+            padding-left: 25px;
+            margin-top: 10px;
+        }
+
+        /* Dá espaçamento entre itens das listas. */
+        li {
+            margin-bottom: 8px;
+        }
+
+        /* Destaca palavras importantes. */
+        strong {
+            color: #071a33;
+        }
+
+        /* ============================================================
+           BANNER DE APRESENTAÇÃO
+           ============================================================ */
+
+        /* Cria o cartão inicial do capítulo. */
+        .apresentacao {
+            background: linear-gradient(135deg, #0b3d70, #1769aa);
+            color: white;
+            padding: 35px;
+            border-radius: 15px;
+            margin-bottom: 25px;
+        }
+
+        /* Retira a cor escura dos títulos dentro da apresentação. */
+        .apresentacao h2 {
+            color: white;
+        }
+
+        /* ============================================================
+           CORES DAS PARTES DA TRILOGIA
+           ============================================================ */
+
+        /* Representa o começo do processo histórico. */
+        .parte1 {
+            border-left: 8px solid #1769aa;
+        }
+
+        /* Representa o desenvolvimento histórico. */
+        .parte2 {
+            border-left: 8px solid #18864b;
+        }
+
+        /* Representa o legado histórico. */
+        .parte3 {
+            border-left: 8px solid #7b3fb5;
+        }
+
+        /* ============================================================
+           CARTÕES TEMÁTICOS
+           ============================================================ */
+
+        /* Destaca causas históricas. */
+        .causas {
+            background: #fff4df;
+            border-left: 8px solid #f39c12;
+        }
+
+        /* Destaca consequências históricas. */
+        .consequencias {
+            background: #fffbe0;
+            border-left: 8px solid #e0b400;
+        }
+
+        /* Destaca conceitos importantes. */
+        .conceitos {
+            background: #fffde9;
+            border-left: 8px solid #d9c400;
+        }
+
+        /* Destaca pontos que exigem atenção. */
+        .atencao {
+            background: #fff0f0;
+            border-left: 8px solid #c0392b;
+        }
+
+        /* Destaca conteúdos relacionados ao ENEM. */
+        .enem {
+            background: #e8fbff;
+            border-left: 8px solid #00a6c7;
+        }
+
+        /* Destaca o conteúdo destinado à lousa. */
+        .lousa {
+            background: #102a43;
+            color: white;
+            border-left: 8px solid #4ea1d3;
+        }
+
+        /* Garante que os títulos da lousa sejam brancos. */
+        .lousa h2,
+        .lousa h3,
+        .lousa strong {
+            color: white;
+        }
+
+        /* ============================================================
+           LINHA DO TEMPO
+           ============================================================ */
+
+        /* Cria uma coluna vertical para a cronologia. */
+        .timeline {
+            border-left: 4px solid #1769aa;
+            padding-left: 25px;
+        }
+
+        /* Cria cada acontecimento da linha do tempo. */
+        .evento {
+            margin-bottom: 22px;
+            position: relative;
+        }
+
+        /* Cria o marcador visual de cada evento. */
+        .evento::before {
+            content: "";
+            position: absolute;
+            width: 13px;
+            height: 13px;
+            background: #1769aa;
+            border-radius: 50%;
+            left: -33px;
+            top: 7px;
+        }
+
+        /* Destaca o ano do evento. */
+        .ano {
+            font-weight: bold;
+            color: #1769aa;
+            font-size: 1.1rem;
+        }
+
+        /* ============================================================
+           TABELA
+           ============================================================ */
+
+        /* Permite que tabelas grandes sejam roladas no celular. */
+        .tabela-container {
+            overflow-x: auto;
+        }
+
+        /* Define a tabela. */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        /* Define células da tabela. */
+        th,
+        td {
+            border: 1px solid #d6dce5;
+            padding: 12px;
+            text-align: left;
+        }
+
+        /* Define o cabeçalho da tabela. */
+        th {
+            background: #071a33;
+            color: white;
+        }
+
+        /* Cria alternância visual nas linhas. */
+        tr:nth-child(even) {
+            background: #f4f7fa;
+        }
+
+        /* ============================================================
+           QUESTÕES
+           ============================================================ */
+
+        /* Cria o cartão de cada questão. */
+        .questao {
+            background: #f8fafc;
+            border: 1px solid #dce3eb;
+            padding: 22px;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+
+        /* Define as alternativas. */
+        .alternativas {
+            margin-top: 15px;
+        }
+
+        /* Cria o botão do gabarito. */
+        button {
+            background: #1769aa;
+            color: white;
+            border: none;
+            padding: 12px 18px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        /* Altera a aparência do botão quando o mouse passa por cima. */
+        button:hover {
+            background: #0d4f82;
+        }
+
+        /* Esconde o gabarito inicialmente. */
+        .gabarito {
+            display: none;
+            margin-top: 15px;
+            padding: 15px;
+            background: #e8f5e9;
+            border-left: 5px solid #18864b;
+            border-radius: 6px;
+        }
+
+        /* ============================================================
+           NAVEGAÇÃO
+           ============================================================ */
+
+        /* Organiza os botões de navegação. */
+        .navegacao {
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        /* Define aparência dos links de navegação. */
+        .navegacao a {
+            text-decoration: none;
+            background: #071a33;
+            color: white;
+            padding: 13px 20px;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        /* Altera a cor ao passar o mouse. */
+        .navegacao a:hover {
+            background: #1769aa;
+        }
+
+        /* ============================================================
+           BOTÃO VOLTAR AO TOPO
+           ============================================================ */
+
+        /* Cria o botão flutuante. */
+        #topo {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            display: none;
+            border-radius: 50%;
+            width: 48px;
+            height: 48px;
+            padding: 0;
+            font-size: 20px;
+            z-index: 1000;
+        }
+
+        /* ============================================================
+           RODAPÉ
+           ============================================================ */
+
+        /* Define o rodapé da página. */
+        footer {
+            background: #071a33;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 40px;
+        }
+
+        /* ============================================================
+           RESPONSIVIDADE
+           ============================================================ */
+
+        /* Ajusta a página para telas pequenas. */
+        @media (max-width: 700px) {
+
+            /* Reduz o tamanho do título principal. */
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            /* Reduz o espaçamento dos cartões. */
+            .card {
+                padding: 20px;
+            }
+
+            /* Coloca a navegação em coluna. */
+            .navegacao {
+                flex-direction: column;
+            }
+
+            /* Faz os links ocuparem toda a largura. */
+            .navegacao a {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ============================================================
+         CABEÇALHO
+         ============================================================ -->
+
+    <header>
+        <!-- Mostra o número e o nome do capítulo. -->
+        <h1>1.54 — DESCOLONIZAÇÃO</h1>
+
+        <!-- Identifica o curso e o público. -->
+        <p>
+            Curso de História Geral — Fund II • Ensino Médio • ENEM • Vestibular • Concurso
+        </p>
+
+        <!-- Apresenta a autoria do material. -->
+        <p>
+            Professor Marcelo Oliveira
+        </p>
+    </header>
+
+    <!-- ============================================================
+         CONTEÚDO PRINCIPAL
+         ============================================================ -->
+
+    <main>
+
+        <!-- Apresentação do capítulo. -->
+        <section class="apresentacao">
+            <h2>Descolonização: o fim dos impérios coloniais?</h2>
+
+            <p>
+                A descolonização foi um dos grandes processos históricos do século XX.
+                Depois da Segunda Guerra Mundial, diversos povos da Ásia, da África,
+                do Oriente Médio e de outras regiões passaram a conquistar a independência
+                política diante dos antigos impérios coloniais europeus.
+            </p>
+
+            <p>
+                Porém, independência política não significou necessariamente o fim de
+                todas as relações econômicas, culturais, linguísticas e estratégicas
+                construídas durante o colonialismo.
+            </p>
+
+            <p>
+                Por isso, estudar a descolonização exige compreender tanto a formação
+                dos novos Estados quanto as permanências deixadas pelo colonialismo.
+            </p>
+        </section>
+
+        <!-- ========================================================
+             PARTE I — O COMEÇO
+             ======================================================== -->
+
+        <section class="card parte1">
+            <h2>I — O COMEÇO: AS ORIGENS DA DESCOLONIZAÇÃO</h2>
+
+            <h3>1. O que significa descolonização?</h3>
+
+            <p>
+                Descolonização é o processo pelo qual territórios submetidos ao domínio
+                colonial conquistaram autonomia e, em muitos casos, independência política.
+            </p>
+
+            <p>
+                O conceito deve ser compreendido de maneira ampla. A retirada de uma
+                administração colonial não eliminou automaticamente relações econômicas,
+                culturais ou estratégicas construídas ao longo de décadas ou séculos.
+            </p>
+
+            <h3>2. O mundo antes da descolonização</h3>
+
+            <p>
+                No início do século XX, grandes áreas da África e da Ásia estavam
+                submetidas ao domínio de potências europeias.
+            </p>
+
+            <p>
+                Reino Unido, França, Bélgica, Países Baixos, Portugal, Espanha e
+                outras potências mantinham diferentes formas de controle político,
+                econômico e militar sobre territórios ultramarinos.
+            </p>
+
+            <h3>3. A Primeira Guerra Mundial e o crescimento do nacionalismo</h3>
+
+            <p>
+                A Primeira Guerra Mundial contribuiu para enfraquecer antigas estruturas
+                imperiais e estimular movimentos nacionalistas em diferentes regiões.
+            </p>
+
+            <p>
+                Intelectuais e lideranças políticas passaram a defender com maior força
+                a ideia de que os povos deveriam participar da definição de seu próprio
+                destino político.
+            </p>
+
+            <h3>4. A Segunda Guerra Mundial</h3>
+
+            <p>
+                A Segunda Guerra Mundial acelerou o enfraquecimento das potências
+                coloniais europeias.
+            </p>
+
+            <p>
+                França, Reino Unido e outras potências saíram economicamente e
+                militarmente desgastadas do conflito.
+            </p>
+
+            <p>
+                Ao mesmo tempo, milhões de pessoas das colônias participaram dos
+                esforços de guerra, fortalecendo reivindicações por direitos,
+                autonomia e independência.
+            </p>
+
+            <h3>5. A criação da ONU</h3>
+
+            <p>
+                A criação da Organização das Nações Unidas, em 1945, deu novo espaço
+                internacional às discussões sobre soberania, autodeterminação e
+                independência dos povos.
+            </p>
+
+            <p>
+                A questão colonial passou progressivamente a ser debatida em um
+                ambiente internacional no qual a legitimidade do domínio colonial
+                era cada vez mais questionada.
+            </p>
+        </section>
+
+        <!-- Causas principais. -->
+        <section class="card causas">
+
+            <h2>PRINCIPAIS CAUSAS DA DESCOLONIZAÇÃO</h2>
+
+            <ul>
+                <li>Enfraquecimento das potências europeias após as guerras mundiais.</li>
+                <li>Crescimento dos nacionalismos africanos e asiáticos.</li>
+                <li>Fortalecimento das ideias de autodeterminação dos povos.</li>
+                <li>Atuação de movimentos anticoloniais.</li>
+                <li>Criação e atuação da ONU.</li>
+                <li>Experiência política e militar das populações colonizadas durante as guerras.</li>
+                <li>Influência do contexto internacional da Guerra Fria.</li>
+                <li>Pan-africanismo e solidariedade afro-asiática.</li>
+                <li>Pressões diplomáticas contra a manutenção de impérios coloniais.</li>
+            </ul>
+
+        </section>
+
+        <!-- ========================================================
+             ÁSIA
+             ======================================================== -->
+
+        <section class="card">
+            <h2>DESCOLONIZAÇÃO NA ÁSIA</h2>
+
+            <h3>Índia</h3>
+
+            <p>
+                A Índia esteve sob domínio britânico durante longo período.
+                O movimento de independência reuniu diferentes grupos e lideranças,
+                destacando-se a atuação política de Mahatma Gandhi e do Congresso
+                Nacional Indiano.
+            </p>
+
+            <p>
+                Em 1947, a independência foi acompanhada pela divisão do território
+                colonial em Índia e Paquistão.
+            </p>
+
+            <p>
+                A partilha provocou grandes deslocamentos populacionais e conflitos
+                entre comunidades, deixando consequências duradouras para as relações
+                entre os dois Estados.
+            </p>
+
+            <h3>Indonésia</h3>
+
+            <p>
+                A Indonésia declarou independência em 1945, após a derrota japonesa
+                na Segunda Guerra Mundial, mas a soberania foi reconhecida pelos
+                Países Baixos apenas em 1949, depois de conflitos e negociações.
+            </p>
+
+            <h3>Indochina</h3>
+
+            <p>
+                Na Indochina Francesa, o movimento liderado por Ho Chi Minh
+                enfrentou o domínio francês.
+            </p>
+
+            <p>
+                A derrota francesa em Dien Bien Phu, em 1954, contribuiu para o
+                fim do domínio francês na região e para os acordos de Genebra.
+            </p>
+
+            <h3>Filipinas</h3>
+
+            <p>
+                As Filipinas obtiveram independência formal dos Estados Unidos
+                em 1946, constituindo outro exemplo de transformação do sistema
+                colonial no pós-guerra.
+            </p>
+        </section>
+
+        <!-- ========================================================
+             PARTE II — DESENVOLVIMENTO
+             ======================================================== -->
+
+        <section class="card parte2">
+            <h2>II — O DESENVOLVIMENTO: LUTAS, INDEPENDÊNCIAS E CONFLITOS</h2>
+
+            <h3>1. Diferentes caminhos para a independência</h3>
+
+            <p>
+                A descolonização não aconteceu de uma única maneira.
+            </p>
+
+            <p>
+                Em alguns lugares houve negociações relativamente rápidas.
+                Em outros, a independência foi resultado de guerras prolongadas,
+                revoltas, guerrilhas, pressões internacionais ou combinações desses fatores.
+            </p>
+
+            <p>
+                Portanto, não existe um único modelo de descolonização.
+            </p>
+
+            <h3>2. Conferência de Bandung — 1955</h3>
+
+            <p>
+                A Conferência de Bandung, realizada na Indonésia em 1955,
+                reuniu países africanos e asiáticos independentes ou envolvidos
+                em processos de emancipação.
+            </p>
+
+            <p>
+                O encontro defendeu princípios relacionados à soberania,
+                não intervenção, cooperação entre os povos e oposição ao colonialismo.
+            </p>
+
+            <p>
+                Bandung tornou-se um marco da solidariedade afro-asiática e
+                ajudou a preparar o terreno político para a atuação dos países
+                que buscavam maior autonomia diante das grandes potências.
+            </p>
+
+            <h3>3. O Movimento dos Não Alinhados</h3>
+
+            <p>
+                Em 1961, foi criado o Movimento dos Países Não Alinhados,
+                associado à busca de autonomia diplomática em relação aos blocos
+                liderados por Estados Unidos e União Soviética.
+            </p>
+
+            <p>
+                Isso não significava que todos os países participantes adotassem
+                exatamente a mesma política externa, mas expressava a tentativa
+                de ampliar o espaço de decisão dos novos Estados.
+            </p>
+
+            <h3>4. A África e o processo de independência</h3>
+
+            <p>
+                A partir da década de 1950, a independência africana ganhou força.
+            </p>
+
+            <p>
+                Em 1957, Gana tornou-se independente do Reino Unido, sob liderança
+                de Kwame Nkrumah, tornando-se uma referência para outros movimentos
+                anticoloniais africanos.
+            </p>
+
+            <h3>5. O Ano da África — 1960</h3>
+
+            <p>
+                O ano de 1960 ficou conhecido como "Ano da África" porque diversos
+                países africanos conquistaram independência.
+            </p>
+
+            <p>
+                No mesmo ano, a ONU aprovou a Resolução 1514, que declarou a
+                necessidade de conceder independência aos países e povos coloniais.
+            </p>
+
+            <h3>6. A independência da Argélia</h3>
+
+            <p>
+                A Argélia esteve sob domínio francês e viveu uma guerra de
+                independência entre 1954 e 1962.
+            </p>
+
+            <p>
+                O conflito revelou a dificuldade de algumas potências europeias
+                em abandonar territórios considerados estratégicos e integrados
+                aos seus sistemas políticos e econômicos.
+            </p>
+
+            <h3>7. O Congo</h3>
+
+            <p>
+                O Congo Belga conquistou a independência em 1960.
+            </p>
+
+            <p>
+                A independência foi seguida por uma grave crise política,
+                envolvendo disputas internas e interferências internacionais,
+                inseridas também no contexto da Guerra Fria.
+            </p>
+
+            <h3>8. As colônias portuguesas</h3>
+
+            <p>
+                Angola, Moçambique, Guiné-Bissau, Cabo Verde e São Tomé e Príncipe
+                estiveram entre os territórios que alcançaram a independência
+                no contexto da crise do império colonial português.
+            </p>
+
+            <p>
+                A Revolução dos Cravos, em Portugal, em 1974, alterou profundamente
+                a política portuguesa e acelerou o processo de descolonização.
+            </p>
+
+            <p>
+                Angola e Moçambique tornaram-se independentes em 1975.
+            </p>
+        </section>
+
+        <!-- ========================================================
+             CONFLITOS IMPORTANTES
+             ======================================================== -->
+
+        <section class="card">
+            <h2>CONFLITOS E PROCESSOS IMPORTANTES</h2>
+
+            <div class="tabela-container">
+
+                <table>
+
+                    <tr>
+                        <th>Região</th>
+                        <th>Potência colonial</th>
+                        <th>Processo</th>
+                        <th>Resultado</th>
+                    </tr>
+
+                    <tr>
+                        <td>Índia</td>
+                        <td>Reino Unido</td>
+                        <td>Movimento nacionalista e negociações</td>
+                        <td>Independência em 1947</td>
+                    </tr>
+
+                    <tr>
+                        <td>Indonésia</td>
+                        <td>Países Baixos</td>
+                        <td>Conflito e negociação</td>
+                        <td>Reconhecimento da independência em 1949</td>
+                    </tr>
+
+                    <tr>
+                        <td>Indochina</td>
+                        <td>França</td>
+                        <td>Guerra de independência</td>
+                        <td>Fim do domínio francês em 1954</td>
+                    </tr>
+
+                    <tr>
+                        <td>Gana</td>
+                        <td>Reino Unido</td>
+                        <td>Movimento nacionalista</td>
+                        <td>Independência em 1957</td>
+                    </tr>
+
+                    <tr>
+                        <td>Argélia</td>
+                        <td>França</td>
+                        <td>Guerra de independência</td>
+                        <td>Independência em 1962</td>
+                    </tr>
+
+                    <tr>
+                        <td>Angola</td>
+                        <td>Portugal</td>
+                        <td>Luta anticolonial e mudança política em Portugal</td>
+                        <td>Independência em 1975</td>
+                    </tr>
+
+                    <tr>
+                        <td>Moçambique</td>
+                        <td>Portugal</td>
+                        <td>Luta anticolonial e mudança política em Portugal</td>
+                        <td>Independência em 1975</td>
+                    </tr>
+
+                </table>
+
+            </div>
+        </section>
+
+        <!-- ========================================================
+             GUERRA FRIA E DESCOLONIZAÇÃO
+             ======================================================== -->
+
+        <section class="card">
+            <h2>DESCOLONIZAÇÃO E GUERRA FRIA</h2>
+
+            <p>
+                A Guerra Fria influenciou muitos processos de independência,
+                mas não deve ser considerada a única explicação para a descolonização.
+            </p>
+
+            <p>
+                Os movimentos nacionalistas possuíam objetivos próprios,
+                relacionados à soberania, identidade nacional, território,
+                economia e rejeição ao domínio colonial.
+            </p>
+
+            <p>
+                Estados Unidos e União Soviética procuraram ampliar sua influência
+                em diferentes regiões do mundo, e alguns conflitos de descolonização
+                passaram a receber apoio externo.
+            </p>
+
+            <p>
+                Em determinadas situações, isso transformou disputas políticas
+                locais em conflitos ligados à dinâmica global da Guerra Fria.
+            </p>
+        </section>
+
+        <!-- ========================================================
+             ATENÇÃO
+             ======================================================== -->
+
+        <section class="card atencao">
+
+            <h2>⚠️ ATENÇÃO: DESCOLONIZAÇÃO NÃO FOI UM PROCESSO UNIFORME</h2>
+
+            <p>
+                É um erro estudar a descolonização como se todos os territórios
+                tivessem seguido o mesmo caminho.
+            </p>
+
+            <p>
+                Houve processos negociados, guerras de independência,
+                partilhas territoriais, conflitos internos, intervenções externas
+                e diferentes modelos de construção dos novos Estados.
+            </p>
+
+            <p>
+                Também é importante diferenciar <strong>independência política</strong>
+                de <strong>autonomia econômica e cultural</strong>.
+            </p>
+
+        </section>
+
+        <!-- ========================================================
+             PARTE III — LEGADO
+             ======================================================== -->
+
+        <section class="card parte3">
+
+            <h2>III — O LEGADO E O MUNDO ATUAL</h2>
+
+            <h3>1. O nascimento de novos Estados</h3>
+
+            <p>
+                A descolonização modificou profundamente o mapa político mundial.
+            </p>
+
+            <p>
+                Estados independentes surgiram na Ásia, na África e em outras
+                regiões, aumentando significativamente o número de países
+                representados na comunidade internacional.
+            </p>
+
+            <h3>2. Fronteiras coloniais</h3>
+
+            <p>
+                Muitas fronteiras foram estabelecidas ou reorganizadas durante
+                o período colonial.
+            </p>
+
+            <p>
+                Em determinados casos, essas fronteiras reuniram grupos com
+                diferentes histórias políticas e culturais ou separaram comunidades
+                que possuíam vínculos anteriores.
+            </p>
+
+            <p>
+                Isso contribuiu para desafios políticos posteriores, embora
+                conflitos contemporâneos tenham causas múltiplas e não possam
+                ser explicados exclusivamente pelas fronteiras coloniais.
+            </p>
+
+            <h3>3. Independência política e dependência econômica</h3>
+
+            <p>
+                A independência não eliminou automaticamente as desigualdades
+                econômicas construídas durante o colonialismo.
+            </p>
+
+            <p>
+                Muitos novos Estados continuaram dependentes da exportação de
+                determinadas matérias-primas, de investimentos externos,
+                de mercados internacionais e de tecnologias produzidas
+                principalmente por países industrializados.
+            </p>
+
+            <h3>4. Neocolonialismo</h3>
+
+            <p>
+                O termo <strong>neocolonialismo</strong> foi utilizado por diferentes
+                autores e movimentos para descrever situações nas quais um Estado
+                formalmente independente continuaria sofrendo forte influência
+                econômica, política ou cultural de potências externas.
+            </p>
+
+            <p>
+                O conceito é objeto de debates acadêmicos e deve ser utilizado
+                considerando o contexto histórico específico.
+            </p>
+
+            <h3>5. Cultura e identidade</h3>
+
+            <p>
+                A descolonização também envolveu debates sobre língua, educação,
+                religião, memória, identidade nacional e valorização de culturas
+                locais.
+            </p>
+
+            <p>
+                Em muitos países, línguas europeias continuaram sendo utilizadas
+                oficialmente ao lado ou acima de línguas locais.
+            </p>
+
+            <h3>6. O mundo contemporâneo</h3>
+
+            <p>
+                Questões relacionadas ao colonialismo continuam presentes em
+                debates sobre desigualdade internacional, patrimônio cultural,
+                restituição de objetos, memória histórica, racismo, fronteiras,
+                migração e relações econômicas internacionais.
+            </p>
+
+        </section>
+
+        <!-- ========================================================
+             RELAÇÃO COM O BRASIL
+             ======================================================== -->
+
+        <section class="card">
+
+            <h2>DESCOLONIZAÇÃO E BRASIL</h2>
+
+            <p>
+                O Brasil conquistou sua independência em 1822, portanto pertence
+                a uma geração anterior aos grandes processos de descolonização
+                afro-asiática do século XX.
+            </p>
+
+            <p>
+                Mesmo assim, a história brasileira está diretamente relacionada
+                ao sistema colonial português e às estruturas econômicas,
+                sociais e culturais formadas durante a colonização.
+            </p>
+
+            <p>
+                O estudo da descolonização também ajuda a compreender como
+                diferentes sociedades enfrentaram o legado dos impérios coloniais.
+            </p>
+
+            <p>
+                Além disso, o Brasil manteve relações diplomáticas e comerciais
+                com os novos Estados independentes da África e da Ásia,
+                especialmente durante a segunda metade do século XX.
+            </p>
+
+        </section>
+
+        <!-- ========================================================
+             CONSEQUÊNCIAS
+             ======================================================== -->
+
+        <section class="card consequencias">
+
+            <h2>CONSEQUÊNCIAS HISTÓRICAS</h2>
+
+            <ul>
+                <li>Fim formal de grande parte dos impérios coloniais europeus.</li>
+                <li>Criação de dezenas de novos Estados independentes.</li>
+                <li>Ampliação da participação afro-asiática na ONU.</li>
+                <li>Fortalecimento dos movimentos nacionalistas.</li>
+                <li>Desenvolvimento do pan-africanismo.</li>
+                <li>Fortalecimento da cooperação afro-asiática.</li>
+                <li>Novos conflitos territoriais e políticos em determinados contextos.</li>
+                <li>Persistência de relações econômicas assimétricas.</li>
+                <li>Transformações culturais e linguísticas.</li>
+                <li>Alteração profunda da ordem internacional.</li>
+            </ul>
+
+        </section>
+
+        <!-- ========================================================
+             CONCEITOS
+             ======================================================== -->
+
+        <section class="card conceitos">
+
+            <h2>CONCEITOS QUE O ALUNO PRECISA DOMINAR</h2>
+
+            <h3>Colonialismo</h3>
+            <p>
+                Sistema de dominação política, econômica e territorial exercido
+                por uma potência sobre outro território ou povo.
+            </p>
+
+            <h3>Descolonização</h3>
+            <p>
+                Processo histórico de desmontagem do domínio colonial e conquista
+                de autonomia ou independência pelos povos colonizados.
+            </p>
+
+            <h3>Autodeterminação</h3>
+            <p>
+                Princípio segundo o qual os povos devem possuir o direito de
+                determinar seu próprio destino político.
+            </p>
+
+            <h3>Nacionalismo</h3>
+            <p>
+                Conjunto de ideias e movimentos relacionados à construção,
+                defesa ou afirmação de uma comunidade política nacional.
+            </p>
+
+            <h3>Pan-africanismo</h3>
+            <p>
+                Corrente política e cultural que defende a solidariedade e a
+                cooperação entre povos africanos e pessoas de ascendência africana.
+            </p>
+
+            <h3>Neocolonialismo</h3>
+            <p>
+                Conceito utilizado para analisar formas de dependência ou influência
+                externa que podem permanecer após a independência formal.
+            </p>
+
+            <h3>Não Alinhamento</h3>
+            <p>
+                Política de busca de autonomia internacional adotada por diversos
+                países durante a Guerra Fria, sem alinhamento automático a um dos
+                dois grandes blocos.
+            </p>
+
+        </section>
+
+        <!-- ========================================================
+             LINHA DO TEMPO
+             ======================================================== -->
+
+        <section class="card">
+
+            <h2>LINHA DO TEMPO — DESCOLONIZAÇÃO</h2>
+
+            <div class="timeline">
+
+                <div class="evento">
+                    <div class="ano">1945</div>
+                    <p>
+                        Criação da Organização das Nações Unidas.
+                    </p>
+                </div>
+
+                <div class="evento">
+                    <div class="ano">1946</div>
+                    <p>
+                        Independência das Filipinas.
+                    </p>
+                </div>
+
+                <div class="evento">
+                    <div class="ano">1947</div>
+                    <p>
+                        Independência da Índia e do Paquistão.
+                    </p>
+                </div>
+
+                <div class="evento">
+                    <div class="ano">1949</div>
+                    <p>
+                        Reconhecimento da independência da Indonésia pelos Países Baixos.
+                    </p>
+                </div>
+
+                <div class="evento">
+                    <div class="ano">1954</div>
+                    <p>
+                        Derrota francesa em Dien Bien Phu e acordos de Genebra.
+                    </p>
+                </div>
+
+                <div class="evento">
+                    <div class="ano">1955</div>
+                    <p>
+                        Conferência de Bandung.
+                    </p>
+                </div>
+
+                <div class="evento">
+                    <div class="ano">1957</div>
+                    <p>
+                        Independência de Gana.
+                    </p>
+                </div>
+
+                <div class="evento">
+                    <div class="ano">1960</div>
+                    <p>
+                        Ano da África e aprovação da Resolução 1514 da ONU.
+                    </p>
+                </div>
+
+                <div class="evento">
+                    <div class="ano">1961</div>
+                    <p>
+                        Formação do Movimento dos Países Não Alinhados.
+                    </p>
+                </div>
+
+                <div class="evento">
+                    <div class="ano">1962</div>
+                    <p>
+                        Independência da Argélia.
+                    </p>
+                </div>
+
+                <div class="evento">
+                    <div class="ano">1974</div>
+                    <p>
+                        Revolução dos Cravos em Portugal.
+                    </p>
+                </div>
+
+                <div class="evento">
+                    <div class="ano">1975</div>
+                    <p>
+                        Independência de Angola e Moçambique.
+                    </p>
+                </div>
+
+                <div class="evento">
+                    <div class="ano">1990</div>
+                    <p>
+                        Independência da Namíbia.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ========================================================
+             O QUE O PROFESSOR PRECISA DOMINAR
+             ======================================================== -->
+
+        <section class="card">
+
+            <h2>O QUE O PROFESSOR PRECISA DOMINAR</h2>
+
+            <ol>
+                <li>Explicar o conceito de descolonização.</li>
+                <li>Relacionar a Segunda Guerra Mundial ao enfraquecimento dos impérios europeus.</li>
+                <li>Explicar a importância dos nacionalismos africanos e asiáticos.</li>
+                <li>Conhecer os principais processos de independência asiáticos.</li>
+                <li>Conhecer os principais processos de independência africanos.</li>
+                <li>Explicar a importância de Bandung.</li>
+                <li>Compreender o Movimento dos Não Alinhados.</li>
+                <li>Relacionar descolonização e Guerra Fria sem reduzir um processo ao outro.</li>
+                <li>Explicar a independência das colônias portuguesas.</li>
+                <li>Diferenciar independência política de dependência econômica.</li>
+                <li>Relacionar colonialismo, fronteiras e construção dos novos Estados.</li>
+                <li>Compreender a permanência do tema no mundo contemporâneo.</li>
+            </ol>
+
+        </section>
+
+        <!-- ========================================================
+             O QUE COLOCAR NA LOUSA
+             ======================================================== -->
+
+        <section class="card lousa">
+
+            <h2>O QUE COLOCAR NA LOUSA</h2>
+
+            <h3>DESCOLONIZAÇÃO — SÉCULO XX</h3>
+
+            <p><strong>CONTEXTO:</strong></p>
+
+            <ul>
+                <li>1945 → fim da Segunda Guerra Mundial</li>
+                <li>Enfraquecimento das potências europeias</li>
+                <li>Nacionalismos africanos e asiáticos</li>
+                <li>ONU → autodeterminação</li>
+            </ul>
+
+            <p><strong>ÁSIA:</strong></p>
+
+            <ul>
+                <li>Índia → 1947</li>
+                <li>Indonésia → 1949</li>
+                <li>Indochina → 1954</li>
+            </ul>
+
+            <p><strong>ÁFRICA:</strong></p>
+
+            <ul>
+                <li>Gana → 1957</li>
+                <li>Ano da África → 1960</li>
+                <li>Argélia → 1962</li>
+                <li>Angola → 1975</li>
+                <li>Moçambique → 1975</li>
+            </ul>
+
+            <p><strong>ARTICULAÇÃO INTERNACIONAL:</strong></p>
+
+            <ul>
+                <li>Bandung → 1955</li>
+                <li>Não Alinhados → 1961</li>
+            </ul>
+
+            <p><strong>LEGADO:</strong></p>
+
+            <ul>
+                <li>Novos Estados</li>
+                <li>Novas fronteiras</li>
+                <li>Desafios econômicos</li>
+                <li>Identidades nacionais</li>
+                <li>Neocolonialismo</li>
+            </ul>
+
+        </section>
+
+        <!-- ========================================================
+             ENEM / VESTIBULAR / CONCURSO
+             ======================================================== -->
+
+        <section class="card enem">
+
+            <h2>ENEM • VESTIBULAR • CONCURSO</h2>
+
+            <h3>O que costuma ser cobrado?</h3>
+
+            <ul>
+                <li>Relação entre Segunda Guerra Mundial e descolonização.</li>
+                <li>Independência da Índia e partilha do território.</li>
+                <li>Conferência de Bandung.</li>
+                <li>Movimento dos Não Alinhados.</li>
+                <li>Independências africanas.</li>
+                <li>Guerra da Argélia.</li>
+                <li>Crise do Congo.</li>
+                <li>Descolonização portuguesa.</li>
+                <li>Relação entre Guerra Fria e conflitos de independência.</li>
+                <li>Conceito de neocolonialismo.</li>
+            </ul>
+
+            <h3>Estratégia de prova</h3>
+
+            <p>
+                Quando uma questão apresentar termos como
+                <strong>autodeterminação, nacionalismo, Bandung, África,
+                independência e colonialismo</strong>, procure identificar
+                o processo histórico de enfraquecimento dos impérios coloniais
+                ocorrido principalmente após a Segunda Guerra Mundial.
+            </p>
+
+        </section>
+
+        <!-- ========================================================
+             QUESTÃO 1
+             ======================================================== -->
+
+        <section class="card">
+
+            <h2>QUESTÕES — MODELO ENEM</h2>
+
+            <div class="questao">
+
+                <p>
+                    <strong>Questão 1</strong>
+                </p>
+
+                <p>
+                    Após a Segunda Guerra Mundial, diversos territórios da África
+                    e da Ásia conquistaram a independência política. Esse processo
+                    esteve relacionado ao enfraquecimento das potências europeias,
+                    ao crescimento dos movimentos nacionalistas e à valorização
+                    internacional do princípio da autodeterminação.
+                </p>
+
+                <p>
+                    Uma característica importante desse processo histórico foi:
+                </p>
+
+                <div class="alternativas">
+
+                    <p>A) a reconstrução dos antigos impérios coloniais europeus.</p>
+
+                    <p>B) a formação de novos Estados independentes.</p>
+
+                    <p>C) a eliminação imediata de todas as desigualdades econômicas.</p>
+
+                    <p>D) o desaparecimento das disputas internacionais.</p>
+
+                    <p>E) a criação de um único modelo político para todos os novos países.</p>
+
+                </div>
+
+                <button onclick="mostrarGabarito('gabarito1')">
+                    Mostrar gabarito
+                </button>
+
+                <div class="gabarito" id="gabarito1">
+
+                    <strong>Resposta: B.</strong>
+
+                    <p>
+                        A descolonização provocou a formação de numerosos Estados
+                        independentes na África e na Ásia. A independência política,
+                        porém, não eliminou automaticamente desigualdades econômicas
+                        ou conflitos políticos.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- ====================================================
+                 QUESTÃO 2
+                 ==================================================== -->
+
+            <div class="questao">
+
+                <p>
+                    <strong>Questão 2</strong>
+                </p>
+
+                <p>
+                    A Conferência de Bandung, realizada em 1955, reuniu países
+                    africanos e asiáticos em um contexto marcado pela luta contra
+                    o colonialismo e pela busca de maior autonomia internacional.
+                </p>
+
+                <p>
+                    A importância histórica do encontro está relacionada:
+                </p>
+
+                <div class="alternativas">
+
+                    <p>A) à defesa da restauração dos impérios coloniais.</p>
+
+                    <p>B) à criação de uma organização militar europeia.</p>
+
+                    <p>C) à articulação política entre países afro-asiáticos.</p>
+
+                    <p>D) à divisão definitiva do mundo entre Estados Unidos e União Soviética.</p>
+
+                    <p>E) ao estabelecimento de governos coloniais na África.</p>
+
+                </div>
+
+                <button onclick="mostrarGabarito('gabarito2')">
+                    Mostrar gabarito
+                </button>
+
+                <div class="gabarito" id="gabarito2">
+
+                    <strong>Resposta: C.</strong>
+
+                    <p>
+                        Bandung tornou-se um marco da solidariedade afro-asiática
+                        e da defesa da soberania, da cooperação e da oposição ao
+                        colonialismo.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ========================================================
+             RESUMO FINAL
+             ======================================================== -->
+
+        <section class="card">
+
+            <h2>RESUMO PARA REVISÃO</h2>
+
+            <p>
+                A descolonização foi um processo histórico que ganhou grande força
+                após a Segunda Guerra Mundial e levou à independência de numerosos
+                territórios africanos e asiáticos.
+            </p>
+
+            <p>
+                O processo foi impulsionado pelo enfraquecimento das potências
+                europeias, pelos nacionalismos, pelas lutas anticoloniais,
+                pelo princípio da autodeterminação e pelas mudanças na ordem
+                internacional.
+            </p>
+
+            <p>
+                Bandung, em 1955, tornou-se símbolo da cooperação afro-asiática,
+                enquanto o Movimento dos Não Alinhados procurou ampliar a autonomia
+                internacional dos novos Estados.
+            </p>
+
+            <p>
+                A independência política não eliminou automaticamente as
+                desigualdades econômicas e as relações construídas durante
+                o período colonial.
+            </p>
+
+            <p>
+                Por isso, o legado da descolonização continua presente nos debates
+                sobre soberania, desenvolvimento, identidade, cultura,
+                desigualdade internacional e relações entre países.
+            </p>
+
+        </section>
+
+        <!-- ========================================================
+             NAVEGAÇÃO
+             ======================================================== -->
+
+        <div class="navegacao">
+
+            <!-- Link para o capítulo anterior. -->
+            <a href="../41-Guerra-Fria/index.html">
+                ← Segunda Guerra Mundial
+            </a>
+
+            <!-- Link para o próximo capítulo. -->
+            <a href="../43-Expansao-Maritimo-Comercial/index.html">
+                1.54 — Expansão Marítimo-Comercial →
+            </a>
+
+        </div>
+
+    </main>
+
+    <!-- ============================================================
+         BOTÃO VOLTAR AO TOPO
+         ============================================================ -->
+
+    <button id="topo" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+        ↑
+    </button>
+
+    <!-- ============================================================
+         RODAPÉ
+         ============================================================ -->
+
+    <footer>
+
+        <p>
+            Curso de História Geral
+        </p>
+
+        <p>
+            Professor Marcelo Oliveira
+        </p>
+
+        <p>
+            Fund II • Ensino Médio • ENEM • Vestibular • Concurso
+        </p>
+
+    </footer>
+
+    <script>
+
+        /* ============================================================
+           FUNÇÃO PARA MOSTRAR OU ESCONDER O GABARITO
+           ============================================================ */
+
+        function mostrarGabarito(id) {
+
+            /* Localiza o elemento pelo ID recebido. */
+            const elemento = document.getElementById(id);
+
+            /* Verifica se o gabarito está escondido. */
+            if (elemento.style.display === "none" || elemento.style.display === "") {
+
+                /* Mostra o gabarito. */
+                elemento.style.display = "block";
+
+            } else {
+
+                /* Esconde o gabarito novamente. */
+                elemento.style.display = "none";
+            }
+        }
+
+        /* ============================================================
+           BOTÃO VOLTAR AO TOPO
+           ============================================================ */
+
+        /* Captura o botão de voltar ao topo. */
+        const botaoTopo = document.getElementById("topo");
+
+        /* Monitora a posição da página. */
+        window.addEventListener("scroll", function () {
+
+            /* Verifica se o usuário desceu mais de 400 pixels. */
+            if (window.scrollY > 400) {
+
+                /* Mostra o botão. */
+                botaoTopo.style.display = "block";
+
+            } else {
+
+                /* Esconde o botão. */
+                botaoTopo.style.display = "none";
+            }
+        });
+
+    </script>
+    
+<script>
+  const paginaAnterior = "53 - Segunda-Guerra-Mundial.html";
+  const paginaProxima = "55 - GUERRA FRIA.html";
+</script>
+<script src="navegacao.js"></script>
+</body>
+</html>
+

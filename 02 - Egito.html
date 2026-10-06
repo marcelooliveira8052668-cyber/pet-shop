@@ -1,0 +1,1470 @@
+
+<!DOCTYPE html>
+<!-- Define que o documento utiliza HTML5. -->
+
+<html lang="pt-BR">
+<!-- Inicia o documento e define o português do Brasil como idioma. -->
+
+<head>
+<!-- Inicia as configurações da página. -->
+
+<meta charset="UTF-8">
+<!-- Permite acentos e caracteres especiais. -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Faz o site funcionar corretamente em celulares, tablets e computadores. -->
+
+<title>Egito Antigo | Professor Marcelo Oliveira</title>
+<!-- Define o título exibido na aba do navegador. -->
+
+<style>
+/* Inicia o CSS responsável pelo visual da página. */
+
+/* Cria as variáveis de cores utilizadas no projeto. */
+:root {
+    --azul: #12355b;
+    --azul-escuro: #0b2239;
+    --azul-claro: #1f5f8b;
+    --azul-suave: #eaf3f9;
+    --dourado: #c89b3c;
+    --dourado-claro: #f8efd9;
+    --texto: #263238;
+    --texto-suave: #607d8b;
+    --branco: #ffffff;
+    --fundo: #f4f7fa;
+    --borda: #d9e2e8;
+    --verde: #247a52;
+}
+
+/* Remove margens e espaçamentos padrão do navegador. */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Define o estilo geral do corpo. */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--fundo);
+    color: var(--texto);
+    line-height: 1.75;
+}
+
+/* Define o cabeçalho principal. */
+header {
+    background:
+        linear-gradient(
+            135deg,
+            rgba(18, 53, 91, 0.98),
+            rgba(11, 34, 57, 0.98)
+        );
+    color: var(--branco);
+    padding: 60px 20px;
+    text-align: center;
+    border-bottom: 5px solid var(--dourado);
+}
+
+/* Define o pequeno título acima do título principal. */
+.categoria {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    opacity: 0.85;
+    margin-bottom: 12px;
+}
+
+/* Define o título principal. */
+header h1 {
+    font-size: clamp(34px, 6vw, 60px);
+    margin-bottom: 15px;
+}
+
+/* Define o subtítulo. */
+header p {
+    max-width: 900px;
+    margin: 8px auto;
+    font-size: 18px;
+}
+
+/* Define a barra de navegação. */
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.97);
+    border-bottom: 1px solid var(--borda);
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.07);
+}
+
+/* Organiza os botões da navegação. */
+.nav-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 12px 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* Define os botões da navegação. */
+.nav-btn {
+    border: none;
+    background: var(--azul-suave);
+    color: var(--azul);
+    padding: 10px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* Cria o efeito ao passar o mouse. */
+.nav-btn:hover {
+    background: var(--azul);
+    color: var(--branco);
+    transform: translateY(-2px);
+}
+
+/* Define a largura máxima do conteúdo. */
+main {
+    max-width: 1150px;
+    margin: 45px auto;
+    padding: 0 20px;
+}
+
+/* Define o espaçamento entre as seções. */
+section {
+    margin-bottom: 30px;
+}
+
+/* Cria os cartões de conteúdo. */
+.card {
+    background: var(--branco);
+    border: 1px solid var(--borda);
+    border-radius: 16px;
+    padding: 32px;
+    margin-bottom: 25px;
+    box-shadow: 0 8px 28px rgba(20, 50, 70, 0.07);
+}
+
+/* Define os títulos principais. */
+h2 {
+    color: var(--azul);
+    font-size: 30px;
+    margin-bottom: 22px;
+    border-left: 5px solid var(--dourado);
+    padding-left: 15px;
+}
+
+/* Define os subtítulos. */
+h3 {
+    color: var(--azul-claro);
+    font-size: 22px;
+    margin: 28px 0 12px;
+}
+
+/* Define os parágrafos. */
+p {
+    margin-bottom: 15px;
+}
+
+/* Define listas ordenadas e não ordenadas. */
+ul,
+ol {
+    margin: 15px 0 20px 25px;
+}
+
+/* Define os itens das listas. */
+li {
+    margin-bottom: 9px;
+}
+
+/* Cria uma caixa de destaque. */
+.destaque {
+    background: var(--azul-suave);
+    border-left: 5px solid var(--azul-claro);
+    padding: 20px;
+    margin: 22px 0;
+    border-radius: 8px;
+}
+
+/* Cria uma caixa de atenção. */
+.alerta {
+    background: var(--dourado-claro);
+    border-left: 5px solid var(--dourado);
+    padding: 20px;
+    margin: 22px 0;
+    border-radius: 8px;
+}
+
+/* Cria a representação da lousa. */
+.lousa {
+    background: #18242d;
+    color: #ffffff;
+    border-radius: 12px;
+    padding: 27px;
+    margin: 22px 0;
+}
+
+/* Define o título dentro da lousa. */
+.lousa h3 {
+    color: #ffffff;
+}
+
+/* Cria a linha do tempo. */
+.timeline {
+    border-left: 4px solid var(--dourado);
+    padding-left: 25px;
+    margin: 25px 0;
+}
+
+/* Define cada item da linha do tempo. */
+.timeline-item {
+    position: relative;
+    margin-bottom: 28px;
+}
+
+/* Cria a bolinha da linha do tempo. */
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -36px;
+    top: 7px;
+    width: 14px;
+    height: 14px;
+    background: var(--dourado);
+    border-radius: 50%;
+}
+
+/* Define a data da linha do tempo. */
+.timeline-date {
+    color: var(--azul-claro);
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Cria a grade de cartões. */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 18px;
+}
+
+/* Define os cartões menores. */
+.mini-card {
+    background: #fafcfd;
+    border: 1px solid var(--borda);
+    border-radius: 12px;
+    padding: 20px;
+}
+
+/* Define o título dos cartões menores. */
+.mini-card strong {
+    display: block;
+    color: var(--azul);
+    margin-bottom: 8px;
+}
+
+/* Cria os pequenos marcadores de conceitos. */
+.conceito {
+    display: inline-block;
+    background: #eef2f5;
+    color: var(--azul);
+    padding: 7px 13px;
+    margin: 4px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+/* Define o bloco das questões. */
+.questao {
+    background: #fbfcfd;
+    border: 1px solid var(--borda);
+    border-radius: 14px;
+    padding: 26px;
+    margin-top: 22px;
+}
+
+/* Define cada alternativa. */
+.alternativa {
+    padding: 11px 12px;
+    border-bottom: 1px solid #e7ecef;
+}
+
+/* Define o botão do gabarito. */
+.btn-gabarito {
+    margin-top: 20px;
+    background: var(--verde);
+    color: #ffffff;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Cria efeito no botão do gabarito. */
+.btn-gabarito:hover {
+    opacity: 0.9;
+}
+
+/* Mantém o gabarito escondido inicialmente. */
+.gabarito {
+    display: none;
+    margin-top: 16px;
+    padding: 18px;
+    background: #eaf7ef;
+    border-left: 5px solid var(--verde);
+    border-radius: 8px;
+}
+
+/* Organiza os botões finais. */
+.acoes {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: 45px 0;
+}
+
+/* Define o estilo geral dos botões finais. */
+.btn {
+    border: none;
+    padding: 14px 22px;
+    border-radius: 9px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+/* Define o botão principal. */
+.btn-principal {
+    background: var(--azul);
+    color: #ffffff;
+}
+
+/* Cria efeito no botão principal. */
+.btn-principal:hover {
+    background: var(--azul-claro);
+}
+
+/* Define o rodapé. */
+footer {
+    background: var(--azul-escuro);
+    color: #ffffff;
+    text-align: center;
+    padding: 38px 20px;
+    margin-top: 50px;
+}
+
+/* Define a assinatura do professor. */
+.assinatura {
+    color: var(--dourado);
+    font-weight: bold;
+}
+
+/* Adapta a página para celulares. */
+@media (max-width: 700px) {
+
+    header {
+        padding: 45px 18px;
+    }
+
+    header h1 {
+        font-size: 35px;
+    }
+
+    .card {
+        padding: 22px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    .nav-container {
+        justify-content: flex-start;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+    }
+
+    .nav-btn {
+        white-space: nowrap;
+    }
+}
+</style>
+<!-- Finaliza o CSS. -->
+
+</head>
+<!-- Finaliza a área de configurações. -->
+
+<body>
+<!-- Inicia o conteúdo visível. -->
+
+<header id="topo">
+<!-- Inicia o cabeçalho. -->
+
+<div class="categoria">
+<!-- Identifica a categoria do curso. -->
+
+Curso de História Geral
+<!-- Nome do curso. -->
+
+</div>
+<!-- Finaliza a categoria. -->
+
+<h1>1.2 — Egito</h1>
+<!-- Apresenta o título do capítulo. -->
+
+<p>
+Professor Marcelo Oliveira • Fundamental II • Ensino Médio • ENEM • Vestibular • Concursos
+</p>
+<!-- Apresenta a identificação do curso. -->
+
+<p>
+Do vale do Nilo à formação de uma das mais duradouras civilizações da Antiguidade.
+</p>
+<!-- Apresenta a proposta do capítulo. -->
+
+</header>
+<!-- Finaliza o cabeçalho. -->
+
+<nav>
+<!-- Inicia a navegação. -->
+
+<div class="nav-container">
+<!-- Organiza os botões. -->
+
+<button class="nav-btn" onclick="irPara('comeco')">
+O Começo
+</button>
+<!-- Botão para a primeira parte. -->
+
+<button class="nav-btn" onclick="irPara('desenvolvimento')">
+O Desenvolvimento
+</button>
+<!-- Botão para a segunda parte. -->
+
+<button class="nav-btn" onclick="irPara('hoje')">
+O Mundo Atual
+</button>
+<!-- Botão para a terceira parte. -->
+
+<button class="nav-btn" onclick="irPara('prova')">
+Questões
+</button>
+<!-- Botão para as questões. -->
+
+<button class="nav-btn" onclick="voltarPagina()">
+← Voltar
+</button>
+<!-- Botão para voltar à página anterior. -->
+
+</div>
+<!-- Finaliza a navegação interna. -->
+
+</nav>
+<!-- Finaliza a navegação. -->
+
+<main>
+<!-- Inicia o conteúdo principal. -->
+
+<section class="card">
+<!-- Cria o cartão de apresentação. -->
+<img src="https://img.quizur.com/f/img64878cae082949.88658603.jpg?lastEdited=1686604984" width="500" alt="">
+<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEih1G-T5u4pPSjY77yhb_fIHJgL7JZ0-0Sw3TgF-KXTZ6iLwvMlz1u0JYnIkTvajUwUYtvGgALH_dCh5aj0H5vqY5ZzGD9l2HkIBUu_giw8fe6zZFOKaUzyuj2KSueS_5cqjBZUJeh8DDz4ZLsyve_b0EpC8-DATxcNSOl5m9rFD-6r39UeQwQtC-x9hvWC/s16000/Rio%20Nilo.jpg" width="500" alt="">
+<h2>Introdução</h2>
+<!-- Apresenta o título da introdução. -->
+
+<p>
+O Egito Antigo desenvolveu-se no nordeste da África, especialmente ao longo do vale e do delta do rio Nilo. Durante milênios, diferentes comunidades construíram formas de organização econômica, política, social e religiosa que deram origem a uma das experiências civilizacionais mais duradouras do mundo antigo.
+</p>
+<!-- Apresenta a localização e a importância histórica do Egito. -->
+
+<p>
+A história egípcia não corresponde a um período único e imutável. Ao longo de aproximadamente três milênios de história faraônica, ocorreram processos de unificação, expansão, centralização, descentralização, conflitos internos, contatos comerciais, guerras e domínios estrangeiros.
+</p>
+<!-- Explica que a história egípcia foi marcada por transformações. -->
+
+<div class="alerta">
+<!-- Cria a caixa de atenção. -->
+
+<strong>Atenção:</strong>
+<!-- Destaca o conceito. -->
+
+A famosa frase “o Egito é uma dádiva do Nilo”, associada ao historiador grego Heródoto, é útil para destacar a importância do rio, mas não deve ser interpretada como se o ambiente sozinho tivesse criado a civilização egípcia.
+<!-- Apresenta uma interpretação histórica cuidadosa. -->
+
+</div>
+<!-- Finaliza a caixa de atenção. -->
+
+</section>
+<!-- Finaliza a introdução. -->
+
+<section id="comeco" class="card">
+<!-- Inicia a primeira parte da trilogia. -->
+
+<h2>I — O COMEÇO: A FORMAÇÃO DO EGITO ANTIGO</h2>
+<!-- Apresenta a primeira etapa. -->
+
+<h3>O espaço geográfico</h3>
+<!-- Apresenta a geografia. -->
+
+<p>
+O Egito está localizado no nordeste do continente africano. Grande parte de seu território é formada por áreas desérticas, enquanto a ocupação humana antiga concentrou-se principalmente no vale e no delta do Nilo.
+</p>
+<!-- Explica a geografia egípcia. -->
+
+<p>
+O Nilo percorre o território de sul para norte e desemboca no mar Mediterrâneo. O ciclo de suas águas possibilitou a agricultura em uma região onde o ambiente circundante apresentava condições muito mais áridas.
+</p>
+<!-- Explica o papel do Nilo. -->
+
+<h3>Comunidades agrícolas</h3>
+<!-- Apresenta a formação das comunidades. -->
+
+<p>
+Antes da formação do Estado egípcio unificado, diferentes comunidades agrícolas já ocupavam o vale do Nilo. Essas comunidades desenvolveram técnicas de produção, armazenamento e organização do trabalho.
+</p>
+<!-- Explica a formação das primeiras comunidades. -->
+
+<p>
+O crescimento dessas comunidades contribuiu para a formação de estruturas políticas regionais conhecidas tradicionalmente como nomos. Ao longo do tempo, determinados centros políticos adquiriram maior poder e passaram a controlar territórios mais amplos.
+</p>
+<!-- Explica a formação das unidades políticas. -->
+
+<h3>A unificação política</h3>
+<!-- Apresenta a unificação. -->
+
+<p>
+A tradição egípcia associa a unificação do Alto e do Baixo Egito ao processo de formação do Estado faraônico, tradicionalmente relacionado ao governante identificado como Narmer ou Menés.
+</p>
+<!-- Apresenta a tradição histórica da unificação. -->
+
+<p>
+A unificação não deve ser entendida apenas como um acontecimento isolado. Ela representa um processo de centralização política que permitiu a formação de instituições capazes de administrar território, trabalho, recursos e relações de poder.
+</p>
+<!-- Explica a unificação como processo. -->
+
+<div class="destaque">
+<!-- Cria uma caixa de destaque. -->
+
+<strong>Ideia-chave:</strong>
+<!-- Apresenta a ideia central. -->
+
+O Estado egípcio foi construído sobre uma combinação entre recursos agrícolas, administração, autoridade política, religião, trabalho e capacidade de organização territorial.
+<!-- Resume a formação do Estado. -->
+
+</div>
+<!-- Finaliza o destaque. -->
+
+</section>
+<!-- Finaliza a primeira parte. -->
+
+<section class="card">
+<!-- Inicia a seção dos períodos históricos. -->
+
+<h2>A PERIODIZAÇÃO DO EGITO ANTIGO</h2>
+<!-- Apresenta a periodização. -->
+
+<p>
+Para estudar a longa história egípcia, os historiadores utilizam uma periodização que destaca diferentes fases políticas. Ela é uma ferramenta de organização do passado e não significa que todas as mudanças aconteceram exatamente no início ou no final de cada período.
+</p>
+<!-- Explica o conceito de periodização. -->
+
+<div class="timeline">
+<!-- Inicia a linha do tempo. -->
+
+<div class="timeline-item">
+<!-- Primeiro período. -->
+
+<div class="timeline-date">
+Período Pré-Dinástico
+</div>
+<!-- Identifica o período. -->
+
+<p>
+Período anterior à consolidação do Estado faraônico unificado, marcado pelo desenvolvimento de comunidades agrícolas e centros políticos regionais.
+</p>
+<!-- Explica o período. -->
+
+</div>
+<!-- Finaliza o período. -->
+
+<div class="timeline-item">
+<!-- Segundo período. -->
+
+<div class="timeline-date">
+c. 3100 a.C. — Unificação
+</div>
+<!-- Apresenta a data aproximada. -->
+
+<p>
+Processo tradicionalmente associado à unificação do Alto e do Baixo Egito e ao início da organização dinástica.
+</p>
+<!-- Explica o processo. -->
+
+</div>
+<!-- Finaliza o período. -->
+
+<div class="timeline-item">
+<!-- Terceiro período. -->
+
+<div class="timeline-date">
+Antigo Império
+</div>
+<!-- Identifica o período. -->
+
+<p>
+Período marcado pela forte centralização política e por grandes projetos monumentais, incluindo as pirâmides da região de Gizé.
+</p>
+<!-- Explica o período. -->
+
+</div>
+<!-- Finaliza o período. -->
+
+<div class="timeline-item">
+<!-- Quarto período. -->
+
+<div class="timeline-date">
+Primeiro Período Intermediário
+</div>
+<!-- Identifica o período. -->
+
+<p>
+Fase de descentralização política e disputas entre diferentes centros de poder.
+</p>
+<!-- Explica o período. -->
+
+</div>
+<!-- Finaliza o período. -->
+
+<div class="timeline-item">
+<!-- Quinto período. -->
+
+<div class="timeline-date">
+Médio Império
+</div>
+<!-- Identifica o período. -->
+
+<p>
+Período de reunificação política, reorganização administrativa e expansão das atividades econômicas e culturais.
+</p>
+<!-- Explica o período. -->
+
+</div>
+<!-- Finaliza o período. -->
+
+<div class="timeline-item">
+<!-- Sexto período. -->
+
+<div class="timeline-date">
+Segundo Período Intermediário
+</div>
+<!-- Identifica o período. -->
+
+<p>
+Fase marcada pela presença e pelo poder de grupos estrangeiros no norte do Egito, incluindo os hicsos.
+</p>
+<!-- Explica o período. -->
+
+</div>
+<!-- Finaliza o período. -->
+
+<div class="timeline-item">
+<!-- Sétimo período. -->
+
+<div class="timeline-date">
+Novo Império
+</div>
+<!-- Identifica o período. -->
+
+<p>
+Fase de expansão territorial e grande projeção política do Egito no Mediterrâneo Oriental e no Oriente Próximo.
+</p>
+<!-- Explica o período. -->
+
+</div>
+<!-- Finaliza o período. -->
+
+<div class="timeline-item">
+<!-- Oitavo período. -->
+
+<div class="timeline-date">
+Períodos posteriores
+</div>
+<!-- Identifica a etapa posterior. -->
+
+<p>
+O Egito passou por diferentes dominações e dinastias, incluindo persas, macedônios e, posteriormente, o domínio romano.
+</p>
+<!-- Explica a continuidade histórica. -->
+
+</div>
+<!-- Finaliza o período. -->
+
+</div>
+<!-- Finaliza a linha do tempo. -->
+
+</section>
+<!-- Finaliza a periodização. -->
+
+<section id="desenvolvimento" class="card">
+<!-- Inicia a segunda parte da trilogia. -->
+
+<h2>II — O DESENVOLVIMENTO: ESTADO, SOCIEDADE E CULTURA</h2>
+<!-- Apresenta a segunda etapa. -->
+
+<h3>O faraó e o poder</h3>
+<!-- Apresenta o poder faraônico. -->
+
+<p>
+O faraó ocupava posição central no sistema político egípcio. Sua autoridade estava relacionada à administração do Estado e também à esfera religiosa.
+</p>
+<!-- Explica a função do faraó. -->
+
+<p>
+A ideia de ordem era fundamental para a visão de mundo egípcia. O conceito de maat estava associado à ordem, equilíbrio e justiça, funcionando como importante referência para a organização da sociedade e para a legitimidade do poder.
+</p>
+<!-- Explica o conceito de maat. -->
+
+<h3>A sociedade egípcia</h3>
+<!-- Apresenta a estrutura social. -->
+
+<p>
+A sociedade egípcia apresentava diferentes níveis de poder e riqueza. No topo encontravam-se o faraó e a elite ligada ao governo e à religião. Abaixo estavam funcionários, sacerdotes, militares, escribas, artesãos, comerciantes e camponeses, entre outros grupos.
+</p>
+<!-- Explica a hierarquia social. -->
+
+<p>
+A estrutura social não deve ser imaginada como uma pirâmide rígida e absolutamente imóvel. Existiam possibilidades de mobilidade e diferentes situações de dependência e trabalho ao longo dos períodos.
+</p>
+<!-- Evita uma simplificação da sociedade. -->
+
+<h3>O trabalho</h3>
+<!-- Apresenta o trabalho. -->
+
+<p>
+A agricultura era fundamental para a economia egípcia. Camponeses produziam alimentos e participavam de obrigações econômicas e de trabalhos organizados pelo Estado ou por instituições.
+</p>
+<!-- Explica a agricultura. -->
+
+<p>
+Grandes obras exigiam planejamento, recursos e trabalhadores. A construção de monumentos não pode ser explicada simplesmente pela ideia de que todas as pessoas envolvidas eram escravizadas.
+</p>
+<!-- Corrige uma simplificação comum sobre as pirâmides. -->
+
+<div class="alerta">
+<!-- Cria uma caixa de atenção. -->
+
+<strong>Para lembrar:</strong>
+<!-- Identifica o alerta. -->
+
+Pirâmides não são sinônimo de “trabalho escravo em massa”. A organização do trabalho egípcio envolvia camponeses, trabalhadores especializados e diferentes formas de serviço e obrigação.
+<!-- Apresenta a correção histórica. -->
+
+</div>
+<!-- Finaliza a caixa. -->
+
+<h3>A religião egípcia</h3>
+<!-- Apresenta a religião. -->
+
+<p>
+A religião ocupava posição central na sociedade egípcia. Os egípcios cultuavam diversas divindades associadas a aspectos da natureza, da sociedade e da vida após a morte.
+</p>
+<!-- Explica o politeísmo egípcio. -->
+
+<p>
+Entre as divindades importantes estavam Rá, Osíris, Ísis, Hórus e Anúbis. Os cultos e representações religiosas variaram ao longo dos séculos e das diferentes regiões.
+</p>
+<!-- Apresenta exemplos de divindades. -->
+
+<h3>A vida após a morte</h3>
+<!-- Apresenta as crenças funerárias. -->
+
+<p>
+As crenças relacionadas à morte e à vida após a morte influenciaram práticas funerárias, arquitetura, arte e produção de textos religiosos.
+</p>
+<!-- Explica a importância da vida após a morte. -->
+
+<p>
+A mumificação estava relacionada às concepções egípcias sobre a preservação do corpo e a continuidade da existência. O tratamento funerário variava conforme o período, a posição social e os recursos disponíveis.
+</p>
+<!-- Explica a mumificação. -->
+
+<h3>Escrita e conhecimento</h3>
+<!-- Apresenta a escrita. -->
+
+<p>
+Os egípcios desenvolveram diferentes formas de escrita, entre elas os hieróglifos. A escrita foi utilizada em monumentos, documentos administrativos, textos religiosos e outros registros.
+</p>
+<!-- Explica os hieróglifos. -->
+
+<p>
+Escribas ocupavam posição importante porque dominavam técnicas de escrita e cálculo necessárias à administração. O conhecimento matemático, astronômico e médico também se desenvolveu em diferentes contextos da sociedade egípcia.
+</p>
+<!-- Explica o papel dos escribas e dos conhecimentos. -->
+
+<h3>Arquitetura e monumentos</h3>
+<!-- Apresenta a arquitetura. -->
+
+<p>
+As pirâmides são alguns dos monumentos mais conhecidos do Egito Antigo. Elas estavam associadas às práticas funerárias de governantes e demonstravam a capacidade de organização de recursos e trabalho do Estado.
+</p>
+<!-- Explica a função das pirâmides. -->
+
+<p>
+As grandes construções egípcias também possuíam dimensão política e simbólica. Monumentos expressavam autoridade, religião, memória e continuidade do poder.
+</p>
+<!-- Explica o significado político dos monumentos. -->
+
+</section>
+<!-- Finaliza o desenvolvimento. -->
+
+<section class="card">
+<!-- Inicia a seção do Novo Império. -->
+
+<h2>O NOVO IMPÉRIO E A EXPANSÃO EGÍPCIA</h2>
+<!-- Apresenta o Novo Império. -->
+
+<p>
+Durante o Novo Império, o Egito tornou-se uma potência regional. Governantes ampliaram sua influência sobre territórios e povos do Oriente Próximo e da Núbia.
+</p>
+<!-- Explica a expansão egípcia. -->
+
+<p>
+Um dos episódios mais conhecidos do período ocorreu durante o reinado de Ramsés II, associado ao conflito com os hititas e à Batalha de Kadesh.
+</p>
+<!-- Apresenta Ramsés II e Kadesh. -->
+
+<p>
+A experiência imperial demonstrava que o Egito não era uma sociedade isolada. O país mantinha relações diplomáticas, comerciais e militares com diferentes povos.
+</p>
+<!-- Explica a integração internacional do Egito antigo. -->
+
+<h3>Akhenaton e a reforma religiosa</h3>
+<!-- Apresenta Akhenaton. -->
+
+<p>
+Durante o reinado de Akhenaton ocorreu uma importante transformação religiosa associada ao culto privilegiado ao deus Aton. O faraó também transferiu a capital para uma nova cidade, Akhetaton.
+</p>
+<!-- Explica a reforma de Akhenaton. -->
+
+<p>
+Após sua morte, muitas das mudanças foram revertidas e antigas práticas religiosas recuperaram espaço. O episódio demonstra que a religião egípcia também passou por disputas e transformações.
+</p>
+<!-- Explica as consequências da reforma. -->
+
+</section>
+<!-- Finaliza o Novo Império. -->
+
+<section class="card">
+<!-- Inicia a seção de conceitos. -->
+
+<h2>Conceitos fundamentais</h2>
+<!-- Apresenta os conceitos. -->
+
+<div>
+<!-- Inicia os marcadores. -->
+
+<span class="conceito">Nilo</span>
+<!-- Conceito geográfico. -->
+
+<span class="conceito">Faraó</span>
+<!-- Conceito político. -->
+
+<span class="conceito">Maat</span>
+<!-- Conceito religioso e político. -->
+
+<span class="conceito">Nomos</span>
+<!-- Conceito administrativo. -->
+
+<span class="conceito">Hieróglifos</span>
+<!-- Conceito relacionado à escrita. -->
+
+<span class="conceito">Mumificação</span>
+<!-- Conceito funerário. -->
+
+<span class="conceito">Politeísmo</span>
+<!-- Conceito religioso. -->
+
+<span class="conceito">Escriba</span>
+<!-- Conceito social. -->
+
+<span class="conceito">Dinastia</span>
+<!-- Conceito político. -->
+
+<span class="conceito">Império</span>
+<!-- Conceito político-territorial. -->
+
+</div>
+<!-- Finaliza os conceitos. -->
+
+</section>
+<!-- Finaliza a seção. -->
+
+<section class="card">
+<!-- Inicia a seção de causa e consequência. -->
+
+<h2>Relações de causa e consequência</h2>
+<!-- Apresenta o título. -->
+
+<div class="grid">
+<!-- Inicia a grade. -->
+
+<div class="mini-card">
+<!-- Cria o primeiro cartão. -->
+
+<strong>Nilo</strong>
+<!-- Apresenta o elemento. -->
+
+<p>Água e áreas férteis → agricultura → produção de alimentos → concentração populacional.</p>
+<!-- Explica a relação. -->
+
+</div>
+<!-- Finaliza o cartão. -->
+
+<div class="mini-card">
+<!-- Cria o segundo cartão. -->
+
+<strong>Agricultura</strong>
+<!-- Apresenta o elemento. -->
+
+<p>Produção agrícola → excedentes → tributação e armazenamento → administração estatal.</p>
+<!-- Explica a relação. -->
+
+</div>
+<!-- Finaliza o cartão. -->
+
+<div class="mini-card">
+<!-- Cria o terceiro cartão. -->
+
+<strong>Centralização</strong>
+<!-- Apresenta o elemento. -->
+
+<p>Centralização política → administração territorial → grandes projetos → fortalecimento do Estado.</p>
+<!-- Explica a relação. -->
+
+</div>
+<!-- Finaliza o cartão. -->
+
+<div class="mini-card">
+<!-- Cria o quarto cartão. -->
+
+<strong>Religião</strong>
+<!-- Apresenta o elemento. -->
+
+<p>Religião → concepções sobre ordem e morte → legitimidade do poder → práticas funerárias.</p>
+<!-- Explica a relação. -->
+
+</div>
+<!-- Finaliza o cartão. -->
+
+</div>
+<!-- Finaliza a grade. -->
+
+</section>
+<!-- Finaliza a seção. -->
+
+<section class="card">
+<!-- Inicia a seção da lousa. -->
+
+<h2>O que colocar na lousa</h2>
+<!-- Apresenta o título. -->
+
+<div class="lousa">
+<!-- Cria o quadro visual da lousa. -->
+
+<h3>EGITO ANTIGO</h3>
+<!-- Título da lousa. -->
+
+<p><strong>1.</strong> Nordeste da África</p>
+<!-- Primeiro ponto. -->
+
+<p><strong>2.</strong> Rio Nilo</p>
+<!-- Segundo ponto. -->
+
+<p><strong>3.</strong> Agricultura e excedentes</p>
+<!-- Terceiro ponto. -->
+
+<p><strong>4.</strong> Unificação do Alto e Baixo Egito</p>
+<!-- Quarto ponto. -->
+
+<p><strong>5.</strong> Faraó e Estado</p>
+<!-- Quinto ponto. -->
+
+<p><strong>6.</strong> Sociedade hierarquizada</p>
+<!-- Sexto ponto. -->
+
+<p><strong>7.</strong> Religião politeísta</p>
+<!-- Sétimo ponto. -->
+
+<p><strong>8.</strong> Maat = ordem e equilíbrio</p>
+<!-- Oitavo ponto. -->
+
+<p><strong>9.</strong> Hieróglifos e escribas</p>
+<!-- Nono ponto. -->
+
+<p><strong>10.</strong> Mumificação e vida após a morte</p>
+<!-- Décimo ponto. -->
+
+<p><strong>11.</strong> Pirâmides e monumentos</p>
+<!-- Décimo primeiro ponto. -->
+
+<p><strong>12.</strong> Novo Império = expansão</p>
+<!-- Décimo segundo ponto. -->
+
+</div>
+<!-- Finaliza a lousa. -->
+
+</section>
+<!-- Finaliza a seção. -->
+
+<section id="hoje" class="card">
+<!-- Inicia a terceira parte da trilogia. -->
+
+<h2>III — O LEGADO E O MUNDO ATUAL</h2>
+<!-- Apresenta a terceira etapa. -->
+
+<h3>O Egito e a memória histórica</h3>
+<!-- Apresenta o tema do legado. -->
+
+<p>
+O Egito Antigo continua presente na memória cultural mundial por meio de monumentos, objetos arqueológicos, textos, representações artísticas e pesquisas científicas.
+</p>
+<!-- Explica o legado cultural. -->
+
+<p>
+Pirâmides, templos, tumbas, inscrições e objetos encontrados por arqueólogos permitem reconstruir aspectos da vida egípcia. Entretanto, nenhuma fonte isolada apresenta toda a realidade de uma sociedade tão extensa e complexa.
+</p>
+<!-- Explica o trabalho com fontes históricas. -->
+
+<h3>Arqueologia e preservação</h3>
+<!-- Apresenta a arqueologia. -->
+
+<p>
+O conhecimento atual sobre o Egito depende do trabalho de arqueólogos, historiadores, linguistas, egiptólogos, antropólogos e outros especialistas.
+</p>
+<!-- Explica a interdisciplinaridade. -->
+
+<p>
+A preservação do patrimônio egípcio também envolve debates sobre conservação, turismo, pesquisa científica e circulação internacional de objetos arqueológicos.
+</p>
+<!-- Apresenta questões contemporâneas relacionadas ao patrimônio. -->
+
+<h3>O Egito contemporâneo</h3>
+<!-- Apresenta a conexão com o presente. -->
+
+<p>
+O Egito atual é uma república moderna localizada no nordeste da África. Ele não deve ser confundido politicamente com o Estado faraônico da Antiguidade.
+</p>
+<!-- Diferencia o Egito atual do antigo. -->
+
+<p>
+A permanência do nome e de alguns elementos culturais não significa continuidade política direta. Entre o mundo dos faraós e o Egito contemporâneo existem milhares de anos de mudanças históricas.
+</p>
+<!-- Explica continuidade e transformação. -->
+
+<div class="destaque">
+<!-- Cria uma caixa de síntese. -->
+
+<strong>Questão histórica fundamental:</strong>
+<!-- Apresenta a questão. -->
+
+Estudar o Egito Antigo significa compreender uma sociedade histórica específica, sem transformá-la em uma explicação simplificada para o Egito contemporâneo.
+<!-- Apresenta a ideia central. -->
+
+</div>
+<!-- Finaliza o destaque. -->
+
+</section>
+<!-- Finaliza a terceira parte. -->
+
+<section class="card">
+<!-- Inicia a seção de conexão com o Brasil. -->
+
+<h2>Egito Antigo e História do Brasil</h2>
+<!-- Apresenta o título. -->
+
+<p>
+O Egito Antigo não possui uma relação direta de continuidade política com a formação do Brasil. A conexão pedagógica pode ser estabelecida principalmente pela compreensão da diversidade das sociedades africanas e pela valorização da África como espaço fundamental da história humana.
+</p>
+<!-- Explica a relação com o Brasil. -->
+
+<p>
+Essa abordagem também permite superar uma visão da História Antiga excessivamente centrada na Europa e apresentar aos estudantes sociedades africanas em sua própria complexidade histórica.
+</p>
+<!-- Apresenta a importância pedagógica. -->
+
+</section>
+<!-- Finaliza a conexão com o Brasil. -->
+
+<section class="card">
+<!-- Inicia a seção BNCC. -->
+
+<h2>BNCC — Ensino Fundamental II</h2>
+<!-- Apresenta o título da BNCC. -->
+
+<p>
+Para o estudo do Egito Antigo no 6º ano, a habilidade <strong>EF06HI07</strong> da BNCC é especialmente pertinente, pois propõe identificar aspectos e formas de registro das sociedades antigas na África, no Oriente Médio e nas Américas, distinguindo significados presentes na cultura material e na tradição oral.
+</p>
+<!-- Relaciona o Egito à habilidade EF06HI07. -->
+
+<div class="destaque">
+<!-- Cria o destaque pedagógico. -->
+
+<strong>Aplicação em aula:</strong>
+<!-- Apresenta a orientação. -->
+
+Use pinturas, inscrições, monumentos, objetos funerários, mapas e outros vestígios como fontes históricas. O objetivo não é apenas “ver imagens do Egito”, mas perguntar quem produziu o registro, em qual contexto, para qual finalidade e o que ele permite ou não conhecer sobre aquela sociedade.
+<!-- Orienta o uso de fontes históricas. -->
+
+</div>
+<!-- Finaliza o destaque. -->
+
+<p>
+A BNCC também orienta que o estudo das sociedades antigas seja realizado de forma crítica, considerando diferentes formas de registro e evitando uma visão homogênea do passado.
+</p>
+<!-- Reforça a abordagem histórica. -->
+
+</section>
+<!-- Finaliza a seção BNCC. -->
+
+<section class="card">
+<!-- Inicia a síntese para o professor. -->
+
+<h2>O que o professor precisa guardar</h2>
+<!-- Apresenta o título. -->
+
+<ol>
+<!-- Inicia a lista. -->
+
+<li>O Egito Antigo desenvolveu-se principalmente no vale e no delta do Nilo.</li>
+<!-- Primeiro ponto. -->
+
+<li>A agricultura foi fundamental para a organização econômica e social.</li>
+<!-- Segundo ponto. -->
+
+<li>A formação do Estado egípcio foi resultado de processos de centralização política.</li>
+<!-- Terceiro ponto. -->
+
+<li>O faraó exercia funções políticas e religiosas fundamentais.</li>
+<!-- Quarto ponto. -->
+
+<li>A sociedade era hierarquizada, mas não deve ser apresentada como uma estrutura absolutamente imóvel.</li>
+<!-- Quinto ponto. -->
+
+<li>A religião estava profundamente integrada à vida social e política.</li>
+<!-- Sexto ponto. -->
+
+<li>Os hieróglifos constituem uma das formas de escrita utilizadas pelos egípcios.</li>
+<!-- Sétimo ponto. -->
+
+<li>A mumificação estava relacionada às concepções egípcias sobre a morte e a continuidade da existência.</li>
+<!-- Oitavo ponto. -->
+
+<li>As pirâmides estavam relacionadas principalmente às práticas funerárias e à representação do poder.</li>
+<!-- Nono ponto. -->
+
+<li>O Egito manteve relações diplomáticas, econômicas e militares com outros povos.</li>
+<!-- Décimo ponto. -->
+
+<li>A história egípcia passou por períodos de centralização e descentralização.</li>
+<!-- Décimo primeiro ponto. -->
+
+<li>O Egito contemporâneo é um Estado moderno e não deve ser confundido com o Estado faraônico.</li>
+<!-- Décimo segundo ponto. -->
+
+</ol>
+<!-- Finaliza a lista. -->
+
+</section>
+<!-- Finaliza a síntese. -->
+
+<section id="prova" class="card">
+<!-- Inicia a seção de questões. -->
+
+<h2>Questões — estilo ENEM</h2>
+<!-- Apresenta o título das questões. -->
+
+<p>
+As questões são autorais e foram elaboradas para trabalhar interpretação, contextualização e relações históricas.
+</p>
+<!-- Explica a proposta das questões. -->
+
+<div class="questao">
+<!-- Inicia a primeira questão. -->
+
+<h3>Questão 1</h3>
+<!-- Identifica a primeira questão. -->
+
+<p>
+O desenvolvimento da sociedade egípcia esteve profundamente relacionado ao ambiente do vale do Nilo. A disponibilidade de água e de terras férteis favoreceu a agricultura, mas a construção de uma sociedade complexa também dependeu da organização do trabalho, da administração dos recursos e da formação de instituições políticas.
+</p>
+<!-- Apresenta o texto-base. -->
+
+<p>
+A partir dessas características, é correto afirmar que a formação do Estado egípcio:
+</p>
+<!-- Apresenta o comando da questão. -->
+
+<div class="alternativa">
+<strong>A)</strong> ocorreu exclusivamente em razão das condições naturais do deserto.
+</div>
+<!-- Alternativa A. -->
+
+<div class="alternativa">
+<strong>B)</strong> resultou de uma combinação entre condições ambientais, produção agrícola, organização social e centralização política.
+</div>
+<!-- Alternativa B. -->
+
+<div class="alternativa">
+<strong>C)</strong> eliminou imediatamente as diferenças sociais entre agricultores e grupos dirigentes.
+</div>
+<!-- Alternativa C. -->
+
+<div class="alternativa">
+<strong>D)</strong> impediu o desenvolvimento de relações comerciais com outros povos.
+</div>
+<!-- Alternativa D. -->
+
+<div class="alternativa">
+<strong>E)</strong> aconteceu somente depois da conquista romana do Egito.
+</div>
+<!-- Alternativa E. -->
+
+<button class="btn-gabarito" onclick="mostrarGabarito('gabarito1')">
+<!-- Cria o botão do primeiro gabarito. -->
+
+Mostrar gabarito
+<!-- Texto do botão. -->
+
+</button>
+<!-- Finaliza o botão. -->
+
+<div id="gabarito1" class="gabarito">
+<!-- Cria a área escondida do gabarito. -->
+
+<strong>Gabarito: B.</strong>
+<!-- Mostra a alternativa correta. -->
+
+A formação do Estado egípcio envolveu fatores ambientais, econômicos, sociais e políticos. O Nilo foi fundamental, mas a civilização não pode ser explicada exclusivamente pela natureza.
+<!-- Explica a resposta. -->
+
+</div>
+<!-- Finaliza o gabarito. -->
+
+</div>
+<!-- Finaliza a primeira questão. -->
+
+<div class="questao">
+<!-- Inicia a segunda questão. -->
+
+<h3>Questão 2</h3>
+<!-- Identifica a segunda questão. -->
+
+<p>
+Monumentos, inscrições, pinturas, objetos funerários e documentos administrativos constituem importantes fontes para o estudo do Egito Antigo. Entretanto, cada fonte apresenta apenas determinados aspectos da sociedade em que foi produzida.
+</p>
+<!-- Apresenta o texto-base. -->
+
+<p>
+Nesse sentido, o trabalho do historiador consiste principalmente em:
+</p>
+<!-- Apresenta o comando. -->
+
+<div class="alternativa">
+<strong>A)</strong> aceitar qualquer representação antiga como descrição completa da realidade.
+</div>
+<!-- Alternativa A. -->
+
+<div class="alternativa">
+<strong>B)</strong> utilizar as fontes criticamente, considerando seu contexto de produção, finalidade e limites.
+</div>
+<!-- Alternativa B. -->
+
+<div class="alternativa">
+<strong>C)</strong> utilizar somente documentos escritos, pois objetos não podem ser fontes históricas.
+</div>
+<!-- Alternativa C. -->
+
+<div class="alternativa">
+<strong>D)</strong> considerar que monumentos religiosos não possuem informações sobre a sociedade.
+</div>
+<!-- Alternativa D. -->
+
+<div class="alternativa">
+<strong>E)</strong> abandonar fontes arqueológicas quando não apresentam nomes de governantes.
+</div>
+<!-- Alternativa E. -->
+
+<button class="btn-gabarito" onclick="mostrarGabarito('gabarito2')">
+<!-- Cria o botão do segundo gabarito. -->
+
+Mostrar gabarito
+<!-- Texto do botão. -->
+
+</button>
+<!-- Finaliza o botão. -->
+
+<div id="gabarito2" class="gabarito">
+<!-- Cria a área escondida do segundo gabarito. -->
+
+<strong>Gabarito: B.</strong>
+<!-- Mostra a alternativa correta. -->
+
+Fontes históricas precisam ser analisadas criticamente. Seu contexto, autoria, finalidade, conservação e limitações ajudam o historiador a construir interpretações sobre o passado.
+<!-- Explica a resposta. -->
+
+</div>
+<!-- Finaliza o gabarito. -->
+
+</div>
+<!-- Finaliza a segunda questão. -->
+
+</section>
+<!-- Finaliza a seção de questões. -->
+
+<section class="card">
+<!-- Inicia a revisão final. -->
+
+<h2>Revisão em 60 segundos</h2>
+<!-- Apresenta o título. -->
+
+<p>
+<strong>Egito Antigo</strong> → Nordeste da África → Nilo → agricultura → excedentes → centralização política → faraó → hierarquia social → religião → escrita → monumentos → expansão → contatos com outros povos → legado histórico.
+</p>
+<!-- Apresenta a síntese do capítulo. -->
+
+<div class="destaque">
+<!-- Cria o destaque final. -->
+
+<strong>Pergunta-chave para o aluno:</strong>
+<!-- Apresenta a pergunta. -->
+
+Por que o Egito conseguiu construir uma sociedade tão complexa e duradoura no vale do Nilo?
+<!-- Apresenta a pergunta para revisão. -->
+
+</div>
+<!-- Finaliza o destaque. -->
+
+</section>
+<!-- Finaliza a revisão. -->
+
+<div class="acoes">
+<!-- Inicia a área dos botões finais. -->
+
+<button class="btn btn-principal" onclick="voltarPagina()">
+← Voltar para a página anterior
+</button>
+<!-- Botão para retornar à página anterior. -->
+
+<button class="btn btn-principal" onclick="irPara('topo')">
+↑ Voltar ao topo
+</button>
+<!-- Botão para voltar ao topo. -->
+
+</div>
+<!-- Finaliza a área de ações. -->
+
+</main>
+<!-- Finaliza o conteúdo principal. -->
+
+<footer>
+<!-- Inicia o rodapé. -->
+
+<p>
+Curso de História Geral
+</p>
+<!-- Identifica o curso. -->
+
+<p class="assinatura">
+Professor Marcelo Oliveira
+</p>
+<!-- Apresenta a assinatura. -->
+
+<p>
+Fundamental II • Ensino Médio • ENEM • Vestibular • Concursos
+</p>
+<!-- Apresenta o público do curso. -->
+
+</footer>
+<!-- Finaliza o rodapé. -->
+
+<script>
+/* Inicia o JavaScript. */
+
+/* Cria a função responsável pela navegação interna. */
+function irPara(id) {
+
+    /* Localiza o elemento pelo seu ID. */
+    const elemento = document.getElementById(id);
+
+    /* Verifica se o elemento foi encontrado. */
+    if (elemento) {
+
+        /* Faz a rolagem suave até o elemento. */
+        elemento.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+        });
+    }
+}
+
+/* Cria a função responsável por mostrar o gabarito. */
+function mostrarGabarito(id) {
+
+    /* Localiza o gabarito pelo ID recebido. */
+    const gabarito = document.getElementById(id);
+
+    /* Verifica se o gabarito está escondido. */
+    if (gabarito.style.display === "none" || gabarito.style.display === "") {
+
+        /* Mostra o gabarito. */
+        gabarito.style.display = "block";
+
+    } else {
+
+        /* Esconde novamente o gabarito. */
+        gabarito.style.display = "none";
+    }
+}
+
+/* Cria a função para retornar à página anterior. */
+function voltarPagina() {
+
+    /* Verifica se existe uma página anterior no histórico. */
+    if (window.history.length > 1) {
+
+        /* Volta para a página anterior. */
+        window.history.back();
+
+    } else {
+
+        /* Caso não exista histórico, retorna ao topo. */
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    }
+}
+
+/* Finaliza o JavaScript. */
+
+</script>
+<!-- Finaliza o bloco JavaScript. -->
+ <script>
+  const paginaAnterior = "01 - Antiguidade oriental.html";
+  const paginaProxima = "03 - mesopotamia.html";
+</script>
+<script src="navegacao.js"></script>
+</body>
+
+</body>
+<!-- Finaliza o corpo da página. -->
+
+</html>
+<!-- Finaliza o documento HTML. -->
+```

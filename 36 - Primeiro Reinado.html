@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1.36 — Primeiro Reinado | Professor Marcelo Oliveira</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { font-family: Arial, Helvetica, sans-serif; background: #f4f7fb; color: #263238; line-height: 1.7; }
+        .container { width: 92%; max-width: 1200px; margin: auto; }
+        header { background: linear-gradient(135deg, #172554, #2563eb); color: white; padding: 50px 20px; text-align: center; box-shadow: 0 5px 20px rgba(0, 0, 0, 0.18); }
+        .eyebrow { font-size: 0.95rem; letter-spacing: 2px; text-transform: uppercase; opacity: 0.9; margin-bottom: 12px; }
+        header h1 { font-size: clamp(2rem, 5vw, 3.5rem); margin-bottom: 15px; }
+        header p { max-width: 850px; margin: auto; font-size: 1.1rem; }
+        .navegacao { display: flex; justify-content: space-between; gap: 15px; margin: 25px auto; flex-wrap: wrap; }
+        .btn { display: inline-block; padding: 13px 20px; border-radius: 10px; text-decoration: none; font-weight: bold; transition: 0.3s; }
+        .btn-voltar { background: #475569; color: white; }
+        .btn-proximo { background: #2563eb; color: white; }
+        .btn:hover { transform: translateY(-2px); opacity: 0.9; }
+        .apresentacao { background: white; margin: 30px auto; padding: 30px; border-radius: 18px; border-left: 7px solid #2563eb; box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08); }
+        .secao { margin: 35px auto; padding: 30px; border-radius: 18px; background: white; box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07); }
+        .comeco { border-top: 8px solid #2563eb; }
+        .desenvolvimento { border-top: 8px solid #16a34a; }
+        .legado { border-top: 8px solid #7c3aed; }
+        .consequencias { border-top: 8px solid #eab308; }
+        .enem { border-top: 8px solid #0891b2; }
+        .lousa { border-top: 8px solid #111827; }
+        .secao h2 { margin-bottom: 20px; color: #172554; font-size: 1.8rem; }
+        .secao h3 { margin-top: 25px; margin-bottom: 10px; color: #334155; }
+        strong { color: #172554; }
+        ul, ol { margin: 15px 0 15px 25px; }
+        li { margin-bottom: 8px; }
+        .timeline { border-left: 4px solid #2563eb; padding-left: 25px; margin-top: 25px; }
+        .evento { margin-bottom: 25px; position: relative; }
+        .evento::before { content: ""; position: absolute; left: -36px; top: 7px; width: 14px; height: 14px; background: #2563eb; border-radius: 50%; }
+        .ano { font-weight: bold; color: #2563eb; }
+        .tabela-container { overflow-x: auto; margin-top: 20px; }
+        table { width: 100%; border-collapse: collapse; min-width: 650px; }
+        th, td { padding: 14px; border: 1px solid #cbd5e1; text-align: left; }
+        th { background: #172554; color: white; }
+        tr:nth-child(even) { background: #f8fafc; }
+        .conceitos { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 15px; margin-top: 20px; }
+        .conceito { background: #eff6ff; border: 1px solid #bfdbfe; padding: 18px; border-radius: 12px; }
+        .questao { background: #f8fafc; padding: 25px; border-radius: 14px; margin-top: 20px; border-left: 5px solid #0891b2; }
+        .btn-gabarito { margin-top: 15px; background: #0891b2; color: white; border: none; padding: 12px 18px; border-radius: 8px; cursor: pointer; font-weight: bold; }
+        .gabarito { display: none; margin-top: 15px; padding: 15px; background: #ecfeff; border-radius: 10px; border: 1px solid #67e8f9; }
+        .resumo { background: #172554; color: white; padding: 30px; border-radius: 18px; margin: 35px auto; }
+        .resumo strong { color: white; }
+        footer { background: #0f172a; color: white; text-align: center; padding: 35px 20px; margin-top: 50px; }
+        .assinatura { font-size: 1.2rem; font-weight: bold; margin-top: 10px; }
+        #topo { position: fixed; bottom: 20px; right: 20px; width: 48px; height: 48px; border: none; border-radius: 50%; background: #2563eb; color: white; cursor: pointer; font-size: 20px; display: none; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25); }
+        @media (max-width: 700px) { .secao, .apresentacao { padding: 20px; } .navegacao { flex-direction: column; } .btn { text-align: center; } }
+    </style>
+</head>
+
+<body id="inicio">
+
+    <header>
+        <div class="eyebrow">Curso de História Geral</div>
+        <h1>1.36 — Primeiro Reinado</h1>
+        <p>O governo de Dom Pedro I entre a Independência e a abdicação, em meio a conflitos políticos e regionais.</p>
+    </header>
+
+    <main class="container">
+
+        <nav class="navegacao">
+            <a class="btn btn-voltar" href="35 - Processo-de-Independencia.html">← Processo de Independência</a>
+            <a class="btn btn-proximo" href="37 - Período Regencial.html">Período Regencial →</a>
+        </nav>
+
+        <section class="apresentacao">
+            <p>Por que estudar o Primeiro Reinado? Porque ele consolidou a independência do Brasil, mas revelou tensões profundas entre o poder central e as províncias, entre o imperador e a elite política.</p>
+        </section>
+
+        <section class="secao comeco">
+            <h2>🔵 I — O COMEÇO: DA INDEPENDÊNCIA À CONSTITUIÇÃO</h2>
+
+            <h3>1. A Independência (1822)</h3>
+            <p>Em 7 de setembro de 1822, às margens do Ipiranga, Dom Pedro proclamou a Independência do Brasil. O país se organizou como um Império, mantendo a monarquia como forma de governo e Dom Pedro I como seu primeiro imperador.</p>
+
+            <h3>2. A Constituição de 1824</h3>
+            <p>Após dissolver a Assembleia Constituinte em 1823, Dom Pedro I impôs, em <strong>1824</strong>, a primeira Constituição do Brasil. Ela era do tipo <strong>outorgada</strong> (imposta pelo governante, sem participação popular) e estabelecia o <strong>Poder Moderador</strong>, que dava ao imperador autoridade sobre os demais poderes — Legislativo, Executivo e Judiciário.</p>
+        </section>
+
+        <section class="secao desenvolvimento">
+            <h2>🟢 II — O DESENVOLVIMENTO: CONFLITOS E GUERRA</h2>
+
+            <h3>3. A Confederação do Equador (1824)</h3>
+            <p>Insatisfeitos com a centralização do poder e a outorga da Constituição, províncias do Nordeste (como Pernambuco, Paraíba e Ceará) proclamaram um movimento republicano e federalista, que ficou conhecido como <strong>Confederação do Equador</strong>. Foi duramente reprimido pelo governo imperial.</p>
+
+            <h3>4. A Guerra da Cisplatina (1825–1828)</h3>
+            <p>O Brasil entrou em guerra contra as Províncias Unidas do Rio da Prata (atual Argentina) pelo controle da Banda Oriental (atual Uruguai). A guerra foi longa e custosa, contribuindo para a crise econômica e a impopularidade de Dom Pedro I.</p>
+
+            <h3>5. O desgaste do governo</h3>
+            <p>A dissolução da Assembleia, o assassinato do jornalista Libero Badaró, a crise financeira e as derrotas externas minaram a base política de Dom Pedro I. Pressionado, ele abdicou em 7 de abril de 1831 em favor de seu filho, Pedro de Alcântara, iniciando o Período Regencial.</p>
+        </section>
+
+        <section class="secao comeco">
+            <h2>📅 LINHA DO TEMPO</h2>
+            <div class="timeline">
+                <div class="evento"><span class="ano">1822</span> — Dom Pedro I proclama a Independência.</div>
+                <div class="evento"><span class="ano">1823</span> — Dissolução da Assembleia Constituinte.</div>
+                <div class="evento"><span class="ano">1824</span> — Outorga da Constituição e eclosão da Confederação do Equador.</div>
+                <div class="evento"><span class="ano">1825–1828</span> — Guerra da Cisplatina.</div>
+                <div class="evento"><span class="ano">1831</span> — Abdicação de Dom Pedro I e início das Regências.</div>
+            </div>
+        </section>
+
+        <section class="secao consequencias">
+            <h2>🟡 Consequências</h2>
+            <ul>
+                <li>Consolidação da independência brasileira.</li>
+                <li>Centralização política garantida pelo Poder Moderador.</li>
+                <li>Revoltas regionais como a Confederação do Equador.</li>
+                <li>Crise econômica agravada pela Guerra da Cisplatina.</li>
+                <li>Abdicação de Dom Pedro I e início do Período Regencial.</li>
+            </ul>
+        </section>
+
+        <section class="secao legado">
+            <h2>🟣 III — O LEGADO E O MUNDO ATUAL</h2>
+            <p>O Primeiro Reinado mostrou as dificuldades de governar um país continental e diverso, com profundas diferenças entre suas regiões. Muitos dos debates políticos da época — centralização versus federalismo, participação popular, equilíbrio entre os poderes — continuam presentes na história política do Brasil.</p>
+        </section>
+
+        <section class="secao">
+            <h2>📊 RESUMO: O PRIMEIRO REINADO</h2>
+            <div class="tabela-container">
+                <table>
+                    <thead>
+                        <tr><th>Aspecto</th><th>Característica</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Período</td><td>1822–1831</td></tr>
+                        <tr><td>Imperador</td><td>Dom Pedro I</td></tr>
+                        <tr><td>Constituição</td><td>1824 — outorgada, com Poder Moderador</td></tr>
+                        <tr><td>Principal revolta</td><td>Confederação do Equador (1824)</td></tr>
+                        <tr><td>Guerra externa</td><td>Guerra da Cisplatina (1825–1828)</td></tr>
+                        <tr><td>Fim</td><td>Abdicação de D. Pedro I (1831)</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="secao lousa">
+            <h2>📋 BNCC — COMO TRABALHAR ESTE TEMA</h2>
+            <p>A BNCC propõe abordar o Primeiro Reinado dentro de <strong>História do Brasil</strong>, enfocando o processo de Independência e a organização política do jovem Estado imperial.</p>
+            <ul>
+                <li><strong>Habilidade (EF08HI05):</strong> Analisar e explicar as causas e os impactos da Independência do Brasil e a formação do Estado imperial.</li>
+                <li><strong>Habilidade (EF08HI07):</strong> Descrever a organização política do Império do Brasil e discutir os conflitos regionais do período.</li>
+                <li><strong>Objetivo:</strong> Compreender o papel do Poder Moderador e os diferentes projetos políticos em disputa após a Independência.</li>
+            </ul>
+            <h3>💡 Sugestão de aula</h3>
+            <ul>
+                <li>Análise da Constituição de 1824 comparando-a com a atual.</li>
+                <li>Mapa interativo das províncias que aderiram à Confederação do Equador.</li>
+                <li>Debate: "Dom Pedro I foi um defensor da Independência ou de um governo centralizador?"</li>
+            </ul>
+        </section>
+
+        <section class="secao">
+            <h2>📚 CONCEITOS FUNDAMENTAIS</h2>
+            <div class="conceitos">
+                <div class="conceito"><strong>Poder Moderador</strong><br>Prerrogativa constitucional que dava ao imperador autoridade sobre os demais poderes.</div>
+                <div class="conceito"><strong>Constituição Outorgada</strong><br>Lei fundamental imposta pelo soberano, sem participação popular.</div>
+                <div class="conceito"><strong>Confederação do Equador</strong><br>Movimento republicano e federalista do Nordeste em 1824.</div>
+                <div class="conceito"><strong>Guerra da Cisplatina</strong><br>Conflito de 1825–1828 que levou à independência do Uruguai.</div>
+                <div class="conceito"><strong>Período Regencial</strong><br>Fase em que o Brasil foi governado por regentes, após a abdicação de D. Pedro I.</div>
+                <div class="conceito"><strong>Abdicação</strong><br>Renúncia de D. Pedro I ao trono em 1831.</div>
+            </div>
+        </section>
+
+        <section class="secao enem">
+            <h2>🎯 ENEM, Vestibular e Concurso</h2>
+            <p>Teste seus conhecimentos:</p>
+
+            <div class="questao">
+                <h3>Questão 1</h3>
+                <p>A Constituição de 1824, outorgada por Dom Pedro I, introduziu um elemento singular em relação às constituições liberais da época: o Poder Moderador. Sua característica principal era:</p>
+                <ol type="A">
+                    <li>Submeter o imperador às decisões do Legislativo.</li>
+                    <li>Garantir ao imperador a prerrogativa de intervir nos demais poderes.</li>
+                    <li>Eliminar a figura do monarca do sistema político.</li>
+                    <li>Conceder autonomia política às províncias.</li>
+                    <li>Instituir o voto universal masculino.</li>
+                </ol>
+                <button class="btn-gabarito" onclick="mostrarGabarito('g1')">Mostrar gabarito</button>
+                <div class="gabarito" id="g1">
+                    <strong>Resposta: B.</strong> O Poder Moderador dava ao imperador a prerrogativa de interferir nos três Poderes, centralizando o poder monárquico.
+                </div>
+            </div>
+
+            <div class="questao">
+                <h3>Questão 2</h3>
+                <p>A Confederação do Equador (1824) refletiu um descontentamento político das elites nordestinas. Entre suas principais reivindicações, destacavam-se:</p>
+                <ol type="A">
+                    <li>A restauração do domínio português no Brasil.</li>
+                    <li>A adoção de um regime republicano e federalista.</li>
+                    <li>A unificação com a Espanha.</li>
+                    <li>A manutenção da centralização política do Império.</li>
+                    <li>A anulação da Independência.</li>
+                </ol>
+                <button class="btn-gabarito" onclick="mostrarGabarito('g2')">Mostrar gabarito</button>
+                <div class="gabarito" id="g2">
+                    <strong>Resposta: B.</strong> A Confederação defendia a república e maior autonomia para as províncias, contrapondo-se ao modelo centralizador de D. Pedro I.
+                </div>
+            </div>
+        </section>
+
+        <section class="resumo">
+            <h2>🧠 RESUMO PARA O PROFESSOR</h2>
+            <p>
+                <strong>Tema:</strong> Primeiro Reinado (1822–1831).<br>
+                <strong>Marco político:</strong> Constituição de 1824 com Poder Moderador.<br>
+                <strong>Revoltas:</strong> Confederação do Equador (1824).<br>
+                <strong>Guerra:</strong> Cisplatina (1825–1828).<br>
+                <strong>Fim:</strong> Abdicação de D. Pedro I (1831).<br>
+                <strong>Habilidade BNCC:</strong> EF08HI05 e EF08HI07 — Independência e organização política do Império.
+            </p>
+        </section>
+
+        <nav class="navegacao">
+            <a class="btn btn-voltar" href="35 - Processo-de-Independencia.html">← Processo de Independência</a>
+            <a class="btn btn-proximo" href="37 - Período Regencial.html">Período Regencial →</a>
+        </nav>
+
+    </main>
+
+    <footer>
+        <p>Curso de História Geral — Fund II • Ensino Médio • ENEM • Vestibular • Concurso</p>
+        <p class="assinatura">Professor Marcelo Oliveira</p>
+    </footer>
+
+    <button id="topo" onclick="voltarAoTopo()">↑</button>
+
+    <script>
+        function mostrarGabarito(id) {
+            const resposta = document.getElementById(id);
+            resposta.style.display = (resposta.style.display === "block") ? "none" : "block";
+        }
+        const botaoTopo = document.getElementById("topo");
+        window.addEventListener("scroll", function () { botaoTopo.style.display = window.scrollY > 400 ? "block" : "none"; });
+        function voltarAoTopo() { window.scrollTo({ top: 0, behavior: "smooth" }); }
+    </script>
+    <script>
+  const paginaAnterior = "35 - Processo-de-Independencia.html";
+  const paginaProxima = "37 - Período Regencial.html";
+</script>
+<script src="navegacao.js"></script>
+
+</body>
+
+</html>

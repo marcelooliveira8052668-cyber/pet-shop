@@ -1,0 +1,2145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Define a codificação de caracteres utilizada pela página. -->
+    <meta charset="UTF-8">
+
+    <!-- Faz a página se adaptar a celulares, tablets e computadores. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Define o título exibido na aba do navegador. -->
+    <title>1.30 — Revolução Francesa | Curso de História Geral</title>
+
+    <style>
+
+        /* =========================================================
+           CONFIGURAÇÕES GERAIS
+           ========================================================= */
+
+        /* Remove margens e espaçamentos padrões. */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Ativa rolagem suave. */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Define o corpo da página. */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f7fb;
+            color: #1f2937;
+            line-height: 1.7;
+        }
+
+        /* =========================================================
+           CABEÇALHO
+           ========================================================= */
+
+        /* Cria o cabeçalho principal. */
+        header {
+            background: linear-gradient(135deg, #581c87, #7e22ce, #c026d3);
+            color: white;
+            padding: 55px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Cria um elemento decorativo no cabeçalho. */
+        header::before {
+            content: "";
+            position: absolute;
+            width: 380px;
+            height: 380px;
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 50%;
+            top: -190px;
+            right: -100px;
+        }
+
+        /* Título principal. */
+        header h1 {
+            position: relative;
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            margin-bottom: 15px;
+        }
+
+        /* Texto do cabeçalho. */
+        header p {
+            position: relative;
+            max-width: 900px;
+            margin: auto;
+            font-size: 1.1rem;
+        }
+
+        /* =========================================================
+           MENU
+           ========================================================= */
+
+        /* Barra de navegação. */
+        nav {
+            background: white;
+            padding: 15px;
+            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        /* Lista do menu. */
+        nav ul {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            list-style: none;
+        }
+
+        /* Links do menu. */
+        nav a {
+            text-decoration: none;
+            color: #581c87;
+            background: #faf5ff;
+            padding: 9px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            transition: 0.3s;
+        }
+
+        /* Efeito dos links. */
+        nav a:hover {
+            background: #7e22ce;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        /* =========================================================
+           CONTEÚDO
+           ========================================================= */
+
+        /* Define a largura máxima do conteúdo. */
+        main {
+            max-width: 1200px;
+            margin: auto;
+            padding: 30px 18px;
+        }
+
+        /* Cartão padrão. */
+        .card {
+            background: white;
+            border-radius: 18px;
+            padding: 30px;
+            margin-bottom: 25px;
+            box-shadow: 0 8px 25px rgba(15, 23, 42, 0.08);
+        }
+
+        /* Títulos principais. */
+        .card h2 {
+            margin-bottom: 18px;
+            color: #3b0764;
+        }
+
+        /* Subtítulos. */
+        .card h3 {
+            margin-top: 22px;
+            margin-bottom: 10px;
+            color: #334155;
+        }
+
+        /* Parágrafos. */
+        .card p {
+            margin-bottom: 15px;
+        }
+
+        /* Listas. */
+        .card ul,
+        .card ol {
+            margin-left: 25px;
+            margin-bottom: 15px;
+        }
+
+        /* =========================================================
+           CORES DAS TRÊS PARTES
+           ========================================================= */
+
+        /* Parte I: começo. */
+        .parte-1 {
+            border-left: 8px solid #2563eb;
+            background: linear-gradient(135deg, #eff6ff, #ffffff);
+        }
+
+        /* Parte II: desenvolvimento. */
+        .parte-2 {
+            border-left: 8px solid #16a34a;
+            background: linear-gradient(135deg, #f0fdf4, #ffffff);
+        }
+
+        /* Parte III: legado. */
+        .parte-3 {
+            border-left: 8px solid #9333ea;
+            background: linear-gradient(135deg, #faf5ff, #ffffff);
+        }
+
+        /* Etiqueta das partes. */
+        .etiqueta {
+            display: inline-block;
+            padding: 7px 14px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            margin-bottom: 12px;
+            color: white;
+        }
+
+        /* Azul. */
+        .azul {
+            background: #2563eb;
+        }
+
+        /* Verde. */
+        .verde {
+            background: #16a34a;
+        }
+
+        /* Roxo. */
+        .roxo {
+            background: #9333ea;
+        }
+
+        /* =========================================================
+           APRESENTAÇÃO
+           ========================================================= */
+
+        /* Caixa de apresentação. */
+        .apresentacao {
+            background: linear-gradient(135deg, #3b0764, #581c87);
+            color: white;
+            border-radius: 20px;
+            padding: 35px;
+            margin-bottom: 25px;
+        }
+
+        /* Título da apresentação. */
+        .apresentacao h2 {
+            color: white;
+        }
+
+        /* =========================================================
+           CARTÕES
+           ========================================================= */
+
+        /* Cria uma grade responsiva. */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 18px;
+            margin-top: 20px;
+        }
+
+        /* Cartão individual. */
+        .mini-card {
+            padding: 22px;
+            border-radius: 15px;
+            background: white;
+            border-top: 5px solid #7e22ce;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+        }
+
+        /* Título do cartão. */
+        .mini-card h3 {
+            margin-top: 0;
+        }
+
+        /* =========================================================
+           CAUSAS
+           ========================================================= */
+
+        /* Caixa laranja para causas. */
+        .causas {
+            background: #fff7ed;
+            border-left: 8px solid #f97316;
+        }
+
+        /* Títulos das causas. */
+        .causas h2,
+        .causas h3 {
+            color: #c2410c;
+        }
+
+        /* =========================================================
+           CONSEQUÊNCIAS
+           ========================================================= */
+
+        /* Caixa amarela para consequências. */
+        .consequencias {
+            background: #fefce8;
+            border-left: 8px solid #eab308;
+        }
+
+        /* Títulos das consequências. */
+        .consequencias h2,
+        .consequencias h3 {
+            color: #a16207;
+        }
+
+        /* =========================================================
+           CONCEITOS
+           ========================================================= */
+
+        /* Caixa de conceitos. */
+        .conceitos {
+            background: #fffbeb;
+            border-left: 8px solid #eab308;
+        }
+
+        /* Título dos conceitos. */
+        .conceitos h2 {
+            color: #92400e;
+        }
+
+        /* =========================================================
+           ATENÇÃO
+           ========================================================= */
+
+        /* Caixa vermelha para conteúdos importantes. */
+        .atencao {
+            background: #fef2f2;
+            border-left: 8px solid #dc2626;
+        }
+
+        /* Título da atenção. */
+        .atencao h2 {
+            color: #b91c1c;
+        }
+
+        /* =========================================================
+           LINHA DO TEMPO
+           ========================================================= */
+
+        /* Cria a linha vertical. */
+        .timeline {
+            border-left: 4px solid #7e22ce;
+            margin: 25px 0;
+            padding-left: 25px;
+        }
+
+        /* Evento individual. */
+        .evento {
+            position: relative;
+            margin-bottom: 25px;
+        }
+
+        /* Ponto do evento. */
+        .evento::before {
+            content: "";
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            background: #7e22ce;
+            border-radius: 50%;
+            left: -34px;
+            top: 7px;
+        }
+
+        /* Data do evento. */
+        .data {
+            font-weight: bold;
+            color: #7e22ce;
+        }
+
+        /* =========================================================
+           TABELAS
+           ========================================================= */
+
+        /* Permite rolagem em telas pequenas. */
+        .tabela-container {
+            overflow-x: auto;
+            margin-top: 20px;
+        }
+
+        /* Configuração da tabela. */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 650px;
+        }
+
+        /* Células. */
+        th,
+        td {
+            border: 1px solid #e9d5ff;
+            padding: 13px;
+            text-align: left;
+        }
+
+        /* Cabeçalho. */
+        th {
+            background: #7e22ce;
+            color: white;
+        }
+
+        /* Linhas alternadas. */
+        tr:nth-child(even) {
+            background: #faf5ff;
+        }
+
+        /* =========================================================
+           LOUSA
+           ========================================================= */
+
+        /* Área da lousa. */
+        .lousa {
+            background: #172554;
+            color: white;
+            border-radius: 18px;
+            padding: 30px;
+        }
+
+        /* Título da lousa. */
+        .lousa h2 {
+            color: #c4b5fd;
+        }
+
+        /* Lista da lousa. */
+        .lousa ul {
+            margin-left: 25px;
+        }
+
+        /* =========================================================
+           PROFESSOR
+           ========================================================= */
+
+        /* Caixa para orientação do professor. */
+        .professor {
+            background: #f1f5f9;
+            border-left: 8px solid #475569;
+        }
+
+        /* Título do professor. */
+        .professor h2 {
+            color: #334155;
+        }
+
+        /* =========================================================
+           ENEM
+           ========================================================= */
+
+        /* Caixa de provas. */
+        .provas {
+            background: linear-gradient(135deg, #ecfeff, #f0fdfa);
+            border-left: 8px solid #0891b2;
+        }
+
+        /* Título das provas. */
+        .provas h2 {
+            color: #0e7490;
+        }
+
+        /* =========================================================
+           QUESTÕES
+           ========================================================= */
+
+        /* Caixa da questão. */
+        .questao {
+            background: white;
+            border: 2px solid #e2e8f0;
+            border-radius: 15px;
+            padding: 25px;
+            margin-top: 20px;
+        }
+
+        /* Área das alternativas. */
+        .alternativas {
+            margin-top: 15px;
+        }
+
+        /* Cada alternativa. */
+        .alternativas div {
+            padding: 8px;
+            margin: 5px 0;
+            background: #f8fafc;
+            border-radius: 8px;
+        }
+
+        /* Botão do gabarito. */
+        .btn-gabarito {
+            border: none;
+            background: #7c3aed;
+            color: white;
+            padding: 11px 18px;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        /* Efeito do botão. */
+        .btn-gabarito:hover {
+            background: #6d28d9;
+        }
+
+        /* Gabarito inicialmente escondido. */
+        .gabarito {
+            display: none;
+            margin-top: 15px;
+            padding: 15px;
+            background: #f3e8ff;
+            border-left: 5px solid #9333ea;
+            border-radius: 8px;
+        }
+
+        /* =========================================================
+           NAVEGAÇÃO
+           ========================================================= */
+
+        /* Área dos botões. */
+        .navegacao {
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+            margin-top: 35px;
+        }
+
+        /* Botão de navegação. */
+        .btn {
+            display: inline-block;
+            text-decoration: none;
+            padding: 13px 20px;
+            border-radius: 10px;
+            font-weight: bold;
+            color: white;
+            background: #7e22ce;
+            transition: 0.3s;
+        }
+
+        /* Efeito do botão. */
+        .btn:hover {
+            transform: translateY(-2px);
+            opacity: 0.9;
+        }
+
+        /* =========================================================
+           RODAPÉ
+           ========================================================= */
+
+        /* Rodapé. */
+        footer {
+            background: #0f172a;
+            color: #cbd5e1;
+            text-align: center;
+            padding: 35px 20px;
+            margin-top: 30px;
+        }
+
+        /* Nome do professor. */
+        footer strong {
+            color: white;
+        }
+
+        /* =========================================================
+           BOTÃO TOPO
+           ========================================================= */
+
+        /* Botão fixo. */
+        #topo {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            border: none;
+            background: #7e22ce;
+            color: white;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 20px;
+            display: none;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* =========================================================
+           RESPONSIVIDADE
+           ========================================================= */
+
+        /* Ajustes para celulares. */
+        @media (max-width: 700px) {
+
+            /* Reduz o espaçamento interno. */
+            .card {
+                padding: 22px;
+            }
+
+            /* Reduz o cabeçalho. */
+            header {
+                padding: 40px 18px;
+            }
+
+            /* Reduz o menu. */
+            nav a {
+                font-size: 0.78rem;
+                padding: 7px 10px;
+            }
+
+            /* Coloca a navegação em coluna. */
+            .navegacao {
+                flex-direction: column;
+            }
+
+            /* Faz os botões ocuparem toda a largura. */
+            .btn {
+                text-align: center;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- =========================================================
+         CABEÇALHO
+         ========================================================= -->
+
+    <header>
+
+        <!-- Nome do curso. -->
+        <p>CURSO DE HISTÓRIA GERAL</p>
+
+        <!-- Título da aula. -->
+        <h1>1.30 — Revolução Francesa</h1>
+
+        <!-- Subtítulo da aula. -->
+        <p>
+            Crise do Antigo Regime, revolução, cidadania, violência política
+            e transformação da ordem europeia.
+        </p>
+
+    </header>
+
+
+    <!-- =========================================================
+         MENU
+         ========================================================= -->
+
+    <nav>
+
+        <ul>
+
+            <!-- Link para a primeira parte. -->
+            <li><a href="#comeco">O Começo</a></li>
+
+            <!-- Link para desenvolvimento. -->
+            <li><a href="#desenvolvimento">Desenvolvimento</a></li>
+
+            <!-- Link para legado. -->
+            <li><a href="#legado">Legado</a></li>
+
+            <!-- Link para conceitos. -->
+            <li><a href="#conceitos">Conceitos</a></li>
+
+            <!-- Link para cronologia. -->
+            <li><a href="#cronologia">Cronologia</a></li>
+
+            <!-- Link para professor. -->
+            <li><a href="#professor">Professor</a></li>
+
+            <!-- Link para provas. -->
+            <li><a href="#provas">ENEM</a></li>
+
+        </ul>
+
+    </nav>
+
+
+    <!-- =========================================================
+         CONTEÚDO PRINCIPAL
+         ========================================================= -->
+
+    <main>
+
+
+        <!-- =====================================================
+             APRESENTAÇÃO
+             ===================================================== -->
+
+        <section class="apresentacao">
+
+            <h2>Apresentação da aula</h2>
+
+            <p>
+                A Revolução Francesa foi um processo político e social iniciado
+                em 1789 que provocou profundas transformações na França e teve
+                repercussões internacionais.
+            </p>
+
+            <p>
+                A revolução ocorreu em meio a uma combinação de crise fiscal,
+                dificuldades econômicas, desigualdades sociais, conflitos
+                políticos e circulação de novas ideias.
+            </p>
+
+            <p>
+                Seu estudo é fundamental para compreender a crise do Antigo
+                Regime, a formação da cidadania política moderna e as
+                transformações que marcaram o final do século XVIII.
+            </p>
+
+        </section>
+
+
+        <!-- =====================================================
+             PARTE I — O COMEÇO
+             ===================================================== -->
+
+        <section id="comeco" class="card parte-1">
+
+            <span class="etiqueta azul">I — O COMEÇO</span>
+
+            <h2>A França antes da Revolução</h2>
+
+            <p>
+                Antes de 1789, a França era uma monarquia absolutista
+                organizada dentro das estruturas do chamado Antigo Regime.
+            </p>
+
+            <p>
+                A sociedade francesa apresentava fortes desigualdades jurídicas,
+                econômicas e fiscais.
+            </p>
+
+            <h3>O Antigo Regime</h3>
+
+            <p>
+                O termo Antigo Regime é utilizado pelos historiadores para
+                designar o conjunto de estruturas políticas, sociais e
+                econômicas predominantes na Europa antes das grandes
+                transformações revolucionárias.
+            </p>
+
+            <h3>A monarquia</h3>
+
+            <p>
+                O rei concentrava importantes poderes políticos, embora
+                existissem instituições, costumes e grupos privilegiados
+                que limitavam e condicionavam a atuação da monarquia.
+            </p>
+
+        </section>
+
+
+        <!-- =====================================================
+             SOCIEDADE ESTAMENTAL
+             ===================================================== -->
+
+        <section class="card">
+
+            <h2>A sociedade dos três estados</h2>
+
+            <p>
+                A sociedade francesa era tradicionalmente organizada em três
+                grandes ordens ou estados.
+            </p>
+
+            <div class="grid">
+
+                <div class="mini-card">
+
+                    <h3>Primeiro Estado</h3>
+
+                    <p>
+                        Formado pelo clero. Possuía privilégios jurídicos
+                        e fiscais importantes.
+                    </p>
+
+                </div>
+
+                <div class="mini-card">
+
+                    <h3>Segundo Estado</h3>
+
+                    <p>
+                        Composto pela nobreza. Também possuía privilégios
+                        relacionados à posição social e fiscal.
+                    </p>
+
+                </div>
+
+                <div class="mini-card">
+
+                    <h3>Terceiro Estado</h3>
+
+                    <p>
+                        Reunia a maior parte da população, incluindo burgueses,
+                        trabalhadores urbanos e camponeses.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <p>
+                É importante lembrar que o Terceiro Estado não era socialmente
+                homogêneo. Seus integrantes possuíam interesses diferentes.
+            </p>
+
+        </section>
+
+
+        <!-- =====================================================
+             CRISE FINANCEIRA
+             ===================================================== -->
+
+        <section class="card causas">
+
+            <h2>🟧 A crise financeira da monarquia</h2>
+
+            <p>
+                A França enfrentava dificuldades financeiras significativas
+                no final do século XVIII.
+            </p>
+
+            <p>
+                As despesas militares, os custos do Estado e as guerras
+                contribuíram para o crescimento da dívida.
+            </p>
+
+            <p>
+                A participação francesa na Guerra de Independência dos Estados
+                Unidos também aumentou os gastos do Estado.
+            </p>
+
+            <p>
+                Ao mesmo tempo, a estrutura tributária apresentava forte
+                desigualdade, pois grupos privilegiados possuíam vantagens
+                fiscais.
+            </p>
+
+        </section>
+
+
+        <!-- =====================================================
+             CRISE ECONÔMICA E SOCIAL
+             ===================================================== -->
+
+        <section class="card causas">
+
+            <h2>🟧 Crise econômica e dificuldades sociais</h2>
+
+            <p>
+                No final da década de 1780, a França enfrentou dificuldades
+                relacionadas à produção agrícola e ao preço dos alimentos.
+            </p>
+
+            <p>
+                Más colheitas contribuíram para elevar o preço do pão,
+                aumentando as dificuldades enfrentadas pela população.
+            </p>
+
+            <p>
+                A crise econômica atingiu diferentes grupos sociais, mas
+                seus efeitos eram particularmente pesados para os setores
+                populares.
+            </p>
+
+        </section>
+
+
+        <!-- =====================================================
+             ILUMINISMO
+             ===================================================== -->
+
+        <section class="card">
+
+            <h2>As ideias iluministas</h2>
+
+            <p>
+                O Iluminismo não foi uma causa única da Revolução Francesa,
+                mas forneceu instrumentos intelectuais para a crítica de
+                instituições do Antigo Regime.
+            </p>
+
+            <div class="grid">
+
+                <div class="mini-card">
+
+                    <h3>Liberdade</h3>
+
+                    <p>
+                        Debate sobre os limites do poder político e os direitos
+                        dos indivíduos.
+                    </p>
+
+                </div>
+
+                <div class="mini-card">
+
+                    <h3>Igualdade jurídica</h3>
+
+                    <p>
+                        Questionamento de privilégios baseados no nascimento.
+                    </p>
+
+                </div>
+
+                <div class="mini-card">
+
+                    <h3>Soberania</h3>
+
+                    <p>
+                        Discussão sobre a origem e a legitimidade do poder.
+                    </p>
+
+                </div>
+
+                <div class="mini-card">
+
+                    <h3>Constituição</h3>
+
+                    <p>
+                        Ideia de estabelecer limites e regras para o exercício
+                        do poder político.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             PARTE II
+             ===================================================== -->
+
+        <section id="desenvolvimento" class="card parte-2">
+
+            <span class="etiqueta verde">II — O DESENVOLVIMENTO</span>
+
+            <h2>1789 — O início da Revolução</h2>
+
+            <p>
+                Diante da crise financeira, a monarquia convocou os Estados
+                Gerais, uma assembleia que reunia representantes dos três
+                estados.
+            </p>
+
+            <p>
+                O conflito sobre a forma de votação contribuiu para a ruptura
+                política entre o rei e representantes do Terceiro Estado.
+            </p>
+
+        </section>
+
+
+        <!-- =====================================================
+             ASSEMBLEIA NACIONAL
+             ===================================================== -->
+
+        <section class="card">
+
+            <h2>A Assembleia Nacional</h2>
+
+            <p>
+                Em junho de 1789, representantes do Terceiro Estado declararam
+                que formavam uma Assembleia Nacional.
+            </p>
+
+            <p>
+                O episódio representou uma importante mudança na concepção
+                de soberania política, pois os representantes passaram a
+                reivindicar falar em nome da nação.
+            </p>
+
+            <h3>Juramento do Jogo da Péla</h3>
+
+            <p>
+                Os deputados comprometeram-se a não se separar antes que
+                fosse estabelecida uma constituição para a França.
+            </p>
+
+        </section>
+
+
+        <!-- =====================================================
+             QUEDA DA BASTILHA
+             ===================================================== -->
+
+        <section class="card atencao">
+
+            <h2>🟥 14 de julho de 1789 — Queda da Bastilha</h2>
+
+            <p>
+                A população de Paris tomou a Bastilha, uma fortaleza-prisão
+                que havia se tornado símbolo do poder monárquico.
+            </p>
+
+            <p>
+                O acontecimento tornou-se um dos símbolos mais conhecidos
+                da Revolução Francesa.
+            </p>
+
+            <p>
+                A revolução também se espalhou pelo campo, onde ocorreram
+                conflitos e ataques relacionados às estruturas senhoriais.
+            </p>
+
+        </section>
+
+
+        <!-- =====================================================
+             FIM DE PRIVILÉGIOS
+             ===================================================== -->
+
+        <section class="card consequencias">
+
+            <h2>🟨 A abolição dos privilégios</h2>
+
+            <p>
+                Durante a noite de 4 de agosto de 1789, a Assembleia aprovou
+                medidas que atingiram privilégios feudais e jurídicos.
+            </p>
+
+            <p>
+                Esse processo contribuiu para desmontar elementos importantes
+                da sociedade estamental.
+            </p>
+
+        </section>
+
+
+        <!-- =====================================================
+             DECLARAÇÃO DOS DIREITOS
+             ===================================================== -->
+
+        <section class="card">
+
+            <h2>A Declaração dos Direitos do Homem e do Cidadão</h2>
+
+            <p>
+                Em agosto de 1789, foi aprovada a Declaração dos Direitos do
+                Homem e do Cidadão.
+            </p>
+
+            <p>
+                O documento afirmou princípios relacionados à liberdade,
+                igualdade jurídica, soberania nacional e direitos.
+            </p>
+
+            <div class="atencao">
+
+                <h2>⚠️ Atenção</h2>
+
+                <p>
+                    A linguagem universal do documento não significou que
+                    todos os habitantes da França passaram imediatamente
+                    a possuir participação política igual.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             CONSTITUIÇÃO
+             ===================================================== -->
+
+        <section class="card">
+
+            <h2>A Constituição de 1791</h2>
+
+            <p>
+                A Constituição de 1791 estabeleceu uma monarquia constitucional.
+            </p>
+
+            <p>
+                O poder do rei passou a estar limitado por uma estrutura
+                constitucional e legislativa.
+            </p>
+
+            <p>
+                A experiência, entretanto, foi marcada por conflitos entre
+                diferentes grupos revolucionários e pela crescente
+                radicalização política.
+            </p>
+
+        </section>
+
+
+        <!-- =====================================================
+             MONARQUIA À REPÚBLICA
+             ===================================================== -->
+
+        <section class="card">
+
+            <h2>1792 — A queda da monarquia</h2>
+
+            <p>
+                A guerra contra potências europeias, os conflitos internos
+                e a radicalização política contribuíram para a crise da
+                monarquia.
+            </p>
+
+            <p>
+                Em agosto de 1792, a monarquia foi derrubada.
+            </p>
+
+            <p>
+                Em setembro de 1792, a França foi declarada uma república.
+            </p>
+
+        </section>
+
+
+        <!-- =====================================================
+             CONVENÇÃO NACIONAL
+             ===================================================== -->
+
+        <section class="card">
+
+            <h2>A Convenção Nacional</h2>
+
+            <p>
+                A Convenção Nacional assumiu o governo da República.
+            </p>
+
+            <p>
+                Dentro dela existiam diferentes grupos políticos, com
+                projetos e interesses distintos.
+            </p>
+
+            <div class="grid">
+
+                <div class="mini-card">
+
+                    <h3>Girondinos</h3>
+
+                    <p>
+                        Grupo associado a posições mais moderadas dentro
+                        do processo revolucionário.
+                    </p>
+
+                </div>
+
+                <div class="mini-card">
+
+                    <h3>Jacobinos</h3>
+
+                    <p>
+                        Grupo que assumiu papel central na fase mais radical
+                        da Revolução.
+                    </p>
+
+                </div>
+
+                <div class="mini-card">
+
+                    <h3>Sans-culottes</h3>
+
+                    <p>
+                        Setores populares urbanos que exerceram pressão
+                        política durante o processo revolucionário.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             EXECUÇÃO DO REI
+             ===================================================== -->
+
+        <section class="card">
+
+            <h2>1793 — Luís XVI</h2>
+
+            <p>
+                O rei Luís XVI foi julgado e condenado à morte pela Convenção.
+            </p>
+
+            <p>
+                Sua execução, em janeiro de 1793, aprofundou o conflito entre
+                a França revolucionária e outras monarquias europeias.
+            </p>
+
+        </section>
+
+
+        <!-- =====================================================
+             PERÍODO DO TERROR
+             ===================================================== -->
+
+        <section class="card atencao">
+
+            <h2>🟥 O Terror — 1793–1794</h2>
+
+            <p>
+                O período conhecido como Terror foi marcado pela radicalização
+                política, pela guerra e pela repressão contra aqueles
+                considerados inimigos da Revolução.
+            </p>
+
+            <p>
+                O Comitê de Salvação Pública, associado à liderança jacobina,
+                exerceu papel central nesse período.
+            </p>
+
+            <p>
+                Maximilien Robespierre tornou-se uma das figuras políticas
+                mais importantes dessa fase.
+            </p>
+
+        </section>
+
+
+        <!-- =====================================================
+             QUEDA DE ROBESPIERRE
+             ===================================================== -->
+
+        <section class="card consequencias">
+
+            <h2>1794 — Reação Termidoriana</h2>
+
+            <p>
+                Em julho de 1794, Robespierre foi derrubado e executado.
+            </p>
+
+            <p>
+                O episódio marcou o enfraquecimento da fase jacobina e
+                o início de uma nova etapa política.
+            </p>
+
+        </section>
+
+
+        <!-- =====================================================
+             DIRETÓRIO
+             ===================================================== -->
+
+        <section class="card">
+
+            <h2>1795 — O Diretório</h2>
+
+            <p>
+                Uma nova Constituição estabeleceu o Diretório.
+            </p>
+
+            <p>
+                O período foi marcado por instabilidade política, conflitos
+                sociais e dificuldades econômicas.
+            </p>
+
+            <p>
+                O crescimento da influência militar preparou o caminho para
+                a ascensão de Napoleão Bonaparte.
+            </p>
+
+        </section>
+
+
+        <!-- =====================================================
+             NAPOLEÃO
+             ===================================================== -->
+
+        <section class="card consequencias">
+
+            <h2>1799 — O fim da Revolução?</h2>
+
+            <p>
+                Em 1799, Napoleão Bonaparte participou do golpe do 18 de
+                Brumário, que encerrou o Diretório e estabeleceu o Consulado.
+            </p>
+
+            <p>
+                O acontecimento costuma ser utilizado como marco final do
+                processo revolucionário iniciado em 1789, embora os debates
+                sobre continuidade e ruptura sejam mais complexos.
+            </p>
+
+        </section>
+
+
+        <!-- =====================================================
+             CRONOLOGIA
+             ===================================================== -->
+
+        <section id="cronologia" class="card">
+
+            <h2>📅 Linha do tempo da Revolução Francesa</h2>
+
+            <div class="timeline">
+
+                <div class="evento">
+                    <div class="data">1789</div>
+                    <p>Convocação dos Estados Gerais.</p>
+                </div>
+
+                <div class="evento">
+                    <div class="data">Junho de 1789</div>
+                    <p>Formação da Assembleia Nacional.</p>
+                </div>
+
+                <div class="evento">
+                    <div class="data">14 de julho de 1789</div>
+                    <p>Queda da Bastilha.</p>
+                </div>
+
+                <div class="evento">
+                    <div class="data">Agosto de 1789</div>
+                    <p>Declaração dos Direitos do Homem e do Cidadão.</p>
+                </div>
+
+                <div class="evento">
+                    <div class="data">1791</div>
+                    <p>Constituição e monarquia constitucional.</p>
+                </div>
+
+                <div class="evento">
+                    <div class="data">1792</div>
+                    <p>Queda da monarquia e proclamação da República.</p>
+                </div>
+
+                <div class="evento">
+                    <div class="data">1793</div>
+                    <p>Execução de Luís XVI e radicalização revolucionária.</p>
+                </div>
+
+                <div class="evento">
+                    <div class="data">1793–1794</div>
+                    <p>Período do Terror.</p>
+                </div>
+
+                <div class="evento">
+                    <div class="data">1794</div>
+                    <p>Queda de Robespierre.</p>
+                </div>
+
+                <div class="evento">
+                    <div class="data">1795</div>
+                    <p>Início do Diretório.</p>
+                </div>
+
+                <div class="evento">
+                    <div class="data">1799</div>
+                    <p>Golpe do 18 de Brumário e início do Consulado.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             CAUSAS
+             ===================================================== -->
+
+        <section class="card causas">
+
+            <h2>🟧 Principais causas</h2>
+
+            <ul>
+
+                <li>Crise financeira da monarquia.</li>
+
+                <li>Desigualdade fiscal e privilégios estamentais.</li>
+
+                <li>Crise econômica e aumento do preço dos alimentos.</li>
+
+                <li>Insatisfação de diferentes grupos sociais.</li>
+
+                <li>Conflitos políticos sobre representação.</li>
+
+                <li>Influência das ideias iluministas.</li>
+
+                <li>Problemas estruturais do Antigo Regime.</li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- =====================================================
+             CONSEQUÊNCIAS
+             ===================================================== -->
+
+        <section class="card consequencias">
+
+            <h2>🟨 Principais consequências</h2>
+
+            <ul>
+
+                <li>Fim da monarquia absolutista na França.</li>
+
+                <li>Desmonte de importantes privilégios estamentais.</li>
+
+                <li>Declaração de direitos.</li>
+
+                <li>Experiência republicana.</li>
+
+                <li>Transformação das instituições políticas.</li>
+
+                <li>Expansão de debates sobre cidadania e soberania.</li>
+
+                <li>Impacto sobre a política europeia.</li>
+
+                <li>Influência sobre movimentos políticos em outras regiões.</li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- =====================================================
+             CONCEITOS
+             ===================================================== -->
+
+        <section id="conceitos" class="card conceitos">
+
+            <h2>🟨 Conceitos fundamentais</h2>
+
+            <div class="grid">
+
+                <div class="mini-card">
+
+                    <h3>Antigo Regime</h3>
+
+                    <p>
+                        Estruturas políticas, sociais e econômicas predominantes
+                        na Europa antes das revoluções liberais.
+                    </p>
+
+                </div>
+
+                <div class="mini-card">
+
+                    <h3>Estamento</h3>
+
+                    <p>
+                        Grupo social definido por posição jurídica e privilégios
+                        relacionados ao nascimento e à ordem social.
+                    </p>
+
+                </div>
+
+                <div class="mini-card">
+
+                    <h3>Soberania popular</h3>
+
+                    <p>
+                        Ideia segundo a qual a legitimidade política está
+                        relacionada à vontade da comunidade política.
+                    </p>
+
+                </div>
+
+                <div class="mini-card">
+
+                    <h3>Cidadania</h3>
+
+                    <p>
+                        Condição política relacionada a direitos e deveres
+                        dentro de uma comunidade.
+                    </p>
+
+                </div>
+
+                <div class="mini-card">
+
+                    <h3>República</h3>
+
+                    <p>
+                        Forma de governo sem monarquia hereditária como
+                        princípio de organização do poder.
+                    </p>
+
+                </div>
+
+                <div class="mini-card">
+
+                    <h3>Constitucionalismo</h3>
+
+                    <p>
+                        Organização do poder político segundo normas
+                        constitucionais.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             TABELA
+             ===================================================== -->
+
+        <section class="card">
+
+            <h2>Grupos e posições políticas</h2>
+
+            <div class="tabela-container">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+                            <th>Grupo</th>
+                            <th>Características gerais</th>
+                            <th>Momento de maior destaque</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>Girondinos</td>
+                            <td>Setores mais moderados da revolução</td>
+                            <td>Convenção Nacional</td>
+                        </tr>
+
+                        <tr>
+                            <td>Jacobinos</td>
+                            <td>Grupo revolucionário radical</td>
+                            <td>1793–1794</td>
+                        </tr>
+
+                        <tr>
+                            <td>Sans-culottes</td>
+                            <td>Setores populares urbanos</td>
+                            <td>Radicalização revolucionária</td>
+                        </tr>
+
+                        <tr>
+                            <td>Monarquistas</td>
+                            <td>Defensores da continuidade monárquica</td>
+                            <td>Diferentes fases da Revolução</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             MULHERES
+             ===================================================== -->
+
+        <section class="card">
+
+            <h2>As mulheres na Revolução Francesa</h2>
+
+            <p>
+                As mulheres participaram ativamente da Revolução Francesa,
+                especialmente em manifestações, movimentos políticos e
+                mobilizações populares.
+            </p>
+
+            <p>
+                Olympe de Gouges publicou, em 1791, a
+                <strong>Declaração dos Direitos da Mulher e da Cidadã</strong>,
+                questionando a exclusão feminina dos direitos políticos.
+            </p>
+
+            <p>
+                A participação feminina revela uma das contradições do processo:
+                a linguagem universal dos direitos não produziu imediatamente
+                igualdade política entre homens e mulheres.
+            </p>
+
+        </section>
+
+
+        <!-- =====================================================
+             ESCRAVIDÃO E COLÔNIAS
+             ===================================================== -->
+
+        <section class="card">
+
+            <h2>A Revolução e o mundo colonial</h2>
+
+            <p>
+                Os acontecimentos franceses também tiveram consequências
+                importantes nas colônias.
+            </p>
+
+            <p>
+                Em Saint-Domingue, uma sociedade colonial baseada na
+                escravidão, ocorreu uma grande revolta que deu origem ao
+                processo revolucionário haitiano.
+            </p>
+
+            <p>
+                A Revolução Haitiana demonstrou que os princípios de liberdade
+                e igualdade poderiam ser utilizados também por populações
+                escravizadas em sua luta contra a escravidão e a dominação
+                colonial.
+            </p>
+
+        </section>
+
+
+        <!-- =====================================================
+             LEGADO
+             ===================================================== -->
+
+        <section id="legado" class="card parte-3">
+
+            <span class="etiqueta roxo">III — O LEGADO E O MUNDO ATUAL</span>
+
+            <h2>O legado da Revolução Francesa</h2>
+
+            <p>
+                A Revolução Francesa modificou profundamente a linguagem
+                política moderna.
+            </p>
+
+            <p>
+                Conceitos como cidadania, igualdade jurídica, soberania,
+                constituição e direitos passaram a ocupar posição central
+                nos debates políticos.
+            </p>
+
+            <h3>Fim dos privilégios jurídicos</h3>
+
+            <p>
+                A revolução contribuiu para a destruição de estruturas
+                estamentais e para a consolidação de uma nova concepção
+                de igualdade perante a lei.
+            </p>
+
+            <h3>Transformação política</h3>
+
+            <p>
+                A experiência francesa demonstrou que uma monarquia tradicional
+                poderia ser derrubada e substituída por diferentes formas
+                de governo.
+            </p>
+
+        </section>
+
+
+        <!-- =====================================================
+             IMPACTO INTERNACIONAL
+             ===================================================== -->
+
+        <section class="card">
+
+            <h2>🌍 A Revolução Francesa e o mundo</h2>
+
+            <p>
+                A Revolução Francesa não ficou limitada ao território francês.
+            </p>
+
+            <p>
+                Seus princípios, conflitos e resultados influenciaram debates
+                políticos em diferentes partes da Europa e das Américas.
+            </p>
+
+            <p>
+                A expansão militar francesa durante o período napoleônico
+                posteriormente levou algumas dessas transformações
+                institucionais para outras regiões, embora em contextos
+                diferentes.
+            </p>
+
+        </section>
+
+
+        <!-- =====================================================
+             RELAÇÃO COM O BRASIL
+             ===================================================== -->
+
+        <section class="card">
+
+            <h2>🇧🇷 História Geral ↔ História do Brasil</h2>
+
+            <p>
+                As transformações políticas ocorridas na França repercutiram
+                no mundo português e americano.
+            </p>
+
+            <p>
+                Ideias de liberdade, igualdade, soberania e representação
+                circularam no espaço atlântico.
+            </p>
+
+            <p>
+                No Brasil colonial, movimentos como a Inconfidência Mineira
+                e a Conjuração Baiana ocorreram em um ambiente internacional
+                marcado pela circulação de ideias políticas.
+            </p>
+
+            <p>
+                É importante, porém, não tratar esses movimentos como simples
+                cópias da Revolução Francesa. Cada um possuía suas próprias
+                condições sociais, econômicas e políticas.
+            </p>
+
+        </section>
+
+
+        <!-- =====================================================
+             PROFESSOR
+             ===================================================== -->
+
+        <section id="professor" class="card professor">
+
+            <h2>👨‍🏫 O que o professor precisa dominar</h2>
+
+            <ul>
+
+                <li>
+                    Estrutura social do Antigo Regime.
+                </li>
+
+                <li>
+                    Diferença entre os três estados.
+                </li>
+
+                <li>
+                    Crise financeira da monarquia.
+                </li>
+
+                <li>
+                    Relação entre Iluminismo e crítica ao Antigo Regime.
+                </li>
+
+                <li>
+                    Estados Gerais e Assembleia Nacional.
+                </li>
+
+                <li>
+                    Queda da Bastilha.
+                </li>
+
+                <li>
+                    Declaração dos Direitos do Homem e do Cidadão.
+                </li>
+
+                <li>
+                    Constituição de 1791.
+                </li>
+
+                <li>
+                    Queda da monarquia em 1792.
+                </li>
+
+                <li>
+                    Convenção, jacobinos, girondinos e sans-culottes.
+                </li>
+
+                <li>
+                    Terror e reação termidoriana.
+                </li>
+
+                <li>
+                    Diretório e 18 de Brumário.
+                </li>
+
+                <li>
+                    Contradições relacionadas às mulheres, escravidão e
+                    colonialismo.
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- =====================================================
+             LOUSA
+             ===================================================== -->
+
+        <section class="lousa">
+
+            <h2>📝 O que colocar na lousa</h2>
+
+            <ul>
+
+                <li>Antigo Regime</li>
+
+                <li>Três Estados</li>
+
+                <li>Crise financeira</li>
+
+                <li>Crise econômica</li>
+
+                <li>Iluminismo</li>
+
+                <li>Estados Gerais — 1789</li>
+
+                <li>Assembleia Nacional</li>
+
+                <li>Bastilha — 14/07/1789</li>
+
+                <li>Declaração dos Direitos</li>
+
+                <li>Constituição — 1791</li>
+
+                <li>República — 1792</li>
+
+                <li>Terror — 1793–1794</li>
+
+                <li>Diretório — 1795</li>
+
+                <li>18 de Brumário — 1799</li>
+
+                <li>Liberdade × exclusão</li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- =====================================================
+             ATENÇÃO PARA PROVAS
+             ===================================================== -->
+
+        <section class="card atencao">
+
+            <h2>🟥 Atenção — pontos importantes para provas</h2>
+
+            <ul>
+
+                <li>
+                    Revolução Francesa não começou simplesmente por causa
+                    do Iluminismo.
+                </li>
+
+                <li>
+                    A crise financeira da monarquia foi um elemento importante.
+                </li>
+
+                <li>
+                    O Terceiro Estado não era um grupo social homogêneo.
+                </li>
+
+                <li>
+                    A Revolução passou por diferentes fases.
+                </li>
+
+                <li>
+                    1789 não significa automaticamente o fim imediato
+                    da monarquia.
+                </li>
+
+                <li>
+                    A República foi proclamada somente em 1792.
+                </li>
+
+                <li>
+                    O Terror ocorreu durante uma fase específica do processo.
+                </li>
+
+                <li>
+                    1799 marca o início do Consulado de Napoleão.
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- =====================================================
+             ENEM
+             ===================================================== -->
+
+        <section id="provas" class="card provas">
+
+            <h2>🎯 ENEM, Vestibular e Concurso</h2>
+
+            <p>
+                Questões sobre a Revolução Francesa podem abordar o processo
+                de transformação do Antigo Regime, a formação da cidadania,
+                o constitucionalismo, os direitos individuais, a soberania
+                e as contradições da universalização dos direitos.
+            </p>
+
+            <p>
+                Uma leitura histórica consistente deve relacionar fatores
+                econômicos, sociais, políticos e culturais, evitando explicar
+                a revolução por uma única causa.
+            </p>
+
+        </section>
+
+
+        <!-- =====================================================
+             QUESTÃO 1
+             ===================================================== -->
+
+        <section class="questao">
+
+            <h2>Questão 1 — Estilo ENEM</h2>
+
+            <p>
+                No final do século XVIII, a França enfrentava dificuldades
+                financeiras, desigualdade fiscal e conflitos relacionados
+                à organização política do Antigo Regime.
+            </p>
+
+            <p>
+                Nesse contexto, a convocação dos Estados Gerais contribuiu
+                para:
+            </p>
+
+            <div class="alternativas">
+
+                <div>A) fortalecer definitivamente o absolutismo.</div>
+
+                <div>B) iniciar uma crise política que levou à formação da Assembleia Nacional.</div>
+
+                <div>C) restaurar os privilégios medievais.</div>
+
+                <div>D) abolir imediatamente a monarquia em 1788.</div>
+
+                <div>E) estabelecer o Império Napoleônico.</div>
+
+            </div>
+
+            <button class="btn-gabarito" onclick="mostrarGabarito('g1')">
+                Mostrar gabarito
+            </button>
+
+            <div id="g1" class="gabarito">
+
+                <strong>Resposta: B.</strong>
+
+                <p>
+                    A convocação dos Estados Gerais abriu uma crise política
+                    que contribuiu para a formação da Assembleia Nacional
+                    e para o aprofundamento do processo revolucionário.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             QUESTÃO 2
+             ===================================================== -->
+
+        <section class="questao">
+
+            <h2>Questão 2 — Estilo ENEM</h2>
+
+            <p>
+                A Revolução Francesa difundiu uma linguagem política baseada
+                em direitos, cidadania e igualdade jurídica. Entretanto,
+                diferentes grupos continuaram excluídos da participação
+                política em condições de igualdade.
+            </p>
+
+            <p>
+                Essa situação demonstra que:
+            </p>
+
+            <div class="alternativas">
+
+                <div>A) a Revolução eliminou imediatamente todas as desigualdades sociais.</div>
+
+                <div>B) os princípios revolucionários foram aplicados de forma uniforme a toda a população.</div>
+
+                <div>C) existiam tensões entre os princípios universais proclamados e sua aplicação concreta.</div>
+
+                <div>D) a Revolução não produziu mudanças políticas.</div>
+
+                <div>E) os direitos políticos permaneceram exclusivamente vinculados ao nascimento.</div>
+
+            </div>
+
+            <button class="btn-gabarito" onclick="mostrarGabarito('g2')">
+                Mostrar gabarito
+            </button>
+
+            <div id="g2" class="gabarito">
+
+                <strong>Resposta: C.</strong>
+
+                <p>
+                    A Revolução difundiu princípios universais, mas sua
+                    aplicação foi limitada e disputada, revelando importantes
+                    contradições sociais e políticas.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             RESUMO
+             ===================================================== -->
+
+        <section class="card">
+
+            <h2>📚 Resumo final</h2>
+
+            <p>
+                A Revolução Francesa começou em 1789 em um contexto de crise
+                financeira, dificuldades econômicas, desigualdades sociais,
+                conflitos políticos e circulação de ideias iluministas.
+            </p>
+
+            <p>
+                O processo passou por diferentes fases: Assembleia Nacional,
+                monarquia constitucional, República, radicalização jacobina,
+                Diretório e, finalmente, o golpe de 18 de Brumário em 1799.
+            </p>
+
+            <p>
+                A Revolução modificou profundamente as estruturas políticas
+                francesas e contribuiu para difundir novas ideias sobre
+                cidadania, direitos, soberania e igualdade jurídica.
+            </p>
+
+            <p>
+                Ao mesmo tempo, apresentou contradições relacionadas à
+                participação política, às mulheres, à escravidão e ao
+                colonialismo.
+            </p>
+
+        </section>
+
+
+        <!-- =====================================================
+             NAVEGAÇÃO
+             ===================================================== -->
+
+        <div class="navegacao">
+
+            <!-- Link para o capítulo anterior. -->
+            <a class="btn" href="../27-Independencia-dos-Estados-Unidos/index.html">
+                ← Independência dos Estados Unidos
+            </a>
+
+            <!-- Link para o capítulo seguinte. -->
+            <a class="btn" href="../29-Era-Napoleonica/index.html">
+                1.30 — Era Napoleônica →
+            </a>
+
+        </div>
+
+    </main>
+
+
+    <!-- =========================================================
+         RODAPÉ
+         ========================================================= -->
+
+    <footer>
+
+        <p>
+            <strong>Curso de História Geral</strong>
+        </p>
+
+        <p>
+            Fund II • Ensino Médio • ENEM • Vestibular • Concursos
+        </p>
+
+        <p>
+            Material didático — Professor Marcelo Oliveira
+        </p>
+
+    </footer>
+
+
+    <!-- =========================================================
+         BOTÃO VOLTAR AO TOPO
+         ========================================================= -->
+
+    <button id="topo" onclick="voltarTopo()">
+        ↑
+    </button>
+
+
+    <!-- =========================================================
+         JAVASCRIPT
+         ========================================================= -->
+
+    <script>
+
+        /* Função responsável por mostrar ou esconder o gabarito. */
+        function mostrarGabarito(id) {
+
+            /* Localiza o elemento pelo ID informado. */
+            const elemento = document.getElementById(id);
+
+            /* Verifica se o gabarito está visível. */
+            if (elemento.style.display === "block") {
+
+                /* Esconde o gabarito. */
+                elemento.style.display = "none";
+
+            } else {
+
+                /* Mostra o gabarito. */
+                elemento.style.display = "block";
+
+            }
+
+        }
+
+
+        /* Localiza o botão de voltar ao topo. */
+        const botaoTopo = document.getElementById("topo");
+
+
+        /* Observa o movimento de rolagem da página. */
+        window.addEventListener("scroll", function () {
+
+            /* Verifica se o usuário já desceu bastante. */
+            if (window.scrollY > 400) {
+
+                /* Mostra o botão. */
+                botaoTopo.style.display = "block";
+
+            } else {
+
+                /* Esconde o botão. */
+                botaoTopo.style.display = "none";
+
+            }
+
+        });
+
+
+        /* Função para voltar ao início da página. */
+        function voltarTopo() {
+
+            /* Faz o retorno acontecer suavemente. */
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+
+        }
+
+    </script>
+    <script>
+  const paginaAnterior = "29 - Independencia-dos-Estados-Unidos.html";
+  const paginaProxima = "31 - Era-Napoleonica.html";
+</script>
+<script src="navegacao.js"></script>
+
+</body>
+
+</html>

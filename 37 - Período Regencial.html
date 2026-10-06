@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1.37 — Período Regencial | Professor Marcelo Oliveira</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { font-family: Arial, Helvetica, sans-serif; background: #f4f7fb; color: #263238; line-height: 1.7; }
+        .container { width: 92%; max-width: 1200px; margin: auto; }
+        header { background: linear-gradient(135deg, #172554, #2563eb); color: white; padding: 50px 20px; text-align: center; box-shadow: 0 5px 20px rgba(0, 0, 0, 0.18); }
+        .eyebrow { font-size: 0.95rem; letter-spacing: 2px; text-transform: uppercase; opacity: 0.9; margin-bottom: 12px; }
+        header h1 { font-size: clamp(2rem, 5vw, 3.5rem); margin-bottom: 15px; }
+        header p { max-width: 850px; margin: auto; font-size: 1.1rem; }
+        .navegacao { display: flex; justify-content: space-between; gap: 15px; margin: 25px auto; flex-wrap: wrap; }
+        .btn { display: inline-block; padding: 13px 20px; border-radius: 10px; text-decoration: none; font-weight: bold; transition: 0.3s; }
+        .btn-voltar { background: #475569; color: white; }
+        .btn-proximo { background: #2563eb; color: white; }
+        .btn:hover { transform: translateY(-2px); opacity: 0.9; }
+        .apresentacao { background: white; margin: 30px auto; padding: 30px; border-radius: 18px; border-left: 7px solid #2563eb; box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08); }
+        .secao { margin: 35px auto; padding: 30px; border-radius: 18px; background: white; box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07); }
+        .comeco { border-top: 8px solid #2563eb; }
+        .desenvolvimento { border-top: 8px solid #16a34a; }
+        .legado { border-top: 8px solid #7c3aed; }
+        .consequencias { border-top: 8px solid #eab308; }
+        .enem { border-top: 8px solid #0891b2; }
+        .lousa { border-top: 8px solid #111827; }
+        .secao h2 { margin-bottom: 20px; color: #172554; font-size: 1.8rem; }
+        .secao h3 { margin-top: 25px; margin-bottom: 10px; color: #334155; }
+        strong { color: #172554; }
+        ul, ol { margin: 15px 0 15px 25px; }
+        li { margin-bottom: 8px; }
+        .timeline { border-left: 4px solid #2563eb; padding-left: 25px; margin-top: 25px; }
+        .evento { margin-bottom: 25px; position: relative; }
+        .evento::before { content: ""; position: absolute; left: -36px; top: 7px; width: 14px; height: 14px; background: #2563eb; border-radius: 50%; }
+        .ano { font-weight: bold; color: #2563eb; }
+        .tabela-container { overflow-x: auto; margin-top: 20px; }
+        table { width: 100%; border-collapse: collapse; min-width: 650px; }
+        th, td { padding: 14px; border: 1px solid #cbd5e1; text-align: left; }
+        th { background: #172554; color: white; }
+        tr:nth-child(even) { background: #f8fafc; }
+        .conceitos { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 15px; margin-top: 20px; }
+        .conceito { background: #eff6ff; border: 1px solid #bfdbfe; padding: 18px; border-radius: 12px; }
+        .questao { background: #f8fafc; padding: 25px; border-radius: 14px; margin-top: 20px; border-left: 5px solid #0891b2; }
+        .btn-gabarito { margin-top: 15px; background: #0891b2; color: white; border: none; padding: 12px 18px; border-radius: 8px; cursor: pointer; font-weight: bold; }
+        .gabarito { display: none; margin-top: 15px; padding: 15px; background: #ecfeff; border-radius: 10px; border: 1px solid #67e8f9; }
+        .resumo { background: #172554; color: white; padding: 30px; border-radius: 18px; margin: 35px auto; }
+        .resumo strong { color: white; }
+        footer { background: #0f172a; color: white; text-align: center; padding: 35px 20px; margin-top: 50px; }
+        .assinatura { font-size: 1.2rem; font-weight: bold; margin-top: 10px; }
+        #topo { position: fixed; bottom: 20px; right: 20px; width: 48px; height: 48px; border: none; border-radius: 50%; background: #2563eb; color: white; cursor: pointer; font-size: 20px; display: none; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25); }
+        @media (max-width: 700px) { .secao, .apresentacao { padding: 20px; } .navegacao { flex-direction: column; } .btn { text-align: center; } }
+    </style>
+</head>
+
+<body id="inicio">
+
+    <header>
+        <div class="eyebrow">Curso de História Geral</div>
+        <h1>1.37 — Período Regencial</h1>
+        <p>O governo de regentes entre 1831 e 1840, marcado por instabilidade política e grandes revoltas regionais.</p>
+    </header>
+
+    <main class="container">
+
+        <nav class="navegacao">
+            <a class="btn btn-voltar" href="36 - Primeiro Reinado.html">← Primeiro Reinado</a>
+            <a class="btn btn-proximo" href="38 - Segundo Reinado.html">Segundo Reinado →</a>
+        </nav>
+
+        <section class="apresentacao">
+            <p>Por que estudar o Período Regencial? Porque ele foi um dos momentos mais turbulentos do Império brasileiro, com disputas entre centralistas e autonomistas, além de revoltas em quase todas as regiões do país.</p>
+        </section>
+
+        <section class="secao comeco">
+            <h2>🔵 I — O COMEÇO: DA ABDICACAO ÀS REGÊNCIAS</h2>
+
+            <h3>1. A abdicação de Dom Pedro I (1831)</h3>
+            <p>Em 7 de abril de 1831, Dom Pedro I abdicou do trono em favor de seu filho Pedro de Alcântara, então com apenas 5 anos. Como o herdeiro era menor de idade, o Brasil passou a ser governado por regentes, configurando o Período Regencial (1831–1840).</p>
+
+            <h3>2. O Ato Adicional de 1834</h3>
+            <p>Foi uma reforma constitucional que criou as <strong>assembleias legislativas provinciais</strong>, concedendo maior autonomia administrativa às províncias. Também instituiu a figura da <strong>Regência Una</strong>, com um único regente eleito.</p>
+        </section>
+
+        <section class="secao desenvolvimento">
+            <h2>🟢 II — O DESENVOLVIMENTO: REVOLTAS REGIONAIS</h2>
+
+            <h3>3. Cabanagem (1835–1840)</h3>
+            <p>Revolta no Grão-Pará, liderada por camadas populares (ribeirinhos, indígenas, negros e soldados desertores), que exigiam melhores condições de vida e mais autonomia. Foi reprimida com extrema violência.</p>
+
+            <h3>4. Farroupilha (1835–1845)</h3>
+            <p>Revolta no Rio Grande do Sul, liderada por estancieiros e pecuaristas insatisfeitos com os impostos sobre o charque. Os rebeldes proclamaram a República Rio-Grandense e só foram derrotados após longos anos de conflito.</p>
+
+            <h3>5. Outras revoltas</h3>
+            <p>Além dessas, eclodiram a <strong>Sabinada</strong> na Bahia (1837–1838), a <strong>Balaiada</strong> no Maranhão (1838–1841) e a <strong>Revolta dos Malês</strong> em Salvador (1835), esta última liderada por escravos e libertos muçulmanos.</p>
+
+            <h3>6. O Golpe da Maioridade (1840)</h3>
+            <p>Para encerrar a instabilidade, as elites liberais anteciparam a maioridade de Dom Pedro II, que passou a governar com 14 anos. Com isso, encerrou-se o Período Regencial e iniciou-se o Segundo Reinado.</p>
+        </section>
+
+        <section class="secao comeco">
+            <h2>📅 LINHA DO TEMPO</h2>
+            <div class="timeline">
+                <div class="evento"><span class="ano">1831</span> — Abdicação de D. Pedro I e início do Período Regencial.</div>
+                <div class="evento"><span class="ano">1834</span> — Ato Adicional: mais autonomia para as províncias.</div>
+                <div class="evento"><span class="ano">1835</span> — Revolta dos Malês na Bahia.</div>
+                <div class="evento"><span class="ano">1835–1840</span> — Cabanagem no Grão-Pará.</div>
+                <div class="evento"><span class="ano">1835–1845</span> — Farroupilha no Rio Grande do Sul.</div>
+                <div class="evento"><span class="ano">1837–1838</span> — Sabinada na Bahia.</div>
+                <div class="evento"><span class="ano">1838–1841</span> — Balaiada no Maranhão.</div>
+                <div class="evento"><span class="ano">1840</span> — Golpe da Maioridade: D. Pedro II assume com 14 anos.</div>
+            </div>
+        </section>
+
+        <section class="secao consequencias">
+            <h2>🟡 Consequências</h2>
+            <ul>
+                <li>Intensa instabilidade política e contestação ao poder central.</li>
+                <li>Revoltas populares e regionais em quase todas as províncias.</li>
+                <li>Debate sobre centralização versus federalismo.</li>
+                <li>Fortalecimento da ideia de uma monarquia nacional estável.</li>
+                <li>Antecipação da maioridade de Dom Pedro II.</li>
+            </ul>
+        </section>
+
+        <section class="secao legado">
+            <h2>🟣 III — O LEGADO E O MUNDO ATUAL</h2>
+            <p>O Período Regencial mostrou que um país continental como o Brasil enfrenta grandes dificuldades para conciliar interesses regionais e nacionais. Muitos dos questionamentos surgidos nessa época — autonomia estadual, federalismo, participação popular — continuam influenciando os debates políticos brasileiros até hoje.</p>
+        </section>
+
+        <section class="secao">
+            <h2>📊 RESUMO: O PERÍODO REGENCIAL</h2>
+            <div class="tabela-container">
+                <table>
+                    <thead>
+                        <tr><th>Aspecto</th><th>Característica</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Período</td><td>1831–1840</td></tr>
+                        <tr><td>Causa</td><td>Abdicação de D. Pedro I e menoridade do herdeiro</td></tr>
+                        <tr><td>Reforma</td><td>Ato Adicional de 1834</td></tr>
+                        <tr><td>Principais revoltas</td><td>Cabanagem, Farroupilha, Sabinada, Balaiada, Malês</td></tr>
+                        <tr><td>Fim</td><td>Golpe da Maioridade (1840)</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="secao lousa">
+            <h2>📋 BNCC — COMO TRABALHAR ESTE TEMA</h2>
+            <p>A BNCC orienta o estudo do Período Regencial focando nas diferentes formas de organização política e nos conflitos do Brasil imperial.</p>
+            <ul>
+                <li><strong>Habilidade (EF08HI06):</strong> Analisar os conflitos e revoltas ocorridos no Período Regencial e suas causas.</li>
+                <li><strong>Habilidade (EF08HI07):</strong> Discutir a organização política do Brasil imperial e os projetos de centralização e descentralização.</li>
+                <li><strong>Objetivo:</strong> Compreender os diferentes grupos sociais envolvidos nas revoltas regionais.</li>
+            </ul>
+            <h3>💡 Sugestão de aula</h3>
+            <ul>
+                <li>Mapa mental interativo das revoltas regionais.</li>
+                <li>Debate: "Quem eram os rebeldes e o que pediam?"</li>
+                <li>Texto comparativo entre a Farroupilha e a Cabanagem.</li>
+            </ul>
+        </section>
+
+        <section class="secao">
+            <h2>📚 CONCEITOS FUNDAMENTAIS</h2>
+            <div class="conceitos">
+                <div class="conceito"><strong>Regência</strong><br>Governo provisório exercido enquanto o herdeiro do trono era menor de idade.</div>
+                <div class="conceito"><strong>Ato Adicional</strong><br>Reforma de 1834 que criou assembleias provinciais e a Regência Una.</div>
+                <div class="conceito"><strong>Cabanagem</strong><br>Revolta popular no Grão-Pará entre 1835 e 1840.</div>
+                <div class="conceito"><strong>Farroupilha</strong><br>Revolta rio-grandense de 1835 a 1845 contra os impostos sobre o charque.</div>
+                <div class="conceito"><strong>Revolta dos Malês</strong><br>Levante de escravos e libertos muçulmanos em Salvador, 1835.</div>
+                <div class="conceito"><strong>Golpe da Maioridade</strong><br>Antecipação da maioridade de D. Pedro II em 1840.</div>
+            </div>
+        </section>
+
+        <section class="secao enem">
+            <h2>🎯 ENEM, Vestibular e Concurso</h2>
+            <p>Teste seus conhecimentos:</p>
+
+            <div class="questao">
+                <h3>Questão 1</h3>
+                <p>Durante o Período Regencial, o Brasil enfrentou diversas revoltas regionais com diferentes motivações. A Farroupilha, por exemplo, destacou-se por ter sido liderada principalmente por:</p>
+                <ol type="A">
+                    <li>Militares estrangeiros exilados no Brasil.</li>
+                    <li>Estancieiros e pecuaristas do Rio Grande do Sul insatisfeitos com os impostos.</li>
+                    <li>Escrivos da corte portuguesa.</li>
+                    <li>Anarquistas de São Paulo.</li>
+                    <li>Seguidores do positivismo nas cidades sulinas.</li>
+                </ol>
+                <button class="btn-gabarito" onclick="mostrarGabarito('g1')">Mostrar gabarito</button>
+                <div class="gabarito" id="g1">
+                    <strong>Resposta: B.</strong> A Farroupilha foi liderada por estancieiros e pecuaristas gaúchos que protestavam contra a tributação sobre o charque.
+                </div>
+            </div>
+
+            <div class="questao">
+                <h3>Questão 2</h3>
+                <p>O Golpe da Maioridade, em 1840, encerrou o Período Regencial. Seu principal objetivo político era:</p>
+                <ol type="A">
+                    <li>A deposição de Dom Pedro I.</li>
+                    <li>A antecipação da maioridade de Dom Pedro II para estabilizar o governo.</li>
+                    <li>A proclamação da República no Brasil.</li>
+                    <li>A instituição do federalismo pleno.</li>
+                    <li>A anulação do Ato Adicional de 1834.</li>
+                </ol>
+                <button class="btn-gabarito" onclick="mostrarGabarito('g2')">Mostrar gabarito</button>
+                <div class="gabarito" id="g2">
+                    <strong>Resposta: B.</strong> O Golpe antecipou a maioridade de D. Pedro II, buscando pôr fim à turbulência política e iniciar o Segundo Reinado.
+                </div>
+            </div>
+        </section>
+
+        <section class="resumo">
+            <h2>🧠 RESUMO PARA O PROFESSOR</h2>
+            <p>
+                <strong>Tema:</strong> Período Regencial (1831–1840).<br>
+                <strong>Contexto:</strong> Abdicação de D. Pedro I e menoridade de D. Pedro II.<br>
+                <strong>Reforma:</strong> Ato Adicional de 1834.<br>
+                <strong>Revoltas:</strong> Cabanagem, Farroupilha, Sabinada, Balaiada, Malês.<br>
+                <strong>Fim:</strong> Golpe da Maioridade (1840).<br>
+                <strong>Habilidade BNCC:</strong> EF08HI06 e EF08HI07 — Revoltas regenciais e debates políticos do Império.
+            </p>
+        </section>
+
+        <nav class="navegacao">
+            <a class="btn btn-voltar" href="36 - Primeiro Reinado.html">← Primeiro Reinado</a>
+            <a class="btn btn-proximo" href="38 - Segundo Reinado.html">Segundo Reinado →</a>
+        </nav>
+
+    </main>
+
+    <footer>
+        <p>Curso de História Geral — Fund II • Ensino Médio • ENEM • Vestibular • Concurso</p>
+        <p class="assinatura">Professor Marcelo Oliveira</p>
+    </footer>
+
+    <button id="topo" onclick="voltarAoTopo()">↑</button>
+
+    <script>
+        function mostrarGabarito(id) {
+            const resposta = document.getElementById(id);
+            resposta.style.display = (resposta.style.display === "block") ? "none" : "block";
+        }
+        const botaoTopo = document.getElementById("topo");
+        window.addEventListener("scroll", function () { botaoTopo.style.display = window.scrollY > 400 ? "block" : "none"; });
+        function voltarAoTopo() { window.scrollTo({ top: 0, behavior: "smooth" }); }
+    </script>
+    <script>
+  const paginaAnterior = "36 - Primeiro Reinado.html";
+  const paginaProxima = "38 - Segundo Reinado.html";
+</script>
+<script src="navegacao.js"></script>
+
+</body>
+
+</html>

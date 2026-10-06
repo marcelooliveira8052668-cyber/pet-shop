@@ -1,0 +1,1750 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Define a codificação de caracteres da página. -->
+    <meta charset="UTF-8">
+
+    <!-- Faz a página funcionar corretamente em celulares e tablets. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Define o título exibido na aba do navegador. -->
+    <title>1.18 — Expansão Marítimo-Comercial | Curso de História Geral</title>
+
+    <style>
+
+        /* ==========================================================
+           CONFIGURAÇÕES GERAIS
+           ========================================================== */
+
+        /* Remove margens e espaçamentos padrão do navegador. */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Ativa rolagem suave na página. */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Define a aparência geral da página. */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f3f6fa;
+            color: #202938;
+            line-height: 1.7;
+        }
+
+        /* ==========================================================
+           CABEÇALHO
+           ========================================================== */
+
+        /* Cria o cabeçalho principal. */
+        header {
+            background: #071a33;
+            color: white;
+            text-align: center;
+            padding: 45px 20px;
+            border-bottom: 6px solid #f39c12;
+        }
+
+        /* Define o título principal. */
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 12px;
+        }
+
+        /* Define os textos do cabeçalho. */
+        header p {
+            max-width: 900px;
+            margin: 8px auto;
+            color: #dce8f5;
+        }
+
+        /* ==========================================================
+           CONTAINER
+           ========================================================== */
+
+        /* Centraliza e limita a largura do conteúdo. */
+        main {
+            width: min(1100px, 92%);
+            margin: 30px auto;
+        }
+
+        /* Cria cartões de conteúdo. */
+        .card {
+            background: white;
+            padding: 30px;
+            margin-bottom: 25px;
+            border-radius: 14px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.07);
+        }
+
+        /* Define os títulos dos cartões. */
+        .card h2 {
+            color: #071a33;
+            margin-bottom: 18px;
+        }
+
+        /* Define os subtítulos. */
+        .card h3 {
+            color: #173f6d;
+            margin-top: 22px;
+            margin-bottom: 10px;
+        }
+
+        /* Organiza listas. */
+        ul,
+        ol {
+            padding-left: 25px;
+            margin-top: 10px;
+        }
+
+        /* Dá espaço entre os itens. */
+        li {
+            margin-bottom: 8px;
+        }
+
+        /* Destaca termos importantes. */
+        strong {
+            color: #071a33;
+        }
+
+        /* ==========================================================
+           APRESENTAÇÃO
+           ========================================================== */
+
+        /* Cria o destaque inicial. */
+        .apresentacao {
+            background: linear-gradient(135deg, #0b3d70, #1769aa);
+            color: white;
+            padding: 35px;
+            border-radius: 15px;
+            margin-bottom: 25px;
+        }
+
+        /* Mantém o título da apresentação branco. */
+        .apresentacao h2 {
+            color: white;
+        }
+
+        /* ==========================================================
+           PARTES DA TRILOGIA
+           ========================================================== */
+
+        /* Representa a primeira parte. */
+        .parte1 {
+            border-left: 8px solid #1769aa;
+        }
+
+        /* Representa a segunda parte. */
+        .parte2 {
+            border-left: 8px solid #18864b;
+        }
+
+        /* Representa a terceira parte. */
+        .parte3 {
+            border-left: 8px solid #7b3fb5;
+        }
+
+        /* ==========================================================
+           DESTAQUES
+           ========================================================== */
+
+        /* Destaca causas. */
+        .causas {
+            background: #fff4df;
+            border-left: 8px solid #f39c12;
+        }
+
+        /* Destaca consequências. */
+        .consequencias {
+            background: #fffbe0;
+            border-left: 8px solid #e0b400;
+        }
+
+        /* Destaca conceitos. */
+        .conceitos {
+            background: #fffde9;
+            border-left: 8px solid #d9c400;
+        }
+
+        /* Destaca pontos de atenção. */
+        .atencao {
+            background: #fff0f0;
+            border-left: 8px solid #c0392b;
+        }
+
+        /* Destaca conteúdo do ENEM. */
+        .enem {
+            background: #e8fbff;
+            border-left: 8px solid #00a6c7;
+        }
+
+        /* Cria o quadro da lousa. */
+        .lousa {
+            background: #102a43;
+            color: white;
+            border-left: 8px solid #4ea1d3;
+        }
+
+        /* Mantém títulos e destaques da lousa brancos. */
+        .lousa h2,
+        .lousa h3,
+        .lousa strong {
+            color: white;
+        }
+
+        /* ==========================================================
+           TIMELINE
+           ========================================================== */
+
+        /* Cria a linha vertical da cronologia. */
+        .timeline {
+            border-left: 4px solid #1769aa;
+            padding-left: 25px;
+        }
+
+        /* Organiza cada evento. */
+        .evento {
+            position: relative;
+            margin-bottom: 22px;
+        }
+
+        /* Cria o marcador circular. */
+        .evento::before {
+            content: "";
+            position: absolute;
+            width: 13px;
+            height: 13px;
+            background: #1769aa;
+            border-radius: 50%;
+            left: -33px;
+            top: 8px;
+        }
+
+        /* Destaca o ano. */
+        .ano {
+            color: #1769aa;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        /* ==========================================================
+           TABELAS
+           ========================================================== */
+
+        /* Permite rolagem horizontal no celular. */
+        .tabela-container {
+            overflow-x: auto;
+        }
+
+        /* Define a largura da tabela. */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        /* Define células. */
+        th,
+        td {
+            border: 1px solid #d6dce5;
+            padding: 12px;
+            text-align: left;
+        }
+
+        /* Define o cabeçalho da tabela. */
+        th {
+            background: #071a33;
+            color: white;
+        }
+
+        /* Alterna a cor das linhas. */
+        tr:nth-child(even) {
+            background: #f4f7fa;
+        }
+
+        /* ==========================================================
+           QUESTÕES
+           ========================================================== */
+
+        /* Cria o cartão da questão. */
+        .questao {
+            background: #f8fafc;
+            border: 1px solid #dce3eb;
+            padding: 22px;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+
+        /* Organiza as alternativas. */
+        .alternativas {
+            margin-top: 15px;
+        }
+
+        /* Define os botões. */
+        button {
+            background: #1769aa;
+            color: white;
+            border: none;
+            padding: 12px 18px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        /* Efeito do mouse nos botões. */
+        button:hover {
+            background: #0d4f82;
+        }
+
+        /* Esconde o gabarito inicialmente. */
+        .gabarito {
+            display: none;
+            margin-top: 15px;
+            padding: 15px;
+            background: #e8f5e9;
+            border-left: 5px solid #18864b;
+            border-radius: 6px;
+        }
+
+        /* ==========================================================
+           NAVEGAÇÃO
+           ========================================================== */
+
+        /* Organiza os links anterior e próximo. */
+        .navegacao {
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        /* Define a aparência dos links. */
+        .navegacao a {
+            text-decoration: none;
+            background: #071a33;
+            color: white;
+            padding: 13px 20px;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        /* Efeito dos links. */
+        .navegacao a:hover {
+            background: #1769aa;
+        }
+
+        /* ==========================================================
+           BOTÃO TOPO
+           ========================================================== */
+
+        /* Cria o botão flutuante. */
+        #topo {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            display: none;
+            border-radius: 50%;
+            width: 48px;
+            height: 48px;
+            padding: 0;
+            font-size: 20px;
+            z-index: 1000;
+        }
+
+        /* ==========================================================
+           RODAPÉ
+           ========================================================== */
+
+        /* Define o rodapé. */
+        footer {
+            background: #071a33;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 40px;
+        }
+
+        /* ==========================================================
+           RESPONSIVIDADE
+           ========================================================== */
+
+        /* Ajusta a página para telas menores. */
+        @media (max-width: 700px) {
+
+            /* Reduz o tamanho do título. */
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            /* Reduz o espaçamento dos cartões. */
+            .card {
+                padding: 20px;
+            }
+
+            /* Coloca a navegação em coluna. */
+            .navegacao {
+                flex-direction: column;
+            }
+
+            /* Centraliza os links no celular. */
+            .navegacao a {
+                text-align: center;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- ==========================================================
+         CABEÇALHO
+         ========================================================== -->
+
+    <header>
+
+        <!-- Mostra o título do capítulo. -->
+        <h1>1.18 — EXPANSÃO MARÍTIMO-COMERCIAL</h1>
+
+        <!-- Apresenta o público do curso. -->
+        <p>
+            Curso de História Geral — Fund II • Ensino Médio • ENEM • Vestibular • Concurso
+        </p>
+
+        <!-- Identifica o professor responsável pelo material. -->
+        <p>
+            Professor Marcelo Oliveira
+        </p>
+
+    </header>
+
+    <!-- ==========================================================
+         CONTEÚDO PRINCIPAL
+         ========================================================== -->
+
+    <main>
+
+        <!-- Apresentação geral do tema. -->
+        <section class="apresentacao">
+
+            <h2>Da expansão europeia à formação de uma economia mundial</h2>
+
+            <p>
+                A expansão marítimo-comercial europeia foi um processo histórico
+                desenvolvido principalmente entre os séculos XV e XVI, no qual
+                reinos europeus ampliaram suas navegações, suas rotas comerciais
+                e seus contatos com diferentes regiões do planeta.
+            </p>
+
+            <p>
+                Esse processo esteve ligado a interesses econômicos, políticos,
+                religiosos e estratégicos e contribuiu para a formação de redes
+                comerciais intercontinentais.
+            </p>
+
+            <p>
+                A expansão também produziu conquistas, disputas, colonização,
+                escravização de populações africanas, exploração de territórios
+                e profundas transformações demográficas, econômicas e culturais.
+            </p>
+
+        </section>
+
+        <!-- ======================================================
+             PARTE I — O COMEÇO
+             ====================================================== -->
+
+        <section class="card parte1">
+
+            <h2>I — O COMEÇO: POR QUE OS EUROPEUS SE LANÇARAM AO MAR?</h2>
+
+            <h3>1. A Europa no final da Idade Média</h3>
+
+            <p>
+                Entre os séculos XIV e XV, a Europa passou por importantes
+                transformações econômicas e sociais.
+            </p>
+
+            <p>
+                O crescimento das cidades, das atividades comerciais e do uso
+                da moeda contribuiu para ampliar a importância dos comerciantes
+                e das monarquias.
+            </p>
+
+            <p>
+                Ao mesmo tempo, os europeus procuravam ampliar o acesso a produtos
+                valorizados nos mercados, como especiarias, metais preciosos,
+                tecidos e outros artigos.
+            </p>
+
+            <h3>2. As especiarias</h3>
+
+            <p>
+                Produtos como pimenta, canela, cravo e noz-moscada possuíam grande
+                valor nos mercados europeus.
+            </p>
+
+            <p>
+                Parte dessas mercadorias chegava à Europa através de redes comerciais
+                que conectavam diferentes regiões da Ásia, do Oriente Médio,
+                do norte da África e do Mediterrâneo.
+            </p>
+
+            <p>
+                Os comerciantes europeus procuravam ampliar suas possibilidades
+                de acesso a esses produtos e aumentar suas margens comerciais.
+            </p>
+
+            <h3>3. A busca por novas rotas</h3>
+
+            <p>
+                A expansão otomana no Mediterrâneo oriental modificou as relações
+                políticas e comerciais da região.
+            </p>
+
+            <p>
+                É importante evitar a ideia simplificada de que os otomanos
+                "fecharam completamente" as rotas comerciais.
+            </p>
+
+            <p>
+                O comércio continuou existindo, mas as disputas políticas e
+                econômicas estimularam os europeus a procurar alternativas
+                marítimas para alcançar mercados asiáticos.
+            </p>
+
+            <h3>4. A formação das monarquias nacionais</h3>
+
+            <p>
+                A centralização política contribuiu para que algumas monarquias
+                europeias reunissem recursos capazes de financiar grandes
+                empreendimentos marítimos.
+            </p>
+
+            <p>
+                Portugal e Espanha destacaram-se inicialmente nesse processo.
+            </p>
+
+            <h3>5. Tecnologia e conhecimento</h3>
+
+            <p>
+                A expansão marítima também dependeu da combinação de conhecimentos
+                acumulados por diferentes sociedades.
+            </p>
+
+            <p>
+                Cartografia, astronomia, técnicas de navegação, construção naval
+                e instrumentos como a bússola e o astrolábio contribuíram para
+                ampliar a capacidade de navegação.
+            </p>
+
+            <p>
+                É importante compreender que a expansão europeia não resultou
+                de uma tecnologia criada exclusivamente pelos europeus.
+                Conhecimentos náuticos e científicos circularam entre diferentes
+                povos e tradições.
+            </p>
+
+        </section>
+
+        <!-- ======================================================
+             CAUSAS
+             ====================================================== -->
+
+        <section class="card causas">
+
+            <h2>PRINCIPAIS CAUSAS DA EXPANSÃO MARÍTIMO-COMERCIAL</h2>
+
+            <ul>
+
+                <li>
+                    Busca por novas rotas comerciais.
+                </li>
+
+                <li>
+                    Interesse por especiarias e produtos orientais.
+                </li>
+
+                <li>
+                    Busca por metais preciosos.
+                </li>
+
+                <li>
+                    Expansão das atividades comerciais.
+                </li>
+
+                <li>
+                    Fortalecimento das monarquias.
+                </li>
+
+                <li>
+                    Competição entre Estados europeus.
+                </li>
+
+                <li>
+                    Interesses religiosos relacionados à expansão do cristianismo.
+                </li>
+
+                <li>
+                    Desenvolvimento e circulação de conhecimentos náuticos.
+                </li>
+
+                <li>
+                    Interesses estratégicos e militares.
+                </li>
+
+            </ul>
+
+        </section>
+
+        <!-- ======================================================
+             PORTUGAL
+             ====================================================== -->
+
+        <section class="card">
+
+            <h2>PORTUGAL: PIONEIRISMO NA EXPANSÃO</h2>
+
+            <h3>Por que Portugal?</h3>
+
+            <p>
+                Portugal possuía posição geográfica favorável no extremo oeste
+                da Península Ibérica, voltada para o Atlântico.
+            </p>
+
+            <p>
+                A centralização política relativamente precoce e a experiência
+                marítima contribuíram para a expansão portuguesa.
+            </p>
+
+            <h3>Conquista de Ceuta</h3>
+
+            <p>
+                Em 1415, os portugueses conquistaram Ceuta, no norte da África.
+            </p>
+
+            <p>
+                O acontecimento é tradicionalmente considerado um marco importante
+                do início da expansão portuguesa.
+            </p>
+
+            <h3>O avanço pela costa africana</h3>
+
+            <p>
+                Os portugueses avançaram progressivamente pela costa africana,
+                estabelecendo pontos de comércio e de apoio à navegação.
+            </p>
+
+            <h3>O Cabo da Boa Esperança</h3>
+
+            <p>
+                Em 1488, Bartolomeu Dias alcançou o extremo sul da África,
+                demonstrando a possibilidade de contornar o continente.
+            </p>
+
+            <h3>Chegada à Índia</h3>
+
+            <p>
+                Em 1498, Vasco da Gama chegou à Índia por via marítima,
+                estabelecendo uma ligação direta entre Portugal e o mercado
+                do Oceano Índico.
+            </p>
+
+        </section>
+
+        <!-- ======================================================
+             ESPANHA
+             ====================================================== -->
+
+        <section class="card">
+
+            <h2>ESPANHA E A ROTA ATLÂNTICA</h2>
+
+            <p>
+                A Espanha também entrou na competição marítima europeia.
+            </p>
+
+            <p>
+                Em 1492, a expedição liderada por Cristóvão Colombo,
+                financiada pelos reis espanhóis, atravessou o Atlântico
+                buscando uma rota ocidental para a Ásia.
+            </p>
+
+            <p>
+                Colombo chegou às Américas sem perceber inicialmente a dimensão
+                geográfica do continente que havia encontrado.
+            </p>
+
+            <p>
+                A partir desse momento, iniciou-se um processo de conquista,
+                colonização e exploração europeia das Américas que transformaria
+                profundamente a história mundial.
+            </p>
+
+        </section>
+
+        <!-- ======================================================
+             PARTE II — DESENVOLVIMENTO
+             ====================================================== -->
+
+        <section class="card parte2">
+
+            <h2>II — O DESENVOLVIMENTO: O ATLÂNTICO E A NOVA ECONOMIA MUNDIAL</h2>
+
+            <h3>1. O Atlântico ganha importância</h3>
+
+            <p>
+                Antes da expansão europeia, o Mediterrâneo era uma das principais
+                áreas de circulação comercial da Europa.
+            </p>
+
+            <p>
+                Com a expansão marítima, o Oceano Atlântico ganhou importância
+                crescente nas relações econômicas internacionais.
+            </p>
+
+            <p>
+                Lisboa, Sevilha, Cádiz, Antuérpia e posteriormente outros centros
+                passaram a integrar redes comerciais cada vez mais amplas.
+            </p>
+
+            <h3>2. A formação de redes intercontinentais</h3>
+
+            <p>
+                Produtos, pessoas, capitais, técnicas, plantas, animais,
+                doenças e conhecimentos passaram a circular entre diferentes
+                continentes em escala inédita para a época.
+            </p>
+
+            <p>
+                Esse processo contribuiu para uma integração econômica mundial
+                mais intensa, embora profundamente desigual e marcada pela
+                violência da conquista e da escravização.
+            </p>
+
+            <h3>3. A conquista das Américas</h3>
+
+            <p>
+                A expansão europeia nas Américas levou à conquista de grandes
+                sociedades indígenas por portugueses, espanhóis e outras potências.
+            </p>
+
+            <p>
+                Impérios como os asteca e inca foram derrotados pelos espanhóis
+                no século XVI, enquanto Portugal estabeleceu seu domínio sobre
+                grande parte do território que posteriormente formaria o Brasil.
+            </p>
+
+            <h3>4. Impactos sobre os povos indígenas</h3>
+
+            <p>
+                A conquista provocou profundas transformações nas sociedades
+                indígenas.
+            </p>
+
+            <p>
+                Entre os impactos estiveram guerras, perda de territórios,
+                imposição de instituições coloniais, trabalho compulsório,
+                conversão religiosa e epidemias que provocaram enormes perdas
+                populacionais em diversas regiões.
+            </p>
+
+            <h3>5. A escravização de africanos</h3>
+
+            <p>
+                A expansão colonial europeia também esteve ligada à expansão
+                do tráfico atlântico de africanos escravizados.
+            </p>
+
+            <p>
+                Milhões de africanos foram transportados à força para as Américas
+                ao longo de séculos.
+            </p>
+
+            <p>
+                O sistema escravista tornou-se fundamental para várias economias
+                coloniais, especialmente nas áreas produtoras de açúcar,
+                tabaco, algodão, café e outros produtos.
+            </p>
+
+            <h3>6. O comércio triangular</h3>
+
+            <p>
+                O termo "comércio triangular" é utilizado para representar
+                determinadas redes comerciais atlânticas envolvendo Europa,
+                África e Américas.
+            </p>
+
+            <p>
+                Entretanto, o sistema real era muito mais complexo do que
+                um simples triângulo.
+            </p>
+
+            <p>
+                Diferentes portos, comerciantes, Estados, companhias e redes
+                africanas e americanas participavam dessas relações.
+            </p>
+
+        </section>
+
+        <!-- ======================================================
+             TRATADO DE TORDESILHAS
+             ====================================================== -->
+
+        <section class="card">
+
+            <h2>TRATADO DE TORDESILHAS — 1494</h2>
+
+            <p>
+                A expansão espanhola e portuguesa provocou disputas sobre
+                os territórios encontrados no Atlântico.
+            </p>
+
+            <p>
+                Em 1494, Portugal e Espanha assinaram o Tratado de Tordesilhas,
+                estabelecendo uma linha de demarcação para dividir áreas de
+                exploração entre as duas monarquias.
+            </p>
+
+            <p>
+                O tratado demonstra como as monarquias europeias buscavam
+                transformar a expansão marítima em uma política organizada
+                de ocupação e exploração territorial.
+            </p>
+
+        </section>
+
+        <!-- ======================================================
+             TABELA
+             ====================================================== -->
+
+        <section class="card">
+
+            <h2>PORTUGAL E ESPANHA — COMPARAÇÃO</h2>
+
+            <div class="tabela-container">
+
+                <table>
+
+                    <tr>
+                        <th>Aspecto</th>
+                        <th>Portugal</th>
+                        <th>Espanha</th>
+                    </tr>
+
+                    <tr>
+                        <td>Principal direção inicial</td>
+                        <td>Costa africana e Oceano Índico</td>
+                        <td>Oceano Atlântico</td>
+                    </tr>
+
+                    <tr>
+                        <td>Marco importante</td>
+                        <td>Ceuta — 1415</td>
+                        <td>Viagem de Colombo — 1492</td>
+                    </tr>
+
+                    <tr>
+                        <td>Grande conquista marítima</td>
+                        <td>Chegada à Índia — 1498</td>
+                        <td>Conquista de grandes áreas das Américas</td>
+                    </tr>
+
+                    <tr>
+                        <td>Tratado importante</td>
+                        <td>Tordesilhas — 1494</td>
+                        <td>Tordesilhas — 1494</td>
+                    </tr>
+
+                </table>
+
+            </div>
+
+        </section>
+
+        <!-- ======================================================
+             PARTE III — LEGADO
+             ====================================================== -->
+
+        <section class="card parte3">
+
+            <h2>III — O LEGADO E O MUNDO ATUAL</h2>
+
+            <h3>1. Formação de uma economia mundial</h3>
+
+            <p>
+                A expansão marítima contribuiu para conectar de maneira
+                mais intensa diferentes áreas do planeta.
+            </p>
+
+            <p>
+                Mercadorias produzidas na América, na África, na Ásia e na Europa
+                passaram a circular por redes cada vez mais amplas.
+            </p>
+
+            <h3>2. O chamado intercâmbio colombiano</h3>
+
+            <p>
+                O contato entre Europa, África e América provocou a circulação
+                de plantas, animais, alimentos e doenças.
+            </p>
+
+            <p>
+                Alimentos americanos como milho, batata, tomate, mandioca e
+                cacau foram incorporados a diferentes sociedades.
+            </p>
+
+            <p>
+                Da mesma forma, animais e plantas de origem afro-euro-asiática
+                foram introduzidos nas Américas.
+            </p>
+
+            <h3>3. Transformações demográficas</h3>
+
+            <p>
+                A expansão alterou profundamente a distribuição das populações
+                e os fluxos migratórios.
+            </p>
+
+            <p>
+                A migração forçada de africanos escravizados constituiu um dos
+                maiores deslocamentos humanos da história.
+            </p>
+
+            <h3>4. O capitalismo comercial</h3>
+
+            <p>
+                A expansão das atividades comerciais e financeiras contribuiu
+                para o desenvolvimento do capitalismo comercial europeu.
+            </p>
+
+            <p>
+                Bancos, comerciantes, companhias e Estados passaram a atuar
+                conjuntamente na organização de grandes empreendimentos.
+            </p>
+
+            <h3>5. Colonialismo</h3>
+
+            <p>
+                A expansão marítima abriu caminho para a formação de sistemas
+                coloniais duradouros.
+            </p>
+
+            <p>
+                No caso português, a colonização do Brasil tornou-se parte
+                fundamental desse processo.
+            </p>
+
+            <h3>6. O mundo atual</h3>
+
+            <p>
+                Muitas características do mundo contemporâneo possuem raízes
+                nesse período: circulação global de mercadorias, relações
+                econômicas entre continentes, expansão das línguas europeias,
+                formação de sociedades multiculturais e desigualdades históricas
+                relacionadas ao colonialismo.
+            </p>
+
+        </section>
+
+        <!-- ======================================================
+             BRASIL
+             ====================================================== -->
+
+        <section class="card">
+
+            <h2>RELAÇÃO COM A HISTÓRIA DO BRASIL</h2>
+
+            <p>
+                A expansão marítimo-comercial portuguesa é fundamental para
+                compreender a chegada dos portugueses ao território americano
+                e a posterior formação do Brasil colonial.
+            </p>
+
+            <p>
+                A chegada da frota portuguesa comandada por Pedro Álvares Cabral
+                ocorreu em 1500, no contexto dessa expansão atlântica.
+            </p>
+
+            <p>
+                A colonização portuguesa posteriormente organizou a exploração
+                econômica do território, a ocupação territorial e diferentes
+                formas de trabalho compulsório.
+            </p>
+
+            <p>
+                Dessa forma, a expansão marítima europeia constitui uma das
+                chaves para compreender a formação histórica do Brasil.
+            </p>
+
+        </section>
+
+        <!-- ======================================================
+             ATENÇÃO
+             ====================================================== -->
+
+        <section class="card atencao">
+
+            <h2>⚠️ ATENÇÃO: EVITE EXPLICAÇÕES SIMPLISTAS</h2>
+
+            <p>
+                A expansão marítimo-comercial não pode ser explicada apenas
+                como uma busca europeia por "riquezas".
+            </p>
+
+            <p>
+                Existiam interesses econômicos, políticos, religiosos,
+                estratégicos e culturais que se combinavam de maneiras diferentes.
+            </p>
+
+            <p>
+                Também é importante evitar a ideia de que os europeus encontraram
+                territórios "vazios".
+            </p>
+
+            <p>
+                As Américas e outras regiões possuíam sociedades complexas,
+                diferentes formas de organização política, econômica e cultural
+                e redes de comércio próprias.
+            </p>
+
+        </section>
+
+        <!-- ======================================================
+             CONSEQUÊNCIAS
+             ====================================================== -->
+
+        <section class="card consequencias">
+
+            <h2>CONSEQUÊNCIAS DA EXPANSÃO MARÍTIMO-COMERCIAL</h2>
+
+            <ul>
+
+                <li>
+                    Ampliação das rotas comerciais internacionais.
+                </li>
+
+                <li>
+                    Crescimento da importância econômica do Atlântico.
+                </li>
+
+                <li>
+                    Conquista e colonização de territórios americanos.
+                </li>
+
+                <li>
+                    Expansão do tráfico atlântico de africanos escravizados.
+                </li>
+
+                <li>
+                    Circulação mundial de plantas, animais e doenças.
+                </li>
+
+                <li>
+                    Formação de redes comerciais intercontinentais.
+                </li>
+
+                <li>
+                    Fortalecimento das monarquias europeias.
+                </li>
+
+                <li>
+                    Expansão do capitalismo comercial.
+                </li>
+
+                <li>
+                    Transformações demográficas e culturais.
+                </li>
+
+                <li>
+                    Formação dos sistemas coloniais.
+                </li>
+
+            </ul>
+
+        </section>
+
+        <!-- ======================================================
+             CONCEITOS
+             ====================================================== -->
+
+        <section class="card conceitos">
+
+            <h2>CONCEITOS FUNDAMENTAIS</h2>
+
+            <h3>Expansão marítimo-comercial</h3>
+
+            <p>
+                Processo de expansão das navegações, rotas comerciais,
+                conquistas e contatos intercontinentais promovido principalmente
+                pelos Estados europeus a partir do século XV.
+            </p>
+
+            <h3>Mercantilismo</h3>
+
+            <p>
+                Conjunto de práticas e políticas econômicas associadas às
+                monarquias europeias da época moderna, incluindo intervenção
+                estatal, proteção comercial e busca de riquezas.
+            </p>
+
+            <h3>Colonialismo</h3>
+
+            <p>
+                Sistema de dominação política, econômica e territorial exercido
+                sobre uma região por uma potência externa.
+            </p>
+
+            <h3>Capitalismo comercial</h3>
+
+            <p>
+                Fase de expansão das atividades comerciais e financeiras que
+                antecedeu a predominância da industrialização capitalista.
+            </p>
+
+            <h3>Colonização</h3>
+
+            <p>
+                Processo de ocupação, organização e exploração de um território
+                submetido ao domínio de outro Estado.
+            </p>
+
+            <h3>Escambo</h3>
+
+            <p>
+                Troca direta de mercadorias sem utilização de moeda como
+                intermediária.
+            </p>
+
+        </section>
+
+        <!-- ======================================================
+             LINHA DO TEMPO
+             ====================================================== -->
+
+        <section class="card">
+
+            <h2>LINHA DO TEMPO — EXPANSÃO MARÍTIMO-COMERCIAL</h2>
+
+            <div class="timeline">
+
+                <div class="evento">
+
+                    <div class="ano">1415</div>
+
+                    <p>
+                        Conquista portuguesa de Ceuta.
+                    </p>
+
+                </div>
+
+                <div class="evento">
+
+                    <div class="ano">1488</div>
+
+                    <p>
+                        Bartolomeu Dias alcança o extremo sul da África.
+                    </p>
+
+                </div>
+
+                <div class="evento">
+
+                    <div class="ano">1492</div>
+
+                    <p>
+                        Colombo chega à América em expedição financiada pela Espanha.
+                    </p>
+
+                </div>
+
+                <div class="evento">
+
+                    <div class="ano">1494</div>
+
+                    <p>
+                        Tratado de Tordesilhas.
+                    </p>
+
+                </div>
+
+                <div class="evento">
+
+                    <div class="ano">1498</div>
+
+                    <p>
+                        Vasco da Gama chega à Índia por via marítima.
+                    </p>
+
+                </div>
+
+                <div class="evento">
+
+                    <div class="ano">1500</div>
+
+                    <p>
+                        Chegada da frota de Pedro Álvares Cabral ao território
+                        que posteriormente seria chamado Brasil.
+                    </p>
+
+                </div>
+
+                <div class="evento">
+
+                    <div class="ano">Século XVI</div>
+
+                    <p>
+                        Expansão das conquistas, colonização e redes comerciais
+                        europeias em diferentes partes do mundo.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ======================================================
+             O QUE O PROFESSOR PRECISA DOMINAR
+             ====================================================== -->
+
+        <section class="card">
+
+            <h2>O QUE O PROFESSOR PRECISA DOMINAR</h2>
+
+            <ol>
+
+                <li>
+                    Explicar as principais causas da expansão marítimo-comercial.
+                </li>
+
+                <li>
+                    Relacionar a expansão comercial ao fortalecimento das monarquias.
+                </li>
+
+                <li>
+                    Explicar o pioneirismo português.
+                </li>
+
+                <li>
+                    Compreender a participação espanhola.
+                </li>
+
+                <li>
+                    Conhecer a importância das técnicas de navegação.
+                </li>
+
+                <li>
+                    Explicar o Tratado de Tordesilhas.
+                </li>
+
+                <li>
+                    Relacionar expansão marítima e conquista das Américas.
+                </li>
+
+                <li>
+                    Compreender a expansão do tráfico atlântico de africanos escravizados.
+                </li>
+
+                <li>
+                    Explicar o intercâmbio de produtos, animais e doenças.
+                </li>
+
+                <li>
+                    Relacionar expansão marítima e formação dos sistemas coloniais.
+                </li>
+
+                <li>
+                    Relacionar o processo à formação histórica do Brasil.
+                </li>
+
+            </ol>
+
+        </section>
+
+        <!-- ======================================================
+             LOUSA
+             ====================================================== -->
+
+        <section class="card lousa">
+
+            <h2>O QUE COLOCAR NA LOUSA</h2>
+
+            <h3>EXPANSÃO MARÍTIMO-COMERCIAL</h3>
+
+            <p><strong>SÉCULOS XV–XVI</strong></p>
+
+            <p><strong>CAUSAS:</strong></p>
+
+            <ul>
+
+                <li>
+                    Comércio
+                </li>
+
+                <li>
+                    Especiarias
+                </li>
+
+                <li>
+                    Metais preciosos
+                </li>
+
+                <li>
+                    Monarquias
+                </li>
+
+                <li>
+                    Religião
+                </li>
+
+                <li>
+                    Tecnologia náutica
+                </li>
+
+            </ul>
+
+            <p><strong>PORTUGAL:</strong></p>
+
+            <ul>
+
+                <li>
+                    Ceuta — 1415
+                </li>
+
+                <li>
+                    Bartolomeu Dias — 1488
+                </li>
+
+                <li>
+                    Vasco da Gama — 1498
+                </li>
+
+            </ul>
+
+            <p><strong>ESPANHA:</strong></p>
+
+            <ul>
+
+                <li>
+                    Colombo — 1492
+                </li>
+
+            </ul>
+
+            <p><strong>1494:</strong></p>
+
+            <p>
+                Tratado de Tordesilhas
+            </p>
+
+            <p><strong>CONSEQUÊNCIAS:</strong></p>
+
+            <ul>
+
+                <li>
+                    Atlântico
+                </li>
+
+                <li>
+                    Colonização
+                </li>
+
+                <li>
+                    Escravidão
+                </li>
+
+                <li>
+                    Comércio mundial
+                </li>
+
+                <li>
+                    Intercâmbio biológico
+                </li>
+
+                <li>
+                    Brasil colonial
+                </li>
+
+            </ul>
+
+        </section>
+
+        <!-- ======================================================
+             ENEM
+             ====================================================== -->
+
+        <section class="card enem">
+
+            <h2>ENEM • VESTIBULAR • CONCURSO</h2>
+
+            <h3>Temas que podem aparecer</h3>
+
+            <ul>
+
+                <li>
+                    Pioneirismo português.
+                </li>
+
+                <li>
+                    Centralização política.
+                </li>
+
+                <li>
+                    Especiarias.
+                </li>
+
+                <li>
+                    Tratado de Tordesilhas.
+                </li>
+
+                <li>
+                    Conquista das Américas.
+                </li>
+
+                <li>
+                    Escravidão africana.
+                </li>
+
+                <li>
+                    Intercâmbio colombiano.
+                </li>
+
+                <li>
+                    Formação do capitalismo comercial.
+                </li>
+
+                <li>
+                    Formação do sistema colonial.
+                </li>
+
+            </ul>
+
+            <h3>Estratégia de prova</h3>
+
+            <p>
+                Ao encontrar uma questão que relacione
+                <strong>séculos XV e XVI, navegação, especiarias,
+                Portugal, Espanha, Atlântico, América e comércio</strong>,
+                pense na expansão marítimo-comercial e em seus efeitos
+                sobre a formação do mundo moderno.
+            </p>
+
+        </section>
+
+        <!-- ======================================================
+             QUESTÕES
+             ====================================================== -->
+
+        <section class="card">
+
+            <h2>QUESTÕES — MODELO ENEM</h2>
+
+            <!-- Questão 1. -->
+            <div class="questao">
+
+                <p>
+                    <strong>Questão 1</strong>
+                </p>
+
+                <p>
+                    Durante os séculos XV e XVI, Portugal e Espanha ampliaram
+                    suas navegações pelo Atlântico e por outras regiões,
+                    estabelecendo novas rotas comerciais e conquistando
+                    territórios.
+                </p>
+
+                <p>
+                    Entre os fatores que contribuíram para esse processo,
+                    destaca-se:
+                </p>
+
+                <div class="alternativas">
+
+                    <p>
+                        A) o desaparecimento das atividades comerciais europeias.
+                    </p>
+
+                    <p>
+                        B) o fortalecimento das monarquias e a busca por novas rotas.
+                    </p>
+
+                    <p>
+                        C) o isolamento completo das cidades europeias.
+                    </p>
+
+                    <p>
+                        D) a eliminação das disputas entre os Estados europeus.
+                    </p>
+
+                    <p>
+                        E) o fim do comércio entre Europa e Ásia.
+                    </p>
+
+                </div>
+
+                <button onclick="mostrarGabarito('gabarito1')">
+                    Mostrar gabarito
+                </button>
+
+                <div class="gabarito" id="gabarito1">
+
+                    <strong>Resposta: B.</strong>
+
+                    <p>
+                        O fortalecimento das monarquias, a expansão comercial
+                        e a busca por novas rotas estiveram entre os fatores
+                        que impulsionaram a expansão marítimo-comercial.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Questão 2. -->
+            <div class="questao">
+
+                <p>
+                    <strong>Questão 2</strong>
+                </p>
+
+                <p>
+                    A expansão marítima europeia provocou profundas mudanças
+                    nas relações entre diferentes sociedades do planeta.
+                    Produtos, pessoas, animais, plantas e doenças passaram
+                    a circular em novas redes intercontinentais.
+                </p>
+
+                <p>
+                    Uma consequência desse processo foi:
+                </p>
+
+                <div class="alternativas">
+
+                    <p>
+                        A) o isolamento econômico definitivo dos continentes.
+                    </p>
+
+                    <p>
+                        B) a formação de redes comerciais intercontinentais.
+                    </p>
+
+                    <p>
+                        C) o desaparecimento das sociedades americanas.
+                    </p>
+
+                    <p>
+                        D) o fim da circulação de mercadorias.
+                    </p>
+
+                    <p>
+                        E) a ausência de impactos demográficos.
+                    </p>
+
+                </div>
+
+                <button onclick="mostrarGabarito('gabarito2')">
+                    Mostrar gabarito
+                </button>
+
+                <div class="gabarito" id="gabarito2">
+
+                    <strong>Resposta: B.</strong>
+
+                    <p>
+                        A expansão marítima contribuiu para estabelecer redes
+                        comerciais e biológicas entre diferentes continentes,
+                        transformando profundamente as sociedades envolvidas.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ======================================================
+             BNCC
+             ====================================================== -->
+
+        <section class="card">
+
+            <h2>BNCC — COMO TRABALHAR O TEMA</h2>
+
+            <p>
+                Este capítulo pode ser articulado a habilidades da área de
+                Ciências Humanas que envolvam a análise das transformações
+                econômicas, políticas, sociais e culturais provocadas pela
+                expansão europeia e pela formação do mundo moderno.
+            </p>
+
+            <p>
+                Para planejamento pedagógico formal, o professor deve relacionar
+                a aula às habilidades específicas da etapa e do currículo adotado
+                pela instituição de ensino.
+            </p>
+
+            <p>
+                <strong>Foco pedagógico:</strong> expansão europeia, circulação
+                intercontinental, colonialismo, escravidão, formação do mundo
+                moderno e consequências de longa duração.
+            </p>
+
+        </section>
+
+        <!-- ======================================================
+             RESUMO FINAL
+             ====================================================== -->
+
+        <section class="card">
+
+            <h2>RESUMO PARA REVISÃO</h2>
+
+            <p>
+                A expansão marítimo-comercial europeia ocorreu principalmente
+                entre os séculos XV e XVI e esteve relacionada à expansão
+                comercial, ao fortalecimento das monarquias, à busca por novas
+                rotas e aos interesses religiosos e estratégicos.
+            </p>
+
+            <p>
+                Portugal destacou-se inicialmente pela exploração da costa africana
+                e pela busca de uma rota marítima para a Ásia.
+            </p>
+
+            <p>
+                A Espanha financiou a viagem de Cristóvão Colombo em 1492,
+                iniciando uma nova etapa da expansão europeia nas Américas.
+            </p>
+
+            <p>
+                O processo provocou a formação de redes comerciais intercontinentais,
+                a conquista e colonização de territórios, a expansão do tráfico
+                atlântico de africanos escravizados e profundas transformações
+                demográficas, culturais e econômicas.
+            </p>
+
+            <p>
+                Para a História do Brasil, a expansão marítimo-comercial é
+                fundamental para compreender a chegada dos portugueses em 1500
+                e a posterior montagem do sistema colonial.
+            </p>
+
+        </section>
+
+        <!-- ======================================================
+             NAVEGAÇÃO
+             ====================================================== -->
+
+        <div class="navegacao">
+
+            <!-- Link para o capítulo anterior. -->
+            <a href="../42-Descolonizacao/index.html">
+                ← Formação das Monarquias Nacionais
+            </a>
+
+            <!-- Link para o próximo capítulo. -->
+            <a href="../44-Montagem-do-Sistema-Colonial/index.html">
+                1.18 — Montagem do Sistema Colonial →
+            </a>
+
+        </div>
+
+    </main>
+
+    <!-- ==========================================================
+         BOTÃO VOLTAR AO TOPO
+         ========================================================== -->
+
+    <button id="topo" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+        ↑
+    </button>
+
+    <!-- ==========================================================
+         RODAPÉ
+         ========================================================== -->
+
+    <footer>
+
+        <p>
+            Curso de História Geral
+        </p>
+
+        <p>
+            Professor Marcelo Oliveira
+        </p>
+
+        <p>
+            Fund II • Ensino Médio • ENEM • Vestibular • Concurso
+        </p>
+
+    </footer>
+
+    <script>
+
+        /* ==========================================================
+           FUNÇÃO DO GABARITO
+           ========================================================== */
+
+        /* Cria a função responsável por mostrar ou esconder respostas. */
+        function mostrarGabarito(id) {
+
+            /* Procura o elemento pelo ID informado. */
+            const elemento = document.getElementById(id);
+
+            /* Verifica se o elemento está escondido. */
+            if (
+                elemento.style.display === "none" ||
+                elemento.style.display === ""
+            ) {
+
+                /* Exibe o gabarito. */
+                elemento.style.display = "block";
+
+            } else {
+
+                /* Esconde o gabarito novamente. */
+                elemento.style.display = "none";
+            }
+        }
+
+        /* ==========================================================
+           BOTÃO VOLTAR AO TOPO
+           ========================================================== */
+
+        /* Localiza o botão na página. */
+        const botaoTopo = document.getElementById("topo");
+
+        /* Monitora a rolagem da página. */
+        window.addEventListener("scroll", function () {
+
+            /* Verifica se a página foi deslocada mais de 400 pixels. */
+            if (window.scrollY > 400) {
+
+                /* Mostra o botão. */
+                botaoTopo.style.display = "block";
+
+            } else {
+
+                /* Esconde o botão. */
+                botaoTopo.style.display = "none";
+            }
+        });
+
+    </script>
+<script>
+  const paginaAnterior = "17 - Crise do Século XIV.html";
+  const paginaProxima = "19 - Reformas.html";
+</script>
+<script src="navegacao.js"></script>
+</body>
+
+</html>
+```

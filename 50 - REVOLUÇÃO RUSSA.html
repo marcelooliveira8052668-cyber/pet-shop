@@ -1,0 +1,2245 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <!-- Define a codificação de caracteres da página. -->
+    <meta charset="UTF-8">
+
+    <!-- Faz a página funcionar corretamente em celulares, tablets e computadores. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Define o título da página na aba do navegador. -->
+    <title>1.50 — Revolução Russa | Professor Marcelo Oliveira</title>
+
+    <style>
+
+        /* ==========================================================
+           CONFIGURAÇÕES GERAIS
+           ========================================================== */
+
+        /* Remove margens e espaçamentos padrões do navegador. */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Ativa rolagem suave. */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Define a aparência geral do corpo da página. */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f7fb;
+            color: #1f2937;
+            line-height: 1.7;
+        }
+
+        /* Remove sublinhado dos links. */
+        a {
+            text-decoration: none;
+        }
+
+        /* ==========================================================
+           CABEÇALHO
+           ========================================================== */
+
+        /* Cria o cabeçalho principal. */
+        header {
+            background: linear-gradient(135deg, #071a33, #123d6b);
+            color: white;
+            padding: 45px 20px;
+            text-align: center;
+            border-bottom: 6px solid #dc2626;
+        }
+
+        /* Identificação do curso. */
+        .curso {
+            font-size: 0.95rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            opacity: 0.85;
+            margin-bottom: 12px;
+        }
+
+        /* Título principal. */
+        header h1 {
+            font-size: clamp(2rem, 5vw, 3.6rem);
+            margin-bottom: 15px;
+        }
+
+        /* Subtítulo. */
+        header p {
+            max-width: 900px;
+            margin: auto;
+            font-size: 1.1rem;
+        }
+
+        /* ==========================================================
+           CONTAINER
+           ========================================================== */
+
+        /* Limita a largura do conteúdo. */
+        .container {
+            width: min(1150px, 92%);
+            margin: auto;
+        }
+
+        /* ==========================================================
+           APRESENTAÇÃO
+           ========================================================== */
+
+        /* Cartão de apresentação. */
+        .apresentacao {
+            background: white;
+            margin: 35px auto;
+            padding: 30px;
+            border-radius: 18px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            border-left: 7px solid #dc2626;
+        }
+
+        /* Título da apresentação. */
+        .apresentacao h2 {
+            color: #071a33;
+            margin-bottom: 15px;
+        }
+
+        /* ==========================================================
+           SEÇÕES
+           ========================================================== */
+
+        /* Espaçamento das seções. */
+        section {
+            margin: 35px 0;
+        }
+
+        /* Parte I — azul. */
+        .parte1 {
+            background: #dbeafe;
+            border-left: 8px solid #2563eb;
+            padding: 25px;
+            border-radius: 15px;
+        }
+
+        /* Parte II — verde. */
+        .parte2 {
+            background: #dcfce7;
+            border-left: 8px solid #16a34a;
+            padding: 25px;
+            border-radius: 15px;
+        }
+
+        /* Parte III — roxo. */
+        .parte3 {
+            background: #f3e8ff;
+            border-left: 8px solid #9333ea;
+            padding: 25px;
+            border-radius: 15px;
+        }
+
+        /* Títulos das partes. */
+        .parte1 h2,
+        .parte2 h2,
+        .parte3 h2 {
+            margin-bottom: 12px;
+        }
+
+        /* Cor do título da Parte I. */
+        .parte1 h2 {
+            color: #1d4ed8;
+        }
+
+        /* Cor do título da Parte II. */
+        .parte2 h2 {
+            color: #15803d;
+        }
+
+        /* Cor do título da Parte III. */
+        .parte3 h2 {
+            color: #7e22ce;
+        }
+
+        /* ==========================================================
+           CARTÕES
+           ========================================================== */
+
+        /* Cartão padrão. */
+        .card {
+            background: white;
+            padding: 25px;
+            margin-top: 20px;
+            border-radius: 15px;
+            box-shadow: 0 7px 20px rgba(0, 0, 0, 0.07);
+        }
+
+        /* Títulos internos. */
+        .card h3 {
+            color: #071a33;
+            margin-bottom: 12px;
+        }
+
+        /* Espaçamento dos parágrafos. */
+        .card p {
+            margin-bottom: 12px;
+        }
+
+        /* Espaçamento das listas. */
+        .card ul,
+        .card ol {
+            margin-left: 25px;
+            margin-bottom: 15px;
+        }
+
+        /* ==========================================================
+           BLOCOS DIDÁTICOS
+           ========================================================== */
+
+        /* Bloco para causas. */
+        .causas {
+            background: #fff7ed;
+            border-left: 7px solid #f97316;
+            padding: 22px;
+            margin-top: 20px;
+            border-radius: 12px;
+        }
+
+        /* Bloco para consequências. */
+        .consequencias {
+            background: #fefce8;
+            border-left: 7px solid #eab308;
+            padding: 22px;
+            margin-top: 20px;
+            border-radius: 12px;
+        }
+
+        /* Bloco de conceitos. */
+        .conceitos {
+            background: #fef9c3;
+            border-left: 7px solid #ca8a04;
+            padding: 22px;
+            margin-top: 20px;
+            border-radius: 12px;
+        }
+
+        /* Bloco de atenção. */
+        .atencao {
+            background: #fee2e2;
+            border-left: 7px solid #dc2626;
+            padding: 22px;
+            margin-top: 20px;
+            border-radius: 12px;
+        }
+
+        /* Bloco para ENEM. */
+        .enem {
+            background: #cffafe;
+            border-left: 7px solid #0891b2;
+            padding: 22px;
+            margin-top: 20px;
+            border-radius: 12px;
+        }
+
+        /* Bloco para conteúdo de lousa. */
+        .lousa {
+            background: #172554;
+            color: white;
+            padding: 25px;
+            margin-top: 20px;
+            border-radius: 15px;
+        }
+
+        /* Título da lousa. */
+        .lousa h3 {
+            color: #93c5fd;
+            margin-bottom: 12px;
+        }
+
+        /* ==========================================================
+           TABELAS
+           ========================================================== */
+
+        /* Permite rolagem horizontal das tabelas. */
+        .tabela-container {
+            overflow-x: auto;
+            margin-top: 20px;
+        }
+
+        /* Configuração geral da tabela. */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+        }
+
+        /* Células da tabela. */
+        th,
+        td {
+            padding: 14px;
+            border: 1px solid #d1d5db;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        /* Cabeçalho da tabela. */
+        th {
+            background: #071a33;
+            color: white;
+        }
+
+        /* Linhas alternadas. */
+        tr:nth-child(even) {
+            background: #f8fafc;
+        }
+
+        /* ==========================================================
+           LINHA DO TEMPO
+           ========================================================== */
+
+        /* Linha vertical. */
+        .timeline {
+            border-left: 5px solid #dc2626;
+            padding-left: 25px;
+            margin-top: 20px;
+        }
+
+        /* Cartão de cada acontecimento. */
+        .evento {
+            position: relative;
+            background: white;
+            padding: 18px;
+            margin-bottom: 18px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+        }
+
+        /* Marcador da linha do tempo. */
+        .evento::before {
+            content: "";
+            position: absolute;
+            left: -37px;
+            top: 20px;
+            width: 17px;
+            height: 17px;
+            background: #dc2626;
+            border: 4px solid #fee2e2;
+            border-radius: 50%;
+        }
+
+        /* Destaque para datas. */
+        .ano {
+            color: #b91c1c;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        /* ==========================================================
+           QUESTÕES
+           ========================================================== */
+
+        /* Cartão da questão. */
+        .questao {
+            background: white;
+            padding: 25px;
+            margin-top: 20px;
+            border-radius: 15px;
+            border-top: 5px solid #0891b2;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.07);
+        }
+
+        /* Espaçamento das alternativas. */
+        .alternativas {
+            margin-top: 15px;
+            padding-left: 25px;
+        }
+
+        /* Botão do gabarito. */
+        .btn-gabarito {
+            margin-top: 18px;
+            padding: 11px 18px;
+            border: none;
+            border-radius: 8px;
+            background: #0891b2;
+            color: white;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        /* Efeito do botão. */
+        .btn-gabarito:hover {
+            opacity: 0.85;
+        }
+
+        /* Gabarito inicialmente escondido. */
+        .gabarito {
+            display: none;
+            margin-top: 15px;
+            padding: 15px;
+            background: #ecfeff;
+            border-radius: 10px;
+            border-left: 5px solid #0891b2;
+        }
+
+        /* ==========================================================
+           NAVEGAÇÃO
+           ========================================================== */
+
+        /* Organiza os botões. */
+        .navegacao {
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+            margin: 45px 0;
+            flex-wrap: wrap;
+        }
+
+        /* Botões de navegação. */
+        .nav-btn {
+            display: inline-block;
+            padding: 14px 22px;
+            border-radius: 10px;
+            background: #071a33;
+            color: white;
+            font-weight: bold;
+        }
+
+        /* Efeito dos botões. */
+        .nav-btn:hover {
+            background: #123d6b;
+        }
+
+        /* ==========================================================
+           BOTÃO TOPO
+           ========================================================== */
+
+        /* Botão fixo. */
+        #topo {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            width: 48px;
+            height: 48px;
+            border: none;
+            border-radius: 50%;
+            background: #dc2626;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+            display: none;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* ==========================================================
+           RODAPÉ
+           ========================================================== */
+
+        /* Rodapé. */
+        footer {
+            background: #071a33;
+            color: white;
+            text-align: center;
+            padding: 35px 20px;
+            margin-top: 50px;
+        }
+
+        /* Assinatura. */
+        footer strong {
+            color: #93c5fd;
+        }
+
+        /* ==========================================================
+           RESPONSIVIDADE
+           ========================================================== */
+
+        /* Ajustes para telas pequenas. */
+        @media (max-width: 700px) {
+
+            /* Reduz o cabeçalho. */
+            header {
+                padding: 35px 15px;
+            }
+
+            /* Reduz os cartões. */
+            .card,
+            .apresentacao {
+                padding: 20px;
+            }
+
+            /* Coloca os botões em coluna. */
+            .navegacao {
+                flex-direction: column;
+            }
+
+            /* Faz os botões ocuparem toda a largura. */
+            .nav-btn {
+                text-align: center;
+                width: 100%;
+            }
+
+            /* Reduz tabelas em telas pequenas. */
+            th,
+            td {
+                font-size: 0.9rem;
+                padding: 10px;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body id="inicio">
+
+    <!-- ==========================================================
+         CABEÇALHO
+         ========================================================== -->
+
+    <header>
+
+        <!-- Nome do curso. -->
+        <div class="curso">
+            Curso de História Geral
+        </div>
+
+        <!-- Título do tema. -->
+        <h1>
+            1.50 — Revolução Russa
+        </h1>
+
+        <!-- Subtítulo. -->
+        <p>
+            Da crise do Império Russo às revoluções de 1917 e à formação
+            de uma nova experiência política e econômica.
+        </p>
+
+    </header>
+
+    <!-- Container principal. -->
+    <main class="container">
+
+        <!-- ======================================================
+             APRESENTAÇÃO
+             ====================================================== -->
+
+        <div class="apresentacao">
+
+            <!-- Título. -->
+            <h2>
+                Por que estudar a Revolução Russa?
+            </h2>
+
+            <!-- Primeiro parágrafo. -->
+            <p>
+                A Revolução Russa de 1917 foi um dos acontecimentos
+                decisivos do século XX. Ela derrubou o regime imperial
+                dos Romanov, levou os bolcheviques ao poder e iniciou
+                um processo que resultaria na formação da União Soviética.
+            </p>
+
+            <!-- Segundo parágrafo. -->
+            <p>
+                Para compreender a revolução, é necessário observar
+                as características do Império Russo, as desigualdades
+                sociais, a industrialização limitada e concentrada,
+                o autoritarismo político, os movimentos revolucionários
+                e os impactos da Primeira Guerra Mundial.
+            </p>
+
+            <!-- Terceiro parágrafo. -->
+            <p>
+                Também é importante compreender que 1917 não foi um único
+                acontecimento. O processo revolucionário envolveu diferentes
+                etapas, grupos políticos e projetos para o futuro da Rússia.
+            </p>
+
+        </div>
+
+        <!-- ======================================================
+             PARTE I — O COMEÇO
+             ====================================================== -->
+
+        <section>
+
+            <!-- Cabeçalho da Parte I. -->
+            <div class="parte1">
+
+                <!-- Título. -->
+                <h2>
+                    I — O COMEÇO
+                </h2>
+
+                <!-- Descrição. -->
+                <p>
+                    As condições sociais, econômicas e políticas que
+                    prepararam o terreno para a revolução.
+                </p>
+
+            </div>
+
+            <!-- Império Russo. -->
+            <div class="card">
+
+                <!-- Título. -->
+                <h3>
+                    O Império Russo antes de 1917
+                </h3>
+
+                <!-- Texto. -->
+                <p>
+                    No início do século XX, a Rússia era governada pelo
+                    czar Nicolau II, pertencente à dinastia Romanov.
+                </p>
+
+                <!-- Texto. -->
+                <p>
+                    O regime político era autocrático e apresentava
+                    forte concentração de poder nas mãos do czar.
+                </p>
+
+                <!-- Texto. -->
+                <p>
+                    A sociedade era majoritariamente camponesa, embora
+                    algumas regiões apresentassem crescimento industrial
+                    acelerado.
+                </p>
+
+            </div>
+
+            <!-- Estrutura social. -->
+            <div class="card">
+
+                <!-- Título. -->
+                <h3>
+                    Uma sociedade marcada por desigualdades
+                </h3>
+
+                <!-- Lista. -->
+                <ul>
+
+                    <li>
+                        Grande maioria da população formada por camponeses.
+                    </li>
+
+                    <li>
+                        Existência de uma aristocracia proprietária de terras.
+                    </li>
+
+                    <li>
+                        Crescimento de uma classe operária urbana.
+                    </li>
+
+                    <li>
+                        Condições de trabalho difíceis em diversos setores industriais.
+                    </li>
+
+                    <li>
+                        Desigualdade social e concentração de propriedades.
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <!-- Industrialização. -->
+            <div class="card">
+
+                <!-- Título. -->
+                <h3>
+                    Industrialização russa
+                </h3>
+
+                <!-- Texto. -->
+                <p>
+                    A industrialização russa ocorreu de maneira mais tardia
+                    em comparação com países pioneiros da Revolução Industrial.
+                </p>
+
+                <!-- Texto. -->
+                <p>
+                    O Estado teve participação importante no processo,
+                    enquanto capitais estrangeiros também participaram
+                    de investimentos em determinados setores.
+                </p>
+
+                <!-- Texto. -->
+                <p>
+                    A industrialização concentrou trabalhadores em grandes
+                    centros urbanos, contribuindo para a formação de
+                    organizações operárias.
+                </p>
+
+            </div>
+
+            <!-- Causas. -->
+            <div class="causas">
+
+                <!-- Título. -->
+                <h3>
+                    Principais fatores da crise revolucionária
+                </h3>
+
+                <!-- Lista. -->
+                <ul>
+
+                    <li>
+                        Autoritarismo do czarismo.
+                    </li>
+
+                    <li>
+                        Desigualdade social.
+                    </li>
+
+                    <li>
+                        Questão agrária.
+                    </li>
+
+                    <li>
+                        Crescimento do movimento operário.
+                    </li>
+
+                    <li>
+                        Expansão das ideias socialistas.
+                    </li>
+
+                    <li>
+                        Derrotas e dificuldades militares.
+                    </li>
+
+                    <li>
+                        Impactos da Primeira Guerra Mundial.
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <!-- Marxismo. -->
+            <div class="card">
+
+                <!-- Título. -->
+                <h3>
+                    Socialismo e marxismo
+                </h3>
+
+                <!-- Texto. -->
+                <p>
+                    As ideias de Karl Marx exerceram influência sobre
+                    diferentes movimentos socialistas europeus.
+                </p>
+
+                <!-- Texto. -->
+                <p>
+                    Na Rússia, entretanto, o marxismo foi interpretado
+                    por diferentes grupos políticos, que divergiam sobre
+                    estratégias e organização.
+                </p>
+
+                <!-- Conceito. -->
+                <div class="conceitos">
+
+                    <strong>
+                        Conceito-chave:
+                    </strong>
+
+                    Marxismo é uma tradição de pensamento político,
+                    econômico e social associada às análises de Karl Marx
+                    e Friedrich Engels sobre capitalismo, classes sociais
+                    e transformação histórica.
+
+                </div>
+
+            </div>
+
+            <!-- Bolcheviques e mencheviques. -->
+            <div class="card">
+
+                <!-- Título. -->
+                <h3>
+                    Bolcheviques e mencheviques
+                </h3>
+
+                <!-- Texto. -->
+                <p>
+                    O Partido Operário Social-Democrata Russo sofreu
+                    uma divisão importante no início do século XX.
+                </p>
+
+                <!-- Tabela. -->
+                <div class="tabela-container">
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+
+                                <th>
+                                    Grupo
+                                </th>
+
+                                <th>
+                                    Característica
+                                </th>
+
+                                <th>
+                                    Principal liderança associada
+                                </th>
+
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+
+                                <td>
+                                    Bolcheviques
+                                </td>
+
+                                <td>
+                                    Defendiam um partido revolucionário
+                                    fortemente organizado e posteriormente
+                                    assumiram a liderança da Revolução
+                                    de Outubro.
+                                </td>
+
+                                <td>
+                                    Vladimir Lenin.
+                                </td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>
+                                    Mencheviques
+                                </td>
+
+                                <td>
+                                    Defendiam uma organização partidária
+                                    mais ampla e seguiram uma estratégia
+                                    diferente para a transformação política.
+                                </td>
+
+                                <td>
+                                    Entre suas lideranças esteve Julius Martov.
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+            <!-- Revolução de 1905. -->
+            <div class="card">
+
+                <!-- Título. -->
+                <h3>
+                    A Revolução de 1905
+                </h3>
+
+                <!-- Texto. -->
+                <p>
+                    Em 1905, uma série de protestos, greves e movimentos
+                    sociais abalou o Império Russo.
+                </p>
+
+                <!-- Texto. -->
+                <p>
+                    O movimento foi reprimido, mas obrigou o governo a
+                    realizar algumas concessões políticas.
+                </p>
+
+                <!-- Texto. -->
+                <p>
+                    Entre os resultados esteve a criação da Duma,
+                    um parlamento que, entretanto, permaneceu sujeito
+                    a fortes limitações do poder czarista.
+                </p>
+
+                <!-- Atenção. -->
+                <div class="atencao">
+
+                    <strong>
+                        Atenção:
+                    </strong>
+
+                    A Revolução de 1905 não derrubou o czarismo.
+                    Ela é importante porque revelou a profundidade
+                    das tensões sociais e políticas que continuariam
+                    presentes até 1917.
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ======================================================
+             PARTE II — O DESENVOLVIMENTO
+             ====================================================== -->
+
+        <section>
+
+            <!-- Cabeçalho da Parte II. -->
+            <div class="parte2">
+
+                <!-- Título. -->
+                <h2>
+                    II — O DESENVOLVIMENTO
+                </h2>
+
+                <!-- Descrição. -->
+                <p>
+                    As revoluções de 1917 e a disputa pelo poder político.
+                </p>
+
+            </div>
+
+            <!-- Primeira Guerra. -->
+            <div class="card">
+
+                <!-- Título. -->
+                <h3>
+                    A Primeira Guerra Mundial como acelerador da crise
+                </h3>
+
+                <!-- Texto. -->
+                <p>
+                    A entrada da Rússia na Primeira Guerra Mundial
+                    agravou problemas econômicos e sociais já existentes.
+                </p>
+
+                <!-- Texto. -->
+                <p>
+                    A guerra provocou enormes gastos, dificuldades de
+                    abastecimento, inflação, perdas militares e aumento
+                    da insatisfação popular.
+                </p>
+
+                <!-- Texto. -->
+                <p>
+                    O governo czarista perdeu apoio entre diferentes
+                    setores da sociedade.
+                </p>
+
+            </div>
+
+            <!-- Revolução de Fevereiro. -->
+            <div class="card">
+
+                <!-- Título. -->
+                <h3>
+                    Revolução de Fevereiro de 1917
+                </h3>
+
+                <!-- Texto. -->
+                <p>
+                    Em fevereiro de 1917, protestos e greves cresceram
+                    em Petrogrado, então capital do Império Russo.
+                </p>
+
+                <!-- Texto. -->
+                <p>
+                    Parte das tropas recusou-se a reprimir os manifestantes
+                    e aderiu ao movimento.
+                </p>
+
+                <!-- Texto. -->
+                <p>
+                    Nicolau II abdicou em março de 1917 pelo calendário
+                    gregoriano utilizado internacionalmente.
+                </p>
+
+                <!-- Conceito. -->
+                <div class="conceitos">
+
+                    <strong>
+                        Atenção às datas:
+                    </strong>
+
+                    O calendário russo da época utilizava o calendário
+                    juliano. Por isso, a revolução chamada de "Fevereiro"
+                    ocorreu em março no calendário gregoriano.
+
+                </div>
+
+            </div>
+
+            <!-- Governo Provisório. -->
+            <div class="card">
+
+                <!-- Título. -->
+                <h3>
+                    O Governo Provisório
+                </h3>
+
+                <!-- Texto. -->
+                <p>
+                    Após a queda do czar, foi estabelecido um Governo
+                    Provisório.
+                </p>
+
+                <!-- Texto. -->
+                <p>
+                    Entretanto, o novo governo decidiu manter a Rússia
+                    na Primeira Guerra Mundial.
+                </p>
+
+                <!-- Texto. -->
+                <p>
+                    Essa decisão contribuiu para preservar parte da
+                    insatisfação popular.
+                </p>
+
+            </div>
+
+            <!-- Sovietes. -->
+            <div class="card">
+
+                <!-- Título. -->
+                <h3>
+                    Os sovietes
+                </h3>
+
+                <!-- Texto. -->
+                <p>
+                    Ao mesmo tempo em que existia o Governo Provisório,
+                    trabalhadores e soldados organizavam-se em sovietes.
+                </p>
+
+                <!-- Texto. -->
+                <p>
+                    Os sovietes eram conselhos de representação política
+                    que ganharam grande importância durante o processo
+                    revolucionário.
+                </p>
+
+                <!-- Conceito. -->
+                <div class="conceitos">
+
+                    <strong>
+                        Conceito-chave:
+                    </strong>
+
+                    <p>
+                        Soviete significa "conselho" em russo.
+                        Durante 1917, os sovietes tornaram-se importantes
+                        espaços de organização política de trabalhadores
+                        e soldados.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Teses de Abril. -->
+            <div class="card">
+
+                <!-- Título. -->
+                <h3>
+                    Lenin e as Teses de Abril
+                </h3>
+
+                <!-- Texto. -->
+                <p>
+                    Vladimir Lenin retornou à Rússia em 1917 e defendeu
+                    mudanças profundas na orientação do movimento
+                    revolucionário.
+                </p>
+
+                <!-- Texto. -->
+                <p>
+                    Entre suas palavras de ordem estavam a defesa de
+                    "paz, terra e pão" e a transferência do poder para
+                    os sovietes.
+                </p>
+
+                <!-- Texto. -->
+                <p>
+                    A proposta buscava responder às demandas de soldados,
+                    camponeses e trabalhadores.
+                </p>
+
+            </div>
+
+            <!-- Revolução de Outubro. -->
+            <div class="card">
+
+                <!-- Título. -->
+                <h3>
+                    Revolução de Outubro de 1917
+                </h3>
+
+                <!-- Texto. -->
+                <p>
+                    Em outubro de 1917, segundo o calendário juliano
+                    utilizado na Rússia naquele momento, os bolcheviques
+                    organizaram a tomada de pontos estratégicos em
+                    Petrogrado.
+                </p>
+
+                <!-- Texto. -->
+                <p>
+                    O Governo Provisório foi derrubado e os bolcheviques
+                    assumiram o poder político.
+                </p>
+
+                <!-- Atenção. -->
+                <div class="atencao">
+
+                    <strong>
+                        Atenção:
+                    </strong>
+
+                    "Revolução de Outubro" ocorreu em novembro no calendário
+                    gregoriano. O nome "Outubro" vem do calendário juliano
+                    utilizado na Rússia naquele período.
+
+                </div>
+
+            </div>
+
+            <!-- Primeiras medidas. -->
+            <div class="card">
+
+                <!-- Título. -->
+                <h3>
+                    As primeiras medidas do governo bolchevique
+                </h3>
+
+                <!-- Lista. -->
+                <ul>
+
+                    <li>
+                        Busca pela saída da guerra.
+                    </li>
+
+                    <li>
+                        Medidas relacionadas à distribuição de terras.
+                    </li>
+
+                    <li>
+                        Nacionalização ou controle estatal de determinados
+                        setores econômicos.
+                    </li>
+
+                    <li>
+                        Reorganização das estruturas políticas.
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <!-- Guerra Civil. -->
+            <div class="card">
+
+                <!-- Título. -->
+                <h3>
+                    Guerra Civil Russa
+                </h3>
+
+                <!-- Texto. -->
+                <p>
+                    Após a revolução, diferentes forças políticas e militares
+                    entraram em conflito.
+                </p>
+
+                <!-- Texto. -->
+                <p>
+                    Os bolcheviques organizaram o Exército Vermelho,
+                    enquanto seus adversários reuniam forças diversas,
+                    frequentemente identificadas como Exército Branco.
+                </p>
+
+                <!-- Texto. -->
+                <p>
+                    O conflito foi acompanhado por graves dificuldades
+                    econômicas e sociais.
+                </p>
+
+            </div>
+
+            <!-- NEP. -->
+            <div class="card">
+
+                <!-- Título. -->
+                <h3>
+                    A Nova Política Econômica — NEP
+                </h3>
+
+                <!-- Texto. -->
+                <p>
+                    Em 1921, Lenin implantou a Nova Política Econômica,
+                    conhecida como NEP.
+                </p>
+
+                <!-- Texto. -->
+                <p>
+                    A medida permitiu determinados mecanismos de mercado
+                    e pequenas atividades privadas, enquanto o Estado
+                    mantinha controle sobre setores estratégicos.
+                </p>
+
+                <!-- Texto. -->
+                <p>
+                    A NEP representou uma tentativa de recuperar uma
+                    economia profundamente afetada pela guerra e pela
+                    guerra civil.
+                </p>
+
+            </div>
+
+            <!-- Formação da URSS. -->
+            <div class="card">
+
+                <!-- Título. -->
+                <h3>
+                    Formação da União Soviética
+                </h3>
+
+                <!-- Texto. -->
+                <p>
+                    Em 1922, foi criada a União das Repúblicas Socialistas
+                    Soviéticas — URSS.
+                </p>
+
+                <!-- Texto. -->
+                <p>
+                    A nova estrutura reunia diferentes repúblicas sob
+                    uma organização política federal dominada pelo
+                    Partido Comunista.
+                </p>
+
+            </div>
+
+            <!-- Linha do tempo. -->
+            <div class="card">
+
+                <!-- Título. -->
+                <h3>
+                    Linha do tempo da Revolução Russa
+                </h3>
+
+                <!-- Linha do tempo. -->
+                <div class="timeline">
+
+                    <!-- Evento. -->
+                    <div class="evento">
+
+                        <div class="ano">
+                            1905
+                        </div>
+
+                        <p>
+                            Revolução de 1905 e criação da Duma.
+                        </p>
+
+                    </div>
+
+                    <!-- Evento. -->
+                    <div class="evento">
+
+                        <div class="ano">
+                            Fevereiro / Março de 1917
+                        </div>
+
+                        <p>
+                            Queda do czar Nicolau II.
+                        </p>
+
+                    </div>
+
+                    <!-- Evento. -->
+                    <div class="evento">
+
+                        <div class="ano">
+                            Abril de 1917
+                        </div>
+
+                        <p>
+                            Lenin apresenta as Teses de Abril.
+                        </p>
+
+                    </div>
+
+                    <!-- Evento. -->
+                    <div class="evento">
+
+                        <div class="ano">
+                            Outubro / Novembro de 1917
+                        </div>
+
+                        <p>
+                            Bolcheviques assumem o poder.
+                        </p>
+
+                    </div>
+
+                    <!-- Evento. -->
+                    <div class="evento">
+
+                        <div class="ano">
+                            1918
+                        </div>
+
+                        <p>
+                            Tratado de Brest-Litovsk e aprofundamento
+                            da guerra civil.
+                        </p>
+
+                    </div>
+
+                    <!-- Evento. -->
+                    <div class="evento">
+
+                        <div class="ano">
+                            1921
+                        </div>
+
+                        <p>
+                            Início da NEP.
+                        </p>
+
+                    </div>
+
+                    <!-- Evento. -->
+                    <div class="evento">
+
+                        <div class="ano">
+                            1922
+                        </div>
+
+                        <p>
+                            Formação da URSS.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ======================================================
+             PARTE III — LEGADO
+             ====================================================== -->
+
+        <section>
+
+            <!-- Cabeçalho da Parte III. -->
+            <div class="parte3">
+
+                <!-- Título. -->
+                <h2>
+                    III — O LEGADO E O MUNDO ATUAL
+                </h2>
+
+                <!-- Descrição. -->
+                <p>
+                    A revolução alterou o equilíbrio político mundial
+                    e influenciou debates sobre capitalismo, socialismo
+                    e organização do Estado.
+                </p>
+
+            </div>
+
+            <!-- Transformação política. -->
+            <div class="card">
+
+                <!-- Título. -->
+                <h3>
+                    Uma nova experiência política
+                </h3>
+
+                <!-- Texto. -->
+                <p>
+                    A Revolução Russa criou um Estado baseado em uma
+                    proposta socialista e em um sistema político dirigido
+                    pelo Partido Comunista.
+                </p>
+
+                <!-- Texto. -->
+                <p>
+                    A experiência soviética tornou-se uma referência
+                    internacional para movimentos comunistas e socialistas,
+                    ao mesmo tempo em que provocou forte oposição de governos
+                    e grupos políticos anticomunistas.
+                </p>
+
+            </div>
+
+            <!-- Capitalismo e socialismo. -->
+            <div class="card">
+
+                <!-- Título. -->
+                <h3>
+                    Capitalismo e socialismo no século XX
+                </h3>
+
+                <!-- Texto. -->
+                <p>
+                    A existência da União Soviética contribuiu para a
+                    formação de um importante polo político alternativo
+                    às sociedades capitalistas.
+                </p>
+
+                <!-- Texto. -->
+                <p>
+                    Posteriormente, especialmente depois da Segunda Guerra
+                    Mundial, essa divisão assumiria uma dimensão global
+                    durante a Guerra Fria.
+                </p>
+
+            </div>
+
+            <!-- Consequências. -->
+            <div class="consequencias">
+
+                <!-- Título. -->
+                <h3>
+                    Principais consequências históricas
+                </h3>
+
+                <!-- Lista. -->
+                <ul>
+
+                    <li>
+                        Queda do czarismo.
+                    </li>
+
+                    <li>
+                        Ascensão dos bolcheviques.
+                    </li>
+
+                    <li>
+                        Formação da URSS.
+                    </li>
+
+                    <li>
+                        Retirada da Rússia da Primeira Guerra Mundial.
+                    </li>
+
+                    <li>
+                        Expansão internacional das ideias comunistas.
+                    </li>
+
+                    <li>
+                        Transformação das relações internacionais.
+                    </li>
+
+                    <li>
+                        Formação de uma experiência política que influenciaria
+                        grande parte do século XX.
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <!-- Mundo atual. -->
+            <div class="card">
+
+                <!-- Título. -->
+                <h3>
+                    A Revolução Russa e o mundo contemporâneo
+                </h3>
+
+                <!-- Texto. -->
+                <p>
+                    A Revolução Russa continua sendo estudada porque seus
+                    efeitos ultrapassaram as fronteiras da Rússia.
+                </p>
+
+                <!-- Texto. -->
+                <p>
+                    Questões relacionadas à propriedade, organização do
+                    trabalho, desigualdade social, papel do Estado,
+                    planejamento econômico e direitos políticos permaneceram
+                    presentes nos debates do século XX e continuam sendo
+                    temas de discussão histórica.
+                </p>
+
+                <!-- Texto. -->
+                <p>
+                    É importante, entretanto, diferenciar a Rússia atual
+                    da União Soviética e evitar tratar experiências políticas
+                    diferentes como se fossem exatamente a mesma realidade.
+                </p>
+
+            </div>
+
+            <!-- Brasil. -->
+            <div class="card">
+
+                <!-- Título. -->
+                <h3>
+                    A Revolução Russa e o Brasil
+                </h3>
+
+                <!-- Texto. -->
+                <p>
+                    As ideias socialistas e comunistas também chegaram
+                    ao Brasil e influenciaram movimentos políticos e
+                    organizações de trabalhadores.
+                </p>
+
+                <!-- Texto. -->
+                <p>
+                    Em 1922 foi fundado o Partido Comunista do Brasil,
+                    posteriormente denominado Partido Comunista Brasileiro
+                    em determinado período de sua trajetória.
+                </p>
+
+                <!-- Texto. -->
+                <p>
+                    A influência da Revolução Russa também pode ser estudada
+                    em relação ao movimento operário brasileiro e às disputas
+                    políticas do século XX.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- ======================================================
+             CAUSAS E CONSEQUÊNCIAS
+             ====================================================== -->
+
+        <section>
+
+            <!-- Cabeçalho. -->
+            <div class="apresentacao">
+
+                <h2>
+                    Causas, processo e consequências
+                </h2>
+
+            </div>
+
+            <!-- Tabela. -->
+            <div class="tabela-container">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>
+                                Causas / condições
+                            </th>
+
+                            <th>
+                                Processo revolucionário
+                            </th>
+
+                            <th>
+                                Consequências
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+
+                            <td>
+                                Autoritarismo czarista.
+                            </td>
+
+                            <td>
+                                Revolução de Fevereiro.
+                            </td>
+
+                            <td>
+                                Queda de Nicolau II.
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>
+                                Questão agrária.
+                            </td>
+
+                            <td>
+                                Governo Provisório.
+                            </td>
+
+                            <td>
+                                Disputa política pelo poder.
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>
+                                Desigualdade social.
+                            </td>
+
+                            <td>
+                                Fortalecimento dos sovietes.
+                            </td>
+
+                            <td>
+                                Vitória bolchevique.
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>
+                                Impactos da Primeira Guerra Mundial.
+                            </td>
+
+                            <td>
+                                Revolução de Outubro.
+                            </td>
+
+                            <td>
+                                Formação da URSS.
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>
+                                Crescimento do movimento operário.
+                            </td>
+
+                            <td>
+                                Guerra Civil e reorganização econômica.
+                            </td>
+
+                            <td>
+                                Expansão internacional do movimento comunista.
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+        <!-- ======================================================
+             O QUE O PROFESSOR PRECISA DOMINAR
+             ====================================================== -->
+
+        <section>
+
+            <div class="card">
+
+                <h2>
+                    O que o professor precisa dominar
+                </h2>
+
+                <ul>
+
+                    <li>
+                        Características do czarismo.
+                    </li>
+
+                    <li>
+                        Estrutura social do Império Russo.
+                    </li>
+
+                    <li>
+                        Revolução de 1905.
+                    </li>
+
+                    <li>
+                        Relação entre Primeira Guerra Mundial e crise russa.
+                    </li>
+
+                    <li>
+                        Diferença entre Revolução de Fevereiro e Revolução
+                        de Outubro.
+                    </li>
+
+                    <li>
+                        Papel dos sovietes.
+                    </li>
+
+                    <li>
+                        Bolcheviques e mencheviques.
+                    </li>
+
+                    <li>
+                        Lenin e as Teses de Abril.
+                    </li>
+
+                    <li>
+                        Guerra Civil Russa.
+                    </li>
+
+                    <li>
+                        NEP.
+                    </li>
+
+                    <li>
+                        Formação da URSS.
+                    </li>
+
+                    <li>
+                        Relação entre Revolução Russa e Guerra Fria.
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </section>
+
+        <!-- ======================================================
+             LOUSA
+             ====================================================== -->
+
+        <section>
+
+            <div class="lousa">
+
+                <h3>
+                    O que colocar na lousa
+                </h3>
+
+                <p>
+                    REVOLUÇÃO RUSSA — 1917
+                </p>
+
+                <br>
+
+                <p>
+                    ANTES:
+                </p>
+
+                <p>
+                    Czarismo + desigualdade + questão agrária +
+                    industrialização concentrada
+                </p>
+
+                <br>
+
+                <p>
+                    1905:
+                </p>
+
+                <p>
+                    Revolução + Duma
+                </p>
+
+                <br>
+
+                <p>
+                    FEVEREIRO:
+                </p>
+
+                <p>
+                    Queda do czar
+                </p>
+
+                <br>
+
+                <p>
+                    GOVERNO PROVISÓRIO:
+                </p>
+
+                <p>
+                    Mantém a Rússia na guerra
+                </p>
+
+                <br>
+
+                <p>
+                    OUTUBRO:
+                </p>
+
+                <p>
+                    Bolcheviques assumem o poder
+                </p>
+
+                <br>
+
+                <p>
+                    1922:
+                </p>
+
+                <p>
+                    Formação da URSS
+                </p>
+
+                <br>
+
+                <p>
+                    LEGADO:
+                </p>
+
+                <p>
+                    Socialismo soviético + impacto mundial +
+                    Guerra Fria
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- ======================================================
+             CONCEITOS
+             ====================================================== -->
+
+        <section>
+
+            <div class="card">
+
+                <h2>
+                    Conceitos fundamentais
+                </h2>
+
+                <ul>
+
+                    <li>
+                        <strong>Czarismo:</strong>
+                        regime político do Império Russo sob a autoridade
+                        do czar.
+                    </li>
+
+                    <li>
+                        <strong>Bolchevique:</strong>
+                        corrente revolucionária do movimento social-democrata
+                        russo liderada por Lenin.
+                    </li>
+
+                    <li>
+                        <strong>Menchevique:</strong>
+                        corrente política socialista que seguiu orientação
+                        diferente da adotada pelos bolcheviques.
+                    </li>
+
+                    <li>
+                        <strong>Soviete:</strong>
+                        conselho de trabalhadores, soldados ou camponeses.
+                    </li>
+
+                    <li>
+                        <strong>Revolução:</strong>
+                        processo de transformação profunda das estruturas
+                        políticas, sociais ou econômicas.
+                    </li>
+
+                    <li>
+                        <strong>NEP:</strong>
+                        política econômica implantada em 1921 que combinou
+                        controle estatal de setores estratégicos com
+                        mecanismos limitados de mercado.
+                    </li>
+
+                    <li>
+                        <strong>URSS:</strong>
+                        União das Repúblicas Socialistas Soviéticas,
+                        criada em 1922.
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </section>
+
+        <!-- ======================================================
+             ENEM
+             ====================================================== -->
+
+        <section>
+
+            <div class="enem">
+
+                <h2>
+                    ENEM • Vestibular • Concurso
+                </h2>
+
+                <p>
+                    A Revolução Russa aparece frequentemente relacionada
+                    a temas como industrialização, desigualdade social,
+                    Primeira Guerra Mundial, socialismo, trabalho,
+                    Estado e transformações políticas.
+                </p>
+
+                <br>
+
+                <p>
+                    Uma das maiores armadilhas é confundir a Revolução
+                    de Fevereiro com a Revolução de Outubro.
+                </p>
+
+                <br>
+
+                <p>
+                    Outra estratégia importante é relacionar 1917 com
+                    a Primeira Guerra Mundial e, posteriormente,
+                    com a Guerra Fria.
+                </p>
+
+            </div>
+
+            <!-- Questão 1. -->
+            <div class="questao">
+
+                <h3>
+                    Questão 1 — Estilo ENEM
+                </h3>
+
+                <p>
+                    A Revolução Russa de 1917 ocorreu em uma sociedade
+                    marcada por fortes desigualdades e por uma crise
+                    agravada pela participação do país na Primeira
+                    Guerra Mundial.
+                </p>
+
+                <p>
+                    Nesse contexto, um dos fatores que contribuiu
+                    diretamente para a queda do czar Nicolau II foi:
+                </p>
+
+                <div class="alternativas">
+
+                    <p>
+                        A) a estabilidade econômica provocada pela guerra.
+                    </p>
+
+                    <p>
+                        B) a ausência de movimentos políticos organizados.
+                    </p>
+
+                    <p>
+                        C) a combinação entre crise econômica, dificuldades
+                        militares e insatisfação social.
+                    </p>
+
+                    <p>
+                        D) o fortalecimento absoluto do governo czarista.
+                    </p>
+
+                    <p>
+                        E) a expansão do poder da aristocracia sobre
+                        o movimento operário.
+                    </p>
+
+                </div>
+
+                <button
+                    class="btn-gabarito"
+                    onclick="mostrarGabarito('g1')"
+                >
+                    Mostrar gabarito
+                </button>
+
+                <div
+                    class="gabarito"
+                    id="g1"
+                >
+
+                    <strong>
+                        Gabarito: C.
+                    </strong>
+
+                    <p>
+                        A guerra agravou problemas econômicos, militares
+                        e sociais que já existiam no Império Russo.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Questão 2. -->
+            <div class="questao">
+
+                <h3>
+                    Questão 2 — Estilo Vestibular
+                </h3>
+
+                <p>
+                    Uma diferença fundamental entre as duas grandes
+                    etapas revolucionárias de 1917 foi:
+                </p>
+
+                <div class="alternativas">
+
+                    <p>
+                        A) Fevereiro derrubou o czarismo, enquanto
+                        Outubro levou os bolcheviques ao poder.
+                    </p>
+
+                    <p>
+                        B) Fevereiro criou a URSS e Outubro criou
+                        a Duma.
+                    </p>
+
+                    <p>
+                        C) Fevereiro encerrou a Primeira Guerra Mundial
+                        e Outubro iniciou o conflito.
+                    </p>
+
+                    <p>
+                        D) Fevereiro ocorreu depois da formação da URSS.
+                    </p>
+
+                    <p>
+                        E) Outubro restaurou o governo dos Romanov.
+                    </p>
+
+                </div>
+
+                <button
+                    class="btn-gabarito"
+                    onclick="mostrarGabarito('g2')"
+                >
+                    Mostrar gabarito
+                </button>
+
+                <div
+                    class="gabarito"
+                    id="g2"
+                >
+
+                    <strong>
+                        Gabarito: A.
+                    </strong>
+
+                    <p>
+                        A Revolução de Fevereiro derrubou Nicolau II
+                        e abriu espaço para o Governo Provisório.
+                        A Revolução de Outubro levou os bolcheviques
+                        à tomada do poder.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ======================================================
+             RESUMO FINAL
+             ====================================================== -->
+
+        <section>
+
+            <div class="apresentacao">
+
+                <h2>
+                    Resumo para revisão
+                </h2>
+
+                <p>
+                    A Rússia do início do século XX era governada
+                    pelo czar Nicolau II e apresentava profundas
+                    desigualdades sociais e políticas.
+                </p>
+
+                <br>
+
+                <p>
+                    A Revolução de 1905 revelou a fragilidade do regime,
+                    mas não derrubou o czarismo.
+                </p>
+
+                <br>
+
+                <p>
+                    A Primeira Guerra Mundial agravou as dificuldades
+                    econômicas, militares e sociais.
+                </p>
+
+                <br>
+
+                <p>
+                    Em 1917, a Revolução de Fevereiro derrubou o czar.
+                </p>
+
+                <br>
+
+                <p>
+                    O Governo Provisório manteve a Rússia na guerra,
+                    enquanto os sovietes ganharam força política.
+                </p>
+
+                <br>
+
+                <p>
+                    Em Outubro de 1917, os bolcheviques assumiram o poder.
+                </p>
+
+                <br>
+
+                <p>
+                    Após a guerra civil e outras transformações,
+                    foi criada a União Soviética em 1922.
+                </p>
+
+                <br>
+
+                <p>
+                    A experiência soviética influenciaria profundamente
+                    a política mundial durante o século XX.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- ======================================================
+             NAVEGAÇÃO
+             ====================================================== -->
+
+        <div class="navegacao">
+
+            <!-- Link para o tema anterior. -->
+            <a
+                class="nav-btn"
+                href="../36-Primeira-Guerra-Mundial/index.html"
+            >
+                ← Tema anterior
+            </a>
+
+            <!-- Link para o próximo tema. -->
+            <a
+                class="nav-btn"
+                href="../38-Crise-de-1929/index.html"
+            >
+                Próximo tema →
+            </a>
+
+        </div>
+
+    </main>
+
+    <!-- ==========================================================
+         RODAPÉ
+         ========================================================== -->
+
+    <footer>
+
+        <!-- Nome do curso. -->
+        <p>
+            Curso de História Geral
+        </p>
+
+        <!-- Assinatura. -->
+        <p>
+            <strong>
+                Professor Marcelo Oliveira
+            </strong>
+        </p>
+
+        <!-- Público. -->
+        <p>
+            Fund II • Ensino Médio • ENEM • Vestibular • Concurso
+        </p>
+
+    </footer>
+
+    <!-- ==========================================================
+         BOTÃO VOLTAR AO TOPO
+         ========================================================== -->
+
+    <button
+        id="topo"
+        onclick="voltarAoTopo()"
+        aria-label="Voltar ao topo"
+    >
+        ↑
+    </button>
+
+    <!-- ==========================================================
+         JAVASCRIPT
+         ========================================================== -->
+
+    <script>
+
+        /* Função responsável por mostrar ou esconder o gabarito. */
+        function mostrarGabarito(id) {
+
+            /* Localiza o elemento pelo ID recebido. */
+            const elemento = document.getElementById(id);
+
+            /* Verifica se o gabarito está aparecendo. */
+            if (elemento.style.display === "block") {
+
+                /* Esconde o gabarito. */
+                elemento.style.display = "none";
+
+            } else {
+
+                /* Mostra o gabarito. */
+                elemento.style.display = "block";
+
+            }
+
+        }
+
+        /* Localiza o botão de voltar ao topo. */
+        const botaoTopo = document.getElementById("topo");
+
+        /* Observa a rolagem da página. */
+        window.addEventListener("scroll", function () {
+
+            /* Verifica se o usuário desceu mais de 400 pixels. */
+            if (window.scrollY > 400) {
+
+                /* Mostra o botão. */
+                botaoTopo.style.display = "block";
+
+            } else {
+
+                /* Esconde o botão. */
+                botaoTopo.style.display = "none";
+
+            }
+
+        });
+
+        /* Função para voltar ao início. */
+        function voltarAoTopo() {
+
+            /* Faz a rolagem suave para o topo. */
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+
+        }
+
+    </script>
+    <script>
+  const paginaAnterior = "49 - A PRIMEIRA GUERRA MUNDIAL.html";
+  const paginaProxima = "51 - A CRISE DE 1929.html";
+</script>
+<script src="navegacao.js"></script>
+
+</body>
+
+</html>
+

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Define a codificação de caracteres para permitir acentos e caracteres especiais. -->
+    <meta charset="UTF-8">
+
+    <!-- Faz o site se adaptar corretamente a celulares, tablets e computadores. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Define o título exibido na aba do navegador. -->
+    <title>1.17 — A Crise do Século XIV | Professor Marcelo Oliveira</title>
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { font-family: Arial, Helvetica, sans-serif; background: #f4f7fb; color: #263238; line-height: 1.7; }
+        .container { width: 92%; max-width: 1200px; margin: auto; }
+        header { background: linear-gradient(135deg, #172554, #2563eb); color: white; padding: 50px 20px; text-align: center; box-shadow: 0 5px 20px rgba(0, 0, 0, 0.18); }
+        .eyebrow { font-size: 0.95rem; letter-spacing: 2px; text-transform: uppercase; opacity: 0.9; margin-bottom: 12px; }
+        header h1 { font-size: clamp(2rem, 5vw, 3.5rem); margin-bottom: 15px; }
+        header p { max-width: 850px; margin: auto; font-size: 1.1rem; }
+        .navegacao { display: flex; justify-content: space-between; gap: 15px; margin: 25px auto; flex-wrap: wrap; }
+        .btn { display: inline-block; padding: 13px 20px; border-radius: 10px; text-decoration: none; font-weight: bold; transition: 0.3s; }
+        .btn-voltar { background: #475569; color: white; }
+        .btn-proximo { background: #2563eb; color: white; }
+        .btn:hover { transform: translateY(-2px); opacity: 0.9; }
+        .apresentacao { background: white; margin: 30px auto; padding: 30px; border-radius: 18px; border-left: 7px solid #2563eb; box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08); }
+        .secao { margin: 35px auto; padding: 30px; border-radius: 18px; background: white; box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07); }
+        .comeco { border-top: 8px solid #2563eb; }
+        .desenvolvimento { border-top: 8px solid #16a34a; }
+        .legado { border-top: 8px solid #7c3aed; }
+        .causas { border-top: 8px solid #f97316; }
+        .consequencias { border-top: 8px solid #eab308; }
+        .atencao { border-top: 8px solid #dc2626; }
+        .enem { border-top: 8px solid #0891b2; }
+        .lousa { border-top: 8px solid #111827; }
+        .secao h2 { margin-bottom: 20px; color: #172554; font-size: 1.8rem; }
+        .secao h3 { margin-top: 25px; margin-bottom: 10px; color: #334155; }
+        strong { color: #172554; }
+        ul, ol { margin: 15px 0 15px 25px; }
+        li { margin-bottom: 8px; }
+        .timeline { border-left: 4px solid #2563eb; padding-left: 25px; margin-top: 25px; }
+        .evento { margin-bottom: 25px; position: relative; }
+        .evento::before { content: ""; position: absolute; left: -36px; top: 7px; width: 14px; height: 14px; background: #2563eb; border-radius: 50%; }
+        .ano { font-weight: bold; color: #2563eb; }
+        .tabela-container { overflow-x: auto; margin-top: 20px; }
+        table { width: 100%; border-collapse: collapse; min-width: 650px; }
+        th, td { padding: 14px; border: 1px solid #cbd5e1; text-align: left; }
+        th { background: #172554; color: white; }
+        tr:nth-child(even) { background: #f8fafc; }
+        .conceitos { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 15px; margin-top: 20px; }
+        .conceito { background: #eff6ff; border: 1px solid #bfdbfe; padding: 18px; border-radius: 12px; }
+        .questao { background: #f8fafc; padding: 25px; border-radius: 14px; margin-top: 20px; border-left: 5px solid #0891b2; }
+        .btn-gabarito { margin-top: 15px; background: #0891b2; color: white; border: none; padding: 12px 18px; border-radius: 8px; cursor: pointer; font-weight: bold; }
+        .gabarito { display: none; margin-top: 15px; padding: 15px; background: #ecfeff; border-radius: 10px; border: 1px solid #67e8f9; }
+        .resumo { background: #172554; color: white; padding: 30px; border-radius: 18px; margin: 35px auto; }
+        .resumo strong { color: white; }
+        footer { background: #0f172a; color: white; text-align: center; padding: 35px 20px; margin-top: 50px; }
+        .assinatura { font-size: 1.2rem; font-weight: bold; margin-top: 10px; }
+        #topo { position: fixed; bottom: 20px; right: 20px; width: 48px; height: 48px; border: none; border-radius: 50%; background: #2563eb; color: white; cursor: pointer; font-size: 20px; display: none; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25); }
+        @media (max-width: 700px) {
+            .secao, .apresentacao { padding: 20px; }
+            .navegacao { flex-direction: column; }
+            .btn { text-align: center; }
+        }
+    </style>
+</head>
+
+<body id="inicio">
+
+    <header>
+        <div class="eyebrow">Curso de História Geral</div>
+        <h1>1.17 — A Crise do Século XIV</h1>
+        <p>Fome, peste, guerra e as transformações que abalaram a Europa medieval no final da Idade Média.</p>
+    </header>
+
+    <main class="container">
+
+        <nav class="navegacao">
+            <a class="btn btn-voltar" href="16 - Formacao-Monarquias-Nacionais.html">← Formação Monarquias</a>
+            <a class="btn btn-proximo" href="18 - EXPANSÃO MARÍTIMO-COMERCIAL.html">Expansão Marítima →</a>
+        </nav>
+
+        <section class="apresentacao">
+            <p>Por que estudar a Crise do Século XIV? Porque ela representa o colapso da ordem feudal clássica e marca o início de profundas transformações que abriram caminho para o Renascimento, a expansão marítima e a modernidade.</p>
+        </section>
+
+        <section class="secao comeco">
+            <h2>🔵 I — O COMEÇO: O AGRAVAMENTO DO CLIMA</h2>
+
+            <h3>1. Mudanças climáticas e fomes</h3>
+            <p>No início do século XIV, a Europa sofreu uma queda acentuada das temperaturas, conhecida como <strong>Pequena Idade do Gelo</strong>. Lavouras foram destruídas, os invernos ficaram mais rigorosos e as colheitas diminuíram drasticamente.</p>
+            <p>Entre <strong>1315 e 1317</strong>, grandes fomes devastaram o continente, enfraquecendo a população europeia e criando condições ideais para a disseminação de doenças.</p>
+
+            <h3>2. A peste bubônica</h3>
+            <p>Em <strong>1347</strong>, por meio de rotas comerciais entre Europa e Ásia, chegou a <strong>Peste Negra</strong>, causada pela bactéria <em>Yersinia pestis</em> e transmitida por pulgas de ratos.</p>
+            <p>Estima-se que a peste tenha dizimado entre <strong>um terço e a metade da população europeia</strong>, alterando profundamente a economia, a sociedade e a mentalidade da época.</p>
+        </section>
+
+        <section class="secao desenvolvimento">
+            <h2>🟢 II — O DESENVOLVIMENTO: GUERRA E REVOLTAS</h2>
+
+            <h3>3. A Guerra dos Cem Anos (1337–1453)</h3>
+            <p>Conflito prolongado entre <strong>França e Inglaterra</strong> pelo trono francês e pelo controle de territórios ricos. A guerra devastou campos, villages e cidades, além de ter fortalecido as monarquias nacionais em detrimento da nobreza feudal.</p>
+
+            <h3>4. As revoltas populares</h3>
+            <p>A escassez de mão de obra valorizou o trabalhador rural, que passou a exigir melhores condições. Isso gerou revoltas como a <strong>Jacquerie</strong> na França (1358) e a <strong>Revolta dos Camponeses</strong> na Inglaterra (1381), além de revoltas urbanas.</p>
+
+            <h3>5. O Cisma do Ocidente (1378–1417)</h3>
+            <p>A crise religiosa interna dividiu a Igreja Católica entre dois papados rivais (Roma e Avinhão), enfraquecendo sua autoridade moral e abrindo espaço para críticas como as de John Wycliffe e Jan Hus.</p>
+        </section>
+
+        <section class="secao comeco">
+            <h2>📅 LINHA DO TEMPO</h2>
+            <div class="timeline">
+                <div class="evento"><span class="ano">1315–1317</span> — Grande Fome na Europa.</div>
+                <div class="evento"><span class="ano">1337</span> — Início da Guerra dos Cem Anos.</div>
+                <div class="evento"><span class="ano">1347</span> — Chegada da Peste Negra.</div>
+                <div class="evento"><span class="ano">1358</span> — Revolta da Jacquerie (França).</div>
+                <div class="evento"><span class="ano">1378–1417</span> — Cisma do Ocidente.</div>
+                <div class="evento"><span class="ano">1381</span> — Revolta dos camponeses ingleses.</div>
+                <div class="evento"><span class="ano">1453</span> — Fim da Guerra dos Cem Anos.</div>
+            </div>
+        </section>
+
+        <section class="secao consequencias">
+            <h2>🟡 Consequências</h2>
+            <ul>
+                <li>Colapso demográfico e econômico da Europa feudal.</li>
+                <li>Valorização do trabalho servil e precarização do sistema feudal.</li>
+                <li>Fortalecimento das monarquias nacionais e enfraquecimento da nobreza.</li>
+                <li>Surgimento de novas relações econômicas e sociais nos campos.</li>
+                <li>Abertura para o Renascimento e para a expansão marítimo-comercial.</li>
+            </ul>
+        </section>
+
+        <section class="secao legado">
+            <h2>🟣 III — O LEGADO E O MUNDO ATUAL</h2>
+            <p>A crise do século XIV não foi apenas destruição: ela desmontou a velha ordem feudal e preparou o terreno para o Renascimento, a Reforma Protestante e a consolidação dos Estados nacionais. Compreender essa crise ajuda a entender por que a Idade Moderna se formatou do modo como conhecemos.</p>
+        </section>
+
+        <section class="secao">
+            <h2>📊 RESUMO: A CRISE DO SÉCULO XIV</h2>
+            <div class="tabela-container">
+                <table>
+                    <thead>
+                        <tr><th>Fator</th><th>Impacto</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Pequena Idade do Gelo</td><td>Quebra de safras e fomes</td></tr>
+                        <tr><td>Peste Negra</td><td>Morte de 1/3 a 1/2 da população</td></tr>
+                        <tr><td>Guerra dos Cem Anos</td><td>Devastação e fortalecimento das monarquias</td></tr>
+                        <tr><td>Revoltas camponesas</td><td>Questionamento do feudalismo</td></tr>
+                        <tr><td>Cisma do Ocidente</td><td>Enfraquecimento da Igreja</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="secao lousa">
+            <h2>📋 BNCC — COMO TRABALHAR ESTE TEMA</h2>
+            <p>A BNCC aborda a Crise do Século XIV dentro da área de <strong>Ciências Humanas</strong>, enfocando mudanças sociais e econômicas na Baixa Idade Média.</p>
+            <ul>
+                <li><strong>Habilidade (EF06HI04):</strong> Identificar os principais conflitos e crises que marcaram o fim da Idade Média.</li>
+                <li><strong>Habilidade (EF06HI05):</strong> Relacionar as transformações econômicas e sociais do período às mudanças nas estruturas feudais.</li>
+                <li><strong>Objetivo:</strong> Comparar a organização social medieval com as consequências da crise do século XIV.</li>
+            </ul>
+            <h3>💡 Sugestão de aula</h3>
+            <ul>
+                <li>Debate em sala: "Se um terço da população morresse hoje, como seria o Brasil?"</li>
+                <li>Análise de mapas das rotas comerciais e da disseminação da peste.</li>
+                <li>Linha do tempo coletiva dos eventos do século XIV.</li>
+            </ul>
+        </section>
+
+        <section class="secao">
+            <h2>📚 CONCEITOS FUNDAMENTAIS</h2>
+            <div class="conceitos">
+                <div class="conceito"><strong>Peste Negra</strong><br>Epidemia devastadora que dizimou a Europa entre 1347 e 1351.</div>
+                <div class="conceito"><strong>Guerra dos Cem Anos</strong><br>Conflito entre França e Inglaterra que durou de 1337 a 1453.</div>
+                <div class="conceito"><strong>Baixa Idade Média</strong><br>Período final da Idade Média, marcado por crises e transformações.</div>
+                <div class="conceito"><strong>Jacquerie</strong><br>Revolta camponesa francesa de 1358 contra os senhores feudais.</div>
+                <div class="conceito"><strong>Cisma do Ocidente</strong><br>Divisão da Igreja Católica entre 1378 e 1417.</div>
+                <div class="conceito"><strong>Pequena Idade do Gelo</strong><br>Período de resfriamento climático que afetou a Europa nos séculos XIV-XIX.</div>
+            </div>
+        </section>
+
+        <section class="secao enem">
+            <h2>🎯 ENEM, Vestibular e Concurso</h2>
+            <p>Teste seus conhecimentos:</p>
+
+            <div class="questao">
+                <h3>Questão 1</h3>
+                <p>A Crise do Século XIV é considerada um marco do fim da Idade Média porque:</p>
+                <ol type="A">
+                    <li>Combinava queda populacional, fome, guerra e revoltas, alterando profundamente o feudalismo.</li>
+                    <li>Foi um período de grande prosperidade econômica para os senhores feudais.</li>
+                    <li>Unificou politicamente todas as monarquias europeias.</li>
+                    <li>Marcou a ascensão definitiva do Império Romano.</li>
+                    <li>Substituiu a agricultura pela indústria como principal atividade econômica.</li>
+                </ol>
+                <button class="btn-gabarito" onclick="mostrarGabarito('g1')">Mostrar gabarito</button>
+                <div class="gabarito" id="g1">
+                    <strong>Resposta: A.</strong> A crise combinou fome, peste, guerra e revoltas, desestruturando a ordem feudal e abrindo caminho para a Idade Moderna.
+                </div>
+            </div>
+
+            <div class="questao">
+                <h3>Questão 2</h3>
+                <p>Entre os fatores que contribuíram para o enfraquecimento do sistema feudal no século XIV, destaca-se:</p>
+                <ol type="A">
+                    <li>A valorização do trabalho camponês após a peste negra, que aumentou a escassez de mão de obra.</li>
+                    <li>A invasão dos vikings no centro da Europa.</li>
+                    <li>O absoluto controle da Igreja sobre as rotas comerciais.</li>
+                    <li>A proibição de revoltas camponesas pelo Código Justiniano.</li>
+                    <li>A unificação das coroas francesa e inglesa.</li>
+                </ol>
+                <button class="btn-gabarito" onclick="mostrarGabarito('g2')">Mostrar gabarito</button>
+                <div class="gabarito" id="g2">
+                    <strong>Resposta: A.</strong> A escassez de mão de obra após a peste valorizou o servo, que passou a exigir melhores condições, enfraquecendo a relação de servidão.
+                </div>
+            </div>
+        </section>
+
+        <section class="resumo">
+            <h2>🧠 RESUMO PARA O PROFESSOR</h2>
+            <p>
+                <strong>Tema:</strong> A Crise do Século XIV (1300–1453).<br>
+                <strong>Causas:</strong> Mudanças climáticas, fome, Peste Negra, Guerra dos Cem Anos e Cisma do Ocidente.<br>
+                <strong>Consequências:</strong> Colapso do feudalismo, valorização do trabalho rural, fortalecimento das monarquias.<br>
+                <strong>Habilidade BNCC:</strong> EF06HI04 e EF06HI05 — crises e transformações do fim do mundo medieval.
+            </p>
+        </section>
+
+        <nav class="navegacao">
+            <a class="btn btn-voltar" href="16 - Formacao-Monarquias-Nacionais.html">← Formação Monarquias</a>
+            <a class="btn btn-proximo" href="18 - EXPANSÃO MARÍTIMO-COMERCIAL.html">Expansão Marítima →</a>
+        </nav>
+
+    </main>
+
+    <footer>
+        <p>Curso de História Geral — Fund II • Ensino Médio • ENEM • Vestibular • Concurso</p>
+        <p class="assinatura">Professor Marcelo Oliveira</p>
+    </footer>
+
+    <button id="topo" onclick="voltarAoTopo()">↑</button>
+
+    <script>
+        function mostrarGabarito(id) {
+            const resposta = document.getElementById(id);
+            if (resposta.style.display === "block") { resposta.style.display = "none"; }
+            else { resposta.style.display = "block"; }
+        }
+        const botaoTopo = document.getElementById("topo");
+        window.addEventListener("scroll", function () {
+            if (window.scrollY > 400) { botaoTopo.style.display = "block"; }
+            else { botaoTopo.style.display = "none"; }
+        });
+        function voltarAoTopo() {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        }
+    </script>
+    <script>
+  const paginaAnterior = "16 - Formacao-Monarquias-Nacionais.html";
+  const paginaProxima = "18 - EXPANSÃO MARÍTIMO-COMERCIAL.html";
+</script>
+<script src="navegacao.js"></script>
+
+</body>
+
+</html>

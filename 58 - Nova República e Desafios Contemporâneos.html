@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3º EM — Nova República e Desafios Contemporâneos | Professor Marcelo Oliveira</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { font-family: Arial, Helvetica, sans-serif; background: #f4f7fb; color: #263238; line-height: 1.7; }
+        .container { width: 92%; max-width: 1200px; margin: auto; }
+        header { background: linear-gradient(135deg, #172554, #2563eb); color: white; padding: 50px 20px; text-align: center; box-shadow: 0 5px 20px rgba(0, 0, 0, 0.18); }
+        .eyebrow { font-size: 0.95rem; letter-spacing: 2px; text-transform: uppercase; opacity: 0.9; margin-bottom: 12px; }
+        header h1 { font-size: clamp(2rem, 5vw, 3.5rem); margin-bottom: 15px; }
+        header p { max-width: 850px; margin: auto; font-size: 1.1rem; }
+        .navegacao { display: flex; justify-content: space-between; gap: 15px; margin: 25px auto; flex-wrap: wrap; }
+        .btn { display: inline-block; padding: 13px 20px; border-radius: 10px; text-decoration: none; font-weight: bold; transition: 0.3s; }
+        .btn-voltar { background: #475569; color: white; }
+        .btn-proximo { background: #2563eb; color: white; }
+        .btn:hover { transform: translateY(-2px); opacity: 0.9; }
+        .apresentacao { background: white; margin: 30px auto; padding: 30px; border-radius: 18px; border-left: 7px solid #2563eb; box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08); }
+        .secao { margin: 35px auto; padding: 30px; border-radius: 18px; background: white; box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07); }
+        .comeco { border-top: 8px solid #2563eb; }
+        .desenvolvimento { border-top: 8px solid #16a34a; }
+        .legado { border-top: 8px solid #7c3aed; }
+        .consequencias { border-top: 8px solid #eab308; }
+        .enem { border-top: 8px solid #0891b2; }
+        .lousa { border-top: 8px solid #111827; }
+        .secao h2 { margin-bottom: 20px; color: #172554; font-size: 1.8rem; }
+        .secao h3 { margin-top: 25px; margin-bottom: 10px; color: #334155; }
+        strong { color: #172554; }
+        ul, ol { margin: 15px 0 15px 25px; }
+        li { margin-bottom: 8px; }
+        .timeline { border-left: 4px solid #2563eb; padding-left: 25px; margin-top: 25px; }
+        .evento { margin-bottom: 25px; position: relative; }
+        .evento::before { content: ""; position: absolute; left: -36px; top: 7px; width: 14px; height: 14px; background: #2563eb; border-radius: 50%; }
+        .ano { font-weight: bold; color: #2563eb; }
+        .tabela-container { overflow-x: auto; margin-top: 20px; }
+        table { width: 100%; border-collapse: collapse; min-width: 650px; }
+        th, td { padding: 14px; border: 1px solid #cbd5e1; text-align: left; }
+        th { background: #172554; color: white; }
+        tr:nth-child(even) { background: #f8fafc; }
+        .conceitos { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 15px; margin-top: 20px; }
+        .conceito { background: #eff6ff; border: 1px solid #bfdbfe; padding: 18px; border-radius: 12px; }
+        .questao { background: #f8fafc; padding: 25px; border-radius: 14px; margin-top: 20px; border-left: 5px solid #0891b2; }
+        .btn-gabarito { margin-top: 15px; background: #0891b2; color: white; border: none; padding: 12px 18px; border-radius: 8px; cursor: pointer; font-weight: bold; }
+        .gabarito { display: none; margin-top: 15px; padding: 15px; background: #ecfeff; border-radius: 10px; border: 1px solid #67e8f9; }
+        .resumo { background: #172554; color: white; padding: 30px; border-radius: 18px; margin: 35px auto; }
+        .resumo strong { color: white; }
+        footer { background: #0f172a; color: white; text-align: center; padding: 35px 20px; margin-top: 50px; }
+        .assinatura { font-size: 1.2rem; font-weight: bold; margin-top: 10px; }
+        #topo { position: fixed; bottom: 20px; right: 20px; width: 48px; height: 48px; border: none; border-radius: 50%; background: #2563eb; color: white; cursor: pointer; font-size: 20px; display: none; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25); }
+        @media (max-width: 700px) { .secao, .apresentacao { padding: 20px; } .navegacao { flex-direction: column; } .btn { text-align: center; } }
+    </style>
+</head>
+
+<body id="inicio">
+
+    <header>
+        <div class="eyebrow">3º Ano — Ensino Médio</div>
+        <h1>Nova República e Desafios Contemporâneos</h1>
+        <p>O Brasil depois da ditadura: democracia, economia e sociedade até hoje.</p>
+    </header>
+
+    <main class="container">
+
+        <nav class="navegacao">
+            <a class="btn btn-voltar" href="57 - Redemocratização e Constituição de 1988.html">← Redemocratização</a>
+            <a class="btn btn-proximo" href="#">Fim →</a>
+        </nav>
+
+        <section class="apresentacao">
+            <p>Por que estudar a Nova República? Porque o período após 1985 molda a política, a economia e os direitos dos brasileiros de hoje, além de enfrentar desafios que ainda persistem.</p>
+        </section>
+
+        <section class="secao comeco">
+            <h2>🔵 I — O COMEÇO: A TRANSIÇÃO DEMOCRÁTICA</h2>
+
+            <h3>1. O fim do ciclo militar</h3>
+            <p>Após duas décadas de ditadura, o retorno da eleição direta para presidente em 1989 inaugurou oficialmente a Nova República. Collor de Mello venceu a eleição com discurso de modernização.</p>
+
+            <h3>2. O Plano Real e a estabilidade</h3>
+            <p>No governo Itamar Franco (1992–1994), o Plano Real controlou a hiperinflação e estabilizou a economia, criand0 a moeda brasileira de grande poder aquisitivo. Esse processo culminou na eleição de Fernando Henrique Cardoso (1995–2002).</p>
+        </section>
+
+        <section class="secao desenvolvimento">
+            <h2>🟢 II — O DESENVOLVIMENTO: POLÍTICA, ECONOMIA E SOCIEDADE</h2>
+
+            <h3>3. Alternância de poder</h3>
+            <p>O Brasil passou por diferentes governos: FHC (1995–2002), Lula (2003–2010), Dilma (2011–2016), Temer (2016–2018), Bolsonaro (2019–2022) e Lula novamente (2023–). Cada um deixou legados distintos em economia, políticas sociais e relações internacionais.</p>
+
+            <h3>4. Desafios contemporâneos</h3>
+            <ul>
+                <li>Desigualdades sociais e regionais que persistem.</li>
+                <li>Corrupção e investigações políticas (Lava Jato).</li>
+                <li>Questões ambientais como queimadas e desmatamento.</li>
+                <li>Desafios econômicos: endividamento, desindustrialização e reformas.</li>
+                <li>Polarização política e disputas sobre democracia.</li>
+            </ul>
+        </section>
+
+        <section class="secao comeco">
+            <h2>📅 LINHA DO TEMPO</h2>
+            <div class="timeline">
+                <div class="evento"><span class="ano">1989</span> — Primeira eleição direta pós-ditadura.</div>
+                <div class="evento"><span class="ano">1994</span> — Plano Real estabiliza a economia.</div>
+                <div class="evento"><span class="ano">2003</span> — Lula assume a presidência.</div>
+                <div class="evento"><span class="ano">2016</span> — Impeachment de Dilma Rousseff.</div>
+                <div class="evento"><span class="ano">2019–2022</span> — Governo Bolsonaro.</div>
+                <div class="evento"><span class="ano">2023</span> — Retorno de Lula ao poder.</div>
+            </div>
+        </section>
+
+        <section class="secao consequencias">
+            <h2>🟡 Consequências</h2>
+            <ul>
+                <li>Consolidação da democracia com eleições regulares.</li>
+                <li>Estabilização monetária com o Plano Real.</li>
+                <li>Alternância de poder e períodos de crescimento.</li>
+                <li>Problemas persistentes de desigualdade e corrupção.</li>
+                <li>Debates sobre sustentabilidade e direitos.</li>
+            </ul>
+        </section>
+
+        <section class="secao legado">
+            <h2>🟣 III — O LEGADO E O FUTURO</h2>
+            <p>A Nova República mostrou a força da democracia brasileira, mas também seus limites. Os desafios de hoje — desigualdade, meio ambiente, política — são frutos dessa história recente. Entender o presente é o primeiro passo para transformá-lo.</p>
+        </section>
+
+        <section class="secao">
+            <h2>📊 RESUMO: NOVA REPÚBLICA</h2>
+            <div class="tabela-container">
+                <table>
+                    <thead>
+                        <tr><th>Período</th><th>Traço principal</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1989–1994</td><td>Collor e estabilização econômica inicial</td></tr>
+                        <tr><td>1995–2002</td><td>FHC: estabilização e reformas</td></tr>
+                        <tr><td>2003–2010</td><td>Lula: programas sociais e crescimento</td></tr>
+                        <tr><td>2011–2016</td><td>Dilma: estabilidade e crise política</td></tr>
+                        <tr><td>2016–2018</td><td>Temer: reforma e ajuste</td></tr>
+                        <tr><td>2019–2022</td><td>Bolsonaro: polarização e crises</td></tr>
+                        <tr><td>2023–</td><td>Novo governo Lula II</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="secao lousa">
+            <h2>📋 BNCC — COMO TRABALHAR ESTE TEMA</h2>
+            <p>A BNCC propõe que o estudo da Nova República ajude a compreender a dinâmica política e econômica do Brasil contemporâneo.</p>
+            <ul>
+                <li><strong>Habilidade (EM13CHS1016):</strong> Analisar as transformações políticas e econômicas do Brasil após a ditadura.</li>
+                <li><strong>Habilidade (EM13CHS303):</strong> Avaliar os desafios da democracia e da cidadania.</li>
+                <li><strong>Objetivo:</strong> Relacionar os diferentes governos ao panorama social e econômico atual.</li>
+            </ul>
+            <h3>💡 Sugestão de aula</h3>
+            <ul>
+                <li>Linha do tempo coletiva dos presidentes recentes.</li>
+                <li>Debate sobre as principais reformas econômicas.</li>
+                <li>Análise de desafios como desigualdade e meio ambiente.</li>
+            </ul>
+        </section>
+
+        <section class="secao">
+            <h2>📚 CONCEITOS FUNDAMENTAIS</h2>
+            <div class="conceitos">
+                <div class="conceito"><strong>Nova República</strong><br>Período democrático iniciado em 1985.</div>
+                <div class="conceito"><strong>Plano Real</strong><br>Programa que estabilizou a economia em 1994.</div>
+                <div class="conceito"><strong>Alternância de poder</strong><br>Mudança democrática de governos via eleições.</div>
+                <div class="conceito"><strong>Lava Jato</strong><br>Investigação emblemática da corrupção.</div>
+                <div class="conceito"><strong>Desigualdade</strong><br>Persistência de diferenças sociais e regionais.</div>
+                <div class="conceito"><strong>Sustentabilidade</strong><br>Desafio ambiental central do Brasil.</div>
+            </div>
+        </section>
+
+        <section class="secao enem">
+            <h2>🎯 ENEM, Vestibular e Concurso</h2>
+            <p>Teste seus conhecimentos:</p>
+
+            <div class="questao">
+                <h3>Questão 1</h3>
+                <p>O Plano Real, implantado em 1994, teve como principal objetivo:</p>
+                <ol type="A">
+                    <li>Aumentar a inflação.</li>
+                    <li>Estabilizar a economia e controlar a hiperinflação.</li>
+                    <li>Fechar as fronteiras comerciais.</li>
+                    <li>Quitar toda a dívida externa.</li>
+                    <li>Abolir o imposto.</li>
+                </ol>
+                <button class="btn-gabarito" onclick="mostrarGabarito('g1')">Mostrar gabarito</button>
+                <div class="gabarito" id="g1">
+                    <strong>Resposta: B.</strong> O Plano Real criou uma nova moeda e políticas que controlaram a inflação alta.
+                </div>
+            </div>
+
+            <div class="questao">
+                <h3>Questão 2</h3>
+                <p>O período chamado Nova República iniciou-se em:</p>
+                <ol type="A">
+                    <li>1889, com a proclamação da República.</li>
+                    <li>1930, com a Revolução de 30.</li>
+                    <li>1985, com o fim da ditadura militar.</li>
+                    <li>1964, com o golpe civil-militar.</li>
+                    <li>2002, com a eleição de Lula.</li>
+                </ol>
+                <button class="btn-gabarito" onclick="mostrarGabarito('g2')">Mostrar gabarito</button>
+                <div class="gabarito" id="g2">
+                    <strong>Resposta: C.</strong> A Nova República começou com a transição de 1985 e as eleições democráticas posteriores.
+                </div>
+            </div>
+        </section>
+
+        <section class="resumo">
+            <h2>🧠 RESUMO PARA O PROFESSOR</h2>
+            <p>
+                <strong>Tema:</strong> Nova República (1985–hoje).<br>
+                <strong>Marco:</strong> Plano Real (1994).<br>
+                <strong>Traços:</strong> Eleições regulares, alternância de poder, desafios sociais.<br>
+                <strong>Habilidade BNCC:</strong> EM13CHS1016 — História contemporânea do Brasil.
+            </p>
+        </section>
+
+        <nav class="navegacao">
+            <a class="btn btn-voltar" href="57 - Redemocratização e Constituição de 1988.html">← Redemocratização</a>
+            <a class="btn btn-proximo" href="#">Fim →</a>
+        </nav>
+
+    </main>
+
+    <footer>
+        <p>3º Ano — Ensino Médio • Curso de História Geral</p>
+        <p class="assinatura">Professor Marcelo Oliveira</p>
+    </footer>
+
+    <button id="topo" onclick="voltarAoTopo()">↑</button>
+
+    <script>
+        function mostrarGabarito(id) {
+            const resposta = document.getElementById(id);
+            resposta.style.display = (resposta.style.display === "block") ? "none" : "block";
+        }
+        const botaoTopo = document.getElementById("topo");
+        window.addEventListener("scroll", function () { botaoTopo.style.display = window.scrollY > 400 ? "block" : "none"; });
+        function voltarAoTopo() { window.scrollTo({ top: 0, behavior: "smooth" }); }
+    </script>
+    <script>
+  const paginaAnterior = "57 - Redemocratização e Constituição de 1988.html";
+  const paginaProxima = "";
+</script>
+<script src="navegacao.js"></script>
+
+</body>
+
+</html>

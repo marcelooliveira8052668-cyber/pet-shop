@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3º EM — Presidentes do Brasil | Professor Marcelo Oliveira</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f7fb;
+            color: #263238;
+            line-height: 1.7;
+        }
+
+        .container {
+            width: 92%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        header {
+            background: linear-gradient(135deg, #172554, #2563eb);
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.18);
+        }
+
+        .eyebrow {
+            font-size: 0.95rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            opacity: 0.9;
+            margin-bottom: 12px;
+        }
+
+        header h1 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            margin-bottom: 15px;
+        }
+
+        header p {
+            max-width: 850px;
+            margin: auto;
+            font-size: 1.1rem;
+        }
+
+        .navegacao {
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+            margin: 25px auto;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 13px 20px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn-voltar {
+            background: #475569;
+            color: white;
+        }
+
+        .btn-proximo {
+            background: #2563eb;
+            color: white;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            opacity: 0.9;
+        }
+
+        .apresentacao {
+            background: white;
+            margin: 30px auto;
+            padding: 30px;
+            border-radius: 18px;
+            border-left: 7px solid #2563eb;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+        }
+
+        .secao {
+            margin: 35px auto;
+            padding: 30px;
+            border-radius: 18px;
+            background: white;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+        }
+
+        .comeco {
+            border-top: 8px solid #2563eb;
+        }
+
+        .desenvolvimento {
+            border-top: 8px solid #16a34a;
+        }
+
+        .legado {
+            border-top: 8px solid #7c3aed;
+        }
+
+        .consequencias {
+            border-top: 8px solid #eab308;
+        }
+
+        .enem {
+            border-top: 8px solid #0891b2;
+        }
+
+        .lousa {
+            border-top: 8px solid #111827;
+        }
+
+        .secao h2 {
+            margin-bottom: 20px;
+            color: #172554;
+            font-size: 1.8rem;
+        }
+
+        .secao h3 {
+            margin-top: 25px;
+            margin-bottom: 10px;
+            color: #334155;
+        }
+
+        strong {
+            color: #172554;
+        }
+
+        ul,
+        ol {
+            margin: 15px 0 15px 25px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .timeline {
+            border-left: 4px solid #2563eb;
+            padding-left: 25px;
+            margin-top: 25px;
+        }
+
+        .evento {
+            margin-bottom: 25px;
+            position: relative;
+        }
+
+        .evento::before {
+            content: "";
+            position: absolute;
+            left: -36px;
+            top: 7px;
+            width: 14px;
+            height: 14px;
+            background: #2563eb;
+            border-radius: 50%;
+        }
+
+        .ano {
+            font-weight: bold;
+            color: #2563eb;
+        }
+
+        .tabela-container {
+            overflow-x: auto;
+            margin-top: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 650px;
+        }
+
+        th,
+        td {
+            padding: 14px;
+            border: 1px solid #cbd5e1;
+            text-align: left;
+        }
+
+        th {
+            background: #172554;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background: #f8fafc;
+        }
+
+        .conceitos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .conceito {
+            background: #eff6ff;
+            border: 1px solid #bfdbfe;
+            padding: 18px;
+            border-radius: 12px;
+        }
+
+        .questao {
+            background: #f8fafc;
+            padding: 25px;
+            border-radius: 14px;
+            margin-top: 20px;
+            border-left: 5px solid #0891b2;
+        }
+
+        .btn-gabarito {
+            margin-top: 15px;
+            background: #0891b2;
+            color: white;
+            border: none;
+            padding: 12px 18px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .gabarito {
+            display: none;
+            margin-top: 15px;
+            padding: 15px;
+            background: #ecfeff;
+            border-radius: 10px;
+            border: 1px solid #67e8f9;
+        }
+
+        .resumo {
+            background: #172554;
+            color: white;
+            padding: 30px;
+            border-radius: 18px;
+            margin: 35px auto;
+        }
+
+        .resumo strong {
+            color: white;
+        }
+
+        footer {
+            background: #0f172a;
+            color: white;
+            text-align: center;
+            padding: 35px 20px;
+            margin-top: 50px;
+        }
+
+        .assinatura {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        #topo {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 48px;
+            height: 48px;
+            border: none;
+            border-radius: 50%;
+            background: #2563eb;
+            color: white;
+            cursor: pointer;
+            font-size: 20px;
+            display: none;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+        }
+
+        @media (max-width: 700px) {
+
+            .secao,
+            .apresentacao {
+                padding: 20px;
+            }
+
+            .navegacao {
+                flex-direction: column;
+            }
+
+            .btn {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body id="inicio">
+
+    <header>
+        <div class="eyebrow">3º Ano — Ensino Médio</div>
+        <h1>Presidentes do Brasil</h1>
+        <p>Do Brasil Império à Nova República: uma jornada pelos chefes de Estado que ajudaram a construir a nossa
+            história.</p>
+    </header>
+
+    <main class="container">
+
+        <nav class="navegacao">
+            <a class="btn btn-voltar" href="58 - Nova República e Desafios Contemporâneos.html">← Nova República</a>
+            <a class="btn btn-proximo" href="60 - Cotidiano nas Redes Sociais.html">Redes Sociais →</a>
+        </nav>
+
+        <section class="apresentacao">
+            <p>Entender a trajetória presidencial é enxergar como as decisões políticas, econômicas e sociais moldaram o
+                Brasil pelo século XX e XXI. Dos militares da proclamação da República aos governantes da Nova
+                Democracia, cada mandato deixou legados e dívidas.</p>
+        </section>
+
+        <section class="secao comeco">
+            <h2>🔵 I — A REPÚBLICA DA ESPADA (1889–1894)</h2>
+
+            <h3>Marechal Deodoro da Fonseca (1889–1891)</h3>
+            <p>Deodoro foi o primeiro presidente, liderando o golpe que proclamou a República. Seu governo enfrentou
+                revoltas estaduais e a crise financeira do encilhamento. Ele renunciou pressionado, pouco antes de
+                deixar o cargo. <strong>Legado:</strong> consolidação da República; <strong>problemas:</strong> choque
+                institucional e disputas com o Legislativo.</p>
+
+            <h3>Marechal Floriano Peixoto (1891–1894)</h3>
+            <p>Chamado de "Marechal de Ferro", Floriano enfrentou a Revolta da Armada e a Revolução Federalista.
+                Reprimiu-as com rigor e consolidou o governo republicano mais firme. <strong>Legado:</strong> defesa da
+                unidade nacional; <strong>problemas:</strong> censura e autoritarismo.</p>
+        </section>
+
+        <section class="secao comeco">
+            <h2>🟢 II — A REPÚBLICA OLIGÁRQUICA (1894–1930)</h2>
+
+            <h3>Prudente de Moraes (1894–1898)</h3>
+            <p>Primeiro presidente civil, encerrou a Revolta Federalista e pacificou o país. <strong>Legado:</strong>
+                transição para o civilismo; <strong>problemas:</strong> fraca atuação social.</p>
+
+            <h3>Campos Sales (1898–1902)</h3>
+            <p>Implementou as primeiras medidas contra a inflação e reestruturou a dívida via Funding Loan.
+                <strong>Legado:</strong> estabilidade fiscal; <strong>problemas:</strong> aperto orçamentário.</p>
+
+            <h3>Rodrigues Alves (1902–1906)</h3>
+            <p>Modernizou o Rio de Janeiro com reformas urbanas e combateu doenças com vacinação obrigatória.
+                <strong>Legado:</strong> urbanização e saúde pública; <strong>problemas:</strong> Revolta da Vacina e
+                exclusão dos pobres.</p>
+
+            <h3>Afonso Pena (1906–1909)</h3>
+            <p>Facilitou o cultivo de café e investiu em ferrovias. <strong>Legado:</strong> expansão da infraestrutura;
+                <strong>problemas:</strong> poucos avanços sociais.</p>
+
+            <h3>Nilo Peçanha (1909–1910)</h3>
+            <p>Assumiu após Pena e criou o Ministério da Agricultura. <strong>Legado:</strong> atenção aos produtores
+                rurais; <strong>problemas:</strong> transição política conturbada.</p>
+
+            <h3>Hermes da Fonseca (1910–1914)</h3>
+            <p>Tentou restaurar o poder militar e enfrentou greves operárias. <strong>Legado:</strong> tentativa de
+                protagonismo militar; <strong>problemas:</strong> autoritarismo e fechamento de movimentos de
+                trabalhadores.</p>
+
+            <h3>Venceslau Brás (1914–1918)</h3>
+            <p>Governa durante a Primeira Guerra, amplia exportações e neutraliza crises internas.
+                <strong>Legado:</strong> crescimento econômico; <strong>problemas:</strong> pandemia da Gripe Espanhola.
+            </p>
+
+            <h3>Delfim Moreira (1918–1919)</h3>
+            <p>Assumiu após o falecimento de Brás e convocou eleições. <strong>Legado:</strong> transição pacífica;
+                <strong>problemas:</strong> curto mandato.</p>
+
+            <h3>Epitácio Pessoa (1919–1922)</h3>
+            <p>Popularizou campanhas pelo voto feminino e buscou reformas sociais. <strong>Legado:</strong> abertura
+                para direitos civis; <strong>problemas:</strong> Revolução de 1922.</p>
+
+            <h3>Artur Bernardes (1922–1926)</h3>
+            <p>Enfrentou o tenentismo e fortaleceu a repressão. <strong>Legado:</strong> ordem pública;
+                <strong>problemas:</strong> censura e estado de sítio.</p>
+
+            <h3>Washington Luís (1926–1930)</h3>
+            <p>Governou dentro da política do café com leite, sem resolver a crise de 1929. <strong>Legado:</strong>
+                estabilidade econômica antes da tempestade; <strong>problemas:</strong> incapacidade de conter a
+                Revolução de 1930.</p>
+        </section>
+
+        <section class="secao desenvolvimento">
+            <h2>🟣 III — ERA VARGAS (1930–1945)</h2>
+
+            <h3>Getúlio Vargas (1930–1945)</h3>
+            <p>Assumiu após a Revolução de 1930. Centralizou o poder, criou intervenções militares e implantou o Estado
+                Novo (1937). Promoveu industrialização, criou a CLT e enviou a FEB para a Segunda Guerra.
+                <strong>Legado:</strong> modernização e trabalhismo; <strong>problemas:</strong> ditadura, censura e
+                autoritarismo.</p>
+
+            <h3>José Linhares (1945–1946)</h3>
+            <p>Como presidente do Supremo, assumiu após a queda de Vargas. Preparou a redemocratização.
+                <strong>Legado:</strong> transição para a Constituição de 1946; <strong>problemas:</strong> legado
+                controverso de apoio ao regime.</p>
+        </section>
+
+        <section class="secao desenvolvimento">
+            <h2>🟡 IV — REPÚBLICA LIBERAL POPULISTA (1946–1964)</h2>
+
+            <h3>Eurico Gaspar Dutra (1946–1951)</h3>
+            <p>Alinhou o Brasil aos EUA, reprimiu movimentos comunistas e promoveu a Lei de Terras.
+                <strong>Legado:</strong> restauração democrática; <strong>problemas:</strong> alinhamento automático ao
+                capitalismo.</p>
+
+            <h3>Getúlio Vargas (1951–1954)</h3>
+            <p>Retornou pelo voto. Criou Petrobras e Eletrobras, defendeu o nacionalismo e enfrenta crise política.
+                <strong>Legado:</strong> industriais estratégicas; <strong>problemas:</strong> autoritarismo e crises
+                políticas.</p>
+
+            <h3>Café Filho (1954–1955)</h3>
+            <p>Assumiu após Getúlio. Revelou o Estado de Sítio e traumas da crise. <strong>Legado:</strong> estabilizou
+                o poder; <strong>problemas:</strong> renunciou em meio a conflitos.</p>
+
+            <h3>Carlos Luz (1955)</h3>
+            <p>Presidente da Câmara, governou interinamente até a renúncia do vice. <strong>Legado:</strong> curto
+                período; <strong>problemas:</strong> instabilidade militar.</p>
+
+            <h3>Nereu Ramos (1955–1956)</h3>
+            <p>Presidente interino do Supremo, consolidou a eleição e presidiu a posse de JK. <strong>Legado:</strong>
+                garantia da transição; <strong>problemas:</strong> governo de transição.</p>
+
+            <h3>Juscelino Kubitschek (1956–1961)</h3>
+            <p>Executou o Plano de Metas, construiu Brasília e atraiu indústrias. <strong>Legado:</strong>
+                desenvolvimento e modernização; <strong>problemas:</strong> endividamento externo e inflação.</p>
+
+            <h3>Jânio Quadros (1961)</h3>
+            <p>Eleito com discurso moralizador, renunciou abruptamente. <strong>Legado:</strong> livreço político;
+                <strong>problemas:</strong> sua renúncia gerou instabilidade.</p>
+
+            <h3>João Goulart (1961–1964)</h3>
+            <p>Assumiu com a renúncia de Jânio. Defendeu reformas de base e buscou aliar-se a sindicatos.
+                <strong>Legado:</strong> tentativa de reformas sociais; <strong>problemas:</strong> choque com militares
+                e oposição.</p>
+        </section>
+
+        <section class="secao consequencias">
+            <h2>🟡 A DITADURA MILITAR (1964–1985)</h2>
+
+            <h3>Castelo Branco (1964–1967)</h3>
+            <p>Primeiro presidente do regime. Implantou AI-1 e centrou ações. <strong>Legado:</strong>
+                institucionalização do regime; <strong>problemas:</strong> censura e perseguição.</p>
+
+            <h3>Costa e Silva (1967–1969)</h3>
+            <p>Emitiu atos repressivos e transferiu poder após doença. <strong>Legado:</strong> suspensão de direitos;
+                <strong>problemas:</strong> AI-5 e repressão intensa.</p>
+
+            <h3>Garrastazu Médici (1969–1974)</h3>
+            <p>Governa no auge do Milagre Econômico, com repressão e censura. <strong>Legado:</strong> crescimento
+                econômico; <strong>problemas:</strong> concentração de renda e traumas.</p>
+
+            <h3>Ernesto Geisel (1974–1979)</h3>
+            <p>Iniciou a abertura política lenta, firmou acordo com a oposição. <strong>Legado:</strong> distensão;
+                <strong>problemas:</strong> repressão continuada.</p>
+
+            <h3>João Figueiredo (1979–1985)</h3>
+            <p>Promulgou a Lei da Anistia e iniciou abertura ampla. <strong>Legado:</strong> transição para eleição;
+                <strong>problemas:</strong> crises econômicas e sociais.</p>
+        </section>
+
+        <section class="secao desenvolvimento">
+            <h2>🟡 V — NOVA REPÚBLICA (1985–HOJE)</h2>
+
+            <h3>Tancredo Neves (eleito 1985)</h3>
+            <p>Não assumiu por doença; faleceu. <strong>Legado:</strong> símbolo da transição;
+                <strong>problemas:</strong> não chegou a governar.</p>
+
+            <h3>José Sarney (1985–1990)</h3>
+            <p>Assumiu após Tancredo. Assinou a Constituição de 1988 e assistiu ao plano cruzado.
+                <strong>Legado:</strong> abertura completa; <strong>problemas:</strong> inflação alta.</p>
+
+            <h3>Fernando Collor de Mello (1990–1992)</h3>
+            <p>Governo confiscou poupanças, acabou impeachado por corrupção. <strong>Legado:</strong> modernização
+                estatal; <strong>problemas:</strong> recessão e impeachment.</p>
+
+            <h3>Itamar Franco (1992–1995)</h3>
+            <p>Assumiu após impeachment de Collor, apoiou o Plano Real. <strong>Legado:</strong> estabilização
+                econômica; <strong>problemas:</strong> curta gestão.</p>
+
+            <h3>Fernando Henrique Cardoso (1995–2003)</h3>
+            <p>Consolidou o Plano Real, implantou reformas e estabilizou a moeda. <strong>Legado:</strong> estabilização
+                e reeleições; <strong>problemas:</strong> desemprego e atrasos sociais.</p>
+
+            <h3>Luiz Inácio Lula da Silva (2003–2011)</h3>
+            <p>Implementou programas sociais como Bolsa Família, reduziu a pobreza e investiu em ensino superior.
+                <strong>Legado:</strong> inclusão social e crescimento; <strong>problemas:</strong> corrupção no PT e
+                políticas fiscais.</p>
+
+            <h3>Dilma Rousseff (2011–2016)</h3>
+            <p>Primeira mulher presidente. Continuou programas sociais, mas Brasil caiu em recessão e protestos.
+                <strong>Legado:</strong> avanços em educação e saúde; <strong>problemas:</strong> ajustes fiscais e
+                impeachment.</p>
+
+            <h3>Michel Temer (2016–2019)</h3>
+            <p>Assumiu após impeachment de Dilma. Aprovou reformas trabalhista e previdenciária.
+                <strong>Legado:</strong> estabilidade institucional; <strong>problemas:</strong> cortes sociais e
+                investigações.</p>
+
+            <h3>Jair Bolsonaro (2019–2023)</h3>
+            <p>Governo marcado por pandemia, polarização e políticas ambientais controversas. <strong>Legado:</strong>
+                alinhamento internacional diferente; <strong>problemas:</strong> greves e colapso ambiental.</p>
+
+            <h3>Luiz Inácio Lula da Silva (2023–hoje)</h3>
+            <p>Retornou ao poder com foco em políticas sociais e rede de proteção. <strong>Legado:</strong> resgate de
+                programas; <strong>problemas:</strong> desafios econômicos e inflação.</p>
+        </section>
+
+        <section class="secao">
+            <h2>📊 RESUMO: PRESIDENTES DO BRASIL</h2>
+            <div class="tabela-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Presidente</th>
+                            <th>Período</th>
+                            <th>Palavras-chave</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Deodoro da Fonseca</td>
+                            <td>1889–1891</td>
+                            <td>Primeiro presidente, encilhamento</td>
+                        </tr>
+                        <tr>
+                            <td>Floriano Peixoto</td>
+                            <td>1891–1894</td>
+                            <td>Marechal de Ferro, repressão</td>
+                        </tr>
+                        <tr>
+                            <td>Prudente de Moraes</td>
+                            <td>1894–1898</td>
+                            <td>Primeiro civil, paz armada</td>
+                        </tr>
+                        <tr>
+                            <td>Campos Sales</td>
+                            <td>1898–1902</td>
+                            <td>Funding Loan</td>
+                        </tr>
+                        <tr>
+                            <td>Rodrigues Alves</td>
+                            <td>1902–1906</td>
+                            <td>Reforma urbana, vacina</td>
+                        </tr>
+                        <tr>
+                            <td>Getúlio Vargas</td>
+                            <td>1930–1945 / 1951–1954</td>
+                            <td>CLT, Estado Novo, FEB</td>
+                        </tr>
+                        <tr>
+                            <td>Juscelino Kubitschek</td>
+                            <td>1956–1961</td>
+                            <td>Plano de Metas, Brasília</td>
+                        </tr>
+                        <tr>
+                            <td>João Goulart</td>
+                            <td>1961–1964</td>
+                            <td>Reformas de base</td>
+                        </tr>
+                        <tr>
+                            <td>Castello Branco</td>
+                            <td>1964–1967</td>
+                            <td>AI-1, regime militar</td>
+                        </tr>
+                        <tr>
+                            <td>Costa e Silva</td>
+                            <td>1967–1969</td>
+                            <td>AI-5</td>
+                        </tr>
+                        <tr>
+                            <td>Médici</td>
+                            <td>1969–1974</td>
+                            <td>Milagre econômico</td>
+                        </tr>
+                        <tr>
+                            <td>Geisel</td>
+                            <td>1974–1979</td>
+                            <td>Distensão</td>
+                        </tr>
+                        <tr>
+                            <td>Figueiredo</td>
+                            <td>1979–1985</td>
+                            <td>Anistia e abertura</td>
+                        </tr>
+                        <tr>
+                            <td>Sarney</td>
+                            <td>1985–1990</td>
+                            <td>Constituição de 1988</td>
+                        </tr>
+                        <tr>
+                            <td>Collor</td>
+                            <td>1990–1992</td>
+                            <td>Impeachment</td>
+                        </tr>
+                        <tr>
+                            <td>FHC</td>
+                            <td>1995–2003</td>
+                            <td>Plano Real</td>
+                        </tr>
+                        <tr>
+                            <td>Lula</td>
+                            <td>2003–2011 / 2023–</td>
+                            <td>Bolsa Família, inclusão</td>
+                        </tr>
+                        <tr>
+                            <td>Dilma</td>
+                            <td>2011–2016</td>
+                            <td>Primeira mulher, impeachment</td>
+                        </tr>
+                        <tr>
+                            <td>Temer</td>
+                            <td>2016–2019</td>
+                            <td>Reformas e ajuste</td>
+                        </tr>
+                        <tr>
+                            <td>Bolsonaro</td>
+                            <td>2019–2023</td>
+                            <td>Pandemia, polarização</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="secao lousa">
+            <h2>📋 BNCC — COMO TRABALHAR ESTE TEMA</h2>
+            <p>A BNCC propõe que o tema seja trabalhado com estudo de fontes, documentos e debates sobre as diferentes
+                formas de governança.</p>
+            <ul>
+                <li><strong>Habilidade (EM13CHS1017):</strong> Identificar as características dos regimes políticos
+                    brasileiros e suas transformações.</li>
+                <li><strong>Habilidade (EM13CHS103):</strong> Relacionar os presidentes ao contexto econômico e social
+                    de cada período.</li>
+                <li><strong>Objetivo:</strong> Comparar legados positivos e negativos para compreender a história
+                    recente do Brasil.</li>
+            </ul>
+            <h3>💡 Sugestão de aula</h3>
+            <ul>
+                <li>Linha do tempo interativa das presidências.</li>
+                <li>Debate: "Qual presidente deixou o legado mais positivo?"</li>
+                <li>Análise de discursos famosos de cada era.</li>
+            </ul>
+        </section>
+
+        <section class="secao">
+            <h2>📚 CONCEITOS FUNDAMENTAIS</h2>
+            <div class="conceitos">
+                <div class="conceito"><strong>República da Espada</strong><br>Primeira fase militar da República
+                    (1889–1894).</div>
+                <div class="conceito"><strong>Governo Provisório</strong><br>Regime de Vargas antes da Constituição de
+                    1934.</div>
+                <div class="conceito"><strong>Estado Novo</strong><br>Ditadura de Vargas entre 1937–1945.</div>
+                <div class="conceito"><strong>AI-5</strong><br>Instrumento de repressão mais forte do regime militar.
+                </div>
+                <div class="conceito"><strong>Milagre Econômico</strong><br>Crescimento acelerado dos anos 1968–1973.
+                </div>
+                <div class="conceito"><strong>Plano Real</strong><br>Programa de estabilização monetária de 1994.</div>
+                <div class="conceito"><strong>Nova República</strong><br>Período democrático pós-1985.</div>
+                <div class="conceito"><strong>Impeachment</strong><br>Processo de retirada de mandato por
+                    irregularidades.</div>
+            </div>
+        </section>
+
+        <section class="secao enem">
+            <h2>🎯 ENEM, Vestibular e Concurso</h2>
+            <p>Teste seus conhecimentos:</p>
+
+            <div class="questao">
+                <h3>Questão 1</h3>
+                <p>Quem foi o primeiro presidente da República do Brasil?</p>
+                <ol type="A">
+                    <li>Marechal Floriano Peixoto.</li>
+                    <li>Marechal Deodoro da Fonseca.</li>
+                    <li>Prudente de Moraes.</li>
+                    <li>Getúlio Vargas.</li>
+                    <li>Juscelino Kubitschek.</li>
+                </ol>
+                <button class="btn-gabarito" onclick="mostrarGabarito('g1')">Mostrar gabarito</button>
+                <div class="gabarito" id="g1">
+                    <strong>Resposta: B.</strong> Deodoro da Fonseca liderou a Proclamação da República e assumiu como
+                    primeiro presidente em 1889.
+                </div>
+            </div>
+
+            <div class="questao">
+                <h3>Questão 2</h3>
+                <p>Qual presidente associa-se ao "Milagre Econômico" do Brasil?</p>
+                <ol type="A">
+                    <li>Jânio Quadros.</li>
+                    <li>Emílio Garrastazu Médici.</li>
+                    <li>Carlos Luz.</li>
+                    <li>José Linhares.</li>
+                    <li>Washington Luís.</li>
+                </ol>
+                <button class="btn-gabarito" onclick="mostrarGabarito('g2')">Mostrar gabarito</button>
+                <div class="gabarito" id="g2">
+                    <strong>Resposta: B.</strong> Médici governou quando o PIB cresceu a taxas elevadas, mas com censura
+                    e endividamento.
+                </div>
+            </div>
+        </section>
+
+        <section class="resumo">
+            <h2>🧠 RESUMO PARA O PROFESSOR</h2>
+            <p>
+                <strong>Tema:</strong> Presidentes do Brasil (1889–2026).<br>
+                <strong>República da Espada:</strong> Deodoro e Floriano.<br>
+                <strong>Oligárquica:</strong> Prudente, Campos Sales, Rodrigues Alves, Pena, Peçanha, Hermes, Brás,
+                Delfim, Epitácio, Artur, Washington Luís.<br>
+                <strong>Era Vargas:</strong> Getúlio e José Linhares.<br>
+                <strong>República Liberal:</strong> Dutra, Vargas, Café Filho, Carlos Luz, Nereu, JK, Jânio, Jango.<br>
+                <strong>Ditadura:</strong> Castelo, Costa, Médici, Geisel, Figueiredo.<br>
+                <strong>Nova República:</strong> Sarney, Collor, Itamar, FHC, Lula, Dilma, Temer, Bolsonaro, Lula.<br>
+                <strong>Habilidade BNCC:</strong> EM13CHS1017 — Regimes políticos brasileiros.
+            </p>
+        </section>
+
+        <nav class="navegacao">
+            <a class="btn btn-voltar" href="58 - Nova República e Desafios Contemporâneos.html">← Nova República</a>
+            <a class="btn btn-proximo" href="60 - Cotidiano nas Redes Sociais.html">Redes Sociais →</a>
+        </nav>
+
+    </main>
+
+    <footer>
+        <p>3º Ano — Ensino Médio • Extras • Curso de História Geral</p>
+        <p class="assinatura">Professor Marcelo Oliveira</p>
+    </footer>
+
+    <button id="topo" onclick="voltarAoTopo()">↑</button>
+
+    <script>
+        function mostrarGabarito(id) {
+            const resposta = document.getElementById(id);
+            resposta.style.display = (resposta.style.display === "block") ? "none" : "block";
+        }
+        const botaoTopo = document.getElementById("topo");
+        window.addEventListener("scroll", function () { botaoTopo.style.display = window.scrollY > 400 ? "block" : "none"; });
+        function voltarAoTopo() { window.scrollTo({ top: 0, behavior: "smooth" }); }
+    </script>
+    <script>
+        const paginaAnterior = "58 - Nova República e Desafios Contemporâneos.html";
+        const paginaProxima = "60 - Cotidiano nas Redes Sociais.html";
+    </script>
+    <script src="navegacao.js"></script>
+
+</body>
+
+</html>

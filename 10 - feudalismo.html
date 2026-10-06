@@ -1,0 +1,1893 @@
+<!DOCTYPE html>
+<!-- Define que o documento utiliza HTML5. -->
+
+<html lang="pt-BR">
+<!-- Define o idioma principal como português do Brasil. -->
+
+<head>
+<!-- Inicia as configurações da página. -->
+
+<meta charset="UTF-8">
+<!-- Permite acentos e caracteres especiais. -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Faz a página funcionar corretamente em celulares e tablets. -->
+
+<title>1.10 — Feudalismo | História Geral</title>
+<!-- Define o título da aba do navegador. -->
+
+<style>
+/* ============================== */
+/* CONFIGURAÇÕES GERAIS           */
+/* ============================== */
+
+* {
+    /* Faz padding e bordas entrarem no cálculo do tamanho dos elementos. */
+    box-sizing: border-box;
+}
+
+html {
+    /* Ativa rolagem suave nos links internos. */
+    scroll-behavior: smooth;
+}
+
+body {
+    /* Define a fonte principal. */
+    font-family: Arial, Helvetica, sans-serif;
+
+    /* Remove a margem padrão do navegador. */
+    margin: 0;
+
+    /* Define o fundo geral da página. */
+    background: #f4f6f8;
+
+    /* Define a cor principal do texto. */
+    color: #1f2937;
+
+    /* Melhora a leitura dos parágrafos. */
+    line-height: 1.7;
+}
+
+/* ============================== */
+/* CABEÇALHO                      */
+/* ============================== */
+
+header {
+    /* Cria um fundo profissional em degradê. */
+    background: linear-gradient(135deg, #172554, #1e3a8a);
+
+    /* Define a cor do texto. */
+    color: white;
+
+    /* Cria espaço interno. */
+    padding: 60px 20px;
+
+    /* Centraliza o conteúdo. */
+    text-align: center;
+}
+
+header .marca {
+    /* Define o tamanho da identificação do curso. */
+    font-size: 15px;
+
+    /* Coloca o texto em letras maiúsculas. */
+    text-transform: uppercase;
+
+    /* Aumenta o espaçamento entre letras. */
+    letter-spacing: 2px;
+
+    /* Deixa a marca um pouco mais discreta. */
+    opacity: 0.85;
+
+    /* Cria espaço abaixo. */
+    margin-bottom: 12px;
+}
+
+header h1 {
+    /* Define o tamanho responsivo do título. */
+    font-size: clamp(30px, 5vw, 52px);
+
+    /* Remove margem superior. */
+    margin: 0;
+
+    /* Cria espaço abaixo. */
+    margin-bottom: 15px;
+}
+
+header p {
+    /* Limita a largura do texto. */
+    max-width: 850px;
+
+    /* Centraliza o parágrafo. */
+    margin: auto;
+
+    /* Define o tamanho da fonte. */
+    font-size: 18px;
+}
+
+/* ============================== */
+/* MENU                           */
+/* ============================== */
+
+nav {
+    /* Mantém o menu visível durante a rolagem. */
+    position: sticky;
+
+    /* Faz o menu ficar no topo. */
+    top: 0;
+
+    /* Coloca o menu acima dos outros elementos. */
+    z-index: 1000;
+
+    /* Define fundo branco. */
+    background: white;
+
+    /* Adiciona sombra. */
+    box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+}
+
+nav .menu {
+    /* Define largura máxima. */
+    max-width: 1200px;
+
+    /* Centraliza o menu. */
+    margin: auto;
+
+    /* Utiliza Flexbox. */
+    display: flex;
+
+    /* Permite quebra de linha. */
+    flex-wrap: wrap;
+
+    /* Centraliza os links. */
+    justify-content: center;
+
+    /* Define espaço entre os links. */
+    gap: 8px;
+
+    /* Cria espaço interno. */
+    padding: 10px;
+}
+
+nav a {
+    /* Remove o sublinhado. */
+    text-decoration: none;
+
+    /* Define a cor. */
+    color: #1e3a8a;
+
+    /* Coloca o texto em negrito. */
+    font-weight: bold;
+
+    /* Define espaço interno. */
+    padding: 8px 14px;
+
+    /* Arredonda os cantos. */
+    border-radius: 8px;
+
+    /* Suaviza as mudanças. */
+    transition: 0.3s;
+}
+
+nav a:hover {
+    /* Muda o fundo quando o mouse passa sobre o link. */
+    background: #dbeafe;
+}
+
+/* ============================== */
+/* CONTEÚDO                       */
+/* ============================== */
+
+main {
+    /* Define largura máxima do conteúdo. */
+    max-width: 1200px;
+
+    /* Centraliza o conteúdo. */
+    margin: 40px auto;
+
+    /* Cria espaço lateral. */
+    padding: 0 20px;
+}
+
+section {
+    /* Define fundo branco. */
+    background: white;
+
+    /* Arredonda os cantos. */
+    border-radius: 18px;
+
+    /* Define espaço interno. */
+    padding: 35px;
+
+    /* Cria espaço entre as seções. */
+    margin-bottom: 30px;
+
+    /* Cria sombra discreta. */
+    box-shadow: 0 8px 30px rgba(15,23,42,0.06);
+}
+
+section h2 {
+    /* Define cor dos títulos. */
+    color: #1e3a8a;
+
+    /* Define tamanho. */
+    font-size: 30px;
+
+    /* Remove margem superior. */
+    margin-top: 0;
+}
+
+section h3 {
+    /* Define cor dos subtítulos. */
+    color: #334155;
+
+    /* Define tamanho. */
+    font-size: 22px;
+}
+
+/* ============================== */
+/* DESTAQUES                      */
+/* ============================== */
+
+.destaque {
+    /* Define fundo azul claro. */
+    background: #eff6ff;
+
+    /* Cria uma barra lateral. */
+    border-left: 6px solid #2563eb;
+
+    /* Define espaço interno. */
+    padding: 20px;
+
+    /* Arredonda os cantos. */
+    border-radius: 10px;
+
+    /* Cria espaço vertical. */
+    margin: 20px 0;
+}
+
+.alerta {
+    /* Define fundo alaranjado claro. */
+    background: #fff7ed;
+
+    /* Cria barra lateral. */
+    border-left: 6px solid #ea580c;
+
+    /* Define espaço interno. */
+    padding: 20px;
+
+    /* Arredonda os cantos. */
+    border-radius: 10px;
+
+    /* Cria espaço vertical. */
+    margin: 20px 0;
+}
+
+.conceito {
+    /* Define fundo claro. */
+    background: #f8fafc;
+
+    /* Cria uma borda. */
+    border: 1px solid #e2e8f0;
+
+    /* Define espaço interno. */
+    padding: 18px;
+
+    /* Arredonda os cantos. */
+    border-radius: 10px;
+
+    /* Cria espaço vertical. */
+    margin: 15px 0;
+}
+
+.conceito strong {
+    /* Destaca o nome do conceito. */
+    color: #1e3a8a;
+}
+
+/* ============================== */
+/* GRID DE CARDS                  */
+/* ============================== */
+
+.grid {
+    /* Ativa CSS Grid. */
+    display: grid;
+
+    /* Cria colunas responsivas. */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+    /* Define espaço entre os cards. */
+    gap: 20px;
+}
+
+.card {
+    /* Define fundo. */
+    background: #f8fafc;
+
+    /* Define borda. */
+    border: 1px solid #e2e8f0;
+
+    /* Define espaço interno. */
+    padding: 22px;
+
+    /* Arredonda os cantos. */
+    border-radius: 14px;
+}
+
+.card h3 {
+    /* Remove margem superior. */
+    margin-top: 0;
+
+    /* Define cor. */
+    color: #1e3a8a;
+}
+
+/* ============================== */
+/* LINHA DO TEMPO                 */
+/* ============================== */
+
+.timeline {
+    /* Cria linha vertical. */
+    border-left: 4px solid #2563eb;
+
+    /* Cria espaço à esquerda. */
+    padding-left: 25px;
+}
+
+.timeline-item {
+    /* Cria espaço entre acontecimentos. */
+    margin-bottom: 25px;
+
+    /* Permite posicionamento do marcador. */
+    position: relative;
+}
+
+.timeline-item::before {
+    /* Cria o marcador circular. */
+    content: "";
+
+    /* Define largura. */
+    width: 14px;
+
+    /* Define altura. */
+    height: 14px;
+
+    /* Transforma em círculo. */
+    border-radius: 50%;
+
+    /* Define a cor. */
+    background: #2563eb;
+
+    /* Posiciona o marcador. */
+    position: absolute;
+
+    /* Move para cima da linha. */
+    left: -34px;
+
+    /* Ajusta verticalmente. */
+    top: 8px;
+}
+
+/* ============================== */
+/* TABELA                         */
+/* ============================== */
+
+.tabela {
+    /* Permite rolagem horizontal em telas pequenas. */
+    overflow-x: auto;
+}
+
+table {
+    /* Ocupa toda a largura disponível. */
+    width: 100%;
+
+    /* Junta as bordas. */
+    border-collapse: collapse;
+
+    /* Define espaço acima. */
+    margin-top: 20px;
+}
+
+th,
+td {
+    /* Define borda das células. */
+    border: 1px solid #dbe3ec;
+
+    /* Define espaço interno. */
+    padding: 14px;
+
+    /* Alinha o texto à esquerda. */
+    text-align: left;
+}
+
+th {
+    /* Define fundo do cabeçalho da tabela. */
+    background: #eff6ff;
+
+    /* Define cor do texto. */
+    color: #1e3a8a;
+}
+
+/* ============================== */
+/* BOTÕES                         */
+/* ============================== */
+
+.btn {
+    /* Permite comportamento de botão e link. */
+    display: inline-block;
+
+    /* Remove sublinhado. */
+    text-decoration: none;
+
+    /* Define fundo. */
+    background: #1e3a8a;
+
+    /* Define texto branco. */
+    color: white;
+
+    /* Define espaço interno. */
+    padding: 12px 20px;
+
+    /* Arredonda os cantos. */
+    border-radius: 8px;
+
+    /* Coloca texto em negrito. */
+    font-weight: bold;
+
+    /* Remove borda. */
+    border: none;
+
+    /* Mostra cursor de botão. */
+    cursor: pointer;
+
+    /* Define transição. */
+    transition: 0.3s;
+
+    /* Define tamanho da fonte. */
+    font-size: 15px;
+}
+
+.btn:hover {
+    /* Escurece o botão. */
+    background: #172554;
+
+    /* Levanta ligeiramente o botão. */
+    transform: translateY(-2px);
+}
+
+/* ============================== */
+/* GABARITO                       */
+/* ============================== */
+
+.gabarito {
+    /* Esconde o gabarito inicialmente. */
+    display: none;
+
+    /* Define fundo verde claro. */
+    background: #ecfdf5;
+
+    /* Cria barra lateral. */
+    border-left: 6px solid #059669;
+
+    /* Define espaço interno. */
+    padding: 20px;
+
+    /* Cria espaço superior. */
+    margin-top: 20px;
+
+    /* Arredonda os cantos. */
+    border-radius: 10px;
+}
+
+/* ============================== */
+/* RODAPÉ                         */
+/* ============================== */
+
+footer {
+    /* Define fundo escuro. */
+    background: #0f172a;
+
+    /* Define texto branco. */
+    color: white;
+
+    /* Centraliza o conteúdo. */
+    text-align: center;
+
+    /* Define espaço interno. */
+    padding: 40px 20px;
+
+    /* Cria espaço superior. */
+    margin-top: 50px;
+}
+
+footer p {
+    /* Define pequeno espaço entre os textos. */
+    margin: 5px 0;
+}
+
+/* ============================== */
+/* RESPONSIVIDADE                 */
+/* ============================== */
+
+@media (max-width: 700px) {
+
+    /* Ajusta as seções em telas pequenas. */
+
+    section {
+        /* Reduz o espaço interno. */
+        padding: 22px;
+    }
+
+    header {
+        /* Reduz o tamanho do cabeçalho. */
+        padding: 40px 18px;
+    }
+
+    nav a {
+        /* Diminui a fonte do menu. */
+        font-size: 13px;
+
+        /* Reduz o espaçamento. */
+        padding: 7px 9px;
+    }
+}
+</style>
+<!-- Finaliza o CSS. -->
+
+</head>
+<!-- Finaliza o cabeçalho. -->
+
+<body id="topo">
+<!-- Inicia o conteúdo visível. -->
+
+<header>
+<!-- Inicia o cabeçalho principal. -->
+
+<div class="marca">
+<!-- Identificação do curso. -->
+CURSO DE HISTÓRIA GERAL
+<!-- Nome do curso. -->
+</div>
+
+<h1>1.10 — Feudalismo</h1>
+<!-- Título principal da aula. -->
+
+<p>
+<!-- Subtítulo. -->
+Professor Marcelo Oliveira • Fund II • Ensino Médio • ENEM • Vestibular • Concursos
+<!-- Público do curso. -->
+</p>
+
+</header>
+<!-- Finaliza o cabeçalho. -->
+
+<nav>
+<!-- Inicia o menu. -->
+
+<div class="menu">
+<!-- Agrupa os links. -->
+
+<a href="#comeco">O Começo</a>
+<!-- Link para o começo. -->
+
+<a href="#desenvolvimento">Desenvolvimento</a>
+<!-- Link para o desenvolvimento. -->
+
+<a href="#legado">Legado</a>
+<!-- Link para o legado. -->
+
+<a href="#cronologia">Cronologia</a>
+<!-- Link para cronologia. -->
+
+<a href="#conceitos">Conceitos</a>
+<!-- Link para conceitos. -->
+
+<a href="#professor">Professor</a>
+<!-- Link para professor. -->
+
+<a href="#questoes">Questões</a>
+<!-- Link para questões. -->
+
+</div>
+<!-- Finaliza menu. -->
+
+</nav>
+<!-- Finaliza navegação. -->
+
+<main>
+<!-- Inicia conteúdo principal. -->
+
+<section id="comeco">
+<!-- Inicia a primeira parte. -->
+
+<h2>I — O COMEÇO</h2>
+<!-- Título. -->
+
+<h3>O que foi o Feudalismo?</h3>
+<!-- Subtítulo. -->
+
+<p>
+O feudalismo foi um conjunto de relações sociais, econômicas, políticas e
+culturais desenvolvido principalmente em partes da Europa Ocidental durante
+a Idade Média. Ele não surgiu de uma única decisão nem funcionou exatamente
+da mesma maneira em todas as regiões.
+<!-- Explicação inicial. -->
+</p>
+
+<div class="destaque">
+<!-- Cria destaque. -->
+
+<strong>Ideia central:</strong>
+<!-- Destaca a ideia principal. -->
+
+o feudalismo deve ser entendido como um sistema histórico formado por
+diferentes relações de poder, dependência, trabalho, propriedade e proteção,
+e não simplesmente como "castelos e cavaleiros".
+<!-- Síntese conceitual. -->
+
+</div>
+<!-- Finaliza destaque. -->
+
+<h3>Como surgiu esse mundo?</h3>
+<!-- Subtítulo. -->
+
+<p>
+A formação da sociedade feudal esteve relacionada às transformações ocorridas
+na Europa Ocidental entre o final da Antiguidade e o início da Idade Média.
+A crise e a transformação do Império Romano do Ocidente, a ruralização,
+a redução de determinadas redes comerciais e as invasões e migrações
+contribuíram para a reorganização da sociedade.
+<!-- Contextualização. -->
+</p>
+
+<p>
+Com a fragmentação política e a diminuição da capacidade de controle de
+estruturas imperiais em várias regiões, diferentes poderes locais passaram
+a assumir funções de proteção, administração e controle territorial.
+<!-- Explicação. -->
+</p>
+
+<h3>Ruralização da sociedade</h3>
+<!-- Subtítulo. -->
+
+<p>
+Durante a Alta Idade Média, a economia de várias regiões europeias tornou-se
+mais fortemente ligada ao campo. A terra assumiu grande importância econômica
+e social, e comunidades rurais passaram a organizar grande parte da produção.
+<!-- Explicação. -->
+</p>
+
+<h3>O senhorio</h3>
+<!-- Subtítulo. -->
+
+<p>
+Uma das instituições fundamentais do mundo feudal foi o <strong>senhorio</strong>,
+isto é, o conjunto de terras e direitos controlados por um senhor.
+O senhorio era uma unidade econômica e social, e não simplesmente um castelo.
+<!-- Definição. -->
+</p>
+
+<div class="conceito">
+<!-- Caixa de conceito. -->
+
+<strong>Senhorio:</strong>
+<!-- Conceito. -->
+
+espaço rural no qual um senhor exercia direitos e recebia parte da produção,
+enquanto camponeses trabalhavam a terra e cumpriam determinadas obrigações.
+<!-- Definição. -->
+
+</div>
+<!-- Finaliza conceito. -->
+
+<h3>O papel da Igreja</h3>
+<!-- Subtítulo. -->
+
+<p>
+A Igreja cristã possuía grande influência sobre a sociedade medieval.
+Além de sua dimensão religiosa, instituições eclesiásticas possuíam terras,
+rendas, conhecimento escrito e funções sociais importantes.
+<!-- Explicação. -->
+
+</p>
+
+<h3>Sociedade e relações de dependência</h3>
+<!-- Subtítulo. -->
+
+<p>
+A sociedade medieval era marcada por diferentes formas de dependência.
+Senhores, cavaleiros, camponeses, clérigos e outros grupos ocupavam posições
+distintas dentro de uma estrutura social profundamente desigual.
+<!-- Explicação. -->
+
+</section>
+<!-- Finaliza primeira parte. -->
+
+<section id="desenvolvimento">
+<!-- Inicia segunda parte. -->
+
+<h2>II — O DESENVOLVIMENTO</h2>
+<!-- Título. -->
+
+<h3>As relações feudais</h3>
+<!-- Subtítulo. -->
+
+<p>
+Para compreender o feudalismo, é necessário diferenciar as relações
+<strong>senhoriais</strong> das relações de <strong>vassalagem</strong>.
+Embora estejam relacionadas ao mundo medieval, elas não significam a mesma coisa.
+<!-- Explicação essencial. -->
+</p>
+
+<div class="grid">
+<!-- Inicia os cards. -->
+
+<div class="card">
+<!-- Card. -->
+
+<h3>Relação senhorial</h3>
+<!-- Título. -->
+
+<p>
+Envolvia principalmente senhores e camponeses, relacionando terra,
+trabalho, proteção e obrigações.
+</p>
+<!-- Explicação. -->
+
+</div>
+<!-- Finaliza card. -->
+
+<div class="card">
+<!-- Card. -->
+
+<h3>Vassalagem</h3>
+<!-- Título. -->
+
+<p>
+Era uma relação entre membros da aristocracia, envolvendo compromissos
+de fidelidade e auxílio.
+</p>
+<!-- Explicação. -->
+
+</div>
+<!-- Finaliza card. -->
+
+</div>
+<!-- Finaliza grade. -->
+
+<h3>Servidão</h3>
+<!-- Subtítulo. -->
+
+<p>
+Os servos eram camponeses vinculados às obrigações relacionadas ao senhorio.
+A servidão não deve ser confundida com escravidão. O servo possuía direitos
+e obrigações próprios dentro da sociedade feudal, embora estivesse submetido
+a fortes relações de dependência.
+<!-- Explicação. -->
+</p>
+
+<div class="alerta">
+<!-- Caixa de atenção. -->
+
+<strong>Não confunda:</strong>
+<!-- Alerta. -->
+
+servo ≠ escravo.
+A servidão era uma forma específica de dependência camponesa medieval,
+diferente da escravidão praticada em outros contextos históricos.
+<!-- Diferenciação. -->
+
+</div>
+<!-- Finaliza alerta. -->
+
+<h3>As obrigações camponesas</h3>
+<!-- Subtítulo. -->
+
+<p>
+Entre as obrigações tradicionalmente associadas ao sistema senhorial estavam
+a <strong>corveia</strong>, a <strong>talha</strong> e as taxas relacionadas
+ao uso de determinadas instalações ou serviços do senhorio.
+<!-- Explicação. -->
+</p>
+
+<div class="conceito">
+<!-- Conceito. -->
+
+<strong>Corveia:</strong>
+<!-- Nome. -->
+
+prestação de trabalho gratuito do camponês em terras ou atividades
+ligadas ao domínio senhorial.
+<!-- Definição. -->
+
+</div>
+<!-- Finaliza conceito. -->
+
+<div class="conceito">
+<!-- Conceito. -->
+
+<strong>Talha:</strong>
+<!-- Nome. -->
+
+parte da produção entregue pelo camponês ao senhor.
+<!-- Definição. -->
+
+</div>
+<!-- Finaliza conceito. -->
+
+<div class="conceito">
+<!-- Conceito. -->
+
+<strong>Banalidades:</strong>
+<!-- Nome. -->
+
+cobranças associadas ao uso de determinadas instalações controladas
+pelo senhor, como forno, moinho ou prensa, dependendo da região.
+<!-- Definição. -->
+
+</div>
+<!-- Finaliza conceito. -->
+
+<h3>A vassalagem e a aristocracia</h3>
+<!-- Subtítulo. -->
+
+<p>
+A vassalagem era uma relação entre homens pertencentes às elites guerreiras
+e aristocráticas. O vassalo prestava fidelidade e serviços ao seu senhor,
+enquanto recebia proteção e, em muitos casos, benefícios ou direitos sobre
+determinados territórios.
+<!-- Explicação. -->
+</p>
+
+<p>
+Essa relação era marcada por cerimônias e compromissos recíprocos.
+Entretanto, a realidade política medieval era muito mais complexa do que
+um simples esquema em que cada pessoa possuía apenas um senhor.
+<!-- Observação histórica. -->
+</p>
+
+<h3>O feudo</h3>
+<!-- Subtítulo. -->
+
+<p>
+O termo <strong>feudo</strong> pode designar um benefício ou conjunto de direitos
+concedidos no contexto das relações de vassalagem. Em determinados casos,
+envolvia terras e rendimentos. O significado concreto variava conforme
+o período e a região.
+<!-- Explicação. -->
+</p>
+
+<h3>Economia feudal</h3>
+<!-- Subtítulo. -->
+
+<p>
+A economia rural estava fortemente ligada à produção agrícola e à exploração
+do trabalho camponês. A produção tinha grande componente de subsistência,
+mas isso não significa que não existissem trocas comerciais.
+<!-- Explicação. -->
+</p>
+
+<p>
+Mercados locais, circulação de produtos e atividades artesanais continuaram
+a existir. A partir da Baixa Idade Média, a expansão comercial e urbana
+ganhou força, modificando progressivamente as estruturas econômicas.
+<!-- Transição histórica. -->
+</p>
+
+<h3>Sociedade estamental</h3>
+<!-- Subtítulo. -->
+
+<p>
+A sociedade medieval era marcada por hierarquias e diferentes posições sociais.
+A tradicional divisão em "clero, nobreza e terceiro estado" é especialmente
+associada à sociedade de ordens do Antigo Regime e não deve ser aplicada
+automaticamente como descrição completa de todas as sociedades medievais.
+<!-- Precisão histórica. -->
+</p>
+
+<p>
+Para compreender a sociedade feudal, é mais adequado analisar as relações
+concretas entre aristocracia, clero, camponeses, habitantes das cidades
+e outros grupos.
+<!-- Orientação. -->
+</p>
+
+</section>
+<!-- Finaliza desenvolvimento. -->
+
+<section>
+<!-- Inicia seção de transformações. -->
+
+<h2>TRANSFORMAÇÕES DO MUNDO FEUDAL</h2>
+<!-- Título. -->
+
+<div class="grid">
+<!-- Inicia grade. -->
+
+<div class="card">
+<!-- Card. -->
+
+<h3>Alta Idade Média</h3>
+<!-- Título. -->
+
+<p>
+Predomínio de estruturas rurais, poderes locais e economia fortemente
+dependente da agricultura.
+</p>
+<!-- Texto. -->
+
+</div>
+<!-- Finaliza card. -->
+
+<div class="card">
+<!-- Card. -->
+
+<h3>Expansão agrícola</h3>
+<!-- Título. -->
+
+<p>
+Novas técnicas, expansão das áreas cultivadas e crescimento populacional
+contribuíram para transformações econômicas.
+</p>
+<!-- Texto. -->
+
+</div>
+<!-- Finaliza card. -->
+
+<div class="card">
+<!-- Card. -->
+
+<h3>Renascimento urbano</h3>
+<!-- Título. -->
+
+<p>
+A partir da Baixa Idade Média, cidades e atividades comerciais ganharam
+novo dinamismo.
+</p>
+<!-- Texto. -->
+
+</div>
+<!-- Finaliza card. -->
+
+<div class="card">
+<!-- Card. -->
+
+<h3>Crise do século XIV</h3>
+<!-- Título. -->
+
+<p>
+Fomes, epidemias, guerras e conflitos sociais afetaram profundamente
+a sociedade europeia.
+</p>
+<!-- Texto. -->
+
+</div>
+<!-- Finaliza card. -->
+
+</div>
+<!-- Finaliza grade. -->
+
+</section>
+<!-- Finaliza transformações. -->
+
+<section>
+<!-- Inicia comparação. -->
+
+<h2>FEUDALISMO: RELAÇÕES FUNDAMENTAIS</h2>
+<!-- Título. -->
+
+<div class="tabela">
+<!-- Permite rolagem da tabela em telas pequenas. -->
+
+<table>
+<!-- Inicia tabela. -->
+
+<tr>
+<!-- Inicia primeira linha. -->
+
+<th>Relação</th>
+<!-- Cabeçalho. -->
+
+<th>Entre quem?</th>
+<!-- Cabeçalho. -->
+
+<th>Principal característica</th>
+<!-- Cabeçalho. -->
+
+</tr>
+<!-- Finaliza primeira linha. -->
+
+<tr>
+<!-- Segunda linha. -->
+
+<td>Senhorial</td>
+<!-- Célula. -->
+
+<td>Senhor e camponês</td>
+<!-- Célula. -->
+
+<td>Trabalho, terra, obrigações e proteção.</td>
+<!-- Célula. -->
+
+</tr>
+<!-- Finaliza linha. -->
+
+<tr>
+<!-- Terceira linha. -->
+
+<td>Vassalagem</td>
+<!-- Célula. -->
+
+<td>Aristocratas</td>
+<!-- Célula. -->
+
+<td>Fidelidade, proteção e serviços.</td>
+<!-- Célula. -->
+
+</tr>
+<!-- Finaliza linha. -->
+
+<tr>
+<!-- Quarta linha. -->
+
+<td>Religiosa</td>
+<!-- Célula. -->
+
+<td>Clero e sociedade</td>
+<!-- Célula. -->
+
+<td>Religião, cultura, educação e organização social.</td>
+<!-- Célula. -->
+
+</tr>
+<!-- Finaliza linha. -->
+
+</table>
+<!-- Finaliza tabela. -->
+
+</div>
+<!-- Finaliza área da tabela. -->
+
+</section>
+<!-- Finaliza comparação. -->
+
+<section id="legado">
+<!-- Inicia terceira parte. -->
+
+<h2>III — O LEGADO E O MUNDO ATUAL</h2>
+<!-- Título. -->
+
+<h3>O feudalismo não desapareceu de uma vez</h3>
+<!-- Subtítulo. -->
+
+<p>
+As estruturas feudais foram sendo transformadas ao longo de séculos.
+O crescimento das cidades, do comércio, da circulação monetária,
+das monarquias e de novos grupos sociais modificou progressivamente
+as relações de poder.
+<!-- Explicação. -->
+</p>
+
+<h3>Do mundo rural ao crescimento urbano</h3>
+<!-- Subtítulo. -->
+
+<p>
+A expansão agrícola e o crescimento demográfico contribuíram para
+o desenvolvimento de mercados e cidades. Comerciantes e artesãos
+ganharam importância e participaram de novas formas de organização econômica.
+<!-- Explicação. -->
+</p>
+
+<h3>Formação das monarquias</h3>
+<!-- Subtítulo. -->
+
+<p>
+Durante a Baixa Idade Média, reis passaram a fortalecer mecanismos
+de administração e arrecadação. Esse processo ocorreu de maneira diferente
+em cada região e contribuiu para a transformação da organização política europeia.
+<!-- Explicação. -->
+</p>
+
+<h3>Legado social</h3>
+<!-- Subtítulo. -->
+
+<p>
+O estudo do feudalismo permite compreender como relações de dependência,
+posse da terra, trabalho e poder foram historicamente construídas.
+Também ajuda a perceber que as formas de organização social mudam
+ao longo do tempo.
+<!-- Explicação. -->
+</p>
+
+<h3>Conexão com a História do Brasil</h3>
+<!-- Subtítulo. -->
+
+<p>
+O feudalismo europeu não deve ser transportado diretamente para a história
+colonial brasileira. A sociedade colonial portuguesa na América teve
+características próprias, relacionadas à colonização, à escravidão,
+à grande propriedade e à economia voltada para diferentes mercados.
+<!-- Conexão. -->
+</p>
+
+<div class="alerta">
+<!-- Alerta. -->
+
+<strong>Para o professor:</strong>
+<!-- Destaque. -->
+
+evite dizer que "o Brasil foi feudal". A historiografia brasileira debate
+diferentes interpretações sobre a aplicação do conceito de feudalismo
+à América portuguesa, e a estrutura escravista colonial possui características
+que não podem ser simplesmente igualadas à servidão medieval europeia.
+<!-- Orientação historiográfica. -->
+
+</div>
+<!-- Finaliza alerta. -->
+
+<h3>O mundo atual</h3>
+<!-- Subtítulo. -->
+
+<p>
+O feudalismo pertence a uma sociedade histórica específica. No entanto,
+seu estudo continua importante porque permite analisar temas como desigualdade,
+dependência econômica, concentração da terra, relações de trabalho,
+poder local e transformação das instituições.
+<!-- Conexão contemporânea. -->
+</p>
+
+</section>
+<!-- Finaliza legado. -->
+
+<section id="cronologia">
+<!-- Inicia cronologia. -->
+
+<h2>LINHA DO TEMPO</h2>
+<!-- Título. -->
+
+<div class="timeline">
+<!-- Inicia linha do tempo. -->
+
+<div class="timeline-item">
+<!-- Primeiro período. -->
+
+<strong>Séculos V–VIII</strong>
+<!-- Data. -->
+
+<p>
+Transformações do mundo romano e formação de novas estruturas políticas e sociais
+na Europa Ocidental.
+</p>
+<!-- Explicação. -->
+
+</div>
+<!-- Finaliza item. -->
+
+<div class="timeline-item">
+<!-- Segundo período. -->
+
+<strong>Séculos VIII–IX</strong>
+<!-- Data. -->
+
+<p>
+Fortalecimento de poderes aristocráticos e transformações nas relações de dependência.
+</p>
+<!-- Explicação. -->
+
+</div>
+<!-- Finaliza item. -->
+
+<div class="timeline-item">
+<!-- Terceiro período. -->
+
+<strong>Séculos IX–X</strong>
+<!-- Data. -->
+
+<p>
+Fragmentação política e fortalecimento de poderes locais em diferentes regiões.
+</p>
+<!-- Explicação. -->
+
+</div>
+<!-- Finaliza item. -->
+
+<div class="timeline-item">
+<!-- Quarto período. -->
+
+<strong>Séculos XI–XIII</strong>
+<!-- Data. -->
+
+<p>
+Expansão agrícola, crescimento populacional, comércio e cidades.
+</p>
+<!-- Explicação. -->
+
+</div>
+<!-- Finaliza item. -->
+
+<div class="timeline-item">
+<!-- Quinto período. -->
+
+<strong>Século XIV</strong>
+<!-- Data. -->
+
+<p>
+Crise demográfica, econômica e social em diversas regiões europeias.
+</p>
+<!-- Explicação. -->
+
+</div>
+<!-- Finaliza item. -->
+
+</div>
+<!-- Finaliza linha do tempo. -->
+
+</section>
+<!-- Finaliza cronologia. -->
+
+<section id="conceitos">
+<!-- Inicia conceitos. -->
+
+<h2>CONCEITOS QUE O ALUNO PRECISA DOMINAR</h2>
+<!-- Título. -->
+
+<div class="grid">
+<!-- Inicia grade. -->
+
+<div class="card">
+<!-- Card. -->
+
+<h3>Feudo</h3>
+<!-- Conceito. -->
+
+<p>
+Benefício ou conjunto de direitos concedidos em relações de dependência
+aristocrática, especialmente no contexto da vassalagem.
+</p>
+<!-- Definição. -->
+
+</div>
+<!-- Finaliza card. -->
+
+<div class="card">
+<!-- Card. -->
+
+<h3>Senhorio</h3>
+<!-- Conceito. -->
+
+<p>
+Unidade territorial e econômica submetida a direitos senhoriais.
+</p>
+<!-- Definição. -->
+
+</div>
+<!-- Finaliza card. -->
+
+<div class="card">
+<!-- Conceito. -->
+
+<h3>Servidão</h3>
+<!-- Termo. -->
+
+<p>
+Forma de dependência camponesa característica de partes da Europa medieval.
+</p>
+<!-- Definição. -->
+
+</div>
+<!-- Finaliza card. -->
+
+<div class="card">
+<!-- Conceito. -->
+
+<h3>Vassalagem</h3>
+<!-- Termo. -->
+
+<p>
+Relação entre membros da aristocracia baseada em fidelidade e obrigações recíprocas.
+</p>
+<!-- Definição. -->
+
+</div>
+<!-- Finaliza card. -->
+
+<div class="card">
+<!-- Conceito. -->
+
+<h3>Corveia</h3>
+<!-- Termo. -->
+
+<p>
+Prestação de trabalho realizada pelo camponês em atividades do senhorio.
+</p>
+<!-- Definição. -->
+
+</div>
+<!-- Finaliza card. -->
+
+<div class="card">
+<!-- Conceito. -->
+
+<h3>Talha</h3>
+<!-- Termo. -->
+
+<p>
+Parte da produção camponesa destinada ao senhor.
+</p>
+<!-- Definição. -->
+
+</div>
+<!-- Finaliza card. -->
+
+</div>
+<!-- Finaliza grade. -->
+
+</section>
+<!-- Finaliza conceitos. -->
+
+<section>
+<!-- Inicia causas e consequências. -->
+
+<h2>CAUSAS E CONSEQUÊNCIAS</h2>
+<!-- Título. -->
+
+<div class="grid">
+<!-- Inicia grade. -->
+
+<div class="card">
+<!-- Card. -->
+
+<h3>Fatores de formação</h3>
+<!-- Título. -->
+
+<ul>
+<!-- Lista. -->
+
+<li>Transformação do mundo romano.</li>
+<!-- Item. -->
+
+<li>Ruralização de parte da economia.</li>
+<!-- Item. -->
+
+<li>Fragmentação política.</li>
+<!-- Item. -->
+
+<li>Fortalecimento de poderes locais.</li>
+<!-- Item. -->
+
+<li>Insegurança e conflitos em diferentes períodos.</li>
+<!-- Item. -->
+
+</ul>
+<!-- Finaliza lista. -->
+
+</div>
+<!-- Finaliza card. -->
+
+<div class="card">
+<!-- Card. -->
+
+<h3>Transformações posteriores</h3>
+<!-- Título. -->
+
+<ul>
+<!-- Lista. -->
+
+<li>Crescimento agrícola.</li>
+<!-- Item. -->
+
+<li>Crescimento demográfico.</li>
+<!-- Item. -->
+
+<li>Renascimento comercial.</li>
+<!-- Item. -->
+
+<li>Crescimento urbano.</li>
+<!-- Item. -->
+
+<li>Fortalecimento gradual das monarquias.</li>
+<!-- Item. -->
+
+</ul>
+<!-- Finaliza lista. -->
+
+</div>
+<!-- Finaliza card. -->
+
+</div>
+<!-- Finaliza grade. -->
+
+</section>
+<!-- Finaliza causas e consequências. -->
+
+<section id="professor">
+<!-- Inicia seção do professor. -->
+
+<h2>O QUE O PROFESSOR PRECISA DOMINAR</h2>
+<!-- Título. -->
+
+<ul>
+<!-- Inicia lista. -->
+
+<li>Explicar que o feudalismo foi um processo histórico complexo.</li>
+<!-- Item. -->
+
+<li>Diferenciar senhorio de feudo.</li>
+<!-- Item. -->
+
+<li>Diferenciar servidão de escravidão.</li>
+<!-- Item. -->
+
+<li>Diferenciar relações senhoriais e relações de vassalagem.</li>
+<!-- Item. -->
+
+<li>Explicar corveia, talha e banalidades.</li>
+<!-- Item. -->
+
+<li>Relacionar terra, trabalho e poder.</li>
+<!-- Item. -->
+
+<li>Explicar a importância da Igreja medieval.</li>
+<!-- Item. -->
+
+<li>Compreender as transformações da Baixa Idade Média.</li>
+<!-- Item. -->
+
+<li>Relacionar crescimento comercial e urbano à transformação da sociedade feudal.</li>
+<!-- Item. -->
+
+<li>Evitar aplicar automaticamente o modelo feudal à sociedade colonial brasileira.</li>
+<!-- Item. -->
+
+</ul>
+<!-- Finaliza lista. -->
+
+<h3>O QUE COLOCAR NA LOUSA</h3>
+<!-- Subtítulo. -->
+
+<div class="destaque">
+<!-- Quadro da lousa. -->
+
+<p>
+<strong>FEUDALISMO</strong>
+</p>
+<!-- Título. -->
+
+<p>
+Terra → poder → trabalho → dependência
+</p>
+<!-- Primeira linha. -->
+
+<p>
+Senhorio → senhor + camponês
+</p>
+<!-- Segunda linha. -->
+
+<p>
+Vassalagem → aristocrata + aristocrata
+</p>
+<!-- Terceira linha. -->
+
+<p>
+Servo ≠ escravo
+</p>
+<!-- Quarta linha. -->
+
+<p>
+Corveia → trabalho
+</p>
+<!-- Quinta linha. -->
+
+<p>
+Talha → produção
+</p>
+<!-- Sexta linha. -->
+
+<p>
+Séculos XI–XIII → expansão agrícola/comercial/urbana
+</p>
+<!-- Sétima linha. -->
+
+<p>
+Século XIV → crise
+</p>
+<!-- Oitava linha. -->
+
+</div>
+<!-- Finaliza quadro. -->
+
+</section>
+<!-- Finaliza professor. -->
+
+<section>
+<!-- Inicia BNCC. -->
+
+<h2>BNCC</h2>
+<!-- Título. -->
+
+<div class="destaque">
+<!-- Destaque curricular. -->
+
+<p>
+<strong>EF06HI16</strong> — Caracterizar e comparar as dinâmicas de abastecimento
+e as formas de organização do trabalho e da vida social em diferentes sociedades
+e períodos, com destaque para as relações entre senhores e servos.
+</p>
+<!-- Habilidade diretamente relacionada ao tema. -->
+
+<p>
+<strong>EF06HI17</strong> — Diferenciar escravidão, servidão e trabalho livre
+no mundo antigo.
+</p>
+<!-- Habilidade relacionada à comparação das formas de trabalho. -->
+
+</div>
+<!-- Finaliza destaque. -->
+
+<p>
+O estudo do feudalismo permite trabalhar especialmente as relações entre
+terra, trabalho, dependência e organização da vida social medieval.
+</p>
+<!-- Relação pedagógica. -->
+
+</section>
+<!-- Finaliza BNCC. -->
+
+<section>
+<!-- Inicia seção de provas. -->
+
+<h2>ENEM • VESTIBULAR • CONCURSOS</h2>
+<!-- Título. -->
+
+<div class="grid">
+<!-- Inicia grade. -->
+
+<div class="card">
+<!-- Card. -->
+
+<h3>ENEM</h3>
+<!-- Título. -->
+
+<p>
+Relacione organização do trabalho, sociedade, território, poder e transformações
+econômicas.
+</p>
+<!-- Orientação. -->
+
+</div>
+<!-- Finaliza card. -->
+
+<div class="card">
+<!-- Card. -->
+
+<h3>Vestibulares</h3>
+<!-- Título. -->
+
+<p>
+Domine senhorio, vassalagem, servidão, corveia, talha e Baixa Idade Média.
+</p>
+<!-- Orientação. -->
+
+</div>
+<!-- Finaliza card. -->
+
+<div class="card">
+<!-- Card. -->
+
+<h3>Concursos</h3>
+<!-- Título. -->
+
+<p>
+Atenção especial às diferenças entre feudo, senhorio, servidão e vassalagem.
+</p>
+<!-- Orientação. -->
+
+</div>
+<!-- Finaliza card. -->
+
+</div>
+<!-- Finaliza grade. -->
+
+</section>
+<!-- Finaliza seção de provas. -->
+
+<section id="questoes">
+<!-- Inicia questões. -->
+
+<h2>QUESTÕES — MODELO ENEM</h2>
+<!-- Título. -->
+
+<h3>Questão 1</h3>
+<!-- Primeira questão. -->
+
+<p>
+Em uma sociedade medieval rural, camponeses trabalhavam terras vinculadas
+a um senhorio e estavam submetidos a determinadas obrigações. Essas relações
+faziam parte de uma organização social na qual a terra possuía grande importância
+econômica e política.
+</p>
+<!-- Enunciado. -->
+
+<p>
+<strong>A)</strong> A produção agrícola era completamente independente dos poderes locais.
+</p>
+<!-- Alternativa A. -->
+
+<p>
+<strong>B)</strong> As relações senhoriais envolviam terra, trabalho, proteção e obrigações.
+</p>
+<!-- Alternativa B. -->
+
+<p>
+<strong>C)</strong> Os camponeses eram todos escravizados juridicamente.
+</p>
+<!-- Alternativa C. -->
+
+<p>
+<strong>D)</strong> A economia medieval estava totalmente baseada no comércio internacional.
+</p>
+<!-- Alternativa D. -->
+
+<p>
+<strong>E)</strong> A Igreja não participava da organização social medieval.
+</p>
+<!-- Alternativa E. -->
+
+<button class="btn" onclick="mostrarGabarito('gabarito1')">
+<!-- Botão do gabarito. -->
+
+Mostrar gabarito da questão 1
+<!-- Texto do botão. -->
+
+</button>
+<!-- Finaliza botão. -->
+
+<div id="gabarito1" class="gabarito">
+<!-- Área escondida do gabarito. -->
+
+<strong>Resposta: B.</strong>
+<!-- Resposta. -->
+
+<p>
+As relações senhoriais articulavam terra, trabalho camponês,
+obrigações e formas de proteção e autoridade exercidas pelo senhor.
+</p>
+<!-- Explicação. -->
+
+</div>
+<!-- Finaliza gabarito. -->
+
+<h3>Questão 2</h3>
+<!-- Segunda questão. -->
+
+<p>
+A diferenciação entre relações senhoriais e relações de vassalagem
+é fundamental para compreender a sociedade medieval. Essa diferença
+pode ser expressa corretamente pela seguinte alternativa:
+</p>
+<!-- Enunciado. -->
+
+<p>
+<strong>A)</strong> A vassalagem envolvia principalmente a relação entre senhor e camponês.
+</p>
+<!-- Alternativa A. -->
+
+<p>
+<strong>B)</strong> A servidão e a escravidão eram exatamente a mesma instituição.
+</p>
+<!-- Alternativa B. -->
+
+<p>
+<strong>C)</strong> A relação senhorial estava ligada ao trabalho e às obrigações camponesas,
+enquanto a vassalagem envolvia relações entre membros da aristocracia.
+</p>
+<!-- Alternativa C. -->
+
+<p>
+<strong>D)</strong> A vassalagem era uma relação exclusivamente religiosa.
+</p>
+<!-- Alternativa D. -->
+
+<p>
+<strong>E)</strong> A relação senhorial existia somente dentro das cidades medievais.
+</p>
+<!-- Alternativa E. -->
+
+<button class="btn" onclick="mostrarGabarito('gabarito2')">
+<!-- Botão do gabarito. -->
+
+Mostrar gabarito da questão 2
+<!-- Texto do botão. -->
+
+</button>
+<!-- Finaliza botão. -->
+
+<div id="gabarito2" class="gabarito">
+<!-- Área escondida. -->
+
+<strong>Resposta: C.</strong>
+<!-- Resposta. -->
+
+<p>
+A relação senhorial estava principalmente relacionada à exploração da terra
+e às obrigações dos camponeses, enquanto a vassalagem era uma relação
+aristocrática de fidelidade, proteção e serviços.
+</p>
+<!-- Explicação. -->
+
+</div>
+<!-- Finaliza gabarito. -->
+
+</section>
+<!-- Finaliza questões. -->
+
+<section>
+<!-- Inicia revisão. -->
+
+<h2>REVISÃO EM 60 SEGUNDOS</h2>
+<!-- Título. -->
+
+<div class="destaque">
+<!-- Caixa de revisão. -->
+
+<p>
+<strong>1.</strong> O feudalismo se desenvolveu em partes da Europa medieval.
+</p>
+<!-- Revisão. -->
+
+<p>
+<strong>2.</strong> A terra possuía grande importância econômica e social.
+</p>
+<!-- Revisão. -->
+
+<p>
+<strong>3.</strong> Senhorio e vassalagem não são a mesma coisa.
+</p>
+<!-- Revisão. -->
+
+<p>
+<strong>4.</strong> Senhorio → relação entre senhor e camponês.
+</p>
+<!-- Revisão. -->
+
+<p>
+<strong>5.</strong> Vassalagem → relação entre membros da aristocracia.
+</p>
+<!-- Revisão. -->
+
+<p>
+<strong>6.</strong> Servo ≠ escravo.
+</p>
+<!-- Revisão. -->
+
+<p>
+<strong>7.</strong> Corveia → trabalho.
+</p>
+<!-- Revisão. -->
+
+<p>
+<strong>8.</strong> Talha → parte da produção.
+</p>
+<!-- Revisão. -->
+
+<p>
+<strong>9.</strong> Baixa Idade Média → crescimento agrícola, comercial e urbano.
+</p>
+<!-- Revisão. -->
+
+<p>
+<strong>10.</strong> Século XIV → período de forte crise em várias regiões europeias.
+</p>
+<!-- Revisão. -->
+
+</div>
+<!-- Finaliza revisão. -->
+
+</section>
+<!-- Finaliza revisão. -->
+
+<div style="text-align:center; margin:40px 0;">
+<!-- Cria área dos botões de navegação. -->
+
+<button class="btn" onclick="voltarPagina()">
+<!-- Cria botão voltar. -->
+
+← Voltar
+<!-- Texto do botão. -->
+
+</button>
+<!-- Finaliza botão. -->
+
+<a href="#topo" class="btn">
+<!-- Cria botão para voltar ao topo. -->
+
+↑ Voltar ao topo
+<!-- Texto. -->
+
+</a>
+<!-- Finaliza link. -->
+
+</div>
+<!-- Finaliza área dos botões. -->
+
+</main>
+<!-- Finaliza conteúdo principal. -->
+
+<footer>
+<!-- Inicia rodapé. -->
+
+<p>
+<strong>Curso de História Geral</strong>
+</p>
+<!-- Nome do curso. -->
+
+<p>
+Professor Marcelo Oliveira
+</p>
+<!-- Identificação. -->
+
+<p>
+Fund II • Ensino Médio • ENEM • Vestibular • Concursos
+</p>
+<!-- Público. -->
+
+<p>
+© 2026 — Material didático autoral
+</p>
+<!-- Copyright. -->
+
+</footer>
+<!-- Finaliza rodapé. -->
+
+<script>
+/* ============================== */
+/* GABARITO                       */
+/* ============================== */
+
+function mostrarGabarito(id) {
+    /* Localiza o elemento pelo ID recebido. */
+    const elemento = document.getElementById(id);
+
+    /* Verifica se o gabarito está visível. */
+    if (elemento.style.display === "block") {
+
+        /* Esconde o gabarito. */
+        elemento.style.display = "none";
+
+    } else {
+
+        /* Mostra o gabarito. */
+        elemento.style.display = "block";
+    }
+}
+
+/* ============================== */
+/* BOTÃO VOLTAR                   */
+/* ============================== */
+
+function voltarPagina() {
+    /* Verifica se existe uma página anterior. */
+    if (document.referrer !== "") {
+
+        /* Volta para a página anterior. */
+        history.back();
+
+    } else {
+
+        /* Informa que não existe página anterior. */
+        alert("Você está na primeira página deste caminho.");
+    }
+}
+</script>
+<!-- Finaliza o JavaScript. -->
+ <script>
+  const paginaAnterior = "09B - Tratado de Verdun.html";
+  const paginaProxima = "11 - Igreja-na-Idade-Media.html";
+</script>
+<script src="navegacao.js"></script>
+
+</body>
+<!-- Finaliza o corpo. -->
+
+</html>
+<!-- Finaliza o documento. -->

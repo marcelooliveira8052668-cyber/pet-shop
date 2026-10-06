@@ -1,0 +1,1672 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>1.44 — Revoluções Liberais | Professor Marcelo Oliveira</title>
+
+  <style>
+    /* ========================================================= */
+    /* RESET GERAL                                                */
+    /* ========================================================= */
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* ========================================================= */
+    /* CONFIGURAÇÕES GERAIS                                      */
+    /* ========================================================= */
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f3f6fa;
+      color: #263238;
+      line-height: 1.7;
+    }
+
+    /* ========================================================= */
+    /* CABEÇALHO                                                  */
+    /* ========================================================= */
+
+    header {
+      background: linear-gradient(135deg, #102a43, #1976d2);
+      color: white;
+      padding: 50px 20px;
+      text-align: center;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.18);
+    }
+
+    header h1 {
+      font-size: clamp(2rem, 5vw, 3.4rem);
+      margin-bottom: 15px;
+    }
+
+    header p {
+      max-width: 900px;
+      margin: auto;
+      font-size: 1.1rem;
+      opacity: 0.95;
+    }
+
+    /* ========================================================= */
+    /* MENU                                                       */
+    /* ========================================================= */
+
+    nav {
+      background: #0b1f33;
+      padding: 15px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 5px 10px;
+      font-weight: bold;
+      display: inline-block;
+    }
+
+    nav a:hover {
+      color: #90caf9;
+    }
+
+    /* ========================================================= */
+    /* CONTAINER                                                   */
+    /* ========================================================= */
+
+    main {
+      width: min(1200px, 94%);
+      margin: 40px auto;
+    }
+
+    /* ========================================================= */
+    /* TÍTULOS                                                      */
+    /* ========================================================= */
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    h3 {
+      margin: 25px 0 12px;
+      font-size: 1.35rem;
+    }
+
+    h4 {
+      margin: 20px 0 10px;
+    }
+
+    p {
+      margin-bottom: 15px;
+    }
+
+    /* ========================================================= */
+    /* CARDS                                                        */
+    /* ========================================================= */
+
+    .card {
+      background: white;
+      border-radius: 18px;
+      padding: 30px;
+      margin-bottom: 30px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    }
+
+    /* ========================================================= */
+    /* CORES SEMÂNTICAS                                            */
+    /* ========================================================= */
+
+    .comeco {
+      border-left: 8px solid #1976d2;
+    }
+
+    .desenvolvimento {
+      border-left: 8px solid #2e7d32;
+    }
+
+    .legado {
+      border-left: 8px solid #7b1fa2;
+    }
+
+    .causas {
+      border-left: 8px solid #ef6c00;
+    }
+
+    .conceitos {
+      border-left: 8px solid #f9a825;
+    }
+
+    .atencao {
+      border-left: 8px solid #c62828;
+      background: #fff5f5;
+    }
+
+    .enem {
+      border-left: 8px solid #00acc1;
+      background: #f0fcff;
+    }
+
+    .lousa {
+      border-left: 8px solid #263238;
+      background: #eceff1;
+    }
+
+    /* ========================================================= */
+    /* ETIQUETAS                                                    */
+    /* ========================================================= */
+
+    .tag {
+      display: inline-block;
+      padding: 7px 12px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: bold;
+      margin: 4px;
+      color: white;
+    }
+
+    .tag-azul {
+      background: #1976d2;
+    }
+
+    .tag-verde {
+      background: #2e7d32;
+    }
+
+    .tag-roxa {
+      background: #7b1fa2;
+    }
+
+    .tag-laranja {
+      background: #ef6c00;
+    }
+
+    .tag-vermelha {
+      background: #c62828;
+    }
+
+    /* ========================================================= */
+    /* LISTAS                                                       */
+    /* ========================================================= */
+
+    ul,
+    ol {
+      padding-left: 25px;
+      margin-bottom: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    /* ========================================================= */
+    /* TABELAS                                                      */
+    /* ========================================================= */
+
+    .tabela-container {
+      overflow-x: auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      background: white;
+    }
+
+    th,
+    td {
+      padding: 14px;
+      border: 1px solid #d7dee5;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: #102a43;
+      color: white;
+    }
+
+    tr:nth-child(even) {
+      background: #f7f9fb;
+    }
+
+    /* ========================================================= */
+    /* LINHA DO TEMPO                                              */
+    /* ========================================================= */
+
+    .timeline {
+      border-left: 5px solid #1976d2;
+      padding-left: 25px;
+    }
+
+    .evento {
+      margin-bottom: 25px;
+      position: relative;
+    }
+
+    .evento::before {
+      content: "";
+      position: absolute;
+      left: -37px;
+      top: 5px;
+      width: 16px;
+      height: 16px;
+      background: #1976d2;
+      border-radius: 50%;
+    }
+
+    .ano {
+      font-weight: bold;
+      color: #1565c0;
+      font-size: 1.1rem;
+    }
+
+    /* ========================================================= */
+    /* QUESTÕES                                                    */
+    /* ========================================================= */
+
+    .questao {
+      background: #ffffff;
+      border: 2px solid #dce3ea;
+      padding: 25px;
+      border-radius: 15px;
+      margin: 20px 0;
+    }
+
+    .alternativas {
+      margin-top: 15px;
+    }
+
+    .gabarito {
+      display: none;
+      background: #e8f5e9;
+      border-left: 6px solid #2e7d32;
+      padding: 20px;
+      margin-top: 15px;
+      border-radius: 8px;
+    }
+
+    button {
+      background: #1976d2;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      background: #0d47a1;
+    }
+
+    /* ========================================================= */
+    /* NAVEGAÇÃO                                                   */
+    /* ========================================================= */
+
+    .navegacao {
+      display: flex;
+      justify-content: space-between;
+      gap: 15px;
+      margin: 40px 0;
+      flex-wrap: wrap;
+    }
+
+    .navegacao a {
+      background: #102a43;
+      color: white;
+      text-decoration: none;
+      padding: 14px 20px;
+      border-radius: 10px;
+      font-weight: bold;
+    }
+
+    .navegacao a:hover {
+      background: #1976d2;
+    }
+
+    /* ========================================================= */
+    /* BOTÃO VOLTAR AO TOPO                                       */
+    /* ========================================================= */
+
+    #topo {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: #102a43;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-decoration: none;
+      font-size: 22px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+    }
+
+    /* ========================================================= */
+    /* RODAPÉ                                                      */
+    /* ========================================================= */
+
+    footer {
+      background: #0b1f33;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+      margin-top: 60px;
+    }
+
+    footer strong {
+      color: #90caf9;
+    }
+
+    /* ========================================================= */
+    /* RESPONSIVIDADE                                              */
+    /* ========================================================= */
+
+    @media (max-width: 700px) {
+
+      .card {
+        padding: 20px;
+      }
+
+      nav a {
+        display: block;
+        margin: 8px;
+      }
+
+      .navegacao {
+        flex-direction: column;
+      }
+
+      .navegacao a {
+        text-align: center;
+      }
+
+      table {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+
+<body id="inicio">
+
+  <!-- ======================================================= -->
+  <!-- CABEÇALHO                                                -->
+  <!-- ======================================================= -->
+
+  <header>
+
+    <h1>1.44 — Revoluções Liberais</h1>
+
+    <p>
+      História Geral — Fund II • Ensino Médio • ENEM • Vestibular • Concurso
+    </p>
+
+    <p>
+      Professor Marcelo Oliveira
+    </p>
+
+  </header>
+
+  <!-- ======================================================= -->
+  <!-- MENU                                                      -->
+  <!-- ======================================================= -->
+
+  <nav>
+
+    <a href="#comeco">O Começo</a>
+
+    <a href="#desenvolvimento">Desenvolvimento</a>
+
+    <a href="#legado">Legado</a>
+
+    <a href="#questoes">Questões</a>
+
+  </nav>
+
+  <!-- ======================================================= -->
+  <!-- CONTEÚDO PRINCIPAL                                        -->
+  <!-- ======================================================= -->
+
+  <main>
+
+    <!-- ===================================================== -->
+    <!-- APRESENTAÇÃO                                           -->
+    <!-- ===================================================== -->
+
+    <section class="card">
+
+      <span class="tag tag-azul">HISTÓRIA POLÍTICA</span>
+
+      <span class="tag tag-verde">SÉCULO XIX</span>
+
+      <span class="tag tag-roxa">LIBERALISMO</span>
+
+      <h2>Apresentação</h2>
+
+      <p>
+        As Revoluções Liberais foram movimentos políticos e sociais que
+        questionaram a ordem estabelecida após a queda de Napoleão Bonaparte
+        e a reorganização europeia promovida pelo Congresso de Viena.
+      </p>
+
+      <p>
+        Esses movimentos defenderam, em diferentes graus, princípios como
+        constitucionalismo, representação política, liberdade civil,
+        nacionalismo e limitação do poder absoluto.
+      </p>
+
+      <p>
+        Entretanto, é importante compreender que os revolucionários não
+        possuíam necessariamente os mesmos objetivos. Alguns defendiam
+        reformas políticas moderadas, enquanto outros buscavam mudanças
+        nacionais e sociais mais profundas.
+      </p>
+
+    </section>
+
+    <!-- ===================================================== -->
+    <!-- I — O COMEÇO                                           -->
+    <!-- ===================================================== -->
+
+    <section id="comeco" class="card comeco">
+
+      <span class="tag tag-azul">PARTE I</span>
+
+      <h2>I — O COMEÇO: A EUROPA APÓS NAPOLEÃO</h2>
+
+      <h3>1. A queda de Napoleão</h3>
+
+      <p>
+        A derrota de Napoleão Bonaparte abriu uma disputa sobre qual deveria
+        ser a organização política da Europa.
+      </p>
+
+      <p>
+        As monarquias vencedoras procuraram reconstruir uma ordem política
+        baseada na estabilidade, na diplomacia e na restauração de dinastias.
+      </p>
+
+      <p>
+        Ao mesmo tempo, ideias desenvolvidas durante o Iluminismo e as
+        experiências das Revoluções Americana e Francesa continuavam circulando.
+      </p>
+
+      <h3>2. A Restauração</h3>
+
+      <p>
+        O período posterior a 1815 ficou associado à chamada Restauração.
+        Governantes conservadores procuraram conter movimentos revolucionários
+        e impedir novas rupturas políticas.
+      </p>
+
+      <p>
+        O problema era que a Europa já havia mudado profundamente.
+        Constituições, cidadania, direitos políticos e nacionalismo passaram
+        a fazer parte do debate político.
+      </p>
+
+      <h3>3. O que era o liberalismo?</h3>
+
+      <p>
+        No contexto do século XIX, o liberalismo político defendia princípios
+        como limitação do poder do Estado, direitos individuais,
+        constitucionalismo e representação política.
+      </p>
+
+      <p>
+        O liberalismo econômico também se desenvolveu, defendendo menor
+        intervenção estatal na economia e maior liberdade de circulação de
+        mercadorias.
+      </p>
+
+      <div class="card conceitos">
+
+        <h3>Conceito fundamental</h3>
+
+        <p>
+          <strong>Liberalismo não significa simplesmente democracia.</strong>
+        </p>
+
+        <p>
+          Muitos liberais do século XIX defendiam constituições e direitos
+          civis, mas não necessariamente o sufrágio universal.
+        </p>
+
+      </div>
+
+      <h3>4. Nacionalismo</h3>
+
+      <p>
+        O nacionalismo também ganhou força durante o século XIX.
+        Diversos grupos passaram a defender a ideia de que comunidades com
+        identidade histórica, cultural ou linguística deveriam possuir
+        autonomia ou formar seus próprios Estados.
+      </p>
+
+      <h3>5. Constitucionalismo</h3>
+
+      <p>
+        O constitucionalismo defendia que o poder político deveria estar
+        submetido a normas jurídicas estabelecidas em uma Constituição.
+      </p>
+
+    </section>
+
+    <!-- ===================================================== -->
+    <!-- CAUSAS                                                   -->
+    <!-- ===================================================== -->
+
+    <section class="card causas">
+
+      <span class="tag tag-laranja">CAUSAS</span>
+
+      <h2>Principais fatores das Revoluções Liberais</h2>
+
+      <ul>
+
+        <li>
+          Influência do Iluminismo.
+        </li>
+
+        <li>
+          Experiência da Revolução Francesa.
+        </li>
+
+        <li>
+          Difusão do constitucionalismo.
+        </li>
+
+        <li>
+          Crescimento político da burguesia.
+        </li>
+
+        <li>
+          Reação ao absolutismo e ao conservadorismo.
+        </li>
+
+        <li>
+          Expansão das ideias nacionalistas.
+        </li>
+
+        <li>
+          Crises econômicas e sociais.
+        </li>
+
+        <li>
+          Insatisfação de grupos urbanos.
+        </li>
+
+        <li>
+          Influência das independências americanas.
+        </li>
+
+        <li>
+          Reação contra a ordem política estabelecida pelo Congresso de Viena.
+        </li>
+
+      </ul>
+
+    </section>
+
+    <!-- ===================================================== -->
+    <!-- II — DESENVOLVIMENTO                                   -->
+    <!-- ===================================================== -->
+
+    <section id="desenvolvimento" class="card desenvolvimento">
+
+      <span class="tag tag-verde">PARTE II</span>
+
+      <h2>II — O DESENVOLVIMENTO: AS ONDAS REVOLUCIONÁRIAS</h2>
+
+      <h3>1. As Revoluções de 1820</h3>
+
+      <p>
+        A primeira grande onda revolucionária do período ocorreu na década
+        de 1820.
+      </p>
+
+      <p>
+        Movimentos liberais apareceram em regiões como Espanha, Portugal,
+        Nápoles e Piemonte.
+      </p>
+
+      <p>
+        Muitos desses movimentos defendiam constituições e limites ao poder
+        monárquico.
+      </p>
+
+      <h3>2. Portugal</h3>
+
+      <p>
+        A Revolução Liberal do Porto, em 1820, exigiu mudanças políticas e
+        constitucionais.
+      </p>
+
+      <p>
+        O movimento teve consequências importantes para o Brasil porque
+        contribuiu para a volta de D. João VI a Portugal e para a reorganização
+        das relações entre Portugal e Brasil.
+      </p>
+
+      <h3>3. Espanha</h3>
+
+      <p>
+        Na Espanha, setores liberais exigiram o restabelecimento da
+        Constituição de Cádiz.
+      </p>
+
+      <p>
+        O movimento acabou sendo derrotado pela intervenção das forças
+        conservadoras europeias.
+      </p>
+
+      <h3>4. Independência da Grécia</h3>
+
+      <p>
+        A luta grega contra o domínio otomano esteve relacionada ao
+        nacionalismo e ao contexto político europeu.
+      </p>
+
+      <p>
+        A independência grega demonstrou que as questões nacionais poderiam
+        entrar em conflito com a lógica conservadora da Restauração.
+      </p>
+
+      <h3>5. Revoluções de 1830</h3>
+
+      <p>
+        Uma nova onda revolucionária ocorreu em 1830.
+      </p>
+
+      <p>
+        Na França, a chamada Revolução de Julho derrubou Carlos X e levou
+        Luís Filipe de Orléans ao poder.
+      </p>
+
+      <p>
+        A mudança francesa influenciou movimentos em outras regiões da Europa.
+      </p>
+
+      <h3>6. Independência da Bélgica</h3>
+
+      <p>
+        A Bélgica rompeu com o Reino dos Países Baixos.
+      </p>
+
+      <p>
+        O movimento envolveu elementos políticos, religiosos, econômicos e
+        nacionais.
+      </p>
+
+      <h3>7. Revoluções de 1848</h3>
+
+      <p>
+        Em 1848, uma nova onda revolucionária atingiu diversas regiões
+        europeias.
+      </p>
+
+      <p>
+        Esse conjunto de acontecimentos ficou conhecido como
+        <strong>Primavera dos Povos</strong>.
+      </p>
+
+      <p>
+        Não se tratou de uma única revolução, mas de vários movimentos
+        ocorridos em diferentes sociedades.
+      </p>
+
+      <h3>8. França em 1848</h3>
+
+      <p>
+        Na França, a monarquia de Luís Filipe foi derrubada e foi proclamada
+        a Segunda República.
+      </p>
+
+      <p>
+        O sufrágio masculino foi ampliado, mas os conflitos sociais entre
+        diferentes grupos políticos permaneceram.
+      </p>
+
+      <h3>9. Estados alemães</h3>
+
+      <p>
+        Nos territórios alemães, movimentos liberais e nacionalistas exigiram
+        reformas políticas e maior unidade nacional.
+      </p>
+
+      <p>
+        A Assembleia de Frankfurt tentou discutir a criação de uma Alemanha
+        constitucional, mas o projeto fracassou naquele momento.
+      </p>
+
+      <h3>10. Império Austríaco</h3>
+
+      <p>
+        O Império Austríaco também foi atingido por movimentos liberais e
+        nacionalistas.
+      </p>
+
+      <p>
+        Diferentes povos submetidos ao império reivindicaram mudanças
+        políticas e maior autonomia.
+      </p>
+
+      <h3>11. Estados italianos</h3>
+
+      <p>
+        Na Península Itálica, movimentos liberais e nacionalistas também
+        questionaram a ordem política existente.
+      </p>
+
+      <p>
+        Embora muitos movimentos de 1848 tenham sido derrotados, suas ideias
+        contribuíram para os processos que posteriormente levariam às
+        unificações italiana e alemã.
+      </p>
+
+    </section>
+
+    <!-- ===================================================== -->
+    <!-- TABELA DE MOVIMENTOS                                    -->
+    <!-- ===================================================== -->
+
+    <section class="card">
+
+      <h2>Principais movimentos do século XIX</h2>
+
+      <div class="tabela-container">
+
+        <table>
+
+          <thead>
+
+            <tr>
+              <th>Período</th>
+              <th>Local</th>
+              <th>Características</th>
+              <th>Resultado</th>
+            </tr>
+
+          </thead>
+
+          <tbody>
+
+            <tr>
+              <td>1820</td>
+              <td>Espanha</td>
+              <td>Constitucionalismo e liberalismo</td>
+              <td>Repressão posterior</td>
+            </tr>
+
+            <tr>
+              <td>1820</td>
+              <td>Portugal</td>
+              <td>Revolução Liberal do Porto</td>
+              <td>Constitucionalismo</td>
+            </tr>
+
+            <tr>
+              <td>1820s</td>
+              <td>Grécia</td>
+              <td>Nacionalismo e independência</td>
+              <td>Independência reconhecida em 1830</td>
+            </tr>
+
+            <tr>
+              <td>1830</td>
+              <td>França</td>
+              <td>Revolução de Julho</td>
+              <td>Queda de Carlos X</td>
+            </tr>
+
+            <tr>
+              <td>1830</td>
+              <td>Bélgica</td>
+              <td>Movimento nacional</td>
+              <td>Independência</td>
+            </tr>
+
+            <tr>
+              <td>1848</td>
+              <td>França</td>
+              <td>República e sufrágio masculino</td>
+              <td>Segunda República</td>
+            </tr>
+
+            <tr>
+              <td>1848</td>
+              <td>Europa Central</td>
+              <td>Liberalismo e nacionalismo</td>
+              <td>Grande parte dos movimentos foi derrotada</td>
+            </tr>
+
+          </tbody>
+
+        </table>
+
+      </div>
+
+    </section>
+
+    <!-- ===================================================== -->
+    <!-- LINHA DO TEMPO                                          -->
+    <!-- ===================================================== -->
+
+    <section class="card">
+
+      <h2>Linha do tempo</h2>
+
+      <div class="timeline">
+
+        <div class="evento">
+
+          <div class="ano">1815</div>
+
+          <p>
+            Congresso de Viena e reorganização da Europa.
+          </p>
+
+        </div>
+
+        <div class="evento">
+
+          <div class="ano">1820</div>
+
+          <p>
+            Revolução Liberal do Porto e movimentos liberais na Europa.
+          </p>
+
+        </div>
+
+        <div class="evento">
+
+          <div class="ano">1821</div>
+
+          <p>
+            Início da Guerra de Independência da Grécia.
+          </p>
+
+        </div>
+
+        <div class="evento">
+
+          <div class="ano">1830</div>
+
+          <p>
+            Revolução de Julho na França e independência da Bélgica.
+          </p>
+
+        </div>
+
+        <div class="evento">
+
+          <div class="ano">1848</div>
+
+          <p>
+            Primavera dos Povos.
+          </p>
+
+        </div>
+
+        <div class="evento">
+
+          <div class="ano">1859–1871</div>
+
+          <p>
+            Período decisivo das unificações italiana e alemã.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ===================================================== -->
+    <!-- LIBERALISMO X NACIONALISMO                              -->
+    <!-- ===================================================== -->
+
+    <section class="card conceitos">
+
+      <h2>Liberalismo e Nacionalismo: não são a mesma coisa</h2>
+
+      <div class="tabela-container">
+
+        <table>
+
+          <thead>
+
+            <tr>
+              <th>Liberalismo</th>
+              <th>Nacionalismo</th>
+            </tr>
+
+          </thead>
+
+          <tbody>
+
+            <tr>
+              <td>Defesa de direitos individuais.</td>
+              <td>Defesa de uma comunidade nacional.</td>
+            </tr>
+
+            <tr>
+              <td>Constitucionalismo.</td>
+              <td>Autonomia ou unidade nacional.</td>
+            </tr>
+
+            <tr>
+              <td>Limitação do poder político.</td>
+              <td>Construção ou fortalecimento do Estado nacional.</td>
+            </tr>
+
+            <tr>
+              <td>Representação política.</td>
+              <td>Identidade histórica e cultural.</td>
+            </tr>
+
+          </tbody>
+
+        </table>
+
+      </div>
+
+    </section>
+
+    <!-- ===================================================== -->
+    <!-- CONSEQUÊNCIAS                                           -->
+    <!-- ===================================================== -->
+
+    <section class="card causas">
+
+      <span class="tag tag-laranja">CONSEQUÊNCIAS</span>
+
+      <h2>Principais consequências</h2>
+
+      <ul>
+
+        <li>
+          Fortalecimento do constitucionalismo.
+        </li>
+
+        <li>
+          Expansão gradual da representação política.
+        </li>
+
+        <li>
+          Crescimento do nacionalismo.
+        </li>
+
+        <li>
+          Enfraquecimento gradual das estruturas absolutistas.
+        </li>
+
+        <li>
+          Fortalecimento político de setores burgueses.
+        </li>
+
+        <li>
+          Desenvolvimento de novos debates sobre cidadania.
+        </li>
+
+        <li>
+          Preparação política e ideológica para as unificações italiana e alemã.
+        </li>
+
+        <li>
+          Ampliação dos conflitos entre conservadores, liberais,
+          nacionalistas e grupos sociais populares.
+        </li>
+
+      </ul>
+
+    </section>
+
+    <!-- ===================================================== -->
+    <!-- ATENÇÃO HISTÓRICA                                      -->
+    <!-- ===================================================== -->
+
+    <section class="card atencao">
+
+      <span class="tag tag-vermelha">ATENÇÃO</span>
+
+      <h2>O que NÃO devemos simplificar</h2>
+
+      <p>
+        As Revoluções Liberais não foram movimentos homogêneos.
+      </p>
+
+      <p>
+        Liberais, nacionalistas, republicanos, monarquistas constitucionais,
+        trabalhadores e outros grupos poderiam possuir objetivos diferentes.
+      </p>
+
+      <p>
+        Além disso, a vitória de uma Constituição não significava
+        automaticamente democracia plena.
+      </p>
+
+      <p>
+        Durante boa parte do século XIX, mulheres, trabalhadores pobres e
+        outros grupos continuaram excluídos ou limitados na participação
+        política.
+      </p>
+
+    </section>
+
+    <!-- ===================================================== -->
+    <!-- III — LEGADO                                            -->
+    <!-- ===================================================== -->
+
+    <section id="legado" class="card legado">
+
+      <span class="tag tag-roxa">PARTE III</span>
+
+      <h2>III — O LEGADO E O MUNDO ATUAL</h2>
+
+      <h3>1. Constitucionalismo</h3>
+
+      <p>
+        As revoluções ajudaram a consolidar a ideia de que o poder político
+        deveria possuir limites jurídicos.
+      </p>
+
+      <h3>2. Cidadania</h3>
+
+      <p>
+        O conceito de cidadania passou por transformações profundas durante
+        os séculos XIX e XX.
+      </p>
+
+      <p>
+        A participação política, inicialmente restrita, foi sendo ampliada
+        em diferentes sociedades por meio de lutas e reformas posteriores.
+      </p>
+
+      <h3>3. Nacionalismo</h3>
+
+      <p>
+        O nacionalismo tornou-se uma das principais forças políticas do
+        século XIX.
+      </p>
+
+      <p>
+        Ele contribuiu tanto para movimentos de independência quanto para
+        processos de unificação territorial.
+      </p>
+
+      <h3>4. Unificações italiana e alemã</h3>
+
+      <p>
+        As experiências liberais e nacionalistas das décadas anteriores
+        contribuíram para o ambiente político no qual ocorreriam as
+        unificações da Itália e da Alemanha.
+      </p>
+
+      <h3>5. Mundo contemporâneo</h3>
+
+      <p>
+        Muitos elementos discutidos nas Revoluções Liberais continuam presentes
+        na política contemporânea:
+      </p>
+
+      <ul>
+
+        <li>Constituições;</li>
+
+        <li>direitos civis;</li>
+
+        <li>representação política;</li>
+
+        <li>cidadania;</li>
+
+        <li>nacionalidade;</li>
+
+        <li>limitação dos poderes do Estado;</li>
+
+        <li>debates sobre participação política.</li>
+
+      </ul>
+
+    </section>
+
+    <!-- ===================================================== -->
+    <!-- HISTÓRIA GERAL + BRASIL                                 -->
+    <!-- ===================================================== -->
+
+    <section class="card legado">
+
+      <h2>História Geral ↔ Brasil</h2>
+
+      <p>
+        O Brasil também participou desse contexto internacional de
+        transformações políticas.
+      </p>
+
+      <h3>1822 — Independência</h3>
+
+      <p>
+        A independência brasileira ocorreu em um mundo marcado pelo
+        constitucionalismo, pelas revoluções e pelas disputas entre
+        absolutismo e liberalismo.
+      </p>
+
+      <h3>1824 — Constituição</h3>
+
+      <p>
+        O Brasil Imperial adotou uma Constituição, embora dentro de uma
+        monarquia centralizada e com participação política limitada.
+      </p>
+
+      <h3>1831 — Abdicação de D. Pedro I</h3>
+
+      <p>
+        A abdicação abriu o Período Regencial, marcado por intensos conflitos
+        políticos e sociais.
+      </p>
+
+      <h3>Revoltas do Período Regencial</h3>
+
+      <p>
+        Movimentos como a Farroupilha demonstram que questões de autonomia,
+        poder regional, organização política e conflitos sociais também
+        estavam presentes no Brasil.
+      </p>
+
+      <h3>1842 — Revoluções Liberais em São Paulo e Minas Gerais</h3>
+
+      <p>
+        O contexto brasileiro também apresentou movimentos explicitamente
+        associados ao liberalismo político, como as Revoluções Liberais de
+        1842 em São Paulo e Minas Gerais.
+      </p>
+
+    </section>
+
+    <!-- ===================================================== -->
+    <!-- O QUE O PROFESSOR PRECISA DOMINAR                      -->
+    <!-- ===================================================== -->
+
+    <section class="card">
+
+      <h2>O que o professor precisa dominar</h2>
+
+      <ol>
+
+        <li>
+          Entender a relação entre Congresso de Viena e Restauração.
+        </li>
+
+        <li>
+          Explicar liberalismo e constitucionalismo.
+        </li>
+
+        <li>
+          Diferenciar liberalismo de nacionalismo.
+        </li>
+
+        <li>
+          Conhecer as ondas revolucionárias de 1820, 1830 e 1848.
+        </li>
+
+        <li>
+          Explicar a Primavera dos Povos.
+        </li>
+
+        <li>
+          Relacionar os movimentos às futuras unificações italiana e alemã.
+        </li>
+
+        <li>
+          Explicar por que vários movimentos revolucionários foram derrotados.
+        </li>
+
+        <li>
+          Demonstrar que cidadania e sufrágio foram conquistas graduais.
+        </li>
+
+        <li>
+          Relacionar o contexto europeu ao Brasil Imperial.
+        </li>
+
+      </ol>
+
+    </section>
+
+    <!-- ===================================================== -->
+    <!-- O QUE COLOCAR NA LOUSA                                 -->
+    <!-- ===================================================== -->
+
+    <section class="card lousa">
+
+      <h2>O que colocar na lousa</h2>
+
+      <p><strong>REVOLUÇÕES LIBERAIS — SÉCULO XIX</strong></p>
+
+      <p>
+        Congresso de Viena → Restauração → Liberalismo + Nacionalismo
+      </p>
+
+      <p>
+        1820 → Revoluções Liberais
+      </p>
+
+      <p>
+        1830 → Revolução de Julho + Bélgica
+      </p>
+
+      <p>
+        1848 → Primavera dos Povos
+      </p>
+
+      <p>
+        Consequências:
+      </p>
+
+      <ul>
+
+        <li>Constitucionalismo</li>
+
+        <li>Nacionalismo</li>
+
+        <li>Cidadania</li>
+
+        <li>Representação política</li>
+
+        <li>Unificações nacionais</li>
+
+      </ul>
+
+    </section>
+
+    <!-- ===================================================== -->
+    <!-- CONCEITOS                                               -->
+    <!-- ===================================================== -->
+
+    <section class="card conceitos">
+
+      <h2>Conceitos essenciais</h2>
+
+      <span class="tag tag-azul">LIBERALISMO</span>
+
+      <span class="tag tag-verde">CONSTITUCIONALISMO</span>
+
+      <span class="tag tag-roxa">NACIONALISMO</span>
+
+      <span class="tag tag-laranja">RESTAURAÇÃO</span>
+
+      <span class="tag tag-vermelha">REVOLUÇÃO</span>
+
+      <span class="tag tag-azul">CIDADANIA</span>
+
+      <span class="tag tag-verde">SUFRÁGIO</span>
+
+      <span class="tag tag-roxa">PRIMAVERA DOS POVOS</span>
+
+    </section>
+
+    <!-- ===================================================== -->
+    <!-- BNCC                                                     -->
+    <!-- ===================================================== -->
+
+    <section class="card">
+
+      <h2>BNCC — Como trabalhar o tema</h2>
+
+      <p>
+        O tema pode ser articulado às competências e habilidades da área de
+        Ciências Humanas que trabalham:
+      </p>
+
+      <ul>
+
+        <li>
+          formação dos Estados nacionais;
+        </li>
+
+        <li>
+          cidadania e direitos;
+        </li>
+
+        <li>
+          conflitos políticos;
+        </li>
+
+        <li>
+          transformações sociais;
+        </li>
+
+        <li>
+          liberalismo e nacionalismo;
+        </li>
+
+        <li>
+          relações entre passado e presente.
+        </li>
+
+      </ul>
+
+      <p>
+        <strong>
+          Observação didática:
+        </strong>
+        a habilidade exata deve ser selecionada de acordo com a etapa de
+        ensino, currículo da rede e objeto de conhecimento trabalhado.
+      </p>
+
+    </section>
+
+    <!-- ===================================================== -->
+    <!-- ENEM / VESTIBULAR                                      -->
+    <!-- ===================================================== -->
+
+    <section class="card enem">
+
+      <span class="tag" style="background:#00acc1;">
+        ENEM
+      </span>
+
+      <h2>ENEM • Vestibular • Concurso</h2>
+
+      <h3>O que mais merece atenção?</h3>
+
+      <ul>
+
+        <li>
+          Congresso de Viena.
+        </li>
+
+        <li>
+          Restauração.
+        </li>
+
+        <li>
+          Liberalismo.
+        </li>
+
+        <li>
+          Nacionalismo.
+        </li>
+
+        <li>
+          Revoluções de 1820.
+        </li>
+
+        <li>
+          Revoluções de 1830.
+        </li>
+
+        <li>
+          Primavera dos Povos.
+        </li>
+
+        <li>
+          Relação com as unificações nacionais.
+        </li>
+
+        <li>
+          Limitações da cidadania no século XIX.
+        </li>
+
+      </ul>
+
+    </section>
+
+    <!-- ===================================================== -->
+    <!-- QUESTÕES                                                 -->
+    <!-- ===================================================== -->
+
+    <section id="questoes" class="card">
+
+      <h2>Questões de revisão</h2>
+
+      <!-- =================================================== -->
+      <!-- QUESTÃO 1                                             -->
+      <!-- =================================================== -->
+
+      <div class="questao">
+
+        <h3>Questão 1</h3>
+
+        <p>
+          No século XIX, diversos movimentos políticos europeus questionaram
+          a ordem estabelecida após o Congresso de Viena. Embora apresentassem
+          diferenças entre si, muitos desses movimentos estavam relacionados
+          à defesa do constitucionalismo e à oposição a estruturas políticas
+          conservadoras.
+        </p>
+
+        <p>
+          Uma característica comum a muitos movimentos liberais do período
+          foi:
+        </p>
+
+        <div class="alternativas">
+
+          <p>A) defesa da restauração integral do absolutismo.</p>
+
+          <p>B) defesa da limitação constitucional do poder político.</p>
+
+          <p>C) rejeição de qualquer forma de representação política.</p>
+
+          <p>D) defesa da eliminação dos Estados nacionais.</p>
+
+          <p>E) rejeição das ideias iluministas.</p>
+
+        </div>
+
+        <button onclick="mostrarGabarito('g1')">
+          Mostrar gabarito
+        </button>
+
+        <div id="g1" class="gabarito">
+
+          <strong>Resposta: B</strong>
+
+          <p>
+            Muitos movimentos liberais defendiam constituições, direitos
+            políticos e limites ao poder dos governantes.
+          </p>
+
+        </div>
+
+      </div>
+
+      <!-- =================================================== -->
+      <!-- QUESTÃO 2                                             -->
+      <!-- =================================================== -->
+
+      <div class="questao">
+
+        <h3>Questão 2</h3>
+
+        <p>
+          As Revoluções de 1848 ficaram conhecidas como Primavera dos Povos
+          porque:
+        </p>
+
+        <div class="alternativas">
+
+          <p>
+            A) ocorreram exclusivamente em uma única cidade europeia.
+          </p>
+
+          <p>
+            B) foram movimentos coordenados diretamente por Napoleão Bonaparte.
+          </p>
+
+          <p>
+            C) envolveram diferentes regiões europeias e combinaram demandas
+            liberais, nacionais e sociais.
+          </p>
+
+          <p>
+            D) tiveram como único objetivo restaurar o absolutismo.
+          </p>
+
+          <p>
+            E) eliminaram imediatamente todas as monarquias europeias.
+          </p>
+
+        </div>
+
+        <button onclick="mostrarGabarito('g2')">
+          Mostrar gabarito
+        </button>
+
+        <div id="g2" class="gabarito">
+
+          <strong>Resposta: C</strong>
+
+          <p>
+            A expressão Primavera dos Povos se refere à onda de movimentos
+            revolucionários de 1848 em diferentes regiões da Europa.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ===================================================== -->
+    <!-- RESUMO FINAL                                            -->
+    <!-- ===================================================== -->
+
+    <section class="card legado">
+
+      <h2>Resumo final para o professor</h2>
+
+      <p>
+        As Revoluções Liberais foram parte de um longo processo de transformação
+        política iniciado pelas experiências revolucionárias do final do século
+        XVIII e desenvolvido durante o século XIX.
+      </p>
+
+      <p>
+        A disputa central envolvia diferentes projetos de sociedade:
+        restauração conservadora, liberalismo, nacionalismo e demandas sociais.
+      </p>
+
+      <p>
+        As revoluções de 1820, 1830 e 1848 não produziram uma vitória
+        definitiva e uniforme do liberalismo, mas contribuíram para modificar
+        profundamente a política europeia.
+      </p>
+
+      <p>
+        Seu legado pode ser observado na expansão do constitucionalismo,
+        no desenvolvimento da cidadania, no nacionalismo e nos processos de
+        formação dos Estados nacionais.
+      </p>
+
+    </section>
+
+    <!-- ===================================================== -->
+    <!-- NAVEGAÇÃO                                               -->
+    <!-- ===================================================== -->
+
+    <div class="navegacao">
+
+      <a href="../32-Independencia-da-America-Espanhola/index.html">
+        ← Tema anterior
+      </a>
+
+      <a href="../34-Unificacoes-Alema-e-Italiana/index.html">
+        Próximo tema →
+      </a>
+
+    </div>
+
+  </main>
+
+  <!-- ======================================================= -->
+  <!-- RODAPÉ                                                    -->
+  <!-- ======================================================= -->
+
+  <footer>
+
+    <p>
+      <strong>Professor Marcelo Oliveira</strong>
+    </p>
+
+    <p>
+      Curso de História Geral
+    </p>
+
+    <p>
+      Fund II • Ensino Médio • ENEM • Vestibular • Concurso
+    </p>
+
+    <p>
+      História para compreender o passado, interpretar o presente
+      e pensar o futuro.
+    </p>
+
+  </footer>
+
+  <!-- ======================================================= -->
+  <!-- BOTÃO TOPO                                                -->
+  <!-- ======================================================= -->
+
+  <a id="topo" href="#inicio" title="Voltar ao topo">
+    ↑
+  </a>
+
+  <!-- ======================================================= -->
+  <!-- JAVASCRIPT                                                -->
+  <!-- ======================================================= -->
+
+  <script>
+
+    /* Função responsável por mostrar ou esconder o gabarito. */
+    function mostrarGabarito(id) {
+
+      /* Localiza o elemento pelo seu ID. */
+      const elemento = document.getElementById(id);
+
+      /* Verifica se o gabarito está escondido. */
+      if (elemento.style.display === "none" || elemento.style.display === "") {
+
+        /* Mostra o gabarito. */
+        elemento.style.display = "block";
+
+      } else {
+
+        /* Esconde o gabarito novamente. */
+        elemento.style.display = "none";
+
+      }
+
+    }
+
+  </script>
+  <script>
+  const paginaAnterior = "43 - República Liberal Populista.html";
+  const paginaProxima = "45 - OCUPAÇÃO E EXPANSÃO TERRITORIAIS.html";
+</script>
+<script src="navegacao.js"></script>
+
+</body>
+</html>
+

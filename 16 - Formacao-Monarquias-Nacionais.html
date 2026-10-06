@@ -1,0 +1,2191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Define a codificação de caracteres da página. -->
+    <meta charset="UTF-8">
+
+    <!-- Faz a página se adaptar a celulares, tablets e computadores. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Define o título da página na aba do navegador. -->
+    <title>1.16 — Formação das Monarquias Nacionais | História Geral</title>
+
+    <style>
+
+        /* Remove margens e espaçamentos padrões dos elementos. */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Ativa a rolagem suave entre as seções. */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Define a aparência geral do corpo da página. */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f6f8;
+            color: #1f2937;
+            line-height: 1.7;
+        }
+
+        /* ===================================================== */
+        /* CABEÇALHO                                               */
+        /* ===================================================== */
+
+        /* Cria o cabeçalho principal do curso. */
+        header {
+            background: linear-gradient(135deg, #0f172a, #1e3a8a);
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+            border-bottom: 5px solid #d4af37;
+        }
+
+        /* Cria o selo com o número da aula. */
+        .numero-aula {
+            display: inline-block;
+            background: #d4af37;
+            color: #111827;
+            padding: 8px 18px;
+            border-radius: 30px;
+            font-weight: bold;
+            margin-bottom: 18px;
+        }
+
+        /* Define o tamanho do título principal. */
+        header h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        /* Define o texto de apresentação do cabeçalho. */
+        header p {
+            max-width: 900px;
+            margin: auto;
+            font-size: 18px;
+            color: #e5e7eb;
+        }
+
+        /* ===================================================== */
+        /* MENU                                                      */
+        /* ===================================================== */
+
+        /* Cria o menu fixo durante a navegação. */
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: #111827;
+            padding: 12px;
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Organiza os links do menu. */
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        /* Define a aparência dos links. */
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 14px;
+            border-radius: 6px;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        /* Cria o efeito de passagem do mouse. */
+        nav a:hover {
+            background: #d4af37;
+            color: #111827;
+        }
+
+        /* ===================================================== */
+        /* CONTEÚDO                                                  */
+        /* ===================================================== */
+
+        /* Centraliza e limita a largura do conteúdo. */
+        main {
+            max-width: 1150px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        /* Cria o cartão padrão das seções. */
+        .card {
+            background: white;
+            padding: 32px;
+            margin-bottom: 28px;
+            border-radius: 14px;
+            box-shadow: 0 5px 20px rgba(15, 23, 42, 0.08);
+            border-left: 5px solid #1e3a8a;
+        }
+
+        /* Define os títulos das seções. */
+        .card h2 {
+            color: #1e3a8a;
+            margin-bottom: 20px;
+            font-size: 29px;
+        }
+
+        /* Define os subtítulos. */
+        .card h3 {
+            color: #334155;
+            margin-top: 25px;
+            margin-bottom: 12px;
+            font-size: 21px;
+        }
+
+        /* Define o espaçamento dos parágrafos. */
+        .card p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        /* Define o espaçamento das listas. */
+        .card ul,
+        .card ol {
+            margin: 15px 0 15px 25px;
+        }
+
+        /* Cria espaço entre os itens das listas. */
+        .card li {
+            margin-bottom: 8px;
+        }
+
+        /* ===================================================== */
+        /* DESTAQUES                                                 */
+        /* ===================================================== */
+
+        /* Cria uma caixa de destaque azul. */
+        .destaque {
+            background: #eff6ff;
+            border-left: 5px solid #2563eb;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        /* Cria uma caixa de atenção histórica. */
+        .atencao {
+            background: #fff7ed;
+            border-left: 5px solid #ea580c;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        /* Cria uma caixa específica para relações com o Brasil. */
+        .brasil {
+            background: #f0fdf4;
+            border-left: 5px solid #16a34a;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        /* ===================================================== */
+        /* TRILOGIA                                                   */
+        /* ===================================================== */
+
+        /* Organiza as três partes da periodização. */
+        .trilogia {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+            margin: 25px 0;
+        }
+
+        /* Estiliza cada bloco da trilogia. */
+        .trilogia div {
+            background: #f8fafc;
+            padding: 22px;
+            border-radius: 12px;
+            border-top: 4px solid #d4af37;
+        }
+
+        /* Define o título de cada parte. */
+        .trilogia h3 {
+            margin-top: 0;
+            color: #1e3a8a;
+        }
+
+        /* ===================================================== */
+        /* TABELAS                                                   */
+        /* ===================================================== */
+
+        /* Permite rolagem horizontal em telas pequenas. */
+        .tabela-container {
+            overflow-x: auto;
+            margin: 20px 0;
+        }
+
+        /* Define a largura da tabela. */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 700px;
+        }
+
+        /* Define o espaçamento das células. */
+        th,
+        td {
+            padding: 14px;
+            border: 1px solid #dbe2ea;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        /* Estiliza o cabeçalho da tabela. */
+        th {
+            background: #1e3a8a;
+            color: white;
+        }
+
+        /* Cria alternância visual nas linhas. */
+        tr:nth-child(even) {
+            background: #f8fafc;
+        }
+
+        /* ===================================================== */
+        /* LINHA DO TEMPO                                            */
+        /* ===================================================== */
+
+        /* Cria a linha vertical da cronologia. */
+        .timeline {
+            border-left: 4px solid #d4af37;
+            padding-left: 25px;
+            margin: 25px 0;
+        }
+
+        /* Define cada evento da linha do tempo. */
+        .evento {
+            position: relative;
+            margin-bottom: 25px;
+        }
+
+        /* Cria a marca circular de cada evento. */
+        .evento::before {
+            content: "";
+            position: absolute;
+            left: -36px;
+            top: 5px;
+            width: 14px;
+            height: 14px;
+            background: #1e3a8a;
+            border: 3px solid white;
+            border-radius: 50%;
+            box-shadow: 0 0 0 2px #d4af37;
+        }
+
+        /* Destaca a data de cada acontecimento. */
+        .data {
+            font-weight: bold;
+            color: #1e3a8a;
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        /* ===================================================== */
+        /* CONCEITOS                                                  */
+        /* ===================================================== */
+
+        /* Cria uma grade para os conceitos. */
+        .conceitos {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+
+        /* Cria o cartão individual dos conceitos. */
+        .conceito {
+            background: #f8fafc;
+            padding: 18px;
+            border-radius: 10px;
+            border: 1px solid #e2e8f0;
+        }
+
+        /* Destaca o nome do conceito. */
+        .conceito strong {
+            color: #1e3a8a;
+            display: block;
+            margin-bottom: 7px;
+        }
+
+        /* ===================================================== */
+        /* QUESTÕES                                                   */
+        /* ===================================================== */
+
+        /* Define o cartão das questões. */
+        .questao {
+            background: #f8fafc;
+            padding: 25px;
+            margin: 20px 0;
+            border-radius: 10px;
+            border: 1px solid #dbe2ea;
+        }
+
+        /* Define o espaçamento das alternativas. */
+        .alternativas {
+            margin-top: 15px;
+        }
+
+        /* Ajusta os parágrafos das alternativas. */
+        .alternativas p {
+            margin-bottom: 8px;
+            text-align: left;
+        }
+
+        /* Cria o botão de gabarito. */
+        .btn-resposta {
+            background: #1e3a8a;
+            color: white;
+            border: none;
+            padding: 11px 18px;
+            border-radius: 7px;
+            cursor: pointer;
+            margin-top: 15px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        /* Cria o efeito do botão. */
+        .btn-resposta:hover {
+            background: #d4af37;
+            color: #111827;
+        }
+
+        /* Esconde o gabarito inicialmente. */
+        .resposta {
+            display: none;
+            background: #ecfdf5;
+            border-left: 5px solid #16a34a;
+            padding: 18px;
+            margin-top: 15px;
+            border-radius: 8px;
+        }
+
+        /* ===================================================== */
+        /* BLOCO DO PROFESSOR                                        */
+        /* ===================================================== */
+
+        /* Cria o cartão especial para o professor. */
+        .professor {
+            background: #111827;
+            color: #f8fafc;
+            padding: 30px;
+            border-radius: 14px;
+            margin-bottom: 28px;
+        }
+
+        /* Define o título do bloco do professor. */
+        .professor h2 {
+            color: #d4af37;
+        }
+
+        /* Define os subtítulos do bloco do professor. */
+        .professor h3 {
+            color: #93c5fd;
+            margin-top: 22px;
+        }
+
+        /* ===================================================== */
+        /* NAVEGAÇÃO                                                 */
+        /* ===================================================== */
+
+        /* Organiza os botões anterior e próximo. */
+        .navegacao {
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+            margin: 40px 0;
+        }
+
+        /* Define a aparência dos botões de navegação. */
+        .btn-nav {
+            display: inline-block;
+            text-decoration: none;
+            background: #1e3a8a;
+            color: white;
+            padding: 14px 22px;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        /* Cria o efeito dos botões. */
+        .btn-nav:hover {
+            background: #d4af37;
+            color: #111827;
+        }
+
+        /* ===================================================== */
+        /* BOTÃO TOPO                                                 */
+        /* ===================================================== */
+
+        /* Cria o botão flutuante de retorno ao topo. */
+        #topo {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            background: #1e3a8a;
+            color: white;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Muda a aparência do botão ao passar o mouse. */
+        #topo:hover {
+            background: #d4af37;
+            color: #111827;
+        }
+
+        /* ===================================================== */
+        /* RODAPÉ                                                    */
+        /* ===================================================== */
+
+        /* Define o rodapé do curso. */
+        footer {
+            background: #0f172a;
+            color: #cbd5e1;
+            text-align: center;
+            padding: 35px 20px;
+            margin-top: 50px;
+        }
+
+        /* Destaca o nome do curso e professor. */
+        footer strong {
+            color: #d4af37;
+        }
+
+        /* ===================================================== */
+        /* RESPONSIVIDADE                                             */
+        /* ===================================================== */
+
+        /* Ajusta a página para telas menores. */
+        @media (max-width: 800px) {
+
+            /* Reduz o tamanho do título. */
+            header h1 {
+                font-size: 31px;
+            }
+
+            /* Coloca os blocos da trilogia em uma coluna. */
+            .trilogia {
+                grid-template-columns: 1fr;
+            }
+
+            /* Coloca os conceitos em uma coluna. */
+            .conceitos {
+                grid-template-columns: 1fr;
+            }
+
+            /* Reduz o espaçamento interno dos cartões. */
+            .card {
+                padding: 22px;
+            }
+
+            /* Coloca os botões de navegação um abaixo do outro. */
+            .navegacao {
+                flex-direction: column;
+            }
+
+            /* Centraliza os textos dos botões. */
+            .btn-nav {
+                text-align: center;
+            }
+
+            /* Reduz os links do menu. */
+            nav a {
+                font-size: 12px;
+                padding: 7px 9px;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body id="inicio">
+
+    <!-- ========================================================= -->
+    <!-- CABEÇALHO                                                   -->
+    <!-- ========================================================= -->
+
+    <header>
+
+        <!-- Exibe o número da aula. -->
+        <div class="numero-aula">
+            1.16
+        </div>
+
+        <!-- Exibe o título principal. -->
+        <h1>
+            Formação das Monarquias Nacionais
+        </h1>
+
+        <!-- Apresenta o tema da aula. -->
+        <p>
+            A centralização do poder político, o fortalecimento das monarquias
+            e as transformações econômicas e sociais da Europa Ocidental
+            entre a Baixa Idade Média e o início da Idade Moderna.
+        </p>
+
+    </header>
+
+    <!-- ========================================================= -->
+    <!-- MENU                                                        -->
+    <!-- ========================================================= -->
+
+    <nav>
+
+        <!-- Lista de navegação. -->
+        <ul>
+
+            <!-- Link para a primeira parte. -->
+            <li>
+                <a href="#comeco">O Começo</a>
+            </li>
+
+            <!-- Link para a segunda parte. -->
+            <li>
+                <a href="#desenvolvimento">Desenvolvimento</a>
+            </li>
+
+            <!-- Link para a terceira parte. -->
+            <li>
+                <a href="#legado">Legado</a>
+            </li>
+
+            <!-- Link para cronologia. -->
+            <li>
+                <a href="#cronologia">Cronologia</a>
+            </li>
+
+            <!-- Link para conceitos. -->
+            <li>
+                <a href="#conceitos">Conceitos</a>
+            </li>
+
+            <!-- Link para professor. -->
+            <li>
+                <a href="#professor">Professor</a>
+            </li>
+
+            <!-- Link para questões. -->
+            <li>
+                <a href="#questoes">Questões</a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+    <!-- ========================================================= -->
+    <!-- CONTEÚDO PRINCIPAL                                          -->
+    <!-- ========================================================= -->
+
+    <main>
+
+        <!-- ===================================================== -->
+        <!-- INTRODUÇÃO                                             -->
+        <!-- ===================================================== -->
+
+        <section class="card">
+
+            <!-- Título da introdução. -->
+            <h2>Introdução</h2>
+
+            <!-- Primeiro parágrafo. -->
+            <p>
+                A <strong>formação das monarquias nacionais</strong> foi um
+                processo histórico desenvolvido em diferentes ritmos e
+                condições na Europa Ocidental, principalmente entre os
+                séculos XII e XVI.
+            </p>
+
+            <!-- Segundo parágrafo. -->
+            <p>
+                Durante a Baixa Idade Média, reis passaram a ampliar sua
+                autoridade sobre territórios que anteriormente eram marcados
+                por forte fragmentação política, disputas entre senhores
+                feudais e diferentes jurisdições.
+            </p>
+
+            <!-- Terceiro parágrafo. -->
+            <p>
+                Esse processo não significou que o rei passou imediatamente
+                a controlar tudo. A centralização foi gradual e envolveu
+                conflitos, negociações, alianças, guerras, impostos,
+                burocracias, tribunais, exércitos e relações com diferentes
+                grupos sociais.
+            </p>
+
+            <!-- Caixa historiográfica. -->
+            <div class="atencao">
+
+                <strong>⚠️ Atenção:</strong>
+
+                <p>
+                    “Monarquia nacional” é uma expressão tradicional dos
+                    livros escolares. Os Estados que se consolidaram nesse
+                    período não eram Estados nacionais no mesmo sentido dos
+                    Estados-nação contemporâneos. É mais preciso falar em
+                    processos de centralização monárquica e formação de
+                    Estados territoriais.
+                </p>
+
+            </div>
+
+            <!-- Trilogia. -->
+            <div class="trilogia">
+
+                <!-- Primeiro bloco. -->
+                <div>
+
+                    <h3>I — O COMEÇO</h3>
+
+                    <p>
+                        Crises do poder feudal, crescimento urbano,
+                        fortalecimento econômico e necessidade de
+                        reorganização política.
+                    </p>
+
+                </div>
+
+                <!-- Segundo bloco. -->
+                <div>
+
+                    <h3>II — O DESENVOLVIMENTO</h3>
+
+                    <p>
+                        Centralização política, impostos, burocracia,
+                        exércitos, leis e alianças entre reis e grupos
+                        urbanos.
+                    </p>
+
+                </div>
+
+                <!-- Terceiro bloco. -->
+                <div>
+
+                    <h3>III — O LEGADO</h3>
+
+                    <p>
+                        Consolidação de monarquias centralizadas e formação
+                        de estruturas políticas que contribuiriam para a
+                        Europa moderna.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- I — O COMEÇO                                           -->
+        <!-- ===================================================== -->
+
+        <section class="card" id="comeco">
+
+            <!-- Título da primeira parte. -->
+            <h2>I — O COMEÇO: a crise da fragmentação política</h2>
+
+            <!-- Subtítulo. -->
+            <h3>1. A fragmentação do poder medieval</h3>
+
+            <!-- Explicação. -->
+            <p>
+                Durante boa parte da Idade Média, o poder político na Europa
+                Ocidental encontrava-se distribuído entre reis, senhores
+                feudais, autoridades religiosas, cidades e diferentes
+                instituições locais.
+            </p>
+
+            <p>
+                Um rei podia possuir autoridade simbólica importante, mas
+                nem sempre tinha controle administrativo direto sobre todos
+                os territórios considerados pertencentes ao seu reino.
+            </p>
+
+            <!-- Destaque. -->
+            <div class="destaque">
+
+                <strong>Ideia central:</strong>
+
+                <p>
+                    A centralização monárquica significou a ampliação da
+                    capacidade dos reis de governar diretamente territórios,
+                    cobrar impostos, aplicar leis e organizar forças
+                    militares.
+                </p>
+
+            </div>
+
+            <!-- Subtítulo. -->
+            <h3>2. O crescimento das cidades</h3>
+
+            <!-- Explicação. -->
+            <p>
+                O crescimento comercial e urbano estudado na aula anterior
+                modificou as relações econômicas e sociais da Europa.
+            </p>
+
+            <p>
+                Comerciantes e grupos urbanos tinham interesse em maior
+                estabilidade das rotas, redução de conflitos locais e
+                unificação de determinadas regras e mercados.
+            </p>
+
+            <!-- Subtítulo. -->
+            <h3>3. A relação entre reis e burgueses</h3>
+
+            <!-- Explicação. -->
+            <p>
+                Em diferentes regiões, reis encontraram apoio financeiro e
+                político em grupos urbanos. Comerciantes podiam contribuir
+                com recursos para a monarquia, enquanto os reis podiam
+                oferecer proteção, privilégios ou segurança jurídica.
+            </p>
+
+            <div class="destaque">
+
+                <strong>Relação histórica:</strong>
+
+                <p>
+                    Reis → necessidade de recursos
+                    <br>
+                    Burgueses → interesse em estabilidade
+                    <br>
+                    ↓
+                    <br>
+                    Alianças e negociações
+                </p>
+
+            </div>
+
+            <!-- Subtítulo. -->
+            <h3>4. O enfraquecimento de parte do poder senhorial</h3>
+
+            <!-- Explicação. -->
+            <p>
+                As transformações econômicas, militares e políticas da Baixa
+                Idade Média alteraram o equilíbrio de poder entre reis e
+                senhores.
+            </p>
+
+            <p>
+                Isso não significa que a nobreza tenha desaparecido. Ao
+                contrário, ela continuou sendo um grupo fundamental,
+                frequentemente incorporado às novas estruturas monárquicas.
+            </p>
+
+            <!-- Subtítulo. -->
+            <h3>5. O impacto das guerras</h3>
+
+            <!-- Explicação. -->
+            <p>
+                Conflitos prolongados contribuíram para estimular a
+                organização de exércitos e a necessidade de arrecadação
+                de recursos.
+            </p>
+
+            <p>
+                Um exemplo importante foi a <strong>Guerra dos Cem Anos</strong>,
+                travada principalmente entre as monarquias inglesa e francesa
+                entre 1337 e 1453.
+            </p>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- II — DESENVOLVIMENTO                                    -->
+        <!-- ===================================================== -->
+
+        <section class="card" id="desenvolvimento">
+
+            <!-- Título da segunda parte. -->
+            <h2>II — O DESENVOLVIMENTO: a centralização monárquica</h2>
+
+            <!-- Subtítulo. -->
+            <h3>1. O fortalecimento do poder real</h3>
+
+            <!-- Explicação. -->
+            <p>
+                Os reis buscaram ampliar sua capacidade de intervenção
+                política e administrativa. Para isso, desenvolveram ou
+                fortaleceram instituições permanentes de governo.
+            </p>
+
+            <!-- Lista. -->
+            <ul>
+
+                <li>
+                    administração real;
+                </li>
+
+                <li>
+                    cobrança de impostos;
+                </li>
+
+                <li>
+                    tribunais;
+                </li>
+
+                <li>
+                    funcionários do rei;
+                </li>
+
+                <li>
+                    forças militares;
+                </li>
+
+                <li>
+                    legislação;
+                </li>
+
+                <li>
+                    diplomacia.
+                </li>
+
+            </ul>
+
+            <!-- Subtítulo. -->
+            <h3>2. A burocracia</h3>
+
+            <!-- Explicação. -->
+            <p>
+                Para governar territórios maiores, as monarquias precisavam
+                de pessoas responsáveis pela administração.
+            </p>
+
+            <p>
+                Funcionários reais passaram a exercer funções relacionadas
+                à arrecadação, justiça, registros, diplomacia e administração
+                territorial.
+            </p>
+
+            <!-- Subtítulo. -->
+            <h3>3. Os impostos</h3>
+
+            <!-- Explicação. -->
+            <p>
+                A centralização política dependia de recursos financeiros.
+                Impostos tornaram-se cada vez mais importantes para financiar
+                as estruturas do poder monárquico.
+            </p>
+
+            <p>
+                O aumento da arrecadação também provocou resistências,
+                negociações e conflitos entre reis, nobres, cidades e outros
+                grupos.
+            </p>
+
+            <!-- Subtítulo. -->
+            <h3>4. A justiça real</h3>
+
+            <!-- Explicação. -->
+            <p>
+                Uma das formas de fortalecimento da monarquia foi a ampliação
+                da atuação dos tribunais ligados ao rei.
+            </p>
+
+            <p>
+                A expansão da justiça régia podia reduzir a autonomia de
+                determinados poderes locais, embora os sistemas jurídicos
+                medievais continuassem bastante diversificados.
+            </p>
+
+            <!-- Subtítulo. -->
+            <h3>5. Os exércitos</h3>
+
+            <!-- Explicação. -->
+            <p>
+                As guerras exigiam recursos, soldados e organização.
+                Progressivamente, as monarquias buscaram reduzir sua
+                dependência exclusiva de forças feudais temporárias.
+            </p>
+
+            <p>
+                Esse processo não produziu imediatamente exércitos nacionais
+                permanentes como os atuais. A composição das forças militares
+                variava conforme o período e o reino.
+            </p>
+
+            <!-- Subtítulo. -->
+            <h3>6. Portugal</h3>
+
+            <!-- Explicação. -->
+            <p>
+                O Reino de Portugal consolidou-se durante a Idade Média,
+                associado ao processo de Reconquista e à formação de uma
+                monarquia territorial.
+            </p>
+
+            <p>
+                A dinastia de Avis, estabelecida após a crise de 1383–1385,
+                fortaleceu a monarquia portuguesa e está diretamente
+                relacionada aos processos que serão estudados posteriormente
+                na expansão marítima.
+            </p>
+
+            <!-- Subtítulo. -->
+            <h3>7. Espanha</h3>
+
+            <!-- Explicação. -->
+            <p>
+                A formação política dos reinos ibéricos ocorreu durante
+                processos de longa duração. O casamento de
+                <strong>Isabel de Castela e Fernando de Aragão</strong>,
+                em 1469, aproximou as duas coroas.
+            </p>
+
+            <p>
+                A união dinástica não significou a criação imediata de um
+                Estado completamente unificado. Castela e Aragão conservaram
+                instituições e características próprias durante muito tempo.
+            </p>
+
+            <!-- Subtítulo. -->
+            <h3>8. França</h3>
+
+            <!-- Explicação. -->
+            <p>
+                A monarquia francesa ampliou progressivamente seu domínio
+                territorial e sua capacidade administrativa.
+            </p>
+
+            <p>
+                A Guerra dos Cem Anos contribuiu para transformações
+                militares, fiscais e políticas que fortaleceram a autoridade
+                monárquica francesa ao longo do século XV.
+            </p>
+
+            <!-- Subtítulo. -->
+            <h3>9. Inglaterra</h3>
+
+            <!-- Explicação. -->
+            <p>
+                A monarquia inglesa também passou por processos de
+                centralização, mas sua história política desenvolveu
+                instituições específicas, incluindo o Parlamento.
+            </p>
+
+            <p>
+                A relação entre rei, nobreza e Parlamento tornou-se uma
+                característica importante da experiência política inglesa.
+            </p>
+
+            <!-- Subtítulo. -->
+            <h3>10. A Guerra dos Cem Anos</h3>
+
+            <!-- Explicação. -->
+            <p>
+                A Guerra dos Cem Anos foi uma longa sequência de conflitos
+                entre Inglaterra e França, iniciada em 1337 e encerrada em
+                1453.
+            </p>
+
+            <p>
+                O conflito esteve relacionado a disputas dinásticas,
+                territoriais e políticas. Ao longo do processo, as monarquias
+                desenvolveram mecanismos de arrecadação e mobilização militar.
+            </p>
+
+            <div class="atencao">
+
+                <strong>Não confunda:</strong>
+
+                <p>
+                    A Guerra dos Cem Anos não foi uma guerra contínua durante
+                    exatamente cem anos. O nome é uma forma tradicional de
+                    designar uma longa sequência de conflitos e períodos de
+                    trégua entre 1337 e 1453.
+                </p>
+
+            </div>
+
+            <!-- Subtítulo. -->
+            <h3>11. Joana d'Arc</h3>
+
+            <!-- Explicação. -->
+            <p>
+                <strong>Joana d'Arc</strong> tornou-se uma personagem
+                importante da história da Guerra dos Cem Anos. Em 1429,
+                participou da campanha que contribuiu para o levantamento
+                do cerco de Orléans.
+            </p>
+
+            <p>
+                Sua trajetória posteriormente adquiriu forte significado
+                simbólico na memória histórica francesa.
+            </p>
+
+            <!-- Subtítulo. -->
+            <h3>12. O caso inglês e a Guerra das Duas Rosas</h3>
+
+            <!-- Explicação. -->
+            <p>
+                Na Inglaterra, a segunda metade do século XV foi marcada
+                pela Guerra das Duas Rosas, uma série de conflitos envolvendo
+                grupos ligados às casas de Lancaster e York.
+            </p>
+
+            <p>
+                Em 1485, Henrique Tudor derrotou Ricardo III e tornou-se
+                Henrique VII, iniciando a dinastia Tudor.
+            </p>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- COMPARAÇÃO ENTRE MONARQUIAS                              -->
+        <!-- ===================================================== -->
+
+        <section class="card">
+
+            <!-- Título da comparação. -->
+            <h2>Principais processos de centralização</h2>
+
+            <!-- Container da tabela. -->
+            <div class="tabela-container">
+
+                <!-- Tabela comparativa. -->
+                <table>
+
+                    <!-- Cabeçalho. -->
+                    <thead>
+
+                        <tr>
+
+                            <th>Reino</th>
+
+                            <th>Processos importantes</th>
+
+                            <th>Características</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <!-- Corpo da tabela. -->
+                    <tbody>
+
+                        <tr>
+
+                            <td>Portugal</td>
+
+                            <td>
+                                Formação territorial e consolidação
+                                monárquica.
+                            </td>
+
+                            <td>
+                                Dinastia de Avis e fortalecimento da
+                                monarquia no final do século XIV.
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Castela e Aragão</td>
+
+                            <td>
+                                União dinástica de Isabel e Fernando.
+                            </td>
+
+                            <td>
+                                Manutenção de instituições próprias dos
+                                diferentes reinos.
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>França</td>
+
+                            <td>
+                                Expansão do poder régio e Guerra dos Cem Anos.
+                            </td>
+
+                            <td>
+                                Crescimento da autoridade da monarquia.
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Inglaterra</td>
+
+                            <td>
+                                Centralização monárquica e conflitos
+                                dinásticos.
+                            </td>
+
+                            <td>
+                                Relação importante entre monarquia e
+                                Parlamento.
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- III — LEGADO                                            -->
+        <!-- ===================================================== -->
+
+        <section class="card" id="legado">
+
+            <!-- Título. -->
+            <h2>III — O LEGADO E O MUNDO ATUAL</h2>
+
+            <!-- Subtítulo. -->
+            <h3>1. O fortalecimento dos Estados territoriais</h3>
+
+            <!-- Explicação. -->
+            <p>
+                Os processos de centralização contribuíram para a formação
+                de estruturas políticas mais capazes de administrar
+                territórios extensos.
+            </p>
+
+            <p>
+                Essas estruturas não eram iguais aos Estados nacionais
+                contemporâneos, mas ajudaram a criar condições institucionais
+                para mudanças políticas posteriores.
+            </p>
+
+            <!-- Subtítulo. -->
+            <h3>2. Centralização e formação do Estado moderno</h3>
+
+            <!-- Explicação. -->
+            <p>
+                A historiografia tradicional costuma associar o período à
+                formação do Estado moderno. Essa interpretação deve ser
+                trabalhada como um processo gradual, marcado por diferentes
+                instituições e ritmos.
+            </p>
+
+            <!-- Subtítulo. -->
+            <h3>3. Reis, impostos e administração</h3>
+
+            <!-- Explicação. -->
+            <p>
+                A ampliação da arrecadação e da administração criou
+                instrumentos que seriam fundamentais para as monarquias
+                europeias durante os séculos seguintes.
+            </p>
+
+            <!-- Subtítulo. -->
+            <h3>4. Relação com a expansão marítima</h3>
+
+            <div class="brasil">
+
+                <strong>Conexão com Portugal:</strong>
+
+                <p>
+                    O fortalecimento da monarquia portuguesa, especialmente
+                    após a Revolução de Avis de 1383–1385, constitui parte
+                    importante do contexto que antecede a expansão marítima
+                    portuguesa.
+                </p>
+
+                <p>
+                    Nas próximas aulas, veremos como transformações políticas,
+                    econômicas, técnicas e comerciais contribuíram para a
+                    expansão marítimo-comercial europeia.
+                </p>
+
+            </div>
+
+            <!-- Subtítulo. -->
+            <h3>5. O conceito de Estado-nação</h3>
+
+            <!-- Explicação. -->
+            <p>
+                O Estado-nação contemporâneo é resultado de processos muito
+                posteriores e não deve ser simplesmente projetado para a
+                Idade Média.
+            </p>
+
+            <p>
+                No final da Idade Média e início da Idade Moderna, diferentes
+                monarquias estavam construindo formas de centralização
+                territorial, administrativa e fiscal.
+            </p>
+
+            <!-- Subtítulo. -->
+            <h3>6. Permanências e transformações</h3>
+
+            <!-- Explicação. -->
+            <p>
+                A centralização não eliminou automaticamente a nobreza,
+                a Igreja, as autonomias locais ou as diferenças jurídicas.
+                Muitas dessas estruturas continuaram existindo e foram
+                incorporadas ou negociadas pelas monarquias.
+            </p>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- CRONOLOGIA                                              -->
+        <!-- ===================================================== -->
+
+        <section class="card" id="cronologia">
+
+            <!-- Título. -->
+            <h2>Linha do Tempo</h2>
+
+            <!-- Linha do tempo. -->
+            <div class="timeline">
+
+                <!-- Evento 1. -->
+                <div class="evento">
+
+                    <span class="data">Séculos XII–XIII</span>
+
+                    <p>
+                        Ampliação gradual da autoridade monárquica em
+                        diferentes regiões europeias.
+                    </p>
+
+                </div>
+
+                <!-- Evento 2. -->
+                <div class="evento">
+
+                    <span class="data">1215</span>
+
+                    <p>
+                        Magna Carta na Inglaterra, importante documento
+                        relacionado às relações entre o rei e grupos da
+                        sociedade política inglesa.
+                    </p>
+
+                </div>
+
+                <!-- Evento 3. -->
+                <div class="evento">
+
+                    <span class="data">1337–1453</span>
+
+                    <p>
+                        Guerra dos Cem Anos entre Inglaterra e França.
+                    </p>
+
+                </div>
+
+                <!-- Evento 4. -->
+                <div class="evento">
+
+                    <span class="data">1383–1385</span>
+
+                    <p>
+                        Crise portuguesa e Revolução de Avis.
+                    </p>
+
+                </div>
+
+                <!-- Evento 5. -->
+                <div class="evento">
+
+                    <span class="data">1385</span>
+
+                    <p>
+                        D. João I inicia a Dinastia de Avis.
+                    </p>
+
+                </div>
+
+                <!-- Evento 6. -->
+                <div class="evento">
+
+                    <span class="data">1429</span>
+
+                    <p>
+                        Joana d'Arc participa da campanha que contribui para
+                        o levantamento do cerco de Orléans.
+                    </p>
+
+                </div>
+
+                <!-- Evento 7. -->
+                <div class="evento">
+
+                    <span class="data">1469</span>
+
+                    <p>
+                        Casamento de Isabel de Castela e Fernando de Aragão.
+                    </p>
+
+                </div>
+
+                <!-- Evento 8. -->
+                <div class="evento">
+
+                    <span class="data">1485</span>
+
+                    <p>
+                        Henrique VII assume o trono inglês e inicia a
+                        dinastia Tudor.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- CONCEITOS                                               -->
+        <!-- ===================================================== -->
+
+        <section class="card" id="conceitos">
+
+            <!-- Título. -->
+            <h2>Conceitos Fundamentais</h2>
+
+            <!-- Grade dos conceitos. -->
+            <div class="conceitos">
+
+                <!-- Conceito 1. -->
+                <div class="conceito">
+
+                    <strong>Centralização política</strong>
+
+                    <p>
+                        Processo de concentração crescente de competências
+                        políticas e administrativas em torno do poder real.
+                    </p>
+
+                </div>
+
+                <!-- Conceito 2. -->
+                <div class="conceito">
+
+                    <strong>Monarquia</strong>
+
+                    <p>
+                        Forma de governo em que o chefe de Estado é um
+                        monarca, geralmente associado à transmissão dinástica.
+                    </p>
+
+                </div>
+
+                <!-- Conceito 3. -->
+                <div class="conceito">
+
+                    <strong>Estado territorial</strong>
+
+                    <p>
+                        Organização política associada ao controle de um
+                        território delimitado e à administração de sua
+                        população.
+                    </p>
+
+                </div>
+
+                <!-- Conceito 4. -->
+                <div class="conceito">
+
+                    <strong>Burocracia</strong>
+
+                    <p>
+                        Conjunto de agentes e estruturas administrativas
+                        responsáveis por funções de governo.
+                    </p>
+
+                </div>
+
+                <!-- Conceito 5. -->
+                <div class="conceito">
+
+                    <strong>Fiscalidade</strong>
+
+                    <p>
+                        Sistema de arrecadação de recursos utilizado pelo
+                        poder político.
+                    </p>
+
+                </div>
+
+                <!-- Conceito 6. -->
+                <div class="conceito">
+
+                    <strong>Dinastia</strong>
+
+                    <p>
+                        Sequência de governantes ligados por relações
+                        familiares ou sucessórias.
+                    </p>
+
+                </div>
+
+                <!-- Conceito 7. -->
+                <div class="conceito">
+
+                    <strong>Legitimidade</strong>
+
+                    <p>
+                        Conjunto de fundamentos utilizados para justificar
+                        o exercício do poder.
+                    </p>
+
+                </div>
+
+                <!-- Conceito 8. -->
+                <div class="conceito">
+
+                    <strong>Estado-nação</strong>
+
+                    <p>
+                        Forma política moderna que associa Estado,
+                        território e identidade nacional, consolidada
+                        historicamente sobretudo em períodos posteriores.
+                    </p>
+
+                </div>
+
+                <!-- Conceito 9. -->
+                <div class="conceito">
+
+                    <strong>Magna Carta</strong>
+
+                    <p>
+                        Documento de 1215 relacionado às limitações e
+                        negociações do poder régio na Inglaterra.
+                    </p>
+
+                </div>
+
+                <!-- Conceito 10. -->
+                <div class="conceito">
+
+                    <strong>Guerra dos Cem Anos</strong>
+
+                    <p>
+                        Série de conflitos entre Inglaterra e França,
+                        entre 1337 e 1453.
+                    </p>
+
+                </div>
+
+                <!-- Conceito 11. -->
+                <div class="conceito">
+
+                    <strong>Dinastia de Avis</strong>
+
+                    <p>
+                        Dinastia portuguesa iniciada por D. João I após a
+                        crise de 1383–1385.
+                    </p>
+
+                </div>
+
+                <!-- Conceito 12. -->
+                <div class="conceito">
+
+                    <strong>União dinástica</strong>
+
+                    <p>
+                        Associação de coroas por meio de uma mesma dinastia,
+                        sem necessariamente eliminar instituições próprias
+                        de cada reino.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- CAUSAS E CONSEQUÊNCIAS                                  -->
+        <!-- ===================================================== -->
+
+        <section class="card">
+
+            <!-- Título. -->
+            <h2>Causas, Processos e Consequências</h2>
+
+            <!-- Tabela. -->
+            <div class="tabela-container">
+
+                <table>
+
+                    <!-- Cabeçalho. -->
+                    <thead>
+
+                        <tr>
+
+                            <th>Processo</th>
+
+                            <th>Transformação</th>
+
+                            <th>Consequência</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <!-- Corpo. -->
+                    <tbody>
+
+                        <tr>
+
+                            <td>
+                                Crescimento urbano
+                            </td>
+
+                            <td>
+                                Fortalecimento de grupos mercantis.
+                            </td>
+
+                            <td>
+                                Apoio financeiro e político a determinadas
+                                monarquias.
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>
+                                Expansão comercial
+                            </td>
+
+                            <td>
+                                Ampliação da circulação de mercadorias.
+                            </td>
+
+                            <td>
+                                Maior importância de impostos e mercados.
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>
+                                Guerras
+                            </td>
+
+                            <td>
+                                Necessidade de maior mobilização militar.
+                            </td>
+
+                            <td>
+                                Desenvolvimento de estruturas fiscais e
+                                administrativas.
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>
+                                Burocracia
+                            </td>
+
+                            <td>
+                                Ampliação da administração régia.
+                            </td>
+
+                            <td>
+                                Maior capacidade de intervenção do rei.
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>
+                                Centralização
+                            </td>
+
+                            <td>
+                                Redução relativa de determinadas autonomias.
+                            </td>
+
+                            <td>
+                                Fortalecimento de Estados territoriais.
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- PROFESSOR                                                -->
+        <!-- ===================================================== -->
+
+        <section class="professor" id="professor">
+
+            <!-- Título. -->
+            <h2>O que o professor precisa dominar</h2>
+
+            <!-- Ponto 1. -->
+            <h3>1. Centralização não significa poder absoluto imediato</h3>
+
+            <p>
+                A formação das monarquias foi gradual. Reis precisaram
+                negociar e disputar poder com nobres, Igreja, cidades e
+                outras instituições.
+            </p>
+
+            <!-- Ponto 2. -->
+            <h3>2. Não confundir monarquia medieval com absolutismo</h3>
+
+            <p>
+                O absolutismo será estudado posteriormente. A centralização
+                monárquica da Baixa Idade Média criou algumas condições para
+                desenvolvimentos posteriores, mas não deve ser tratada como
+                sinônimo de absolutismo.
+            </p>
+
+            <!-- Ponto 3. -->
+            <h3>3. A burguesia não substituiu a nobreza</h3>
+
+            <p>
+                Os grupos urbanos ganharam importância, mas a nobreza
+                continuou exercendo enorme influência política, militar,
+                social e econômica.
+            </p>
+
+            <!-- Ponto 4. -->
+            <h3>4. Portugal é fundamental para a sequência do curso</h3>
+
+            <p>
+                A formação e consolidação da monarquia portuguesa ajudam
+                a compreender o processo que posteriormente levará à
+                expansão marítima portuguesa.
+            </p>
+
+            <!-- Ponto 5. -->
+            <h3>5. França e Inglaterra devem ser comparadas</h3>
+
+            <p>
+                Os dois reinos passaram por centralização, mas desenvolveram
+                trajetórias institucionais diferentes.
+            </p>
+
+            <!-- Ponto 6. -->
+            <h3>6. União dinástica não significa Estado totalmente unificado</h3>
+
+            <p>
+                O caso de Castela e Aragão é importante para ensinar que
+                uma união de coroas pode preservar diferentes instituições,
+                leis e estruturas políticas.
+            </p>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- LOUSA                                                    -->
+        <!-- ===================================================== -->
+
+        <section class="card">
+
+            <!-- Título. -->
+            <h2>O que colocar na lousa</h2>
+
+            <!-- Esquema de lousa. -->
+            <div class="destaque">
+
+                <p>
+                    <strong>FORMAÇÃO DAS MONARQUIAS NACIONAIS</strong>
+                </p>
+
+                <p>
+                    Baixa Idade Média
+                </p>
+
+                <p>
+                    Crescimento urbano
+                    ↓
+                    Comércio
+                    ↓
+                    Burguesia
+                    ↓
+                    Interesse em estabilidade
+                </p>
+
+                <p>
+                    Guerras
+                    ↓
+                    Impostos
+                    ↓
+                    Exército
+                    ↓
+                    Burocracia
+                    ↓
+                    Centralização do poder real
+                </p>
+
+                <p>
+                    PORTUGAL • ESPANHA • FRANÇA • INGLATERRA
+                </p>
+
+            </div>
+
+            <!-- Frase-chave. -->
+            <h3>Frase-chave para o aluno</h3>
+
+            <p>
+                <strong>
+                    “A formação das monarquias nacionais foi um processo
+                    gradual de centralização política, fiscal, administrativa
+                    e militar.”
+                </strong>
+            </p>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- BNCC                                                     -->
+        <!-- ===================================================== -->
+
+        <section class="card">
+
+            <!-- Título. -->
+            <h2>BNCC — Articulações possíveis</h2>
+
+            <!-- Explicação. -->
+            <p>
+                O tema pode ser articulado com habilidades do Ensino
+                Fundamental relacionadas à transição para a Modernidade,
+                às transformações políticas europeias e às conexões entre
+                diferentes sociedades.
+            </p>
+
+            <!-- Lista. -->
+            <ul>
+
+                <li>
+                    <strong>EF07HI01</strong> — discussão do significado
+                    de “modernidade” e de suas diferentes formas de
+                    interpretação.
+                </li>
+
+                <li>
+                    <strong>EF07HI02</strong> — identificação de conexões
+                    e interações entre sociedades europeias, africanas,
+                    americanas e asiáticas no contexto das navegações.
+                </li>
+
+                <li>
+                    Articulação com habilidades relacionadas à formação de
+                    estruturas políticas e às transformações sociais e
+                    econômicas que marcam a passagem da Idade Média para
+                    a Idade Moderna.
+                </li>
+
+            </ul>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- ENEM E VESTIBULARES                                     -->
+        <!-- ===================================================== -->
+
+        <section class="card">
+
+            <!-- Título. -->
+            <h2>ENEM • Vestibular • Concursos</h2>
+
+            <!-- Explicação. -->
+            <p>
+                Em provas, a formação das monarquias costuma aparecer
+                associada às transformações da Baixa Idade Média, ao
+                crescimento comercial e urbano, às guerras e à formação
+                de estruturas políticas centralizadas.
+            </p>
+
+            <!-- Pontos importantes. -->
+            <ul>
+
+                <li>
+                    relação entre burguesia e monarquia;
+                </li>
+
+                <li>
+                    centralização política;
+                </li>
+
+                <li>
+                    fortalecimento da arrecadação;
+                </li>
+
+                <li>
+                    formação de burocracias;
+                </li>
+
+                <li>
+                    desenvolvimento de forças militares;
+                </li>
+
+                <li>
+                    Guerra dos Cem Anos;
+                </li>
+
+                <li>
+                    formação política de Portugal;
+                </li>
+
+                <li>
+                    união dinástica de Castela e Aragão;
+                </li>
+
+                <li>
+                    diferenças entre monarquia centralizada e absolutismo.
+                </li>
+
+            </ul>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- QUESTÕES                                                 -->
+        <!-- ===================================================== -->
+
+        <section class="card" id="questoes">
+
+            <!-- Título das questões. -->
+            <h2>Questões de revisão</h2>
+
+            <!-- Questão 1. -->
+            <div class="questao">
+
+                <!-- Título. -->
+                <h3>Questão 1</h3>
+
+                <!-- Enunciado. -->
+                <p>
+                    Durante a Baixa Idade Média, algumas monarquias europeias
+                    ampliaram sua capacidade de administrar territórios,
+                    arrecadar impostos e organizar forças militares. Esse
+                    processo esteve relacionado, entre outros fatores,
+                    ao crescimento urbano e comercial.
+                </p>
+
+                <p>
+                    A relação entre grupos urbanos e monarquias pode ser
+                    compreendida pela:
+                </p>
+
+                <!-- Alternativas. -->
+                <div class="alternativas">
+
+                    <p>
+                        <strong>A)</strong>
+                        rejeição completa das atividades comerciais pelos reis.
+                    </p>
+
+                    <p>
+                        <strong>B)</strong>
+                        formação de alianças e negociações em torno de
+                        interesses econômicos e políticos.
+                    </p>
+
+                    <p>
+                        <strong>C)</strong>
+                        substituição imediata da nobreza pela burguesia.
+                    </p>
+
+                    <p>
+                        <strong>D)</strong>
+                        eliminação das cidades e dos mercados.
+                    </p>
+
+                    <p>
+                        <strong>E)</strong>
+                        abolição das monarquias europeias.
+                    </p>
+
+                </div>
+
+                <!-- Botão. -->
+                <button class="btn-resposta" onclick="mostrarResposta('resposta1')">
+                    Mostrar gabarito
+                </button>
+
+                <!-- Gabarito oculto. -->
+                <div class="resposta" id="resposta1">
+
+                    <strong>Gabarito: B</strong>
+
+                    <p>
+                        Em diferentes contextos, grupos urbanos e monarquias
+                        estabeleceram alianças e negociações. Comerciantes
+                        buscavam estabilidade e segurança, enquanto reis
+                        necessitavam de recursos para administrar e fortalecer
+                        seus poderes.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Questão 2. -->
+            <div class="questao">
+
+                <!-- Título. -->
+                <h3>Questão 2</h3>
+
+                <!-- Enunciado. -->
+                <p>
+                    A formação das monarquias europeias entre a Baixa Idade
+                    Média e o início da Idade Moderna não deve ser interpretada
+                    como uma transformação instantânea. O processo envolveu
+                    disputas, negociações e criação de novas estruturas
+                    administrativas.
+                </p>
+
+                <p>
+                    Entre os elementos relacionados a esse processo encontra-se:
+                </p>
+
+                <!-- Alternativas. -->
+                <div class="alternativas">
+
+                    <p>
+                        <strong>A)</strong>
+                        redução completa da autoridade dos reis.
+                    </p>
+
+                    <p>
+                        <strong>B)</strong>
+                        desaparecimento imediato da nobreza.
+                    </p>
+
+                    <p>
+                        <strong>C)</strong>
+                        fortalecimento da administração, da arrecadação e
+                        da capacidade militar das monarquias.
+                    </p>
+
+                    <p>
+                        <strong>D)</strong>
+                        desaparecimento das instituições locais.
+                    </p>
+
+                    <p>
+                        <strong>E)</strong>
+                        fim das relações políticas entre diferentes grupos.
+                    </p>
+
+                </div>
+
+                <!-- Botão. -->
+                <button class="btn-resposta" onclick="mostrarResposta('resposta2')">
+                    Mostrar gabarito
+                </button>
+
+                <!-- Gabarito oculto. -->
+                <div class="resposta" id="resposta2">
+
+                    <strong>Gabarito: C</strong>
+
+                    <p>
+                        A centralização monárquica envolveu o fortalecimento
+                        progressivo da administração, da arrecadação,
+                        da justiça e das forças militares, embora esse
+                        processo tenha variado de acordo com cada reino.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- REVISÃO RÁPIDA                                           -->
+        <!-- ===================================================== -->
+
+        <section class="card">
+
+            <!-- Título. -->
+            <h2>Revisão em 60 segundos</h2>
+
+            <!-- Resumo. -->
+            <p>
+                <strong>Baixa Idade Média:</strong>
+                transformação das relações políticas europeias.
+            </p>
+
+            <p>
+                <strong>Cidades:</strong>
+                crescimento econômico e fortalecimento de grupos urbanos.
+            </p>
+
+            <p>
+                <strong>Reis:</strong>
+                ampliação da autoridade e da administração.
+            </p>
+
+            <p>
+                <strong>Impostos:</strong>
+                financiamento do poder monárquico.
+            </p>
+
+            <p>
+                <strong>Burocracia:</strong>
+                funcionários e instituições administrativas.
+            </p>
+
+            <p>
+                <strong>Exército:</strong>
+                maior capacidade de mobilização militar.
+            </p>
+
+            <p>
+                <strong>Portugal:</strong>
+                Dinastia de Avis e fortalecimento monárquico.
+            </p>
+
+            <p>
+                <strong>França:</strong>
+                centralização associada também aos efeitos da Guerra dos
+                Cem Anos.
+            </p>
+
+            <p>
+                <strong>Inglaterra:</strong>
+                monarquia e Parlamento desenvolveram relações específicas.
+            </p>
+
+            <p>
+                <strong>Castela e Aragão:</strong>
+                união dinástica sem unificação imediata de todas as
+                instituições.
+            </p>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- NAVEGAÇÃO                                               -->
+        <!-- ===================================================== -->
+
+        <div class="navegacao">
+
+            <!-- Link para a aula anterior. -->
+            <a class="btn-nav" href="../15-Renascimento-Comercial-Urbano/index.html">
+                ← Aula anterior: Renascimento Comercial e Urbano
+            </a>
+
+            <!-- Link para a próxima aula. -->
+            <a class="btn-nav" href="../17-Crise-do-Seculo-XIV/index.html">
+                Próxima aula: A Crise do Século XIV →
+            </a>
+
+        </div>
+
+    </main>
+
+    <!-- ========================================================= -->
+    <!-- BOTÃO VOLTAR AO TOPO                                       -->
+    <!-- ========================================================= -->
+
+    <a id="topo" href="#inicio" title="Voltar ao topo">
+        ↑
+    </a>
+
+    <!-- ========================================================= -->
+    <!-- RODAPÉ                                                     -->
+    <!-- ========================================================= -->
+
+    <footer>
+
+        <!-- Nome do curso. -->
+        <p>
+            <strong>Curso de História Geral</strong>
+        </p>
+
+        <!-- Nome do professor. -->
+        <p>
+            Professor Marcelo Oliveira
+        </p>
+
+        <!-- Público do curso. -->
+        <p>
+            Fund II • Ensino Médio • ENEM • Vestibular • Concursos
+        </p>
+
+        <!-- Identificação da aula. -->
+        <p>
+            Aula 1.16 — Formação das Monarquias Nacionais
+        </p>
+
+    </footer>
+
+    <!-- ========================================================= -->
+    <!-- JAVASCRIPT                                                  -->
+    <!-- ========================================================= -->
+
+    <script>
+
+        // Cria a função que controla a exibição dos gabaritos.
+        function mostrarResposta(id) {
+
+            // Procura na página o elemento que possui o ID recebido.
+            const resposta = document.getElementById(id);
+
+            // Verifica se a resposta está escondida.
+            if (resposta.style.display === "none" || resposta.style.display === "") {
+
+                // Mostra o gabarito.
+                resposta.style.display = "block";
+
+            } else {
+
+                // Esconde novamente o gabarito.
+                resposta.style.display = "none";
+
+            }
+
+        }
+
+    </script>
+<script>
+  const paginaAnterior = "15 - baixa -idade-média.html";
+  const paginaProxima = "17 - Crise do Século XIV.html";
+</script>
+<script src="navegacao.js"></script>
+</body>
+
+</html>

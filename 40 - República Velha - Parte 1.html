@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1.40 — República Velha — Parte 1 | Professor Marcelo Oliveira</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { font-family: Arial, Helvetica, sans-serif; background: #f4f7fb; color: #263238; line-height: 1.7; }
+        .container { width: 92%; max-width: 1200px; margin: auto; }
+        header { background: linear-gradient(135deg, #172554, #2563eb); color: white; padding: 50px 20px; text-align: center; box-shadow: 0 5px 20px rgba(0, 0, 0, 0.18); }
+        .eyebrow { font-size: 0.95rem; letter-spacing: 2px; text-transform: uppercase; opacity: 0.9; margin-bottom: 12px; }
+        header h1 { font-size: clamp(2rem, 5vw, 3.5rem); margin-bottom: 15px; }
+        header p { max-width: 850px; margin: auto; font-size: 1.1rem; }
+        .navegacao { display: flex; justify-content: space-between; gap: 15px; margin: 25px auto; flex-wrap: wrap; }
+        .btn { display: inline-block; padding: 13px 20px; border-radius: 10px; text-decoration: none; font-weight: bold; transition: 0.3s; }
+        .btn-voltar { background: #475569; color: white; }
+        .btn-proximo { background: #2563eb; color: white; }
+        .btn:hover { transform: translateY(-2px); opacity: 0.9; }
+        .apresentacao { background: white; margin: 30px auto; padding: 30px; border-radius: 18px; border-left: 7px solid #2563eb; box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08); }
+        .secao { margin: 35px auto; padding: 30px; border-radius: 18px; background: white; box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07); }
+        .comeco { border-top: 8px solid #2563eb; }
+        .desenvolvimento { border-top: 8px solid #16a34a; }
+        .legado { border-top: 8px solid #7c3aed; }
+        .consequencias { border-top: 8px solid #eab308; }
+        .enem { border-top: 8px solid #0891b2; }
+        .lousa { border-top: 8px solid #111827; }
+        .secao h2 { margin-bottom: 20px; color: #172554; font-size: 1.8rem; }
+        .secao h3 { margin-top: 25px; margin-bottom: 10px; color: #334155; }
+        strong { color: #172554; }
+        ul, ol { margin: 15px 0 15px 25px; }
+        li { margin-bottom: 8px; }
+        .timeline { border-left: 4px solid #2563eb; padding-left: 25px; margin-top: 25px; }
+        .evento { margin-bottom: 25px; position: relative; }
+        .evento::before { content: ""; position: absolute; left: -36px; top: 7px; width: 14px; height: 14px; background: #2563eb; border-radius: 50%; }
+        .ano { font-weight: bold; color: #2563eb; }
+        .tabela-container { overflow-x: auto; margin-top: 20px; }
+        table { width: 100%; border-collapse: collapse; min-width: 650px; }
+        th, td { padding: 14px; border: 1px solid #cbd5e1; text-align: left; }
+        th { background: #172554; color: white; }
+        tr:nth-child(even) { background: #f8fafc; }
+        .conceitos { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 15px; margin-top: 20px; }
+        .conceito { background: #eff6ff; border: 1px solid #bfdbfe; padding: 18px; border-radius: 12px; }
+        .questao { background: #f8fafc; padding: 25px; border-radius: 14px; margin-top: 20px; border-left: 5px solid #0891b2; }
+        .btn-gabarito { margin-top: 15px; background: #0891b2; color: white; border: none; padding: 12px 18px; border-radius: 8px; cursor: pointer; font-weight: bold; }
+        .gabarito { display: none; margin-top: 15px; padding: 15px; background: #ecfeff; border-radius: 10px; border: 1px solid #67e8f9; }
+        .resumo { background: #172554; color: white; padding: 30px; border-radius: 18px; margin: 35px auto; }
+        .resumo strong { color: white; }
+        footer { background: #0f172a; color: white; text-align: center; padding: 35px 20px; margin-top: 50px; }
+        .assinatura { font-size: 1.2rem; font-weight: bold; margin-top: 10px; }
+        #topo { position: fixed; bottom: 20px; right: 20px; width: 48px; height: 48px; border: none; border-radius: 50%; background: #2563eb; color: white; cursor: pointer; font-size: 20px; display: none; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25); }
+        @media (max-width: 700px) { .secao, .apresentacao { padding: 20px; } .navegacao { flex-direction: column; } .btn { text-align: center; } }
+    </style>
+</head>
+
+<body id="inicio">
+
+    <header>
+        <div class="eyebrow">Curso de História Geral</div>
+        <h1>1.40 — República Velha — Parte 1</h1>
+        <p>Da República da Espada à Política do Café com Leite: a organização da Primeira República (1889–1914).</p>
+    </header>
+
+    <main class="container">
+
+        <nav class="navegacao">
+            <a class="btn btn-voltar" href="39 - O Advento da República.html">← O Advento da República</a>
+            <a class="btn btn-proximo" href="41 - República Velha - Parte 2.html">República Velha — Parte 2 →</a>
+        </nav>
+
+        <section class="apresentacao">
+            <p>Por que estudar a República Velha — Parte 1? Porque ela ajuda a entender a consolidação da política brasileira como um jogo de poder entre oligarquias e como as instituições da Primeira República se formaram.</p>
+        </section>
+
+        <section class="secao comeco">
+            <h2>🔵 I — A REPÚBLICA DA ESPADA (1889–1894)</h2>
+
+            <h3>1. Os presidentes militares</h3>
+            <p>Os primeiros presidentes do Brasil foram militares: <strong>Deodoro da Fonseca</strong> (1889–1891) e <strong>Floriano Peixoto</strong> (1891–1894). Esse período ficou conhecido como República da Espada, pois os militares tinham grande influência sobre a política.</p>
+
+            <h3>2. A Constituição de 1891</h3>
+            <p>Em 1891, o Brasil adotou sua primeira Constituição republicana, que instituiu o sistema federalista e o presidencialismo. Entre as mudanças, destacava-se a separação entre Igreja e Estado e o voto aberto (já que o voto secreto só viria depois).</p>
+        </section>
+
+        <section class="secao desenvolvimento">
+            <h2>🟢 II — A REPÚBLICA OLIGÁRQUICA (1894–1914)</h2>
+
+            <h3>3. O controle das oligarquias</h3>
+            <p>A partir de 1894, o poder passou a ser exercido principalmente por <strong>oligarquias rurais</strong>, especialmente dos estados de São Paulo e Minas Gerais. Esse domínio ficou conhecido como a <strong>Política do Café com Leite</strong>, porque alternava presidentes dos dois estados.</p>
+
+            <h3>4. O coronelismo e a Comissão Verificadora</h3>
+            <p>O <strong>coronelismo</strong>, prática de controle político local pelos chamados "coronéis", garantia a eleição dos candidatos das oligarquias. Além disso, a Comissão Verificadora do Senado validava as eleições, afastando candidatos da oposição.</p>
+        </section>
+
+        <section class="secao comeco">
+            <h2>📅 LINHA DO TEMPO</h2>
+            <div class="timeline">
+                <div class="evento"><span class="ano">1889</span> — República é proclamada; Deodoro assume a presidência provisória.</div>
+                <div class="evento"><span class="ano">1891</span> — Constituição Republicana é promulgada; Deodoro renuncia.</div>
+                <div class="evento"><span class="ano">1891–1894</span> — Governa Floriano Peixoto.</div>
+                <div class="evento"><span class="ano">1893–1894</span> — Revolta da Armada e Revolução Federalista.</div>
+                <div class="evento"><span class="ano">1894</span> — Prudente de Moraes assume; início da República Oligárquica.</div>
+                <div class="evento"><span class="ano">1897</span> — Guerra de Canudos.</div>
+            </div>
+        </section>
+
+        <section class="secao consequencias">
+            <h2>🟡 Consequências</h2>
+            <ul>
+                <li>Transição do Império para o regime republicano federalista.</li>
+                <li>Início do controle oligárquico sobre a política brasileira.</li>
+                <li>Consolidação da Política do Café com Leite.</li>
+                <li>Crescimento de movimentos de contestação, como a Revolta de Canudos.</li>
+                <li>Formação de uma república de exclusão política.</li>
+            </ul>
+        </section>
+
+        <section class="secao legado">
+            <h2>🟣 III — O LEGADO E O MUNDO ATUAL</h2>
+            <p>A República Velha deixou marcas profundas: a estrutura política oligárquica, o coronelismo e a concentração de poder ainda são referências para estudos sobre clientelismo e força local no Brasil.</p>
+        </section>
+
+        <section class="secao">
+            <h2>📊 RESUMO: A REPÚBLICA VELHA — PARTE 1</h2>
+            <div class="tabela-container">
+                <table>
+                    <thead>
+                        <tr><th>Aspecto</th><th>Característica</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Período</td><td>1889–1914 (aprox.)</td></tr>
+                        <tr><td>Primeiros presidentes</td><td>Deodoro e Floriano (militares)</td></tr>
+                        <tr><td>Constituição</td><td>1891 — presidencialismo e federalismo</td></tr>
+                        <tr><td>Domínio político</td><td>Oligarquias: Política do Café com Leite</td></tr>
+                        <tr><td>Práticas políticas</td><td>Coronelismo e Comissão Verificadora</td></tr>
+                        <tr><td>Contestações</td><td>Revolta da Armada, Federalista e Canudos</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="secao lousa">
+            <h2>📋 BNCC — COMO TRABALHAR ESTE TEMA</h2>
+            <p>A BNCC recomenda trabalhar a Primeira República destacando a organização política do período e as formas de resistência.</p>
+            <ul>
+                <li><strong>Habilidade (EF08HI10):</strong> Identificar os projetos políticos na Proclamação da República e as tensões entre militares e civis.</li>
+                <li><strong>Habilidade (EF08HI11):</strong> Analisar a organização política da República Velha e o papel das oligarquias.</li>
+                <li><strong>Objetivo:</strong> Relacionar coronelismo, café com leite e exclusão política com as revoltas do período.</li>
+            </ul>
+            <h3>💡 Sugestão de aula</h3>
+            <ul>
+                <li>Mapa das oligarquias estaduais na República Velha.</li>
+                <li>Debate: "O que significa dizer que o Brasil era uma república oligárquica?"</li>
+                <li>Análise comparativa entre as Constituições de 1824 e 1891.</li>
+            </ul>
+        </section>
+
+        <section class="secao">
+            <h2>📚 CONCEITOS FUNDAMENTAIS</h2>
+            <div class="conceitos">
+                <div class="conceito"><strong>República da Espada</strong><br>Período em que os militares governaram o Brasil (1889–1894).</div>
+                <div class="conceito"><strong>Política do Café com Leite</strong><br>Alternância de presidentes entre São Paulo e Minas Gerais.</div>
+                <div class="conceito"><strong>Coronelismo</strong><br>Controle político local pelos chefes regionais ("coronéis").</div>
+                <div class="conceito"><strong>Comissão Verificadora</strong><br>Órgão do Senado que reconhecia ou reprovava as eleições.</div>
+                <div class="conceito"><strong>Oligarquia</strong><br>Grupo restrito que concentra poder político e econômico.</div>
+                <div class="conceito"><strong>Revolta de Canudos</strong><br>Conflito no sertão baiano em 1897 contra a comunidade de Antônio Conselheiro.</div>
+            </div>
+        </section>
+
+        <section class="secao enem">
+            <h2>🎯 ENEM, Vestibular e Concurso</h2>
+            <p>Teste seus conhecimentos:</p>
+
+            <div class="questao">
+                <h3>Questão 1</h3>
+                <p>Durante a Primeira República brasileira, o domínio político das oligarquias se consolidou por meio de práticas como:</p>
+                <ol type="A">
+                    <li>A política do café com leite e o coronelismo.</li>
+                    <li>O socialismo e a reforma agrária.</li>
+                    <li>A centralização federalista absoluta.</li>
+                    <li>O presidencialismo parlamentarista.</li>
+                    <li>A democrática direta dos conselhos populares.</li>
+                </ol>
+                <button class="btn-gabarito" onclick="mostrarGabarito('g1')">Mostrar gabarito</button>
+                <div class="gabarito" id="g1">
+                    <strong>Resposta: A.</strong> O café com leite e o coronelismo foram os mecanismos centrais de controle oligárquico na Primeira República.
+                </div>
+            </div>
+
+            <div class="questao">
+                <h3>Questão 2</h3>
+                <p>A Constituição de 1891 representou uma mudança significativa ao:</p>
+                <ol type="A">
+                    <li>Restabelecer a monarquia constitucional.</li>
+                    <li>Instituir o sistema federalista e separar Igreja e Estado.</li>
+                    <li>Conceder o direito de voto a todos os brasileiros.</li>
+                    <li>Manter o poder moderador do Imperador.</li>
+                    <li>Proibir a participação de civis na política.</li>
+                </ol>
+                <button class="btn-gabarito" onclick="mostrarGabarito('g2')">Mostrar gabarito</button>
+                <div class="gabarito" id="g2">
+                    <strong>Resposta: B.</strong> A Constituição de 1891 adotou o federalismo, o presidencialismo e a separação entre Igreja e Estado.
+                </div>
+            </div>
+        </section>
+
+        <section class="resumo">
+            <h2>🧠 RESUMO PARA O PROFESSOR</h2>
+            <p>
+                <strong>Tema:</strong> República Velha — Parte 1 (1889–1914).<br>
+                <strong>Presidentes militares:</strong> Deodoro e Floriano.<br>
+                <strong>Constituição:</strong> 1891 — República federativa.<br>
+                <strong>Controle político:</strong> Café com leite, coronelismo, Comissão Verificadora.<br>
+                <strong>Conflitos:</strong> Revolta da Armada, Revolução Federalista, Canudos.<br>
+                <strong>Habilidade BNCC:</strong> EF08HI10 e EF08HI11 — Primeira República e oligárquias.
+            </p>
+        </section>
+
+        <nav class="navegacao">
+            <a class="btn btn-voltar" href="39 - O Advento da República.html">← O Advento da República</a>
+            <a class="btn btn-proximo" href="41 - República Velha - Parte 2.html">República Velha — Parte 2 →</a>
+        </nav>
+
+    </main>
+
+    <footer>
+        <p>Curso de História Geral — Fund II • Ensino Médio • ENEM • Vestibular • Concurso</p>
+        <p class="assinatura">Professor Marcelo Oliveira</p>
+    </footer>
+
+    <button id="topo" onclick="voltarAoTopo()">↑</button>
+
+    <script>
+        function mostrarGabarito(id) {
+            const resposta = document.getElementById(id);
+            resposta.style.display = (resposta.style.display === "block") ? "none" : "block";
+        }
+        const botaoTopo = document.getElementById("topo");
+        window.addEventListener("scroll", function () { botaoTopo.style.display = window.scrollY > 400 ? "block" : "none"; });
+        function voltarAoTopo() { window.scrollTo({ top: 0, behavior: "smooth" }); }
+    </script>
+    <script>
+  const paginaAnterior = "39 - O Advento da República.html";
+  const paginaProxima = "41 - República Velha - Parte 2.html";
+</script>
+<script src="navegacao.js"></script>
+
+</body>
+
+</html>

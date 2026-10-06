@@ -1,0 +1,1625 @@
+<!DOCTYPE html>
+<!-- Define que este documento utiliza HTML5. -->
+
+<html lang="pt-BR">
+<!-- Define o idioma principal da página como português do Brasil. -->
+
+<head>
+    <!-- Início das configurações da página. -->
+
+    <meta charset="UTF-8">
+    <!-- Permite utilizar acentos e caracteres especiais corretamente. -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Faz a página se adaptar a celulares, tablets e computadores. -->
+
+    <title>1.6 — Roma | História Geral — Prof. Marcelo Oliveira</title>
+    <!-- Define o título que aparece na aba do navegador. -->
+
+    <style>
+        /* ==========================================================
+           CONFIGURAÇÕES GERAIS
+           ========================================================== */
+
+        * {
+            /* Seleciona todos os elementos da página. */
+            box-sizing: border-box;
+            /* Faz padding e borda serem considerados dentro do tamanho. */
+            margin: 0;
+            /* Remove margens padrão. */
+            padding: 0;
+            /* Remove espaçamentos padrão. */
+        }
+
+        html {
+            /* Configura o documento HTML. */
+            scroll-behavior: smooth;
+            /* Faz a rolagem entre seções ficar suave. */
+        }
+
+        body {
+            /* Configura o corpo da página. */
+            font-family: Arial, Helvetica, sans-serif;
+            /* Define uma fonte simples e profissional. */
+            background: #f4f6f8;
+            /* Define o fundo geral. */
+            color: #222;
+            /* Define a cor principal dos textos. */
+            line-height: 1.7;
+            /* Melhora a leitura dos parágrafos. */
+        }
+
+        /* ==========================================================
+           CABEÇALHO
+           ========================================================== */
+
+        header {
+            /* Configura o cabeçalho principal. */
+            background: linear-gradient(135deg, #20242b, #4b5563);
+            /* Cria um fundo em degradê escuro. */
+            color: white;
+            /* Define textos brancos. */
+            padding: 55px 20px;
+            /* Cria espaço interno. */
+            text-align: center;
+            /* Centraliza o conteúdo. */
+        }
+
+        header .numero {
+            /* Configura o número da aula. */
+            font-size: 18px;
+            /* Define o tamanho do número. */
+            font-weight: bold;
+            /* Deixa o número em negrito. */
+            letter-spacing: 2px;
+            /* Aumenta o espaçamento entre letras. */
+            color: #d6b36a;
+            /* Usa uma tonalidade dourada. */
+            margin-bottom: 12px;
+            /* Cria espaço abaixo. */
+        }
+
+        header h1 {
+            /* Configura o título principal. */
+            font-size: 42px;
+            /* Define tamanho grande. */
+            margin-bottom: 15px;
+            /* Cria espaço abaixo. */
+        }
+
+        header p {
+            /* Configura o subtítulo. */
+            max-width: 900px;
+            /* Limita a largura. */
+            margin: auto;
+            /* Centraliza o texto. */
+            font-size: 18px;
+            /* Define o tamanho do texto. */
+            opacity: 0.92;
+            /* Deixa o texto levemente transparente. */
+        }
+
+        /* ==========================================================
+           MENU
+           ========================================================== */
+
+        nav {
+            /* Configura o menu de navegação. */
+            background: white;
+            /* Define fundo branco. */
+            padding: 15px;
+            /* Cria espaço interno. */
+            display: flex;
+            /* Coloca os botões lado a lado. */
+            justify-content: center;
+            /* Centraliza os botões. */
+            gap: 10px;
+            /* Cria espaço entre os botões. */
+            flex-wrap: wrap;
+            /* Permite quebra em telas pequenas. */
+            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+            /* Adiciona uma sombra discreta. */
+            position: sticky;
+            /* Mantém o menu visível durante a rolagem. */
+            top: 0;
+            /* Cola o menu no topo. */
+            z-index: 1000;
+            /* Mantém o menu acima dos outros elementos. */
+        }
+
+        nav button {
+            /* Configura os botões do menu. */
+            border: none;
+            /* Remove a borda padrão. */
+            background: #20242b;
+            /* Define fundo escuro. */
+            color: white;
+            /* Define texto branco. */
+            padding: 12px 17px;
+            /* Cria espaço interno. */
+            border-radius: 8px;
+            /* Arredonda os cantos. */
+            cursor: pointer;
+            /* Mostra a mão ao passar o mouse. */
+            font-weight: bold;
+            /* Destaca o texto. */
+            transition: 0.3s;
+            /* Cria uma transição suave. */
+        }
+
+        nav button:hover {
+            /* Configura o efeito ao passar o mouse. */
+            background: #8b6b32;
+            /* Muda a cor do botão. */
+            transform: translateY(-2px);
+            /* Levanta levemente o botão. */
+        }
+
+        /* ==========================================================
+           CONTAINER
+           ========================================================== */
+
+        main {
+            /* Configura o conteúdo principal. */
+            max-width: 1150px;
+            /* Define largura máxima. */
+            margin: 40px auto;
+            /* Centraliza o conteúdo. */
+            padding: 0 20px;
+            /* Cria margem interna lateral. */
+        }
+
+        section {
+            /* Configura cada seção da aula. */
+            background: white;
+            /* Fundo branco. */
+            margin-bottom: 30px;
+            /* Espaço entre as seções. */
+            padding: 35px;
+            /* Espaço interno. */
+            border-radius: 15px;
+            /* Arredonda os cantos. */
+            box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+            /* Cria sombra profissional. */
+        }
+
+        section h2 {
+            /* Configura títulos de seção. */
+            color: #20242b;
+            /* Define cor escura. */
+            margin-bottom: 20px;
+            /* Cria espaço abaixo. */
+            border-left: 6px solid #b08a3e;
+            /* Cria uma faixa dourada lateral. */
+            padding-left: 15px;
+            /* Afasta o texto da faixa. */
+        }
+
+        section h3 {
+            /* Configura subtítulos. */
+            color: #4b5563;
+            /* Define uma cor intermediária. */
+            margin-top: 25px;
+            /* Cria espaço superior. */
+            margin-bottom: 10px;
+            /* Cria espaço inferior. */
+        }
+
+        p {
+            /* Configura todos os parágrafos. */
+            margin-bottom: 15px;
+            /* Cria espaço entre parágrafos. */
+            text-align: justify;
+            /* Justifica o texto. */
+        }
+
+        ul {
+            /* Configura listas. */
+            margin: 15px 0 20px 25px;
+            /* Cria espaçamento. */
+        }
+
+        li {
+            /* Configura itens da lista. */
+            margin-bottom: 8px;
+            /* Cria espaço entre itens. */
+        }
+
+        strong {
+            /* Configura textos destacados. */
+            color: #20242b;
+            /* Usa cor escura. */
+        }
+
+        /* ==========================================================
+           CARDS
+           ========================================================== */
+
+        .grid {
+            /* Cria uma grade de cards. */
+            display: grid;
+            /* Ativa o sistema de grade. */
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            /* Cria colunas responsivas. */
+            gap: 18px;
+            /* Cria espaço entre cards. */
+        }
+
+        .card {
+            /* Configura cada card. */
+            background: #f5f6f8;
+            /* Define fundo claro. */
+            padding: 22px;
+            /* Cria espaço interno. */
+            border-radius: 12px;
+            /* Arredonda os cantos. */
+            border-top: 4px solid #b08a3e;
+            /* Cria destaque superior. */
+        }
+
+        .card h3 {
+            /* Configura o título do card. */
+            margin-top: 0;
+            /* Remove margem superior. */
+            color: #20242b;
+            /* Define a cor. */
+        }
+
+        /* ==========================================================
+           LINHA DO TEMPO
+           ========================================================== */
+
+        .timeline {
+            /* Configura a linha do tempo. */
+            border-left: 4px solid #b08a3e;
+            /* Cria a linha lateral. */
+            padding-left: 25px;
+            /* Afasta os textos da linha. */
+        }
+
+        .timeline-item {
+            /* Configura cada item da linha do tempo. */
+            margin-bottom: 22px;
+            /* Cria espaço entre acontecimentos. */
+            position: relative;
+            /* Permite posicionar o marcador. */
+        }
+
+        .timeline-item::before {
+            /* Cria o marcador da linha do tempo. */
+            content: "";
+            /* Cria um elemento vazio. */
+            position: absolute;
+            /* Posiciona o marcador. */
+            left: -36px;
+            /* Coloca o marcador sobre a linha. */
+            top: 7px;
+            /* Ajusta a posição vertical. */
+            width: 14px;
+            /* Define largura. */
+            height: 14px;
+            /* Define altura. */
+            background: #b08a3e;
+            /* Define cor dourada. */
+            border-radius: 50%;
+            /* Transforma o marcador em círculo. */
+        }
+
+        .ano {
+            /* Configura o ano da linha do tempo. */
+            font-weight: bold;
+            /* Destaca o ano. */
+            color: #8b6b32;
+            /* Define cor dourada escura. */
+        }
+
+        /* ==========================================================
+           QUADRO
+           ========================================================== */
+
+        .lousa {
+            /* Configura o quadro de resumo. */
+            background: #1f2933;
+            /* Fundo escuro semelhante a uma lousa. */
+            color: white;
+            /* Texto branco. */
+            padding: 30px;
+            /* Espaço interno. */
+            border-radius: 12px;
+            /* Arredonda os cantos. */
+        }
+
+        .lousa h3 {
+            /* Configura o título do quadro. */
+            color: #e0bd70;
+            /* Define cor dourada. */
+        }
+
+        .lousa p {
+            /* Configura textos do quadro. */
+            color: #f2f2f2;
+            /* Define texto claro. */
+        }
+
+        /* ==========================================================
+           QUESTÕES
+           ========================================================== */
+
+        .questao {
+            /* Configura cada questão. */
+            background: #f8f9fa;
+            /* Define fundo claro. */
+            border-left: 5px solid #20242b;
+            /* Cria destaque lateral. */
+            padding: 25px;
+            /* Espaço interno. */
+            margin-bottom: 25px;
+            /* Espaço entre questões. */
+            border-radius: 8px;
+            /* Arredonda os cantos. */
+        }
+
+        .alternativas {
+            /* Configura as alternativas. */
+            margin-top: 15px;
+            /* Cria espaço acima. */
+        }
+
+        .gabarito {
+            /* Configura a área de resposta. */
+            display: none;
+            /* Mantém o gabarito escondido inicialmente. */
+            background: #e9f7ef;
+            /* Fundo verde muito claro. */
+            border-left: 5px solid #287a4b;
+            /* Cria destaque verde. */
+            padding: 15px;
+            /* Espaço interno. */
+            margin-top: 15px;
+            /* Cria espaço acima. */
+            border-radius: 8px;
+            /* Arredonda os cantos. */
+        }
+
+        .btn-gabarito {
+            /* Configura botão do gabarito. */
+            background: #287a4b;
+            /* Fundo verde. */
+            color: white;
+            /* Texto branco. */
+            border: none;
+            /* Remove borda. */
+            padding: 11px 16px;
+            /* Espaço interno. */
+            border-radius: 7px;
+            /* Arredonda os cantos. */
+            cursor: pointer;
+            /* Mostra cursor de clique. */
+            font-weight: bold;
+            /* Destaca o texto. */
+            margin-top: 15px;
+            /* Cria espaço acima. */
+        }
+
+        /* ==========================================================
+           BOTÕES FINAIS
+           ========================================================== */
+
+        .acoes {
+            /* Configura área dos botões finais. */
+            display: flex;
+            /* Coloca os botões lado a lado. */
+            justify-content: center;
+            /* Centraliza os botões. */
+            gap: 15px;
+            /* Cria espaço. */
+            flex-wrap: wrap;
+            /* Permite quebra em celulares. */
+        }
+
+        .acoes button {
+            /* Configura os botões finais. */
+            background: #20242b;
+            /* Fundo escuro. */
+            color: white;
+            /* Texto branco. */
+            border: none;
+            /* Remove borda. */
+            padding: 13px 22px;
+            /* Cria espaço interno. */
+            border-radius: 8px;
+            /* Arredonda os cantos. */
+            cursor: pointer;
+            /* Mostra cursor de clique. */
+            font-weight: bold;
+            /* Destaca o texto. */
+        }
+
+        .acoes button:hover {
+            /* Configura efeito ao passar o mouse. */
+            background: #8b6b32;
+            /* Muda a cor. */
+        }
+
+        /* ==========================================================
+           RODAPÉ
+           ========================================================== */
+
+        footer {
+            /* Configura o rodapé. */
+            background: #20242b;
+            /* Fundo escuro. */
+            color: white;
+            /* Texto branco. */
+            text-align: center;
+            /* Centraliza o texto. */
+            padding: 35px 20px;
+            /* Espaçamento interno. */
+            margin-top: 40px;
+            /* Cria espaço acima. */
+        }
+
+        footer p {
+            /* Configura os textos do rodapé. */
+            text-align: center;
+            /* Centraliza o texto. */
+            margin-bottom: 8px;
+            /* Cria pequeno espaço. */
+        }
+
+        /* ==========================================================
+           RESPONSIVIDADE
+           ========================================================== */
+
+        @media (max-width: 700px) {
+            /* Aplica as regras abaixo em telas pequenas. */
+
+            header h1 {
+                /* Reduz o título principal. */
+                font-size: 30px;
+                /* Define tamanho menor. */
+            }
+
+            header p {
+                /* Ajusta o subtítulo. */
+                font-size: 16px;
+                /* Reduz o tamanho. */
+            }
+
+            section {
+                /* Ajusta as seções. */
+                padding: 22px;
+                /* Reduz o espaço interno. */
+            }
+
+            section h2 {
+                /* Ajusta títulos. */
+                font-size: 22px;
+                /* Reduz o tamanho. */
+            }
+
+            nav button {
+                /* Ajusta botões do menu. */
+                width: 100%;
+                /* Ocupa toda a largura. */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Início do conteúdo visível da página. -->
+
+    <header id="topo">
+        <!-- Cabeçalho da aula. -->
+
+        <div class="numero">
+            1.6 — ROMA
+        </div>
+        <!-- Identificação do tema. -->
+
+        <h1>Roma Antiga</h1>
+        <!-- Título principal. -->
+
+        <p>
+            Formação, República, expansão territorial, Império,
+            sociedade, cidadania, escravidão, cultura e legado romano.
+        </p>
+        <!-- Subtítulo explicativo. -->
+    </header>
+
+    <nav>
+        <!-- Menu de navegação da aula. -->
+
+        <button onclick="irPara('comeco')">I — O Começo</button>
+        <!-- Botão para a primeira parte. -->
+
+        <button onclick="irPara('desenvolvimento')">II — O Desenvolvimento</button>
+        <!-- Botão para a segunda parte. -->
+
+        <button onclick="irPara('legado')">III — O Legado</button>
+        <!-- Botão para a terceira parte. -->
+
+        <button onclick="irPara('cronologia')">Cronologia</button>
+        <!-- Botão para a linha do tempo. -->
+
+        <button onclick="irPara('questoes')">Questões</button>
+        <!-- Botão para as questões. -->
+
+        <button onclick="voltarPagina()">← Voltar</button>
+        <!-- Botão para retornar à página anterior. -->
+    </nav>
+
+    <main>
+        <!-- Início do conteúdo principal. -->
+
+        <section id="comeco">
+            <!-- Primeira parte da trilogia. -->
+<img src="https://image.slidesharecdn.com/romaantiga-260116223145-01752f11/85/ROMA-ANTIGA-DA-FUNDACAO-AO-DECLINIO-TOTAL-DO-IMPERIO-pptx-2-320.jpg" width="600" alt="">
+<img src="https://tse1.mm.bing.net/th/id/OIP.o4IhIxvKfti5Ex9ENbeUkwHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" width="600" alt="">
+            <h2>I — O COMEÇO: A FORMAÇÃO DE ROMA</h2>
+            <!-- Título da primeira parte. -->
+
+            <h3>1. A geografia como elemento histórico</h3>
+            <!-- Subtítulo. -->
+
+            <p>
+                Roma desenvolveu-se na Península Itálica, região localizada no centro
+                do Mediterrâneo. A cidade surgiu em uma área próxima ao rio Tibre,
+                posição que favorecia a circulação, a agricultura, a comunicação com
+                outras comunidades e, posteriormente, a expansão territorial.
+            </p>
+
+            <p>
+                A posição geográfica da Península Itálica ajudou Roma a estabelecer
+                contatos com diferentes povos do Mediterrâneo. Entre esses povos
+                estavam latinos, sabinos, etruscos, gregos e diversos outros grupos
+                que participaram, de maneiras diferentes, da formação histórica
+                da região.
+            </p>
+
+            <h3>2. As origens de Roma</h3>
+            <!-- Subtítulo. -->
+
+            <p>
+                A tradição romana associava a fundação da cidade ao ano de
+                <strong>753 a.C.</strong> e ao mito de Rômulo e Remo. Para o estudo
+                histórico, porém, é importante distinguir a tradição mítica das
+                evidências arqueológicas. Roma foi resultado de um processo gradual
+                de formação e concentração de comunidades na região do Lácio.
+            </p>
+
+            <p>
+                A narrativa de Rômulo e Remo possui grande importância para a cultura
+                romana porque funcionava como um mito de origem e ajudava a construir
+                uma memória coletiva sobre a cidade.
+            </p>
+
+            <h3>3. A Monarquia Romana</h3>
+            <!-- Subtítulo. -->
+
+            <p>
+                A tradição histórica divide a primeira fase política de Roma em um
+                período monárquico, tradicionalmente situado entre 753 a.C. e
+                509 a.C. A monarquia não deve ser entendida como uma simples
+                reprodução das monarquias modernas. O poder estava relacionado
+                às estruturas sociais e religiosas da comunidade.
+            </p>
+
+            <p>
+                Durante esse período, os romanos ampliaram suas relações com povos
+                vizinhos. A presença etrusca exerceu influência importante sobre
+                aspectos políticos, religiosos, urbanos e culturais de Roma.
+            </p>
+
+            <h3>4. A sociedade romana</h3>
+            <!-- Subtítulo. -->
+
+            <div class="grid">
+                <!-- Início dos cards sociais. -->
+
+                <div class="card">
+                    <!-- Card dos patrícios. -->
+
+                    <h3>Patrícios</h3>
+                    <!-- Título do card. -->
+
+                    <p>
+                        Membros de famílias tradicionais que concentravam
+                        prestígio social, propriedades e influência política.
+                    </p>
+                    <!-- Explicação. -->
+                </div>
+
+                <div class="card">
+                    <!-- Card dos plebeus. -->
+
+                    <h3>Plebeus</h3>
+                    <!-- Título do card. -->
+
+                    <p>
+                        Grupo social amplo formado por pequenos proprietários,
+                        artesãos, comerciantes e trabalhadores que inicialmente
+                        possuíam participação política limitada.
+                    </p>
+                    <!-- Explicação. -->
+                </div>
+
+                <div class="card">
+                    <!-- Card dos clientes. -->
+
+                    <h3>Clientes</h3>
+                    <!-- Título do card. -->
+
+                    <p>
+                        Pessoas vinculadas a famílias poderosas por relações
+                        de proteção e dependência.
+                    </p>
+                    <!-- Explicação. -->
+                </div>
+
+                <div class="card">
+                    <!-- Card dos escravizados. -->
+
+                    <h3>Escravizados</h3>
+                    <!-- Título do card. -->
+
+                    <p>
+                        Pessoas submetidas a diferentes formas de escravidão,
+                        cuja presença aumentou significativamente durante a
+                        expansão romana.
+                    </p>
+                    <!-- Explicação. -->
+                </div>
+            </div>
+        </section>
+
+        <section id="desenvolvimento">
+            <!-- Segunda parte da trilogia. -->
+
+            <h2>II — O DESENVOLVIMENTO: REPÚBLICA E EXPANSÃO</h2>
+            <!-- Título. -->
+
+            <h3>1. A República Romana</h3>
+            <!-- Subtítulo. -->
+
+            <p>
+                Tradicionalmente, o ano de <strong>509 a.C.</strong> marca o início
+                da República Romana. A monarquia foi substituída por instituições
+                republicanas, entre elas magistraturas, Senado e assembleias.
+            </p>
+
+            <p>
+                A República Romana não era uma democracia moderna. Existiam
+                mecanismos de participação política, mas o poder permaneceu
+                fortemente concentrado nas elites, especialmente nas famílias
+                aristocráticas.
+            </p>
+
+            <div class="grid">
+                <!-- Cards das instituições republicanas. -->
+
+                <div class="card">
+                    <h3>Senado</h3>
+                    <p>
+                        Instituição de grande influência política, especialmente
+                        ligada às elites romanas.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Cônsules</h3>
+                    <p>
+                        Magistrados que exerciam funções importantes de governo
+                        e comando militar.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Assembleias</h3>
+                    <p>
+                        Espaços institucionais de participação dos cidadãos
+                        em diferentes decisões políticas.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Tribunos da Plebe</h3>
+                    <p>
+                        Representantes associados à defesa dos interesses
+                        políticos dos plebeus.
+                    </p>
+                </div>
+            </div>
+
+            <h3>2. O conflito entre patrícios e plebeus</h3>
+            <!-- Subtítulo. -->
+
+            <p>
+                Durante a República, os plebeus pressionaram por maior participação
+                política e proteção jurídica. Esse processo ficou conhecido como
+                <strong>Conflito das Ordens</strong>.
+            </p>
+
+            <p>
+                Entre as conquistas plebeias esteve a elaboração da
+                <strong>Lei das Doze Tábuas</strong>, tradicionalmente datada do
+                século V a.C. A divulgação das normas jurídicas representou um
+                importante passo para tornar determinadas regras conhecidas
+                publicamente.
+            </p>
+
+            <p>
+                Ao longo de um processo gradual, os plebeus conquistaram novos
+                direitos políticos. Isso não eliminou as desigualdades sociais,
+                mas modificou as relações de poder dentro da República.
+            </p>
+
+            <h3>3. A expansão territorial</h3>
+            <!-- Subtítulo. -->
+
+            <p>
+                Roma iniciou sua expansão pela Península Itálica e posteriormente
+                passou a disputar o controle de áreas do Mediterrâneo.
+                As conquistas ocorreram por meio de guerras, alianças,
+                incorporação de comunidades e diferentes formas de negociação.
+            </p>
+
+            <h3>4. As Guerras Púnicas</h3>
+            <!-- Subtítulo. -->
+
+            <p>
+                Um dos principais conflitos da expansão romana foram as
+                <strong>Guerras Púnicas</strong>, travadas entre Roma e Cartago
+                entre os séculos III e II a.C.
+            </p>
+
+            <p>
+                A vitória romana transformou profundamente o equilíbrio de poder
+                no Mediterrâneo ocidental. Roma ampliou seus territórios e passou
+                a controlar importantes áreas comerciais e estratégicas.
+            </p>
+
+            <h3>5. Expansão, escravidão e desigualdade</h3>
+            <!-- Subtítulo. -->
+
+            <p>
+                As conquistas produziram riquezas, terras, tributos e prisioneiros
+                de guerra. A escravidão tornou-se um componente importante de
+                diversos setores da economia romana.
+            </p>
+
+            <p>
+                Ao mesmo tempo, a expansão contribuiu para mudanças na estrutura
+                social. Grandes propriedades rurais cresceram em várias regiões,
+                enquanto setores da população livre enfrentaram dificuldades
+                econômicas e sociais.
+            </p>
+
+            <h3>6. Os irmãos Graco</h3>
+            <!-- Subtítulo. -->
+
+            <p>
+                Tibério e Caio Graco participaram dos conflitos políticos do
+                século II a.C. e defenderam propostas relacionadas principalmente
+                à questão agrária e à distribuição de terras.
+            </p>
+
+            <p>
+                Os conflitos envolvendo os Graco revelam como as transformações
+                econômicas e sociais provocadas pela expansão romana também
+                produziram tensões políticas.
+            </p>
+
+            <h3>7. As guerras civis e Júlio César</h3>
+            <!-- Subtítulo. -->
+
+            <p>
+                Durante o final da República, conflitos entre diferentes grupos
+                políticos e militares enfraqueceram as instituições republicanas.
+                Generais passaram a exercer enorme influência política.
+            </p>
+
+            <p>
+                <strong>Júlio César</strong> destacou-se nesse contexto. Após
+                importantes vitórias militares, acumulou poderes extraordinários
+                e foi assassinado em 44 a.C. por um grupo de senadores.
+            </p>
+
+            <p>
+                Sua morte não restaurou a estabilidade republicana. Novas guerras
+                civis ocorreram e abriram caminho para uma reorganização política.
+            </p>
+
+            <h3>8. Augusto e o início do Império</h3>
+            <!-- Subtítulo. -->
+
+            <p>
+                Otaviano, posteriormente conhecido como <strong>Augusto</strong>,
+                tornou-se a principal autoridade romana após as guerras civis.
+                Em 27 a.C., iniciou-se tradicionalmente o período associado ao
+                Principado.
+            </p>
+
+            <p>
+                O novo sistema preservou instituições republicanas, mas concentrou
+                grande parte do poder político nas mãos do imperador.
+            </p>
+
+            <h3>9. A Pax Romana</h3>
+            <!-- Subtítulo. -->
+
+            <p>
+                A expressão <strong>Pax Romana</strong> é utilizada para caracterizar
+                um longo período de relativa estabilidade política interna em
+                várias regiões do Império Romano. Isso não significa ausência
+                total de guerras: conflitos ocorreram nas fronteiras e também
+                existiram crises internas.
+            </p>
+
+            <h3>10. O Império Romano e o Mediterrâneo</h3>
+            <!-- Subtítulo. -->
+
+            <p>
+                Durante o período imperial, o Mediterrâneo tornou-se um importante
+                espaço de circulação de pessoas, mercadorias, informações,
+                costumes e práticas culturais.
+            </p>
+
+            <p>
+                O Império não funcionava como uma sociedade completamente uniforme.
+                Diferentes povos mantiveram tradições locais enquanto interagiam
+                com instituições, leis, língua, religião e práticas romanas.
+            </p>
+
+            <h3>11. A crise do século III</h3>
+            <!-- Subtítulo. -->
+
+            <p>
+                Durante o século III d.C., o Império enfrentou uma série de
+                dificuldades políticas, militares e econômicas. Houve sucessão
+                rápida de imperadores, conflitos internos, problemas monetários
+                e pressão em diferentes fronteiras.
+            </p>
+
+            <h3>12. Diocleciano e Constantino</h3>
+            <!-- Subtítulo. -->
+
+            <p>
+                Diocleciano promoveu reformas administrativas para tentar fortalecer
+                o governo imperial. Mais tarde, Constantino promoveu novas mudanças
+                e estabeleceu Constantinopla como importante centro político do
+                Império.
+            </p>
+
+            <h3>13. Cristianismo e Império</h3>
+            <!-- Subtítulo. -->
+
+            <p>
+                O cristianismo surgiu na Palestina durante o período de domínio
+                romano e espalhou-se por diferentes regiões do Império.
+                Inicialmente enfrentou períodos de perseguição, mas posteriormente
+                conquistou crescente espaço político e social.
+            </p>
+
+            <p>
+                No século IV, especialmente durante o governo de Constantino,
+                ocorreram mudanças decisivas na relação entre cristianismo e poder
+                imperial. Posteriormente, o cristianismo tornou-se religião
+                favorecida pelo Estado romano.
+            </p>
+
+            <h3>14. A transformação do mundo romano</h3>
+            <!-- Subtítulo. -->
+
+            <p>
+                A partir do século IV, diferentes fatores contribuíram para uma
+                profunda transformação das estruturas políticas e sociais do
+                Império Romano do Ocidente.
+            </p>
+
+            <p>
+                Em <strong>476 d.C.</strong>, a deposição de Rômulo Augústulo é
+                tradicionalmente utilizada como marco para o fim do Império Romano
+                do Ocidente. Entretanto, a história não terminou nesse momento:
+                o Império Romano do Oriente continuou existindo por muitos séculos.
+            </p>
+        </section>
+
+        <section id="legado">
+            <!-- Terceira parte da trilogia. -->
+
+            <h2>III — O LEGADO E O MUNDO ATUAL</h2>
+            <!-- Título. -->
+
+            <h3>1. Direito romano</h3>
+            <!-- Subtítulo. -->
+
+            <p>
+                A tradição jurídica romana exerceu influência profunda sobre
+                sistemas jurídicos posteriores. Conceitos, categorias jurídicas
+                e formas de organização do direito romano foram estudados e
+                reinterpretados durante séculos.
+            </p>
+
+            <h3>2. Língua e cultura</h3>
+            <!-- Subtítulo. -->
+
+            <p>
+                O latim tornou-se uma das principais línguas de circulação
+                administrativa e cultural do mundo romano. As línguas românicas,
+                como português, espanhol, francês, italiano e romeno,
+                desenvolveram-se historicamente a partir do latim vulgar em
+                diferentes contextos.
+            </p>
+
+            <h3>3. Roma e o Brasil</h3>
+            <!-- Subtítulo. -->
+
+            <p>
+                A presença romana na história brasileira não foi direta, pois
+                Roma existiu muitos séculos antes da formação do Brasil.
+                Entretanto, existem conexões históricas mediadas pela Europa.
+            </p>
+
+            <ul>
+                <li>O português é uma língua de origem românica.</li>
+                <li>O direito brasileiro recebeu influências da tradição jurídica europeia, que inclui o direito romano.</li>
+                <li>Elementos da tradição cristã chegaram ao Brasil por processos históricos posteriores.</li>
+                <li>Instituições políticas ocidentais estudaram e reinterpretaram conceitos relacionados à República Romana.</li>
+            </ul>
+
+            <h3>4. Roma não desapareceu simplesmente</h3>
+            <!-- Subtítulo. -->
+
+            <p>
+                Para o professor, é importante evitar a ideia simplificada de que
+                “Roma acabou em 476”. O que ocorreu foi uma transformação profunda
+                das estruturas políticas do Ocidente romano.
+            </p>
+
+            <p>
+                Instituições, práticas culturais, religião, língua, direito,
+                arquitetura e formas de organização social continuaram influenciando
+                sociedades posteriores.
+            </p>
+
+            <h3>5. Conceitos fundamentais</h3>
+            <!-- Subtítulo. -->
+
+            <div class="grid">
+                <!-- Grade dos conceitos. -->
+
+                <div class="card">
+                    <h3>República</h3>
+                    <p>
+                        Forma de organização política romana baseada em
+                        magistraturas, Senado e assembleias.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Cidadania</h3>
+                    <p>
+                        Condição jurídica e política que definia direitos,
+                        deveres e formas de participação.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Império</h3>
+                    <p>
+                        Estrutura política de grande extensão territorial,
+                        envolvendo diferentes povos e regiões.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Patriciado</h3>
+                    <p>
+                        Grupo formado por famílias aristocráticas tradicionais.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Plebe</h3>
+                    <p>
+                        Conjunto amplo de cidadãos que inicialmente possuíam
+                        menor influência política que os patrícios.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Romanização</h3>
+                    <p>
+                        Processo complexo de interação entre práticas romanas
+                        e culturas locais nas diferentes regiões do Império.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="cronologia">
+            <!-- Seção da cronologia. -->
+
+            <h2>CRONOLOGIA ESSENCIAL</h2>
+            <!-- Título. -->
+
+            <div class="timeline">
+                <!-- Início da linha do tempo. -->
+
+                <div class="timeline-item">
+                    <div class="ano">753 a.C. — tradição</div>
+                    <p>
+                        Data tradicional da fundação de Roma.
+                    </p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="ano">Monarquia</div>
+                    <p>
+                        Período tradicionalmente situado entre 753 e 509 a.C.
+                    </p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="ano">509 a.C.</div>
+                    <p>
+                        Início tradicional da República Romana.
+                    </p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="ano">Século V a.C.</div>
+                    <p>
+                        Lei das Doze Tábuas e desenvolvimento dos conflitos
+                        entre patrícios e plebeus.
+                    </p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="ano">264–146 a.C.</div>
+                    <p>
+                        Guerras Púnicas entre Roma e Cartago.
+                    </p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="ano">Século II–I a.C.</div>
+                    <p>
+                        Intensificação das desigualdades e das crises políticas
+                        da República.
+                    </p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="ano">44 a.C.</div>
+                    <p>
+                        Assassinato de Júlio César.
+                    </p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="ano">27 a.C.</div>
+                    <p>
+                        Início tradicional do Principado de Augusto.
+                    </p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="ano">Séculos I–II d.C.</div>
+                    <p>
+                        Expansão e período de relativa estabilidade em várias
+                        regiões do Império.
+                    </p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="ano">Século III d.C.</div>
+                    <p>
+                        Crise política e militar do Império.
+                    </p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="ano">313 d.C.</div>
+                    <p>
+                        Constantino promove mudanças importantes na relação entre
+                        o Estado romano e o cristianismo.
+                    </p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="ano">395 d.C.</div>
+                    <p>
+                        Divisão administrativa do Império entre Oriente e Ocidente.
+                    </p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="ano">476 d.C.</div>
+                    <p>
+                        Deposição de Rômulo Augústulo, marco convencional do fim
+                        do Império Romano do Ocidente.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <!-- Seção de causas e consequências. -->
+
+            <h2>CAUSAS E CONSEQUÊNCIAS</h2>
+            <!-- Título. -->
+
+            <div class="grid">
+                <!-- Grade. -->
+
+                <div class="card">
+                    <h3>Expansão territorial</h3>
+                    <p>
+                        <strong>Causas:</strong> disputas territoriais, segurança,
+                        interesses políticos e econômicos.
+                    </p>
+                    <p>
+                        <strong>Consequências:</strong> aumento do território,
+                        riquezas, circulação e desigualdades.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Conflito das Ordens</h3>
+                    <p>
+                        <strong>Causas:</strong> desigualdade política e social
+                        entre patrícios e plebeus.
+                    </p>
+                    <p>
+                        <strong>Consequências:</strong> ampliação gradual dos
+                        direitos políticos plebeus.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Crise da República</h3>
+                    <p>
+                        <strong>Causas:</strong> desigualdades, guerras,
+                        concentração de poder militar e conflitos políticos.
+                    </p>
+                    <p>
+                        <strong>Consequências:</strong> guerras civis e formação
+                        do Principado.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Transformação do Império</h3>
+                    <p>
+                        <strong>Causas:</strong> crises políticas, militares,
+                        econômicas e mudanças sociais.
+                    </p>
+                    <p>
+                        <strong>Consequências:</strong> transformação das
+                        estruturas políticas do Ocidente romano.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <!-- Seção destinada ao professor. -->
+
+            <h2>O QUE O PROFESSOR PRECISA DOMINAR</h2>
+            <!-- Título. -->
+
+            <ul>
+                <li>A diferença entre mito de fundação e explicação histórica.</li>
+                <li>A formação gradual de Roma no contexto da Península Itálica.</li>
+                <li>As diferenças entre Monarquia, República e Império.</li>
+                <li>O Conflito das Ordens e as conquistas políticas dos plebeus.</li>
+                <li>A expansão romana pelo Mediterrâneo.</li>
+                <li>As Guerras Púnicas.</li>
+                <li>A relação entre expansão, escravidão e desigualdade.</li>
+                <li>A crise da República e as guerras civis.</li>
+                <li>Júlio César e Augusto.</li>
+                <li>O funcionamento do Império Romano.</li>
+                <li>O cristianismo dentro do mundo romano.</li>
+                <li>A crise do século III e as reformas imperiais.</li>
+                <li>O significado histórico de 476 d.C.</li>
+                <li>A continuidade da tradição romana após o fim do Império do Ocidente.</li>
+            </ul>
+        </section>
+
+        <section>
+            <!-- Seção para o quadro. -->
+
+            <h2>O QUE COLOCAR NA LOUSA</h2>
+            <!-- Título. -->
+
+            <div class="lousa">
+                <!-- Quadro visual. -->
+
+                <h3>ROMA — ESQUEMA CENTRAL</h3>
+                <!-- Título do quadro. -->
+
+                <p>
+                    <strong>MONARQUIA → REPÚBLICA → IMPÉRIO</strong>
+                </p>
+
+                <p>
+                    REPÚBLICA:
+                    PATRÍCIOS × PLEBEUS → CONFLITO DAS ORDENS → EXPANSÃO
+                </p>
+
+                <p>
+                    EXPANSÃO → GUERRAS → TERRAS → ESCRAVIDÃO → DESIGUALDADES
+                </p>
+
+                <p>
+                    CRISE DA REPÚBLICA → GUERRAS CIVIS → AUGUSTO
+                </p>
+
+                <p>
+                    IMPÉRIO → MEDITERRÂNEO → CIRCULAÇÃO → DIVERSIDADE CULTURAL
+                </p>
+
+                <p>
+                    CRISE DO SÉCULO III → REFORMAS → TRANSFORMAÇÃO DO OCIDENTE
+                </p>
+
+                <p>
+                    LEGADO → DIREITO + LATIM + CULTURA + RELIGIÃO + ARQUITETURA
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <!-- Seção BNCC. -->
+
+            <h2>BNCC — HABILIDADES RELACIONADAS</h2>
+            <!-- Título. -->
+
+            <p>
+                A BNCC estabelece habilidades específicas para o estudo de Roma
+                no 6º ano do Ensino Fundamental. A própria Base apresenta
+                <strong>EF06HI11</strong> para a formação de Roma e suas
+                configurações sociais e políticas nos períodos monárquico e
+                republicano. :contentReference[oaicite:1]{index=1}
+            </p>
+
+            <div class="grid">
+                <!-- Cards das habilidades. -->
+
+                <div class="card">
+                    <h3>EF06HI11</h3>
+                    <p>
+                        Caracterizar o processo de formação da Roma Antiga e suas
+                        configurações sociais e políticas nos períodos monárquico
+                        e republicano.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>EF06HI12</h3>
+                    <p>
+                        Associar o conceito de cidadania às dinâmicas de inclusão
+                        e exclusão na Grécia e em Roma.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>EF06HI13</h3>
+                    <p>
+                        Conceituar “império” no mundo antigo e analisar diferentes
+                        formas de equilíbrio e desequilíbrio entre as partes.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>EF06HI15</h3>
+                    <p>
+                        Analisar a circulação de pessoas, produtos e culturas
+                        no Mediterrâneo.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <!-- Seção de provas. -->
+
+            <h2>ENEM, VESTIBULAR E CONCURSOS</h2>
+            <!-- Título. -->
+
+            <p>
+                Em provas, Roma costuma aparecer associada a conceitos como
+                <strong>cidadania, República, Império, escravidão, expansão
+                territorial, conflitos sociais, direito, cristianismo e
+                circulação cultural</strong>.
+            </p>
+
+            <p>
+                Uma estratégia importante é evitar decorar apenas datas.
+                O estudante precisa compreender as relações entre expansão,
+                transformações sociais, conflitos políticos e mudanças
+                institucionais.
+            </p>
+
+            <div class="grid">
+                <div class="card">
+                    <h3>ENEM</h3>
+                    <p>
+                        Priorize interpretação de fontes, cidadania, cultura,
+                        relações de poder e permanências históricas.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Vestibulares</h3>
+                    <p>
+                        Domine cronologia, instituições republicanas,
+                        expansão e crise política.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Concursos</h3>
+                    <p>
+                        Atenção aos conceitos, datas de referência,
+                        organização política e legado romano.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="questoes">
+            <!-- Seção das questões. -->
+
+            <h2>QUESTÕES — MODELO ENEM</h2>
+            <!-- Título. -->
+
+            <div class="questao">
+                <!-- Primeira questão. -->
+
+                <h3>Questão 1</h3>
+                <!-- Número. -->
+
+                <p>
+                    Durante a República Romana, diferentes grupos sociais
+                    participaram de conflitos relacionados ao acesso ao poder
+                    político. Os plebeus conquistaram progressivamente novos
+                    direitos, sem que isso significasse o desaparecimento das
+                    desigualdades sociais.
+                </p>
+
+                <p>
+                    Esse processo demonstra que a cidadania romana:
+                </p>
+
+                <div class="alternativas">
+                    <p><strong>A)</strong> era inicialmente universal e igualitária.</p>
+                    <p><strong>B)</strong> permaneceu exclusivamente religiosa.</p>
+                    <p><strong>C)</strong> esteve relacionada a disputas por direitos e participação política.</p>
+                    <p><strong>D)</strong> eliminou completamente as diferenças sociais.</p>
+                    <p><strong>E)</strong> impediu a expansão territorial romana.</p>
+                </div>
+
+                <button class="btn-gabarito" onclick="mostrarGabarito('gabarito1')">
+                    Mostrar gabarito
+                </button>
+
+                <div class="gabarito" id="gabarito1">
+                    <strong>Resposta: C.</strong>
+                    A cidadania romana foi resultado de processos históricos
+                    marcados por inclusão, exclusão e disputas políticas.
+                </div>
+            </div>
+
+            <div class="questao">
+                <!-- Segunda questão. -->
+
+                <h3>Questão 2</h3>
+                <!-- Número. -->
+
+                <p>
+                    A expansão romana pelo Mediterrâneo produziu transformações
+                    econômicas, sociais e culturais. Povos diferentes passaram
+                    a integrar uma mesma estrutura imperial, embora mantivessem
+                    diversas práticas locais.
+                </p>
+
+                <p>
+                    Uma característica importante desse processo foi:
+                </p>
+
+                <div class="alternativas">
+                    <p><strong>A)</strong> isolamento completo das regiões conquistadas.</p>
+                    <p><strong>B)</strong> desaparecimento imediato das culturas locais.</p>
+                    <p><strong>C)</strong> interrupção das trocas comerciais mediterrâneas.</p>
+                    <p><strong>D)</strong> aumento da circulação de pessoas, produtos e práticas culturais.</p>
+                    <p><strong>E)</strong> abandono das cidades como centros políticos.</p>
+                </div>
+
+                <button class="btn-gabarito" onclick="mostrarGabarito('gabarito2')">
+                    Mostrar gabarito
+                </button>
+
+                <div class="gabarito" id="gabarito2">
+                    <strong>Resposta: D.</strong>
+                    A integração imperial ampliou a circulação de pessoas,
+                    mercadorias, informações e práticas culturais pelo Mediterrâneo.
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <!-- Revisão rápida. -->
+
+            <h2>REVISÃO EM 60 SEGUNDOS</h2>
+            <!-- Título. -->
+
+            <div class="card">
+                <p>
+                    <strong>Roma começou</strong> na Península Itálica, em uma
+                    região próxima ao rio Tibre.
+                </p>
+
+                <p>
+                    <strong>Monarquia:</strong> período inicial tradicional.
+                </p>
+
+                <p>
+                    <strong>República:</strong> Senado, magistraturas,
+                    assembleias e conflitos entre grupos sociais.
+                </p>
+
+                <p>
+                    <strong>Expansão:</strong> Roma conquistou grande parte
+                    do Mediterrâneo.
+                </p>
+
+                <p>
+                    <strong>Crise:</strong> desigualdades, conflitos políticos
+                    e guerras civis.
+                </p>
+
+                <p>
+                    <strong>Império:</strong> concentração do poder imperial
+                    e integração de vastos territórios.
+                </p>
+
+                <p>
+                    <strong>Transformação:</strong> crises e mudanças
+                    administrativas e religiosas.
+                </p>
+
+                <p>
+                    <strong>Legado:</strong> direito, língua, cultura,
+                    arquitetura, religião e instituições.
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <!-- Seção final. -->
+
+            <h2>FECHAMENTO DA AULA</h2>
+            <!-- Título. -->
+
+            <p>
+                Estudar Roma significa compreender muito mais do que a sucessão
+                de reis, generais e imperadores. A história romana permite analisar
+                como uma comunidade local se transformou em uma grande potência
+                mediterrânea e como essa expansão produziu novas relações de
+                poder, cidadania, trabalho, escravidão, circulação cultural e
+                administração territorial.
+            </p>
+
+            <p>
+                Para o professor, o ponto central é apresentar Roma como um
+                processo histórico marcado por <strong>continuidades,
+                transformações, conflitos e adaptações</strong>.
+            </p>
+
+            <p>
+                O chamado “fim de Roma” também deve ser trabalhado como
+                transformação histórica, e não simplesmente como um acontecimento
+                instantâneo em 476.
+            </p>
+        </section>
+
+        <div class="acoes">
+            <!-- Área dos botões finais. -->
+
+            <button onclick="voltarPagina()">← Voltar</button>
+            <!-- Retorna para a página anterior. -->
+
+            <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+                ↑ Voltar ao topo
+            </button>
+            <!-- Volta suavemente para o topo. -->
+        </div>
+    </main>
+
+    <footer>
+        <!-- Rodapé da página. -->
+
+        <p>
+            <strong>Professor Marcelo Oliveira</strong>
+        </p>
+        <!-- Nome do professor. -->
+
+        <p>
+            História Geral — Fund II • Ensino Médio • ENEM • Vestibular • Concurso
+        </p>
+        <!-- Identificação do curso. -->
+
+        <p>
+            © Curso de História Geral — Material didático
+        </p>
+        <!-- Informação final. -->
+    </footer>
+
+    <script>
+        // ==========================================================
+        // NAVEGAÇÃO INTERNA
+        // ==========================================================
+
+        function irPara(id) {
+            // Cria uma função para levar o usuário até uma seção específica.
+
+            const elemento = document.getElementById(id);
+            // Procura na página o elemento que possui o ID informado.
+
+            if (elemento) {
+                // Verifica se o elemento realmente existe.
+
+                elemento.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start"
+                });
+                // Faz a página deslizar suavemente até a seção.
+            }
+        }
+
+        // ==========================================================
+        // MOSTRAR GABARITO
+        // ==========================================================
+
+        function mostrarGabarito(id) {
+            // Cria uma função para mostrar ou esconder o gabarito.
+
+            const elemento = document.getElementById(id);
+            // Procura o elemento pelo ID recebido.
+
+            if (elemento.style.display === "block") {
+                // Verifica se o gabarito já está aparecendo.
+
+                elemento.style.display = "none";
+                // Esconde o gabarito.
+            } else {
+                // Caso o gabarito esteja escondido.
+
+                elemento.style.display = "block";
+                // Mostra o gabarito.
+            }
+        }
+
+        // ==========================================================
+        // BOTÃO VOLTAR
+        // ==========================================================
+
+        function voltarPagina() {
+            // Cria a função responsável pelo botão voltar.
+
+            window.history.back();
+            // Retorna para a página anterior do navegador.
+        }
+    </script>
+    <script>
+  const paginaAnterior = "05 - grécia.html";
+  const paginaProxima = "07 - imperio-bizantino.html";
+</script>
+<script src="navegacao.js"></script>
+</body>
+
+</html>

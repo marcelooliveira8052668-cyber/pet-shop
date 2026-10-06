@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>1.32 — Brasil Joanino | Professor Marcelo Oliveira</title>
+
+<style>
+    /* Configurações gerais da página */
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: #f4f7fb;
+        color: #172033;
+        line-height: 1.7;
+    }
+
+    /* Cabeçalho principal */
+    header {
+        background: linear-gradient(135deg, #071b3a, #123f73);
+        color: white;
+        padding: 50px 20px;
+        text-align: center;
+    }
+
+    header .tag {
+        display: inline-block;
+        background: #f59e0b;
+        color: #172033;
+        padding: 7px 15px;
+        border-radius: 30px;
+        font-size: 0.85rem;
+        font-weight: bold;
+        margin-bottom: 18px;
+    }
+
+    header h1 {
+        font-size: clamp(2rem, 5vw, 3.4rem);
+        margin-bottom: 12px;
+    }
+
+    header p {
+        max-width: 850px;
+        margin: auto;
+        color: #dcecff;
+        font-size: 1.05rem;
+    }
+
+    /* Área principal */
+    main {
+        width: min(1150px, 92%);
+        margin: 35px auto;
+    }
+
+    /* Cartões */
+    .card {
+        background: white;
+        border-radius: 18px;
+        padding: 30px;
+        margin-bottom: 25px;
+        box-shadow: 0 8px 25px rgba(7, 27, 58, 0.08);
+        border: 1px solid #e3eaf3;
+    }
+
+    .card h2 {
+        color: #123f73;
+        margin-bottom: 18px;
+        font-size: 1.65rem;
+    }
+
+    .card h3 {
+        color: #1d4f8c;
+        margin: 24px 0 10px;
+    }
+
+    .card p {
+        margin-bottom: 14px;
+    }
+
+    .card ul,
+    .card ol {
+        margin: 10px 0 15px 25px;
+    }
+
+    .card li {
+        margin-bottom: 8px;
+    }
+
+    /* Trilogia */
+    .inicio {
+        border-top: 6px solid #2563eb;
+    }
+
+    .desenvolvimento {
+        border-top: 6px solid #16a34a;
+    }
+
+    .legado {
+        border-top: 6px solid #7c3aed;
+    }
+
+    .causas {
+        border-top: 6px solid #f59e0b;
+    }
+
+    .conceitos {
+        border-top: 6px solid #eab308;
+    }
+
+    .atencao {
+        border-top: 6px solid #dc2626;
+    }
+
+    .enem {
+        border-top: 6px solid #06b6d4;
+    }
+
+    /* Destaques */
+    .destaque {
+        background: #eef6ff;
+        border-left: 5px solid #2563eb;
+        padding: 18px;
+        border-radius: 10px;
+        margin: 20px 0;
+    }
+
+    .alerta {
+        background: #fff7ed;
+        border-left: 5px solid #f59e0b;
+        padding: 18px;
+        border-radius: 10px;
+        margin: 20px 0;
+    }
+
+    .importante {
+        background: #fef2f2;
+        border-left: 5px solid #dc2626;
+        padding: 18px;
+        border-radius: 10px;
+        margin: 20px 0;
+    }
+
+    /* Tabelas */
+    .tabela-container {
+        overflow-x: auto;
+        margin: 20px 0;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        min-width: 650px;
+    }
+
+    th,
+    td {
+        border: 1px solid #dbe3ed;
+        padding: 13px;
+        text-align: left;
+        vertical-align: top;
+    }
+
+    th {
+        background: #123f73;
+        color: white;
+    }
+
+    tr:nth-child(even) {
+        background: #f8fafc;
+    }
+
+    /* Linha do tempo */
+    .timeline {
+        border-left: 4px solid #2563eb;
+        margin: 25px 0;
+        padding-left: 25px;
+    }
+
+    .evento {
+        position: relative;
+        margin-bottom: 25px;
+    }
+
+    .evento::before {
+        content: "";
+        position: absolute;
+        width: 13px;
+        height: 13px;
+        border-radius: 50%;
+        background: #2563eb;
+        left: -33px;
+        top: 8px;
+    }
+
+    .evento strong {
+        color: #123f73;
+    }
+
+    /* Conceitos */
+    .conceito {
+        background: #fffdf0;
+        border: 1px solid #f1df91;
+        border-radius: 12px;
+        padding: 17px;
+        margin-bottom: 12px;
+    }
+
+    .conceito strong {
+        color: #8a6500;
+    }
+
+    /* Quadro para lousa */
+    .lousa {
+        background: #101827;
+        color: white;
+        border-radius: 15px;
+        padding: 25px;
+    }
+
+    .lousa h3 {
+        color: #7dd3fc;
+        margin-top: 0;
+    }
+
+    .lousa ul {
+        margin-left: 22px;
+    }
+
+    /* Questões */
+    .questao {
+        background: #f8fafc;
+        border: 1px solid #dbe3ed;
+        border-radius: 14px;
+        padding: 22px;
+        margin-bottom: 20px;
+    }
+
+    .questao h3 {
+        margin-top: 0;
+        color: #123f73;
+    }
+
+    .alternativas {
+        list-style: none;
+        margin: 15px 0 0 !important;
+        padding: 0;
+    }
+
+    .alternativas li {
+        padding: 10px 13px;
+        border-bottom: 1px solid #e5e7eb;
+    }
+
+    /* Botão de gabarito */
+    .botao {
+        border: none;
+        background: #123f73;
+        color: white;
+        padding: 11px 18px;
+        border-radius: 8px;
+        cursor: pointer;
+        font-weight: bold;
+        margin-top: 10px;
+        transition: 0.2s;
+    }
+
+    .botao:hover {
+        background: #2563eb;
+    }
+
+    .gabarito {
+        display: none;
+        background: #ecfdf5;
+        border-left: 5px solid #16a34a;
+        padding: 15px;
+        margin-top: 15px;
+        border-radius: 8px;
+    }
+
+    /* Navegação */
+    .navegacao {
+        display: flex;
+        justify-content: space-between;
+        gap: 15px;
+        flex-wrap: wrap;
+        margin: 35px 0;
+    }
+
+    .navegacao a {
+        text-decoration: none;
+        background: #123f73;
+        color: white;
+        padding: 13px 20px;
+        border-radius: 10px;
+        font-weight: bold;
+        transition: 0.2s;
+    }
+
+    .navegacao a:hover {
+        background: #2563eb;
+    }
+
+    .topo {
+        text-align: center;
+        margin: 25px 0;
+    }
+
+    .topo a {
+        color: #123f73;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    /* Rodapé */
+    footer {
+        background: #071b3a;
+        color: #dcecff;
+        text-align: center;
+        padding: 35px 20px;
+        margin-top: 40px;
+    }
+
+    footer strong {
+        color: white;
+    }
+
+    /* Responsividade */
+    @media (max-width: 700px) {
+        header {
+            padding: 38px 16px;
+        }
+
+        main {
+            width: 94%;
+        }
+
+        .card {
+            padding: 21px;
+            border-radius: 14px;
+        }
+
+        .card h2 {
+            font-size: 1.4rem;
+        }
+
+        table {
+            min-width: 600px;
+        }
+
+        .navegacao {
+            flex-direction: column;
+        }
+
+        .navegacao a {
+            text-align: center;
+        }
+    }
+</style>
+
+
+</head>
+
+<body id="topo">
+
+
+<!-- Cabeçalho -->
+<header>
+    <span class="tag">HISTÓRIA GERAL • CURSO 60 HORAS</span>
+
+    <h1>1.32 — Brasil Joanino</h1>
+
+    <p>
+        Da transferência da Corte portuguesa para o Brasil à formação
+        das condições políticas que conduziriam à Independência.
+    </p>
+
+    <p>
+        Professor Marcelo Oliveira • Fund II • Ensino Médio • ENEM • Vestibular • Concurso
+    </p>
+</header>
+
+<main>
+
+    <!-- Introdução -->
+    <section class="card">
+        <h2>Introdução</h2>
+
+        <p>
+            O chamado <strong>Período Joanino</strong> corresponde,
+            principalmente, aos anos em que a Corte portuguesa permaneceu
+            no Brasil, entre 1808 e 1821.
+        </p>
+
+        <p>
+            Esse período foi provocado pela crise política europeia
+            relacionada às Guerras Napoleônicas e produziu profundas
+            transformações econômicas, administrativas, culturais e
+            políticas na América portuguesa.
+        </p>
+
+        <div class="destaque">
+            <strong>Ideia central:</strong>
+            a presença da Corte portuguesa transformou o Rio de Janeiro
+            no centro político do Império português e alterou
+            significativamente a relação entre Brasil, Portugal e
+            outras potências europeias.
+        </div>
+
+        <p>
+            Para compreender o Brasil Joanino, é fundamental evitar uma
+            simplificação: a chegada da Corte não significou o fim
+            imediato da escravidão nem a igualdade social. Muitas
+            estruturas coloniais permaneceram, enquanto novas
+            instituições e relações econômicas foram criadas.
+        </p>
+    </section>
+
+    <!-- Parte I -->
+    <section class="card inicio">
+        <h2>I — O COMEÇO: A Corte portuguesa chega ao Brasil</h2>
+
+        <h3>1. A Europa sob Napoleão</h3>
+
+        <p>
+            No início do século XIX, Napoleão Bonaparte ampliava o
+            domínio francês sobre grande parte da Europa.
+        </p>
+
+        <p>
+            Em 1806, Napoleão estabeleceu o
+            <strong>Bloqueio Continental</strong>, procurando impedir
+            que países europeus mantivessem relações comerciais com
+            a Inglaterra.
+        </p>
+
+        <p>
+            Portugal possuía relações econômicas importantes com os
+            britânicos e enfrentava dificuldades para obedecer às
+            determinações francesas.
+        </p>
+
+        <h3>2. A transferência da Corte</h3>
+
+        <p>
+            Diante da invasão francesa de Portugal, a monarquia
+            portuguesa decidiu transferir a Corte para o Brasil,
+            acompanhada por milhares de pessoas e importantes órgãos
+            administrativos.
+        </p>
+
+        <div class="alerta">
+            <strong>Atenção para a cronologia:</strong>
+            a Corte saiu de Portugal no final de 1807. A chegada a
+            Salvador ocorreu em janeiro de 1808, e a Corte posteriormente
+            seguiu para o Rio de Janeiro, chegando em março de 1808.
+        </div>
+
+        <h3>3. A abertura dos portos</h3>
+
+        <p>
+            Em janeiro de 1808, D. João determinou a
+            <strong>abertura dos portos brasileiros às nações amigas</strong>.
+        </p>
+
+        <p>
+            A medida rompeu com uma das características fundamentais
+            do antigo sistema colonial: o controle metropolitano
+            sobre o comércio externo da colônia.
+        </p>
+
+        <div class="destaque">
+            <strong>O que mudou?</strong>
+            O comércio brasileiro passou a ter maior contato direto
+            com outras economias, especialmente com a Inglaterra.
+        </div>
+
+        <h3>4. Criação de instituições</h3>
+
+        <p>
+            Como o centro político do Império português passou a funcionar
+            no Brasil, foi necessário criar ou reorganizar instituições
+            administrativas, econômicas, culturais e judiciais.
+        </p>
+
+        <ul>
+            <li>Banco do Brasil;</li>
+            <li>Imprensa Régia;</li>
+            <li>instituições militares;</li>
+            <li>órgãos administrativos;</li>
+            <li>tribunais;</li>
+            <li>instituições culturais e científicas;</li>
+            <li>Biblioteca Real;</li>
+            <li>Jardim Botânico.</li>
+        </ul>
+    </section>
+
+    <!-- Parte II -->
+    <section class="card desenvolvimento">
+        <h2>II — O DESENVOLVIMENTO: O Brasil transforma-se em centro do Império</h2>
+
+        <h3>1. O Rio de Janeiro como centro político</h3>
+
+        <p>
+            A presença da Corte transformou profundamente o Rio de Janeiro.
+            A cidade passou a concentrar órgãos administrativos,
+            funcionários, comerciantes, militares e membros da elite.
+        </p>
+
+        <p>
+            A transformação urbana acompanhou a mudança política.
+            O Rio passou a exercer uma função que anteriormente pertencia
+            a Lisboa: ser o principal centro de decisões do Império
+            português.
+        </p>
+
+        <h3>2. A influência britânica</h3>
+
+        <p>
+            A Inglaterra teve papel fundamental na proteção da monarquia
+            portuguesa durante as Guerras Napoleônicas.
+        </p>
+
+        <p>
+            Em 1810, Portugal e Inglaterra assinaram tratados que
+            ampliaram as relações comerciais entre os dois países.
+        </p>
+
+        <div class="importante">
+            <strong>Para o aluno:</strong>
+            a abertura dos portos e os tratados comerciais fortaleceram
+            a presença econômica britânica no Brasil.
+        </div>
+
+        <h3>3. O Brasil como Reino Unido</h3>
+
+        <p>
+            Em 1815, o Brasil foi elevado à condição de
+            <strong>Reino do Brasil</strong> e passou a integrar o
+            <strong>Reino Unido de Portugal, Brasil e Algarves</strong>.
+        </p>
+
+        <p>
+            A mudança tinha importância política: o Brasil deixou de ser
+            formalmente apresentado apenas como uma colônia subordinada
+            dentro da estrutura do Império português.
+        </p>
+
+        <h3>4. A Revolução Pernambucana de 1817</h3>
+
+        <p>
+            As transformações promovidas pela Corte não beneficiaram
+            igualmente todas as regiões.
+        </p>
+
+        <p>
+            Em Pernambuco, insatisfações relacionadas à concentração
+            política no Rio de Janeiro, à tributação e às dificuldades
+            econômicas contribuíram para a
+            <strong>Revolução Pernambucana de 1817</strong>.
+        </p>
+
+        <p>
+            O movimento apresentou caráter republicano e foi reprimido
+            pelas autoridades portuguesas.
+        </p>
+
+        <h3>5. Política externa</h3>
+
+        <p>
+            O governo joanino também promoveu ações militares fora do
+            território diretamente controlado pelo Brasil.
+        </p>
+
+        <ul>
+            <li>ocupação de Caiena, na Guiana Francesa, em 1809;</li>
+            <li>intervenção militar na região do Rio da Prata;</li>
+            <li>ocupação da Banda Oriental a partir de 1816;</li>
+            <li>posterior formação da Província Cisplatina.</li>
+        </ul>
+
+        <h3>6. Cultura e ciência</h3>
+
+        <p>
+            A instalação da Corte favoreceu a criação e reorganização de
+            instituições culturais e científicas.
+        </p>
+
+        <p>
+            Em 1816, chegou ao Brasil a chamada
+            <strong>Missão Artística Francesa</strong>, associada à
+            organização do ensino artístico e à produção cultural
+            patrocinada pela monarquia.
+        </p>
+    </section>
+
+    <!-- Comparação -->
+    <section class="card">
+        <h2>Brasil antes e depois da chegada da Corte</h2>
+
+        <div class="tabela-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Antes de 1808</th>
+                        <th>Depois de 1808</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Brasil submetido ao sistema colonial português.</td>
+                        <td>Brasil passa a sediar o governo monárquico português.</td>
+                    </tr>
+
+                    <tr>
+                        <td>Comércio externo fortemente controlado pela metrópole.</td>
+                        <td>Abertura dos portos às nações amigas.</td>
+                    </tr>
+
+                    <tr>
+                        <td>Menor concentração de instituições administrativas.</td>
+                        <td>Criação e reorganização de instituições.</td>
+                    </tr>
+
+                    <tr>
+                        <td>Lisboa era o centro político do Império português.</td>
+                        <td>Rio de Janeiro torna-se centro político do Império.</td>
+                    </tr>
+
+                    <tr>
+                        <td>Brasil como colônia.</td>
+                        <td>Brasil elevado a Reino Unido em 1815.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Parte III -->
+    <section class="card legado">
+        <h2>III — O LEGADO E O MUNDO ATUAL</h2>
+
+        <h3>1. A preparação para a Independência</h3>
+
+        <p>
+            O Período Joanino não produziu automaticamente a Independência,
+            mas criou condições políticas e institucionais importantes
+            para o processo que aconteceria em 1822.
+        </p>
+
+        <p>
+            O Brasil passou a possuir uma estrutura administrativa mais
+            complexa, maior circulação comercial e uma elite política
+            acostumada à presença do poder central no território.
+        </p>
+
+        <h3>2. O retorno de D. João VI</h3>
+
+        <p>
+            Em 1820, ocorreu em Portugal a
+            <strong>Revolução Liberal do Porto</strong>.
+        </p>
+
+        <p>
+            Os revolucionários defendiam mudanças políticas e exigiam
+            o retorno do rei a Portugal.
+        </p>
+
+        <p>
+            D. João VI retornou para Portugal em 1821 e deixou seu filho,
+            <strong>D. Pedro</strong>, no Brasil.
+        </p>
+
+        <h3>3. O Dia do Fico</h3>
+
+        <p>
+            Em janeiro de 1822, D. Pedro declarou que permaneceria no
+            Brasil apesar das determinações das Cortes portuguesas.
+        </p>
+
+        <p>
+            Esse episódio ficou conhecido como
+            <strong>Dia do Fico</strong> e representa uma etapa importante
+            da crise política que antecedeu a Independência.
+        </p>
+
+        <div class="destaque">
+            <strong>Ligação com o próximo capítulo:</strong>
+            o Brasil Joanino criou parte das condições políticas,
+            econômicas e administrativas que ajudam a compreender
+            o Processo de Independência.
+        </div>
+
+        <h3>4. O que permaneceu?</h3>
+
+        <p>
+            As transformações do período não eliminaram as estruturas
+            sociais existentes.
+        </p>
+
+        <ul>
+            <li>a escravidão continuou;</li>
+            <li>a desigualdade social permaneceu;</li>
+            <li>as elites continuaram exercendo grande influência;</li>
+            <li>o poder político permaneceu concentrado;</li>
+            <li>o Brasil continuou dependente de relações econômicas externas.</li>
+        </ul>
+    </section>
+
+    <!-- Causas e consequências -->
+    <section class="card causas">
+        <h2>Causas e consequências</h2>
+
+        <div class="tabela-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Causas</th>
+                        <th>Consequências</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Guerras Napoleônicas.</td>
+                        <td>Transferência da Corte para o Brasil.</td>
+                    </tr>
+
+                    <tr>
+                        <td>Bloqueio Continental.</td>
+                        <td>Ruptura de antigas formas de controle comercial.</td>
+                    </tr>
+
+                    <tr>
+                        <td>Pressão francesa sobre Portugal.</td>
+                        <td>Reorganização administrativa no Brasil.</td>
+                    </tr>
+
+                    <tr>
+                        <td>Aliança portuguesa com a Inglaterra.</td>
+                        <td>Maior presença britânica na economia brasileira.</td>
+                    </tr>
+
+                    <tr>
+                        <td>Instalação da Corte.</td>
+                        <td>Rio de Janeiro transforma-se em centro político do Império.</td>
+                    </tr>
+
+                    <tr>
+                        <td>Crise política portuguesa.</td>
+                        <td>Conflito que contribui para o processo de Independência.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Conceitos -->
+    <section class="card conceitos">
+        <h2>Conceitos fundamentais</h2>
+
+        <div class="conceito">
+            <strong>Bloqueio Continental:</strong>
+            política de Napoleão destinada a impedir relações comerciais
+            entre países europeus e a Inglaterra.
+        </div>
+
+        <div class="conceito">
+            <strong>Abertura dos Portos:</strong>
+            medida de 1808 que permitiu o comércio do Brasil com as
+            chamadas nações amigas.
+        </div>
+
+        <div class="conceito">
+            <strong>Período Joanino:</strong>
+            período associado à presença da Corte portuguesa no Brasil,
+            principalmente entre 1808 e 1821.
+        </div>
+
+        <div class="conceito">
+            <strong>Reino Unido:</strong>
+            estrutura política criada em 1815 que reuniu Portugal,
+            Brasil e Algarves sob a mesma monarquia.
+        </div>
+
+        <div class="conceito">
+            <strong>Revolução Liberal do Porto:</strong>
+            movimento iniciado em Portugal em 1820 que pressionou pelo
+            retorno da Corte e por reformas políticas.
+        </div>
+
+        <div class="conceito">
+            <strong>Dia do Fico:</strong>
+            episódio de janeiro de 1822 em que D. Pedro decidiu
+            permanecer no Brasil.
+        </div>
+    </section>
+
+    <!-- Linha do tempo -->
+    <section class="card">
+        <h2>Linha do tempo — Brasil Joanino</h2>
+
+        <div class="timeline">
+
+            <div class="evento">
+                <strong>1807</strong>
+                <p>Transferência da Corte portuguesa para o Brasil.</p>
+            </div>
+
+            <div class="evento">
+                <strong>1808</strong>
+                <p>Chegada da Corte, abertura dos portos e criação de instituições.</p>
+            </div>
+
+            <div class="evento">
+                <strong>1809</strong>
+                <p>Ocupação portuguesa de Caiena, na Guiana Francesa.</p>
+            </div>
+
+            <div class="evento">
+                <strong>1810</strong>
+                <p>Tratados comerciais entre Portugal e Inglaterra.</p>
+            </div>
+
+            <div class="evento">
+                <strong>1815</strong>
+                <p>Criação do Reino Unido de Portugal, Brasil e Algarves.</p>
+            </div>
+
+            <div class="evento">
+                <strong>1816</strong>
+                <p>Chegada da Missão Artística Francesa e avanço das ações portuguesas na região platina.</p>
+            </div>
+
+            <div class="evento">
+                <strong>1817</strong>
+                <p>Revolução Pernambucana.</p>
+            </div>
+
+            <div class="evento">
+                <strong>1820</strong>
+                <p>Revolução Liberal do Porto.</p>
+            </div>
+
+            <div class="evento">
+                <strong>1821</strong>
+                <p>Retorno de D. João VI para Portugal.</p>
+            </div>
+
+            <div class="evento">
+                <strong>1822</strong>
+                <p>Dia do Fico e aprofundamento da crise que levaria à Independência.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- O que o professor precisa dominar -->
+    <section class="card">
+        <h2>O que o professor precisa dominar</h2>
+
+        <ul>
+            <li>Contextualizar as Guerras Napoleônicas.</li>
+            <li>Explicar o Bloqueio Continental.</li>
+            <li>Explicar por que a Corte portuguesa veio para o Brasil.</li>
+            <li>Relacionar a abertura dos portos com o fim de parte das restrições coloniais.</li>
+            <li>Explicar a influência britânica.</li>
+            <li>Compreender a transformação do Rio de Janeiro.</li>
+            <li>Explicar a criação do Reino Unido.</li>
+            <li>Relacionar a Revolução Pernambucana ao contexto político do período.</li>
+            <li>Explicar a Revolução Liberal do Porto.</li>
+            <li>Relacionar o retorno de D. João VI com o avanço da crise política.</li>
+            <li>Preparar a ligação entre o Brasil Joanino e a Independência.</li>
+        </ul>
+    </section>
+
+    <!-- O que colocar na lousa -->
+    <section class="card">
+        <h2>O que colocar na lousa</h2>
+
+        <div class="lousa">
+
+            <h3>BRASIL JOANINO — 1808–1821</h3>
+
+            <ul>
+                <li>Guerras Napoleônicas</li>
+                <li>Bloqueio Continental</li>
+                <li>Transferência da Corte</li>
+                <li>1808 — Abertura dos Portos</li>
+                <li>Instituições administrativas e culturais</li>
+                <li>1810 — Tratados com a Inglaterra</li>
+                <li>1815 — Reino Unido</li>
+                <li>1817 — Revolução Pernambucana</li>
+                <li>1820 — Revolução Liberal do Porto</li>
+                <li>1821 — Retorno de D. João VI</li>
+                <li>1822 — Dia do Fico</li>
+            </ul>
+
+            <h3>IDEIA-CHAVE</h3>
+
+            <p>
+                A presença da Corte transformou o Brasil e criou
+                condições importantes para a crise do sistema colonial
+                e o processo de Independência.
+            </p>
+
+        </div>
+    </section>
+
+    <!-- ENEM -->
+    <section class="card enem">
+        <h2>Foco ENEM, Vestibular e Concurso</h2>
+
+        <p>
+            Em questões de prova, o Brasil Joanino costuma aparecer
+            relacionado a temas como:
+        </p>
+
+        <ul>
+            <li>crise do sistema colonial;</li>
+            <li>Guerras Napoleônicas;</li>
+            <li>relações entre Brasil e Inglaterra;</li>
+            <li>abertura dos portos;</li>
+            <li>transformação do Rio de Janeiro;</li>
+            <li>Reino Unido;</li>
+            <li>Revolução Pernambucana;</li>
+            <li>Revolução Liberal do Porto;</li>
+            <li>processo de Independência.</li>
+        </ul>
+
+        <div class="destaque">
+            <strong>Dica de prova:</strong>
+            quando uma questão relacionar 1808, abertura dos portos,
+            presença da Corte e crescimento da influência inglesa,
+            pense nas transformações provocadas pela transferência
+            da monarquia portuguesa para o Brasil.
+        </div>
+    </section>
+
+    <!-- Questões -->
+    <section class="card">
+        <h2>Questões de revisão — estilo ENEM</h2>
+
+        <div class="questao">
+
+            <h3>Questão 1</h3>
+
+            <p>
+                A transferência da Corte portuguesa para o Brasil,
+                em 1808, provocou mudanças importantes na organização
+                econômica e política da América portuguesa.
+            </p>
+
+            <p>
+                Uma dessas transformações foi:
+            </p>
+
+            <ul class="alternativas">
+                <li><strong>A)</strong> o fechamento dos portos brasileiros ao comércio internacional.</li>
+                <li><strong>B)</strong> a abertura dos portos às nações amigas.</li>
+                <li><strong>C)</strong> o fim imediato da escravidão.</li>
+                <li><strong>D)</strong> a implantação da República.</li>
+                <li><strong>E)</strong> a transferência definitiva da capital para Salvador.</li>
+            </ul>
+
+            <button class="botao" onclick="mostrarGabarito('gabarito1')">
+                Mostrar gabarito
+            </button>
+
+            <div class="gabarito" id="gabarito1">
+                <strong>Resposta: B.</strong>
+                A abertura dos portos, decretada em 1808, modificou
+                significativamente as relações comerciais do Brasil.
+            </div>
+
+        </div>
+
+        <div class="questao">
+
+            <h3>Questão 2</h3>
+
+            <p>
+                A Revolução Liberal do Porto, iniciada em 1820,
+                contribuiu para aumentar as tensões entre os interesses
+                políticos portugueses e as transformações ocorridas
+                no Brasil desde 1808.
+            </p>
+
+            <p>
+                Entre suas consequências está:
+            </p>
+
+            <ul class="alternativas">
+                <li><strong>A)</strong> o retorno de D. João VI a Portugal.</li>
+                <li><strong>B)</strong> a proclamação imediata da República brasileira.</li>
+                <li><strong>C)</strong> o fim da monarquia portuguesa.</li>
+                <li><strong>D)</strong> a abolição imediata da escravidão.</li>
+                <li><strong>E)</strong> a transferência da Corte para a França.</li>
+            </ul>
+
+            <button class="botao" onclick="mostrarGabarito('gabarito2')">
+                Mostrar gabarito
+            </button>
+
+            <div class="gabarito" id="gabarito2">
+                <strong>Resposta: A.</strong>
+                A Revolução Liberal do Porto pressionou pelo retorno
+                de D. João VI, que voltou para Portugal em 1821.
+            </div>
+
+        </div>
+    </section>
+
+    <!-- BNCC -->
+    <section class="card">
+        <h2>BNCC — relação com o estudo histórico</h2>
+
+        <p>
+            Este capítulo pode ser trabalhado dentro das competências
+            relacionadas à análise das transformações políticas,
+            econômicas e sociais do mundo moderno e contemporâneo,
+            especialmente na relação entre Europa, América e formação
+            dos Estados nacionais.
+        </p>
+
+        <p>
+            O professor deve selecionar a habilidade específica da
+            BNCC conforme a etapa de ensino e o currículo adotado pela
+            escola ou rede de ensino.
+        </p>
+    </section>
+
+    <!-- Resumo -->
+    <section class="card">
+        <h2>Resumo para o aluno</h2>
+
+        <p>
+            O Brasil Joanino começou com a transferência da Corte
+            portuguesa para o Brasil em consequência das Guerras
+            Napoleônicas.
+        </p>
+
+        <p>
+            A abertura dos portos, a criação de instituições e a
+            transformação do Rio de Janeiro em centro político
+            alteraram profundamente a estrutura da América portuguesa.
+        </p>
+
+        <p>
+            Em 1815, o Brasil passou a integrar o Reino Unido de
+            Portugal, Brasil e Algarves. Entretanto, a escravidão,
+            a desigualdade e diversos elementos da estrutura colonial
+            permaneceram.
+        </p>
+
+        <p>
+            A Revolução Liberal do Porto, em 1820, levou ao retorno
+            de D. João VI para Portugal. A permanência de D. Pedro
+            no Brasil abriu uma nova etapa da crise política, que
+            conduziria ao processo de Independência.
+        </p>
+
+        <div class="destaque">
+            <strong>Para memorizar:</strong>
+            1808 → Corte + abertura dos portos<br>
+            1810 → Tratados com a Inglaterra<br>
+            1815 → Reino Unido<br>
+            1817 → Revolução Pernambucana<br>
+            1820 → Revolução Liberal do Porto<br>
+            1821 → retorno de D. João VI<br>
+            1822 → Dia do Fico e Independência
+        </div>
+    </section>
+
+    <!-- Navegação -->
+    <div class="navegacao">
+
+        <a href="../47-A-Crise-do-Sistema-Colonial/index.html">
+            ← Era Napoleônica
+        </a>
+
+        <a href="../49-Processo-de-Independencia/index.html">
+            1.32 — Processo de Independência →
+        </a>
+
+    </div>
+
+    <div class="topo">
+        <a href="#topo">↑ Voltar ao topo</a>
+    </div>
+
+</main>
+
+<!-- Rodapé -->
+<footer>
+
+    <p>
+        <strong>Professor Marcelo Oliveira</strong>
+    </p>
+
+    <p>
+        História Geral • Fund II • Ensino Médio • ENEM • Vestibular • Concurso
+    </p>
+
+    <p>
+        Material didático autoral para estudo e ensino de História.
+    </p>
+
+</footer>
+
+<script>
+    // Mostra ou esconde o gabarito da questão.
+    function mostrarGabarito(id) {
+
+        // Localiza o elemento pelo ID recebido.
+        const elemento = document.getElementById(id);
+
+        // Verifica se o gabarito está escondido.
+        if (elemento.style.display === "block") {
+
+            // Esconde o gabarito.
+            elemento.style.display = "none";
+
+        } else {
+
+            // Mostra o gabarito.
+            elemento.style.display = "block";
+        }
+    }
+</script>
+
+<script>
+  const paginaAnterior = "31 - Era-Napoleonica.html";
+  const paginaProxima = "33 - A Independência da América Espanhola.html";
+</script>
+<script src="navegacao.js"></script>
+</body>
+</html>

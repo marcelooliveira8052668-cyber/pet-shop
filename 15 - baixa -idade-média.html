@@ -1,0 +1,1833 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <!-- Define a codificação dos caracteres -->
+    <meta charset="UTF-8">
+
+    <!-- Faz a página se adaptar a celulares, tablets e computadores -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Define o título da página -->
+    <title>1.15 — Baixa Idade Média | História Geral</title>
+
+    <style>
+
+        /* ========================================================= */
+        /* CONFIGURAÇÕES GERAIS                                     */
+        /* ========================================================= */
+
+        /* Remove margens e espaçamentos padrões */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Ativa rolagem suave */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Configura o corpo da página */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f6f8;
+            color: #20242a;
+            line-height: 1.7;
+        }
+
+        /* ========================================================= */
+        /* CABEÇALHO                                                 */
+        /* ========================================================= */
+
+        /* Cria o cabeçalho principal */
+        header {
+            background: linear-gradient(135deg, #111827, #243b53);
+            color: white;
+            text-align: center;
+            padding: 55px 20px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.18);
+        }
+
+        /* Nome do curso */
+        .curso {
+            font-size: 14px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            opacity: 0.8;
+            margin-bottom: 12px;
+        }
+
+        /* Título principal */
+        header h1 {
+            font-size: 42px;
+            margin-bottom: 12px;
+        }
+
+        /* Subtítulo */
+        header p {
+            font-size: 18px;
+            max-width: 850px;
+            margin: auto;
+            opacity: 0.92;
+        }
+
+        /* ========================================================= */
+        /* MENU                                                       */
+        /* ========================================================= */
+
+        /* Barra do menu */
+        nav {
+            background: #ffffff;
+            border-bottom: 1px solid #ddd;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        /* Área interna do menu */
+        .menu {
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 8px;
+            padding: 12px;
+        }
+
+        /* Links do menu */
+        .menu a {
+            text-decoration: none;
+            color: #243b53;
+            font-weight: bold;
+            font-size: 14px;
+            padding: 9px 14px;
+            border-radius: 6px;
+            transition: 0.3s;
+        }
+
+        /* Efeito do mouse */
+        .menu a:hover {
+            background: #243b53;
+            color: white;
+        }
+
+        /* ========================================================= */
+        /* CONTEÚDO                                                   */
+        /* ========================================================= */
+
+        /* Limita a largura do conteúdo */
+        main {
+            max-width: 1150px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        /* Card padrão */
+        .card {
+            background: white;
+            border-radius: 14px;
+            padding: 30px;
+            margin-bottom: 28px;
+            box-shadow: 0 5px 18px rgba(0, 0, 0, 0.07);
+            border: 1px solid #e5e7eb;
+        }
+
+        /* Títulos das seções */
+        .card h2 {
+            color: #243b53;
+            font-size: 28px;
+            margin-bottom: 20px;
+            border-left: 5px solid #d4a017;
+            padding-left: 14px;
+        }
+
+        /* Subtítulos */
+        .card h3 {
+            color: #334e68;
+            margin-top: 24px;
+            margin-bottom: 10px;
+        }
+
+        /* Parágrafos */
+        .card p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        /* Listas */
+        .card ul,
+        .card ol {
+            margin-left: 25px;
+            margin-bottom: 18px;
+        }
+
+        /* Itens das listas */
+        .card li {
+            margin-bottom: 8px;
+        }
+
+        /* Caixa de destaque */
+        .destaque {
+            background: #f8f3df;
+            border-left: 5px solid #d4a017;
+            padding: 18px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        /* ========================================================= */
+        /* TABELAS                                                    */
+        /* ========================================================= */
+
+        /* Permite rolagem horizontal no celular */
+        .table-container {
+            overflow-x: auto;
+            margin: 20px 0;
+        }
+
+        /* Configura tabela */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 650px;
+        }
+
+        /* Configura células */
+        th,
+        td {
+            border: 1px solid #d8dee4;
+            padding: 13px;
+            text-align: left;
+        }
+
+        /* Cabeçalho da tabela */
+        th {
+            background: #243b53;
+            color: white;
+        }
+
+        /* Alterna a cor das linhas */
+        tr:nth-child(even) {
+            background: #f7f9fb;
+        }
+
+        /* ========================================================= */
+        /* LINHA DO TEMPO                                            */
+        /* ========================================================= */
+
+        /* Linha vertical */
+        .timeline {
+            border-left: 4px solid #d4a017;
+            margin: 25px 0;
+            padding-left: 25px;
+        }
+
+        /* Evento */
+        .evento {
+            margin-bottom: 25px;
+            position: relative;
+        }
+
+        /* Marcador */
+        .evento::before {
+            content: "";
+            position: absolute;
+            width: 13px;
+            height: 13px;
+            background: #d4a017;
+            border-radius: 50%;
+            left: -33px;
+            top: 7px;
+        }
+
+        /* Data */
+        .data {
+            font-weight: bold;
+            color: #243b53;
+        }
+
+        /* ========================================================= */
+        /* CONCEITOS                                                 */
+        /* ========================================================= */
+
+        /* Grade dos conceitos */
+        .conceitos {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 18px;
+        }
+
+        /* Caixa de cada conceito */
+        .conceito {
+            background: #f7f9fb;
+            padding: 18px;
+            border-radius: 10px;
+            border: 1px solid #e1e5e9;
+        }
+
+        /* Palavra principal */
+        .conceito strong {
+            color: #243b53;
+        }
+
+        /* ========================================================= */
+        /* QUESTÕES                                                   */
+        /* ========================================================= */
+
+        /* Caixa da questão */
+        .questao {
+            background: #f8fafc;
+            border: 1px solid #dce2e8;
+            padding: 22px;
+            margin: 20px 0;
+            border-radius: 10px;
+        }
+
+        /* Área das alternativas */
+        .alternativas {
+            margin-top: 15px;
+        }
+
+        /* Espaçamento das alternativas */
+        .alternativas p {
+            margin: 8px 0;
+        }
+
+        /* Botão */
+        button {
+            background: #243b53;
+            color: white;
+            border: none;
+            padding: 11px 18px;
+            border-radius: 7px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        /* Efeito do botão */
+        button:hover {
+            background: #d4a017;
+            color: #111827;
+        }
+
+        /* Gabarito inicialmente escondido */
+        .resposta {
+            display: none;
+            background: #eaf4ea;
+            border-left: 5px solid #3b7d3b;
+            padding: 15px;
+            margin-top: 15px;
+            border-radius: 6px;
+        }
+
+        /* ========================================================= */
+        /* ÁREA DO PROFESSOR                                         */
+        /* ========================================================= */
+
+        /* Caixa especial */
+        .professor {
+            background: linear-gradient(135deg, #eef3f8, #ffffff);
+            border: 1px solid #d6dee7;
+        }
+
+        /* ========================================================= */
+        /* NAVEGAÇÃO                                                  */
+        /* ========================================================= */
+
+        /* Área dos botões */
+        .navegacao {
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+            margin: 35px 0;
+            flex-wrap: wrap;
+        }
+
+        /* Botões de navegação */
+        .btn {
+            text-decoration: none;
+            background: #243b53;
+            color: white;
+            padding: 13px 20px;
+            border-radius: 7px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        /* Efeito */
+        .btn:hover {
+            background: #d4a017;
+            color: #111827;
+        }
+
+        /* ========================================================= */
+        /* RODAPÉ                                                     */
+        /* ========================================================= */
+
+        /* Rodapé */
+        footer {
+            background: #111827;
+            color: white;
+            text-align: center;
+            padding: 35px 20px;
+            margin-top: 50px;
+        }
+
+        /* Texto do rodapé */
+        footer p {
+            margin: 6px 0;
+            opacity: 0.85;
+        }
+
+        /* ========================================================= */
+        /* RESPONSIVIDADE                                             */
+        /* ========================================================= */
+
+        /* Tablet */
+        @media (max-width: 800px) {
+
+            /* Reduz título */
+            header h1 {
+                font-size: 32px;
+            }
+
+            /* Uma coluna para conceitos */
+            .conceitos {
+                grid-template-columns: 1fr;
+            }
+
+            /* Reduz padding */
+            .card {
+                padding: 22px;
+            }
+        }
+
+        /* Celular */
+        @media (max-width: 550px) {
+
+            /* Reduz título */
+            header h1 {
+                font-size: 27px;
+            }
+
+            /* Reduz subtítulo */
+            header p {
+                font-size: 16px;
+            }
+
+            /* Alinha menu */
+            .menu {
+                justify-content: flex-start;
+            }
+
+            /* Reduz títulos */
+            .card h2 {
+                font-size: 23px;
+            }
+
+            /* Remove justificação */
+            .card p {
+                text-align: left;
+            }
+
+            /* Botões ocupam toda a largura */
+            .btn {
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- ========================================================= -->
+    <!-- CABEÇALHO                                                 -->
+    <!-- ========================================================= -->
+
+    <header id="topo">
+
+        <!-- Nome do curso -->
+        <div class="curso">
+            Curso de História Geral
+        </div>
+
+        <!-- Título -->
+        <h1>1.15 — Baixa Idade Média</h1>
+
+        <!-- Público -->
+        <p>
+            Fund II • Ensino Médio • ENEM • Vestibular • Concursos
+        </p>
+
+    </header>
+
+    <!-- ========================================================= -->
+    <!-- MENU                                                       -->
+    <!-- ========================================================= -->
+
+    <nav>
+
+        <!-- Links internos -->
+        <div class="menu">
+
+            <!-- Link para começo -->
+            <a href="#comeco">O Começo</a>
+
+            <!-- Link para desenvolvimento -->
+            <a href="#desenvolvimento">Desenvolvimento</a>
+
+            <!-- Link para legado -->
+            <a href="#legado">Legado</a>
+
+            <!-- Link para cronologia -->
+            <a href="#cronologia">Cronologia</a>
+
+            <!-- Link para conceitos -->
+            <a href="#conceitos">Conceitos</a>
+
+            <!-- Link para questões -->
+            <a href="#questoes">Questões</a>
+
+        </div>
+
+    </nav>
+
+    <!-- ========================================================= -->
+    <!-- CONTEÚDO                                                   -->
+    <!-- ========================================================= -->
+
+    <main>
+
+        <!-- ===================================================== -->
+        <!-- INTRODUÇÃO                                             -->
+        <!-- ===================================================== -->
+
+        <section class="card">
+
+            <h2>Introdução</h2>
+
+            <p>
+                A chamada <strong>Baixa Idade Média</strong> corresponde,
+                convencionalmente, ao período final da Idade Média europeia,
+                especialmente entre os séculos XI e XV.
+            </p>
+
+            <p>
+                Esse período foi marcado por profundas transformações econômicas,
+                sociais, políticas e culturais. A Europa ocidental passou por
+                crescimento demográfico, expansão agrícola, revitalização do
+                comércio, crescimento das cidades e fortalecimento de grupos
+                ligados às atividades mercantis.
+            </p>
+
+            <p>
+                Ao mesmo tempo, a sociedade medieval enfrentou guerras, conflitos
+                políticos, epidemias, fome e crises econômicas, especialmente
+                durante o século XIV.
+            </p>
+
+            <div class="destaque">
+
+                <strong>Ideia central:</strong>
+
+                <p>
+                    A Baixa Idade Média não deve ser entendida apenas como uma
+                    época de “decadência”. Ela foi também um período de expansão,
+                    transformação e reorganização da sociedade europeia.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- I — O COMEÇO                                           -->
+        <!-- ===================================================== -->
+
+        <section class="card" id="comeco">
+
+            <h2>I — O COMEÇO</h2>
+
+            <h3>1. A Europa por volta do ano 1000</h3>
+
+            <p>
+                Por volta do século XI, diversas regiões da Europa Ocidental
+                começaram a apresentar crescimento populacional e aumento da
+                produção agrícola.
+            </p>
+
+            <p>
+                Esse processo esteve relacionado à ampliação das áreas cultivadas,
+                ao desenvolvimento de técnicas agrícolas e ao uso mais intenso
+                de instrumentos e formas de organização do trabalho.
+            </p>
+
+            <h3>2. Expansão agrícola</h3>
+
+            <p>
+                O crescimento da agricultura foi fundamental para sustentar o
+                aumento da população.
+            </p>
+
+            <p>
+                Entre os elementos associados a esse processo estão a expansão
+                das áreas de cultivo, o uso do arado pesado em determinadas
+                regiões, a rotação de culturas e a utilização mais ampla da
+                força animal.
+            </p>
+
+            <h3>3. Crescimento demográfico</h3>
+
+            <p>
+                O aumento da produção de alimentos contribuiu para o crescimento
+                populacional em várias partes da Europa.
+            </p>
+
+            <p>
+                Mais pessoas significavam também maior necessidade de alimentos,
+                ferramentas, roupas, moradias e outros produtos.
+            </p>
+
+            <p>
+                Esse processo ajudou a estimular mercados locais e regionais.
+            </p>
+
+            <h3>4. Transformações do sistema senhorial</h3>
+
+            <p>
+                A sociedade medieval estava organizada em relações de dependência
+                e exploração da terra.
+            </p>
+
+            <p>
+                Os camponeses trabalhavam em propriedades senhoriais e estavam
+                submetidos a diferentes obrigações.
+            </p>
+
+            <p>
+                Entretanto, essas relações não permaneceram estáticas.
+                Mudanças econômicas e comerciais alteraram gradualmente a
+                dinâmica das relações entre senhores, camponeses e habitantes
+                das cidades.
+            </p>
+
+            <h3>5. O renascimento comercial</h3>
+
+            <p>
+                A partir dos séculos XI e XII, o comércio europeu passou por
+                importante expansão.
+            </p>
+
+            <p>
+                Rotas terrestres e marítimas conectavam diferentes regiões.
+                Feiras e mercados tornaram-se espaços importantes de circulação
+                de mercadorias.
+            </p>
+
+            <h3>6. O crescimento urbano</h3>
+
+            <p>
+                O desenvolvimento das atividades comerciais contribuiu para o
+                crescimento de cidades e núcleos urbanos.
+            </p>
+
+            <p>
+                Surgiu uma camada social associada principalmente ao comércio e
+                às atividades artesanais: a <strong>burguesia</strong>.
+            </p>
+
+            <div class="destaque">
+
+                <strong>Importante:</strong>
+
+                <p>
+                    Burguesia medieval não significa exatamente a mesma coisa que
+                    burguesia industrial dos séculos XVIII e XIX. O conceito deve
+                    ser contextualizado historicamente.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- II — DESENVOLVIMENTO                                   -->
+        <!-- ===================================================== -->
+
+        <section class="card" id="desenvolvimento">
+
+            <h2>II — O DESENVOLVIMENTO</h2>
+
+            <h3>1. Revolução comercial</h3>
+
+            <p>
+                O crescimento das trocas comerciais estimulou a circulação de
+                moedas, mercadorias e pessoas.
+            </p>
+
+            <p>
+                Produtos como tecidos, metais, especiarias, sal e outros bens
+                circulavam por diferentes regiões.
+            </p>
+
+            <p>
+                As cidades italianas, como Veneza, Gênova e Pisa, desempenharam
+                importante papel nas rotas do Mediterrâneo.
+            </p>
+
+            <h3>2. Feiras medievais</h3>
+
+            <p>
+                As feiras eram grandes espaços de comércio que reuniam vendedores,
+                compradores e comerciantes de diferentes regiões.
+            </p>
+
+            <p>
+                As feiras de Champagne, na atual França, tornaram-se importantes
+                centros de circulação comercial durante a Idade Média.
+            </p>
+
+            <h3>3. Corporações de ofício</h3>
+
+            <p>
+                Nas cidades medievais, artesãos de uma mesma atividade podiam se
+                organizar em corporações de ofício.
+            </p>
+
+            <p>
+                Essas organizações estabeleciam regras sobre formação profissional,
+                produção, qualidade e relações entre mestres, oficiais e aprendizes.
+            </p>
+
+            <h3>4. As cidades</h3>
+
+            <p>
+                O crescimento urbano modificou as relações sociais.
+            </p>
+
+            <p>
+                Comerciantes e artesãos ganharam maior importância econômica,
+                enquanto as cidades passaram a funcionar como centros de
+                produção, comércio, administração e cultura.
+            </p>
+
+            <h3>5. As Cruzadas</h3>
+
+            <p>
+                Entre os séculos XI e XIII ocorreram as chamadas
+                <strong>Cruzadas</strong>, expedições militares de caráter
+                religioso e político organizadas principalmente por cristãos
+                da Europa Ocidental.
+            </p>
+
+            <p>
+                O movimento esteve relacionado à expansão da influência cristã,
+                à disputa por territórios e rotas e a diferentes interesses
+                políticos e econômicos.
+            </p>
+
+            <p>
+                As Cruzadas também intensificaram contatos entre sociedades
+                europeias, bizantinas e muçulmanas.
+            </p>
+
+            <h3>6. A Igreja medieval</h3>
+
+            <p>
+                A Igreja Católica possuía enorme influência social e cultural.
+            </p>
+
+            <p>
+                Mosteiros, escolas e universidades participaram da produção,
+                conservação e transmissão de conhecimentos.
+            </p>
+
+            <p>
+                Ao mesmo tempo, a Igreja também esteve envolvida em disputas
+                políticas e conflitos de poder.
+            </p>
+
+            <h3>7. O fortalecimento das monarquias</h3>
+
+            <p>
+                Durante a Baixa Idade Média, algumas monarquias europeias
+                começaram a fortalecer suas estruturas administrativas.
+            </p>
+
+            <p>
+                Esse processo não eliminou imediatamente o poder dos senhores
+                feudais, mas contribuiu para a formação gradual de estruturas
+                políticas mais centralizadas.
+            </p>
+
+            <h3>8. Formação dos Estados nacionais</h3>
+
+            <p>
+                A formação das monarquias nacionais foi um processo longo e
+                diferente em cada região.
+            </p>
+
+            <p>
+                Inglaterra, França, Portugal e Espanha apresentaram trajetórias
+                específicas de centralização política.
+            </p>
+
+            <h3>9. A Guerra dos Cem Anos</h3>
+
+            <p>
+                Entre 1337 e 1453, Inglaterra e França enfrentaram uma longa
+                sequência de conflitos conhecida como
+                <strong>Guerra dos Cem Anos</strong>.
+            </p>
+
+            <p>
+                O conflito esteve relacionado a disputas dinásticas e territoriais,
+                mas também envolveu questões políticas e econômicas.
+            </p>
+
+            <p>
+                O conflito contribuiu para transformações nas monarquias inglesa
+                e francesa.
+            </p>
+
+            <h3>10. A crise do século XIV</h3>
+
+            <p>
+                O século XIV foi marcado por uma série de dificuldades.
+            </p>
+
+            <p>
+                Entre elas estavam crises agrícolas, fome, guerras e epidemias.
+            </p>
+
+            <p>
+                A combinação desses fatores provocou forte impacto demográfico,
+                econômico e social.
+            </p>
+
+            <h3>11. A Peste Negra</h3>
+
+            <p>
+                A peste bubônica atingiu grande parte da Europa a partir de
+                1347–1348 e provocou enorme mortalidade.
+            </p>
+
+            <p>
+                A doença se espalhou por diferentes rotas de circulação de
+                pessoas e mercadorias.
+            </p>
+
+            <p>
+                Seus efeitos foram profundos: redução populacional, escassez
+                de mão de obra, mudanças nas relações de trabalho e tensões
+                sociais.
+            </p>
+
+            <h3>12. Revoltas camponesas e urbanas</h3>
+
+            <p>
+                As crises econômicas e sociais provocaram revoltas em diferentes
+                regiões.
+            </p>
+
+            <p>
+                Camponeses e trabalhadores urbanos contestaram impostos,
+                obrigações e condições de vida.
+            </p>
+
+            <p>
+                Entre os exemplos está a <strong>Jacquerie</strong>, revolta
+                camponesa ocorrida na França em 1358.
+            </p>
+
+            <h3>13. As universidades</h3>
+
+            <p>
+                A Baixa Idade Média também foi marcada pelo desenvolvimento das
+                universidades.
+            </p>
+
+            <p>
+                Instituições como Bolonha, Paris e Oxford tornaram-se importantes
+                centros de ensino.
+            </p>
+
+            <p>
+                A escolástica buscou articular conhecimento filosófico,
+                especialmente a tradição aristotélica, com questões religiosas.
+            </p>
+
+            <h3>14. O declínio do feudalismo?</h3>
+
+            <p>
+                É comum encontrar nos livros a expressão “declínio do feudalismo”.
+                Porém, o professor deve evitar apresentar esse processo como uma
+                queda súbita.
+            </p>
+
+            <p>
+                Houve transformação gradual das relações sociais, econômicas e
+                políticas, com ritmos diferentes em cada região.
+            </p>
+
+            <div class="destaque">
+
+                <strong>Para ensinar:</strong>
+
+                <p>
+                    A Baixa Idade Média deve ser apresentada como período de
+                    transformação das estruturas medievais, e não simplesmente
+                    como passagem automática do “feudalismo” para o “capitalismo”.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- III — LEGADO                                           -->
+        <!-- ===================================================== -->
+
+        <section class="card" id="legado">
+
+            <h2>III — O LEGADO E O MUNDO ATUAL</h2>
+
+            <h3>1. Crescimento das cidades</h3>
+
+            <p>
+                O crescimento urbano medieval contribuiu para a formação de uma
+                sociedade cada vez mais diversificada.
+            </p>
+
+            <p>
+                As cidades tornaram-se centros de comércio, artesanato, ensino
+                e administração.
+            </p>
+
+            <h3>2. Desenvolvimento comercial</h3>
+
+            <p>
+                A expansão das redes comerciais contribuiu para aumentar a
+                circulação de mercadorias e estimular diferentes formas de
+                crédito e financiamento.
+            </p>
+
+            <h3>3. Formação das monarquias</h3>
+
+            <p>
+                A centralização política desenvolvida ao longo da Baixa Idade
+                Média contribuiu para a formação das monarquias que posteriormente
+                participariam da expansão marítima europeia.
+            </p>
+
+            <h3>4. Relação com a expansão marítima</h3>
+
+            <p>
+                Séculos depois, Portugal e Espanha desenvolveriam projetos de
+                expansão marítima.
+            </p>
+
+            <p>
+                Portanto, compreender as transformações políticas, econômicas e
+                comerciais da Baixa Idade Média ajuda a compreender processos
+                posteriores da História Moderna.
+            </p>
+
+            <h3>5. Universidade e conhecimento</h3>
+
+            <p>
+                As universidades medievais contribuíram para a formação de uma
+                tradição institucional de ensino superior que permanece presente
+                no mundo contemporâneo.
+            </p>
+
+            <h3>6. Uma nova sociedade europeia</h3>
+
+            <p>
+                Ao final da Idade Média, a Europa apresentava sociedades urbanas
+                mais complexas, monarquias em processo de fortalecimento,
+                comércio ampliado e novas formas de produção intelectual.
+            </p>
+
+            <div class="destaque">
+
+                <strong>Legado histórico:</strong>
+
+                <p>
+                    A Baixa Idade Média foi fundamental para compreender a
+                    transição entre estruturas medievais e processos que
+                    caracterizariam a Europa moderna.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- CRONOLOGIA                                              -->
+        <!-- ===================================================== -->
+
+        <section class="card" id="cronologia">
+
+            <h2>Cronologia essencial</h2>
+
+            <div class="timeline">
+
+                <div class="evento">
+
+                    <div class="data">Século XI</div>
+
+                    Expansão agrícola e crescimento populacional em várias regiões da Europa.
+
+                </div>
+
+                <div class="evento">
+
+                    <div class="data">1095</div>
+
+                    Convocação da Primeira Cruzada pelo papa Urbano II.
+
+                </div>
+
+                <div class="evento">
+
+                    <div class="data">1096–1099</div>
+
+                    Primeira Cruzada.
+
+                </div>
+
+                <div class="evento">
+
+                    <div class="data">Séculos XI–XIII</div>
+
+                    Expansão comercial e crescimento urbano.
+
+                </div>
+
+                <div class="evento">
+
+                    <div class="data">Séculos XII–XIII</div>
+
+                    Crescimento das universidades europeias.
+
+                </div>
+
+                <div class="evento">
+
+                    <div class="data">1204</div>
+
+                    Constantinopla é conquistada durante a Quarta Cruzada.
+
+                </div>
+
+                <div class="evento">
+
+                    <div class="data">1337</div>
+
+                    Início tradicional da Guerra dos Cem Anos.
+
+                </div>
+
+                <div class="evento">
+
+                    <div class="data">1347–1348</div>
+
+                    A Peste Negra chega à Europa.
+
+                </div>
+
+                <div class="evento">
+
+                    <div class="data">1358</div>
+
+                    Revolta da Jacquerie na França.
+
+                </div>
+
+                <div class="evento">
+
+                    <div class="data">1381</div>
+
+                    Revolta dos Camponeses na Inglaterra.
+
+                </div>
+
+                <div class="evento">
+
+                    <div class="data">1453</div>
+
+                    Conquista de Constantinopla pelos otomanos.
+
+                </div>
+
+                <div class="evento">
+
+                    <div class="data">1453</div>
+
+                    Fim tradicional da Guerra dos Cem Anos.
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- CONCEITOS                                               -->
+        <!-- ===================================================== -->
+
+        <section class="card" id="conceitos">
+
+            <h2>Conceitos fundamentais</h2>
+
+            <div class="conceitos">
+
+                <div class="conceito">
+
+                    <strong>Baixa Idade Média:</strong>
+
+                    Período convencionalmente situado entre os séculos XI e XV.
+
+                </div>
+
+                <div class="conceito">
+
+                    <strong>Renascimento comercial:</strong>
+
+                    Expansão das atividades comerciais e das redes de troca na Europa medieval.
+
+                </div>
+
+                <div class="conceito">
+
+                    <strong>Renascimento urbano:</strong>
+
+                    Crescimento e revitalização das cidades medievais.
+
+                </div>
+
+                <div class="conceito">
+
+                    <strong>Burguesia:</strong>
+
+                    Grupo social urbano ligado principalmente ao comércio e ao artesanato.
+
+                </div>
+
+                <div class="conceito">
+
+                    <strong>Corporação de ofício:</strong>
+
+                    Associação de trabalhadores de determinada atividade artesanal.
+
+                </div>
+
+                <div class="conceito">
+
+                    <strong>Feira:</strong>
+
+                    Grande espaço periódico de comércio e circulação de mercadorias.
+
+                </div>
+
+                <div class="conceito">
+
+                    <strong>Cruzadas:</strong>
+
+                    Expedições militares de caráter religioso e político realizadas principalmente entre os séculos XI e XIII.
+
+                </div>
+
+                <div class="conceito">
+
+                    <strong>Peste Negra:</strong>
+
+                    Grande epidemia que atingiu a Europa a partir de 1347–1348.
+
+                </div>
+
+                <div class="conceito">
+
+                    <strong>Guerra dos Cem Anos:</strong>
+
+                    Longa série de conflitos entre Inglaterra e França entre 1337 e 1453.
+
+                </div>
+
+                <div class="conceito">
+
+                    <strong>Universidade medieval:</strong>
+
+                    Instituição de ensino superior que se desenvolveu em diferentes cidades europeias.
+
+                </div>
+
+                <div class="conceito">
+
+                    <strong>Escolástica:</strong>
+
+                    Tradição intelectual medieval associada à reflexão filosófica e teológica.
+
+                </div>
+
+                <div class="conceito">
+
+                    <strong>Centralização monárquica:</strong>
+
+                    Processo de fortalecimento gradual da autoridade das monarquias.
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- CAUSAS E CONSEQUÊNCIAS                                 -->
+        <!-- ===================================================== -->
+
+        <section class="card">
+
+            <h2>Causas e consequências</h2>
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Processo</th>
+
+                            <th>Causas / contexto</th>
+
+                            <th>Consequências</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+
+                            <td>Expansão agrícola</td>
+
+                            <td>Ampliação das áreas cultivadas e novas técnicas</td>
+
+                            <td>Crescimento da produção e da população</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Renascimento comercial</td>
+
+                            <td>Aumento da produção e circulação de mercadorias</td>
+
+                            <td>Expansão das redes comerciais</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Renascimento urbano</td>
+
+                            <td>Expansão do comércio e do artesanato</td>
+
+                            <td>Crescimento das cidades e fortalecimento dos grupos urbanos</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Cruzadas</td>
+
+                            <td>Interesses religiosos, políticos e territoriais</td>
+
+                            <td>Maior contato entre diferentes sociedades</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Peste Negra</td>
+
+                            <td>Circulação da doença pelas redes comerciais</td>
+
+                            <td>Grande mortalidade e transformações nas relações de trabalho</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Crise do século XIV</td>
+
+                            <td>Fomes, guerras, epidemias e dificuldades econômicas</td>
+
+                            <td>Instabilidade social e demográfica</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Centralização monárquica</td>
+
+                            <td>Fortalecimento das administrações reais</td>
+
+                            <td>Formação gradual de monarquias mais centralizadas</td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- PROFESSOR                                               -->
+        <!-- ===================================================== -->
+
+        <section class="card professor">
+
+            <h2>O que o professor precisa dominar</h2>
+
+            <ul>
+
+                <li>
+                    Explicar a diferença entre Alta e Baixa Idade Média.
+                </li>
+
+                <li>
+                    Relacionar expansão agrícola e crescimento demográfico.
+                </li>
+
+                <li>
+                    Explicar o renascimento comercial.
+                </li>
+
+                <li>
+                    Explicar o crescimento das cidades.
+                </li>
+
+                <li>
+                    Compreender a formação da burguesia medieval.
+                </li>
+
+                <li>
+                    Explicar as corporações de ofício.
+                </li>
+
+                <li>
+                    Relacionar as Cruzadas aos contatos entre diferentes sociedades.
+                </li>
+
+                <li>
+                    Compreender o fortalecimento das monarquias.
+                </li>
+
+                <li>
+                    Explicar a crise do século XIV.
+                </li>
+
+                <li>
+                    Compreender o impacto demográfico da Peste Negra.
+                </li>
+
+                <li>
+                    Explicar as transformações nas relações de trabalho.
+                </li>
+
+                <li>
+                    Relacionar a Baixa Idade Média à formação do mundo moderno.
+                </li>
+
+            </ul>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- LOUSA                                                    -->
+        <!-- ===================================================== -->
+
+        <section class="card">
+
+            <h2>O que colocar na lousa</h2>
+
+            <div class="destaque">
+
+                <p>
+                    <strong>BAIXA IDADE MÉDIA — SÉCULOS XI–XV</strong>
+                </p>
+
+                <p>
+                    Expansão agrícola
+                </p>
+
+                <p>
+                    ↓
+                </p>
+
+                <p>
+                    Crescimento populacional
+                </p>
+
+                <p>
+                    ↓
+                </p>
+
+                <p>
+                    Renascimento comercial
+                </p>
+
+                <p>
+                    ↓
+                </p>
+
+                <p>
+                    Crescimento urbano
+                </p>
+
+                <p>
+                    ↓
+                </p>
+
+                <p>
+                    Burguesia + comércio + artesanato
+                </p>
+
+                <p>
+                    ↓
+                </p>
+
+                <p>
+                    Fortalecimento das monarquias
+                </p>
+
+                <p>
+                    ↓
+                </p>
+
+                <p>
+                    Século XIV → crise + fome + guerras + Peste Negra
+                </p>
+
+                <p>
+                    ↓
+                </p>
+
+                <p>
+                    Transformações sociais e políticas
+                </p>
+
+                <p>
+                    ↓
+                </p>
+
+                <p>
+                    Formação do mundo moderno
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- BNCC                                                     -->
+        <!-- ===================================================== -->
+
+        <section class="card">
+
+            <h2>BNCC — possibilidades de trabalho</h2>
+
+            <p>
+                O tema pode ser articulado principalmente às habilidades do
+                6º ano que trabalham a sociedade medieval, as relações de
+                trabalho, a circulação de pessoas e produtos e a organização
+                social e religiosa do período.
+            </p>
+
+            <ul>
+
+                <li>
+
+                    <strong>EF06HI15:</strong>
+
+                    análise das dinâmicas de circulação de pessoas, produtos e
+                    culturas no Mediterrâneo.
+
+                </li>
+
+                <li>
+
+                    <strong>EF06HI16:</strong>
+
+                    análise das formas de trabalho e organização social na
+                    sociedade medieval.
+
+                </li>
+
+                <li>
+
+                    <strong>EF06HI17:</strong>
+
+                    discussão das relações entre escravidão, servidão e trabalho
+                    livre em diferentes sociedades.
+
+                </li>
+
+                <li>
+
+                    <strong>EF06HI18:</strong>
+
+                    análise do papel da religião cristã na cultura e na
+                    organização social medieval.
+
+                </li>
+
+            </ul>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- ENEM                                                    -->
+        <!-- ===================================================== -->
+
+        <section class="card">
+
+            <h2>ENEM • Vestibular • Concurso</h2>
+
+            <h3>Pontos que merecem atenção</h3>
+
+            <ul>
+
+                <li>
+                    Expansão agrícola.
+                </li>
+
+                <li>
+                    Crescimento populacional.
+                </li>
+
+                <li>
+                    Renascimento comercial.
+                </li>
+
+                <li>
+                    Renascimento urbano.
+                </li>
+
+                <li>
+                    Burguesia medieval.
+                </li>
+
+                <li>
+                    Corporações de ofício.
+                </li>
+
+                <li>
+                    Cruzadas.
+                </li>
+
+                <li>
+                    Formação das monarquias.
+                </li>
+
+                <li>
+                    Crise do século XIV.
+                </li>
+
+                <li>
+                    Peste Negra.
+                </li>
+
+                <li>
+                    Guerra dos Cem Anos.
+                </li>
+
+                <li>
+                    Transformações sociais do final da Idade Média.
+                </li>
+
+            </ul>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- QUESTÕES                                                -->
+        <!-- ===================================================== -->
+
+        <section class="card" id="questoes">
+
+            <h2>Questões de revisão</h2>
+
+            <!-- QUESTÃO 1 -->
+
+            <div class="questao">
+
+                <h3>Questão 1 — ENEM</h3>
+
+                <p>
+                    A partir do século XI, diferentes regiões da Europa Ocidental
+                    passaram por crescimento populacional, expansão agrícola,
+                    desenvolvimento comercial e crescimento urbano.
+                </p>
+
+                <p>
+                    Uma consequência desse processo foi
+                </p>
+
+                <div class="alternativas">
+
+                    <p>
+                        <strong>A)</strong>
+                        desaparecimento completo das atividades agrícolas.
+                    </p>
+
+                    <p>
+                        <strong>B)</strong>
+                        fortalecimento das cidades e ampliação das atividades comerciais.
+                    </p>
+
+                    <p>
+                        <strong>C)</strong>
+                        fim imediato das monarquias europeias.
+                    </p>
+
+                    <p>
+                        <strong>D)</strong>
+                        interrupção das relações comerciais mediterrâneas.
+                    </p>
+
+                    <p>
+                        <strong>E)</strong>
+                        desaparecimento das atividades artesanais.
+                    </p>
+
+                </div>
+
+                <button onclick="mostrarResposta('resposta1')">
+                    Mostrar gabarito
+                </button>
+
+                <div class="resposta" id="resposta1">
+
+                    <strong>Gabarito: B.</strong>
+
+                    <p>
+                        O crescimento da produção e da população favoreceu a
+                        expansão do comércio e o desenvolvimento de centros urbanos.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- QUESTÃO 2 -->
+
+            <div class="questao">
+
+                <h3>Questão 2 — Vestibular</h3>
+
+                <p>
+                    Durante o século XIV, a Europa enfrentou uma combinação de
+                    problemas econômicos, guerras, fome e epidemias.
+                </p>
+
+                <p>
+                    Entre os efeitos da crise esteve
+                </p>
+
+                <div class="alternativas">
+
+                    <p>
+                        <strong>A)</strong>
+                        aumento expressivo da população europeia.
+                    </p>
+
+                    <p>
+                        <strong>B)</strong>
+                        desaparecimento das cidades.
+                    </p>
+
+                    <p>
+                        <strong>C)</strong>
+                        redução populacional e transformações nas relações de trabalho.
+                    </p>
+
+                    <p>
+                        <strong>D)</strong>
+                        fim imediato do comércio internacional.
+                    </p>
+
+                    <p>
+                        <strong>E)</strong>
+                        desaparecimento das monarquias.
+                    </p>
+
+                </div>
+
+                <button onclick="mostrarResposta('resposta2')">
+                    Mostrar gabarito
+                </button>
+
+                <div class="resposta" id="resposta2">
+
+                    <strong>Gabarito: C.</strong>
+
+                    <p>
+                        A crise do século XIV, especialmente a Peste Negra,
+                        provocou enorme mortalidade e contribuiu para mudanças
+                        nas relações econômicas e de trabalho.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- REVISÃO RÁPIDA                                          -->
+        <!-- ===================================================== -->
+
+        <section class="card">
+
+            <h2>Revisão em 60 segundos</h2>
+
+            <p>
+                A Baixa Idade Média corresponde convencionalmente aos séculos XI
+                a XV e foi marcada por profundas transformações.
+            </p>
+
+            <p>
+                A expansão agrícola favoreceu o crescimento populacional.
+                O crescimento da produção estimulou o comércio e contribuiu
+                para o crescimento das cidades.
+            </p>
+
+            <p>
+                Comerciantes e artesãos ganharam importância, enquanto as
+                monarquias começaram gradualmente a fortalecer suas estruturas.
+            </p>
+
+            <p>
+                As Cruzadas intensificaram contatos entre diferentes sociedades.
+            </p>
+
+            <p>
+                No século XIV, a Europa enfrentou guerras, fome, dificuldades
+                econômicas e a Peste Negra.
+            </p>
+
+            <p>
+                Essas transformações contribuíram para a reorganização da
+                sociedade europeia e ajudam a compreender a passagem para a
+                Idade Moderna.
+            </p>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- NAVEGAÇÃO                                               -->
+        <!-- ===================================================== -->
+
+        <div class="navegacao">
+
+            <!-- Capítulo anterior -->
+            <a class="btn" href="../12-Imperio-Bizantino/index.html">
+                ← Voltar — Império Bizantino
+            </a>
+
+            <!-- Topo -->
+            <a class="btn" href="#topo">
+                ↑ Voltar ao topo
+            </a>
+
+            <!-- Próximo capítulo -->
+            <a class="btn" href="../14-Cruzadas/index.html">
+                Próximo — As Cruzadas →
+            </a>
+
+        </div>
+
+    </main>
+
+    <!-- ========================================================= -->
+    <!-- RODAPÉ                                                    -->
+    <!-- ========================================================= -->
+
+    <footer>
+
+        <!-- Nome do curso -->
+        <p>
+            <strong>Curso de História Geral</strong>
+        </p>
+
+        <!-- Professor -->
+        <p>
+            Professor Marcelo Oliveira
+        </p>
+
+        <!-- Público -->
+        <p>
+            Fund II • Ensino Médio • ENEM • Vestibular • Concursos
+        </p>
+
+        <!-- Identificação -->
+        <p>
+            Material didático de apoio ao ensino de História.
+        </p>
+
+    </footer>
+
+    <!-- ========================================================= -->
+    <!-- JAVASCRIPT                                                -->
+    <!-- ========================================================= -->
+
+    <script>
+
+        // Cria a função que controla a exibição do gabarito.
+        function mostrarResposta(id) {
+
+            // Busca o elemento pelo ID informado.
+            const resposta = document.getElementById(id);
+
+            // Verifica se a resposta está escondida.
+            if (resposta.style.display === "none" || resposta.style.display === "") {
+
+                // Exibe o gabarito.
+                resposta.style.display = "block";
+
+            } else {
+
+                // Esconde o gabarito.
+                resposta.style.display = "none";
+
+            }
+
+        }
+
+    </script>
+   <script>
+  const paginaAnterior = "14 - Renascimento-Comercial-Urbano.html";
+  const paginaProxima = "16 - Formacao-Monarquias-Nacionais.html";
+</script>
+<script src="navegacao.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,1576 @@
+<!DOCTYPE html>
+<!-- Define que este documento utiliza HTML5. -->
+
+<html lang="pt-BR">
+<!-- Inicia o documento e informa que o idioma principal é português do Brasil. -->
+
+<head>
+<!-- Inicia a área de configurações da página. -->
+
+<meta charset="UTF-8">
+<!-- Permite utilizar acentos e caracteres especiais corretamente. -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Faz a página se adaptar a celulares, tablets e computadores. -->
+
+<title>1.12 — A Questão das Investiduras | História Geral</title>
+<!-- Define o título que aparece na aba do navegador. -->
+
+<style>
+/* ============================== */
+/* CONFIGURAÇÕES GERAIS           */
+/* ============================== */
+
+* {
+    /* Faz o navegador considerar bordas e preenchimentos dentro do tamanho dos elementos. */
+    box-sizing: border-box;
+    /* Remove diferenças de cálculo de largura entre os elementos. */
+}
+
+html {
+    /* Configura o comportamento da rolagem da página. */
+    scroll-behavior: smooth;
+    /* Faz a rolagem acontecer suavemente. */
+}
+
+body {
+    /* Define a fonte principal da página. */
+    font-family: Arial, Helvetica, sans-serif;
+    /* Remove a margem padrão do navegador. */
+    margin: 0;
+    /* Define uma cor de fundo clara. */
+    background: #f4f6f8;
+    /* Define a cor principal dos textos. */
+    color: #1f2937;
+    /* Define a altura das linhas para facilitar a leitura. */
+    line-height: 1.7;
+}
+
+/* ============================== */
+/* CABEÇALHO                      */
+/* ============================== */
+
+header {
+    /* Cria um fundo escuro profissional. */
+    background: linear-gradient(135deg, #172554, #1e3a8a);
+    /* Define a cor dos textos do cabeçalho. */
+    color: white;
+    /* Cria espaço interno. */
+    padding: 60px 20px;
+    /* Centraliza o conteúdo. */
+    text-align: center;
+}
+
+header .marca {
+    /* Define o tamanho do nome do curso. */
+    font-size: 15px;
+    /* Coloca o texto em letras maiúsculas. */
+    text-transform: uppercase;
+    /* Aumenta o espaçamento entre letras. */
+    letter-spacing: 2px;
+    /* Diminui a opacidade para criar hierarquia visual. */
+    opacity: 0.85;
+    /* Cria espaço abaixo. */
+    margin-bottom: 12px;
+}
+
+header h1 {
+    /* Define o tamanho principal do título. */
+    font-size: clamp(30px, 5vw, 52px);
+    /* Remove margem superior. */
+    margin: 0;
+    /* Cria pequeno espaço abaixo. */
+    margin-bottom: 15px;
+}
+
+header p {
+    /* Limita a largura do subtítulo. */
+    max-width: 850px;
+    /* Centraliza o bloco. */
+    margin: auto;
+    /* Define tamanho confortável. */
+    font-size: 18px;
+}
+
+/* ============================== */
+/* MENU                           */
+/* ============================== */
+
+nav {
+    /* Mantém o menu visível durante a navegação. */
+    position: sticky;
+    /* Faz o menu encostar no topo. */
+    top: 0;
+    /* Mantém o menu acima dos outros elementos. */
+    z-index: 1000;
+    /* Define fundo branco. */
+    background: white;
+    /* Adiciona sombra. */
+    box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+}
+
+nav .menu {
+    /* Define largura máxima. */
+    max-width: 1200px;
+    /* Centraliza o menu. */
+    margin: auto;
+    /* Usa flexbox. */
+    display: flex;
+    /* Permite quebra em telas pequenas. */
+    flex-wrap: wrap;
+    /* Centraliza os botões. */
+    justify-content: center;
+    /* Define espaço entre os botões. */
+    gap: 8px;
+    /* Adiciona espaço interno. */
+    padding: 10px;
+}
+
+nav a {
+    /* Remove sublinhado. */
+    text-decoration: none;
+    /* Define cor do texto. */
+    color: #1e3a8a;
+    /* Coloca o texto em negrito. */
+    font-weight: bold;
+    /* Define espaço interno. */
+    padding: 8px 14px;
+    /* Arredonda os botões. */
+    border-radius: 8px;
+    /* Faz a mudança visual ser suave. */
+    transition: 0.3s;
+}
+
+nav a:hover {
+    /* Muda o fundo ao passar o mouse. */
+    background: #dbeafe;
+}
+
+/* ============================== */
+/* CONTEÚDO PRINCIPAL              */
+/* ============================== */
+
+main {
+    /* Define largura máxima para leitura confortável. */
+    max-width: 1200px;
+    /* Centraliza o conteúdo. */
+    margin: 40px auto;
+    /* Adiciona espaço lateral. */
+    padding: 0 20px;
+}
+
+section {
+    /* Cria fundo branco para cada seção. */
+    background: white;
+    /* Arredonda os cantos. */
+    border-radius: 18px;
+    /* Cria espaço interno. */
+    padding: 35px;
+    /* Cria espaço entre as seções. */
+    margin-bottom: 30px;
+    /* Adiciona uma sombra discreta. */
+    box-shadow: 0 8px 30px rgba(15,23,42,0.06);
+}
+
+section h2 {
+    /* Define a cor dos títulos. */
+    color: #1e3a8a;
+    /* Define tamanho do título. */
+    font-size: 30px;
+    /* Cria espaço inferior. */
+    margin-top: 0;
+}
+
+section h3 {
+    /* Define a cor dos subtítulos. */
+    color: #334155;
+    /* Define tamanho. */
+    font-size: 22px;
+}
+
+/* ============================== */
+/* DESTAQUES                      */
+/* ============================== */
+
+.destaque {
+    /* Cria uma caixa de destaque. */
+    background: #eff6ff;
+    /* Adiciona uma linha lateral. */
+    border-left: 6px solid #2563eb;
+    /* Adiciona espaço interno. */
+    padding: 20px;
+    /* Arredonda os cantos. */
+    border-radius: 10px;
+    /* Cria espaço vertical. */
+    margin: 20px 0;
+}
+
+.alerta {
+    /* Define fundo diferente para alertas históricos. */
+    background: #fff7ed;
+    /* Define uma borda lateral. */
+    border-left: 6px solid #ea580c;
+    /* Define espaço interno. */
+    padding: 20px;
+    /* Arredonda os cantos. */
+    border-radius: 10px;
+    /* Cria espaço vertical. */
+    margin: 20px 0;
+}
+
+.conceito {
+    /* Cria fundo para conceitos importantes. */
+    background: #f8fafc;
+    /* Define borda. */
+    border: 1px solid #e2e8f0;
+    /* Define espaço interno. */
+    padding: 18px;
+    /* Arredonda os cantos. */
+    border-radius: 10px;
+    /* Cria espaço vertical. */
+    margin: 15px 0;
+}
+
+.conceito strong {
+    /* Destaca o nome do conceito. */
+    color: #1e3a8a;
+}
+
+/* ============================== */
+/* GRID                           */
+/* ============================== */
+
+.grid {
+    /* Ativa CSS Grid. */
+    display: grid;
+    /* Cria colunas responsivas. */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    /* Define espaço entre os cards. */
+    gap: 20px;
+}
+
+.card {
+    /* Define fundo dos cards. */
+    background: #f8fafc;
+    /* Define uma borda discreta. */
+    border: 1px solid #e2e8f0;
+    /* Define espaço interno. */
+    padding: 22px;
+    /* Arredonda os cantos. */
+    border-radius: 14px;
+}
+
+.card h3 {
+    /* Remove margem superior. */
+    margin-top: 0;
+    /* Define cor. */
+    color: #1e3a8a;
+}
+
+/* ============================== */
+/* LINHA DO TEMPO                 */
+/* ============================== */
+
+.timeline {
+    /* Define uma borda lateral para a linha do tempo. */
+    border-left: 4px solid #2563eb;
+    /* Cria espaço à esquerda. */
+    padding-left: 25px;
+}
+
+.timeline-item {
+    /* Cria espaço entre acontecimentos. */
+    margin-bottom: 25px;
+    /* Mantém posição relativa. */
+    position: relative;
+}
+
+.timeline-item::before {
+    /* Cria o marcador da linha do tempo. */
+    content: "";
+    /* Define tamanho. */
+    width: 14px;
+    /* Define altura. */
+    height: 14px;
+    /* Cria formato circular. */
+    border-radius: 50%;
+    /* Define fundo. */
+    background: #2563eb;
+    /* Posiciona sobre a linha. */
+    position: absolute;
+    /* Ajusta posição horizontal. */
+    left: -34px;
+    /* Ajusta posição vertical. */
+    top: 8px;
+}
+
+/* ============================== */
+/* BOTÕES                         */
+/* ============================== */
+
+.btn {
+    /* Permite aparência de botão. */
+    display: inline-block;
+    /* Remove sublinhado. */
+    text-decoration: none;
+    /* Define fundo. */
+    background: #1e3a8a;
+    /* Define cor do texto. */
+    color: white;
+    /* Define espaço interno. */
+    padding: 12px 20px;
+    /* Arredonda os cantos. */
+    border-radius: 8px;
+    /* Coloca texto em negrito. */
+    font-weight: bold;
+    /* Remove borda. */
+    border: none;
+    /* Mostra cursor de botão. */
+    cursor: pointer;
+    /* Define transição. */
+    transition: 0.3s;
+    /* Define tamanho de fonte. */
+    font-size: 15px;
+}
+
+.btn:hover {
+    /* Escurece o botão ao passar o mouse. */
+    background: #172554;
+    /* Move levemente o botão. */
+    transform: translateY(-2px);
+}
+
+/* ============================== */
+/* GABARITO                       */
+/* ============================== */
+
+.gabarito {
+    /* Inicialmente esconde o gabarito. */
+    display: none;
+    /* Define fundo. */
+    background: #ecfdf5;
+    /* Define borda lateral. */
+    border-left: 6px solid #059669;
+    /* Define espaço interno. */
+    padding: 20px;
+    /* Cria espaço superior. */
+    margin-top: 20px;
+    /* Arredonda os cantos. */
+    border-radius: 10px;
+}
+
+/* ============================== */
+/* RODAPÉ                         */
+/* ============================== */
+
+footer {
+    /* Define fundo escuro. */
+    background: #0f172a;
+    /* Define texto branco. */
+    color: white;
+    /* Centraliza o conteúdo. */
+    text-align: center;
+    /* Define espaço interno. */
+    padding: 40px 20px;
+    /* Cria espaço superior. */
+    margin-top: 50px;
+}
+
+footer p {
+    /* Remove margem padrão. */
+    margin: 5px 0;
+}
+
+/* ============================== */
+/* RESPONSIVIDADE                 */
+/* ============================== */
+
+@media (max-width: 700px) {
+    /* Ajusta as seções para celulares. */
+
+    section {
+        /* Reduz o espaço interno. */
+        padding: 22px;
+    }
+
+    header {
+        /* Reduz o espaço do cabeçalho. */
+        padding: 40px 18px;
+    }
+
+    nav a {
+        /* Reduz o tamanho dos links. */
+        font-size: 13px;
+        /* Reduz o espaço interno. */
+        padding: 7px 9px;
+    }
+}
+</style>
+<!-- Finaliza o CSS da página. -->
+
+</head>
+<!-- Finaliza a área de configurações. -->
+
+<body id="topo">
+<!-- Inicia o conteúdo visível da página. -->
+
+<header>
+<!-- Inicia o cabeçalho principal. -->
+
+<div class="marca">
+<!-- Exibe a identificação do curso. -->
+CURSO DE HISTÓRIA GERAL
+<!-- Texto da marca. -->
+</div>
+
+<h1>1.12 — A Questão das Investiduras</h1>
+<!-- Título principal da aula. -->
+
+<p>
+<!-- Inicia o subtítulo. -->
+Professor Marcelo Oliveira • Fund II • Ensino Médio • ENEM • Vestibular • Concursos
+<!-- Texto de apresentação da aula. -->
+</p>
+
+</header>
+<!-- Finaliza o cabeçalho. -->
+
+<nav>
+<!-- Inicia o menu de navegação. -->
+
+<div class="menu">
+<!-- Cria o agrupamento dos links. -->
+
+<a href="#comeco">O Começo</a>
+<!-- Link para a primeira parte. -->
+
+<a href="#desenvolvimento">Desenvolvimento</a>
+<!-- Link para a segunda parte. -->
+
+<a href="#legado">Legado</a>
+<!-- Link para a terceira parte. -->
+
+<a href="#linha-do-tempo">Cronologia</a>
+<!-- Link para a linha do tempo. -->
+
+<a href="#professor">Professor</a>
+<!-- Link para a parte do professor. -->
+
+<a href="#questoes">Questões</a>
+<!-- Link para os exercícios. -->
+
+</div>
+<!-- Finaliza o menu. -->
+
+</nav>
+<!-- Finaliza a navegação. -->
+
+<main>
+<!-- Inicia o conteúdo principal. -->
+
+<section id="comeco">
+<!-- Inicia a primeira parte da aula. -->
+
+<h2>I — O COMEÇO</h2>
+<!-- Título da primeira parte. -->
+
+<h3>O que foi a Questão das Investiduras?</h3>
+<!-- Subtítulo introdutório. -->
+
+<p>
+A Questão das Investiduras foi um longo conflito político, religioso e institucional
+ocorrido principalmente entre o papado e governantes cristãos da Europa Ocidental,
+especialmente o imperador do Sacro Império Romano-Germânico, durante os séculos XI e XII.
+<!-- Explicação inicial do tema. -->
+</p>
+
+<p>
+O termo <strong>investidura</strong> refere-se ao ato de conferir a alguém um cargo,
+uma função ou símbolos de autoridade. Na sociedade medieval, bispos e abades não eram
+apenas autoridades religiosas. Muitos também administravam terras, possuíam rendas,
+exerciam funções políticas e participavam das relações de poder.
+<!-- Explica o conceito de investidura. -->
+</p>
+
+<div class="destaque">
+<!-- Cria um destaque pedagógico. -->
+
+<strong>Ideia central:</strong>
+<!-- Destaca a ideia principal. -->
+
+a disputa não era simplesmente uma briga entre "Igreja" e "Estado".
+Ela envolvia diferentes grupos e interesses: papas, imperadores, reis,
+bispos, nobres e comunidades locais.
+<!-- Explica a complexidade do conflito. -->
+
+</div>
+<!-- Finaliza o destaque. -->
+
+<h3>Por que os bispos eram tão importantes?</h3>
+<!-- Subtítulo. -->
+
+<p>
+Durante a Idade Média, determinados bispos e abades podiam controlar extensos
+patrimônios, administrar territórios e participar da política. Por isso,
+a escolha de um bispo podia representar também uma decisão de grande importância
+econômica e política.
+<!-- Explicação sobre a importância dos cargos. -->
+</p>
+
+<h3>A Reforma da Igreja</h3>
+<!-- Subtítulo. -->
+
+<p>
+A partir do século XI, setores da Igreja passaram a defender reformas destinadas
+a fortalecer a disciplina do clero e diminuir práticas consideradas inadequadas,
+como a <strong>simonia</strong>, isto é, a compra e venda de cargos ou benefícios
+eclesiásticos, e o chamado <strong>nicolaísmo</strong>, termo usado no contexto das
+reformas para designar práticas relacionadas ao casamento ou à vida conjugal do clero.
+<!-- Explicação sobre as reformas. -->
+</p>
+
+<p>
+Movimentos de reforma ligados a mosteiros, incluindo o ambiente de Cluny,
+contribuíram para fortalecer ideias de renovação religiosa. Paralelamente,
+o papado passou a defender maior autonomia da Igreja diante da interferência
+de autoridades leigas.
+<!-- Contextualização histórica. -->
+</p>
+
+<div class="conceito">
+<!-- Cria caixa de conceito. -->
+
+<strong>Reforma Gregoriana:</strong>
+<!-- Nome do conceito. -->
+
+conjunto amplo de reformas e ideias associadas à renovação da Igreja latina
+nos séculos XI e XII, incluindo a defesa da disciplina clerical,
+o combate à simonia e a afirmação da autonomia da autoridade eclesiástica.
+<!-- Definição. -->
+
+</div>
+<!-- Finaliza conceito. -->
+
+<h3>O problema da investidura leiga</h3>
+<!-- Subtítulo. -->
+
+<p>
+Em várias regiões, governantes leigos participavam da nomeação ou investidura
+de autoridades religiosas. O problema ganhou força quando os reformadores
+questionaram se um rei ou imperador deveria possuir autoridade para entregar
+símbolos de um cargo espiritual a um bispo.
+<!-- Explicação. -->
+</p>
+
+</section>
+<!-- Finaliza a primeira parte. -->
+
+<section id="desenvolvimento">
+<!-- Inicia a segunda parte. -->
+
+<h2>II — O DESENVOLVIMENTO</h2>
+<!-- Título da segunda parte. -->
+
+<h3>Gregório VII e Henrique IV</h3>
+<!-- Subtítulo. -->
+
+<p>
+Um dos momentos mais conhecidos da disputa ocorreu entre o papa
+<strong>Gregório VII</strong> e o imperador <strong>Henrique IV</strong>.
+O conflito envolvia tanto questões religiosas quanto a distribuição de autoridade
+dentro da ordem política medieval.
+<!-- Contextualização dos protagonistas. -->
+</p>
+
+<h3>O Dictatus Papae</h3>
+<!-- Subtítulo. -->
+
+<p>
+Em 1075, aparece no registro pontifício uma coleção de proposições conhecida como
+<strong>Dictatus Papae</strong>. O documento expressava concepções fortes sobre
+a autoridade do papa e sobre a posição do papado diante dos governantes.
+<!-- Explicação do documento. -->
+</p>
+
+<div class="alerta">
+<!-- Cria uma caixa de atenção. -->
+
+<strong>Cuidado em prova:</strong>
+<!-- Alerta pedagógico. -->
+
+não trate o Dictatus Papae como se fosse uma "constituição moderna"
+ou como se tivesse resolvido imediatamente a relação entre Igreja e poder político.
+Ele deve ser entendido dentro das disputas institucionais do século XI.
+<!-- Corrige interpretação simplificada. -->
+
+</div>
+<!-- Finaliza o alerta. -->
+
+<h3>1076 — Worms e a excomunhão</h3>
+<!-- Subtítulo. -->
+
+<p>
+Em 1076, Henrique IV reuniu bispos que apoiavam sua posição em Worms
+e contestou a autoridade de Gregório VII. O papa respondeu com a excomunhão
+do imperador e liberou seus súditos do juramento de fidelidade.
+<!-- Explicação do episódio. -->
+</p>
+
+<h3>1077 — Canossa</h3>
+<!-- Subtítulo. -->
+
+<p>
+A excomunhão produziu uma grave crise política. Em 1077, Henrique IV foi até
+Canossa, onde buscou a reconciliação com Gregório VII. O episódio ficou famoso
+na historiografia como símbolo da tensão entre poder imperial e autoridade papal.
+<!-- Explicação de Canossa. -->
+</p>
+
+<div class="destaque">
+<!-- Cria outro destaque. -->
+
+<strong>Canossa não encerrou a disputa.</strong>
+<!-- Destaca informação importante. -->
+
+O conflito continuou por anos, demonstrando que a relação entre papado,
+império e autoridades locais não poderia ser resolvida por um único episódio.
+<!-- Explicação. -->
+
+</div>
+<!-- Finaliza destaque. -->
+
+<h3>O conflito continua</h3>
+<!-- Subtítulo. -->
+
+<p>
+Henrique IV voltou a enfrentar o papado. Houve novas excomunhões,
+disputas políticas e apoio a um antipapa. Gregório VII acabou deixando Roma
+e morreu em exílio em 1085.
+<!-- Continuação histórica. -->
+</p>
+
+<h3>Henrique V e o caminho para um acordo</h3>
+<!-- Subtítulo. -->
+
+<p>
+A disputa continuou durante o reinado de Henrique V. As partes perceberam
+que era necessário estabelecer algum tipo de acordo sobre a relação entre
+autoridade religiosa e poder temporal.
+<!-- Explicação. -->
+</p>
+
+<h3>1122 — Concordata de Worms</h3>
+<!-- Subtítulo. -->
+
+<p>
+Em 1122, o papa Calisto II e o imperador Henrique V chegaram a um acordo
+conhecido como <strong>Concordata de Worms</strong>.
+<!-- Apresenta o acordo. -->
+</p>
+
+<p>
+O acordo procurou distinguir a dimensão espiritual do cargo episcopal
+da dimensão temporal. O imperador renunciou à investidura espiritual
+com os símbolos religiosos de anel e báculo, enquanto questões relacionadas
+aos poderes e bens temporais continuaram vinculadas às relações políticas.
+<!-- Explicação do acordo. -->
+</p>
+
+<div class="destaque">
+<!-- Cria destaque para conclusão do conflito. -->
+
+<strong>Importante:</strong>
+<!-- Palavra de destaque. -->
+
+a Concordata de Worms não significa simplesmente que "a Igreja venceu".
+Ela representou uma solução negociada que redefiniu competências e limites
+entre autoridades religiosas e políticas.
+<!-- Interpretação histórica equilibrada. -->
+
+</div>
+<!-- Finaliza destaque. -->
+
+<h3>Principais causas</h3>
+<!-- Subtítulo. -->
+
+<div class="grid">
+<!-- Inicia grade de cards. -->
+
+<div class="card">
+<!-- Primeiro card. -->
+
+<h3>Reforma religiosa</h3>
+<!-- Título do card. -->
+
+<p>
+Busca por maior disciplina do clero e combate à simonia.
+</p>
+<!-- Texto do card. -->
+
+</div>
+<!-- Finaliza card. -->
+
+<div class="card">
+<!-- Segundo card. -->
+
+<h3>Poder político</h3>
+<!-- Título do card. -->
+
+<p>
+Bispos e abades também possuíam importância econômica e territorial.
+</p>
+<!-- Texto do card. -->
+
+</div>
+<!-- Finaliza card. -->
+
+<div class="card">
+<!-- Terceiro card. -->
+
+<h3>Autonomia papal</h3>
+<!-- Título do card. -->
+
+<p>
+O papado buscava ampliar sua autonomia diante da interferência de autoridades leigas.
+</p>
+<!-- Texto do card. -->
+
+</div>
+<!-- Finaliza card. -->
+
+<div class="card">
+<!-- Quarto card. -->
+
+<h3>Conflito institucional</h3>
+<!-- Título do card. -->
+
+<p>
+A disputa envolvia diferentes interpretações sobre quem poderia nomear autoridades religiosas.
+</p>
+<!-- Texto do card. -->
+
+</div>
+<!-- Finaliza card. -->
+
+</div>
+<!-- Finaliza a grade. -->
+
+<h3>Consequências históricas</h3>
+<!-- Subtítulo. -->
+
+<ul>
+<!-- Inicia lista. -->
+
+<li>Fortalecimento da autonomia institucional do papado.</li>
+<!-- Primeira consequência. -->
+
+<li>Maior distinção entre funções espirituais e temporais.</li>
+<!-- Segunda consequência. -->
+
+<li>Desenvolvimento de instrumentos jurídicos e administrativos da Igreja.</li>
+<!-- Terceira consequência. -->
+
+<li>Transformações na relação entre papado, império e autoridades locais.</li>
+<!-- Quarta consequência. -->
+
+<li>Fortalecimento de debates medievais sobre autoridade e legitimidade política.</li>
+<!-- Quinta consequência. -->
+
+</ul>
+<!-- Finaliza lista. -->
+
+</section>
+<!-- Finaliza a segunda parte. -->
+
+<section id="legado">
+<!-- Inicia a terceira parte. -->
+
+<h2>III — O LEGADO E O MUNDO ATUAL</h2>
+<!-- Título. -->
+
+<h3>A separação entre poderes espirituais e temporais</h3>
+<!-- Subtítulo. -->
+
+<p>
+A Questão das Investiduras contribuiu para uma transformação importante
+na história política europeia: o desenvolvimento de argumentos sobre os limites
+e as competências de diferentes autoridades.
+<!-- Explicação do legado. -->
+</p>
+
+<p>
+É importante evitar uma leitura simplista segundo a qual a Idade Média teria
+simplesmente criado a moderna separação entre Igreja e Estado. O processo
+foi muito mais longo e envolveu transformações posteriores.
+<!-- Evita anacronismo. -->
+</p>
+
+<h3>O fortalecimento do papado</h3>
+<!-- Subtítulo. -->
+
+<p>
+As reformas dos séculos XI e XII ajudaram a ampliar a organização institucional
+do papado e sua capacidade de formular normas, administrar territórios,
+intervir em conflitos e construir uma autoridade suprarregional.
+<!-- Explicação. -->
+</p>
+
+<h3>Direito e pensamento político</h3>
+<!-- Subtítulo. -->
+
+<p>
+A disputa também se relaciona ao desenvolvimento do direito canônico
+e a debates medievais sobre autoridade, legitimidade, obediência,
+jurisdição e relação entre diferentes poderes.
+<!-- Explicação. -->
+</p>
+
+<h3>Relação com a formação política europeia</h3>
+<!-- Subtítulo. -->
+
+<p>
+A experiência medieval contribuiu para a construção de uma cultura política
+na qual diferentes instituições reivindicavam competências próprias.
+Posteriormente, reis, cidades, principados, igrejas e outras instituições
+continuariam disputando e negociando formas de autoridade.
+<!-- Explicação de longa duração. -->
+</p>
+
+<h3>Conexão com a História do Brasil</h3>
+<!-- Subtítulo. -->
+
+<p>
+A Questão das Investiduras não deve ser apresentada como causa direta
+da formação do Estado brasileiro. Porém, estudar as relações medievais
+entre Igreja e poder político ajuda o aluno a compreender antecedentes
+da longa história europeia das relações entre autoridades religiosas e monarquias.
+<!-- Conexão cuidadosa com o Brasil. -->
+</p>
+
+<p>
+Na América portuguesa, por exemplo, a relação entre Coroa e Igreja assumiu
+formas próprias, incluindo o <strong>padroado</strong>, desenvolvido no contexto
+das monarquias ibéricas e da expansão ultramarina. Trata-se de um fenômeno
+posterior e diferente da Questão das Investiduras.
+<!-- Faz a conexão sem estabelecer causalidade direta. -->
+</p>
+
+<h3>O tema no mundo contemporâneo</h3>
+<!-- Subtítulo. -->
+
+<p>
+Atualmente, diferentes sociedades possuem modelos distintos para organizar
+as relações entre instituições religiosas e autoridades políticas.
+A comparação histórica permite perceber que essas relações mudaram
+ao longo do tempo e não possuem uma única forma universal.
+<!-- Conexão contemporânea. -->
+</p>
+
+<div class="conceito">
+<!-- Caixa de conceito. -->
+
+<strong>Legado central:</strong>
+<!-- Destaque. -->
+
+a Questão das Investiduras mostra que autoridade política e autoridade religiosa
+podem se relacionar, cooperar e também entrar em conflito, e que essas relações
+são historicamente construídas.
+<!-- Síntese. -->
+
+</div>
+<!-- Finaliza conceito. -->
+
+</section>
+<!-- Finaliza terceira parte. -->
+
+<section id="linha-do-tempo">
+<!-- Inicia cronologia. -->
+
+<h2>LINHA DO TEMPO</h2>
+<!-- Título. -->
+
+<div class="timeline">
+<!-- Inicia linha do tempo. -->
+
+<div class="timeline-item">
+<!-- Primeiro acontecimento. -->
+
+<strong>Século XI</strong>
+<!-- Data. -->
+
+<p>
+Fortalecimento dos movimentos de reforma da Igreja latina.
+</p>
+<!-- Descrição. -->
+
+</div>
+<!-- Finaliza item. -->
+
+<div class="timeline-item">
+<!-- Segundo acontecimento. -->
+
+<strong>1059</strong>
+<!-- Data. -->
+
+<p>
+Reformas relacionadas à eleição papal reforçam a autonomia do papado.
+</p>
+<!-- Descrição. -->
+
+</div>
+<!-- Finaliza item. -->
+
+<div class="timeline-item">
+<!-- Terceiro acontecimento. -->
+
+<strong>1073</strong>
+<!-- Data. -->
+
+<p>
+Gregório VII torna-se papa.
+</p>
+<!-- Descrição. -->
+
+</div>
+<!-- Finaliza item. -->
+
+<div class="timeline-item">
+<!-- Quarto acontecimento. -->
+
+<strong>1075</strong>
+<!-- Data. -->
+
+<p>
+Registro das proposições conhecidas como Dictatus Papae.
+</p>
+<!-- Descrição. -->
+
+</div>
+<!-- Finaliza item. -->
+
+<div class="timeline-item">
+<!-- Quinto acontecimento. -->
+
+<strong>1076</strong>
+<!-- Data. -->
+
+<p>
+Conflito de Worms e excomunhão de Henrique IV.
+</p>
+<!-- Descrição. -->
+
+</div>
+<!-- Finaliza item. -->
+
+<div class="timeline-item">
+<!-- Sexto acontecimento. -->
+
+<strong>1077</strong>
+<!-- Data. -->
+
+<p>
+Henrique IV dirige-se a Canossa e busca reconciliação com Gregório VII.
+</p>
+<!-- Descrição. -->
+
+</div>
+<!-- Finaliza item. -->
+
+<div class="timeline-item">
+<!-- Sétimo acontecimento. -->
+
+<strong>1085</strong>
+<!-- Data. -->
+
+<p>
+Morte de Gregório VII em exílio.
+</p>
+<!-- Descrição. -->
+
+</div>
+<!-- Finaliza item. -->
+
+<div class="timeline-item">
+<!-- Oitavo acontecimento. -->
+
+<strong>1122</strong>
+<!-- Data. -->
+
+<p>
+Concordata de Worms estabelece uma solução negociada para a disputa.
+</p>
+<!-- Descrição. -->
+
+</div>
+<!-- Finaliza item. -->
+
+</div>
+<!-- Finaliza linha do tempo. -->
+
+</section>
+<!-- Finaliza cronologia. -->
+
+<section>
+<!-- Inicia seção de conceitos. -->
+
+<h2>CONCEITOS QUE O ALUNO PRECISA DOMINAR</h2>
+<!-- Título. -->
+
+<div class="grid">
+<!-- Inicia grade. -->
+
+<div class="card">
+<!-- Card. -->
+
+<h3>Investidura</h3>
+<!-- Conceito. -->
+
+<p>
+Ato de conferir autoridade ou função a alguém.
+</p>
+<!-- Definição. -->
+
+</div>
+<!-- Finaliza card. -->
+
+<div class="card">
+<!-- Card. -->
+
+<h3>Simonia</h3>
+<!-- Conceito. -->
+
+<p>
+Compra ou venda de cargos, funções ou benefícios eclesiásticos.
+</p>
+<!-- Definição. -->
+
+</div>
+<!-- Finaliza card. -->
+
+<div class="card">
+<!-- Card. -->
+
+<h3>Nicolaísmo</h3>
+<!-- Conceito. -->
+
+<p>
+Termo usado pelos reformadores para designar práticas conjugais do clero
+que eram combatidas no contexto das reformas.
+</p>
+<!-- Definição. -->
+
+</div>
+<!-- Finaliza card. -->
+
+<div class="card">
+<!-- Card. -->
+
+<h3>Excomunhão</h3>
+<!-- Conceito. -->
+
+<p>
+Sanção religiosa que excluía uma pessoa da comunhão da Igreja.
+</p>
+<!-- Definição. -->
+
+</div>
+<!-- Finaliza card. -->
+
+<div class="card">
+<!-- Card. -->
+
+<h3>Reforma Gregoriana</h3>
+<!-- Conceito. -->
+
+<p>
+Movimento amplo de reforma e reorganização da Igreja latina.
+</p>
+<!-- Definição. -->
+
+</div>
+<!-- Finaliza card. -->
+
+<div class="card">
+<!-- Card. -->
+
+<h3>Concordata</h3>
+<!-- Conceito. -->
+
+<p>
+Acordo formal entre autoridades eclesiásticas e políticas sobre determinadas questões.
+</p>
+<!-- Definição. -->
+
+</div>
+<!-- Finaliza card. -->
+
+</div>
+<!-- Finaliza grade. -->
+
+</section>
+<!-- Finaliza conceitos. -->
+
+<section id="professor">
+<!-- Inicia seção destinada ao professor. -->
+
+<h2>O QUE O PROFESSOR PRECISA DOMINAR</h2>
+<!-- Título. -->
+
+<ul>
+<!-- Inicia lista. -->
+
+<li>Explicar por que os bispos tinham importância religiosa, política e econômica.</li>
+<!-- Item. -->
+
+<li>Diferenciar autoridade espiritual de autoridade temporal.</li>
+<!-- Item. -->
+
+<li>Explicar o significado da Reforma Gregoriana.</li>
+<!-- Item. -->
+
+<li>Relacionar simonia e nicolaísmo às reformas eclesiásticas.</li>
+<!-- Item. -->
+
+<li>Compreender o conflito entre Gregório VII e Henrique IV.</li>
+<!-- Item. -->
+
+<li>Explicar corretamente o episódio de Canossa.</li>
+<!-- Item. -->
+
+<li>Compreender o significado da Concordata de Worms.</li>
+<!-- Item. -->
+
+<li>Evitar a interpretação simplista de que houve apenas uma disputa entre "Igreja e Estado".</li>
+<!-- Item. -->
+
+<li>Relacionar o tema ao processo mais amplo de organização das instituições políticas medievais.</li>
+<!-- Item. -->
+
+</ul>
+<!-- Finaliza lista. -->
+
+<h3>O QUE COLOCAR NA LOUSA</h3>
+<!-- Subtítulo. -->
+
+<div class="destaque">
+<!-- Quadro para lousa. -->
+
+<p>
+<strong>QUESTÃO DAS INVESTIDURAS</strong>
+</p>
+<!-- Título do quadro. -->
+
+<p>
+Reforma da Igreja → combate à simonia → autonomia do papado
+</p>
+<!-- Primeira linha. -->
+
+<p>
+Gregório VII × Henrique IV
+</p>
+<!-- Segunda linha. -->
+
+<p>
+1076 → excomunhão
+</p>
+<!-- Terceira linha. -->
+
+<p>
+1077 → Canossa
+</p>
+<!-- Quarta linha. -->
+
+<p>
+1122 → Concordata de Worms
+</p>
+<!-- Quinta linha. -->
+
+<p>
+Resultado → distinção entre autoridade espiritual e temporal
+</p>
+<!-- Sexta linha. -->
+
+</div>
+<!-- Finaliza quadro. -->
+
+</section>
+<!-- Finaliza seção do professor. -->
+
+<section>
+<!-- Inicia seção BNCC. -->
+
+<h2>BNCC</h2>
+<!-- Título. -->
+
+<div class="destaque">
+<!-- Destaque curricular. -->
+
+<p>
+<strong>EF06HI18</strong> — Analisar o papel da religião cristã na cultura
+e nos modos de organização social no período medieval.
+</p>
+<!-- Habilidade principal. -->
+
+<p>
+A habilidade é especialmente pertinente porque a aula analisa as relações
+entre religião, instituições e organização do poder no mundo medieval.
+</p>
+<!-- Justificativa. -->
+
+</div>
+<!-- Finaliza destaque. -->
+
+<p>
+A BNCC é um documento normativo que define aprendizagens essenciais
+a serem desenvolvidas ao longo da Educação Básica. :contentReference[oaicite:1]{index=1}
+</p>
+<!-- Explicação curricular. -->
+
+</section>
+<!-- Finaliza BNCC. -->
+
+<section>
+<!-- Inicia seção de provas. -->
+
+<h2>ENEM • VESTIBULAR • CONCURSOS</h2>
+<!-- Título. -->
+
+<div class="grid">
+<!-- Inicia grade. -->
+
+<div class="card">
+<!-- Card. -->
+
+<h3>ENEM</h3>
+<!-- Título. -->
+
+<p>
+Observe relações entre religião, poder, instituições e transformações sociais.
+</p>
+<!-- Orientação. -->
+
+</div>
+<!-- Finaliza card. -->
+
+<div class="card">
+<!-- Card. -->
+
+<h3>Vestibulares</h3>
+<!-- Título. -->
+
+<p>
+Domine Gregório VII, Henrique IV, Canossa e Concordata de Worms.
+</p>
+<!-- Orientação. -->
+
+</div>
+<!-- Finaliza card. -->
+
+<div class="card">
+<!-- Card. -->
+
+<h3>Concursos</h3>
+<!-- Título. -->
+
+<p>
+Memorize conceitos, cronologia e relações entre poder espiritual e temporal.
+</p>
+<!-- Orientação. -->
+
+</div>
+<!-- Finaliza card. -->
+
+</div>
+<!-- Finaliza grade. -->
+
+</section>
+<!-- Finaliza seção de provas. -->
+
+<section id="questoes">
+<!-- Inicia seção de questões. -->
+
+<h2>QUESTÕES — MODELO ENEM</h2>
+<!-- Título. -->
+
+<h3>Questão 1</h3>
+<!-- Identificação da questão. -->
+
+<p>
+Durante o século XI, setores da Igreja latina defenderam reformas destinadas
+a ampliar a autonomia da instituição religiosa e combater práticas consideradas
+inadequadas. Nesse contexto, a disputa pelas investiduras relacionava-se
+principalmente:
+</p>
+<!-- Enunciado. -->
+
+<p>
+<strong>A)</strong> à tentativa de eliminar completamente os poderes políticos dos reis europeus.
+</p>
+<!-- Alternativa A. -->
+
+<p>
+<strong>B)</strong> à disputa sobre a autoridade para nomear e investir autoridades eclesiásticas.
+</p>
+<!-- Alternativa B. -->
+
+<p>
+<strong>C)</strong> à substituição do cristianismo pelo islamismo na Europa Ocidental.
+</p>
+<!-- Alternativa C. -->
+
+<p>
+<strong>D)</strong> à criação das primeiras democracias parlamentares modernas.
+</p>
+<!-- Alternativa D. -->
+
+<p>
+<strong>E)</strong> à extinção das propriedades pertencentes aos mosteiros.
+</p>
+<!-- Alternativa E. -->
+
+<button class="btn" onclick="mostrarGabarito('gabarito1')">
+<!-- Cria botão para revelar o gabarito. -->
+
+Mostrar gabarito da questão 1
+<!-- Texto do botão. -->
+
+</button>
+<!-- Finaliza botão. -->
+
+<div id="gabarito1" class="gabarito">
+<!-- Cria área inicialmente escondida. -->
+
+<strong>Resposta: B.</strong>
+<!-- Mostra a resposta correta. -->
+
+<p>
+A Questão das Investiduras envolvia justamente a disputa pela autoridade
+de nomear e conferir cargos e símbolos relacionados às funções eclesiásticas,
+em meio às relações entre papado e poderes políticos.
+</p>
+<!-- Explicação da resposta. -->
+
+</div>
+<!-- Finaliza gabarito. -->
+
+<h3>Questão 2</h3>
+<!-- Identificação da segunda questão. -->
+
+<p>
+A Concordata de Worms, de 1122, representou um momento importante
+na história das relações entre papado e poder imperial porque:
+</p>
+<!-- Enunciado. -->
+
+<p>
+<strong>A)</strong> eliminou definitivamente qualquer influência política do imperador.
+</p>
+<!-- Alternativa A. -->
+
+<p>
+<strong>B)</strong> estabeleceu uma solução negociada que diferenciava aspectos espirituais e temporais da autoridade episcopal.
+</p>
+<!-- Alternativa B. -->
+
+<p>
+<strong>C)</strong> transformou o Sacro Império em uma democracia moderna.
+</p>
+<!-- Alternativa C. -->
+
+<p>
+<strong>D)</strong> determinou o fim do cristianismo como religião dominante na Europa.
+</p>
+<!-- Alternativa D. -->
+
+<p>
+<strong>E)</strong> criou uma autoridade única para governar toda a Europa Ocidental.
+</p>
+<!-- Alternativa E. -->
+
+<button class="btn" onclick="mostrarGabarito('gabarito2')">
+<!-- Cria botão. -->
+
+Mostrar gabarito da questão 2
+<!-- Texto do botão. -->
+
+</button>
+<!-- Finaliza botão. -->
+
+<div id="gabarito2" class="gabarito">
+<!-- Cria área do gabarito. -->
+
+<strong>Resposta: B.</strong>
+<!-- Mostra resposta. -->
+
+<p>
+A Concordata de Worms procurou estabelecer uma distinção entre a dimensão
+espiritual do cargo episcopal e seus aspectos temporais, constituindo
+uma solução negociada para o conflito.
+</p>
+<!-- Explicação. -->
+
+</div>
+<!-- Finaliza gabarito. -->
+
+</section>
+<!-- Finaliza questões. -->
+
+<section>
+<!-- Inicia revisão final. -->
+
+<h2>REVISÃO EM 60 SEGUNDOS</h2>
+<!-- Título. -->
+
+<div class="destaque">
+<!-- Caixa de revisão. -->
+
+<p>
+<strong>1.</strong> A Igreja medieval possuía grande influência social e política.
+</p>
+<!-- Revisão. -->
+
+<p>
+<strong>2.</strong> Bispos e abades podiam exercer funções religiosas e temporais.
+</p>
+<!-- Revisão. -->
+
+<p>
+<strong>3.</strong> Reformadores criticaram práticas como a simonia.
+</p>
+<!-- Revisão. -->
+
+<p>
+<strong>4.</strong> Gregório VII entrou em conflito com Henrique IV.
+</p>
+<!-- Revisão. -->
+
+<p>
+<strong>5.</strong> 1077 → Canossa.
+</p>
+<!-- Revisão. -->
+
+<p>
+<strong>6.</strong> O conflito não terminou em Canossa.
+</p>
+<!-- Revisão. -->
+
+<p>
+<strong>7.</strong> 1122 → Concordata de Worms.
+</p>
+<!-- Revisão. -->
+
+<p>
+<strong>8.</strong> O acordo diferenciou aspectos espirituais e temporais da autoridade episcopal.
+</p>
+<!-- Revisão. -->
+
+<p>
+<strong>9.</strong> O conflito ajuda a compreender a construção histórica das relações entre religião e poder.
+</p>
+<!-- Revisão. -->
+
+</div>
+<!-- Finaliza revisão. -->
+
+</section>
+<!-- Finaliza revisão. -->
+
+<div style="text-align:center; margin:40px 0;">
+<!-- Cria área central para os botões de navegação. -->
+
+<button class="btn" onclick="voltarPagina()">
+<!-- Cria botão para voltar à página anterior. -->
+
+← Voltar
+<!-- Texto do botão. -->
+
+</button>
+<!-- Finaliza botão. -->
+
+<a href="#topo" class="btn">
+<!-- Cria botão para voltar ao topo. -->
+
+↑ Voltar ao topo
+<!-- Texto do botão. -->
+
+</a>
+<!-- Finaliza botão. -->
+
+</div>
+<!-- Finaliza área de navegação. -->
+
+</main>
+<!-- Finaliza o conteúdo principal. -->
+
+<footer>
+<!-- Inicia rodapé. -->
+
+<p>
+<strong>Curso de História Geral</strong>
+</p>
+<!-- Nome do curso. -->
+
+<p>
+Professor Marcelo Oliveira
+</p>
+<!-- Identificação do professor. -->
+
+<p>
+Fund II • Ensino Médio • ENEM • Vestibular • Concursos
+</p>
+<!-- Público do curso. -->
+
+<p>
+© 2026 — Material didático autoral
+</p>
+<!-- Informação de copyright. -->
+
+</footer>
+<!-- Finaliza rodapé. -->
+
+<script>
+/* ============================== */
+/* FUNÇÕES JAVASCRIPT             */
+/* ============================== */
+
+function mostrarGabarito(id) {
+    /* Localiza o elemento pelo ID recebido. */
+    const elemento = document.getElementById(id);
+
+    /* Verifica se o elemento está escondido. */
+    if (elemento.style.display === "block") {
+        /* Esconde novamente o gabarito. */
+        elemento.style.display = "none";
+    } else {
+        /* Mostra o gabarito. */
+        elemento.style.display = "block";
+    }
+}
+
+/* ============================== */
+/* VOLTAR                         */
+/* ============================== */
+
+function voltarPagina() {
+    /* Verifica se existe uma página anterior no histórico do navegador. */
+    if (document.referrer !== "") {
+        /* Retorna para a página anterior. */
+        history.back();
+    } else {
+        /* Caso não exista, mostra uma mensagem. */
+        alert("Você está na primeira página deste caminho.");
+    }
+}
+</script>
+<!-- Finaliza o JavaScript. -->
+ <script>
+  const paginaAnterior = "11 - Igreja-na-Idade-Media.html";
+  const paginaProxima = "13 - as-cruzadas.html";
+</script>
+<script src="navegacao.js"></script>
+
+</body>
+<!-- Finaliza o conteúdo visível. -->
+
+</html>
+<!-- Finaliza o documento HTML. -->

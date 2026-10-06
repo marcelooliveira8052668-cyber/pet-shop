@@ -1,0 +1,1845 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <!-- Define a codificação de caracteres utilizada pela página. -->
+    <meta charset="UTF-8">
+
+    <!-- Permite que a página seja responsiva em celulares e tablets. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Define o título exibido na aba do navegador. -->
+    <title>1.24 — Montagem do Sistema Colonial | Curso de História Geral</title>
+
+    <style>
+
+        /* ==========================================================
+           CONFIGURAÇÕES GERAIS
+           ========================================================== */
+
+        /* Remove margens e espaçamentos padrão do navegador. */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Ativa rolagem suave. */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Define a aparência geral da página. */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f3f6fa;
+            color: #202938;
+            line-height: 1.7;
+        }
+
+        /* ==========================================================
+           CABEÇALHO
+           ========================================================== */
+
+        /* Cria o cabeçalho principal. */
+        header {
+            background: #071a33;
+            color: white;
+            text-align: center;
+            padding: 45px 20px;
+            border-bottom: 6px solid #f39c12;
+        }
+
+        /* Define o título principal. */
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 12px;
+        }
+
+        /* Define os textos secundários do cabeçalho. */
+        header p {
+            max-width: 900px;
+            margin: 8px auto;
+            color: #dce8f5;
+        }
+
+        /* ==========================================================
+           CONTAINER
+           ========================================================== */
+
+        /* Centraliza o conteúdo e limita sua largura. */
+        main {
+            width: min(1100px, 92%);
+            margin: 30px auto;
+        }
+
+        /* Cria os cartões brancos. */
+        .card {
+            background: white;
+            padding: 30px;
+            margin-bottom: 25px;
+            border-radius: 14px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.07);
+        }
+
+        /* Define os títulos principais dos cartões. */
+        .card h2 {
+            color: #071a33;
+            margin-bottom: 18px;
+        }
+
+        /* Define os subtítulos. */
+        .card h3 {
+            color: #173f6d;
+            margin-top: 22px;
+            margin-bottom: 10px;
+        }
+
+        /* Organiza listas. */
+        ul,
+        ol {
+            padding-left: 25px;
+            margin-top: 10px;
+        }
+
+        /* Dá espaço entre itens. */
+        li {
+            margin-bottom: 8px;
+        }
+
+        /* Destaca palavras importantes. */
+        strong {
+            color: #071a33;
+        }
+
+        /* ==========================================================
+           APRESENTAÇÃO
+           ========================================================== */
+
+        /* Cria o destaque inicial do capítulo. */
+        .apresentacao {
+            background: linear-gradient(135deg, #0b3d70, #1769aa);
+            color: white;
+            padding: 35px;
+            border-radius: 15px;
+            margin-bottom: 25px;
+        }
+
+        /* Mantém o título branco. */
+        .apresentacao h2 {
+            color: white;
+        }
+
+        /* ==========================================================
+           TRILOGIA
+           ========================================================== */
+
+        /* Representa a origem do sistema colonial. */
+        .parte1 {
+            border-left: 8px solid #1769aa;
+        }
+
+        /* Representa o desenvolvimento do sistema colonial. */
+        .parte2 {
+            border-left: 8px solid #18864b;
+        }
+
+        /* Representa o legado do sistema colonial. */
+        .parte3 {
+            border-left: 8px solid #7b3fb5;
+        }
+
+        /* ==========================================================
+           DESTAQUES
+           ========================================================== */
+
+        /* Destaca causas. */
+        .causas {
+            background: #fff4df;
+            border-left: 8px solid #f39c12;
+        }
+
+        /* Destaca consequências. */
+        .consequencias {
+            background: #fffbe0;
+            border-left: 8px solid #e0b400;
+        }
+
+        /* Destaca conceitos. */
+        .conceitos {
+            background: #fffde9;
+            border-left: 8px solid #d9c400;
+        }
+
+        /* Destaca pontos de atenção. */
+        .atencao {
+            background: #fff0f0;
+            border-left: 8px solid #c0392b;
+        }
+
+        /* Destaca conteúdo do ENEM. */
+        .enem {
+            background: #e8fbff;
+            border-left: 8px solid #00a6c7;
+        }
+
+        /* Cria o quadro da lousa. */
+        .lousa {
+            background: #102a43;
+            color: white;
+            border-left: 8px solid #4ea1d3;
+        }
+
+        /* Mantém títulos e destaques da lousa brancos. */
+        .lousa h2,
+        .lousa h3,
+        .lousa strong {
+            color: white;
+        }
+
+        /* ==========================================================
+           LINHA DO TEMPO
+           ========================================================== */
+
+        /* Cria a linha vertical. */
+        .timeline {
+            border-left: 4px solid #1769aa;
+            padding-left: 25px;
+        }
+
+        /* Organiza cada acontecimento. */
+        .evento {
+            position: relative;
+            margin-bottom: 22px;
+        }
+
+        /* Cria os círculos da linha do tempo. */
+        .evento::before {
+            content: "";
+            position: absolute;
+            width: 13px;
+            height: 13px;
+            background: #1769aa;
+            border-radius: 50%;
+            left: -33px;
+            top: 8px;
+        }
+
+        /* Destaca os anos. */
+        .ano {
+            color: #1769aa;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        /* ==========================================================
+           TABELAS
+           ========================================================== */
+
+        /* Permite rolagem horizontal em telas pequenas. */
+        .tabela-container {
+            overflow-x: auto;
+        }
+
+        /* Define a largura da tabela. */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        /* Define células. */
+        th,
+        td {
+            border: 1px solid #d6dce5;
+            padding: 12px;
+            text-align: left;
+        }
+
+        /* Define o cabeçalho da tabela. */
+        th {
+            background: #071a33;
+            color: white;
+        }
+
+        /* Alterna a cor das linhas. */
+        tr:nth-child(even) {
+            background: #f4f7fa;
+        }
+
+        /* ==========================================================
+           QUESTÕES
+           ========================================================== */
+
+        /* Cria o cartão de cada questão. */
+        .questao {
+            background: #f8fafc;
+            border: 1px solid #dce3eb;
+            padding: 22px;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+
+        /* Organiza as alternativas. */
+        .alternativas {
+            margin-top: 15px;
+        }
+
+        /* Define os botões. */
+        button {
+            background: #1769aa;
+            color: white;
+            border: none;
+            padding: 12px 18px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        /* Altera o botão quando o mouse passa por cima. */
+        button:hover {
+            background: #0d4f82;
+        }
+
+        /* Esconde os gabaritos. */
+        .gabarito {
+            display: none;
+            margin-top: 15px;
+            padding: 15px;
+            background: #e8f5e9;
+            border-left: 5px solid #18864b;
+            border-radius: 6px;
+        }
+
+        /* ==========================================================
+           NAVEGAÇÃO
+           ========================================================== */
+
+        /* Organiza os links anterior e próximo. */
+        .navegacao {
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        /* Define os links de navegação. */
+        .navegacao a {
+            text-decoration: none;
+            background: #071a33;
+            color: white;
+            padding: 13px 20px;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        /* Efeito dos links. */
+        .navegacao a:hover {
+            background: #1769aa;
+        }
+
+        /* ==========================================================
+           BOTÃO TOPO
+           ========================================================== */
+
+        /* Cria o botão flutuante. */
+        #topo {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            display: none;
+            border-radius: 50%;
+            width: 48px;
+            height: 48px;
+            padding: 0;
+            font-size: 20px;
+            z-index: 1000;
+        }
+
+        /* ==========================================================
+           RODAPÉ
+           ========================================================== */
+
+        /* Define o rodapé. */
+        footer {
+            background: #071a33;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 40px;
+        }
+
+        /* ==========================================================
+           RESPONSIVIDADE
+           ========================================================== */
+
+        /* Adapta o conteúdo para telas pequenas. */
+        @media (max-width: 700px) {
+
+            /* Reduz o título. */
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            /* Reduz o espaçamento dos cartões. */
+            .card {
+                padding: 20px;
+            }
+
+            /* Coloca os links em coluna. */
+            .navegacao {
+                flex-direction: column;
+            }
+
+            /* Centraliza os links. */
+            .navegacao a {
+                text-align: center;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- ==========================================================
+         CABEÇALHO
+         ========================================================== -->
+
+    <header>
+
+        <!-- Mostra o nome do capítulo. -->
+        <h1>1.24 — MONTAGEM DO SISTEMA COLONIAL</h1>
+
+        <!-- Identifica o público do curso. -->
+        <p>
+            Curso de História Geral — Fund II • Ensino Médio • ENEM • Vestibular • Concurso
+        </p>
+
+        <!-- Identifica o professor. -->
+        <p>
+            Professor Marcelo Oliveira
+        </p>
+
+    </header>
+
+    <!-- ==========================================================
+         CONTEÚDO
+         ========================================================== -->
+
+    <main>
+
+        <!-- ======================================================
+             APRESENTAÇÃO
+             ====================================================== -->
+
+        <section class="apresentacao">
+
+            <h2>Como a colonização portuguesa foi organizada?</h2>
+
+            <p>
+                A montagem do sistema colonial português na América foi um
+                processo gradual iniciado no século XVI e relacionado à expansão
+                marítimo-comercial europeia.
+            </p>
+
+            <p>
+                A Coroa portuguesa organizou mecanismos políticos, econômicos
+                e administrativos para ocupar o território, explorar recursos,
+                produzir mercadorias destinadas ao mercado externo e garantir
+                o controle sobre a colônia.
+            </p>
+
+            <p>
+                Esse sistema esteve profundamente relacionado à escravização
+                de indígenas e africanos, à concentração da propriedade,
+                à produção agrícola de exportação e à estrutura mercantilista.
+            </p>
+
+        </section>
+
+        <!-- ======================================================
+             PARTE I
+             ====================================================== -->
+
+        <section class="card parte1">
+
+            <h2>I — O COMEÇO: A FORMAÇÃO DO SISTEMA COLONIAL</h2>
+
+            <h3>1. O território americano antes da colonização portuguesa</h3>
+
+            <p>
+                Quando os portugueses chegaram em 1500, o território que hoje
+                corresponde ao Brasil era ocupado por numerosos povos indígenas,
+                com diferentes línguas, culturas, formas de organização política
+                e práticas econômicas.
+            </p>
+
+            <p>
+                Portanto, não se tratava de um território vazio ou sem organização.
+                A colonização portuguesa ocorreu sobre sociedades que já possuíam
+                histórias próprias.
+            </p>
+
+            <h3>2. Os primeiros contatos</h3>
+
+            <p>
+                Nos primeiros anos após 1500, os portugueses concentraram parte
+                de seus interesses na exploração do pau-brasil.
+            </p>
+
+            <p>
+                O comércio da madeira envolveu portugueses e grupos indígenas,
+                incluindo relações de troca e diferentes formas de trabalho.
+            </p>
+
+            <h3>3. O problema da ocupação</h3>
+
+            <p>
+                A presença portuguesa inicial não significava controle efetivo
+                sobre todo o território.
+            </p>
+
+            <p>
+                A ameaça de outras potências europeias, especialmente franceses,
+                contribuiu para que a Coroa portuguesa buscasse intensificar
+                a ocupação e administração da América portuguesa.
+            </p>
+
+            <h3>4. O início da colonização efetiva</h3>
+
+            <p>
+                A partir da década de 1530, Portugal passou a organizar de maneira
+                mais sistemática a colonização.
+            </p>
+
+            <p>
+                A produção agrícola, especialmente a produção de açúcar,
+                tornou-se uma das bases econômicas do empreendimento colonial.
+            </p>
+
+        </section>
+
+        <!-- ======================================================
+             CAUSAS
+             ====================================================== -->
+
+        <section class="card causas">
+
+            <h2>POR QUE PORTUGAL ORGANIZOU A COLONIZAÇÃO?</h2>
+
+            <ul>
+
+                <li>
+                    Necessidade de ocupar e controlar o território.
+                </li>
+
+                <li>
+                    Competição com outras potências europeias.
+                </li>
+
+                <li>
+                    Busca por riquezas e produtos comerciais.
+                </li>
+
+                <li>
+                    Interesse na produção agrícola para exportação.
+                </li>
+
+                <li>
+                    Fortalecimento da autoridade da Coroa.
+                </li>
+
+                <li>
+                    Expansão do comércio atlântico.
+                </li>
+
+                <li>
+                    Interesses religiosos ligados à expansão do cristianismo.
+                </li>
+
+                <li>
+                    Integração da América portuguesa às práticas mercantilistas.
+                </li>
+
+            </ul>
+
+        </section>
+
+        <!-- ======================================================
+             CAPITANIAS HEREDITÁRIAS
+             ====================================================== -->
+
+        <section class="card">
+
+            <h2>CAPITANIAS HEREDITÁRIAS — 1534</h2>
+
+            <p>
+                Em 1534, a Coroa portuguesa implantou o sistema de
+                <strong>capitanias hereditárias</strong> como uma forma de
+                organizar a ocupação e administração da América portuguesa.
+            </p>
+
+            <p>
+                Grandes faixas de território foram entregues a particulares,
+                os chamados donatários, que recebiam direitos e deveres definidos
+                pela Coroa.
+            </p>
+
+            <h3>Objetivos</h3>
+
+            <ul>
+
+                <li>
+                    Promover a ocupação territorial.
+                </li>
+
+                <li>
+                    Estimular a produção econômica.
+                </li>
+
+                <li>
+                    Transferir parte dos custos da colonização para particulares.
+                </li>
+
+                <li>
+                    Defender o território.
+                </li>
+
+                <li>
+                    Organizar a administração local.
+                </li>
+
+            </ul>
+
+            <h3>Por que muitas fracassaram?</h3>
+
+            <p>
+                Diversas capitanias enfrentaram dificuldades relacionadas à falta
+                de recursos, resistência indígena, distância da metrópole,
+                dificuldades de comunicação e problemas de organização.
+            </p>
+
+            <p>
+                Algumas experiências, porém, prosperaram, especialmente
+                Pernambuco e São Vicente.
+            </p>
+
+        </section>
+
+        <!-- ======================================================
+             GOVERNO-GERAL
+             ====================================================== -->
+
+        <section class="card">
+
+            <h2>GOVERNO-GERAL — 1549</h2>
+
+            <p>
+                Diante das dificuldades das capitanias, a Coroa portuguesa
+                criou o Governo-Geral em 1549.
+            </p>
+
+            <p>
+                A primeira capital foi Salvador, na Bahia.
+            </p>
+
+            <p>
+                O primeiro governador-geral foi Tomé de Sousa.
+            </p>
+
+            <h3>Objetivos do Governo-Geral</h3>
+
+            <ul>
+
+                <li>
+                    Reforçar a autoridade da Coroa.
+                </li>
+
+                <li>
+                    Coordenar a defesa do território.
+                </li>
+
+                <li>
+                    Apoiar a administração colonial.
+                </li>
+
+                <li>
+                    Estimular atividades econômicas.
+                </li>
+
+                <li>
+                    Organizar relações com os povos indígenas.
+                </li>
+
+                <li>
+                    Apoiar a ação missionária.
+                </li>
+
+            </ul>
+
+            <p>
+                O Governo-Geral não eliminou as capitanias. As duas estruturas
+                passaram a coexistir dentro da administração colonial.
+            </p>
+
+        </section>
+
+        <!-- ======================================================
+             JESUÍTAS
+             ====================================================== -->
+
+        <section class="card">
+
+            <h2>JESUÍTAS E COLONIZAÇÃO</h2>
+
+            <p>
+                Em 1549, chegaram à América portuguesa membros da Companhia
+                de Jesus, entre eles Manuel da Nóbrega.
+            </p>
+
+            <p>
+                A atuação jesuítica esteve relacionada à evangelização dos povos
+                indígenas e à criação de espaços de ensino.
+            </p>
+
+            <p>
+                A atuação missionária também esteve envolvida em disputas sobre
+                as formas de exploração da mão de obra indígena.
+            </p>
+
+            <p>
+                É importante compreender que a ação dos jesuítas não pode ser
+                reduzida a uma única dimensão: envolveu religião, educação,
+                política, cultura e relações de poder.
+            </p>
+
+        </section>
+
+        <!-- ======================================================
+             PARTE II
+             ====================================================== -->
+
+        <section class="card parte2">
+
+            <h2>II — O DESENVOLVIMENTO: ECONOMIA, SOCIEDADE E PODER</h2>
+
+            <h3>1. A produção açucareira</h3>
+
+            <p>
+                A produção de açúcar tornou-se uma das principais atividades
+                econômicas da América portuguesa durante os séculos XVI e XVII.
+            </p>
+
+            <p>
+                A produção concentrou-se especialmente no Nordeste, onde
+                condições naturais e relações comerciais favoreceram o cultivo
+                da cana-de-açúcar.
+            </p>
+
+            <h3>2. O engenho</h3>
+
+            <p>
+                O termo engenho podia designar tanto o conjunto da propriedade
+                açucareira quanto, em determinados contextos, as instalações
+                destinadas ao processamento da cana.
+            </p>
+
+            <p>
+                A produção envolvia terras, plantações, instalações de moagem
+                e processamento, trabalhadores livres e escravizados e uma
+                complexa estrutura econômica.
+            </p>
+
+            <h3>3. Plantation</h3>
+
+            <p>
+                O modelo conhecido como plantation caracterizou-se, de modo geral,
+                por grandes propriedades, produção agrícola voltada para exportação,
+                monocultura ou predominância de uma cultura comercial e utilização
+                de trabalho compulsório.
+            </p>
+
+            <p>
+                É importante lembrar que a realidade colonial era mais diversa
+                do que o modelo didático da plantation e incluía diferentes
+                atividades, propriedades e formas de trabalho.
+            </p>
+
+            <h3>4. Escravização indígena e africana</h3>
+
+            <p>
+                Diferentes formas de trabalho compulsório foram utilizadas na
+                colonização portuguesa.
+            </p>
+
+            <p>
+                A escravização indígena ocorreu em diferentes regiões e períodos,
+                apesar das disputas jurídicas e religiosas existentes.
+            </p>
+
+            <p>
+                Progressivamente, o tráfico atlântico de africanos escravizados
+                assumiu enorme importância para a economia colonial.
+            </p>
+
+            <p>
+                A escravidão africana tornou-se uma instituição fundamental
+                para a produção de diversas mercadorias coloniais.
+            </p>
+
+            <h3>5. Tráfico atlântico</h3>
+
+            <p>
+                O tráfico de africanos escravizados conectava diferentes regiões
+                da África, da Europa e das Américas.
+            </p>
+
+            <p>
+                Comerciantes, autoridades, proprietários e instituições
+                participaram desse sistema.
+            </p>
+
+            <p>
+                O tráfico provocou enormes deslocamentos populacionais forçados
+                e deixou profundas consequências sociais e culturais.
+            </p>
+
+        </section>
+
+        <!-- ======================================================
+             PACTO COLONIAL
+             ====================================================== -->
+
+        <section class="card">
+
+            <h2>PACTO COLONIAL — UM CONCEITO QUE EXIGE CUIDADO</h2>
+
+            <p>
+                Tradicionalmente, os livros didáticos utilizam o termo
+                <strong>pacto colonial</strong> para representar as relações
+                econômicas que subordinavam a colônia aos interesses comerciais
+                da metrópole.
+            </p>
+
+            <p>
+                A ideia ajuda a compreender o princípio de exclusividade comercial
+                e a lógica mercantilista, mas deve ser utilizada com cuidado.
+            </p>
+
+            <p>
+                Na prática, existiam contrabando, comércio interno, negociações
+                locais e diferentes formas de circulação econômica que não cabem
+                em um modelo totalmente rígido.
+            </p>
+
+        </section>
+
+        <!-- ======================================================
+             MERCANTILISMO
+             ====================================================== -->
+
+        <section class="card">
+
+            <h2>SISTEMA COLONIAL E MERCANTILISMO</h2>
+
+            <p>
+                A colonização portuguesa estava inserida no contexto do
+                mercantilismo europeu.
+            </p>
+
+            <p>
+                A metrópole procurava controlar atividades econômicas coloniais
+                e utilizar os territórios ultramarinos para fortalecer sua
+                posição comercial.
+            </p>
+
+            <p>
+                A colônia fornecia produtos valorizados nos mercados internacionais
+                e funcionava como espaço de exploração econômica e ocupação
+                territorial.
+            </p>
+
+        </section>
+
+        <!-- ======================================================
+             SOCIEDADE
+             ====================================================== -->
+
+        <section class="card">
+
+            <h2>A SOCIEDADE COLONIAL</h2>
+
+            <p>
+                A sociedade colonial era marcada por fortes desigualdades
+                econômicas, jurídicas e sociais.
+            </p>
+
+            <p>
+                Grandes proprietários possuíam importante poder econômico e político,
+                enquanto indígenas, africanos escravizados, libertos, trabalhadores
+                livres pobres e outros grupos ocupavam posições distintas.
+            </p>
+
+            <p>
+                A sociedade colonial também era marcada por relações de gênero,
+                hierarquias jurídicas, diferenças regionais e complexas relações
+                entre grupos sociais.
+            </p>
+
+        </section>
+
+        <!-- ======================================================
+             RESISTÊNCIAS
+             ====================================================== -->
+
+        <section class="card">
+
+            <h2>RESISTÊNCIAS À COLONIZAÇÃO</h2>
+
+            <p>
+                A colonização não ocorreu de maneira passiva.
+            </p>
+
+            <p>
+                Povos indígenas resistiram de diferentes maneiras à ocupação
+                portuguesa, utilizando estratégias militares, deslocamentos,
+                alianças, negociações e preservação de práticas culturais.
+            </p>
+
+            <p>
+                Pessoas africanas escravizadas também resistiram ao sistema
+                escravista de diversas formas, incluindo fugas, formação de
+                comunidades, revoltas, negociações e preservação de identidades
+                culturais.
+            </p>
+
+            <p>
+                Os quilombos constituíram uma das formas de resistência ao
+                sistema escravista.
+            </p>
+
+        </section>
+
+        <!-- ======================================================
+             TABELA
+             ====================================================== -->
+
+        <section class="card">
+
+            <h2>ESTRUTURAS DO SISTEMA COLONIAL</h2>
+
+            <div class="tabela-container">
+
+                <table>
+
+                    <tr>
+                        <th>Elemento</th>
+                        <th>Função</th>
+                    </tr>
+
+                    <tr>
+                        <td>Capitanias hereditárias</td>
+                        <td>Ocupação e administração territorial.</td>
+                    </tr>
+
+                    <tr>
+                        <td>Governo-Geral</td>
+                        <td>Coordenação e fortalecimento da autoridade colonial.</td>
+                    </tr>
+
+                    <tr>
+                        <td>Engenho</td>
+                        <td>Produção e processamento do açúcar.</td>
+                    </tr>
+
+                    <tr>
+                        <td>Plantation</td>
+                        <td>Produção agrícola de exportação em grandes propriedades.</td>
+                    </tr>
+
+                    <tr>
+                        <td>Tráfico atlântico</td>
+                        <td>Transporte forçado de africanos escravizados para as Américas.</td>
+                    </tr>
+
+                    <tr>
+                        <td>Mercantilismo</td>
+                        <td>Contexto econômico e político da expansão colonial.</td>
+                    </tr>
+
+                    <tr>
+                        <td>Missionação</td>
+                        <td>Evangelização e atuação religiosa.</td>
+                    </tr>
+
+                </table>
+
+            </div>
+
+        </section>
+
+        <!-- ======================================================
+             PARTE III
+             ====================================================== -->
+
+        <section class="card parte3">
+
+            <h2>III — O LEGADO E O MUNDO ATUAL</h2>
+
+            <h3>1. Formação territorial</h3>
+
+            <p>
+                A colonização portuguesa contribuiu para a formação de estruturas
+                territoriais que posteriormente influenciariam a configuração
+                do Brasil.
+            </p>
+
+            <p>
+                A ocupação, porém, foi gradual e marcada por conflitos,
+                deslocamentos e expansão para além das áreas inicialmente
+                controladas pelos portugueses.
+            </p>
+
+            <h3>2. Herança africana</h3>
+
+            <p>
+                A presença africana foi fundamental para a formação da sociedade
+                brasileira.
+            </p>
+
+            <p>
+                Religiões, culinária, música, língua, técnicas agrícolas,
+                conhecimentos e diferentes manifestações culturais possuem
+                importantes contribuições de populações africanas e
+                afro-brasileiras.
+            </p>
+
+            <h3>3. Povos indígenas</h3>
+
+            <p>
+                As populações indígenas continuam sendo parte fundamental da
+                sociedade brasileira e preservam diferentes línguas, culturas,
+                territórios e formas de organização.
+            </p>
+
+            <p>
+                A história colonial ajuda a compreender conflitos históricos
+                relacionados à terra, à cultura e aos direitos indígenas.
+            </p>
+
+            <h3>4. Desigualdades sociais</h3>
+
+            <p>
+                As estruturas construídas durante a colonização, especialmente
+                a concentração da propriedade e a escravidão, contribuíram para
+                a formação histórica das desigualdades brasileiras.
+            </p>
+
+            <p>
+                A sociedade contemporânea não é simplesmente uma reprodução
+                da sociedade colonial, mas muitos problemas atuais possuem
+                raízes históricas de longa duração.
+            </p>
+
+            <h3>5. Racismo e escravidão</h3>
+
+            <p>
+                O sistema escravista produziu hierarquias sociais e relações
+                raciais que continuaram influenciando a sociedade brasileira
+                mesmo após a abolição.
+            </p>
+
+            <p>
+                Compreender esse processo é fundamental para analisar a formação
+                histórica do racismo e das desigualdades no Brasil.
+            </p>
+
+        </section>
+
+        <!-- ======================================================
+             CAUSAS E CONSEQUÊNCIAS
+             ====================================================== -->
+
+        <section class="card consequencias">
+
+            <h2>CONSEQUÊNCIAS DA MONTAGEM DO SISTEMA COLONIAL</h2>
+
+            <ul>
+
+                <li>
+                    Ocupação progressiva do território.
+                </li>
+
+                <li>
+                    Formação de estruturas administrativas coloniais.
+                </li>
+
+                <li>
+                    Desenvolvimento da produção açucareira.
+                </li>
+
+                <li>
+                    Expansão do tráfico atlântico.
+                </li>
+
+                <li>
+                    Escravização de africanos e indígenas.
+                </li>
+
+                <li>
+                    Formação de uma sociedade profundamente desigual.
+                </li>
+
+                <li>
+                    Desenvolvimento de relações comerciais atlânticas.
+                </li>
+
+                <li>
+                    Confrontos e negociações com povos indígenas.
+                </li>
+
+                <li>
+                    Formação de uma sociedade culturalmente diversa.
+                </li>
+
+                <li>
+                    Construção de estruturas históricas que influenciaram
+                    o Brasil posterior.
+                </li>
+
+            </ul>
+
+        </section>
+
+        <!-- ======================================================
+             ATENÇÃO
+             ====================================================== -->
+
+        <section class="card atencao">
+
+            <h2>⚠️ ATENÇÃO: NÃO REDUZA O SISTEMA COLONIAL AO AÇÚCAR</h2>
+
+            <p>
+                O açúcar foi extremamente importante, mas a América portuguesa
+                possuía diversas atividades econômicas.
+            </p>
+
+            <p>
+                Existiam agricultura de subsistência, pecuária, produção de
+                alimentos, atividades extrativas, comércio interno e outras
+                formas de produção.
+            </p>
+
+            <p>
+                Além disso, diferentes regiões possuíam ritmos e características
+                próprias.
+            </p>
+
+        </section>
+
+        <!-- ======================================================
+             CONCEITOS
+             ====================================================== -->
+
+        <section class="card conceitos">
+
+            <h2>CONCEITOS FUNDAMENTAIS</h2>
+
+            <h3>Colônia</h3>
+
+            <p>
+                Território submetido ao domínio político e econômico de uma
+                potência externa.
+            </p>
+
+            <h3>Metrópole</h3>
+
+            <p>
+                Estado que exerce domínio colonial sobre outros territórios.
+            </p>
+
+            <h3>Capitania hereditária</h3>
+
+            <p>
+                Unidade territorial concedida pela Coroa portuguesa a um
+                donatário para fins de ocupação e administração.
+            </p>
+
+            <h3>Governo-Geral</h3>
+
+            <p>
+                Estrutura criada em 1549 para reforçar e coordenar a administração
+                da América portuguesa.
+            </p>
+
+            <h3>Engenho</h3>
+
+            <p>
+                Unidade de produção relacionada principalmente ao processamento
+                da cana-de-açúcar.
+            </p>
+
+            <h3>Plantation</h3>
+
+            <p>
+                Modelo de produção agrícola caracterizado, em linhas gerais,
+                por grande propriedade, produção para exportação e trabalho
+                compulsório.
+            </p>
+
+            <h3>Quilombo</h3>
+
+            <p>
+                Comunidade formada por pessoas que resistiam à escravização,
+                apresentando diferentes formas de organização e composição.
+            </p>
+
+            <h3>Pacto colonial</h3>
+
+            <p>
+                Conceito utilizado pela historiografia escolar para representar
+                relações econômicas de subordinação da colônia aos interesses
+                metropolitanos.
+            </p>
+
+        </section>
+
+        <!-- ======================================================
+             LINHA DO TEMPO
+             ====================================================== -->
+
+        <section class="card">
+
+            <h2>LINHA DO TEMPO — MONTAGEM DO SISTEMA COLONIAL</h2>
+
+            <div class="timeline">
+
+                <div class="evento">
+
+                    <div class="ano">1500</div>
+
+                    <p>
+                        Chegada da frota de Pedro Álvares Cabral.
+                    </p>
+
+                </div>
+
+                <div class="evento">
+
+                    <div class="ano">1500–1530</div>
+
+                    <p>
+                        Período marcado pela exploração do pau-brasil e
+                        pela presença portuguesa ainda limitada.
+                    </p>
+
+                </div>
+
+                <div class="evento">
+
+                    <div class="ano">1534</div>
+
+                    <p>
+                        Implantação das capitanias hereditárias.
+                    </p>
+
+                </div>
+
+                <div class="evento">
+
+                    <div class="ano">1549</div>
+
+                    <p>
+                        Criação do Governo-Geral e fundação de Salvador.
+                    </p>
+
+                </div>
+
+                <div class="evento">
+
+                    <div class="ano">1549</div>
+
+                    <p>
+                        Chegada dos primeiros jesuítas à América portuguesa.
+                    </p>
+
+                </div>
+
+                <div class="evento">
+
+                    <div class="ano">Século XVI</div>
+
+                    <p>
+                        Expansão da produção açucareira e do sistema escravista.
+                    </p>
+
+                </div>
+
+                <div class="evento">
+
+                    <div class="ano">Século XVII</div>
+
+                    <p>
+                        Expansão territorial, conflitos coloniais e crescimento
+                        de diferentes atividades econômicas.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ======================================================
+             O PROFESSOR
+             ====================================================== -->
+
+        <section class="card">
+
+            <h2>O QUE O PROFESSOR PRECISA DOMINAR</h2>
+
+            <ol>
+
+                <li>
+                    Explicar o conceito de sistema colonial.
+                </li>
+
+                <li>
+                    Relacionar colonização e mercantilismo.
+                </li>
+
+                <li>
+                    Explicar as capitanias hereditárias.
+                </li>
+
+                <li>
+                    Explicar a criação do Governo-Geral.
+                </li>
+
+                <li>
+                    Relacionar produção açucareira e mercado externo.
+                </li>
+
+                <li>
+                    Explicar o papel do engenho.
+                </li>
+
+                <li>
+                    Compreender o conceito de plantation.
+                </li>
+
+                <li>
+                    Explicar a escravização indígena e africana.
+                </li>
+
+                <li>
+                    Compreender a importância do tráfico atlântico.
+                </li>
+
+                <li>
+                    Explicar a atuação dos jesuítas.
+                </li>
+
+                <li>
+                    Trabalhar as formas de resistência indígena e africana.
+                </li>
+
+                <li>
+                    Relacionar o período colonial às desigualdades históricas
+                    do Brasil.
+                </li>
+
+            </ol>
+
+        </section>
+
+        <!-- ======================================================
+             LOUSA
+             ====================================================== -->
+
+        <section class="card lousa">
+
+            <h2>O QUE COLOCAR NA LOUSA</h2>
+
+            <h3>SISTEMA COLONIAL</h3>
+
+            <p><strong>PORTUGAL → AMÉRICA PORTUGUESA</strong></p>
+
+            <p><strong>OBJETIVOS:</strong></p>
+
+            <ul>
+
+                <li>
+                    Ocupar
+                </li>
+
+                <li>
+                    Explorar
+                </li>
+
+                <li>
+                    Produzir
+                </li>
+
+                <li>
+                    Exportar
+                </li>
+
+                <li>
+                    Controlar
+                </li>
+
+            </ul>
+
+            <p><strong>ADMINISTRAÇÃO:</strong></p>
+
+            <ul>
+
+                <li>
+                    Capitanias → 1534
+                </li>
+
+                <li>
+                    Governo-Geral → 1549
+                </li>
+
+            </ul>
+
+            <p><strong>ECONOMIA:</strong></p>
+
+            <ul>
+
+                <li>
+                    Açúcar
+                </li>
+
+                <li>
+                    Plantation
+                </li>
+
+                <li>
+                    Engenho
+                </li>
+
+                <li>
+                    Escravidão
+                </li>
+
+                <li>
+                    Exportação
+                </li>
+
+            </ul>
+
+            <p><strong>SOCIEDADE:</strong></p>
+
+            <ul>
+
+                <li>
+                    Desigualdade
+                </li>
+
+                <li>
+                    Escravidão
+                </li>
+
+                <li>
+                    Povos indígenas
+                </li>
+
+                <li>
+                    Africanos
+                </li>
+
+                <li>
+                    Colonizadores
+                </li>
+
+            </ul>
+
+        </section>
+
+        <!-- ======================================================
+             ENEM
+             ====================================================== -->
+
+        <section class="card enem">
+
+            <h2>ENEM • VESTIBULAR • CONCURSO</h2>
+
+            <h3>Conteúdos que merecem atenção</h3>
+
+            <ul>
+
+                <li>
+                    Capitanias hereditárias.
+                </li>
+
+                <li>
+                    Governo-Geral.
+                </li>
+
+                <li>
+                    Economia açucareira.
+                </li>
+
+                <li>
+                    Plantation.
+                </li>
+
+                <li>
+                    Escravidão.
+                </li>
+
+                <li>
+                    Tráfico atlântico.
+                </li>
+
+                <li>
+                    Resistência indígena e africana.
+                </li>
+
+                <li>
+                    Mercantilismo.
+                </li>
+
+                <li>
+                    Relação metrópole-colônia.
+                </li>
+
+                <li>
+                    Formação histórica do Brasil.
+                </li>
+
+            </ul>
+
+            <h3>Estratégia de prova</h3>
+
+            <p>
+                Quando uma questão apresentar termos como
+                <strong>capitanias, engenho, açúcar, plantation,
+                escravidão, mercantilismo e metrópole</strong>,
+                procure identificar como esses elementos estavam articulados
+                dentro do sistema colonial.
+            </p>
+
+        </section>
+
+        <!-- ======================================================
+             QUESTÕES
+             ====================================================== -->
+
+        <section class="card">
+
+            <h2>QUESTÕES — MODELO ENEM</h2>
+
+            <!-- Questão 1. -->
+            <div class="questao">
+
+                <p>
+                    <strong>Questão 1</strong>
+                </p>
+
+                <p>
+                    A criação das capitanias hereditárias, em 1534, esteve
+                    relacionada à necessidade de organizar a ocupação e a
+                    administração da América portuguesa.
+                </p>
+
+                <p>
+                    Entre os objetivos desse sistema estava:
+                </p>
+
+                <div class="alternativas">
+
+                    <p>
+                        A) abandonar definitivamente o território americano.
+                    </p>
+
+                    <p>
+                        B) transferir parte dos custos da colonização para particulares.
+                    </p>
+
+                    <p>
+                        C) acabar com a produção agrícola.
+                    </p>
+
+                    <p>
+                        D) eliminar a autoridade da Coroa portuguesa.
+                    </p>
+
+                    <p>
+                        E) impedir qualquer atividade comercial na colônia.
+                    </p>
+
+                </div>
+
+                <button onclick="mostrarGabarito('gabarito1')">
+                    Mostrar gabarito
+                </button>
+
+                <div class="gabarito" id="gabarito1">
+
+                    <strong>Resposta: B.</strong>
+
+                    <p>
+                        As capitanias permitiam à Coroa delegar a particulares
+                        parte dos custos e responsabilidades da ocupação,
+                        defesa e exploração do território.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Questão 2. -->
+            <div class="questao">
+
+                <p>
+                    <strong>Questão 2</strong>
+                </p>
+
+                <p>
+                    Durante o período colonial, a produção açucareira esteve
+                    integrada às redes comerciais atlânticas e utilizou
+                    amplamente trabalho escravizado.
+                </p>
+
+                <p>
+                    Essa estrutura demonstra que a economia colonial:
+                </p>
+
+                <div class="alternativas">
+
+                    <p>
+                        A) estava isolada do comércio internacional.
+                    </p>
+
+                    <p>
+                        B) dependia exclusivamente da produção de alimentos para consumo local.
+                    </p>
+
+                    <p>
+                        C) estava articulada aos interesses comerciais do sistema colonial.
+                    </p>
+
+                    <p>
+                        D) não possuía relações com a Europa.
+                    </p>
+
+                    <p>
+                        E) era baseada exclusivamente no trabalho livre.
+                    </p>
+
+                </div>
+
+                <button onclick="mostrarGabarito('gabarito2')">
+                    Mostrar gabarito
+                </button>
+
+                <div class="gabarito" id="gabarito2">
+
+                    <strong>Resposta: C.</strong>
+
+                    <p>
+                        A produção colonial estava integrada às redes comerciais
+                        atlânticas e aos interesses econômicos da metrópole.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ======================================================
+             BNCC
+             ====================================================== -->
+
+        <section class="card">
+
+            <h2>BNCC — COMO TRABALHAR O TEMA</h2>
+
+            <p>
+                Este capítulo pode ser relacionado a habilidades de História
+                voltadas à análise da expansão europeia, da formação das
+                sociedades coloniais americanas, das relações de trabalho,
+                das estruturas de poder e das diferentes formas de resistência
+                dos povos indígenas e africanos.
+            </p>
+
+            <p>
+                No planejamento formal, as habilidades devem ser selecionadas
+                de acordo com a etapa escolar e o currículo adotado pela
+                instituição de ensino.
+            </p>
+
+            <p>
+                <strong>Foco pedagógico:</strong> colonização portuguesa,
+                mercantilismo, administração colonial, escravidão,
+                economia atlântica, diversidade social e resistência.
+            </p>
+
+        </section>
+
+        <!-- ======================================================
+             RESUMO
+             ====================================================== -->
+
+        <section class="card">
+
+            <h2>RESUMO PARA REVISÃO</h2>
+
+            <p>
+                A montagem do sistema colonial português ocorreu de maneira
+                gradual a partir do século XVI e esteve ligada à expansão
+                marítimo-comercial europeia.
+            </p>
+
+            <p>
+                As capitanias hereditárias, criadas em 1534, foram uma tentativa
+                de organizar a ocupação e administração do território.
+            </p>
+
+            <p>
+                Em 1549, a criação do Governo-Geral fortaleceu a coordenação
+                administrativa da Coroa.
+            </p>
+
+            <p>
+                A produção açucareira tornou-se uma das principais atividades
+                econômicas, articulada ao mercado atlântico e ao trabalho
+                escravizado.
+            </p>
+
+            <p>
+                A sociedade colonial foi marcada por profundas desigualdades,
+                mas também por conflitos, negociações e resistências.
+            </p>
+
+            <p>
+                O sistema colonial deixou marcas duradouras na formação
+                territorial, econômica, social e cultural do Brasil.
+            </p>
+
+        </section>
+
+        <!-- ======================================================
+             NAVEGAÇÃO
+             ====================================================== -->
+
+        <div class="navegacao">
+
+            <!-- Link para o capítulo anterior. -->
+            <a href="../43-Expansao-Maritimo-Comercial/index.html">
+                ← Iluminismo e Despotismo Esclarecido
+            </a>
+
+            <!-- Link para o próximo capítulo. -->
+            <a href="../45-Montagem-da-Administracao-Colonial/index.html">
+                1.24 — Montagem da Administração Colonial →
+            </a>
+
+        </div>
+
+    </main>
+
+    <!-- ==========================================================
+         BOTÃO VOLTAR AO TOPO
+         ========================================================== -->
+
+    <button id="topo" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+        ↑
+    </button>
+
+    <!-- ==========================================================
+         RODAPÉ
+         ========================================================== -->
+
+    <footer>
+
+        <p>
+            Curso de História Geral
+        </p>
+
+        <p>
+            Professor Marcelo Oliveira
+        </p>
+
+        <p>
+            Fund II • Ensino Médio • ENEM • Vestibular • Concurso
+        </p>
+
+    </footer>
+
+    <script>
+
+        /* ==========================================================
+           FUNÇÃO DOS GABARITOS
+           ========================================================== */
+
+        /* Cria a função que controla a exibição das respostas. */
+        function mostrarGabarito(id) {
+
+            /* Localiza o elemento pelo ID recebido. */
+            const elemento = document.getElementById(id);
+
+            /* Verifica se o gabarito está escondido. */
+            if (
+                elemento.style.display === "none" ||
+                elemento.style.display === ""
+            ) {
+
+                /* Mostra o gabarito. */
+                elemento.style.display = "block";
+
+            } else {
+
+                /* Esconde novamente o gabarito. */
+                elemento.style.display = "none";
+
+            }
+
+        }
+
+        /* ==========================================================
+           BOTÃO VOLTAR AO TOPO
+           ========================================================== */
+
+        /* Localiza o botão de topo. */
+        const botaoTopo = document.getElementById("topo");
+
+        /* Monitora a rolagem da página. */
+        window.addEventListener("scroll", function () {
+
+            /* Verifica se o usuário desceu mais de 400 pixels. */
+            if (window.scrollY > 400) {
+
+                /* Mostra o botão. */
+                botaoTopo.style.display = "block";
+
+            } else {
+
+                /* Esconde o botão. */
+                botaoTopo.style.display = "none";
+
+            }
+
+        });
+
+    </script>
+    <script>
+  const paginaAnterior = "23 - ILUMINISMO E DESPOTISMO ESCLARECIDO.html";
+  const paginaProxima = "25 - Montagem-da-Administracao-Colonial.html"; 
+</script>
+<script src="navegacao.js"></script>
+
+</body>
+
+</html>
