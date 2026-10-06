@@ -1,3 +1,21 @@
+# ═══════════════════════════════════════════════════════════════
+# Esta pasta de trabalho contém dezenas de projetos pessoais.
+# Só o Guia do Docente de História + o DevBook fazem parte deste
+# repositório — por isso ignoramos TUDO na raiz e reabilitamos
+# apenas os arquivos do projeto.
+# ═══════════════════════════════════════════════════════════════
+
+# Ignora qualquer item na raiz (pastas e arquivos de outros projetos)
+/*
+
+# ── Projeto: Guia do Docente + DevBook ──
+!/.gitignore
+!/README.md
+!/index.html
+!/navegacao.js
+!/[0-9]*.html
+!/devbook/
+
 # Dependências
 node_modules/
 
