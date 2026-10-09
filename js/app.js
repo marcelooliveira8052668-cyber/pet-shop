@@ -200,23 +200,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // ═══════════ EFEITO DE DIGITAÇÃO NO TÍTULO ═══════════
-    const heroTitle = document.querySelector('.hero-content h1');
-    if (heroTitle) {
-        const originalText = heroTitle.innerHTML;
-        heroTitle.innerHTML = '';
-        
-        let i = 0;
-        function typeWriter() {
-            if (i < originalText.length) {
-                heroTitle.innerHTML += originalText.charAt(i);
-                i++;
-                setTimeout(typeWriter, 50);
-            }
-        }
-        
-        // Iniciar após um pequeno delay
-        setTimeout(typeWriter, 500);
-    }
+    // Removido - estava causando problemas com tags HTML
+    // O título agora aparece normalmente com animação CSS
 
     // ═══════════ BOTÃO DE VOLTAR AO TOPO ═══════════
     const backToTop = document.createElement('button');
